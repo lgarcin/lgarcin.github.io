@@ -1,0 +1,15 @@
+.enoncecorrige {
+    padding: 5px;
+}
+.enoncecorrige > div {
+    height: 5em;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: lightgrey;
+    background-clip: border-box;
+}
+.enoncecorrige div div {
+    position: absolute;
+    bottom: 5px;
+}

@@ -1,0 +1,8 @@
+# List of links in the navigation bar
+navbar-links:
+  Home: ""
+  A propos: "apropos"
+  Cours: "cours"
+  Exercices: "td"
+  Vie de Classe: "vieclasse"
+  Devoirs: "devoirs"

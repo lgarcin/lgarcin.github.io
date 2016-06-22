@@ -1,0 +1,18 @@
+---
+layout: page
+title: Vie de classe
+---
+{% for v in site.data.pdfs.VieClasse %}
+{% if v.path %}
+    <div class="col-lg-4" style="padding:10px">
+        <a href="{{'/pdfs/' | append: v.path}}">
+            <i class="fa fa-file-pdf-o fa-1x"></i><span style="display:inline-block; width:1ex"></span>{{v.title}}</a>
+    </div>
+{% endif %}
+{% endfor %}
+<div class="col-lg-4" style="padding:10px">
+  <a href="https://docs.google.com/spreadsheets/d/1wrX4rzfOxKKO81BTm3tPRfurLXPHvZd4LW3n1rV5KQc/edit?usp=sharing">Notes premier semestre</a>
+</div>
+<div class="col-lg-4" style="padding:10px">
+  <a href="https://docs.google.com/spreadsheets/d/1Pt-euze5tgU6sppeh2x9Fp7uTlZJuGW6ZebF7TKg2DE/edit?usp=sharing">Notes second semestre</a>
+</div>
