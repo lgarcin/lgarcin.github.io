@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Maths MPSI au lycée Jean-Baptiste Corot</title>
+    <title>Maths MPSI Corot</title>
     <description>Mathématiques en MPSI au lycée Corot</description>
     <link>http://lgarcin.github.io</link>
     <atom:link href="http://lgarcin.github.io/feed.xml" rel="self" type="application/rss+xml" />
