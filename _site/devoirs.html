@@ -1,8 +1,4 @@
----
-layout: page
-title: Devoirs
-css: "/css/pdfs.css"
----
+--- layout: page title: Devoirs css: "/css/pdfs.css" ---
 
 <section id="ds">
     <h3>Devoirs surveillés</h3>
@@ -11,13 +7,13 @@ css: "/css/pdfs.css"
         {% for ds in sorted_ds %}
             <div class="col-lg-3 enoncecorrige">
                 <div>
-                    <h4>{{ds.title}}</h4>
+                    <h5>{{ds.title}}</h5>
                     <div>
                         {% assign s = ds | sort %}
                         {% for sub in s reversed %}
                             {% if sub[1].path %}
                                 <a href="{{'/pdfs/' | append: sub[1].path}}">
-                                    <i class="fa fa-file-pdf-o fa-2x"></i>
+                                    <i class="fa fa-file-pdf-o fa-1x"></i>
                                     <p>{{sub[0]}}</p>
                                 </a>
                             {% endif %}
@@ -41,7 +37,7 @@ css: "/css/pdfs.css"
                         {% for sub in s reversed %}
                             {% if sub[1].path %}
                                 <a href="{{'/pdfs/' | append: sub[1].path}}">
-                                    <i class="fa fa-file-pdf-o fa-2x"></i>
+                                    <i class="fa fa-file-pdf-o fa-1x"></i>
                                     <p>{{sub[0]}}</p>
                                 </a>
                             {% endif %}
