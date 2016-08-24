@@ -1,8 +1,4 @@
----
-layout: page
-title: Cours
-css: "/css/pdfs.css"
----
+--- layout: page title: Cours css: "/css/pdfs.css" ---
 
 <div class="row">
 
@@ -10,12 +6,11 @@ css: "/css/pdfs.css"
         <section id="interros">
             <h3>Interrogations écrites</h3> {% assign sorted_interros=site.data.pdfs.Interros|sort:'path' %} {% for interro in sorted_interros %} {% if interro.path %}
             <div class="col-lg-4 pdf">
-              <div class="zoom">
                 <a href="{{'/pdfs/' | append: interro.path}}">
                     <i class="fa fa-file-pdf-o fa-1x"></i>
+                    <i class="fa fa-file-pdf-o fa-2x"></i>
                     <span style="display:inline-block; width:.1ex"></span> {{interro.title|replace:'\no','n°'}}
                 </a>
-              </div>
             </div>
             {% endif %} {% endfor %}
         </section>
@@ -25,12 +20,10 @@ css: "/css/pdfs.css"
         <section id="cours">
             <h3>Notes de cours</h3> {% assign sorted_cours=site.data.pdfs.Cours|sort:'title' %} {% for cours in sorted_cours %} {% if cours.path %}
             <div class="col-lg-4 pdf">
-              <div class="zoom">
                 <a href="{{'/pdfs/' | append: cours.path}}">
                     <i class="fa fa-file-pdf-o fa-1x"></i>
                     <span style="display:inline-block; width:.1ex"></span> {{cours.title|replace:'\\',' '}}
                 </a>
-              </div>
             </div>
             {% endif %} {% endfor %}
         </section>
@@ -39,13 +32,11 @@ css: "/css/pdfs.css"
     <div class="col-lg-12">
         <section id="formulaires">
             <h3>Formulaires</h3> {% assign sorted_formulaires=site.data.pdfs.Formulaires|sort:'title' %} {% for formulaire in sorted_formulaires %} {% if formulaire.path %}
-            <div class="col-lg-4 pdf">
-              <div class="zoom">
+            <div class="col-lg-4" style="padding:10px">
                 <a href="{{'/pdfs/' | append: formulaire.path}}">
                     <i class="fa fa-file-pdf-o fa-1x"></i>
                     <span style="display:inline-block; width:.1ex"></span> {{formulaire.title|replace:'\\',' '}}
                 </a>
-              </div>
             </div>
             {% endif %} {% endfor %}
         </section>
@@ -54,13 +45,11 @@ css: "/css/pdfs.css"
     <div class="col-lg-12">
         <section id="colles">
             <h3>Programmes de colles</h3> {% assign sorted_colles=site.data.pdfs.Colles|sort:'path' %} {% for colle in sorted_colles %} {% if colle.path %}
-            <div class="col-lg-4 pdf">
-              <div class="zoom">
+            <div class="col-lg-4" style="padding:10px">
                 <a href="{{'/pdfs/' | append: colle.path}}">
                     <i class="fa fa-file-pdf-o fa-1x"></i>
                     <span style="display:inline-block; width:.1ex"></span> {{colle.title}}
                 </a>
-              </div>
             </div>
             {% endif %} {% endfor %}
         </section>

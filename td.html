@@ -8,7 +8,7 @@ css: "/css/pdfs.css"
     <div class="row">
         {% for td in site.data.pdfs.TD %}
             <div class="col-lg-3 enoncecorrige">
-                <div>
+                <div class="zoom">
                     <h5>{{td.title}}</h5>
                     <div>
                         {% assign s = td | sort %}

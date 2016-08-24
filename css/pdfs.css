@@ -1,12 +1,43 @@
+.zoom {
+    background-color: #cccccc;
+    padding: 10px;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+.zoom:hover {
+    background-color: #aaaaaa;
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+.pdf {
+    padding: 5px;
+}
+.pdf a {
+    color: #3c3c3c;
+}
 .enoncecorrige {
     padding: 5px;
 }
 .enoncecorrige> div {
     height: 5em;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     /*border-radius: 5px;*/
     padding: 5px;
-    background-clip: border-box;
+    /*background-clip: border-box;*/
     text-align: center;
 }
 .enoncecorrige div div {
@@ -32,8 +63,4 @@
 }
 .enoncecorrige a:hover i {
     display: inline;
-}
-.enoncecorrige>div:hover {
-    background-color: black;
-    color: #93c2c7;
 }

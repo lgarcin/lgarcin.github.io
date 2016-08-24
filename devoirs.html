@@ -10,7 +10,7 @@ css: "/css/pdfs.css"
         {% assign sorted_ds = site.data.pdfs.DS | sort : 'title' %}
         {% for ds in sorted_ds %}
             <div class="col-lg-3 enoncecorrige">
-                <div>
+                <div class="zoom">
                     <h4>{{ds.title}}</h4>
                     <div>
                         {% assign s = ds | sort %}
@@ -34,7 +34,7 @@ css: "/css/pdfs.css"
         {% assign sorted_dm = site.data.pdfs.DM | sort : 'title' %}
         {% for dm in sorted_dm %}
             <div class="col-lg-3 enoncecorrige">
-                <div>
+                <div class="zoom">
                     <h4>{{dm.title}}</h4>
                     <div>
                         {% assign s = dm | sort %}
