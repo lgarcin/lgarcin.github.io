@@ -12,8 +12,7 @@
 }
 .zoom:hover {
     background-color: #aaaaaa;
-    box-shadow: 0px 0px 150px #000000;
-    z-index: 2;
+    box-shadow: 0px 0px 150px black;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.1);
     -ms-transition: all 200ms ease-in;
@@ -25,19 +24,27 @@
 }
 .pdf {
     padding: 5px;
+    height: 3em;
+}
+.pdf:hover {
+    z-index: 2;
 }
 .pdf a {
     color: #3c3c3c;
 }
+.pdf a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
 .enoncecorrige {
     padding: 5px;
 }
+.enoncecorrige:hover {
+    z-index: 2;
+}
 .enoncecorrige> div {
     height: 5em;
-    /*border: 1px solid black;*/
-    /*border-radius: 5px;*/
     padding: 5px;
-    /*background-clip: border-box;*/
     text-align: center;
 }
 .enoncecorrige div div {

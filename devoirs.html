@@ -5,6 +5,7 @@ css: "/css/pdfs.css"
 ---
 
 <section id="ds">
+  {% if site.data.pdfs.DS %}
     <h3>Devoirs surveillés</h3>
     <div class="row">
         {% assign sorted_ds = site.data.pdfs.DS | sort : 'title' %}
@@ -27,8 +28,10 @@ css: "/css/pdfs.css"
             </div>
         {% endfor %}
     </div>
+  {% endif %}
 </section>
 <section id="dm">
+  {% if site.data.pdfs.DM %}
     <h3>Devoirs surveillés</h3>
     <div class="row">
         {% assign sorted_dm = site.data.pdfs.DM | sort : 'title' %}
@@ -51,4 +54,5 @@ css: "/css/pdfs.css"
             </div>
         {% endfor %}
     </div>
+  {% endif %}
 </section>
