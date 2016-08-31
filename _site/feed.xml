@@ -6,5 +6,17 @@
     <link>http://lgarcin.github.io</link>
     <atom:link href="http://lgarcin.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
+      <item>
+        <title>Rentrée</title>
+        <description>
+          
+          Bonne rentrée à tous
+
+        </description>
+        <pubDate>Tue, 30 Aug 2016 00:00:00 +0100</pubDate>
+        <link>http://lgarcin.github.io/2016-08-30-rentr-e/</link>
+        <guid isPermaLink="true">http://lgarcin.github.io/2016-08-30-rentr-e/</guid>
+      </item>
+    
   </channel>
 </rss>
