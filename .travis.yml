@@ -1,6 +1,6 @@
 language: ruby
 cache: bundler
 rvm:
-- 2.1.1
+- 2.3.0
 script:
-- bundle exec jekyll build && bundle exec htmlproof ./_site
+- bundle install && bundle exec jekyll build && bundle exec htmlproof ./_site
