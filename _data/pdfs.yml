@@ -1,99 +1,103 @@
 Cours:
-- path: Reels.pdf
-  title: Nombres réels
-- path: Applications.pdf
-  title: Ensembles et applications
-- path: Matrices.pdf
-  title: Matrices
-- path: Probabilites.pdf
-  title: Probabilités sur un univers fini
-- path: Fonctions.pdf
-  title: Fonctions d'une variable réelle
-- path: FractionsRationnelles.pdf
-  title: Fractions rationnelles
-- path: Derivabilite.pdf
-  title: Dérivabilité
-- path: EspacesVectoriels.pdf
-  title: Espaces vectoriels
-- path: Raisonnements.pdf
-  title: Raisonnements
-- path: Ensembles.pdf
-  title: Ensembles
-- path: DimensionFinie.pdf
-  title: Espaces vectoriels\\de dimension finie
 - path: DeveloppementsLimites.pdf
   title: Développements limités
-- path: GroupesAnneauxCorps.pdf
-  title: Groupes, anneaux, corps
-- path: SystemesLineaires.pdf
-  title: Systèmes linéaires
-- path: EgalitesInegalites.pdf
-  title: Égalités et inégalités
 - path: LimiteContinuite.pdf
   title: Limite et continuité de fonctions
-- path: ApplicationsLineaires.pdf
-  title: Applications linéaires
-- path: ComparaisonFonctions.pdf
-  title: Comparaison de fonctions
-- path: Determinants.pdf
-  title: Déterminants
-- path: GeometrieAffine.pdf
-  title: Géométrie affine
-- path: Integration.pdf
-  title: Intégration
-- path: RelationsBinaires.pdf
-  title: Relations binaires
-- path: SommesProduits.pdf
-  title: Sommes et produits
-- path: EquationsDifferentielles.pdf
-  title: Équations différentielles
-- path: Polynomes.pdf
-  title: Polynômes
-- path: Suites.pdf
-  title: Suites numériques
-- path: IntegralesPrimitives.pdf
-  title: Primitives et intégrales
-- path: Trigonometrie.pdf
-  title: Trigonométrie
-- path: EspacesEuclidiens.pdf
-  title: Espaces préhilbertiens réels
-- path: Denombrement.pdf
-  title: Dénombrement
-- path: FonctionsUsuelles.pdf
-  title: Fonctions usuelles
+- path: GroupesAnneauxCorps.pdf
+  title: Groupes, anneaux, corps
+- path: Matrices.pdf
+  title: Matrices
+- path: Raisonnements.pdf
+  title: Raisonnements
+- path: DimensionFinie.pdf
+  title: Espaces vectoriels\\de dimension finie
 - path: Arithmetique.pdf
   title: Arithmétique des entiers relatifs
+- path: EspacesEuclidiens.pdf
+  title: Espaces préhilbertiens réels
+- path: Integration.pdf
+  title: Intégration
 - path: Series.pdf
   title: Séries numériques
+- path: IntegralesPrimitives.pdf
+  title: Primitives et intégrales
+- path: Polynomes.pdf
+  title: Polynômes
+- path: RelationsBinaires.pdf
+  title: Relations binaires
+- path: Derivabilite.pdf
+  title: Dérivabilité
+- path: Suites.pdf
+  title: Suites numériques
+- path: EspacesVectoriels.pdf
+  title: Espaces vectoriels
+- path: Probabilites.pdf
+  title: Probabilités sur un univers fini
+- path: EquationsDifferentielles.pdf
+  title: Équations différentielles
+- path: GeometrieAffine.pdf
+  title: Géométrie affine
+- path: ApplicationsLineaires.pdf
+  title: Applications linéaires
+- path: FractionsRationnelles.pdf
+  title: Fractions rationnelles
+- path: Reels.pdf
+  title: Nombres réels
 - path: Complexes.pdf
   title: Nombres complexes
+- path: Fonctions.pdf
+  title: Fonctions d'une variable réelle
+- path: FonctionsUsuelles.pdf
+  title: Fonctions usuelles
+- path: ComparaisonFonctions.pdf
+  title: Comparaison de fonctions
+- path: SystemesLineaires.pdf
+  title: Systèmes linéaires
+- path: Denombrement.pdf
+  title: Dénombrement
+- path: Applications.pdf
+  title: Ensembles et applications
+- path: EgalitesInegalites.pdf
+  title: Égalités et inégalités
+- path: Ensembles.pdf
+  title: Ensembles
+- path: Determinants.pdf
+  title: Déterminants
+- path: Trigonometrie.pdf
+  title: Trigonométrie
+- path: SommesProduits.pdf
+  title: Sommes et produits
+DM:
+- Enoncé:
+    path: DM01.pdf
+  title: DM01
 Formulaires:
-- path: FormulaireInegalites.pdf
-  title: Inégalités
-- path: FormulaireTrigoHyperbolique.pdf
-  title: Trigonométrie hyperbolique
 - path: FormulaireComparaisonFonctions.pdf
   title: Comparaison de fonctions
-- path: FormulaireTrigo.pdf
-  title: Trigonométrie
-- path: FormulaireDL.pdf
-  title: Développements limités
 - path: FormulaireDerivationIntegration.pdf
   title: Dérivation et intégration
+- path: FormulaireDL.pdf
+  title: Développements limités
+- path: FormulaireTrigo.pdf
+  title: Trigonométrie
+- path: FormulaireInegalites.pdf
+  title: Inégalités
 - path: FormulaireTrigoInverse.pdf
   title: Trigonométrie inverse
+- path: FormulaireTrigoHyperbolique.pdf
+  title: Trigonométrie hyperbolique
 Interros:
 - path: Interro01.pdf
   title: Interrogation écrite \no1
 TD:
-- Enoncé:
-    path: TDSommesProduits.pdf
-  title: Sommes, produits, systèmes, trigonométrie
 - Corrigé:
     path: TDRaisonnements_corrige.pdf
   Enoncé:
     path: TDRaisonnements.pdf
   title: Raisonnements et ensembles
+- Enoncé:
+    path: TDSommesProduits.pdf
+  title: Sommes, produits, systèmes, trigonométrie
 VieClasse:
 - path: EDT_MPSI_20162017.pdf
   title: Emploi du temps
