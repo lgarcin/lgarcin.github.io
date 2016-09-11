@@ -2,93 +2,93 @@ Colles:
 - path: ProgColles01.pdf
   title: Semaine du 12/09 au 16/09
 Cours:
-- path: Reels.pdf
-  title: Nombres réels
-- path: DeveloppementsLimites.pdf
-  title: Développements limités
-- path: ApplicationsLineaires.pdf
-  title: Applications linéaires
-- path: EspacesEuclidiens.pdf
-  title: Espaces préhilbertiens réels
-- path: Applications.pdf
-  title: Ensembles et applications
-- path: Fonctions.pdf
-  title: Fonctions d'une variable réelle
-- path: Raisonnements.pdf
-  title: Raisonnements
 - path: Denombrement.pdf
   title: Dénombrement
+- path: Determinants.pdf
+  title: Déterminants
+- path: Matrices.pdf
+  title: Matrices
+- path: EgalitesInegalites.pdf
+  title: Égalités et inégalités
+- path: ComparaisonFonctions.pdf
+  title: Comparaison de fonctions
 - path: GroupesAnneauxCorps.pdf
   title: Groupes, anneaux, corps
+- path: DimensionFinie.pdf
+  title: Espaces vectoriels\\de dimension finie
+- path: ApplicationsLineaires.pdf
+  title: Applications linéaires
+- path: RelationsBinaires.pdf
+  title: Relations binaires
+- path: Polynomes.pdf
+  title: Polynômes
+- path: DeveloppementsLimites.pdf
+  title: Développements limités
+- path: Applications.pdf
+  title: Ensembles et applications
+- path: Raisonnements.pdf
+  title: Raisonnements
+- path: Integration.pdf
+  title: Intégration
+- path: IntegralesPrimitives.pdf
+  title: Primitives et intégrales
+- path: EspacesEuclidiens.pdf
+  title: Espaces préhilbertiens réels
 - path: FonctionsUsuelles.pdf
   title: Fonctions usuelles
+- path: Trigonometrie.pdf
+  title: Trigonométrie
+- path: EquationsDifferentielles.pdf
+  title: Équations différentielles
+- path: Arithmetique.pdf
+  title: Arithmétique des entiers relatifs
+- path: Fonctions.pdf
+  title: Fonctions d'une variable réelle
+- path: Derivabilite.pdf
+  title: Dérivabilité
+- path: SommesProduits.pdf
+  title: Sommes et produits
+- path: Complexes.pdf
+  title: Nombres complexes
+- path: FractionsRationnelles.pdf
+  title: Fractions rationnelles
+- path: Ensembles.pdf
+  title: Ensembles
 - path: Suites.pdf
   title: Suites numériques
 - path: GeometrieAffine.pdf
   title: Géométrie affine
-- path: Ensembles.pdf
-  title: Ensembles
-- path: Matrices.pdf
-  title: Matrices
-- path: Integration.pdf
-  title: Intégration
-- path: Arithmetique.pdf
-  title: Arithmétique des entiers relatifs
-- path: EspacesVectoriels.pdf
-  title: Espaces vectoriels
-- path: SommesProduits.pdf
-  title: Sommes et produits
-- path: Probabilites.pdf
-  title: Probabilités sur un univers fini
-- path: EquationsDifferentielles.pdf
-  title: Équations différentielles
-- path: Derivabilite.pdf
-  title: Dérivabilité
-- path: IntegralesPrimitives.pdf
-  title: Primitives et intégrales
-- path: EgalitesInegalites.pdf
-  title: Égalités et inégalités
-- path: SystemesLineaires.pdf
-  title: Systèmes linéaires
-- path: Determinants.pdf
-  title: Déterminants
 - path: LimiteContinuite.pdf
   title: Limite et continuité de fonctions
-- path: RelationsBinaires.pdf
-  title: Relations binaires
-- path: DimensionFinie.pdf
-  title: Espaces vectoriels\\de dimension finie
-- path: Complexes.pdf
-  title: Nombres complexes
+- path: EspacesVectoriels.pdf
+  title: Espaces vectoriels
+- path: Probabilites.pdf
+  title: Probabilités sur un univers fini
+- path: SystemesLineaires.pdf
+  title: Systèmes linéaires
+- path: Reels.pdf
+  title: Nombres réels
 - path: Series.pdf
   title: Séries numériques
-- path: Trigonometrie.pdf
-  title: Trigonométrie
-- path: FractionsRationnelles.pdf
-  title: Fractions rationnelles
-- path: Polynomes.pdf
-  title: Polynômes
-- path: ComparaisonFonctions.pdf
-  title: Comparaison de fonctions
 DM:
 - Enoncé:
     path: DM01.pdf
   title: DM01
 Formulaires:
-- path: FormulaireDL.pdf
-  title: Développements limités
-- path: FormulaireInegalites.pdf
-  title: Inégalités
-- path: FormulaireTrigoInverse.pdf
-  title: Trigonométrie inverse
-- path: FormulaireDerivationIntegration.pdf
-  title: Dérivation et intégration
-- path: FormulaireTrigoHyperbolique.pdf
-  title: Trigonométrie hyperbolique
 - path: FormulaireTrigo.pdf
   title: Trigonométrie
+- path: FormulaireDL.pdf
+  title: Développements limités
 - path: FormulaireComparaisonFonctions.pdf
   title: Comparaison de fonctions
+- path: FormulaireDerivationIntegration.pdf
+  title: Dérivation et intégration
+- path: FormulaireInegalites.pdf
+  title: Inégalités
+- path: FormulaireTrigoHyperbolique.pdf
+  title: Trigonométrie hyperbolique
+- path: FormulaireTrigoInverse.pdf
+  title: Trigonométrie inverse
 Interros:
 - path: Interro01.pdf
   title: Interrogation écrite \no1
@@ -104,7 +104,7 @@ TD:
 VieClasse:
 - path: ColloscopeMPSICorot.pdf
   title: Colloscope
-- path: EDT_MPSI_20162017.pdf
-  title: Emploi du temps
 - path: PlanningDS_MPSI_PCSI_EC1.pdf
   title: Planning des DS
+- path: EDT_MPSI_20162017.pdf
+  title: Emploi du temps
