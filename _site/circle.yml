@@ -1,0 +1,5 @@
+test:
+  pre:
+    - chmod +x ./script/cibuild
+  post:
+    - ./script/cibuild
