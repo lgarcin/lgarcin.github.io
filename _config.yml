@@ -89,7 +89,7 @@ defaults:
 
 # Exclude these files from production site
 exclude:
-  # - Gemfile
+  - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
