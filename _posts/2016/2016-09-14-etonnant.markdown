@@ -13,6 +13,8 @@ Je vous laisse méditer sur cette animation. Oui, ça bouge ! A vous de trouver 
 
 <!-- ![Sommes](/images/2016/09/somme.png) -->
 
+<!-- Peut-être le faire avec Trinket -->
+
 <div id="glowscript" class="glowscript">
 <script type="text/javascript" src="/js/jquery-2.1.min.js"></script>
 <script type="text/javascript" src="/js/jquery-ui.custom-2.1.min.js"></script>

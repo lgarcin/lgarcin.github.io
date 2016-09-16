@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Etonnant, non ?</title>
+  <title>Pourquoi se fatiguer ?</title>
 
   <meta name="author" content="Laurent Garcin" />
   
@@ -51,11 +51,11 @@
      
   
   <!-- Facebook OpenGraph tags -->
-  <meta property="og:title" content="Etonnant, non ?" />
+  <meta property="og:title" content="Pourquoi se fatiguer ?" />
   <meta property="og:type" content="website" />
   
   
-  <meta property="og:url" content="https://lgarcin.github.io//2016-09-14-etonnant//" />
+  <meta property="og:url" content="https://lgarcin.github.io//2016-09-16-pourquoi-se-fatiguer//" />
   
   
   
@@ -159,9 +159,9 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <div class="post-heading">
-        <h1>Etonnant, non ?</h1>
+        <h1>Pourquoi se fatiguer ?</h1>
         
-        <span class="post-meta">Posted on September 14, 2016</span>
+        <span class="post-meta">Posted on September 16, 2016</span>
       </div>
      </div>
   </div>
@@ -170,75 +170,20 @@
 <article>
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-	  <p>Vu en cours</p>
+	  <p>Rappelez-vous en cours : calcul de</p>
 
-<script type="math/tex; mode=display">\sum_{1\leq i,j\leq n}\min(i,j)=\sum_{k=1}^nk^2</script>
+<script type="math/tex; mode=display">\sum_{k=0}^n\binom{n}{k}</script>
 
-<p>Je vous laisse méditer sur cette animation. Oui, ça bouge ! A vous de trouver comment.</p>
+<p>Facile. La réponse est <a href="https://www.wolframalpha.com/input/?i=sum+binomial(n,k)+k+from+0+to+n" title="Somme coeff binomiaux">là</a>.</p>
 
-<!-- ![Sommes](/images/2016/09/somme.png) -->
+<p>Plus dur :</p>
 
-<!-- Peut-être le faire avec Trinket -->
+<script type="math/tex; mode=display">\sum_{k=0}^nk\binom{n}{k}</script>
 
-<div id="glowscript" class="glowscript">
-<script type="text/javascript" src="/js/jquery-2.1.min.js"></script>
-<script type="text/javascript" src="/js/jquery-ui.custom-2.1.min.js"></script>
-<script type="text/javascript" src="/js/glow.2.1.min.js"></script>
-<script type="text/javascript" src="/js/RSrun.2.1.min.js"></script>
-<script type="text/javascript"><!--//--><![CDATA[//><!--
-;(function() { var __rt=srequire('streamline/lib/callbacks/runtime').runtime(__filename, false),__func=__rt.__func; function range(start, stop, step) {
-  if ((arguments.length <= 1)) {
-    stop = (start || 0);
-    start = 0; } ;
+<p>La réponse est <a href="https://www.wolframalpha.com/input/?i=sum+k*binomial(n,k)+k+from+0+to+n" title="Somme coeff binomiaux bis">encore là</a>.</p>
 
-  step = (arguments[2] || 1);
-  var length = Math.max(Math.ceil(stop["-"](start)["/"](step)), 0);
-  var idx = 0;
-  var range = new Array(length);
-  while ((idx < length)) {
-    range[idx++] = start;
-    start += step; };
+<p>Maintenant, il commence à devenir <a href="https://www.wolframalpha.com/input/?i=sum+k**2*binomial(2*n,2*k)+k+from+0+to+n" title="Somme coeff binomiaux ter">énervant</a>.</p>
 
-  return range;};
-
-function main(wait) { var version, box, sphere, cylinder, pyramid, cone, helix, ellipsoid, ring, arrow, graph, display, vector, _$rapyd$_Temp, _$rapyd$_print, arange, scene, n, j, i, k; var __frame = { name: "main", line: 16 }; return __func(wait, this, arguments, main, 0, __frame, function __$main() {
-
-    version = ["2.1","glowscript",];
-    Array.prototype["+"] = function(r) { return this.concat(r); };
-    window.__GSlang = "vpython";
-    box = vp_box;
-    sphere = vp_sphere;
-    cylinder = vp_cylinder;
-    pyramid = vp_pyramid;
-    cone = vp_cone;
-    helix = vp_helix;
-    ellipsoid = vp_ellipsoid;
-    ring = vp_ring;
-    arrow = vp_arrow;
-    graph = vp_graph;
-    display = canvas;
-    vector = vec;
-    _$rapyd$_Temp = 0;
-    _$rapyd$_print = GSprint;
-    arange = range;
-    scene = canvas();
-    "3";
-    n = 5;
-    "5";
-    for (k = 0; (k < n); k++) {
-      "6";
-      for (i = k; (i < n); i++) {
-        "7";
-        for (j = k; (j < n); j++) {
-          "8";
-          box({ color: color.hsv_to_rgb(vector(min(i, j)["/"](n), 1, 1)), pos: vector(i["*"](2)["-"](3["*"](n)), j["*"](2)["-"](n), k["*"](2)), size: vector(1, 1, 1) });
-          "9";
-          box({ color: color.hsv_to_rgb(vector(k["/"](n), 1, 1)), pos: vector(i["*"](2)["+"](n), j["*"](2)["-"](n), k["*"](2)), size: vector(1, 1, 1) }); }; }; }; ; });};
-main;
-
-;$(function(){ window.__context = { glowscript_container: $("#glowscript").removeAttr("id") }; main(__func) })})()
-//--><!]]></script>
-</div>
 
 	</div>
   </div>
@@ -249,13 +194,9 @@ main;
     <ul class="pager blog-pager">
       
       <li class="previous">
-        <a href="/2016-09-14-colloscope/" data-toggle="tooltip" data-placement="top" title="Colloscope">&larr; Previous Post</a>
+        <a href="/2016-09-14-etonnant/" data-toggle="tooltip" data-placement="top" title="Etonnant, non ?">&larr; Previous Post</a>
       </li>
       
-      
-      <li class="next">
-        <a href="/2016-09-16-pourquoi-se-fatiguer/" data-toggle="tooltip" data-placement="top" title="Pourquoi se fatiguer ?">Next Post &rarr;</a>
-      </li>
       
     </ul>
   </div>
