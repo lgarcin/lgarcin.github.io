@@ -9,18 +9,15 @@ Vu en cours
 $$\sum_{1\leq i,j\leq n}\min(i,j)=\sum_{k=1}^nk^2$$
 {% endraw %}
 
-Je vous laisse méditer sur cette animation.
+Je vous laisse méditer sur cette animation. Oui, ça bouge ! A vous de trouver comment.
 
 <!-- ![Sommes](/images/2016/09/somme.png) -->
 
 <div id="glowscript" class="glowscript">
-<link type="text/css" href="http://www.glowscript.org/css/redmond/2.1/jquery-ui.custom.css" rel="stylesheet" />
-<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css" />
-<!-- <link type="text/css" href="http://www.glowscript.org/css/ide.css" rel="stylesheet" /> -->
-<script type="text/javascript" src="http://www.glowscript.org/lib/jquery/2.1/jquery.min.js"></script>
-<script type="text/javascript" src="http://www.glowscript.org/lib/jquery/2.1/jquery-ui.custom.min.js"></script>
-<script type="text/javascript" src="http://www.glowscript.org/package/glow.2.1.min.js"></script>
-<script type="text/javascript" src="http://www.glowscript.org/package/RSrun.2.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery-2.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery-ui.custom-2.1.min.js"></script>
+<script type="text/javascript" src="/js/glow.2.1.min.js"></script>
+<script type="text/javascript" src="/js/RSrun.2.1.min.js"></script>
 <script type="text/javascript"><!--//--><![CDATA[//><!--
 ;(function() { var __rt=srequire('streamline/lib/callbacks/runtime').runtime(__filename, false),__func=__rt.__func; function range(start, stop, step) {
   if ((arguments.length <= 1)) {
