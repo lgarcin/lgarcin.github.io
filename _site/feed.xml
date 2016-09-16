@@ -7,15 +7,34 @@
     <atom:link href="https://lgarcin.github.io//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Rentrée</title>
+        <title>Etonnant, non ?</title>
         <description>
           
-          Bonne rentrée à tous
+          Vu en cours
+
+
+
+Je vous laisse méditer sur cette image.
+
+
 
         </description>
-        <pubDate>Tue, 30 Aug 2016 00:00:00 +0100</pubDate>
-        <link>https://lgarcin.github.io//2016-08-30-rentr-e/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2016-08-30-rentr-e/</guid>
+        <pubDate>Wed, 14 Sep 2016 00:00:00 +0100</pubDate>
+        <link>https://lgarcin.github.io//2016-09-14-etonnant/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2016-09-14-etonnant/</guid>
+      </item>
+    
+      <item>
+        <title>Colloscope</title>
+        <description>
+          
+          Dieu bénisse les auteurs de PuLP pour m’avoir permis de générer des colloscopes en cinq minutes.
+
+
+        </description>
+        <pubDate>Wed, 14 Sep 2016 00:00:00 +0100</pubDate>
+        <link>https://lgarcin.github.io//2016-09-14-colloscope/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2016-09-14-colloscope/</guid>
       </item>
     
   </channel>

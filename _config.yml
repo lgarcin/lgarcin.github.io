@@ -55,7 +55,7 @@ url-pretty: "lgarcin.github.io"
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+disqus: "mpsi"
 
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-30206958-3"

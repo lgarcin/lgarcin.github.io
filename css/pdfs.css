@@ -9,6 +9,9 @@
     -moz-transform: scale(1);
     transition: all 200ms ease-in;
     transform: scale(1);
+    border-radius: 10px;
+    border: 1px;
+    border-style: solid;
 }
 .zoom:hover {
     background-color: #aaaaaa;
