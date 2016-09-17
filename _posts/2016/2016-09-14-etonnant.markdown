@@ -5,9 +5,9 @@ published: true
 ---
 
 Vu en cours
-{% raw %}
-$$\sum_{1\leq i,j\leq n}\min(i,j)=\sum_{k=1}^nk^2$$
-{% endraw %}
+<script type="math/tex; mode=display">
+\sum_{1\leq i,j\leq n}\min(i,j)=\sum_{k=1}^nk^2
+</script>
 
 Je vous laisse méditer sur cette animation. Oui, ça bouge ! A vous de trouver comment.
 

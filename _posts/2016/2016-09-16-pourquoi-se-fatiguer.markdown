@@ -5,20 +5,21 @@ published: true
 ---
 
 Rappelez-vous en cours : calcul de
-{% raw %}
-$$\sum_{k=0}^n\binom{n}{k}$$
-{% endraw %}
+<script type="math/tex; mode=display">
+\sum_{k=0}^n\binom{n}{k}
+</script>
 Facile. La réponse est [là][c4b5ec4e].
 
 Plus dur :
-{% raw %}
-$$\sum_{k=0}^nk\binom{n}{k}$$
-{% endraw %}
+<script type="math/tex; mode=display">
+\sum_{k=0}^nk\binom{n}{k}
+</script>
 La réponse est [encore là][46590540].
 
 Maintenant, il commence à devenir [énervant][056be2f7].
 
 On ne peut plus l'[arrêter][4e63ddb2].
+
 
   [c4b5ec4e]: https://www.wolframalpha.com/input/?i=sum+binomial(n,k)+k+from+0+to+n "Somme coeff binomiaux"
   [46590540]: https://www.wolframalpha.com/input/?i=sum+k*binomial(n,k)+k+from+0+to+n "Somme coeff binomiaux bis"
