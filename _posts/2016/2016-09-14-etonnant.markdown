@@ -11,8 +11,6 @@ Vu en cours
 
 Je vous laisse méditer sur cette animation. Oui, ça bouge ! A vous de trouver comment.
 
-<!-- ![Sommes](/images/2016/09/somme.png) -->
-
 <!-- Peut-être le faire avec Trinket -->
 
 <div id="glowscript" class="glowscript">
