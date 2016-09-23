@@ -7,6 +7,17 @@
     <atom:link href="https://lgarcin.github.io//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Pentagone régulier</title>
+        <description>
+          
+          On sait que les images des racines de l’unité forment un polygone régulier. On expose dans ce post la construction du pentagone régulier. Calcul de Il suffit de faire un tour par les complexes. En posant , on a clairement . Or et . Il s’ensuit que est racine du...
+        </description>
+        <pubDate>Fri, 23 Sep 2016 00:00:00 +0100</pubDate>
+        <link>https://lgarcin.github.io//2016-09-23-pentagone-regulier/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2016-09-23-pentagone-regulier/</guid>
+      </item>
+    
+      <item>
         <title>Pourquoi se fatiguer ?</title>
         <description>
           
