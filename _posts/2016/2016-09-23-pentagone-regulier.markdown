@@ -14,7 +14,7 @@ Or <script type="math/tex">\omega+\omega^4=\omega+\frac{1}{\omega}=2\cos\frac{2\
 
 ### Construction d'un repère orthonormé et du cercle trigonométrique.
 
-On se donne deux points <script type="math/tex">A</script> et <script type="math/tex">B</script> du plan et l'on convient que <script type="math/tex">AB=1</script>. On peut alors tracer le cercle <script type="math/tex">\mathscr{C}</script> de centre <script type="math/tex">A</script> passant par <script type="math/tex">B</script>. On note <script type="math/tex">C</script> le point d'intersection du cercle <script type="math/tex">\mathscr{C}</script> et de la droite <script type="math/tex">(AB)</script>. On peut tracer la médiatrice du segment <script type="math/tex">[AC]</script> à l'aide d'un compas. On note <script type="math/tex">D</script> et <script type="math/tex">E</script> les points d'intersection du cercle <script type="math/tex">\mathscr{C}</script> et de cette médiatrice.
+On se donne deux points <script type="math/tex">A</script> et <script type="math/tex">B</script> du plan et l'on convient que <script type="math/tex">AB=1</script>. On peut alors tracer le cercle <script type="math/tex">\mathscr{C}</script> de centre <script type="math/tex">A</script> passant par <script type="math/tex">B</script>. On note <script type="math/tex">C</script> le point d'intersection du cercle <script type="math/tex">\mathscr{C}</script> et de la droite <script type="math/tex">(AB)</script>. On peut tracer la médiatrice du segment <script type="math/tex">[AC]</script> à l'aide d'un compas[^1]. On note <script type="math/tex">D</script> et <script type="math/tex">E</script> les points d'intersection du cercle <script type="math/tex">\mathscr{C}</script> et de cette médiatrice.
 
 ![repere](/images/2016/09/pentagone1.png)
 
@@ -32,11 +32,13 @@ Puisque le cercle <script type="math/tex">\mathscr{C}</script> a pour rayon 1, l
 
 ### Pour aller plus loin
 
-On peut se demander s'il existe des procédés de construction à la règle et au compas d'autres polygones réguliers. Par exemple, une telle construction de l'heptadécagone<sup>[1](#heptadecagone)</sup> régulier a été proposée par le prince des mathématiciens, Carl-Friedrich Gauß, à l'âge de 19 ans. Dans la foulée, ce dernier a prouvé que tout polygone dont le nombre de côtés est le produit d'une puissance de 2 et de nombres premiers de Fermat<sup>[2](#fermat)</sup> distincts est constructible à la règle et au compas. L'heptadécagone régulier est effectivement constructible à la règle et au compas puisque <script type="math/tex">17=2^{2^2}+1</script> est un nombre premier de Fermat. La réciproque de ce résultat est également vraie et a été prouvée ultérieurement par Wantzel.
+On peut se demander s'il existe des procédés de construction à la règle et au compas d'autres polygones réguliers. Par exemple, une telle construction de l'heptadécagone[^2] régulier a été proposée par le prince des mathématiciens, Carl-Friedrich Gauß, à l'âge de 19 ans. Dans la foulée, ce dernier a prouvé que tout polygone dont le nombre de côtés est le produit d'une puissance de 2 et de nombres premiers de Fermat[^3] distincts est constructible à la règle et au compas. L'heptadécagone régulier est effectivement constructible à la règle et au compas puisque <script type="math/tex">17=2^{2^2}+1</script> est un nombre premier de Fermat. La réciproque de ce résultat est également vraie et a été prouvée ultérieurement par Wantzel.
 
-<a name="heptadecagone">1</a> Un heptadécagone est un polygone à 17 côtés.
+[^1]: Revoir son cours de collège.
 
-<a name="fermat">2</a> Un nombre de Fermat est un nombre de la forme <script type="math/tex">2^{2^n}+1</script> où <script type="math/tex">n</script> est un entier naturel. Tous les nombres de Fermat ne sont pas premiers.
+[^2]: Un heptadécagone est un polygone à 17 côtés.
+
+[^3]: Un nombre de Fermat est un nombre de la forme <script type="math/tex">2^{2^n}+1</script> où <script type="math/tex">n</script> est un entier naturel. Tous les nombres de Fermat ne sont pas premiers.
 
 ### Animation Geogebra
 
