@@ -216,15 +216,21 @@ de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps
 <script type="math/tex; mode=display">% <![CDATA[
 \left\{\begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_{n+1})\Delta t\end{aligned}\right. %]]></script>
 
-<p>Méthode d’Euler classique :
-* on calcule les accélérations à partir des positions au temps $t_n$ ;
-* on calcule les positions au temps $t_{n+1}$ à partir des vitesses aux temps $t_n$ ;
-* on calcule les vitesses au temps $t_{n+1}$ à partir des accélérations précédemment calculées.</p>
+<p>Méthode d’Euler classique :</p>
 
-<p>Méthode d’Euler asymétrique :
-* on calcule les positions au temps $t_{n+1}$ à partir des vitesses au temps $t_n$ ;
-* on calcule les accélérations à partir de ces nouvelles positions (celles du temps $t_{n+1}$) ;
-* on calcule les vitesses au temps $t_{n+1}$ à partir de ces accélérations.</p>
+<ul>
+  <li>on calcule les accélérations à partir des positions au temps $t_n$ ;</li>
+  <li>on calcule les positions au temps $t_{n+1}$ à partir des vitesses aux temps $t_n$ ;</li>
+  <li>on calcule les vitesses au temps $t_{n+1}$ à partir des accélérations précédemment calculées.</li>
+</ul>
+
+<p>Méthode d’Euler asymétrique :</p>
+
+<ul>
+  <li>on calcule les positions au temps $t_{n+1}$ à partir des vitesses au temps $t_n$ ;</li>
+  <li>on calcule les accélérations à partir de ces nouvelles positions ;</li>
+  <li>on calcule les vitesses au temps $t_{n+1}$ à partir de ces accélérations.</li>
+</ul>
 
 <h3 id="implmentation">Implémentation</h3>
 

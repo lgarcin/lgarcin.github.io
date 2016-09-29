@@ -36,13 +36,15 @@ Malheureusement, cette méthode n'est pas stable numériquement : l'erreur augme
 $$\left\{\begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_{n+1})\Delta t\end{aligned}\right.$$
 
 Méthode d'Euler classique :
+
 * on calcule les accélérations à partir des positions au temps $t_n$ ;
 * on calcule les positions au temps $t_{n+1}$ à partir des vitesses aux temps $t_n$ ;
 * on calcule les vitesses au temps $t_{n+1}$ à partir des accélérations précédemment calculées.
 
 Méthode d'Euler asymétrique :
+
 * on calcule les positions au temps $t_{n+1}$ à partir des vitesses au temps $t_n$ ;
-* on calcule les accélérations à partir de ces nouvelles positions (celles du temps $t_{n+1}$) ;
+* on calcule les accélérations à partir de ces nouvelles positions ;
 * on calcule les vitesses au temps $t_{n+1}$ à partir de ces accélérations.
 
 ### Implémentation
