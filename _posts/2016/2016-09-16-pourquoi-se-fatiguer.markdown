@@ -5,15 +5,15 @@ published: true
 ---
 
 Rappelez-vous en cours : calcul de
-<script type="math/tex; mode=display">
-\sum_{k=0}^n\binom{n}{k}
-</script>
+
+$$\sum_{k=0}^n\binom{n}{k}$$
+
 Facile. La réponse est [là][c4b5ec4e].
 
 Plus dur :
-<script type="math/tex; mode=display">
-\sum_{k=0}^nk\binom{n}{k}
-</script>
+
+$$\sum_{k=0}^nk\binom{n}{k}$$
+
 La réponse est [encore là][46590540].
 
 Maintenant, il commence à devenir [énervant][056be2f7].

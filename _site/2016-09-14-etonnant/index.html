@@ -9,20 +9,20 @@
   <title>Etonnant, non ?</title>
 
   <meta name="author" content="Laurent Garcin" />
-  
+
   
 
   <link rel="alternate" type="application/rss+xml" title="Maths MPSI Corot - Mathématiques en MPSI au lycée Corot" href="/feed.xml" />
-  
+
  <!-- everything has to be repeated twice because on 2016-02-01 GitHub pages migrated to jekyll 3; see bug https://github.com/jekyll/jekyll/issues/4439 -->
 
-    
+  
   
     
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
     
-      
   
+
   
   
     
@@ -30,8 +30,8 @@
     
       <link rel="stylesheet" href="/css/main.css" />
     
-    
   
+
   
   
     
@@ -41,27 +41,39 @@
     
   
 
-    
-    
   
   
+
   
   
+
   
-     
   
+
   <!-- Facebook OpenGraph tags -->
   <meta property="og:title" content="Etonnant, non ?" />
   <meta property="og:type" content="website" />
-  
+
   
   <meta property="og:url" content="https://lgarcin.github.io//2016-09-14-etonnant//" />
   
-  
+
   
   <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" />
   
-  
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript"
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
 </head>
 
 
@@ -170,10 +182,9 @@
 <article>
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-	  <p>Vu en cours
-<script type="math/tex; mode=display">
-\sum_{1\leq i,j\leq n}\min(i,j)=\sum_{k=1}^nk^2
-</script></p>
+	  <p>Vu en cours</p>
+
+<script type="math/tex; mode=display">\sum_{1\leq i,j\leq n}\min(i,j)=\sum_{k=1}^nk^2</script>
 
 <p>Je vous laisse méditer sur cette animation. Oui, ça bouge ! A vous de trouver comment.</p>
 
@@ -414,8 +425,5 @@ main;
 	<!-- End Google Analytics -->
 
 
-    <script type="text/javascript"
-        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
   </body>
 </html>

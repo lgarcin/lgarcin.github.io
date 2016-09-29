@@ -7,10 +7,21 @@
     <atom:link href="https://lgarcin.github.io//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Méthode d'Euler et gravitation</title>
+        <description>
+          
+          Description du problème On considère un système de corps de masses $m_i$ et de positions $\mathbf{r}_i$ soumis à la gravitation. D’après le principe fondamental de la dynamique Dans le cas où le système est formé de deux corps, on sait résoudre explicitement ce système d’équations différentielles. Dans le cas contraire,...
+        </description>
+        <pubDate>Mon, 26 Sep 2016 00:00:00 +0100</pubDate>
+        <link>https://lgarcin.github.io//2016-09-26-gravitation/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2016-09-26-gravitation/</guid>
+      </item>
+    
+      <item>
         <title>Pentagone régulier</title>
         <description>
           
-          On sait que les images des racines de l’unité forment un polygone régulier. On expose dans ce post la construction du pentagone régulier. Calcul de Il suffit de faire un tour par les complexes. En posant , on a clairement . Or et . Il s’ensuit que est racine du...
+          On sait que les images des racines $n^\text{èmes}$ de l’unité forment un polygone régulier. On expose dans ce post la construction du pentagone régulier. Calcul de $\cos\frac{2\pi}{5}$ Il suffit de faire un tour par les complexes. En posant $\omega=e^\frac{2i\pi}{5}$, on a clairement $1+\omega+\omega^2+\omega^3+\omega^4=\frac{\omega^5-1}{\omega-1}=0$. Or $\omega+\omega^4=\omega+\frac{1}{\omega}=2\cos\frac{2\pi}{5}$ et $\omega^2+\omega^3=\omega^2+\frac{1}{\omega^2}=2\cos\frac{4\pi}{5}=2(2\cos^2\frac{2\pi}{5}-1)$. Il s’ensuit que...
         </description>
         <pubDate>Fri, 23 Sep 2016 00:00:00 +0100</pubDate>
         <link>https://lgarcin.github.io//2016-09-23-pentagone-regulier/</link>
@@ -23,9 +34,13 @@
           
           Rappelez-vous en cours : calcul de
 
+
+
 Facile. La réponse est là.
 
 Plus dur :
+
+
 
 La réponse est encore là.
 
@@ -45,6 +60,7 @@ On ne peut plus l’arrêter.
         <description>
           
           Vu en cours
+
 
 
 Je vous laisse méditer sur cette animation. Oui, ça bouge ! A vous de trouver comment.

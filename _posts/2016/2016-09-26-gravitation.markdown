@@ -1,12 +1,58 @@
 ---
 layout: "post"
 title: "Méthode d'Euler et gravitation"
-published: false
+published: true
 ---
 
-La méthode d'Euler est une méthode bien connue de résolution approchée d'équations différentielles.
+### Description du problème
+
+On considère un système de corps de masses $m_i$ et de positions $\mathbf{r}_i$ soumis à la gravitation. D'après le principe fondamental de la dynamique
+
+$$\ddot{\mathbf{r}}_i=\sum_{j\neq i}\frac{Gm_j}{\|\mathbf{r}_j-\mathbf{r}_j\|^3}(\mathbf{r}_j-\mathbf{r}_i)$$
+
+Dans le cas où le système est formé de deux corps, on sait résoudre explicitement ce système d'équations différentielles. Dans le cas contraire, on est obligé de faire appel à des méthodes de résolution approchée : on emploiera ici la méthode d'Euler qui est une méthode bien connue de résolution numérique d'équations différentielles par discrétisation du temps.
+
+### La méthode d'Euler
+
+On se contente d'exposer cette méthode dans le cadre des équations différentielles autonomes puisque les équations différentielles de notre problème sont bien de ce type : l'accélération dépend uniquement de la position et pas du temps.
+
+Pour résoudre de manière approchée le système de Cauchy
+
+$$\left\{\begin{aligned}y'&=f(y)\\y(t_0)&=y_0\end{aligned}\right.$$
+
+on fixe un intervalle
+de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps $t_n=t_0+n\Delta t$ en utilisant la relation de récurrence
+
+$$y_{n+1}=y_n+f(y_n)\Delta t$$
+
+Evidemment, l'erreur d'approximation augmente avec $n$ puisqu'on utilise à chaque fois une valeur approchée pour calculer l'approximation suivante.
+
+En posant $\mathbf{R}=(\mathbf{r}_i)_i$, le système différentiel de notre problème peut s'écrire sous la forme $\ddot{\mathbf{R}}=f(\mathbf{R})$ et on se ramène classiquement à une équation différentielle d'ordre 1 en posant $y=(\mathbf{R},\dot{\mathbf{R}})$. La méthode d'Euler décrite précédemment nous amène alors à calculer des valeurs approchées de $\mathbf{R}$ en utilisant les relations de récurrence
+
+$$\left\{\begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_n)\Delta t\end{aligned}\right.$$
+
+Malheureusement, cette méthode n'est pas stable numériquement : l'erreur augmente très rapidement avec $n$. On utilise donc une variante de la méthode d'Euler appelée méthode d'Euler *asymétrique*. Cette méthode est adaptée aux systèmes conservatifs comme celui que nous étudions (la force gravitationnelle dérive d'un potentiel). Le schéma de récurrence est alors le suivant.
+
+$$\left\{\begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_{n+1})\Delta t\end{aligned}\right.$$
+
+Méthode d'Euler classique :
+* on calcule les accélérations à partir des positions au temps $t_n$ ;
+* on calcule les positions au temps $t_{n+1}$ à partir des vitesses aux temps $t_n$ ;
+* on calcule les vitesses au temps $t_{n+1}$ à partir des accélérations précédemment calculées.
+
+Méthode d'Euler asymétrique :
+* on calcule les positions au temps $t_{n+1}$ à partir des vitesses au temps $t_n$ ;
+* on calcule les accélérations à partir de ces nouvelles positions (celles du temps $t_{n+1}$) ;
+* on calcule les vitesses au temps $t_{n+1}$ à partir de ces accélérations.
+
+### Implémentation
+
+On utilise la bibliothèque [VPython](http://vpython.org/) qui permet d'animer des scènes 3D.
+
 
 ### Modélisation du système solaire
+
+Grâce à Wikipédia, on récupère les [paramètres orbitaux](https://fr.wikipedia.org/wiki/M%C3%A9canique_spatiale#Param.C3.A8tres_orbitaux) des différentes planètes permettant de placer ces dernières par rapport au Soleil. On fait démarrer la simulation avec toutes les planètes à leurs périhélies, ce qui est une configuration exceptionelle mais qui a bien dû se produire une fois depuis la création du système solaire.
 
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#systeme">Code Python</button>
 
@@ -27,12 +73,9 @@ def init(perihelie,masse,vitesse,rayon,couleur,inclinaison,noeud,argument):
     s.vitesse=v
     return s
 
-scene=display()
-
 G=6.7e-11
 
 astres=[]
-
 soleil=sphere(pos=vector(0,0,0),radius=log10(7e8)*1e9,color=color.yellow)
 soleil.masse=2.0e30
 soleil.vitesse=vector(0,0,0)
@@ -70,8 +113,13 @@ while 1:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Aher_TlxUcw" frameborder="0" allowfullscreen></iframe>
 
+A titre de comparaison, la vidéo suivante montre les trajectoires obtenues en employant la méthode d'Euler classique et non la méthode d'Euler asymétrique.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y5Ej9bySPS8" frameborder="0" allowfullscreen></iframe>
 
 ### Création d'un système solaire
+
+On place un grand nombre de corps avec des positions et des vitesses aléatoires et on les soumet à la force de gravitation. On considère que tous les chocs entre ces corps sont [parfaitement inélastiques](https://fr.wikipedia.org/wiki/Collision_parfaitement_in%C3%A9lastique) : les astres entrant en collision fusionnent alors pour donner une nouvelle planète tout en conservant la quantité de mouvement totale.
 
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#formation">Code Python</button>
 
@@ -148,3 +196,5 @@ while True:
 {: .collapse #formation }
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yvYEz-txv3A" frameborder="0" allowfullscreen></iframe>
+
+ On assiste à la formation d'un "soleil" autour duquel gravitent des "planètes".
