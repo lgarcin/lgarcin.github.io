@@ -234,7 +234,7 @@ de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps
 
 <h3 id="implmentation">Implémentation</h3>
 
-<p>On utilise la bibliothèque <a href="http://vpython.org/">VPython</a> qui permet d’animer des scènes 3D.</p>
+<p>On utilise la bibliothèque <a href="http://vpython.org/">VPython</a> qui permet d’animer des scènes 3D. La dernière version de cette bibliothèque ne peut être utilisée que dans une application <a href="http://jupyter.org/">notebook Jupyter</a>.</p>
 
 <h3 id="modlisation-du-systme-solaire">Modélisation du système solaire</h3>
 
@@ -284,23 +284,34 @@ de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps
 
 <span class="n">dt</span><span class="o">=</span><span class="mf">1e4</span>
 
-<span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
     <span class="n">rate</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">astres</span><span class="p">:</span>
         <span class="n">p</span><span class="o">.</span><span class="n">pos</span><span class="o">+=</span><span class="n">p</span><span class="o">.</span><span class="n">vitesse</span><span class="o">*</span><span class="n">dt</span>
-        <span class="n">p</span><span class="o">.</span><span class="n">acceleration</span><span class="o">=</span><span class="n">vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">astres</span><span class="p">:</span>
+        <span class="n">acceleration</span><span class="o">=</span><span class="n">vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="n">astres</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">q</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">p</span><span class="p">:</span>
-                <span class="n">p</span><span class="o">.</span><span class="n">acceleration</span><span class="o">+=</span><span class="n">G</span><span class="o">*</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">pos</span><span class="o">-</span><span class="n">p</span><span class="o">.</span><span class="n">pos</span><span class="p">)</span><span class="o">*</span><span class="n">q</span><span class="o">.</span><span class="n">masse</span><span class="o">/</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">pos</span><span class="o">-</span><span class="n">p</span><span class="o">.</span><span class="n">pos</span><span class="p">)</span><span class="o">.</span><span class="n">mag</span><span class="o">**</span><span class="mi">3</span>
-        <span class="n">p</span><span class="o">.</span><span class="n">vitesse</span><span class="o">+=</span><span class="n">p</span><span class="o">.</span><span class="n">acceleration</span><span class="o">*</span><span class="n">dt</span>
+                <span class="n">acceleration</span><span class="o">+=</span><span class="n">G</span><span class="o">*</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">pos</span><span class="o">-</span><span class="n">p</span><span class="o">.</span><span class="n">pos</span><span class="p">)</span><span class="o">*</span><span class="n">q</span><span class="o">.</span><span class="n">masse</span><span class="o">/</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">pos</span><span class="o">-</span><span class="n">p</span><span class="o">.</span><span class="n">pos</span><span class="p">)</span><span class="o">.</span><span class="n">mag</span><span class="o">**</span><span class="mi">3</span>
+        <span class="n">p</span><span class="o">.</span><span class="n">vitesse</span><span class="o">+=</span><span class="n">acceleration</span><span class="o">*</span><span class="n">dt</span>
 </code></pre>
 </div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Aher_TlxUcw" frameborder="0" allowfullscreen=""></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Aher_TlxUcw" frameborder="0" allowfullscreen></iframe> -->
+
+<video controls="">
+<source src="/images/2016/10/SystemeSolaire.mp4" type="video/mp4" />
+<source src="/images/2016/10/SystemeSolaire.webm" type="video/webm" />
+</video>
 
 <p>A titre de comparaison, la vidéo suivante montre les trajectoires obtenues en employant la méthode d’Euler classique et non la méthode d’Euler asymétrique.</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y5Ej9bySPS8" frameborder="0" allowfullscreen=""></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/y5Ej9bySPS8" frameborder="0" allowfullscreen></iframe> -->
+
+<video controls="">
+<source src="/images/2016/10/Foirage.mp4" type="video/mp4" />
+<source src="/images/2016/10/Foirage.webm" type="video/webm" />
+</video>
 
 <h3 id="cration-dun-systme-solaire">Création d’un système solaire</h3>
 
@@ -352,7 +363,7 @@ de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps
     <span class="n">rate</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
     <span class="n">l</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">ballList</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">ballList</span><span class="p">:</span>
-        <span class="n">b</span><span class="o">.</span><span class="n">pos</span> <span class="o">+=</span> <span class="n">vector</span><span class="p">(</span><span class="n">b</span><span class="o">.</span><span class="n">velocity</span><span class="p">)</span> <span class="o">*</span> <span class="n">dt</span>
+        <span class="n">b</span><span class="o">.</span><span class="n">pos</span> <span class="o">+=</span> <span class="n">b</span><span class="o">.</span><span class="n">velocity</span> <span class="o">*</span> <span class="n">dt</span>
     <span class="n">collisions</span> <span class="o">=</span> <span class="p">[</span><span class="nb">set</span><span class="p">([</span><span class="n">b</span><span class="p">])</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">ballList</span><span class="p">]</span>
     <span class="n">copyList</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">ballList</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">b1</span> <span class="ow">in</span> <span class="n">ballList</span><span class="p">:</span>

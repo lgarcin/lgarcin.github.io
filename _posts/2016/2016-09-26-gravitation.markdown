@@ -49,7 +49,7 @@ Méthode d'Euler asymétrique :
 
 ### Implémentation
 
-On utilise la bibliothèque [VPython](http://vpython.org/) qui permet d'animer des scènes 3D.
+On utilise la bibliothèque [VPython](http://vpython.org/) qui permet d'animer des scènes 3D. La dernière version de cette bibliothèque ne peut être utilisée que dans une application [notebook Jupyter](http://jupyter.org/).
 
 
 ### Modélisation du système solaire
@@ -101,23 +101,34 @@ astres.append(neptune)
 
 dt=1e4
 
-while 1:
+while True:
     rate(100)
     for p in astres:
         p.pos+=p.vitesse*dt
-        p.acceleration=vector(0,0,0)
+    for p in astres:
+        acceleration=vector(0,0,0)
         for q in astres:
             if q is not p:
-                p.acceleration+=G*(q.pos-p.pos)*q.masse/(q.pos-p.pos).mag**3
-        p.vitesse+=p.acceleration*dt
+                acceleration+=G*(q.pos-p.pos)*q.masse/(q.pos-p.pos).mag**3
+        p.vitesse+=acceleration*dt
 ```
 {: .collapse #systeme }
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Aher_TlxUcw" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Aher_TlxUcw" frameborder="0" allowfullscreen></iframe> -->
+
+<video controls>
+<source src="/images/2016/10/SystemeSolaire.mp4" type="video/mp4">
+<source src="/images/2016/10/SystemeSolaire.webm" type="video/webm">
+</video>
 
 A titre de comparaison, la vidéo suivante montre les trajectoires obtenues en employant la méthode d'Euler classique et non la méthode d'Euler asymétrique.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y5Ej9bySPS8" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/y5Ej9bySPS8" frameborder="0" allowfullscreen></iframe> -->
+
+<video controls>
+<source src="/images/2016/10/Foirage.mp4" type="video/mp4">
+<source src="/images/2016/10/Foirage.webm" type="video/webm">
+</video>
 
 ### Création d'un système solaire
 
@@ -170,7 +181,7 @@ while True:
     rate(100)
     l = len(ballList)
     for b in ballList:
-        b.pos += vector(b.velocity) * dt
+        b.pos += b.velocity * dt
     collisions = [set([b]) for b in ballList]
     copyList = list(ballList)
     for b1 in ballList:
