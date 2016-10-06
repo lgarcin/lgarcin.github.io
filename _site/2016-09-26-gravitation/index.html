@@ -202,7 +202,7 @@
 
 <h3 id="la-mthode-deuler">La méthode d’Euler</h3>
 
-<p>On se contente d’exposer cette méthode dans le cadre des équations différentielles autonomes puisque les équations différentielles de notre problème sont bien de ce type : l’accélération dépend uniquement de la position et pas du temps.</p>
+<p>On se contente d’exposer cette méthode dans le cadre des équations différentielles autonomes puisque celles de notre problème sont bien de ce type : l’accélération dépend uniquement de la position et pas du temps.</p>
 
 <p>Pour résoudre de manière approchée le système de Cauchy</p>
 
@@ -322,8 +322,6 @@ de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps
 
 <p>A titre de comparaison, la vidéo suivante montre les trajectoires obtenues en employant la méthode d’Euler classique et non la méthode d’Euler asymétrique.</p>
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/y5Ej9bySPS8" frameborder="0" allowfullscreen></iframe> -->
-
 <video controls="">
 <source src="/images/2016/10/Foirage.mp4" type="video/mp4" />
 <source src="/images/2016/10/Foirage.webm" type="video/webm" />
@@ -363,7 +361,7 @@ de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps
 <span class="n">ballList</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">n</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="n">G</span> <span class="o">=</span> <span class="mi">100</span>
-<span class="n">dt</span> <span class="o">=</span> <span class="o">.</span><span class="mo">01</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="o">.</span><span class="mo">005</span>
 <span class="n">dpos</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">dvel</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">rad</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span>
@@ -382,7 +380,7 @@ de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps
     <span class="n">ballList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ball</span><span class="p">)</span>
 
 <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-    <span class="n">rate</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">rate</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
     <span class="n">l</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">ballList</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">ballList</span><span class="p">:</span>
         <span class="n">b</span><span class="o">.</span><span class="n">pos</span> <span class="o">+=</span> <span class="n">b</span><span class="o">.</span><span class="n">velocity</span> <span class="o">*</span> <span class="n">dt</span>
@@ -411,8 +409,6 @@ de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps
                 <span class="n">b</span><span class="o">.</span><span class="n">clear_trail</span><span class="p">()</span>
 </code></pre>
 </div>
-
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/yvYEz-txv3A" frameborder="0" allowfullscreen></iframe> -->
 
 <video controls="">
 <source src="/images/2016/10/Gravity.mp4" type="video/mp4" />

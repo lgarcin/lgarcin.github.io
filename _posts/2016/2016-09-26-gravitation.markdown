@@ -25,7 +25,7 @@ L'énergie totale du système est $E=E_p+E_c$.
 
 ### La méthode d'Euler
 
-On se contente d'exposer cette méthode dans le cadre des équations différentielles autonomes puisque les équations différentielles de notre problème sont bien de ce type : l'accélération dépend uniquement de la position et pas du temps.
+On se contente d'exposer cette méthode dans le cadre des équations différentielles autonomes puisque celles de notre problème sont bien de ce type : l'accélération dépend uniquement de la position et pas du temps.
 
 Pour résoudre de manière approchée le système de Cauchy
 
@@ -145,8 +145,6 @@ Le calcul de l'énergie montre que tout se passe bien : l'énergie totale du sys
 
 A titre de comparaison, la vidéo suivante montre les trajectoires obtenues en employant la méthode d'Euler classique et non la méthode d'Euler asymétrique.
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/y5Ej9bySPS8" frameborder="0" allowfullscreen></iframe> -->
-
 <video controls>
 <source src="/images/2016/10/Foirage.mp4" type="video/mp4">
 <source src="/images/2016/10/Foirage.webm" type="video/webm">
@@ -192,7 +190,7 @@ def merge(l):
 ballList = []
 n = 100
 G = 100
-dt = .01
+dt = .005
 dpos = 10
 dvel = 5
 rad = .5
@@ -211,7 +209,7 @@ for i in range(n):
     ballList.append(ball)
 
 while True:
-    rate(100)
+    rate(50)
     l = len(ballList)
     for b in ballList:
         b.pos += b.velocity * dt
@@ -240,8 +238,6 @@ while True:
                 b.clear_trail()
 ```
 {: .collapse #formation }
-
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/yvYEz-txv3A" frameborder="0" allowfullscreen></iframe> -->
 
 <video controls>
 <source src="/images/2016/10/Gravity.mp4" type="video/mp4">

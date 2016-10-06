@@ -1,0 +1,54 @@
+---
+layout: "post"
+title: "Histoires de rationnels"
+published: false
+---
+
+### Médiant de deux fractions
+
+On appelle *médiant* de deux fractions d'entiers naturels $\frac{a}{b}$ et $\frac{c}{d}$ la fraction $\frac{a}{b}\oplus\frac{c}{d}=\frac{a+c}{b+d}$.
+
+On peut faire les deux remarques suivantes :
+
+* Si $\frac{a}{b}\lt\frac{c}{d}$, alors $\frac{a}{b}\lt\frac{a}{b}\oplus\frac{c}{d}\lt\frac{c}{d}$. En effet, $(a+c)b-(b+d)a=bc-ad\gt0$ et $c(b+d)-d(a+c)=bc-ad\gt0$.
+
+* De plus, si $ad-bc=1$, alors $(a+c)b-(b+d)a=1$ et $c(b+d)-d(a+c)=1$;
+
+### Calcul de suites finies
+
+On construit une suite de suites finies de rationnels par récurrence. On pose $u_0=\left(\frac{0}{1},\frac{1}{0}\right)$ et une fois une suite finie $u_n$ construite, on construit la suite $u_{n+1}$ en intercalant entre deux fractions consécutives de la suite $u_n$ le médiant de ces deux fractions[^1]. On trouve donc successivement
+
+$$
+\begin{align*}
+u_0&=\left(\frac{0}{1},\frac{1}{0}\right)\\
+u_1&=\left(\frac{0}{1},\frac{1}{1},\frac{1}{0}\right)\\
+u_2&=\left(\frac{0}{1},\frac{1}{2},\frac{1}{1},\frac{2}{1},\frac{1}{0}\right)\\
+u_3&=\left(\frac{0}{1},\frac{1}{3},\frac{1}{2},\frac{2}{3},\frac{1}{1},\frac{3}{2},\frac{2}{1},\frac{3}{1},\frac{1}{0}\right)\\
+u_4&=\left(\frac{0}{1},\frac{1}{4},\frac{1}{3},\frac{2}{5},\frac{1}{2},\frac{3}{5},\frac{2}{3},\frac{3}{4},\frac{1}{1},\frac{4}{3},\frac{3}{2},\frac{5}{3},\frac{2}{1},\frac{5}{2},\frac{3}{1},\frac{4}{1},\frac{1}{0}\right)
+\end{align*}
+$$
+
+Le programme suivant permet de calculer les termes successifs de la suite $(u_n)$. Les rationnels sont représentés par des couples d'entiers naturels.
+
+<iframe src="https://trinket.io/embed/python3/3fba0de1ac" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+On peut remarquer que chacune des suites $u_n$ est strictement croissante. Ceci est tout à fait normal puisqu'on a vu que le médiant de deux fractions distinctes était strictement compris entre ces deux fractions. On prouve alors aisément par récurrence que chacune des suites $u_n$ est strictement croissante.
+
+On remarque également que toutes les fractions apparaissant dans chaque suite $u_n$ sont irréductibles. Puisqu'une
+
+### Construction de l'arbre de Stern-Brocot
+
+On peut également représenter les fractions apparaissant dans la suite $(u_n)$ sous forme d'un arbre binaire. On place au niveau $0$ les fractions $\frac{0}{1}$ et $\frac{1}{0}$ et au niveau $1$ la fraction $\frac{1}{1}$ en tant que fils commun de ces deux fractions. On place au niveau $n+1$ de l'arbre par ordre croissant les fractions apparues dans la suite $u_{n+1}$ alors qu'elles ne figuraient pas dans la suite $u_n$ et on leur donne pour ancêtre la fraction du niveau $n$ dont on s'est servi pour la calculer en tant que médiant. L'arbre ainsi construit est appelé arbre de Stern-Brocot.
+
+Par exemple, la fraction $\frac{3}{5}$ apparaît au niveau $4$ et a été calculée comme médiant des fractions $\frac{1}{2}$ et $\frac{2}{3}$. Comme $\frac{2}{3}$ est apparue au niveau $3$ tandis que $\frac{1}{2}$ est apparue au niveau $2$, on décrète que $\frac{3}{5}$ est le fils de $\frac{2}{3}$.
+
+Voici par exemple l'arbre de Stern-Brocot construit jusqu'au niveau $6$.
+![Arbre de Stern-Brocot](/images/2016/10/stern.png)
+
+Il est alors facile de déterminer les fils gauche et droit d'un noeud de l'arbre connaissant ses ancêtres. Pour déterminer le fils gauche, on calcul le médiant du noeud considéré et de son premier ancêtre qui lui est inférieur tandis que pour déterminer le fils droit, on calcule le médiant du noeud considéré et du premier ancêtre qui lui est supérieur. Par exemple, le premier ancêtre de $\frac{5}{8}$ qui lui est inférieur est $\frac{3}{5}$ et son premier ancêtre qui lui est supérieur est $\frac{2}{3}$ donc les fils gauche et droit de $\frac{5}{8}$ sont respectivement $\frac{5}{8}\oplus\frac{3}{5}=\frac{8}{13}$ et $\frac{5}{8}\oplus\frac{2}{3}=\frac{7}{11}$. De même, les fils gauche et droit de $\frac{5}{4}$ sont $\frac{5}{4}\oplus\frac{1}{1}=\frac{6}{5}$ et $\frac{5}{4}\oplus\frac{4}{3}=\frac{9}{7}$.
+
+
+
+fonction fusc
+
+[^1]: Petit exercice facile : calculer le nombre de termes de $u_n$ en fonction de $n$.
