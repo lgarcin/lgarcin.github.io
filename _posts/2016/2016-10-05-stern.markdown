@@ -4,19 +4,33 @@ title: "Histoires de rationnels"
 published: false
 ---
 
-### Médiant de deux fractions
+Toutes les fractions sont des fractions d'entiers naturels. Baratin sur fraction $1/0$.
 
-On appelle *médiant* de deux fractions d'entiers naturels $\frac{a}{b}$ et $\frac{c}{d}$ la fraction $\frac{a}{b}\oplus\frac{c}{d}=\frac{a+c}{b+d}$.
+### Médiante de deux fractions
 
-On peut faire les deux remarques suivantes :
+On appelle *médiante* de deux fractions $\frac{a}{b}$ et $\frac{c}{d}$ la fraction $\frac{a}{b}\oplus\frac{c}{d}=\frac{a+c}{b+d}$.
 
-* Si $\frac{a}{b}\lt\frac{c}{d}$, alors $\frac{a}{b}\lt\frac{a}{b}\oplus\frac{c}{d}\lt\frac{c}{d}$. En effet, $(a+c)b-(b+d)a=bc-ad\gt0$ et $c(b+d)-d(a+c)=bc-ad\gt0$.
+Pour deux fractions $r_1=\frac{a}{b}$ et $r_2=\frac{c}{d}$, on pose $\Delta(r_1,r_2)=bc-ad$
 
-* De plus, si $ad-bc=1$, alors $(a+c)b-(b+d)a=1$ et $c(b+d)-d(a+c)=1$;
+On énonce quelques résultats qui nous suivront par la suite.
+
+* Si $r_1$ et $r_2$ sont deux fractions, $r_1\lt r_2$ si et seulement si $\Delta(r_1,r_2)\gt0$ et $r_1=r_2$ si et seulement si $\Delta(r_1,r_2)=0$.
+
+* Si $r_1$ et $r_2$ sont deux fractions, $\Delta(r_1,r_1\oplus r_2)=\Delta(r_1\oplus r_2,r_2)$.
+
+* <a name="ordre"></a> Si $r_1$ et $r_2$ sont deux fractions tels que $r_1\lt r_2$, alors $r_1\lt r_1\oplus r_2\lt r_2$.
+
+* Si $r$ est une fraction, alors $r\oplus r=r$.
+
+* <a name="encadre"></a>Si $r$ est une fraction non nulle et non infinie, alors il existe un unique couple de fractions $\rho$ et $\sigma$ tels que $\rho\lt r\lt\sigma$ et $\Delta(\rho,\sigma)=1$.
+
+
+$\frac{p}{q}$ est une fraction d'entiers non nuls, il existe un unique couple de fractions $\frac{a}{b}$ et $\frac{c}{d}$ tels que $bc-ad=1$ et $\frac{p}{q}=\frac{a}{b}\oplus\frac{c}{d}$. Supposons qu'un tel couple existe. Alors on a vu précédemment que $bp-aq=1$ et $cq-dp=1$.
+
 
 ### Calcul de suites finies
 
-On construit une suite de suites finies de rationnels par récurrence. On pose $u_0=\left(\frac{0}{1},\frac{1}{0}\right)$ et une fois une suite finie $u_n$ construite, on construit la suite $u_{n+1}$ en intercalant entre deux fractions consécutives de la suite $u_n$ le médiant de ces deux fractions[^1]. On trouve donc successivement
+On construit une suite de suites finies de rationnels par récurrence. On pose $u_0=\left(\frac{0}{1},\frac{1}{0}\right)$ et une fois une suite finie $u_n$ construite, on construit la suite $u_{n+1}$ en intercalant entre deux fractions consécutives de la suite $u_n$ la médiante de ces deux fractions[^1]. On trouve donc successivement
 
 $$
 \begin{align*}
@@ -32,22 +46,35 @@ Le programme suivant permet de calculer les termes successifs de la suite $(u_n)
 
 <iframe src="https://trinket.io/embed/python3/3fba0de1ac" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-On peut remarquer que chacune des suites $u_n$ est strictement croissante. Ceci est tout à fait normal puisqu'on a vu que le médiant de deux fractions distinctes était strictement compris entre ces deux fractions. On prouve alors aisément par récurrence que chacune des suites $u_n$ est strictement croissante.
+On peut remarquer que chacune des suites $u_n$ est strictement croissante. Cela se prouve par récurrence sur $n$ à l'aide du [premier résultat](#ordre) sur la médiante.
 
-On remarque également que toutes les fractions apparaissant dans chaque suite $u_n$ sont irréductibles. Puisqu'une
+Il est aussi remarquable que toutes les fractions apparaissant dans chaque suite $u_n$ sont irréductibles. Le [second résultat](#irreductible) sur la médiante permet en effet de prouver par récurrence sur $n$ que si $\frac{a}{b}$ et $\frac{c}{d}$ sont deux fractions consécutives d'une suite $u_n$, alors $ad-bc=1$. Le théorème de Bézout assure alors que toutes les fractions des suites $u_n$ sont irréductibles.
+
+On remarque également que dans une suite $u_n$, une fraction est toujours la médiante des deux fractions l'encadrant. Par exemple, dans la suite $u_4$, $\frac{2}{5}=\frac{1}{3}\oplus\frac{1}{2}$ mais également, $\frac{4}{3}\oplus\frac{5}{3}=\frac{9}{6}=\frac{3}{2}$. On raisonne par récurrence. La propriété à montrer est évidemment vraie pour la suite $u_1$. Supposons qu'elle soit également vraie pour une suite $u_n$ où $n\geq1$. On se donne alors trois fractions successives $r_1$, $r_2$ et $r_3$ de la suite $u_{n+1}$. Si $r_2$ n'apparaissait pas dans la suite $u_n$, alors $r_2=r_1\oplus r_3$ par définition de la suite $u_{n+1}$. Par contre, si $u_2$ apparaissait déjà dans la suite $u_n$, en notant $\rho$ et $\rho'$ les fractions encadrant $r_2$ dans la suite $u_n$, on a $r_2=\rho\oplus\rho'$ par hypothèse de récurrence  ainsi que $r_1=\rho\oplus r_2$ et $r_3=r_2\oplus\rho'$ par définition de $u_{n+1}$. Par commutativité et associativité de $\oplus$, on obtient donc
+
+$$
+r_1\oplus r_3=\rho\oplus r_2\oplus r_2\oplus\rho'=\rho\oplus r_2\oplus\rho'=r_2\oplus\rho\oplus\rho'=r_2\oplus r_2=r_2
+$$
+
+Lorsqu'une fraction $\frac{p}{q}$ (avec $p$ et $q$ non nuls) apparaît pour la première fois dans une suite $u_n$, on peut retrouver les deux fractions qui l'encadrent. En notant $\frac{a}{b}$ et $\frac{c}{d}$ ces deux fractions, on doit avoir $\frac{p}{q}=\frac{a}{b}\oplus\frac{c}{d}$. De plus, on a nécessairement $b\geq1$ et $c\geq1$ donc $a=p-c\leq p-1$ et $d=q-b\leq q-1$. D'après ce qui précède, on a également $bp-aq=1$ et $cq-dp=1$. Pour déterminer la fraction $\frac{a}{b}$, il suffit de déterminer un couple $(u,v)$ d'entiers relatifs tels que $vp-uq=1$ par l'algorithme d'Euclide éténdu. On détermine ensuite l'unique entier $k$ tel que $0\leq u+kp\leq p-1$ puis on pose $a=u+kp$ et $b=v+kq$. On procède de même pour trouver $\frac{c}{d}$. Par exemple, pour trouver les fractions encadrant $\frac{5}{7}$ lorque cette fraction apparaît pour la première fois, on remarque que d'une part, $3\times5-2\times7=1$ et $2\leq5-1$ et que d'autre part $3\times7-4\times5=1$ et $4\leq7-1$. Les fractions recherchées sont donc $\frac{2}{3}$ et $\frac{3}{4}$.
+
+
+
+Ce qui est plus surprenant est que tout rationnel positif figure à partir d'un certaing rang dans les suites $u_n$. Supposons que ce ne soit pas le cas et donnons-nous une fraction $\frac{p}{q}$ n'apparaisse dans aucune des suites $u_n$ telle que $p+q$ soit minimal. On peut alors construire des fractions $\frac{a}{b}$ et $\frac{c}{d}$ telle que $\frac{a}{b}\oplus\frac{c}{d}=\frac{p}{q}$ et $bc-ad=1$. On a donc nécessairement $b\geq1$ et $c\geq1$. Comme $(a+b)+(c+d)=p+q$, on en déduit que $a+b\lt p+q$ et $c+d\lt p+q$. Par minimalité de $p+q$, les fractions $\frac{a}{b}$ et $\frac{c}{d}$ figurent chacun dans une des suites $u_n$. Puisque $bc-ad=1$, ces deux suites sont consécutives dans une même suite $u_n$ (A VOIR). Par conséquent, leur médiante, à savoir $\frac{p}{q}$ figure dans $u_{n+1}$.
 
 ### Construction de l'arbre de Stern-Brocot
 
-On peut également représenter les fractions apparaissant dans la suite $(u_n)$ sous forme d'un arbre binaire. On place au niveau $0$ les fractions $\frac{0}{1}$ et $\frac{1}{0}$ et au niveau $1$ la fraction $\frac{1}{1}$ en tant que fils commun de ces deux fractions. On place au niveau $n+1$ de l'arbre par ordre croissant les fractions apparues dans la suite $u_{n+1}$ alors qu'elles ne figuraient pas dans la suite $u_n$ et on leur donne pour ancêtre la fraction du niveau $n$ dont on s'est servi pour la calculer en tant que médiant. L'arbre ainsi construit est appelé arbre de Stern-Brocot.
+On peut également représenter les fractions apparaissant dans la suite $(u_n)$ sous forme d'un arbre binaire. On place au niveau 0 les fractions $\frac{0}{1}$ et $\frac{1}{0}$ et au niveau 1 la fraction $\frac{1}{1}$ en tant que fils commun de ces deux fractions. On place au niveau $n+1$ de l'arbre par ordre croissant les fractions apparues dans la suite $u_{n+1}$ alors qu'elles ne figuraient pas dans la suite $u_n$ et on leur donne pour ancêtre la fraction du niveau $n$ dont on s'est servi pour la calculer en tant que médiante. L'arbre ainsi construit est appelé arbre de Stern-Brocot.
 
-Par exemple, la fraction $\frac{3}{5}$ apparaît au niveau $4$ et a été calculée comme médiant des fractions $\frac{1}{2}$ et $\frac{2}{3}$. Comme $\frac{2}{3}$ est apparue au niveau $3$ tandis que $\frac{1}{2}$ est apparue au niveau $2$, on décrète que $\frac{3}{5}$ est le fils de $\frac{2}{3}$.
+Par exemple, la fraction $\frac{3}{5}$ apparaît au niveau 4 et a été calculée comme médiante des fractions $\frac{1}{2}$ et $\frac{2}{3}$. Comme $\frac{2}{3}$ est apparue au niveau 3 tandis que $\frac{1}{2}$ est apparue au niveau 2, on décrète que $\frac{3}{5}$ est le fils de $\frac{2}{3}$.
 
 Voici par exemple l'arbre de Stern-Brocot construit jusqu'au niveau $6$.
+
 ![Arbre de Stern-Brocot](/images/2016/10/stern.png)
 
-Il est alors facile de déterminer les fils gauche et droit d'un noeud de l'arbre connaissant ses ancêtres. Pour déterminer le fils gauche, on calcul le médiant du noeud considéré et de son premier ancêtre qui lui est inférieur tandis que pour déterminer le fils droit, on calcule le médiant du noeud considéré et du premier ancêtre qui lui est supérieur. Par exemple, le premier ancêtre de $\frac{5}{8}$ qui lui est inférieur est $\frac{3}{5}$ et son premier ancêtre qui lui est supérieur est $\frac{2}{3}$ donc les fils gauche et droit de $\frac{5}{8}$ sont respectivement $\frac{5}{8}\oplus\frac{3}{5}=\frac{8}{13}$ et $\frac{5}{8}\oplus\frac{2}{3}=\frac{7}{11}$. De même, les fils gauche et droit de $\frac{5}{4}$ sont $\frac{5}{4}\oplus\frac{1}{1}=\frac{6}{5}$ et $\frac{5}{4}\oplus\frac{4}{3}=\frac{9}{7}$.
+Il est alors facile de déterminer les fils gauche et droit d'un noeud de l'arbre connaissant ses ancêtres. Pour déterminer le fils gauche, on calcule la médiante du noeud considéré et de son premier ancêtre qui lui est inférieur tandis que pour déterminer le fils droit, on calcule la médiante du noeud considéré et du premier ancêtre qui lui est supérieur. Par exemple, le premier ancêtre de $\frac{5}{8}$ qui lui est inférieur est $\frac{3}{5}$ et son premier ancêtre qui lui est supérieur est $\frac{2}{3}$ donc les fils gauche et droit de $\frac{5}{8}$ sont respectivement $\frac{5}{8}\oplus\frac{3}{5}=\frac{8}{13}$ et $\frac{5}{8}\oplus\frac{2}{3}=\frac{7}{11}$. De même, les fils gauche et droit de $\frac{5}{4}$ sont $\frac{5}{4}\oplus\frac{1}{1}=\frac{6}{5}$ et $\frac{5}{4}\oplus\frac{4}{3}=\frac{9}{7}$.
 
-
+Comment déterminer l'ancêtre
 
 fonction fusc
 
