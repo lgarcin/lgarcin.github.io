@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Histoires de rationnels"
-published: false
+published: true
 ---
 
 Toutes les fractions sont des fractions d'entiers naturels. Baratin sur fraction $1/0$.
@@ -60,7 +60,7 @@ Lorsqu'une fraction $\frac{p}{q}$ (avec $p$ et $q$ non nuls) apparaît pour la p
 
 
 
-Ce qui est plus surprenant est que tout rationnel positif figure à partir d'un certaing rang dans les suites $u_n$. Supposons que ce ne soit pas le cas et donnons-nous une fraction $\frac{p}{q}$ n'apparaisse dans aucune des suites $u_n$ telle que $p+q$ soit minimal. On peut alors construire des fractions $\frac{a}{b}$ et $\frac{c}{d}$ telle que $\frac{a}{b}\oplus\frac{c}{d}=\frac{p}{q}$ et $bc-ad=1$. On a donc nécessairement $b\geq1$ et $c\geq1$. Comme $(a+b)+(c+d)=p+q$, on en déduit que $a+b\lt p+q$ et $c+d\lt p+q$. Par minimalité de $p+q$, les fractions $\frac{a}{b}$ et $\frac{c}{d}$ figurent chacun dans une des suites $u_n$. Puisque $bc-ad=1$, ces deux suites sont consécutives dans une même suite $u_n$ (A VOIR). Par conséquent, leur médiante, à savoir $\frac{p}{q}$ figure dans $u_{n+1}$.
+Ce qui est plus surprenant est que tout rationnel positif figure à partir d'un certaing rang dans les suites $u_n$. Supposons que ce ne soit pas le cas et donnons-nous une fraction $\frac{p}{q}$ n'apparaisse dans aucune des suites $u_n$ telle que $p+q$ soit minimal. On peut alors construire des fractions $\frac{a}{b}$ et $\frac{c}{d}$ telle que $\frac{a}{b}\oplus\frac{c}{d}=\frac{p}{q}$ et $bc-ad=1$. On a donc nécessairement $b\geq1$ et $c\geq1$. Comme $(a+b)+(c+d)=p+q$, on en déduit que $a+b\lt p+q$ et $c+d\lt p+q$. Par minimalité de $p+q$, les fractions $\frac{a}{b}$ et $\frac{c}{d}$ figurent chacun dans une des suites $u_n$. Puisque $bc-ad=1$, ces deux fractions sont consécutives dans une même suite $u_n$ (A VOIR). Par conséquent, leur médiante, à savoir $\frac{p}{q}$ figure dans $u_{n+1}$.
 
 ### Construction de l'arbre de Stern-Brocot
 
@@ -68,13 +68,16 @@ On peut également représenter les fractions apparaissant dans la suite $(u_n)$
 
 Par exemple, la fraction $\frac{3}{5}$ apparaît au niveau 4 et a été calculée comme médiante des fractions $\frac{1}{2}$ et $\frac{2}{3}$. Comme $\frac{2}{3}$ est apparue au niveau 3 tandis que $\frac{1}{2}$ est apparue au niveau 2, on décrète que $\frac{3}{5}$ est le fils de $\frac{2}{3}$.
 
-Voici par exemple l'arbre de Stern-Brocot construit jusqu'au niveau $6$.
+Voici par exemple l'arbre de Stern-Brocot construit jusqu'au niveau 6.
 
 ![Arbre de Stern-Brocot](/images/2016/10/stern.png)
 
+Puisque chaque rationel de $\mathbb Q_+$ apparaît une et une seule fois dans l'arbre, on peut construire une suite prenant une et une seule fois chaque valeur dans $\mathbb Q_+$ : il suffit pour cela de numéroter les noeuds de l'arbre de Stern-Brocot (en laissant de côté la fraction $\frac{1}{0}$), par exemple de haut en bas puis de gauche à droite. Cette suite réalise donc une bijection de $\mathbb N$ sur $\mathbb Q_+$. Autrement dit, $\mathbb Q_+$ est dénombrable.
+
 Il est alors facile de déterminer les fils gauche et droit d'un noeud de l'arbre connaissant ses ancêtres. Pour déterminer le fils gauche, on calcule la médiante du noeud considéré et de son premier ancêtre qui lui est inférieur tandis que pour déterminer le fils droit, on calcule la médiante du noeud considéré et du premier ancêtre qui lui est supérieur. Par exemple, le premier ancêtre de $\frac{5}{8}$ qui lui est inférieur est $\frac{3}{5}$ et son premier ancêtre qui lui est supérieur est $\frac{2}{3}$ donc les fils gauche et droit de $\frac{5}{8}$ sont respectivement $\frac{5}{8}\oplus\frac{3}{5}=\frac{8}{13}$ et $\frac{5}{8}\oplus\frac{2}{3}=\frac{7}{11}$. De même, les fils gauche et droit de $\frac{5}{4}$ sont $\frac{5}{4}\oplus\frac{1}{1}=\frac{6}{5}$ et $\frac{5}{4}\oplus\frac{4}{3}=\frac{9}{7}$.
 
-Comment déterminer l'ancêtre
+
+<iframe src="https://trinket.io/embed/python3/2a3fff74c7" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 fonction fusc
 
