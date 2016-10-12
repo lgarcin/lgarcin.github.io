@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Histoires de rationnels"
-published: true
+published: false
 ---
 
 Toutes les fractions sont des fractions d'entiers naturels. Baratin sur fraction $1/0$.
