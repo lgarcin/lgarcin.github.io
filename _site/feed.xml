@@ -7,17 +7,6 @@
     <atom:link href="https://lgarcin.github.io//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Histoires de rationnels</title>
-        <description>
-          
-          Toutes les fractions sont des fractions d’entiers naturels. Baratin sur fraction $1/0$. Médiante de deux fractions On appelle médiante de deux fractions $\frac{a}{b}$ et $\frac{c}{d}$ la fraction $\frac{a}{b}\oplus\frac{c}{d}=\frac{a+c}{b+d}$. Pour deux fractions $r_1=\frac{a}{b}$ et $r_2=\frac{c}{d}$, on pose $\Delta(r_1,r_2)=bc-ad$ On énonce quelques résultats qui nous suivront par la suite. Si $r_1$ et...
-        </description>
-        <pubDate>Wed, 05 Oct 2016 00:00:00 +0100</pubDate>
-        <link>https://lgarcin.github.io//2016-10-05-stern/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2016-10-05-stern/</guid>
-      </item>
-    
-      <item>
         <title>Méthode d'Euler et gravitation</title>
         <description>
           

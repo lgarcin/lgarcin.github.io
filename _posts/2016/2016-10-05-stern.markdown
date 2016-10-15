@@ -14,23 +14,25 @@ Pour deux fractions $r_1=\frac{a}{b}$ et $r_2=\frac{c}{d}$, on pose $\Delta(r_1,
 
 On énonce quelques résultats qui nous suivront par la suite.
 
+* Si $r_1$ et $r_2$ sont deux fractions, $\Delta(r_1,r_2)=-\Delta(r_2,r_1)$.
+
 * Si $r_1$ et $r_2$ sont deux fractions, $r_1\lt r_2$ si et seulement si $\Delta(r_1,r_2)\gt0$ et $r_1=r_2$ si et seulement si $\Delta(r_1,r_2)=0$.
 
-* Si $r_1$ et $r_2$ sont deux fractions, $\Delta(r_1,r_1\oplus r_2)=\Delta(r_1\oplus r_2,r_2)$.
+* Si $r_1$ et $r_2$ sont deux fractions, $\Delta(r_1,r_1\oplus r_2)=\Delta(r_1\oplus r_2,r_2)=\Delta(r_1,r_2)$.
 
 * <a name="ordre"></a> Si $r_1$ et $r_2$ sont deux fractions tels que $r_1\lt r_2$, alors $r_1\lt r_1\oplus r_2\lt r_2$.
 
 * Si $r$ est une fraction, alors $r\oplus r=r$.
 
-* <a name="encadre"></a>Si $r$ est une fraction non nulle et non infinie, alors il existe un unique couple de fractions $\rho$ et $\sigma$ tels que $\rho\lt r\lt\sigma$ et $\Delta(\rho,\sigma)=1$.
-
-
-$\frac{p}{q}$ est une fraction d'entiers non nuls, il existe un unique couple de fractions $\frac{a}{b}$ et $\frac{c}{d}$ tels que $bc-ad=1$ et $\frac{p}{q}=\frac{a}{b}\oplus\frac{c}{d}$. Supposons qu'un tel couple existe. Alors on a vu précédemment que $bp-aq=1$ et $cq-dp=1$.
-
+* <a name="encadre"></a>Si $r$ est une fraction non nulle et non infinie, alors il existe un unique couple de fractions $(\rho,\sigma)$ tel que $r=\rho\oplus\sigma$ et $\Delta(\rho,\sigma)=1$. Supposons qu'un tel couple existe et posons $r=\frac{p}{q}$, $\rho=\frac{a}{b}$ et $\sigma=\frac{c}{d}$ (les fractions étant irréductibles). Puisque $\Delta(\rho,\sigma)=bc-ad=1$, $b\geq1$ et $c\geq1$. Par ailleurs, $p=a+c$ et $q=b+d$ donc $0\leq a\leq p-1$ et $0\leq d\leq q-1$. Enfin, $bp-aq=\Delta(\rho,r)=\Delta(\rho,\rho\oplus\sigma)=\Delta(\rho,\sigma)=1$ donc $bp\equiv1[q]$. De même, $cq-dp=\Delta(r,\sigma)=\Delta(\rho\oplus\sigma,\sigma)=\Delta(\rho,\sigma)=1$ donc $cq\equiv1[p]$. Ainsi $b$ est l'inverse de $p$ modulo $q$ et $c$ est l'inverse de $q$ modulo $p$[^invmodulo] (les inverses sont bien définis car $p$ et $q$ sont premiers entre eux). Les conditions $bp-aq=1$ et $cq-dp=1$ définissent alors également $a$ et $d$ de manière unique. Réciproquement, notons $b$ l'inverse de $p$ modulo $q$ et $c$ l'inverse de $q$ modulo $p$. Alors $a=\frac{bp-1}{q}$ et $d=\frac{cq-1}{p}$ sont bien des entiers. On pose $\rho=\frac{a}{b}$ et $\sigma=\frac{c}{d}$. On a alors
+$$
+\Delta(\rho\oplus\sigma,r)=\Delta(\rho,r)+\Delta(\sigma,r)=\Delta(\rho,r)-\Delta(r,\sigma)=1-1=0
+$$
+donc $r=\rho\oplus\sigma$. On en déduit que $\Delta(\rho,\sigma)=\Delta(\rho,r)=\Delta(r,\sigma)=1$.
 
 ### Calcul de suites finies
 
-On construit une suite de suites finies de rationnels par récurrence. On pose $u_0=\left(\frac{0}{1},\frac{1}{0}\right)$ et une fois une suite finie $u_n$ construite, on construit la suite $u_{n+1}$ en intercalant entre deux fractions consécutives de la suite $u_n$ la médiante de ces deux fractions[^1]. On trouve donc successivement
+On construit une suite de suites finies de rationnels par récurrence. On pose $u_0=\left(\frac{0}{1},\frac{1}{0}\right)$ et une fois une suite finie $u_n$ construite, on construit la suite $u_{n+1}$ en intercalant entre deux fractions consécutives de la suite $u_n$ la médiante de ces deux fractions[^exonbtermes]. On trouve donc successivement
 
 $$
 \begin{align*}
@@ -81,4 +83,6 @@ Il est alors facile de déterminer les fils gauche et droit d'un noeud de l'arbr
 
 fonction fusc
 
-[^1]: Petit exercice facile : calculer le nombre de termes de $u_n$ en fonction de $n$.
+[^exonbtermes]: Petit exercice facile : calculer le nombre de termes de $u_n$ en fonction de $n$.
+
+[^invmodulo]: Si $x$ et $n$ sont deux entiers naturels premiers entre eux, $n$ étant non nul, on appelle inverse de $x$ modulo $n$ l'unique entier $y$ tel que $0\leq y\leq n-1$ et $xy\equiv1[n]$.
