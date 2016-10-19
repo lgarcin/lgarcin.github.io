@@ -6,33 +6,48 @@ published: false
 
 Toutes les fractions sont des fractions d'entiers naturels. Baratin sur fraction $1/0$.
 
-### Médiante de deux fractions
+Médiante de deux fractions
+-
 
 On appelle *médiante* de deux fractions $\frac{a}{b}$ et $\frac{c}{d}$ la fraction $\frac{a}{b}\oplus\frac{c}{d}=\frac{a+c}{b+d}$.
 {: .definition}
 
-Pour deux fractions $r_1=\frac{a}{b}$ et $r_2=\frac{c}{d}$, on pose $\Delta(r_1,r_2)=bc-ad$
+Pour deux fractions d'entiers naturels $r_1=\frac{a}{b}$ et $r_2=\frac{c}{d}$, on pose $\Delta(r_1,r_2)=bc-ad$
 {: .definition}
 
+<div class="lemma">
 Soient $r_1$ et $r_2$ deux fractions.
-* $\Delta(r_1,r_2)=-\Delta(r_2,r_1)$.
-* $r_1\lt r_2$ si et seulement si $\Delta(r_1,r_2)\gt0$ et $r_1=r_2$ si et seulement si $\Delta(r_1,r_2)=0$.
-* $\Delta(r_1,r_1\oplus r_2)=\Delta(r_1\oplus r_2,r_2)=\Delta(r_1,r_2)$.
-* Si $r_1\lt r_2$, alors $r_1\lt r_1\oplus r_2\lt r_2$.
+<ul>
+<li>$\Delta(r_1,r_2)=-\Delta(r_2,r_1)$.</li>
+<li>$r_1\lt r_2$ si et seulement si $\Delta(r_1,r_2)\gt0$ et $r_1=r_2$ si et seulement si $\Delta(r_1,r_2)=0$.</li>
+<li>$\Delta(r_1,r_1\oplus r_2)=\Delta(r_1\oplus r_2,r_2)=\Delta(r_1,r_2)$.</li>
+<li>Si $r_1\lt r_2$, alors $r_1\lt r_1\oplus r_2\lt r_2$.</li>
+</ul>
+</div>
+
+Si $r$ est une fraction non nulle et non infinie, alors il existe un unique couple de fractions $(\rho,\sigma)$ tel que $r=\rho\oplus\sigma$ et $\Delta(\rho,\sigma)=1$.
 {: .lemma}
 
-Si $r$ est une fraction non nulle et non infinie, alors il existe un unique couple de fractions $(\rho,\sigma)$ tel que $r=\rho\oplus\sigma$ et $\Delta(\rho,\sigma)=1$.\\
-<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#pr">Preuve</button>
-{: .lemma}
-
-Supposons qu'un tel couple existe et posons $r=\frac{p}{q}$, $\rho=\frac{a}{b}$ et $\sigma=\frac{c}{d}$ (les fractions étant irréductibles). Puisque $\Delta(\rho,\sigma)=bc-ad=1$, $b\geq1$ et $c\geq1$. Par ailleurs, $p=a+c$ et $q=b+d$ donc $0\leq a\leq p-1$ et $0\leq d\leq q-1$. Enfin, $bp-aq=\Delta(\rho,r)=\Delta(\rho,\rho\oplus\sigma)=\Delta(\rho,\sigma)=1$ donc $bp\equiv1[q]$. De même, $cq-dp=\Delta(r,\sigma)=\Delta(\rho\oplus\sigma,\sigma)=\Delta(\rho,\sigma)=1$ donc $cq\equiv1[p]$. Ainsi $b$ est l'inverse de $p$ modulo $q$ et $c$ est l'inverse de $q$ modulo $p$[^invmodulo] (les inverses sont bien définis car $p$ et $q$ sont premiers entre eux). Les conditions $bp-aq=1$ et $cq-dp=1$ définissent alors également $a$ et $d$ de manière unique. Réciproquement, notons $b$ l'inverse de $p$ modulo $q$ et $c$ l'inverse de $q$ modulo $p$. Alors $a=\frac{bp-1}{q}$ et $d=\frac{cq-1}{p}$ sont bien des entiers. On pose $\rho=\frac{a}{b}$ et $\sigma=\frac{c}{d}$. On a alors
+Supposons qu'un tel couple existe et posons $r=\frac{p}{q}$, $\rho=\frac{a}{b}$ et $\sigma=\frac{c}{d}$ (les fractions étant irréductibles). Puisque $\Delta(\rho,\sigma)=bc-ad=1$, $b\geq1$ et $c\geq1$. Par ailleurs, $p=a+c$ et $q=b+d$ donc $0\leq a\leq p-1$ et $0\leq d\leq q-1$. Enfin,
+<span class="formula">
+$$
+\begin{align*}
+bp-aq&=\Delta(\rho,r)=\Delta(\rho,\rho\oplus\sigma)=\Delta(\rho,\sigma)=1\\
+cq-dp&=\Delta(r,\sigma)=\Delta(\rho\oplus\sigma,\sigma)=\Delta(\rho,\sigma)=1
+\end{align*}
+$$
+</span>
+de sorte que $bp\equiv1[q]$ et $cq\equiv1[p]$. Ainsi $b$ est l'inverse de $p$ modulo $q$ et $c$ est l'inverse de $q$ modulo $p$[^invmodulo] (les inverses sont bien définis car $p$ et $q$ sont premiers entre eux et sont uniques). Les conditions $bp-aq=1$ et $cq-dp=1$ définissent alors également $a$ et $d$ de manière unique. Réciproquement, notons $b$ l'inverse de $p$ modulo $q$ et $c$ l'inverse de $q$ modulo $p$. Alors $a=\frac{bp-1}{q}$ et $d=\frac{cq-1}{p}$ sont bien des entiers. On pose $\rho=\frac{a}{b}$ et $\sigma=\frac{c}{d}$. On a alors
+<span class="formula">
 $$
 \Delta(\rho\oplus\sigma,r)=\Delta(\rho,r)+\Delta(\sigma,r)=\Delta(\rho,r)-\Delta(r,\sigma)=1-1=0
 $$
+</span>
 donc $r=\rho\oplus\sigma$. On en déduit que $\Delta(\rho,\sigma)=\Delta(\rho,r)=\Delta(r,\sigma)=1$.
-{: .proof .collapse #pr}
+{: .proof}
 
-### Calcul de suites finies
+Calcul de suites finies
+-
 
 On construit une suite de suites finies de rationnels par récurrence. On pose $u_0=\left(\frac{0}{1},\frac{1}{0}\right)$ et une fois une suite finie $u_n$ construite, on construit la suite $u_{n+1}$ en intercalant entre deux fractions consécutives de la suite $u_n$ la médiante de ces deux fractions[^exonbtermes]. On trouve donc successivement
 
@@ -50,23 +65,25 @@ Le programme suivant permet de calculer les termes successifs de la suite $(u_n)
 
 <iframe src="https://trinket.io/embed/python3/3fba0de1ac" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-On peut remarquer que chacune des suites $u_n$ est strictement croissante. Cela se prouve par récurrence sur $n$ à l'aide du [premier résultat](#ordre) sur la médiante.
+On peut remarquer que chacune des suites $u_n$ est strictement croissante. Il suffit d'utiliser de raisonner par récurrence sur $n$ en utilisant le résultat du premier lemme stipulant que la médiante de deux fractions distinctes est strictement comprise entre ces deux fractions.
 
-Il est aussi remarquable que toutes les fractions apparaissant dans chaque suite $u_n$ sont irréductibles. Le [second résultat](#irreductible) sur la médiante permet en effet de prouver par récurrence sur $n$ que si $\frac{a}{b}$ et $\frac{c}{d}$ sont deux fractions consécutives d'une suite $u_n$, alors $ad-bc=1$. Le théorème de Bézout assure alors que toutes les fractions des suites $u_n$ sont irréductibles.
+Il est aussi remarquable que toutes les fractions apparaissant dans chaque suite $u_n$ sont irréductibles. Un résultat du premier lemme permet en effet de montrer par récurrence sur $n$ que si $r=\frac{a}{b}$ et $s=\frac{c}{d}$ sont deux fractions consécutives d'une même suite, alors $\Delta(r,s)=1$ ou encore $bc-ad=1$. En vertu du théorème de Bézout, $(a,b)$ et $(c,d)$ sont des couples d'entiers premiers entre eux.
 
-On remarque également que dans une suite $u_n$, une fraction est toujours la médiante des deux fractions l'encadrant. Par exemple, dans la suite $u_4$, $\frac{2}{5}=\frac{1}{3}\oplus\frac{1}{2}$ mais également, $\frac{4}{3}\oplus\frac{5}{3}=\frac{9}{6}=\frac{3}{2}$. On raisonne par récurrence. La propriété à montrer est évidemment vraie pour la suite $u_1$. Supposons qu'elle soit également vraie pour une suite $u_n$ où $n\geq1$. On se donne alors trois fractions successives $r_1$, $r_2$ et $r_3$ de la suite $u_{n+1}$. Si $r_2$ n'apparaissait pas dans la suite $u_n$, alors $r_2=r_1\oplus r_3$ par définition de la suite $u_{n+1}$. Par contre, si $u_2$ apparaissait déjà dans la suite $u_n$, en notant $\rho$ et $\rho'$ les fractions encadrant $r_2$ dans la suite $u_n$, on a $r_2=\rho\oplus\rho'$ par hypothèse de récurrence  ainsi que $r_1=\rho\oplus r_2$ et $r_3=r_2\oplus\rho'$ par définition de $u_{n+1}$. Par commutativité et associativité de $\oplus$, on obtient donc
+Lorsqu'une fraction $r$ apparaît pour la première fois dans une suite $u_n$, il est facile de trouver les fractions $\rho$ et $\sigma$ qui l'encadrent. Puisque $\rho$, $r$ et $\sigma$ sont consécutives dans cette suite $u_n$, $\Delta(\rho,r)=\Delta(r,\sigma)=1$. Puisque $r=\rho\oplus\sigma$, un résultat du premier lemme montre alors que $\Delta(\rho,\sigma)=1$. Le deuxième lemme stipule que le couple vérifiant les conditions $\Delta(\rho,\sigma)=1$ et $r=\rho\oplus\sigma$ est unique et la démonstration de ce lemme montre comment calculer $\rho$ et $\sigma$ à partir de $r$. L'algorithme suivant montre comment calculer effectivement ces deux fractions. Le calcul des inverses modulaires se fait à partir d'un algorithme d'Euclide étendu.
 
-$$
-r_1\oplus r_3=\rho\oplus r_2\oplus r_2\oplus\rho'=\rho\oplus r_2\oplus\rho'=r_2\oplus\rho\oplus\rho'=r_2\oplus r_2=r_2
-$$
+<iframe src="https://paiza.io/projects/e/izvTI_tmQ3zOim-ZGbMykA?theme=twilight" width="100%" height="500" scrolling="no" seamless="seamless"></iframe>
 
-Lorsqu'une fraction $\frac{p}{q}$ (avec $p$ et $q$ non nuls) apparaît pour la première fois dans une suite $u_n$, on peut retrouver les deux fractions qui l'encadrent. En notant $\frac{a}{b}$ et $\frac{c}{d}$ ces deux fractions, on doit avoir $\frac{p}{q}=\frac{a}{b}\oplus\frac{c}{d}$. De plus, on a nécessairement $b\geq1$ et $c\geq1$ donc $a=p-c\leq p-1$ et $d=q-b\leq q-1$. D'après ce qui précède, on a également $bp-aq=1$ et $cq-dp=1$. Pour déterminer la fraction $\frac{a}{b}$, il suffit de déterminer un couple $(u,v)$ d'entiers relatifs tels que $vp-uq=1$ par l'algorithme d'Euclide éténdu. On détermine ensuite l'unique entier $k$ tel que $0\leq u+kp\leq p-1$ puis on pose $a=u+kp$ et $b=v+kq$. On procède de même pour trouver $\frac{c}{d}$. Par exemple, pour trouver les fractions encadrant $\frac{5}{7}$ lorque cette fraction apparaît pour la première fois, on remarque que d'une part, $3\times5-2\times7=1$ et $2\leq5-1$ et que d'autre part $3\times7-4\times5=1$ et $4\leq7-1$. Les fractions recherchées sont donc $\frac{2}{3}$ et $\frac{3}{4}$.
+<script src="//repl.it/embed/Dzhg/3.js">
+</script>
 
+<script src="http://ideone.com/e.js/hkQqfM" type="text/javascript" >
+</script>
 
 
 Ce qui est plus surprenant est que tout rationnel positif figure à partir d'un certaing rang dans les suites $u_n$. Supposons que ce ne soit pas le cas et donnons-nous une fraction $\frac{p}{q}$ n'apparaisse dans aucune des suites $u_n$ telle que $p+q$ soit minimal. On peut alors construire des fractions $\frac{a}{b}$ et $\frac{c}{d}$ telle que $\frac{a}{b}\oplus\frac{c}{d}=\frac{p}{q}$ et $bc-ad=1$. On a donc nécessairement $b\geq1$ et $c\geq1$. Comme $(a+b)+(c+d)=p+q$, on en déduit que $a+b\lt p+q$ et $c+d\lt p+q$. Par minimalité de $p+q$, les fractions $\frac{a}{b}$ et $\frac{c}{d}$ figurent chacun dans une des suites $u_n$. Puisque $bc-ad=1$, ces deux fractions sont consécutives dans une même suite $u_n$ (A VOIR). Par conséquent, leur médiante, à savoir $\frac{p}{q}$ figure dans $u_{n+1}$.
 
-### Construction de l'arbre de Stern-Brocot
+Construction de l'arbre de Stern-Brocot
+-
 
 On peut également représenter les fractions apparaissant dans la suite $(u_n)$ sous forme d'un arbre binaire. On place au niveau 0 les fractions $\frac{0}{1}$ et $\frac{1}{0}$ et au niveau 1 la fraction $\frac{1}{1}$ en tant que fils commun de ces deux fractions. On place au niveau $n+1$ de l'arbre par ordre croissant les fractions apparues dans la suite $u_{n+1}$ alors qu'elles ne figuraient pas dans la suite $u_n$ et on leur donne pour ancêtre la fraction du niveau $n$ dont on s'est servi pour la calculer en tant que médiante. L'arbre ainsi construit est appelé arbre de Stern-Brocot.
 
@@ -78,8 +95,15 @@ Voici par exemple l'arbre de Stern-Brocot construit jusqu'au niveau 6.[^exomax]
 
 Puisque chaque rationel de $\mathbb Q_+$ apparaît une et une seule fois dans l'arbre, on peut construire une suite prenant une et une seule fois chaque valeur dans $\mathbb Q_+$ : il suffit pour cela de numéroter les noeuds de l'arbre de Stern-Brocot (en laissant de côté la fraction $\frac{1}{0}$), par exemple de haut en bas puis de gauche à droite. Cette suite réalise donc une bijection de $\mathbb N$ sur $\mathbb Q_+$. Autrement dit, $\mathbb Q_+$ est dénombrable.
 
+#### Calcul des descendants
+
 Il est alors facile de déterminer les fils gauche et droit d'un noeud de l'arbre connaissant ses ancêtres. Pour déterminer le fils gauche, on calcule la médiante du noeud considéré et de son premier ancêtre qui lui est inférieur tandis que pour déterminer le fils droit, on calcule la médiante du noeud considéré et du premier ancêtre qui lui est supérieur. Par exemple, le premier ancêtre de $\frac{5}{8}$ qui lui est inférieur est $\frac{3}{5}$ et son premier ancêtre qui lui est supérieur est $\frac{2}{3}$ donc les fils gauche et droit de $\frac{5}{8}$ sont respectivement $\frac{5}{8}\oplus\frac{3}{5}=\frac{8}{13}$ et $\frac{5}{8}\oplus\frac{2}{3}=\frac{7}{11}$. De même, les fils gauche et droit de $\frac{5}{4}$ sont $\frac{5}{4}\oplus\frac{1}{1}=\frac{6}{5}$ et $\frac{5}{4}\oplus\frac{4}{3}=\frac{9}{7}$.
 
+Calcul des fils via les deux <<ancêtres>> encadrant.
+
+#### Calcul des ancêtres
+
+On sait que si $r$ est une fraction, il existe un unique couple $(\rho,\sigma)$ de fractions tels que $\Delta(\rho,\sigma)=1$ et $\rho\oplus\sigma=r$. Les deux fractions dont $r$ est la médiante dans l'arbre de Stern-Brocot vérifie également ces conditions : ces deux fractions sont donc $\rho$ et $\sigma$. Parmi l'une d'elles figure le père de $r$. Pour déterminer laquelle des deux, il suffit de remarquer que $\rho$ et $\sigma$ appartiennent au même chemin menant à $r$ et que le long d'un tel chemin, la somme du numérateur et du dénominateur des fractions est strictement croissante. Ainsi le père de $r$ est celle des deux fractions $\rho$ et $\sigma$ pour laquelle la somme du numérateur et du dénominateur et la plus grande. On en déduit donc un algorithme pour calculer le père d'une fraction dans l'arbre de Stern-Brocot et, plus généralement, la suite des ancêtres d'une fraction.
 
 <iframe src="https://trinket.io/embed/python3/2a3fff74c7" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 

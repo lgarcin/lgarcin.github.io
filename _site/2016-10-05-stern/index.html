@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Histoires de rationnels</title>
+
+  <meta name="author" content="Laurent Garcin" />
+
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Maths MPSI Corot - Mathématiques en MPSI au lycée Corot" href="/feed.xml" />
+
+ <!-- everything has to be repeated twice because on 2016-02-01 GitHub pages migrated to jekyll 3; see bug https://github.com/jekyll/jekyll/issues/4439 -->
+
+  
+  
+    
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    
+  
+
+  
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+      <link rel="stylesheet" href="/css/theorems.css" />
+    
+  
+
+  
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  <!-- Facebook OpenGraph tags -->
+  <meta property="og:title" content="Histoires de rationnels" />
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="https://lgarcin.github.io//2016-10-05-stern//" />
+  
+
+  
+  <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" />
+  
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript"
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+</head>
+
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://lgarcin.github.io/">Maths MPSI Corot</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+	    
+	      
+	      
+        <li>
+          
+          
+
+        
+
+	      <a href="/">Accueil</a>
+	      </li>
+	    
+	      
+	      
+        <li>
+          
+          
+
+        
+
+	      <a href="/cours">Cours</a>
+	      </li>
+	    
+	      
+	      
+        <li>
+          
+          
+
+        
+
+	      <a href="/td">Exercices</a>
+	      </li>
+	    
+	      
+	      
+        <li>
+          
+          
+
+        
+
+	      <a href="/vieclasse">Vie de Classe</a>
+	      </li>
+	    
+	      
+	      
+        <li>
+          
+          
+
+        
+
+	      <a href="/devoirs">Devoirs</a>
+	      </li>
+	    
+      </ul>
+    </div>
+
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="https://lgarcin.github.io/ ">
+	      <img class="avatar-img" src="/img/pi.png" alt="Pi"/>
+		</a>
+	  </div>
+	</div>
+	
+
+  </div>
+</nav>
+
+
+    <div role="main" class="container main-content">
+      <header class="header-post">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="post-heading">
+        <h1>Histoires de rationnels</h1>
+        
+        <span class="post-meta">Posted on October 5, 2016</span>
+      </div>
+     </div>
+  </div>
+</header>
+
+<article>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	  <p>Toutes les fractions sont des fractions d’entiers naturels. Baratin sur fraction $1/0$.</p>
+
+<h2 id="mdiante-de-deux-fractions">Médiante de deux fractions</h2>
+
+<p class="definition">On appelle <em>médiante</em> de deux fractions $\frac{a}{b}$ et $\frac{c}{d}$ la fraction $\frac{a}{b}\oplus\frac{c}{d}=\frac{a+c}{b+d}$.</p>
+
+<p class="definition">Pour deux fractions d’entiers naturels $r_1=\frac{a}{b}$ et $r_2=\frac{c}{d}$, on pose $\Delta(r_1,r_2)=bc-ad$</p>
+
+<div class="lemma">
+Soient $r_1$ et $r_2$ deux fractions.
+<ul>
+<li>$\Delta(r_1,r_2)=-\Delta(r_2,r_1)$.</li>
+<li>$r_1\lt r_2$ si et seulement si $\Delta(r_1,r_2)\gt0$ et $r_1=r_2$ si et seulement si $\Delta(r_1,r_2)=0$.</li>
+<li>$\Delta(r_1,r_1\oplus r_2)=\Delta(r_1\oplus r_2,r_2)=\Delta(r_1,r_2)$.</li>
+<li>Si $r_1\lt r_2$, alors $r_1\lt r_1\oplus r_2\lt r_2$.</li>
+</ul>
+</div>
+
+<p class="lemma">Si $r$ est une fraction non nulle et non infinie, alors il existe un unique couple de fractions $(\rho,\sigma)$ tel que $r=\rho\oplus\sigma$ et $\Delta(\rho,\sigma)=1$.</p>
+
+<p class="proof">Supposons qu’un tel couple existe et posons $r=\frac{p}{q}$, $\rho=\frac{a}{b}$ et $\sigma=\frac{c}{d}$ (les fractions étant irréductibles). Puisque $\Delta(\rho,\sigma)=bc-ad=1$, $b\geq1$ et $c\geq1$. Par ailleurs, $p=a+c$ et $q=b+d$ donc $0\leq a\leq p-1$ et $0\leq d\leq q-1$. Enfin,
+<span class="formula">
+<script type="math/tex">% <![CDATA[
+\begin{align*}
+bp-aq&=\Delta(\rho,r)=\Delta(\rho,\rho\oplus\sigma)=\Delta(\rho,\sigma)=1\\
+cq-dp&=\Delta(r,\sigma)=\Delta(\rho\oplus\sigma,\sigma)=\Delta(\rho,\sigma)=1
+\end{align*} %]]></script>
+</span>
+de sorte que $bp\equiv1[q]$ et $cq\equiv1[p]$. Ainsi $b$ est l’inverse de $p$ modulo $q$ et $c$ est l’inverse de $q$ modulo $p$<sup id="fnref:invmodulo"><a href="#fn:invmodulo" class="footnote">1</a></sup> (les inverses sont bien définis car $p$ et $q$ sont premiers entre eux et sont uniques). Les conditions $bp-aq=1$ et $cq-dp=1$ définissent alors également $a$ et $d$ de manière unique. Réciproquement, notons $b$ l’inverse de $p$ modulo $q$ et $c$ l’inverse de $q$ modulo $p$. Alors $a=\frac{bp-1}{q}$ et $d=\frac{cq-1}{p}$ sont bien des entiers. On pose $\rho=\frac{a}{b}$ et $\sigma=\frac{c}{d}$. On a alors
+<span class="formula">
+<script type="math/tex">\Delta(\rho\oplus\sigma,r)=\Delta(\rho,r)+\Delta(\sigma,r)=\Delta(\rho,r)-\Delta(r,\sigma)=1-1=0</script>
+</span>
+donc $r=\rho\oplus\sigma$. On en déduit que $\Delta(\rho,\sigma)=\Delta(\rho,r)=\Delta(r,\sigma)=1$.</p>
+
+<h2 id="calcul-de-suites-finies">Calcul de suites finies</h2>
+
+<p>On construit une suite de suites finies de rationnels par récurrence. On pose $u_0=\left(\frac{0}{1},\frac{1}{0}\right)$ et une fois une suite finie $u_n$ construite, on construit la suite $u_{n+1}$ en intercalant entre deux fractions consécutives de la suite $u_n$ la médiante de ces deux fractions<sup id="fnref:exonbtermes"><a href="#fn:exonbtermes" class="footnote">2</a></sup>. On trouve donc successivement</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align*}
+u_0&=\left(\frac{0}{1},\frac{1}{0}\right)\\
+u_1&=\left(\frac{0}{1},\frac{1}{1},\frac{1}{0}\right)\\
+u_2&=\left(\frac{0}{1},\frac{1}{2},\frac{1}{1},\frac{2}{1},\frac{1}{0}\right)\\
+u_3&=\left(\frac{0}{1},\frac{1}{3},\frac{1}{2},\frac{2}{3},\frac{1}{1},\frac{3}{2},\frac{2}{1},\frac{3}{1},\frac{1}{0}\right)\\
+u_4&=\left(\frac{0}{1},\frac{1}{4},\frac{1}{3},\frac{2}{5},\frac{1}{2},\frac{3}{5},\frac{2}{3},\frac{3}{4},\frac{1}{1},\frac{4}{3},\frac{3}{2},\frac{5}{3},\frac{2}{1},\frac{5}{2},\frac{3}{1},\frac{4}{1},\frac{1}{0}\right)
+\end{align*} %]]></script>
+
+<p>Le programme suivant permet de calculer les termes successifs de la suite $(u_n)$. Les rationnels sont représentés par des couples d’entiers naturels.</p>
+
+<iframe src="https://trinket.io/embed/python3/3fba0de1ac" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+
+<p>On peut remarquer que chacune des suites $u_n$ est strictement croissante. Il suffit d’utiliser de raisonner par récurrence sur $n$ en utilisant le résultat du premier lemme stipulant que la médiante de deux fractions distinctes est strictement comprise entre ces deux fractions.</p>
+
+<p>Il est aussi remarquable que toutes les fractions apparaissant dans chaque suite $u_n$ sont irréductibles. Un résultat du premier lemme permet en effet de montrer par récurrence sur $n$ que si $r=\frac{a}{b}$ et $s=\frac{c}{d}$ sont deux fractions consécutives d’une même suite, alors $\Delta(r,s)=1$ ou encore $bc-ad=1$. En vertu du théorème de Bézout, $(a,b)$ et $(c,d)$ sont des couples d’entiers premiers entre eux.</p>
+
+<p>Lorsqu’une fraction $r$ apparaît pour la première fois dans une suite $u_n$, il est facile de trouver les fractions $\rho$ et $\sigma$ qui l’encadrent. Puisque $\rho$, $r$ et $\sigma$ sont consécutives dans cette suite $u_n$, $\Delta(\rho,r)=\Delta(r,\sigma)=1$. Puisque $r=\rho\oplus\sigma$, un résultat du premier lemme montre alors que $\Delta(\rho,\sigma)=1$. Le deuxième lemme stipule que le couple vérifiant les conditions $\Delta(\rho,\sigma)=1$ et $r=\rho\oplus\sigma$ est unique et la démonstration de ce lemme montre comment calculer $\rho$ et $\sigma$ à partir de $r$. L’algorithme suivant montre comment calculer effectivement ces deux fractions. Le calcul des inverses modulaires se fait à partir d’un algorithme d’Euclide étendu.</p>
+
+<iframe src="https://paiza.io/projects/e/izvTI_tmQ3zOim-ZGbMykA?theme=twilight" width="100%" height="500" scrolling="no" seamless="seamless"></iframe>
+
+<script src="//repl.it/embed/Dzhg/3.js">
+</script>
+
+<script src="http://ideone.com/e.js/hkQqfM" type="text/javascript">
+</script>
+
+<p>Ce qui est plus surprenant est que tout rationnel positif figure à partir d’un certaing rang dans les suites $u_n$. Supposons que ce ne soit pas le cas et donnons-nous une fraction $\frac{p}{q}$ n’apparaisse dans aucune des suites $u_n$ telle que $p+q$ soit minimal. On peut alors construire des fractions $\frac{a}{b}$ et $\frac{c}{d}$ telle que $\frac{a}{b}\oplus\frac{c}{d}=\frac{p}{q}$ et $bc-ad=1$. On a donc nécessairement $b\geq1$ et $c\geq1$. Comme $(a+b)+(c+d)=p+q$, on en déduit que $a+b\lt p+q$ et $c+d\lt p+q$. Par minimalité de $p+q$, les fractions $\frac{a}{b}$ et $\frac{c}{d}$ figurent chacun dans une des suites $u_n$. Puisque $bc-ad=1$, ces deux fractions sont consécutives dans une même suite $u_n$ (A VOIR). Par conséquent, leur médiante, à savoir $\frac{p}{q}$ figure dans $u_{n+1}$.</p>
+
+<h2 id="construction-de-larbre-de-stern-brocot">Construction de l’arbre de Stern-Brocot</h2>
+
+<p>On peut également représenter les fractions apparaissant dans la suite $(u_n)$ sous forme d’un arbre binaire. On place au niveau 0 les fractions $\frac{0}{1}$ et $\frac{1}{0}$ et au niveau 1 la fraction $\frac{1}{1}$ en tant que fils commun de ces deux fractions. On place au niveau $n+1$ de l’arbre par ordre croissant les fractions apparues dans la suite $u_{n+1}$ alors qu’elles ne figuraient pas dans la suite $u_n$ et on leur donne pour ancêtre la fraction du niveau $n$ dont on s’est servi pour la calculer en tant que médiante. L’arbre ainsi construit est appelé arbre de Stern-Brocot.</p>
+
+<p>Par exemple, la fraction $\frac{3}{5}$ apparaît au niveau 4 et a été calculée comme médiante des fractions $\frac{1}{2}$ et $\frac{2}{3}$. Comme $\frac{2}{3}$ est apparue au niveau 3 tandis que $\frac{1}{2}$ est apparue au niveau 2, on décrète que $\frac{3}{5}$ est le fils de $\frac{2}{3}$.</p>
+
+<p>Voici par exemple l’arbre de Stern-Brocot construit jusqu’au niveau 6.<sup id="fnref:exomax"><a href="#fn:exomax" class="footnote">3</a></sup></p>
+
+<p><img src="/images/2016/10/stern.png" alt="Arbre de Stern-Brocot" /></p>
+
+<p>Puisque chaque rationel de $\mathbb Q_+$ apparaît une et une seule fois dans l’arbre, on peut construire une suite prenant une et une seule fois chaque valeur dans $\mathbb Q_+$ : il suffit pour cela de numéroter les noeuds de l’arbre de Stern-Brocot (en laissant de côté la fraction $\frac{1}{0}$), par exemple de haut en bas puis de gauche à droite. Cette suite réalise donc une bijection de $\mathbb N$ sur $\mathbb Q_+$. Autrement dit, $\mathbb Q_+$ est dénombrable.</p>
+
+<h4 id="calcul-des-descendants">Calcul des descendants</h4>
+
+<p>Il est alors facile de déterminer les fils gauche et droit d’un noeud de l’arbre connaissant ses ancêtres. Pour déterminer le fils gauche, on calcule la médiante du noeud considéré et de son premier ancêtre qui lui est inférieur tandis que pour déterminer le fils droit, on calcule la médiante du noeud considéré et du premier ancêtre qui lui est supérieur. Par exemple, le premier ancêtre de $\frac{5}{8}$ qui lui est inférieur est $\frac{3}{5}$ et son premier ancêtre qui lui est supérieur est $\frac{2}{3}$ donc les fils gauche et droit de $\frac{5}{8}$ sont respectivement $\frac{5}{8}\oplus\frac{3}{5}=\frac{8}{13}$ et $\frac{5}{8}\oplus\frac{2}{3}=\frac{7}{11}$. De même, les fils gauche et droit de $\frac{5}{4}$ sont $\frac{5}{4}\oplus\frac{1}{1}=\frac{6}{5}$ et $\frac{5}{4}\oplus\frac{4}{3}=\frac{9}{7}$.</p>
+
+<p>Calcul des fils via les deux «ancêtres» encadrant.</p>
+
+<h4 id="calcul-des-anctres">Calcul des ancêtres</h4>
+
+<p>On sait que si $r$ est une fraction, il existe un unique couple $(\rho,\sigma)$ de fractions tels que $\Delta(\rho,\sigma)=1$ et $\rho\oplus\sigma=r$. Les deux fractions dont $r$ est la médiante dans l’arbre de Stern-Brocot vérifie également ces conditions : ces deux fractions sont donc $\rho$ et $\sigma$. Parmi l’une d’elles figure le père de $r$. Pour déterminer laquelle des deux, il suffit de remarquer que $\rho$ et $\sigma$ appartiennent au même chemin menant à $r$ et que le long d’un tel chemin, la somme du numérateur et du dénominateur des fractions est strictement croissante. Ainsi le père de $r$ est celle des deux fractions $\rho$ et $\sigma$ pour laquelle la somme du numérateur et du dénominateur et la plus grande. On en déduit donc un algorithme pour calculer le père d’une fraction dans l’arbre de Stern-Brocot et, plus généralement, la suite des ancêtres d’une fraction.</p>
+
+<iframe src="https://trinket.io/embed/python3/2a3fff74c7" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+
+<p>fonction fusc</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:invmodulo">
+      <p>Si $x$ et $n$ sont deux entiers naturels premiers entre eux, $n$ étant non nul, on appelle inverse de $x$ modulo $n$ l’unique entier $y$ tel que $0\leq y\leq n-1$ et $xy\equiv1[n]$. <a href="#fnref:invmodulo" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:exonbtermes">
+      <p>Petit exercice facile : calculer le nombre de termes de $u_n$ en fonction de $n$. <a href="#fnref:exonbtermes" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:exomax">
+      <p>Petit exercice facile à nouveau : montrer que le plus grand numérateur ou dénominateur des fractions du niveau $n$ est le terme de rang $n+1$ de la suite de Fibonacci. <a href="#fnref:exomax" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+	</div>
+  </div>
+</article>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <ul class="pager blog-pager">
+      
+      <li class="previous">
+        <a href="/2016-09-26-gravitation/" data-toggle="tooltip" data-placement="top" title="Méthode d'Euler et gravitation">&larr; Previous Post</a>
+      </li>
+      
+      
+    </ul>
+  </div>
+</div>
+
+
+<div class="row disqus-comments">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'mpsi';
+	    // ensure that pages with query string get the same discussion
+            var url_parts = window.location.href.split("?");
+            var disqus_url = url_parts[0];	    
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  </div>
+</div>
+
+
+    </div>
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          <li>
+            <a href="https://github.com/lgarcin" title="GitHub">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+		  
+          <li>
+            <a href="mailto:laurent.garcin@gmail.com" title="Email me">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="https://linkedin.com/in/laurent-garcin-b2b02ab7" title="LinkedIn">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="https://stackoverflow.com/users/4439374/laurent-garcin" title="StackOverflow">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+		  <li>
+			<a href="/feed.xml" title="RSS">
+			  <span class="fa-stack fa-lg">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+			  </span>
+			</a>
+		  </li>
+          
+        </ul>
+        <p class="copyright text-muted">
+		  Laurent Garcin
+		  &nbsp;&bull;&nbsp;
+		  2016
+
+		  
+		  &nbsp;&bull;&nbsp;
+		  <a href="https://lgarcin.github.io/">lgarcin.github.io</a>
+		  
+	    </p>
+	        <!-- Please don't remove this, keep my open source work credited :) -->
+		<p class="theme-by text-muted">
+		  Theme by
+		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+		</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- everything has to be repeated twice because on 2016-02-01 GitHub pages migrated to jekyll 3; see bug https://github.com/jekyll/jekyll/issues/4439 -->
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-2.1.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+
+
+
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-30206958-3', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

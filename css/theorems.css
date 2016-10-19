@@ -11,7 +11,7 @@
 }
 
 .lemma {
-    display: block;
+    display: inline-block;
     margin: 12px 0;
     font-style: italic;
 }
@@ -23,7 +23,7 @@
 }
 
 .proof {
-    display: block;
+    display: inline-block;
     margin: 12px 0;
     font-style: normal;
 }
@@ -48,4 +48,10 @@
     content: "Définition. ";
     font-weight: bold;
     font-style: normal;
+}
+
+.formula {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
