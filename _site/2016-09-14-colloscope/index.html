@@ -2,79 +2,39 @@
 <html lang="fr">
 
   <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Colloscope</title>
+    <title>Colloscope</title>
 
-  <meta name="author" content="Laurent Garcin" />
+    <meta name="author" content="Laurent Garcin" /> 
 
-  
+    <link rel="alternate" type="application/rss+xml" title="Maths MPSI Corot - Mathématiques en MPSI au lycée Corot" href="/feed.xml" />
 
-  <link rel="alternate" type="application/rss+xml" title="Maths MPSI Corot - Mathématiques en MPSI au lycée Corot" href="/feed.xml" />
+    <!-- everything has to be repeated twice because on 2016-02-01 GitHub pages migrated to jekyll 3; see bug https://github.com/jekyll/jekyll/issues/4439 -->
 
- <!-- everything has to be repeated twice because on 2016-02-01 GitHub pages migrated to jekyll 3; see bug https://github.com/jekyll/jekyll/issues/4439 -->
+      
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> 
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" /> 
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />     
+    <link rel="stylesheet" href="/css/main.css" /> 
+    <link rel="stylesheet" href="/css/theorems.css" />     
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" /> 
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />        
 
-  
-  
-    
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-    
-  
+    <!-- Facebook OpenGraph tags -->
+    <meta property="og:title" content="Colloscope" />
+    <meta property="og:type" content="website" /> 
+    <meta property="og:url" content="https://lgarcin.github.io//2016-09-14-colloscope//" />  
+    <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" /> 
 
-  
-  
-    
-      <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    
-      <link rel="stylesheet" href="/css/main.css" />
-    
-      <link rel="stylesheet" href="/css/theorems.css" />
-    
-  
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } });
+    </script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 
-  
-  
-    
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
-    
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-    
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  <!-- Facebook OpenGraph tags -->
-  <meta property="og:title" content="Colloscope" />
-  <meta property="og:type" content="website" />
-
-  
-  <meta property="og:url" content="https://lgarcin.github.io//2016-09-14-colloscope//" />
-  
-
-  
-  <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" />
-  
-
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-        processEscapes: true
-      }
-    });
-  </script>
-  <script type="text/javascript"
-      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
 
 </head>
 
@@ -214,10 +174,10 @@
 	    var disqus_shortname = 'mpsi';
 	    // ensure that pages with query string get the same discussion
             var url_parts = window.location.href.split("?");
-            var disqus_url = url_parts[0];	    
+            var disqus_url = url_parts[0];
 	    (function() {
 	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
 	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 	    })();
 	</script>
@@ -314,32 +274,35 @@
 
 
 
-
-
-
-
-
-
-
-
   
-    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-    
-      <script>
-      	if (typeof jQuery == 'undefined') {
-      	  document.write('<script src="/js/jquery-2.1.min.js"></scr' + 'ipt>');
-      	}
-      </script>
-    
+	<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
   
-    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-    
-	<script src="/js/bootstrap.min.js"></script>
-    
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js"></script>
+  
+	<script src="//www.skulpt.org/static/skulpt.min.js"></script>
+  
+	<script src="//www.skulpt.org/static/skulpt-stdlib.js"></script>
+  
+
+
+
+
+
+
+
+
+
   
     <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
     
 	<script src="/js/main.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/python.js"></script>
     
   
 

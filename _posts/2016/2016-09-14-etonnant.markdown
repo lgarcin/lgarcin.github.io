@@ -11,14 +11,6 @@ $$\sum_{1\leq i,j\leq n}\min(i,j)=\sum_{k=1}^nk^2$$
 
 Je vous laisse méditer sur cette animation. Oui, ça bouge ! A vous de trouver comment.
 
-<div id="glowscript" class="glowscript">
-<script type="text/javascript" src="/js/jquery-2.1.min.js"></script>
-<script type="text/javascript" src="/js/jquery-ui.custom-2.1.min.js"></script>
-<script type="text/javascript" src="/js/glow.2.1.min.js"></script>
-<script type="text/javascript" src="/js/RSrun.2.1.min.js"></script>
-<script type="text/javascript" src="/js/cubes.js"></script>
-</div>
-
-Vous pouvez aussi vous amuser à trafiquer le code. Il suffit de cliquer sur le petit crayon dans ce qui suit.
-
 <iframe src="https://trinket.io/embed/glowscript/ac49f4d6aa?toggleCode=true&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+Vous pouvez aussi vous amuser à trafiquer le code. Il suffit de cliquer sur le petit crayon.
