@@ -7,7 +7,9 @@ custom_js:
 
 Vu en cours
 
-$$\sum_{1\leq i,j\leq n}\min(i,j)=\sum_{k=1}^nk^2$$
+$$
+\sum_{1\leq i,j\leq n}\min(i,j)=\sum_{k=1}^nk^2
+$$
 
 Je vous laisse méditer sur cette animation. Oui, ça bouge ! A vous de trouver comment.
 
