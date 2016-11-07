@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" /> {% endfor %} {% endif %} {% if layout.googlefonts %} {% for font in layout.googlefonts %}
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" /> {% endfor %} {% endif %}
 
+    <link rel="shortcut icon" href="/favicon.ico" />
+
     <!-- Facebook OpenGraph tags -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta property="og:type" content="website" /> {% if page.id %}
