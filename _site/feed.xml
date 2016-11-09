@@ -7,6 +7,21 @@
     <atom:link href="https://lgarcin.github.io//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Interversion limite/intégrale</title>
+        <description>
+          
+          Intervertir sans précaution limite et intégrale, c’est MAL.
+
+Posons $f_n(x)=(n+1)x^n$ pour $x\in[0,1]$ et $n\in\mathbb N$. Alors pour tout $n\in\mathbb N$, $\int_0^1f_n(x)\,dx=1$. Pourtant pour tout $x\in[0,1[$, $\lim_{n\to+\infty}f_n(x)=0$ par croissancces comparées. Ainsi
+
+
+        </description>
+        <pubDate>Wed, 09 Nov 2016 00:00:00 +0000</pubDate>
+        <link>https://lgarcin.github.io//2016-11-09-limite-integrale/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2016-11-09-limite-integrale/</guid>
+      </item>
+    
+      <item>
         <title>Histoires de rationnels</title>
         <description>
           
