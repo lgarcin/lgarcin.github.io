@@ -7,6 +7,17 @@
     <atom:link href="https://lgarcin.github.io//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Développements limités</title>
+        <description>
+          
+          Parce qu’un dessin vaut parfois mieux qu’un long discours… En ce qui concerne les détails techniques, l’animation a été effectuée à l’aide de Python. Les développements limités ont été calculés à l’aide de la bibliothèque de calcul formel sympy. Le tracé a été effectué à l’aide de la bibliothèque matplotlib....
+        </description>
+        <pubDate>Tue, 22 Nov 2016 00:00:00 +0000</pubDate>
+        <link>https://lgarcin.github.io//2016-11-22-developpements-limites/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2016-11-22-developpements-limites/</guid>
+      </item>
+    
+      <item>
         <title>Exponentielle complexe</title>
         <description>
           
