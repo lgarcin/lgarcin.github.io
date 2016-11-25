@@ -8,6 +8,7 @@ Parce qu'un dessin vaut parfois mieux qu'un long discours...
 
 <video controls>
 <source src="/images/2016/11/dl.mp4" type="video/mp4">
+<source src="/images/2016/11/dl.webm" type="video/webm">
 </video>
 
 En ce qui concerne les détails techniques, l'animation a été effectuée à l'aide de Python.
