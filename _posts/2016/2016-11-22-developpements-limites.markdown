@@ -31,10 +31,6 @@ import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib import animation
 
-# Chemin de l'utilitaire ffmpeg utilisé pour générer
-# un film à partir de l'animation matplotlib
-plt.rcParams['animation.ffmpeg_path'] = "C:/Program Files/ImageMagick-7.0.2-Q16/ffmpeg.exe"
-
 fig = plt.figure()
 
 x = Symbol('x')
@@ -85,6 +81,8 @@ def animate(i):
 ani = animation.FuncAnimation(fig, animate, np.arange(orders * len(xdata)),
       interval=10, repeat_delay=200, blit=True, init_func=init)
 # Sauvegarde du film au format MPEG-4
-ani.save('dl.mp4', fps=30, extra_args=['-vcodec', 'libx264'])
+Writer = animation.writers['ffmpeg']
+writer = Writer(fps=30, metadata=dict(artist='Laurent Garcin'), bitrate=1800)
+ani.save('dl.mp4', writer=writer)
 plt.show()
 ```
