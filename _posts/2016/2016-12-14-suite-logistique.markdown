@@ -29,8 +29,10 @@ Il est en particulier intéressant de prendre l'indice $k$ du premier terme repr
 
 ### Comportement asymptotique
 
+Si $u_0\in\{0,1\}$, il est clair que la suite $(u_n)$ est nulle à partir du rang $1$ quelle que soit la valeur de $r$. On suppose donc $u_0\in]0,1[$ dans la suite.
+
 * Lorsque $r\in[0,1]$, on voit clairement que $(u_n)$ converge vers $0$.
-* Lorsque $r\in[1,2]$,
+* Lorsque $r\in]1,3]$, la suite $(u_n)$ converge vers un point fixe non nul de $f$ (elle est mononotone à partir d'un certain rang si $r\in]1,2]$ tandis que les suites $(u_{2n})$ et $(u_{2n+1})$ sont adjacentes à partir d'un certain rang lorsque $r\in]2,3]$).
 
 
  %% Version continue équa diff
