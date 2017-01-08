@@ -20,6 +20,17 @@
       </item>
     
       <item>
+        <title>Suite logistique</title>
+        <description>
+          
+          Introduction La suite logistique est un système dynamique discret permettant de modéliser l’évolution d’une population. Plus précisément, on considère la suite $(u_n)$ vérifiant la relation de récurrence suivante : Le terme $u_n$ ne représente pas à proprement parler la population mais une fraction d’une population maximale donnée. Pour que la...
+        </description>
+        <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
+        <link>https://lgarcin.github.io//2016-12-14-suite-logistique/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2016-12-14-suite-logistique/</guid>
+      </item>
+    
+      <item>
         <title>Thème TIPE</title>
         <description>
           

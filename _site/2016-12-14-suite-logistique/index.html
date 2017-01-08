@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>Suite logistique</title>
+
+    <meta name="author" content="Laurent Garcin" /> 
+
+    <link rel="alternate" type="application/rss+xml" title="Maths MPSI Corot - Mathématiques en MPSI au lycée Corot" href="/feed.xml" />
+
+    <!-- everything has to be repeated twice because on 2016-02-01 GitHub pages migrated to jekyll 3; see bug https://github.com/jekyll/jekyll/issues/4439 -->
+
+      
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> 
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" /> 
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />     
+    <link rel="stylesheet" href="/css/main.css" /> 
+    <link rel="stylesheet" href="/css/theorems.css" />     
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" /> 
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />        
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <!-- Facebook OpenGraph tags -->
+    <meta property="og:title" content="Suite logistique" />
+    <meta property="og:type" content="website" /> 
+    <meta property="og:url" content="https://lgarcin.github.io//2016-12-14-suite-logistique//" />  
+    <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" /> 
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } });
+    </script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+
+</head>
+
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://lgarcin.github.io/">Maths MPSI Corot</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+	    
+	      
+	      
+        <li>
+          
+          
+
+        
+
+	      <a href="/">Accueil</a>
+	      </li>
+	    
+	      
+	      
+        <li>
+          
+          
+
+        
+
+	      <a href="/cours">Cours</a>
+	      </li>
+	    
+	      
+	      
+        <li>
+          
+          
+
+        
+
+	      <a href="/td">Exercices</a>
+	      </li>
+	    
+	      
+	      
+        <li>
+          
+          
+
+        
+
+	      <a href="/vieclasse">Vie de Classe</a>
+	      </li>
+	    
+	      
+	      
+        <li>
+          
+          
+
+        
+
+	      <a href="/devoirs">Devoirs</a>
+	      </li>
+	    
+      </ul>
+    </div>
+
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="https://lgarcin.github.io/ ">
+	      <img class="avatar-img" src="/img/pi.png" alt="Pi"/>
+		</a>
+	  </div>
+	</div>
+	
+
+  </div>
+</nav>
+
+
+    <div role="main" class="container main-content">
+      <header class="header-post">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="post-heading">
+        <h1>Suite logistique</h1>
+        
+        <span class="post-meta">Posted on December 14, 2016</span>
+      </div>
+     </div>
+  </div>
+</header>
+
+<article>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	  <h3 id="introduction">Introduction</h3>
+
+<p>La suite logistique est un système dynamique discret permettant de modéliser l’évolution d’une population. Plus précisément, on considère la suite $(u_n)$ vérifiant la relation de récurrence suivante :</p>
+
+<script type="math/tex; mode=display">\forall n\in\mathbb{N},\;u_{n+1}=r\cdot u_n\cdot(1-u_n)</script>
+
+<p>Le terme $u_n$ ne représente pas à proprement parler la population mais une fraction d’une population maximale donnée. Pour que la suite $(u_n)$ reste à valeurs dans $[0,1]$, on s’aperçoit qu’il faut choisir $r$ dans $[0,4]$.</p>
+
+<hr />
+
+<h3 id="simulation">Simulation</h3>
+
+<p>L’animation GeoGebra suivante représente les termes de cette suite.</p>
+
+<iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/SzST75DK/width/800/height/700/border/888888/sri/true/sdz/true" width="800px" height="700px" style="border:0px;">
+</iframe>
+
+<p>Il est en particulier intéressant de prendre l’indice $k$ du premier terme représenté de l’ordre de $50$ pour avoir une idée du comportement asymptotique de cette suite. Pour plus de précision, on peut faire varier le paramètre $r$ à l’aide des flèches directionnelles : il se passe des choses intéressantes pour $r\in[3,4]$.</p>
+
+<hr />
+
+<h3 id="comportement-asymptotique">Comportement asymptotique</h3>
+
+<p>Si $u_0\in{0,1}$, il est clair que la suite $(u_n)$ est nulle à partir du rang $1$ quelle que soit la valeur de $r$. On suppose donc $u_0\in]0,1[$ dans la suite.</p>
+
+<ul>
+  <li>
+    <p>Lorsque $r\in[0,1]$, on voit clairement que $(u_n)$ converge vers $0$.</p>
+  </li>
+  <li>
+    <p>Lorsque $r\in]1,3]$, la suite $(u_n)$ converge vers un point fixe non nul de $f$ (elle est mononotone à partir d’un certain rang si $r\in]1,2]$ tandis que les suites $(u_{2n})$ et $(u_{2n+1})$ sont adjacentes à partir d’un certain rang lorsque $r\in]2,3]$).</p>
+  </li>
+  <li>
+    <p>Lorsque $r\in]3,4]$, les choses se compliquent. La suite $(u_n)$ admet d’abord un cycle-limite<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> de longueur $2$, puis de longueur $4$, $8$, $16$ … Tous les cycles de longueur une puissance de $2$ apparaissent jusqu’à une certaine valeur de $r$ à partir de laquelle commence le <strong>chaos</strong> : l’évolution asymptotique de la suite $(u_n)$ est “imprévisible”<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> et dépend grandement de la condition initiale. Néanmoins, il existe certains intervalles isolés de valeurs de $r$ pour lesquelles la suite $(u_n)$ converge à nouveau vers un cycle-limite. On peut montrer que l’apparition des longueurs des cycles-limites suit un certain ordre appelé <strong>ordre de Charkovski</strong>.</p>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="diagramme-de-feigenbaum">Diagramme de Feigenbaum</h3>
+
+<p>Pour mieux comprendre ce qui précède, on trace les valeurs d’adhérences<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup> de la suite $(u_n)$ en fonction des valeurs de $r$.</p>
+
+<p><img src="/images/2017/01/feigenbaum.jpeg" alt="Diagramme de Feigenbaum" /></p>
+
+<p>Les résultats sont cohérents avec ce qui a été décrit précédemment. On observe notamment le doublement de la longeur du cycle limite à partir de $r=3$.</p>
+
+<p>On peut zoomer pour voir plus précisément ce qui se passe pour $r\in[3,4]$.</p>
+
+<p><img src="/images/2017/01/feigenbaum_1.jpeg" alt="Diagramme de Feigenbaum" /></p>
+
+<p>On peut aussi remarquer en zoomant qu’on obtient également des cycles de longeur qui ne sont pas des puissances de $2$.</p>
+
+<p><img src="/images/2017/01/feigenbaum_2.jpeg" alt="Diagramme de Feigenbaum" /></p>
+
+<p>Le principe de doublement de la longueur du cycle reste encore valable. Dans la figure suivante, on voit apparaître successivement des cycles de longeur<sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup> $3$, $6$, $12$ …</p>
+
+<p><img src="/images/2017/01/feigenbaum_3.jpeg" alt="Diagramme de Feigenbaum" /></p>
+
+<hr />
+
+<h3 id="code-python">Code Python</h3>
+
+<p>Voilà la fonction Python utilisée pour le tracé du diagramme de Feigenbaum.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">linspace</span>
+<span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="n">scatter</span><span class="p">,</span> <span class="n">show</span><span class="p">,</span> <span class="n">xlim</span><span class="p">,</span> <span class="n">ylim</span>
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">r</span> <span class="o">*</span> <span class="n">x</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">feigenbaum</span><span class="p">(</span><span class="n">r1</span><span class="p">,</span> <span class="n">r2</span><span class="p">,</span> <span class="n">nb</span><span class="p">,</span> <span class="n">N</span><span class="p">):</span>
+    <span class="n">r_range</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="n">r1</span><span class="p">,</span> <span class="n">r2</span><span class="p">,</span> <span class="n">nb</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">r_range</span><span class="p">:</span>
+        <span class="n">u</span> <span class="o">=</span> <span class="o">.</span><span class="mi">1</span>
+        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+            <span class="n">u</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">u</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+            <span class="n">u</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">u</span><span class="p">)</span>
+            <span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+            <span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+    <span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'.'</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">xlim</span><span class="p">(</span><span class="n">r1</span><span class="p">,</span> <span class="n">r2</span><span class="p">)</span>
+    <span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">show</span><span class="p">()</span>
+</code></pre>
+</div>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>On dira qu’une suite $(u_n)$ admet un <strong>cycle-limite</strong> de longueur $p$ si les suites extraites $(u_{n+k})$ pour $0\leq k\leq p-1$ convergent. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Bien entendu, les valeurs des termes de la suite sont encore calculables par récurrence donc l’évolution de la suite est encore “prévisible”. Mais il n’existe plus de comportement asymptotique aussi régulier qu’un cycle-limite. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>On appelle <strong>valeur d’adhérence</strong> d’une suite toute limite éventuelle d’une de ses suites extraites. <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>Je concède qu’il faille faire preuve d’imagination… <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+	</div>
+  </div>
+</article>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <ul class="pager blog-pager">
+      
+      <li class="previous">
+        <a href="/2016-11-26-theme-tipe/" data-toggle="tooltip" data-placement="top" title="Thème TIPE">&larr; Previous Post</a>
+      </li>
+      
+      
+      <li class="next">
+        <a href="/2017-01-01-bonne-annee/" data-toggle="tooltip" data-placement="top" title="Bonne année">Next Post &rarr;</a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<div class="row disqus-comments">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'mpsi';
+	    // ensure that pages with query string get the same discussion
+            var url_parts = window.location.href.split("?");
+            var disqus_url = url_parts[0];
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  </div>
+</div>
+
+
+    </div>
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          <li>
+            <a href="https://github.com/lgarcin" title="GitHub">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+		  
+          <li>
+            <a href="mailto:laurent.garcin@gmail.com" title="Email me">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="https://linkedin.com/in/laurent-garcin-b2b02ab7" title="LinkedIn">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+          <li>
+            <a href="https://stackoverflow.com/users/4439374/laurent-garcin" title="StackOverflow">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		  
+		  <li>
+			<a href="/feed.xml" title="RSS">
+			  <span class="fa-stack fa-lg">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+			  </span>
+			</a>
+		  </li>
+          
+        </ul>
+        <p class="copyright text-muted">
+		  Laurent Garcin
+		  &nbsp;&bull;&nbsp;
+		  2017
+
+		  
+		  &nbsp;&bull;&nbsp;
+		  <a href="https://lgarcin.github.io/">lgarcin.github.io</a>
+		  
+	    </p>
+	        <!-- Please don't remove this, keep my open source work credited :) -->
+		<p class="theme-by text-muted">
+		  Theme by
+		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+		</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- everything has to be repeated twice because on 2016-02-01 GitHub pages migrated to jekyll 3; see bug https://github.com/jekyll/jekyll/issues/4439 -->
+
+
+
+  
+	<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+  
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js"></script>
+  
+	<script src="//cdn.rawgit.com/skulpt/skulpt-dist/master/skulpt.min.js"></script>
+  
+	<script src="//cdn.rawgit.com/skulpt/skulpt-dist/master/skulpt-stdlib.js"></script>
+  
+
+
+
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/python.js"></script>
+    
+  
+
+
+
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-30206958-3', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>
