@@ -161,6 +161,11 @@ DS:
   Enoncé:
     path: DS04.pdf
   title: DS04
+- Corrigé:
+    path: DS05.corrige.pdf
+  Enoncé:
+    path: DS05.pdf
+  title: DS05
 Formulaires:
 - path: FormulaireComparaisonFonctions.pdf
   title: Comparaison de fonctions
