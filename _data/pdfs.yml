@@ -31,6 +31,8 @@ Colles:
   title: Semaine du 23/01 au 27/01
 - path: ProgColles16.pdf
   title: Semaine du 30/01 au 03/02
+- path: ProgColles17.pdf
+  title: Semaine du 20/02 au 24/02
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -225,6 +227,9 @@ TD:
   Enoncé:
     path: TDApplications.pdf
   title: Applications, fonctions d'une variable réelle
+- Enoncé:
+    path: TDApplicationsLineaires.pdf
+  title: Applications linéaires
 - Corrigé:
     path: TDArithmetique.corrige.pdf
   Enoncé:
