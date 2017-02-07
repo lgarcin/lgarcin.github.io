@@ -221,6 +221,8 @@ Interros:
   title: Interrogation écrite \no8
 - path: Interro09.pdf
   title: Interrogation écrite \no9
+- path: Interro10.pdf
+  title: Interrogation écrite \no10
 TD:
 - Corrigé:
     path: TDApplications.corrige.pdf
@@ -245,7 +247,9 @@ TD:
   Enoncé:
     path: TDComplexes.pdf
   title: Nombres complexes
-- Enoncé:
+- Corrigé:
+    path: TDDimensionFinie.corrige.pdf
+  Enoncé:
     path: TDDimensionFinie.pdf
   title: Espaces vectoriels de dimension finie
 - Corrigé:
