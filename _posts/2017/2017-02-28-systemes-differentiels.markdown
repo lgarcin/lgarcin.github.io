@@ -20,11 +20,13 @@ Maintenant une représentation d'un champ de vecteur un peu plus complexe $f\col
 
 ![Champ de vecteurs](/images/2017/03/champ2.png)
 
+Parler de quiver
+
 ## Application aux systèmes différentiels
 
 De manière générale, un système différentiel autonome peut s'écrire sous la forme $X'=f(X)$ où
 
-* $X=(x_1,\dots,x_n)$ est une application de classe $\mathcal{C}^1$ sur $\mathbb{R}$ à valeurs dans $\mathbb{R}^n$ ;
+* $X=(x_1,\dots,x_n)$ est une application **inconnue** de classe $\mathcal{C}^1$ sur $\mathbb{R}$ à valeurs dans $\mathbb{R}^n$ ;
 
 * $f$ est une application continue de $\mathbb{R}^n$ dans $\mathbb{R}^n$, c'est-à-dire un champ de vecteurs.
 
@@ -38,7 +40,14 @@ Dans le cas où $f$ est un endomorphisme de $\mathbb{R}^n$, on parle de système
 
 Une application $X$ solution du système peut être vue comme une **courbe paramétrée** à valeurs dans $\mathbb{R}^n$. A chaque instant $t$, le vecteur vitesse $X'(t)$ est égal à $f(X(t))$, c'est-à-dire que la trajectoire de $X$ est "guidée" par le champ de vecteurs.
 
+Parler de odeint
+
+Voilà par exemple l'évolution d'une solution du sytème différentiel $$\left\{\begin{align*}x'&=-y\\y'&=x\end{align*}\right.$$.
+
+* Le premier graphique représente l'évolution de $x$ et $y$ en fonction du temps.
+
+* Le second graphique représente l'évolution de la courbe paramétrée superposée à la représentation graphique du champ de vecteurs.
 
 <video controls>
-<source src="/images/2017/03/toto.mp4" type="video/mp4">
+<source src="/images/2017/03/champ_circulaire.m4v" type="video/mp4">
 </video>

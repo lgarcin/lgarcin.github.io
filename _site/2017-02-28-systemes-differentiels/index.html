@@ -162,13 +162,15 @@
 
 <p><img src="/images/2017/03/champ2.png" alt="Champ de vecteurs" /></p>
 
+<p>Parler de quiver</p>
+
 <h2 id="application-aux-systmes-diffrentiels">Application aux systèmes différentiels</h2>
 
 <p>De manière générale, un système différentiel autonome peut s’écrire sous la forme $X’=f(X)$ où</p>
 
 <ul>
   <li>
-    <p>$X=(x_1,\dots,x_n)$ est une application de classe $\mathcal{C}^1$ sur $\mathbb{R}$ à valeurs dans $\mathbb{R}^n$ ;</p>
+    <p>$X=(x_1,\dots,x_n)$ est une application <strong>inconnue</strong> de classe $\mathcal{C}^1$ sur $\mathbb{R}$ à valeurs dans $\mathbb{R}^n$ ;</p>
   </li>
   <li>
     <p>$f$ est une application continue de $\mathbb{R}^n$ dans $\mathbb{R}^n$, c’est-à-dire un champ de vecteurs.</p>
@@ -184,8 +186,22 @@
 
 <p>Une application $X$ solution du système peut être vue comme une <strong>courbe paramétrée</strong> à valeurs dans $\mathbb{R}^n$. A chaque instant $t$, le vecteur vitesse $X’(t)$ est égal à $f(X(t))$, c’est-à-dire que la trajectoire de $X$ est “guidée” par le champ de vecteurs.</p>
 
+<p>Parler de odeint</p>
+
+<p>Voilà par exemple l’évolution d’une solution du sytème différentiel <script type="math/tex">% <![CDATA[
+\left\{\begin{align*}x'&=-y\\y'&=x\end{align*}\right. %]]></script>.</p>
+
+<ul>
+  <li>
+    <p>Le premier graphique représente l’évolution de $x$ et $y$ en fonction du temps.</p>
+  </li>
+  <li>
+    <p>Le second graphique représente l’évolution de la courbe paramétrée superposée à la représentation graphique du champ de vecteurs.</p>
+  </li>
+</ul>
+
 <video controls="">
-<source src="/images/2017/03/toto.mp4" type="video/mp4" />
+<source src="/images/2017/03/champ_circulaire.m4v" type="video/mp4" />
 </video>
 
 	</div>
