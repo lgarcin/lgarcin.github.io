@@ -100,7 +100,7 @@ $$
 
 ```python
 from scipy.integrate import odeint
-from numpy import array, linspace, meshgrid, sqrt, cos, sin, exp
+from numpy import array, linspace, meshgrid, cos, sin, exp
 from matplotlib.pyplot import figure, plot, grid, legend, xlabel, ylabel, show, xlim, ylim, subplot, gca, quiver
 from matplotlib.animation import FuncAnimation
 from numpy import vectorize
