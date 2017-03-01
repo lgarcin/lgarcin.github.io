@@ -154,15 +154,31 @@
 
 <p>En dimension $2$ ou $3$, on peut visualiser un champ de vecteurs $f$ en dessinant le vecteur $f(X)$ en tout point $X$.</p>
 
-<p>Voici par exemple ce que donne la représentation du champ de vecteurs $f\colon(x,y)\in\mathbb{R}^2\mapsto(-y,x)$.</p>
+<p>Voici par exemple ce que donne la représentation du champ de vecteurs
+<script type="math/tex">f\colon(x,y)\in\mathbb{R}^2\mapsto(-y,x)</script></p>
 
 <p><img src="/images/2017/03/champ1.png" alt="Champ de vecteurs" /></p>
 
-<p>Maintenant une représentation d’un champ de vecteur un peu plus complexe $f\colon(x,y)\in\mathbb{R}^2\mapsto(\sin(x\cdot y/10),\cos(x\cdot /10))$.</p>
+<p>Maintenant une représentation d’un champ de vecteur un peu plus complexe
+<script type="math/tex">f\colon(x,y)\in\mathbb{R}^2\mapsto(\sin(x\cdot y/10),\cos(x\cdot /10))</script></p>
 
 <p><img src="/images/2017/03/champ2.png" alt="Champ de vecteurs" /></p>
 
-<p>Parler de quiver</p>
+<p><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#champ">Code Python</button></p>
+
+<div class="language-python collapse highlighter-rouge" id="champ"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">linspace</span><span class="p">,</span> <span class="n">meshgrid</span><span class="p">,</span> <span class="n">vectorize</span>
+<span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="n">quiver</span><span class="p">,</span> <span class="n">show</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="n">gca</span>
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">sin</span><span class="p">(</span><span class="o">.</span><span class="mi">1</span><span class="o">*</span><span class="n">x</span><span class="o">*</span><span class="n">y</span><span class="p">),</span> <span class="n">cos</span><span class="p">(</span><span class="o">.</span><span class="mi">1</span><span class="o">*</span><span class="n">x</span><span class="o">*</span><span class="n">y</span><span class="p">)</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">meshgrid</span><span class="p">(</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">),</span> <span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+<span class="n">dx</span><span class="p">,</span> <span class="n">dy</span> <span class="o">=</span> <span class="n">vectorize</span><span class="p">(</span><span class="n">f</span><span class="p">)(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s">'equal'</span><span class="p">,</span> <span class="n">adjustable</span><span class="o">=</span><span class="s">'box'</span><span class="p">)</span>
+<span class="n">quiver</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">dx</span><span class="p">,</span> <span class="n">dy</span><span class="p">)</span>
+<span class="n">show</span><span class="p">()</span>
+</code></pre>
+</div>
 
 <h2 id="application-aux-systmes-diffrentiels">Application aux systèmes différentiels</h2>
 
@@ -186,23 +202,108 @@
 
 <p>Une application $X$ solution du système peut être vue comme une <strong>courbe paramétrée</strong> à valeurs dans $\mathbb{R}^n$. A chaque instant $t$, le vecteur vitesse $X’(t)$ est égal à $f(X(t))$, c’est-à-dire que la trajectoire de $X$ est “guidée” par le champ de vecteurs.</p>
 
-<p>Parler de odeint</p>
+<p>Voilà par exemple l’évolution d’une solution du sytème différentiel</p>
 
-<p>Voilà par exemple l’évolution d’une solution du sytème différentiel <script type="math/tex">% <![CDATA[
-\left\{\begin{align*}x'&=-y\\y'&=x\end{align*}\right. %]]></script>.</p>
+<script type="math/tex; mode=display">% <![CDATA[
+\left\{\begin{align*}x'&=-y\\y'&=x\end{align*}\right. %]]></script>
 
 <ul>
   <li>
     <p>Le premier graphique représente l’évolution de $x$ et $y$ en fonction du temps.</p>
   </li>
   <li>
-    <p>Le second graphique représente l’évolution de la courbe paramétrée superposée à la représentation graphique du champ de vecteurs.</p>
+    <p>Le second graphique représente l’évolution de la courbe paramétrée $(x,y)$ superposée à la représentation graphique du champ de vecteurs.</p>
   </li>
 </ul>
 
 <video controls="">
-<source src="/images/2017/03/champ_circulaire.m4v" type="video/mp4" />
+<source src="/images/2017/03/champ_circulaire.mp4" type="video/mp4" />
 </video>
+
+<p>Même chose pour le système différentiel :</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\left\{\begin{align*}x'&=x/5+5y\\y'&=-5x+y/5\end{align*}\right. %]]></script>
+
+<video controls="">
+<source src="/images/2017/03/champ_spirale.mp4" type="video/mp4" />
+</video>
+
+<p>Enfin, un exemple de système différentiel non linéaire sans doute un peu plus probant :</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\left\{\begin{align*}x'&=\exp(\cos(x)/2)\cdot\sin(y^2/20)\\y'&=2\cos(x^2/5)\end{align*}\right. %]]></script>
+
+<video controls="">
+<source src="/images/2017/03/champ_bizarre.mp4" type="video/mp4" />
+</video>
+
+<p><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#syst">Code Python</button></p>
+
+<div class="language-python collapse highlighter-rouge" id="syst"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">odeint</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">array</span><span class="p">,</span> <span class="n">linspace</span><span class="p">,</span> <span class="n">meshgrid</span><span class="p">,</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">cos</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">exp</span>
+<span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="n">figure</span><span class="p">,</span> <span class="n">plot</span><span class="p">,</span> <span class="n">grid</span><span class="p">,</span> <span class="n">legend</span><span class="p">,</span> <span class="n">xlabel</span><span class="p">,</span> <span class="n">ylabel</span><span class="p">,</span> <span class="n">show</span><span class="p">,</span> <span class="n">xlim</span><span class="p">,</span> <span class="n">ylim</span><span class="p">,</span> <span class="n">subplot</span><span class="p">,</span> <span class="n">gca</span><span class="p">,</span> <span class="n">quiver</span>
+<span class="kn">from</span> <span class="nn">matplotlib.animation</span> <span class="kn">import</span> <span class="n">FuncAnimation</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">vectorize</span>
+
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">exp</span><span class="p">(</span><span class="n">cos</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">x2</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">/</span> <span class="mi">20</span><span class="p">),</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">cos</span><span class="p">(</span><span class="n">x1</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">/</span> <span class="mi">5</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">diff</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="o">*</span><span class="n">f</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[</span><span class="mi">1</span><span class="p">])]</span>
+
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">2000</span><span class="p">)</span>
+<span class="n">X0</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">odeint</span><span class="p">(</span><span class="n">diff</span><span class="p">,</span> <span class="n">X0</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+<span class="n">x1_sol</span><span class="p">,</span> <span class="n">x2_sol</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">T</span>
+
+<span class="n">x1_min</span><span class="p">,</span> <span class="n">x1_max</span><span class="p">,</span> <span class="n">x2_min</span><span class="p">,</span> <span class="n">x2_max</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">x1_sol</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">x1_sol</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="n">x2_sol</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">x2_sol</span><span class="p">)</span>
+<span class="n">x1_range</span><span class="p">,</span> <span class="n">x2_range</span> <span class="o">=</span> <span class="n">x1_max</span> <span class="o">-</span> <span class="n">x1_min</span><span class="p">,</span> <span class="n">x2_max</span> <span class="o">-</span> <span class="n">x2_min</span>
+<span class="n">x1_min</span><span class="p">,</span> <span class="n">x1_max</span><span class="p">,</span> <span class="n">x2_min</span><span class="p">,</span> <span class="n">x2_max</span> <span class="o">=</span> <span class="n">x1_min</span> <span class="o">-</span> <span class="o">.</span><span class="mi">1</span> <span class="o">*</span> <span class="n">x1_range</span><span class="p">,</span> <span class="n">x1_max</span> <span class="o">+</span> <span class="o">.</span><span class="mi">1</span> <span class="o">*</span> <span class="n">x1_range</span><span class="p">,</span> <span class="n">x2_min</span> <span class="o">-</span> <span class="o">.</span><span class="mi">1</span> <span class="o">*</span> <span class="n">x2_range</span><span class="p">,</span> <span class="n">x2_max</span> <span class="o">+</span> <span class="o">.</span><span class="mi">1</span> <span class="o">*</span> <span class="n">x2_range</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">meshgrid</span><span class="p">(</span><span class="n">linspace</span><span class="p">(</span><span class="n">x1_min</span><span class="p">,</span> <span class="n">x1_max</span><span class="p">,</span> <span class="mi">20</span><span class="p">),</span> <span class="n">linspace</span><span class="p">(</span><span class="n">x2_min</span><span class="p">,</span> <span class="n">x2_max</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+<span class="n">dx</span><span class="p">,</span> <span class="n">dy</span> <span class="o">=</span> <span class="n">vectorize</span><span class="p">(</span><span class="n">f</span><span class="p">)(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+
+<span class="n">subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
+<span class="n">grid</span><span class="p">()</span>
+<span class="n">xlim</span><span class="p">([</span><span class="nb">min</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">t</span><span class="p">)])</span>
+<span class="n">ylim</span><span class="p">([</span><span class="nb">min</span><span class="p">(</span><span class="n">x1_min</span><span class="p">,</span> <span class="n">x2_min</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">x1_max</span><span class="p">,</span> <span class="n">x2_max</span><span class="p">)])</span>
+<span class="n">p1</span><span class="p">,</span> <span class="o">=</span> <span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s">'r-'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">"$x$"</span><span class="p">)</span>
+<span class="n">p2</span><span class="p">,</span> <span class="o">=</span> <span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s">'b-'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">"$y$"</span><span class="p">)</span>
+<span class="n">legend</span><span class="p">()</span>
+
+<span class="n">subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
+<span class="n">grid</span><span class="p">()</span>
+<span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s">'equal'</span><span class="p">,</span> <span class="n">adjustable</span><span class="o">=</span><span class="s">'box'</span><span class="p">)</span>
+<span class="n">xlim</span><span class="p">([</span><span class="n">x1_min</span><span class="p">,</span> <span class="n">x1_max</span><span class="p">])</span>
+<span class="n">ylim</span><span class="p">([</span><span class="n">x2_min</span><span class="p">,</span> <span class="n">x2_max</span><span class="p">])</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s">"$x$"</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s">"$y$"</span><span class="p">)</span>
+<span class="n">p3</span><span class="p">,</span> <span class="o">=</span> <span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s">'g-'</span><span class="p">)</span>
+<span class="n">p4</span><span class="p">,</span> <span class="o">=</span> <span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s">'go'</span><span class="p">)</span>
+<span class="n">quiver</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">dx</span><span class="p">,</span> <span class="n">dy</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">animate</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    <span class="n">p1</span><span class="o">.</span><span class="n">set_data</span><span class="p">(</span><span class="n">t</span><span class="p">[:</span><span class="n">i</span><span class="p">],</span> <span class="n">x1_sol</span><span class="p">[:</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">p2</span><span class="o">.</span><span class="n">set_data</span><span class="p">(</span><span class="n">t</span><span class="p">[:</span><span class="n">i</span><span class="p">],</span> <span class="n">x2_sol</span><span class="p">[:</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">p3</span><span class="o">.</span><span class="n">set_data</span><span class="p">(</span><span class="n">x1_sol</span><span class="p">[:</span><span class="n">i</span><span class="p">],</span> <span class="n">x2_sol</span><span class="p">[:</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">p4</span><span class="o">.</span><span class="n">set_data</span><span class="p">(</span><span class="n">x1_sol</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">x2_sol</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p3</span><span class="p">,</span> <span class="n">p4</span>
+
+
+<span class="n">ani</span> <span class="o">=</span> <span class="n">FuncAnimation</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">animate</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)),</span> <span class="n">interval</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">blit</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="n">show</span><span class="p">()</span>
+</code></pre>
+</div>
+
+<p>De manière imagée, la trajectoire d’une solution d’un système différentiel correspond à la trajectoire d’un bouchon de liège sur une eau agitée par des courants. Le champ de vitesses dans un fluide n’est d’ailleurs qu’un exemple de champ de vecteurs…</p>
 
 	</div>
   </div>
