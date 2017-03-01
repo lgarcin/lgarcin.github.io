@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>Vie de classe</title>
+    <title>Systèmes différentiels</title>
 
     <meta name="author" content="Laurent Garcin" /> 
 
@@ -21,15 +21,14 @@
     <link rel="stylesheet" href="/css/main.css" /> 
     <link rel="stylesheet" href="/css/theorems.css" />     
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" /> 
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />      
-    <link rel="stylesheet" href="/css/pdfs.css" />     
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />        
 
     <link rel="shortcut icon" href="/favicon.ico" />
 
     <!-- Facebook OpenGraph tags -->
-    <meta property="og:title" content="Vie de classe" />
+    <meta property="og:title" content="Systèmes différentiels" />
     <meta property="og:type" content="website" /> 
-    <meta property="og:url" content="https://lgarcin.github.io//vieclasse/" />  
+    <meta property="og:url" content="https://lgarcin.github.io//2017-02-28-systemes-differentiels//" />  
     <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" /> 
 
     <script type="text/x-mathjax-config">
@@ -132,67 +131,104 @@
 
 
     <div role="main" class="container main-content">
-      
-<header class="header-page">
+      <header class="header-post">
   <div class="row">
-    <div class="col-lg-12 col-md-10">
-      <div class="page-heading">
-        <h1>Vie de classe</h1> 
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="post-heading">
+        <h1>Systèmes différentiels</h1>
+        
+        <span class="post-meta">Posted on February 28, 2017</span>
       </div>
-    </div>
+     </div>
   </div>
 </header>
 
+<article>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	  <h1 id="champ-de-vecteurs">Champ de vecteurs</h1>
+
+<p>On appelle <strong>champ de vecteurs</strong> une application de $\mathbb{R}^n$ dans $\mathbb{R}^n$. Les éléments de l’ensemble de départ sont vus comme des <strong>points</strong> tandis que les éléments de l’ensembles d’arrivée sont vus comme des <strong>vecteurs</strong>.</p>
+
+<p>Par exemple, en physique, les champs électrique et magnétiques sont des champs de vecteur : à tout point de l’espace sont associés deux vecteurs $\overrightarrow{E}$ et $\overrightarrow{B}$.</p>
+
+<p>En dimension $2$ ou $3$, on peut visualiser un champ de vecteurs $f$ en dessinant le vecteur $f(X)$ en tout point $X$.</p>
+
+<p>Voici par exemple ce que donne la représentation du champ de vecteurs $f\colon(x,y)\in\mathbb{R}^2\mapsto(-y,x)$.</p>
+
+<p><img src="/images/2017/03/champ1.png" alt="Champ de vecteurs" /></p>
+
+<p>Maintenant une représentation d’un champ de vecteur un peu plus complexe $f\colon(x,y)\in\mathbb{R}^2\mapsto(\sin(x\cdot y/10),\cos(x\cdot /10))$.</p>
+
+<p><img src="/images/2017/03/champ2.png" alt="Champ de vecteurs" /></p>
+
+<h2 id="application-aux-systmes-diffrentiels">Application aux systèmes différentiels</h2>
+
+<p>De manière générale, un système différentiel autonome peut s’écrire sous la forme $X’=f(X)$ où</p>
+
+<ul>
+  <li>
+    <p>$X=(x_1,\dots,x_n)$ est une application de classe $\mathcal{C}^1$ sur $\mathbb{R}$ à valeurs dans $\mathbb{R}^n$ ;</p>
+  </li>
+  <li>
+    <p>$f$ est une application continue de $\mathbb{R}^n$ dans $\mathbb{R}^n$, c’est-à-dire un champ de vecteurs.</p>
+  </li>
+</ul>
+
+<p>Voici par exemple le système différentiel en dimension 2 associé au champ de vecteurs $f\colon(x,y)\mapsto(-y,x)$ :</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\left\{\begin{align*}x'&=-y\\y'&=x\end{align*}\right. %]]></script>
+
+<p>Dans le cas où $f$ est un endomorphisme de $\mathbb{R}^n$, on parle de système différentiel <strong>linéaire</strong>. On sait alors résoudre explicitement un tel système. Dans le cas où $f$ n’est pas linéaire, le <strong>thèorème de Cauchy-Lipschitz</strong> garantit l’existence d’une solution et son unicité si l’on fournit des conditions initiales (à condition que $f$ soit suffisamment régulier) mais ce n’est pas notre propos. On préfère ici expliquer comment prévoir l’évolution d’une solution d’un système linéaire à partir de la représentation graphique du champ de vecteurs.</p>
+
+<p>Une application $X$ solution du système peut être vue comme une <strong>courbe paramétrée</strong> à valeurs dans $\mathbb{R}^n$. A chaque instant $t$, le vecteur vitesse $X’(t)$ est égal à $f(X(t))$, c’est-à-dire que la trajectoire de $X$ est “guidée” par le champ de vecteurs.</p>
+
+<video controls="">
+<source src="/images/2017/03/toto.mp4" type="video/mp4" />
+</video>
+
+	</div>
+  </div>
+</article>
 
 <div class="row">
-  <div class="col-lg-12 col-md-10">
-    <div class="row">
-
-    <div class="col-lg-12">
-        <section id="vieclasse">
-
-
-
-    <div class="col-lg-4 pdf">
-      <div class="zoom">
-        <a href="/pdfs/EDT_MPSI_20162017.pdf">
-            <i class="fa fa-file-pdf-o fa-1x"></i><span style="display:inline-block; width:1ex"></span>Emploi du temps</a>
-      </div>
-    </div>
-
-
-
-    <div class="col-lg-4 pdf">
-      <div class="zoom">
-        <a href="/pdfs/ColloscopeMPSICorotv2.pdf">
-            <i class="fa fa-file-pdf-o fa-1x"></i><span style="display:inline-block; width:1ex"></span>Colloscope</a>
-      </div>
-    </div>
-
-
-
-    <div class="col-lg-4 pdf">
-      <div class="zoom">
-        <a href="/pdfs/PlanningDS_MPSI_PCSI_EC1.pdf">
-            <i class="fa fa-file-pdf-o fa-1x"></i><span style="display:inline-block; width:1ex"></span>Planning des DS</a>
-      </div>
-    </div>
-
-
-
-</section>
-</div>
-<!-- <div class="col-lg-4" style="padding:10px">
-  <a href="https://docs.google.com/spreadsheets/d/1wrX4rzfOxKKO81BTm3tPRfurLXPHvZd4LW3n1rV5KQc/edit?usp=sharing">Notes premier semestre</a>
-</div>
-<div class="col-lg-4" style="padding:10px">
-  <a href="https://docs.google.com/spreadsheets/d/1Pt-euze5tgU6sppeh2x9Fp7uTlZJuGW6ZebF7TKg2DE/edit?usp=sharing">Notes second semestre</a>
-</div> -->
-<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdd0CP4NKaW052L4tFHOTz9Zx8LggEVuhXyYfkg4qbitm8-wQ/viewform?embedded=true" width="760" height="1120" frameborder="0" marginheight="0" marginwidth="0">Chargement en cours...</iframe>
-</div> -->
- 
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <ul class="pager blog-pager">
+      
+      <li class="previous">
+        <a href="/2017-01-01-bonne-annee/" data-toggle="tooltip" data-placement="top" title="Bonne année">&larr; Previous Post</a>
+      </li>
+      
+      
+    </ul>
   </div>
 </div>
+
+
+<div class="row disqus-comments">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'mpsi';
+	    // ensure that pages with query string get the same discussion
+            var url_parts = window.location.href.split("?");
+            var disqus_url = url_parts[0];
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  </div>
+</div>
+
 
     </div>
 

@@ -7,6 +7,17 @@
     <atom:link href="https://lgarcin.github.io//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Systèmes différentiels</title>
+        <description>
+          
+          Champ de vecteurs On appelle champ de vecteurs une application de $\mathbb{R}^n$ dans $\mathbb{R}^n$. Les éléments de l’ensemble de départ sont vus comme des points tandis que les éléments de l’ensembles d’arrivée sont vus comme des vecteurs. Par exemple, en physique, les champs électrique et magnétiques sont des champs de...
+        </description>
+        <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
+        <link>https://lgarcin.github.io//2017-02-28-systemes-differentiels/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2017-02-28-systemes-differentiels/</guid>
+      </item>
+    
+      <item>
         <title>Bonne année</title>
         <description>
           
