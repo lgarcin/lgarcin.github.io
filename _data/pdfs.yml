@@ -35,6 +35,8 @@ Colles:
   title: Semaine du 20/02 au 24/02
 - path: ProgColles18.pdf
   title: Semaine du 27/02 au 03/03
+- path: ProgColles19.pdf
+  title: Semaine du 06/03 au 10/03
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -194,6 +196,11 @@ DS:
   Enoncé:
     path: DS06.pdf
   title: DS06
+- Corrigé:
+    path: DS07.corrige.pdf
+  Enoncé:
+    path: DS07.pdf
+  title: DS07
 Formulaires:
 - path: FormulaireComparaisonFonctions.pdf
   title: Comparaison de fonctions
@@ -236,7 +243,9 @@ TD:
   Enoncé:
     path: TDApplications.pdf
   title: Applications, fonctions d'une variable réelle
-- Enoncé:
+- Corrigé:
+    path: TDApplicationsLineaires.corrige.pdf
+  Enoncé:
     path: TDApplicationsLineaires.pdf
   title: Applications linéaires
 - Corrigé:
@@ -284,6 +293,9 @@ TD:
   Enoncé:
     path: TDIntegralesPrimitives.pdf
   title: Primitives et intégrales
+- Enoncé:
+    path: TDPolynomes.pdf
+  title: Polynômes
 - Corrigé:
     path: TDRaisonnements.corrige.pdf
   Enoncé:

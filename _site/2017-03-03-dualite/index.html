@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>MPSI Corot</title>
+    <title>Dualité</title>
 
     <meta name="author" content="Laurent Garcin" /> 
 
@@ -26,9 +26,9 @@
     <link rel="shortcut icon" href="/favicon.ico" />
 
     <!-- Facebook OpenGraph tags -->
-    <meta property="og:title" content="MPSI Corot" />
+    <meta property="og:title" content="Dualité" />
     <meta property="og:type" content="website" /> 
-    <meta property="og:url" content="https://lgarcin.github.io//page3/" />  
+    <meta property="og:url" content="https://lgarcin.github.io//2017-03-03-dualite//" />  
     <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" /> 
 
     <script type="text/x-mathjax-config">
@@ -131,120 +131,100 @@
 
 
     <div role="main" class="container main-content">
-      
-<header class="header-page">
+      <header class="header-post">
   <div class="row">
-    <div class="col-lg-12 col-md-10">
-      <div class="page-heading">
-        <h1>MPSI Corot</h1> 
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="post-heading">
+        <h1>Dualité</h1>
+        
+        <span class="post-meta">Posted on March 3, 2017</span>
       </div>
-    </div>
+     </div>
   </div>
 </header>
 
+<article>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	  <p>La dualité est le lien qui existe entre un $\mathbb{K}$-espace vectoriel $E$ et son espace dual <script type="math/tex">E^*</script>. On rappelle que <script type="math/tex">E^*</script> est l’espace vectoriel des formes linéaires sur $E$.</p>
+
+<h2 id="base-duale">Base duale</h2>
+<hr />
+
+<p><strong>Définition [Base duale]</strong>
+Soient $E$ un espace de dimension finie et une base $(e_1,\dots,e_n)$ de $E$. Pour tout <script type="math/tex">i\in[\![1,n]\!]</script>, on note <script type="math/tex">e_i^*</script> l’unique forme linéaire sur $E$ telle que <script type="math/tex">e_i^*(e_j)=\delta_{i,j}</script> pour tout <script type="math/tex">j\in[\![1,n]\!]</script>.<br />
+La famille <script type="math/tex">(e_1^*,\dots,e_n^*)</script> est une base de $E^*$ appelée <strong>base duale</strong> de la base $(e_1,\dots,e_n)$.</p>
+
+<p><em>Preuve.</em>
+Puisque <script type="math/tex">\mathop{\mathrm{dim}}E^*=\mathop{\mathrm{dim}}E=n</script>, il suffit de montrer que cette famille est libre. Si l’on se donne <script type="math/tex">(\lambda_1,\dots,\lambda_n)\in\mathbb{K}^n</script> tel que <script type="math/tex">\sum_{i=1}^n\lambda_ie_i^*=0</script>, on obtient <script type="math/tex">\lambda_j=0</script> pour chaque <script type="math/tex">j\in[\![1,n]\!]</script> en évaluant l’égalité précédente en <script type="math/tex">e_j</script>. ⬛</p>
+
+<h2 id="orthogonalit">Orthogonalité</h2>
+<hr />
+
+<p><strong>Définition [Orthogonalité]</strong> Soit $E$ un espace vectoriel.<br />
+Si $A$ est une partie de $E$, on appelle <strong>orthogonal</strong> de $A$ le sous-espace vectoriel de <script type="math/tex">E^*</script> suivant</p>
+
+<script type="math/tex; mode=display">A^\circ=\left\{\varphi\in E^*,\;\forall x\in A,\;\varphi(x)=0\right\}</script>
+
+<p>Si $B$ est une partie de <script type="math/tex">E^*</script>, on appelle <strong>orthogonal</strong> de $B$ le sous-espace vectoriel de $E$ suivant</p>
+
+<script type="math/tex; mode=display">{}^\circ B=\left\{x\in E,\;\forall\varphi\in B,\;\varphi(x)=0\right\}</script>
+
+<p><em>Remarque.</em> On a de manière évidente <script type="math/tex">{}^\circ(A^\circ)\subset A</script> et <script type="math/tex">({}^\circ B)^\circ\subset B</script>.</p>
+
+<p><strong>Proposition [Dimension de l’orthogonal]</strong> Soit $F$ un sous-espace vectoriel d’un espace vectoriel $E$ de dimension finie. Alors $\mathop{\mathrm{dim}}F^\circ=\mathop{\mathrm{dim}}E-\mathop{\mathrm{dim}}F$.<br />
+Soit $G$ un sous-espace vectoriel de <script type="math/tex">E^*</script>, alors <script type="math/tex">\mathop{\mathrm{dim}}{}^\circ G=\mathop{\mathrm{dim}}E-\mathop{\mathrm{dim}}G</script>.</p>
+
+<h2 id="grassmannienne">Grassmannienne</h2>
+<hr />
+
+<p><strong>Définition [Grassmannienne]</strong> On appelle <strong>grassmannienne</strong> d’un espace vectoriel $E$ l’ensemble de ses sous-espaces vectoriels ayant une dimension donnée $k$ : on la notera $G_k(E)$. On notera $G(E)$ l’ensemble de tous les sous-espaces vectoriels de $E$ i.e. <script type="math/tex">G(E)=\bigcup_{k\in\mathbb{N}}G_k(E)</script>.</p>
+
+<p><strong>Proposition</strong> Soit $E$ un espace vectoriel de dimension finie $n$. L’application qui à un sous-espace vectoriel de $E$ associe son orthogonal est une bijection de $G(E)$ sur <script type="math/tex">G(E^*)</script>. De plus, elle induit une bijection de $G_k(E)$ sur <script type="math/tex">G_{n-k}(E^*)</script> pour tout <script type="math/tex">k\in[\![0,n]\!]</script>.</p>
+
+<p><em>Preuve.</em> Notons $\Phi$ l’application en question. Puisque <script type="math/tex">G(E)=\bigsqcup_{k=0}^nG_k(E)</script> et <script type="math/tex">G(E^*)=\bigsqcup_{k=0}^nG_{n-k}(E^*)</script>, il suffit de montrer que pour chaque</p>
+
+	</div>
+  </div>
+</article>
 
 <div class="row">
-  <div class="col-lg-12 col-md-10">
-    <div class="posts-list">
-  
-  <article class="post-preview">
-    <a href="/2016-09-23-pentagone-regulier/">
-	  <h2 class="post-title">Pentagone régulier</h2>
-
-	  
-    </a>
-
-    <p class="post-meta">
-      Posted on September 23, 2016
-    </p>
-
-    <div class="post-entry">
-      On sait que les images des racines $n^\text{èmes}$ de l’unité forment un polygone régulier. On expose dans ce post la construction du pentagone régulier. Calcul de $\cos\frac{2\pi}{5}$ Il suffit de faire un tour par les complexes. En posant $\omega=e^\frac{2i\pi}{5}$, on a clairement $1+\omega+\omega^2+\omega^3+\omega^4=\frac{\omega^5-1}{\omega-1}=0$. Or $\omega+\omega^4=\omega+\frac{1}{\omega}=2\cos\frac{2\pi}{5}$ et $\omega^2+\omega^3=\omega^2+\frac{1}{\omega^2}=2\cos\frac{4\pi}{5}=2(2\cos^2\frac{2\pi}{5}-1)$. Il s’ensuit...
-	  <a href="/2016-09-23-pentagone-regulier/" class="post-read-more">[Read&nbsp;More]</a>
-    </div>
-
-   </article>
-  
-  <article class="post-preview">
-    <a href="/2016-09-16-pourquoi-se-fatiguer/">
-	  <h2 class="post-title">Pourquoi se fatiguer ?</h2>
-
-	  
-    </a>
-
-    <p class="post-meta">
-      Posted on September 16, 2016
-    </p>
-
-    <div class="post-entry">
-      Rappelez-vous en cours : calcul de  Facile. La réponse est là. Plus dur :  La réponse est encore là. Maintenant, il commence à devenir énervant. On ne peut plus l’&lt;a...
-	  <a href="/2016-09-16-pourquoi-se-fatiguer/" class="post-read-more">[Read&nbsp;More]</a>
-    </div>
-
-   </article>
-  
-  <article class="post-preview">
-    <a href="/2016-09-14-etonnant/">
-	  <h2 class="post-title">Etonnant, non ?</h2>
-
-	  
-    </a>
-
-    <p class="post-meta">
-      Posted on September 14, 2016
-    </p>
-
-    <div class="post-entry">
-      Vu en cours
-
-
-
-Je vous laisse méditer sur cette animation. Oui, ça bouge ! A vous de trouver comment.
-
-
-
-Vous pouvez aussi vous amuser à trafiquer le code. Il suffit de cliquer sur le petit crayon.
-
-	  <a href="/2016-09-14-etonnant/" class="post-read-more">[Read&nbsp;More]</a>
-    </div>
-
-   </article>
-  
-  <article class="post-preview">
-    <a href="/2016-09-14-colloscope/">
-	  <h2 class="post-title">Colloscope</h2>
-
-	  
-    </a>
-
-    <p class="post-meta">
-      Posted on September 14, 2016
-    </p>
-
-    <div class="post-entry">
-      Dieu bénisse les auteurs de PuLP pour m’avoir permis de générer des colloscopes en cinq minutes.
-
-
-	  <a href="/2016-09-14-colloscope/" class="post-read-more">[Read&nbsp;More]</a>
-    </div>
-
-   </article>
-  
-</div>
-
-
-<ul class="pager main-pager">
-  
-  <li class="previous">
-    <a href="/page2">&larr; Newer Posts</a>
-  </li>
-  
-  
-</ul>
-
- 
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <ul class="pager blog-pager">
+      
+      <li class="previous">
+        <a href="/2017-02-28-systemes-differentiels/" data-toggle="tooltip" data-placement="top" title="Systèmes différentiels">&larr; Previous Post</a>
+      </li>
+      
+      
+    </ul>
   </div>
 </div>
+
+
+<div class="row disqus-comments">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'mpsi';
+	    // ensure that pages with query string get the same discussion
+            var url_parts = window.location.href.split("?");
+            var disqus_url = url_parts[0];
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  </div>
+</div>
+
 
     </div>
 
