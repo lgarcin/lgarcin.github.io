@@ -28,13 +28,12 @@
     <!-- Facebook OpenGraph tags -->
     <meta property="og:title" content="Dualité" />
     <meta property="og:type" content="website" /> 
-    <meta property="og:url" content="https://lgarcin.github.io//2017-03-03-dualite//" />  
+    <meta property="og:url" content="https://lgarcin.github.io//2017-03-05-dualite//" />  
     <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" /> 
 
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } });
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntilConfig">
     </script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    <script src="/js/mathjax.js">
     </script>
 
 
@@ -137,7 +136,7 @@
       <div class="post-heading">
         <h1>Dualité</h1>
         
-        <span class="post-meta">Posted on March 3, 2017</span>
+        <span class="post-meta">Posted on March 5, 2017</span>
       </div>
      </div>
   </div>
@@ -146,39 +145,57 @@
 <article>
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-	  <p>La dualité est le lien qui existe entre un $\mathbb{K}$-espace vectoriel $E$ et son espace dual <script type="math/tex">E^*</script>. On rappelle que <script type="math/tex">E^*</script> est l’espace vectoriel des formes linéaires sur $E$.</p>
+	  <p>La dualité est le lien qui existe entre un $\dK$-espace vectoriel $E$ et son espace dual <script type="math/tex">E^*</script>. On rappelle que <script type="math/tex">E^*</script> est l’espace vectoriel des formes linéaires sur $E$.</p>
 
 <h2 id="base-duale">Base duale</h2>
 <hr />
 
 <p><strong>Définition [Base duale]</strong>
-Soient $E$ un espace de dimension finie et une base $(e_1,\dots,e_n)$ de $E$. Pour tout <script type="math/tex">i\in[\![1,n]\!]</script>, on note <script type="math/tex">e_i^*</script> l’unique forme linéaire sur $E$ telle que <script type="math/tex">e_i^*(e_j)=\delta_{i,j}</script> pour tout <script type="math/tex">j\in[\![1,n]\!]</script>.<br />
+Soient $E$ un espace de dimension finie et une base $(e_1,\dots,e_n)$ de $E$. Pour tout <script type="math/tex">i\in[\![1,n]\!]</script>, on note <script type="math/tex">e_i^*</script> l’unique forme linéaire sur $E$ telle que <script type="math/tex">e_i^*(e_j)=\delta_{i,j}</script> pour tout <script type="math/tex">j\in\lb1,n\rb</script>.<br />
 La famille <script type="math/tex">(e_1^*,\dots,e_n^*)</script> est une base de $E^*$ appelée <strong>base duale</strong> de la base $(e_1,\dots,e_n)$.</p>
 
 <p><em>Preuve.</em>
-Puisque <script type="math/tex">\mathop{\mathrm{dim}}E^*=\mathop{\mathrm{dim}}E=n</script>, il suffit de montrer que cette famille est libre. Si l’on se donne <script type="math/tex">(\lambda_1,\dots,\lambda_n)\in\mathbb{K}^n</script> tel que <script type="math/tex">\sum_{i=1}^n\lambda_ie_i^*=0</script>, on obtient <script type="math/tex">\lambda_j=0</script> pour chaque <script type="math/tex">j\in[\![1,n]\!]</script> en évaluant l’égalité précédente en <script type="math/tex">e_j</script>. ⬛</p>
+Puisque <script type="math/tex">\dim E^*=\dim E=n</script>, il suffit de montrer que cette famille est libre. Si l’on se donne <script type="math/tex">(\lambda_1,\dots,\lambda_n)\in\dK^n</script> tel que <script type="math/tex">\sum_{i=1}^n\lambda_ie_i^*=0</script>, on obtient <script type="math/tex">\lambda_j=0</script> pour chaque <script type="math/tex">j\in\lb1,n\rb</script> en évaluant l’égalité précédente en <script type="math/tex">e_j</script>. ⬛</p>
 
 <h2 id="orthogonalit">Orthogonalité</h2>
 <hr />
 
-<p><strong>Définition [Orthogonalité]</strong> Soit $E$ un espace vectoriel.<br />
-Si $A$ est une partie de $E$, on appelle <strong>orthogonal</strong> de $A$ le sous-espace vectoriel de <script type="math/tex">E^*</script> suivant</p>
+<p><strong>Définition [Orthogonalité]</strong> Soit $E$ un espace vectoriel.</p>
+
+<ul>
+  <li>Si $A$ est une partie de $E$, on appelle <strong>orthogonal</strong> de $A$ le sous-espace vectoriel de <script type="math/tex">E^*</script> suivant</li>
+</ul>
 
 <script type="math/tex; mode=display">A^\circ=\left\{\varphi\in E^*,\;\forall x\in A,\;\varphi(x)=0\right\}</script>
 
-<p>Si $B$ est une partie de <script type="math/tex">E^*</script>, on appelle <strong>orthogonal</strong> de $B$ le sous-espace vectoriel de $E$ suivant</p>
+<ul>
+  <li>Si $B$ est une partie de <script type="math/tex">E^*</script>, on appelle <strong>orthogonal</strong> de $B$ le sous-espace vectoriel de $E$ suivant</li>
+</ul>
 
 <script type="math/tex; mode=display">{}^\circ B=\left\{x\in E,\;\forall\varphi\in B,\;\varphi(x)=0\right\}</script>
 
 <p><em>Remarque.</em> On a de manière évidente <script type="math/tex">{}^\circ(A^\circ)\subset A</script> et <script type="math/tex">({}^\circ B)^\circ\subset B</script>.</p>
 
-<p><strong>Proposition [Dimension de l’orthogonal]</strong> Soit $F$ un sous-espace vectoriel d’un espace vectoriel $E$ de dimension finie. Alors $\mathop{\mathrm{dim}}F^\circ=\mathop{\mathrm{dim}}E-\mathop{\mathrm{dim}}F$.<br />
-Soit $G$ un sous-espace vectoriel de <script type="math/tex">E^*</script>, alors <script type="math/tex">\mathop{\mathrm{dim}}{}^\circ G=\mathop{\mathrm{dim}}E-\mathop{\mathrm{dim}}G</script>.</p>
+<p><strong>Proposition [Dimension de l’orthogonal]</strong> Soit $E$ un espace vectoriel de dimension finie.</p>
+
+<ul>
+  <li>
+    <p>Soit $F$ un sous-espace vectoriel de $E$. Alors $\dim F^\circ=\dim E-\dim F$.</p>
+  </li>
+  <li>
+    <p>Soit $G$ un sous-espace vectoriel de <script type="math/tex">E^*</script>. Alors <script type="math/tex">\dim {}^\circ G=\dim E-\dim G</script>.</p>
+  </li>
+</ul>
+
+<p><em>Preuve.</em> Posons <script type="math/tex">n=\dim E=\dim E^*</script> et $p=\dim F$. Donnons-nous une base $(e_1,\dots,e_p)$ de $F$ : on peut alors la compléter en une base $(e_1,\dots,e_n)$ de $E$.<br />
+Montrons maintenant que <script type="math/tex">(e_{p+1}^*,\dots,e_n^*)</script> est une base de $F^\circ$. Par définition de la base duale, <script type="math/tex">e_i^*(e_j)=0</script> pour tout <script type="math/tex">(i,j)\in\lb p+1,n\rb\times\lb 1,p\rb</script> puis, $(e_1,\dots,e_p)$ engendrant $F$, <script type="math/tex">e_i^*\in F^\circ</script> pour tout <script type="math/tex">i\in\lb p+1,n\rb</script> par linéarité. En tant que sous-famille de la base duale <script type="math/tex">(e_1^*,\dots,e_n^*)</script>, <script type="math/tex">(e_{p+1}^*,\dots,e_n^*)</script> est une famille <strong>libre</strong> de vecteurs de <script type="math/tex">F^\circ</script>.<br />
+Soit maintenant $\varphi\in F^\circ$. On peut décomposer $\varphi$ dans la base duale <script type="math/tex">(e_1^*,\dots,e_n^*)</script> : il existe donc $(\lambda_1,\dots,\lambda_n)\in\dK^n$ tel que <script type="math/tex">\varphi=\sum_{i=1}^n\lambda_i e_i^*</script>. En évaluant en $e_j$, on obtient $\lambda_j=0$ pour $j\in\lb1,p\rb$, puisqu’alors $e_j\in F$. On en déduit donc que <script type="math/tex">F^\circ\in\vect(e_{p+1}^*,\dots,e_n^*)</script>. La famille <script type="math/tex">(e_{p+1}^*,\dots,e_n^*)</script> <strong>engendre</strong> donc <script type="math/tex">F^\circ</script>.<br />
+Finalement, <script type="math/tex">(e_{p+1}^*,\dots,e_n^*)</script> est une <strong>base</strong> de <script type="math/tex">F^\circ</script> et <script type="math/tex">\dim F^\circ=n-p</script>. ⬛</p>
 
 <h2 id="grassmannienne">Grassmannienne</h2>
 <hr />
 
-<p><strong>Définition [Grassmannienne]</strong> On appelle <strong>grassmannienne</strong> d’un espace vectoriel $E$ l’ensemble de ses sous-espaces vectoriels ayant une dimension donnée $k$ : on la notera $G_k(E)$. On notera $G(E)$ l’ensemble de tous les sous-espaces vectoriels de $E$ i.e. <script type="math/tex">G(E)=\bigcup_{k\in\mathbb{N}}G_k(E)</script>.</p>
+<p><strong>Définition [Grassmannienne]</strong> On appelle <strong>grassmannienne</strong> d’un espace vectoriel $E$ l’ensemble de ses sous-espaces vectoriels ayant une dimension donnée $k$ : on la notera $G_k(E)$. On notera $G(E)$ l’ensemble de tous les sous-espaces vectoriels de $E$ i.e. <script type="math/tex">G(E)=\bigcup_{k\in\dN}G_k(E)</script>.</p>
 
 <p><strong>Proposition</strong> Soit $E$ un espace vectoriel de dimension finie $n$. L’application qui à un sous-espace vectoriel de $E$ associe son orthogonal est une bijection de $G(E)$ sur <script type="math/tex">G(E^*)</script>. De plus, elle induit une bijection de $G_k(E)$ sur <script type="math/tex">G_{n-k}(E^*)</script> pour tout <script type="math/tex">k\in[\![0,n]\!]</script>.</p>
 
@@ -196,6 +213,10 @@ Soit $G$ un sous-espace vectoriel de <script type="math/tex">E^*</script>, alors
         <a href="/2017-02-28-systemes-differentiels/" data-toggle="tooltip" data-placement="top" title="Systèmes différentiels">&larr; Previous Post</a>
       </li>
       
+      
+      <li class="next">
+        <a href="/2017-03-08-arithmetique-et-ideaux/" data-toggle="tooltip" data-placement="top" title="Arithmétique et idéaux">Next Post &rarr;</a>
+      </li>
       
     </ul>
   </div>
