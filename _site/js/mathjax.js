@@ -10,9 +10,10 @@ MathJax.Hub.Config({
     },
     TeX: {
         Macros: {
-            dR: "\\mathbb{R}",
-            dN: "\\mathbb{N}",
             dK: "\\mathbb{K}",
+            dN: "\\mathbb{N}",
+            dQ: "\\mathbb{K}",
+            dR: "\\mathbb{R}",
             dZ: "\\mathbb{Z}",
             lb: "\\left[\\!\\left[",
             rb: "\\right]\\!\\right]",
