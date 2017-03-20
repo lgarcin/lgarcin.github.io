@@ -7,14 +7,26 @@
     <atom:link href="https://lgarcin.github.io//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Arithmétique et idéaux</title>
+        <title>Décomposition en éléments simples</title>
         <description>
           
-          Arithmétique dans un anneau Si $(A,+,\times)$ est un anneau commutatif, on peut définir une relation de divisibilité de la même manière que dans l’anneau $\dZ$ des entiers relatifs ou l’anneau $\dK[X]$ des polynômes à coefficients dans un corps $\dK$ : on dit que $a\in A$ divise $b\in A$ s’il existe...
+          On expose ici la décomposition en éléments simples dans le cas d’un corps $\dK$ quelconque. Lemme. Soient $P\in\dK[X]$, $R$ un polynôme irréductible de $\dK[X]$ de degré $r$ et $n\in\dN^*$. Alors il existe $E\in\dK[X]$ et $(P_1,\dots,P_n)\in\dK_{n-1}[X]^r$ tels que Preuve. On procède par récurrence sur $n$. La propriété à montrer est clairement...
         </description>
-        <pubDate>Wed, 08 Mar 2017 00:00:00 +0000</pubDate>
-        <link>https://lgarcin.github.io//2017-03-08-arithmetique-et-ideaux/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2017-03-08-arithmetique-et-ideaux/</guid>
+        <pubDate>Sat, 18 Mar 2017 20:26:35 +0100</pubDate>
+        <link>https://lgarcin.github.io//2017-03-18-decomposition-en-elements-simples/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2017-03-18-decomposition-en-elements-simples/</guid>
+      </item>
+    
+      <item>
+        <title>Corps de fractions</title>
+        <description>
+          
+          
+
+        </description>
+        <pubDate>Thu, 16 Mar 2017 10:23:40 +0100</pubDate>
+        <link>https://lgarcin.github.io//2017-03-16-corps-de-fractions/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2017-03-16-corps-de-fractions/</guid>
       </item>
     
       <item>
@@ -23,9 +35,20 @@
           
           La dualité est le lien qui existe entre un $\dK$-espace vectoriel $E$ et son espace dual . On rappelle que est l’espace vectoriel des formes linéaires sur $E$. Base duale Définition [Base duale] Soient $E$ un espace de dimension finie et une base $(e_1,\dots,e_n)$ de $E$. Pour tout , on...
         </description>
-        <pubDate>Sun, 05 Mar 2017 20:04:22 +0000</pubDate>
-        <link>https://lgarcin.github.io//2017-03-05-dualite/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2017-03-05-dualite/</guid>
+        <pubDate>Fri, 10 Mar 2017 15:06:27 +0000</pubDate>
+        <link>https://lgarcin.github.io//2017-03-10-dualite/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2017-03-10-dualite/</guid>
+      </item>
+    
+      <item>
+        <title>Arithmétique et idéaux</title>
+        <description>
+          
+          Arithmétique dans un anneau Si $(A,+,\times)$ est un anneau commutatif, on peut définir une relation de divisibilité de la même manière que dans l’anneau $\dZ$ des entiers relatifs ou l’anneau $\dK[X]$ des polynômes à coefficients dans un corps $\dK$ : on dit que $a\in A$ divise $b\in A$ s’il existe...
+        </description>
+        <pubDate>Wed, 08 Mar 2017 00:00:00 +0000</pubDate>
+        <link>https://lgarcin.github.io//2017-03-08-arithmetique-et-ideaux/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2017-03-08-arithmetique-et-ideaux/</guid>
       </item>
     
       <item>

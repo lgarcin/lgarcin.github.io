@@ -17,6 +17,8 @@ La famille $$(e_1^*,\dots,e_n^*)$$ est une base de $E^*$ appelée **base duale**
 *Preuve.*
 Puisque $$\dim E^*=\dim E=n$$, il suffit de montrer que cette famille est libre. Si l'on se donne $$(\lambda_1,\dots,\lambda_n)\in\dK^n$$ tel que $$\sum_{i=1}^n\lambda_ie_i^*=0$$, on obtient $$\lambda_j=0$$ pour chaque $$j\in\lb1,n\rb$$ en évaluant l'égalité précédente en $$e_j$$. &#x2b1b;
 
+Base antéduale, polynômes interpolateurs de Lagrange
+
 ## Orthogonalité
 ---
 

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>Arithmétique et idéaux</title>
+    <title>MPSI Corot</title>
 
     <meta name="author" content="Laurent Garcin" /> 
 
@@ -26,9 +26,9 @@
     <link rel="shortcut icon" href="/favicon.ico" />
 
     <!-- Facebook OpenGraph tags -->
-    <meta property="og:title" content="Arithmétique et idéaux" />
+    <meta property="og:title" content="MPSI Corot" />
     <meta property="og:type" content="website" /> 
-    <meta property="og:url" content="https://lgarcin.github.io//2017-03-08-arithmetique-et-ideaux//" />  
+    <meta property="og:url" content="https://lgarcin.github.io//page4/" />  
     <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" /> 
 
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntilConfig">
@@ -130,109 +130,84 @@
 
 
     <div role="main" class="container main-content">
-      <header class="header-post">
+      
+<header class="header-page">
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <div class="post-heading">
-        <h1>Arithmétique et idéaux</h1>
-        
-        <span class="post-meta">Posted on March 8, 2017</span>
+    <div class="col-lg-12 col-md-10">
+      <div class="page-heading">
+        <h1>MPSI Corot</h1> 
       </div>
-     </div>
+    </div>
   </div>
 </header>
 
-<article>
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-	  <h2 id="arithmtique-dans-un-anneau">Arithmétique dans un anneau</h2>
-
-<p>Si $(A,+,\times)$ est un anneau commutatif, on peut définir une relation de divisibilité de la même manière que dans l’anneau $\dZ$ des entiers relatifs ou l’anneau $\dK[X]$ des polynômes à coefficients dans un corps $\dK$ : on dit que $a\in A$ divise $b\in A$ s’il existe $c\in A$ tel que $b=ac$.</p>
-
-<h2 id="notion-didal">Notion d’idéal</h2>
-
-<p>La seule sous-structure d’anneau au programme de MPSI est la structure de sous-anneau. Mais ce n’est pas la structure adaptée pour faire de l’arithmétique dans un anneau.</p>
-
-<p><strong>Définition [Idéal]</strong> On appelle <strong>idéal</strong> d’un anneau commutatif $(A,+,\times)$ toute partie $I$ de $A$ telle que :</p>
-
-<ul>
-  <li>$I$ est un sous-groupe de $(A,+)$ ;</li>
-  <li>$I$ est <em>absorbant</em> : $\forall(a,x)\in A\times I,\;ax\in I$.</li>
-</ul>
-
-<p>Dans le cas particulier de $\dZ$, on vérifie aisément que les idéaux sont en fait les sous-groupes de $\dZ$.</p>
-
-<p>La structure d’idéal est plus <em>riche</em> que celle de sous-anneau. Par exemple, le seul sous-anneau de $\dZ$ est $\dZ$ lui-même tandis qu’il possède une infinité d’idéaux. Par ailleurs, le noyau d’un morphisme d’anneaux n’est même pas un sous-anneau mais … un idéal.</p>
-
-<p>On laisse le lecteur vérifier un résultat qui nous sera utile dans la suite, à savoir que la somme et l’intersection de deux (ou plus) idéaux d’un anneau est encore un idéal de cet anneau.</p>
-
-<h2 id="idaux-principaux">Idéaux principaux</h2>
-
-<p>Notamment, les ensembles $xA=\{ax,\;a\in A\}$ sont des idéaux de $A$ appelés <em>idéaux principaux</em>. La relation de divisibilité se traduit alors aisément à l’aide des idéaux principaux : $x$ divise $y$ si et seulement si $yA\subset xA$.</p>
-
-<p>Un anneau dont tous les idéaux sont principaux est appelé un <em>anneau principal</em>.</p>
-
-<h2 id="division-euclidienne">Division euclidienne</h2>
-
-<p>L’existence d’une division euclidienne dans $\dZ$ et $\dK[X]$ garantit que tous leurs idéaux sont principaux : ce sont donc des anneaux principaux.</p>
-
-<p>Traitons par exemple le cas de $\dK[X]$. Donnons-nous un idéal $I$ de $\dK[X]$. Si $I=\{0\}$, $I$ est évidemment principal. Sinon, il contient un polynôme non nul de degré minimal : notons-le $P$. On a évidemment $P\dK[X]\subset I$ d’après la propriété d’absorption. Soit alors $A\in\dK[X]$. On écrit alors la division euclidienne de $A$ par $P$ : $A=PQ+R$ avec $\deg R&lt;\deg P$. Alors $R=A-PQ\in I$ donc $R=0$ par minimalité du degré de $P$. Ainsi $A=PQ\in P\dK[X]$. Finalement, $I=P\dK[X]$ est principal.</p>
-
-<h2 id="pgcd-et-ppcm-dans-un-anneau-principal">PGCD et PPCM dans un anneau principal</h2>
-
-<p>L’existence du PGCD de deux (ou plus) éléments d’un anneau est garantie si l’anneau est principal (donc en particulier dans le cas de $\dZ$ ou $\dK[X]$).</p>
-
-<p>Soit en effet deux éléments $x$ et $y$ d’un anneau principal $A$. Alors $xA+yA$ est une somme d’idéaux donc un idéal. Comme tous les idéaux de $A$ sont principaux, il existe $d\in A$ tel que $xA+yA=dA$. Mais alors $xA\subset dA$ et $yA\subset dA$ donc $d$ divise $x$ et $y$. De plus, si $\delta$ est un diviseur commun de $x$ et $y$, alors $xA\subset \delta A$ et $yA\subset \delta A$ donc $dA=xA+yA\subset\delta A$ de sorte que $\delta$ divise $d$. On a bien montré que $d$ était un PGCD de $x$ et $y$.</p>
-
-<p>De même, l’existence d’un PPCM est à nouveau garantie si l’anneau est principal.</p>
-
-<p>Si l’on se donne deux éléments $x$ et $y$ d’un anneau principal $A$, alors $xA\cap yA$ est une intersection d’idéaux donc un idéal. Comme tous les idéaux de $A$ sont principaux, il existe $m\in A$ tel que $xA\cap yA=mA$. Mais alors $mA\subset xA$ et $mA\subset yA$ donc $m$ est un mutiple $x$ et $y$. De plus, si $\mu$ est un multiple commun de $x$ et $y$, alors $\mu A\subset xA$ et $\mu A\subset yA$ donc $\mu A\subset xA\cap yA=mA$ de sorte que $m$ divise $\mu$. On a bien montré que $m$ était un PPCM de $x$ et $y$.</p>
-
-	</div>
-  </div>
-</article>
 
 <div class="row">
-  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-    <ul class="pager blog-pager">
-      
-      <li class="previous">
-        <a href="/2017-02-28-systemes-differentiels/" data-toggle="tooltip" data-placement="top" title="Systèmes différentiels">&larr; Previous Post</a>
-      </li>
-      
-      
-      <li class="next">
-        <a href="/2017-03-10-dualite/" data-toggle="tooltip" data-placement="top" title="Dualité">Next Post &rarr;</a>
-      </li>
-      
-    </ul>
+  <div class="col-lg-12 col-md-10">
+    <div class="posts-list">
+  
+  <article class="post-preview">
+    <a href="/2016-09-14-etonnant/">
+	  <h2 class="post-title">Etonnant, non ?</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on September 14, 2016
+    </p>
+
+    <div class="post-entry">
+      Vu en cours
+
+
+
+Je vous laisse méditer sur cette animation. Oui, ça bouge ! A vous de trouver comment.
+
+
+
+Vous pouvez aussi vous amuser à trafiquer le code. Il suffit de cliquer sur le petit crayon.
+
+	  <a href="/2016-09-14-etonnant/" class="post-read-more">[Read&nbsp;More]</a>
+    </div>
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/2016-09-14-colloscope/">
+	  <h2 class="post-title">Colloscope</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on September 14, 2016
+    </p>
+
+    <div class="post-entry">
+      Dieu bénisse les auteurs de PuLP pour m’avoir permis de générer des colloscopes en cinq minutes.
+
+
+	  <a href="/2016-09-14-colloscope/" class="post-read-more">[Read&nbsp;More]</a>
+    </div>
+
+   </article>
+  
+</div>
+
+
+<ul class="pager main-pager">
+  
+  <li class="previous">
+    <a href="/page3">&larr; Newer Posts</a>
+  </li>
+  
+  
+</ul>
+
+ 
   </div>
 </div>
-
-
-<div class="row disqus-comments">
-  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-    
-<div class="comments">
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'mpsi';
-	    // ensure that pages with query string get the same discussion
-            var url_parts = window.location.href.split("?");
-            var disqus_url = url_parts[0];
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-
-
-  </div>
-</div>
-
 
     </div>
 
