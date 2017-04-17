@@ -330,6 +330,9 @@ TD:
   Enoncé:
     path: TDIntegralesPrimitives.pdf
   title: Primitives et intégrales
+- Enoncé:
+    path: TDIntegration.pdf
+  title: Intégration
 - Corrigé:
     path: TDLimiteContinuite.corrige.pdf
   Enoncé:
