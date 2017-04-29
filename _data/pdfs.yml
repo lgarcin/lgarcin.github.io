@@ -255,31 +255,31 @@ Formulaires:
   title: Trigonométrie inverse
 Interros:
 - path: Interro01.pdf
-  title: Interrogation écrite \no1
+  title: Interrogation écrite n°1
 - path: Interro02.pdf
-  title: Interrogation écrite \no2
+  title: Interrogation écrite n°2
 - path: Interro03.pdf
-  title: Interrogation écrite \no3
+  title: Interrogation écrite n°3
 - path: Interro04.pdf
-  title: Interrogation écrite \no4
+  title: Interrogation écrite n°4
 - path: Interro05.pdf
-  title: Interrogation écrite \no5
+  title: Interrogation écrite n°5
 - path: Interro06.pdf
-  title: Interrogation écrite \no6
+  title: Interrogation écrite n°6
 - path: Interro07.pdf
-  title: Interrogation écrite \no7
+  title: Interrogation écrite n°7
 - path: Interro08.pdf
-  title: Interrogation écrite \no8
+  title: Interrogation écrite n°8
 - path: Interro09.pdf
-  title: Interrogation écrite \no9
+  title: Interrogation écrite n°9
 - path: Interro10.pdf
-  title: Interrogation écrite \no10
+  title: Interrogation écrite n°10
 - path: Interro11.pdf
-  title: Interrogation écrite \no11
+  title: Interrogation écrite n°11
 - path: Interro12.pdf
-  title: Interrogation écrite \no12
+  title: Interrogation écrite n°12
 - path: Interro13.pdf
-  title: Interrogation écrite n\no13
+  title: Interrogation écrite n°13
 TD:
 - Corrigé:
     path: TDApplications.corrige.pdf
