@@ -189,9 +189,14 @@ DM:
   Enoncé:
     path: DM14.pdf
   title: DM14
-- Enoncé:
+- Corrigé:
+    path: DM15.corrige.pdf
+  Enoncé:
     path: DM15.pdf
   title: DM15
+- Enoncé:
+    path: DM16.pdf
+  title: DM16
 DS:
 - Corrigé:
     path: DS01.corrige.pdf
@@ -374,7 +379,9 @@ TD:
   Enoncé:
     path: TDReels.pdf
   title: Nombres réels, relations binaires
-- Enoncé:
+- Corrigé:
+    path: TDSeries.corrige.pdf
+  Enoncé:
     path: TDSeries.pdf
   title: Séries
 - Corrigé:
