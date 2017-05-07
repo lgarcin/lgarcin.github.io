@@ -145,29 +145,29 @@
 <article>
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-	  <p>Toutes les fractions considérées dans cet article sont des fractions irréductibles d’entiers naturels. On adjoint à ces fractions la fraction $\frac{1}{0}$ dont on convient raisonnablement qu’elle est strictement supérieure à toutes les autres.</p>
+	  <p>Toutes les fractions considérées dans cet article sont des fractions irréductibles d’entiers naturels. On adjoint à ces fractions la fraction <script type="math/tex">\frac{1}{0}</script> dont on convient raisonnablement qu’elle est strictement supérieure à toutes les autres.</p>
 
 <h2 id="mdiante-de-deux-fractions">Médiante de deux fractions</h2>
 
-<p class="definition">On appelle <em>médiante</em> de deux fractions $\frac{a}{b}$ et $\frac{c}{d}$ la fraction $\frac{a}{b}\oplus\frac{c}{d}=\frac{a+c}{b+d}$.</p>
+<p class="definition">On appelle <em>médiante</em> de deux fractions <script type="math/tex">\frac{a}{b}</script> et <script type="math/tex">\frac{c}{d}</script> la fraction <script type="math/tex">\frac{a}{b}\oplus\frac{c}{d}=\frac{a+c}{b+d}</script>.</p>
 
-<p class="definition">Pour une fraction irréductible $r=\frac{p}{q}$, on pose $S(r)=p+q$.</p>
+<p class="definition">Pour une fraction irréductible <script type="math/tex">r=\frac{p}{q}</script>, on pose <script type="math/tex">S(r)=p+q</script>.</p>
 
-<p class="definition">Pour deux fractions d’entiers naturels $r_1=\frac{a}{b}$ et $r_2=\frac{c}{d}$, on pose $\Delta(r_1,r_2)=bc-ad$</p>
+<p class="definition">Pour deux fractions d’entiers naturels <script type="math/tex">r_1=\frac{a}{b}</script> et <script type="math/tex">r_2=\frac{c}{d}</script>, on pose <script type="math/tex">\Delta(r_1,r_2)=bc-ad</script></p>
 
 <div class="lemma">
-Soient $r_1$ et $r_2$ deux fractions.
+Soient $$r_1$$ et $$r_2$$ deux fractions.
 <ul>
-<li>$\Delta(r_1,r_2)=-\Delta(r_2,r_1)$.</li>
-<li>$r_1\lt r_2$ si et seulement si $\Delta(r_1,r_2)\gt0$ et $r_1=r_2$ si et seulement si $\Delta(r_1,r_2)=0$.</li>
-<li>$\Delta(r_1,r_1\oplus r_2)=\Delta(r_1\oplus r_2,r_2)=\Delta(r_1,r_2)$.</li>
-<li>Si $r_1\lt r_2$, alors $r_1\lt r_1\oplus r_2\lt r_2$.</li>
+<li>$$\Delta(r_1,r_2)=-\Delta(r_2,r_1)$$.</li>
+<li>$$r_1\lt r_2$$ si et seulement si $$\Delta(r_1,r_2)\gt0$$ et $$r_1=r_2$$ si et seulement si $$\Delta(r_1,r_2)=0$$.</li>
+<li>$$\Delta(r_1,r_1\oplus r_2)=\Delta(r_1\oplus r_2,r_2)=\Delta(r_1,r_2)$$.</li>
+<li>Si $$r_1\lt r_2$$, alors $$r_1\lt r_1\oplus r_2\lt r_2$$.</li>
 </ul>
 </div>
 
 <h2 id="calcul-de-suites-finies">Calcul de suites finies</h2>
 
-<p>On construit une suite de suites finies de rationnels par récurrence. On pose $u_0=\left(\frac{0}{1},\frac{1}{0}\right)$ et une fois une suite finie $u_n$ construite, on construit la suite $u_{n+1}$ en intercalant entre deux fractions consécutives de la suite $u_n$ la médiante de ces deux fractions<sup id="fnref:exonbtermes"><a href="#fn:exonbtermes" class="footnote">1</a></sup>. On trouve donc successivement</p>
+<p>On construit une suite de suites finies de rationnels par récurrence. On pose <script type="math/tex">u_0=\left(\frac{0}{1},\frac{1}{0}\right)</script> et une fois une suite finie <script type="math/tex">u_n</script> construite, on construit la suite <script type="math/tex">u_{n+1}</script> en intercalant entre deux fractions consécutives de la suite <script type="math/tex">u_n</script> la médiante de ces deux fractions<sup id="fnref:exonbtermes"><a href="#fn:exonbtermes" class="footnote">1</a></sup>. On trouve donc successivement</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
 \begin{align*}
@@ -178,7 +178,7 @@ u_3&=\left(\frac{0}{1},\frac{1}{3},\frac{1}{2},\frac{2}{3},\frac{1}{1},\frac{3}{
 u_4&=\left(\frac{0}{1},\frac{1}{4},\frac{1}{3},\frac{2}{5},\frac{1}{2},\frac{3}{5},\frac{2}{3},\frac{3}{4},\frac{1}{1},\frac{4}{3},\frac{3}{2},\frac{5}{3},\frac{2}{1},\frac{5}{2},\frac{3}{1},\frac{4}{1},\frac{1}{0}\right)
 \end{align*} %]]></script>
 
-<p>Le programme suivant permet de calculer les termes successifs de la suite $(u_n)$. Les rationnels sont représentés par des couples d’entiers naturels.</p>
+<p>Le programme suivant permet de calculer les termes successifs de la suite <script type="math/tex">(u_n)</script>. Les rationnels sont représentés par des couples d’entiers naturels.</p>
 
 <div class="python">
 def mediante(r1, r2):
@@ -202,15 +202,15 @@ for u in sternSuite(5):
 
 <h4 id="unicit">Unicité</h4>
 
-<p>On peut remarquer que chacune des suites $u_n$ est strictement croissante. Il suffit de raisonner par récurrence sur $n$ en utilisant le résultat du lemme stipulant que la médiante de deux fractions distinctes est strictement comprise entre ces deux fractions. On en déduit en particulier que dans chaque suite $u_n$, chacune des fractions n’apparaît qu’une seule fois.</p>
+<p>On peut remarquer que chacune des suites <script type="math/tex">u_n</script> est strictement croissante. Il suffit de raisonner par récurrence sur <script type="math/tex">n</script> en utilisant le résultat du lemme stipulant que la médiante de deux fractions distinctes est strictement comprise entre ces deux fractions. On en déduit en particulier que dans chaque suite <script type="math/tex">u_n</script>, chacune des fractions n’apparaît qu’une seule fois.</p>
 
 <h4 id="irrductibilit">Irréductibilité</h4>
 
-<p>Il est aussi remarquable que toutes les fractions apparaissant dans chaque suite $u_n$ sont irréductibles. Un résultat du lemme permet en effet de montrer par récurrence sur $n$ que si $r=\frac{a}{b}$ et $s=\frac{c}{d}$ sont deux fractions consécutives d’une même suite, alors $\Delta(r,s)=1$ ou encore $bc-ad=1$. En vertu du théorème de Bézout, $(a,b)$ et $(c,d)$ sont des couples d’entiers premiers entre eux, autrement dit les fractions $\frac{a}{b}$ et $\frac{c}{d}$ sont irréductibles.</p>
+<p>Il est aussi remarquable que toutes les fractions apparaissant dans chaque suite <script type="math/tex">u_n</script> sont irréductibles. Un résultat du lemme permet en effet de montrer par récurrence sur <script type="math/tex">n</script> que si <script type="math/tex">r=\frac{a}{b}</script> et <script type="math/tex">s=\frac{c}{d}</script> sont deux fractions consécutives d’une même suite, alors <script type="math/tex">\Delta(r,s)=1</script> ou encore <script type="math/tex">bc-ad=1</script>. En vertu du théorème de Bézout, <script type="math/tex">(a,b)</script> et <script type="math/tex">(c,d)</script> sont des couples d’entiers premiers entre eux, autrement dit les fractions <script type="math/tex">\frac{a}{b}</script> et <script type="math/tex">\frac{c}{d}</script> sont irréductibles.</p>
 
 <h4 id="existence">Existence</h4>
 
-<p>Ce qui est plus surprenant est que tout rationnel positif figure à partir d’un certaing rang dans les suites $u_n$. Donnons-nous une fraction $r$ non nulle et non infinie et définissons deux suites $(\rho_n)$ et $(\sigma_n)$ de la manière suivante. On pose $\rho_0=\frac{0}{1}$ et $\sigma_0=\frac{1}{0}$ et tant que $r$ est différent de $\rho_n\oplus\sigma_n$, on pose</p>
+<p>Ce qui est plus surprenant est que tout rationnel positif figure à partir d’un certaing rang dans les suites <script type="math/tex">u_n</script>. Donnons-nous une fraction <script type="math/tex">r</script> non nulle et non infinie et définissons deux suites <script type="math/tex">(\rho_n)</script> et <script type="math/tex">(\sigma_n)</script> de la manière suivante. On pose <script type="math/tex">\rho_0=\frac{0}{1}</script> et <script type="math/tex">\sigma_0=\frac{1}{0}</script> et tant que <script type="math/tex">r</script> est différent de <script type="math/tex">\rho_n\oplus\sigma_n</script>, on pose</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
 \left\{
@@ -226,27 +226,28 @@ for u in sternSuite(5):
 \sigma_{n+1}&=\sigma_n
 \end{aligned}\right. \text{ si } \rho_n\oplus\sigma_n<r %]]></script>
 
-<p>On vérifie alors que $\rho_n&lt;r&lt;\sigma_n$ tant que $\rho_n$ et $\sigma_n$ sont définis. En particulier, $\Delta(\rho_n,r)&gt;0$ et $\Delta(r,\sigma_n)&gt;0$ et même $\Delta(\rho_n,r)\geq1$ et $\Delta(r,\sigma_n)\geq1$ puisqu’il s’agit d’entiers. On vérifie également que tant que $\rho_n$ et $\sigma_n$ sont définis,</p>
+<p>On vérifie alors que <script type="math/tex">% <![CDATA[
+\rho_n<r<\sigma_n %]]></script> tant que <script type="math/tex">\rho_n</script> et <script type="math/tex">\sigma_n</script> sont définis. En particulier, <script type="math/tex">\Delta(\rho_n,r)>0</script> et <script type="math/tex">\Delta(r,\sigma_n)>0</script> et même <script type="math/tex">\Delta(\rho_n,r)\geq1</script> et <script type="math/tex">\Delta(r,\sigma_n)\geq1</script> puisqu’il s’agit d’entiers. On vérifie également que tant que <script type="math/tex">\rho_n</script> et <script type="math/tex">\sigma_n</script> sont définis,</p>
 
 <script type="math/tex; mode=display">S(r)=S(\sigma_n)\Delta(\rho_n,r)+S(\rho_n)\Delta(r,\sigma_n)\geq S(\rho_n)+S(\sigma_n)</script>
 
-<p>La suite de terme général $S(\rho_n)+S(\sigma_n)$ est donc une suite d’entiers strictement croissante (le dénominateur et le numérateur des fractions $\sigma_n$ et $\rho_n$ ne peuvent être simultanément nuls) et majorée par $S(r)$ : cette suite est donc finie. Il en est de même des suites $(\rho_n)$ et $(\sigma_n)$, ce qui prouve que $r$ appartient à l’une des suites $u_n$.</p>
+<p>La suite de terme général <script type="math/tex">S(\rho_n)+S(\sigma_n)</script> est donc une suite d’entiers strictement croissante (le dénominateur et le numérateur des fractions <script type="math/tex">\sigma_n</script> et <script type="math/tex">\rho_n</script> ne peuvent être simultanément nuls) et majorée par <script type="math/tex">S(r)</script> : cette suite est donc finie. Il en est de même des suites <script type="math/tex">(\rho_n)</script> et <script type="math/tex">(\sigma_n)</script>, ce qui prouve que <script type="math/tex">r</script> appartient à l’une des suites <script type="math/tex">u_n</script>.</p>
 
 <h2 id="construction-de-larbre-de-stern-brocot">Construction de l’arbre de Stern-Brocot</h2>
 
-<p>On peut également représenter les fractions apparaissant dans la suite $(u_n)$ sous forme d’un arbre binaire. On place au niveau 0 les fractions $\frac{0}{1}$ et $\frac{1}{0}$ et au niveau 1 la fraction $\frac{1}{1}$ en tant que fils commun de ces deux fractions. On place au niveau $n+1$ de l’arbre par ordre croissant les fractions apparues dans la suite $u_{n+1}$ alors qu’elles ne figuraient pas dans la suite $u_n$ et on donne pour ancêtre de chacune de ces fractions la fraction du niveau $n$ dont on s’est servi pour la calculer en tant que médiante. L’arbre ainsi construit est appelé <em>arbre de Stern-Brocot</em>.</p>
+<p>On peut également représenter les fractions apparaissant dans la suite <script type="math/tex">(u_n)</script> sous forme d’un arbre binaire. On place au niveau 0 les fractions <script type="math/tex">\frac{0}{1}</script> et <script type="math/tex">\frac{1}{0}</script> et au niveau 1 la fraction <script type="math/tex">\frac{1}{1}</script> en tant que fils commun de ces deux fractions. On place au niveau <script type="math/tex">n+1</script> de l’arbre par ordre croissant les fractions apparues dans la suite <script type="math/tex">u_{n+1}</script> alors qu’elles ne figuraient pas dans la suite <script type="math/tex">u_n</script> et on donne pour ancêtre de chacune de ces fractions la fraction du niveau <script type="math/tex">n</script> dont on s’est servi pour la calculer en tant que médiante. L’arbre ainsi construit est appelé <em>arbre de Stern-Brocot</em>.</p>
 
 <p>Voici par exemple l’arbre de Stern-Brocot construit jusqu’au niveau 6.<sup id="fnref:exomax"><a href="#fn:exomax" class="footnote">2</a></sup></p>
 
 <p><img src="/images/2016/10/stern.png" alt="Arbre de Stern-Brocot" /></p>
 
-<p>Par exemple, la fraction $\frac{3}{5}$ apparaît au niveau 4 et a été calculée comme médiante des fractions $\frac{1}{2}$ et $\frac{2}{3}$. Comme $\frac{2}{3}$ est apparue au niveau 3 tandis que $\frac{1}{2}$ est apparue au niveau 2, on décrète que $\frac{3}{5}$ est le fils de $\frac{2}{3}$.</p>
+<p>Par exemple, la fraction <script type="math/tex">\frac{3}{5}</script> apparaît au niveau 4 et a été calculée comme médiante des fractions <script type="math/tex">\frac{1}{2}</script> et <script type="math/tex">\frac{2}{3}</script>. Comme <script type="math/tex">\frac{2}{3}</script> est apparue au niveau 3 tandis que <script type="math/tex">\frac{1}{2}</script> est apparue au niveau 2, on décrète que <script type="math/tex">\frac{3}{5}</script> est le fils de <script type="math/tex">\frac{2}{3}</script>.</p>
 
-<p>Chaque rationel de $\mathbb Q_+$ apparaît une et une seule fois dans l’arbre. On peut donc construire une suite prenant une et une seule fois chaque valeur dans $\mathbb Q_+$ : il suffit pour cela de numéroter les noeuds de l’arbre de Stern-Brocot (en laissant de côté la fraction $\frac{1}{0}$), par exemple de haut en bas puis de gauche à droite. Cette suite réalise donc une bijection de $\mathbb N$ sur $\mathbb Q_+$. Autrement dit, $\mathbb Q_+$ est dénombrable.</p>
+<p>Chaque rationel de <script type="math/tex">\mathbb Q_+</script> apparaît une et une seule fois dans l’arbre. On peut donc construire une suite prenant une et une seule fois chaque valeur dans <script type="math/tex">\mathbb Q_+</script> : il suffit pour cela de numéroter les noeuds de l’arbre de Stern-Brocot (en laissant de côté la fraction <script type="math/tex">\frac{1}{0}</script>), par exemple de haut en bas puis de gauche à droite. Cette suite réalise donc une bijection de <script type="math/tex">\mathbb N</script> sur <script type="math/tex">\mathbb Q_+</script>. Autrement dit, <script type="math/tex">\mathbb Q_+</script> est dénombrable.</p>
 
 <h4 id="calcul-des-descendants">Calcul des descendants</h4>
 
-<p>Il est alors facile de déterminer les fils gauche et droit d’un noeud de l’arbre connaissant ses ancêtres. Pour déterminer le fils gauche, on calcule la médiante du noeud considéré et de son premier ancêtre qui lui est inférieur tandis que pour déterminer le fils droit, on calcule la médiante du noeud considéré et du premier ancêtre qui lui est supérieur. Par exemple, le premier ancêtre de $\frac{5}{8}$ qui lui est inférieur est $\frac{3}{5}$ et son premier ancêtre qui lui est supérieur est $\frac{2}{3}$ donc les fils gauche et droit de $\frac{5}{8}$ sont respectivement $\frac{5}{8}\oplus\frac{3}{5}=\frac{8}{13}$ et $\frac{5}{8}\oplus\frac{2}{3}=\frac{7}{11}$. De même, les fils gauche et droit de $\frac{5}{4}$ sont $\frac{5}{4}\oplus\frac{1}{1}=\frac{6}{5}$ et $\frac{5}{4}\oplus\frac{4}{3}=\frac{9}{7}$.</p>
+<p>Il est alors facile de déterminer les fils gauche et droit d’un noeud de l’arbre connaissant ses ancêtres. Pour déterminer le fils gauche, on calcule la médiante du noeud considéré et de son premier ancêtre qui lui est inférieur tandis que pour déterminer le fils droit, on calcule la médiante du noeud considéré et du premier ancêtre qui lui est supérieur. Par exemple, le premier ancêtre de <script type="math/tex">\frac{5}{8}</script> qui lui est inférieur est <script type="math/tex">\frac{3}{5}</script> et son premier ancêtre qui lui est supérieur est <script type="math/tex">\frac{2}{3}</script> donc les fils gauche et droit de <script type="math/tex">\frac{5}{8}</script> sont respectivement <script type="math/tex">\frac{5}{8}\oplus\frac{3}{5}=\frac{8}{13}</script> et <script type="math/tex">\frac{5}{8}\oplus\frac{2}{3}=\frac{7}{11}</script>. De même, les fils gauche et droit de <script type="math/tex">\frac{5}{4}</script> sont <script type="math/tex">\frac{5}{4}\oplus\frac{1}{1}=\frac{6}{5}</script> et <script type="math/tex">\frac{5}{4}\oplus\frac{4}{3}=\frac{9}{7}</script>.</p>
 
 <h4 id="calcul-des-anctres">Calcul des ancêtres</h4>
 
@@ -275,7 +276,7 @@ print(sternAncetres((13, 55)))
 
 <h4 id="un-peu-darithmtique">Un peu d’arithmétique</h4>
 
-<p>Soit $r=\frac{p}{q}$ une fraction non nulle et non infinie. On sait que cette fraction est la médiante de deux fractions $\rho=\frac{a}{b}$ et $\sigma=\frac{c}{d}$ telles que $\Delta(\rho,\sigma)=1$. Cette dernière égalité montrer que $b\geq1$ et $c\geq1$. Par ailleurs, $p=a+c$ et $q=b+d$ donc $0\leq a\leq p-1$ et $0\leq d\leq q-1$. Enfin,</p>
+<p>Soit <script type="math/tex">r=\frac{p}{q}</script> une fraction non nulle et non infinie. On sait que cette fraction est la médiante de deux fractions <script type="math/tex">\rho=\frac{a}{b}</script> et <script type="math/tex">\sigma=\frac{c}{d}</script> telles que <script type="math/tex">\Delta(\rho,\sigma)=1</script>. Cette dernière égalité montrer que <script type="math/tex">b\geq1</script> et <script type="math/tex">c\geq1</script>. Par ailleurs, <script type="math/tex">p=a+c</script> et <script type="math/tex">q=b+d</script> donc <script type="math/tex">0\leq a\leq p-1</script> et <script type="math/tex">0\leq d\leq q-1</script>. Enfin,</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
 \begin{align*}
@@ -283,9 +284,9 @@ bp-aq&=\Delta(\rho,r)=\Delta(\rho,\rho\oplus\sigma)=\Delta(\rho,\sigma)=1\\
 cq-dp&=\Delta(r,\sigma)=\Delta(\rho\oplus\sigma,\sigma)=\Delta(\rho,\sigma)=1
 \end{align*} %]]></script>
 
-<p>de sorte que $bp\equiv1[q]$ et $cq\equiv1[p]$. Ainsi $b$ est l’inverse de $p$ modulo $q$ et $c$ est l’inverse de $q$ modulo $p$<sup id="fnref:invmodulo"><a href="#fn:invmodulo" class="footnote">3</a></sup> (les inverses sont bien définis car $p$ et $q$ sont premiers entre eux). Les conditions $bp-aq=1$ et $cq-dp=1$ définissent alors également $a$ et $d$.</p>
+<p>de sorte que <script type="math/tex">bp\equiv1[q]</script> et <script type="math/tex">cq\equiv1[p]</script>. Ainsi <script type="math/tex">b</script> est l’inverse de <script type="math/tex">p</script> modulo <script type="math/tex">q</script> et <script type="math/tex">c</script> est l’inverse de <script type="math/tex">q</script> modulo <script type="math/tex">p</script><sup id="fnref:invmodulo"><a href="#fn:invmodulo" class="footnote">3</a></sup> (les inverses sont bien définis car <script type="math/tex">p</script> et <script type="math/tex">q</script> sont premiers entre eux). Les conditions <script type="math/tex">bp-aq=1</script> et <script type="math/tex">cq-dp=1</script> définissent alors également <script type="math/tex">a</script> et <script type="math/tex">d</script>.</p>
 
-<p>Les deux fractions $\rho$ et $\sigma$ sont des ancêtres de $r$ dans l’arbre de Stern-Brocot et l’une d’elles est son père. On remarque alors que la fonction $S$ croît strictement le long d’un chemin de l’arbre : le père de $r$ est donc la fraction dont l’image par $S$ est la plus grande. On en déduit un algorithme de calcul du père d’une fraction dans l’arbre de Stern-Brocot. Les inverses modulaires sont calculés à l’aide d’un algorithme d’Euclide étendu.</p>
+<p>Les deux fractions <script type="math/tex">\rho</script> et <script type="math/tex">\sigma</script> sont des ancêtres de <script type="math/tex">r</script> dans l’arbre de Stern-Brocot et l’une d’elles est son père. On remarque alors que la fonction <script type="math/tex">S</script> croît strictement le long d’un chemin de l’arbre : le père de <script type="math/tex">r</script> est donc la fraction dont l’image par <script type="math/tex">S</script> est la plus grande. On en déduit un algorithme de calcul du père d’une fraction dans l’arbre de Stern-Brocot. Les inverses modulaires sont calculés à l’aide d’un algorithme d’Euclide étendu.</p>
 
 <div class="python">
 def sternEncadre(x):
@@ -306,20 +307,20 @@ def sternPere(x):
 print(sternPere((17,38)))
 </div>
 
-<p>On peut également voir l’algorithme décrit dans la section <a href="#existence">Existence</a> comme un algorithme d’Euclide étendu. En utilisant les mêmes notations que dans cet algorithme, on montre que $\Delta(\rho_n,\sigma_n)=1$ est un invariant de boucle. A la dernière étape, $r=\rho_N\oplus\sigma_N$ pour un certain entier $N$ donc</p>
+<p>On peut également voir l’algorithme décrit dans la section <a href="#existence">Existence</a> comme un algorithme d’Euclide étendu. En utilisant les mêmes notations que dans cet algorithme, on montre que <script type="math/tex">\Delta(\rho_n,\sigma_n)=1</script> est un invariant de boucle. A la dernière étape, <script type="math/tex">r=\rho_N\oplus\sigma_N</script> pour un certain entier <script type="math/tex">N</script> donc</p>
 
 <script type="math/tex; mode=display">\Delta(\rho_N,r)=\Delta(r,\sigma_N)=\Delta(\rho_N,\sigma_N)=1</script>
 
 <div class="footnotes">
   <ol>
     <li id="fn:exonbtermes">
-      <p>Petit exercice facile : calculer le nombre de termes de $u_n$ en fonction de $n$. <a href="#fnref:exonbtermes" class="reversefootnote">&#8617;</a></p>
+      <p>Petit exercice facile : calculer le nombre de termes de <script type="math/tex">u_n</script> en fonction de <script type="math/tex">n</script>. <a href="#fnref:exonbtermes" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:exomax">
-      <p>Petit exercice facile à nouveau : montrer que le plus grand numérateur ou dénominateur des fractions du niveau $n$ est le terme de rang $n+1$ de la suite de Fibonacci. <a href="#fnref:exomax" class="reversefootnote">&#8617;</a></p>
+      <p>Petit exercice facile à nouveau : montrer que le plus grand numérateur ou dénominateur des fractions du niveau <script type="math/tex">n</script> est le terme de rang <script type="math/tex">n+1</script> de la suite de Fibonacci. <a href="#fnref:exomax" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:invmodulo">
-      <p>Si $x$ et $n$ sont deux entiers naturels premiers entre eux, $n$ étant non nul, on appelle inverse de $x$ modulo $n$ l’unique entier $y$ tel que $0\leq y\leq n-1$ et $xy\equiv1[n]$. <a href="#fnref:invmodulo" class="reversefootnote">&#8617;</a></p>
+      <p>Si <script type="math/tex">x</script> et <script type="math/tex">n</script> sont deux entiers naturels premiers entre eux, <script type="math/tex">n</script> étant non nul, on appelle inverse de <script type="math/tex">x</script> modulo <script type="math/tex">n</script> l’unique entier <script type="math/tex">y</script> tel que <script type="math/tex">0\leq y\leq n-1</script> et <script type="math/tex">xy\equiv1[n]</script>. <a href="#fnref:invmodulo" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

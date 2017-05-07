@@ -6,11 +6,11 @@ published: true
 
 # Champ de vecteurs
 
-On appelle **champ de vecteurs** une application de $\mathbb{R}^n$ dans $\mathbb{R}^n$. Les éléments de l'ensemble de départ sont vus comme des **points** tandis que les éléments de l'ensembles d'arrivée sont vus comme des **vecteurs**.
+On appelle **champ de vecteurs** une application de $$\mathbb{R}^n$$ dans $$\mathbb{R}^n$$. Les éléments de l'ensemble de départ sont vus comme des **points** tandis que les éléments de l'ensembles d'arrivée sont vus comme des **vecteurs**.
 
-Par exemple, en physique, les champs électrique et magnétiques sont des champs de vecteur : à tout point de l'espace sont associés deux vecteurs $\overrightarrow{E}$ et $\overrightarrow{B}$.
+Par exemple, en physique, les champs électrique et magnétiques sont des champs de vecteur : à tout point de l'espace sont associés deux vecteurs $$\overrightarrow{E}$$ et $$\overrightarrow{B}$$.
 
-En dimension $2$ ou $3$, on peut visualiser un champ de vecteurs $f$ en dessinant le vecteur $f(X)$ en tout point $X$.
+En dimension $$2$$ ou $$3$$, on peut visualiser un champ de vecteurs $$f$$ en dessinant le vecteur $$f(X)$$ en tout point $$X$$.
 
 Voici par exemple ce que donne la représentation du champ de vecteurs
 $$
@@ -45,21 +45,21 @@ show()
 
 ## Application aux systèmes différentiels
 
-De manière générale, un système différentiel autonome peut s'écrire sous la forme $X'=f(X)$ où
+De manière générale, un système différentiel autonome peut s'écrire sous la forme $$X'=f(X)$$ où
 
-* $X=(x_1,\dots,x_n)$ est une application **inconnue** de classe $\mathcal{C}^1$ sur $\mathbb{R}$ à valeurs dans $\mathbb{R}^n$ ;
+* $$X=(x_1,\dots,x_n)$$ est une application **inconnue** de classe $$\mathcal{C}^1$$ sur $$\mathbb{R}$$ à valeurs dans $$\mathbb{R}^n$$ ;
 
-* $f$ est une application continue de $\mathbb{R}^n$ dans $\mathbb{R}^n$, c'est-à-dire un champ de vecteurs.
+* $$f$$ est une application continue de $$\mathbb{R}^n$$ dans $$\mathbb{R}^n$$, c'est-à-dire un champ de vecteurs.
 
-Voici par exemple le système différentiel en dimension 2 associé au champ de vecteurs $f\colon(x,y)\mapsto(-y,x)$ :
+Voici par exemple le système différentiel en dimension 2 associé au champ de vecteurs $$f\colon(x,y)\mapsto(-y,x)$$ :
 
 $$
 \left\{\begin{align*}x'&=-y\\y'&=x\end{align*}\right.
 $$
 
-Dans le cas où $f$ est un endomorphisme de $\mathbb{R}^n$, on parle de système différentiel **linéaire**. On sait alors résoudre explicitement un tel système. Dans le cas où $f$ n'est pas linéaire, le **thèorème de Cauchy-Lipschitz** garantit l'existence d'une solution et son unicité si l'on fournit des conditions initiales (à condition que $f$ soit suffisamment régulier) mais ce n'est pas notre propos. On préfère ici expliquer comment prévoir l'évolution d'une solution d'un système linéaire à partir de la représentation graphique du champ de vecteurs.
+Dans le cas où $$f$$ est un endomorphisme de $$\mathbb{R}^n$$, on parle de système différentiel **linéaire**. On sait alors résoudre explicitement un tel système. Dans le cas où $$f$$ n'est pas linéaire, le **thèorème de Cauchy-Lipschitz** garantit l'existence d'une solution et son unicité si l'on fournit des conditions initiales (à condition que $$f$$ soit suffisamment régulier) mais ce n'est pas notre propos. On préfère ici expliquer comment prévoir l'évolution d'une solution d'un système linéaire à partir de la représentation graphique du champ de vecteurs.
 
-Une application $X$ solution du système peut être vue comme une **courbe paramétrée** à valeurs dans $\mathbb{R}^n$. A chaque instant $t$, le vecteur vitesse $X'(t)$ est égal à $f(X(t))$, c'est-à-dire que la trajectoire de $X$ est "guidée" par le champ de vecteurs.
+Une application $$X$$ solution du système peut être vue comme une **courbe paramétrée** à valeurs dans $$\mathbb{R}^n$$. A chaque instant $$t$$, le vecteur vitesse $$X'(t)$$ est égal à $$f(X(t))$$, c'est-à-dire que la trajectoire de $$X$$ est "guidée" par le champ de vecteurs.
 
 Voilà par exemple l'évolution d'une solution du sytème différentiel
 
@@ -67,9 +67,9 @@ $$
 \left\{\begin{align*}x'&=-y\\y'&=x\end{align*}\right.
 $$
 
-* Le premier graphique représente l'évolution de $x$ et $y$ en fonction du temps.
+* Le premier graphique représente l'évolution de $$x$$ et $$y$$ en fonction du temps.
 
-* Le second graphique représente l'évolution de la courbe paramétrée $(x,y)$ superposée à la représentation graphique du champ de vecteurs.
+* Le second graphique représente l'évolution de la courbe paramétrée $$(x,y)$$ superposée à la représentation graphique du champ de vecteurs.
 
 <video controls>
 <source src="/images/2017/03/champ_circulaire.mp4" type="video/mp4">
@@ -132,8 +132,8 @@ subplot(121)
 grid()
 xlim([min(t), max(t)])
 ylim([min(x1_min, x2_min), max(x1_max, x2_max)])
-p1, = plot([], [], 'r-', label="$x$")
-p2, = plot([], [], 'b-', label="$y$")
+p1, = plot([], [], 'r-', label="$$x$$")
+p2, = plot([], [], 'b-', label="$$y$$")
 legend()
 
 subplot(122)
@@ -141,8 +141,8 @@ grid()
 gca().set_aspect('equal', adjustable='box')
 xlim([x1_min, x1_max])
 ylim([x2_min, x2_max])
-xlabel("$x$")
-ylabel("$y$")
+xlabel("$$x$$")
+ylabel("$$y$$")
 p3, = plot([], [], 'g-')
 p4, = plot([], [], 'go')
 quiver(x, y, dx, dy)

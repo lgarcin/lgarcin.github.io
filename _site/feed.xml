@@ -7,44 +7,10 @@
     <atom:link href="https://lgarcin.github.io//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Décomposition en éléments simples</title>
-        <description>
-          
-          On expose ici la décomposition en éléments simples dans le cas d’un corps $\dK$ quelconque. Lemme. Soient $P\in\dK[X]$, $R$ un polynôme irréductible de $\dK[X]$ de degré $r$ et $n\in\dN^*$. Alors il existe $E\in\dK[X]$ et $(P_1,\dots,P_n)\in\dK_{n-1}[X]^r$ tels que Preuve. On procède par récurrence sur $n$. La propriété à montrer est clairement...
-        </description>
-        <pubDate>Sat, 18 Mar 2017 20:26:35 +0100</pubDate>
-        <link>https://lgarcin.github.io//2017-03-18-decomposition-en-elements-simples/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2017-03-18-decomposition-en-elements-simples/</guid>
-      </item>
-    
-      <item>
-        <title>Corps de fractions</title>
-        <description>
-          
-          
-
-        </description>
-        <pubDate>Thu, 16 Mar 2017 10:23:40 +0100</pubDate>
-        <link>https://lgarcin.github.io//2017-03-16-corps-de-fractions/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2017-03-16-corps-de-fractions/</guid>
-      </item>
-    
-      <item>
-        <title>Dualité</title>
-        <description>
-          
-          La dualité est le lien qui existe entre un $\dK$-espace vectoriel $E$ et son espace dual . On rappelle que est l’espace vectoriel des formes linéaires sur $E$. Base duale Définition [Base duale] Soient $E$ un espace de dimension finie et une base $(e_1,\dots,e_n)$ de $E$. Pour tout , on...
-        </description>
-        <pubDate>Fri, 10 Mar 2017 15:06:27 +0000</pubDate>
-        <link>https://lgarcin.github.io//2017-03-10-dualite/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2017-03-10-dualite/</guid>
-      </item>
-    
-      <item>
         <title>Arithmétique et idéaux</title>
         <description>
           
-          Arithmétique dans un anneau Si $(A,+,\times)$ est un anneau commutatif, on peut définir une relation de divisibilité de la même manière que dans l’anneau $\dZ$ des entiers relatifs ou l’anneau $\dK[X]$ des polynômes à coefficients dans un corps $\dK$ : on dit que $a\in A$ divise $b\in A$ s’il existe...
+          Arithmétique dans un anneau Si est un anneau commutatif, on peut définir une relation de divisibilité de la même manière que dans l’anneau des entiers relatifs ou l’anneau des polynômes à coefficients dans un corps : on dit que divise s’il existe tel que . Notion d’idéal La seule sous-structure...
         </description>
         <pubDate>Wed, 08 Mar 2017 00:00:00 +0000</pubDate>
         <link>https://lgarcin.github.io//2017-03-08-arithmetique-et-ideaux/</link>
@@ -55,7 +21,7 @@
         <title>Systèmes différentiels</title>
         <description>
           
-          Champ de vecteurs On appelle champ de vecteurs une application de $\mathbb{R}^n$ dans $\mathbb{R}^n$. Les éléments de l’ensemble de départ sont vus comme des points tandis que les éléments de l’ensembles d’arrivée sont vus comme des vecteurs. Par exemple, en physique, les champs électrique et magnétiques sont des champs de...
+          Champ de vecteurs On appelle champ de vecteurs une application de dans . Les éléments de l’ensemble de départ sont vus comme des points tandis que les éléments de l’ensembles d’arrivée sont vus comme des vecteurs. Par exemple, en physique, les champs électrique et magnétiques sont des champs de vecteur...
         </description>
         <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
         <link>https://lgarcin.github.io//2017-02-28-systemes-differentiels/</link>
@@ -79,7 +45,7 @@
         <title>Suite logistique</title>
         <description>
           
-          Introduction La suite logistique est un système dynamique discret permettant de modéliser l’évolution d’une population. Plus précisément, on considère la suite $(u_n)$ vérifiant la relation de récurrence suivante : Le terme $u_n$ ne représente pas à proprement parler la population mais une fraction d’une population maximale donnée. Pour que la...
+          Introduction La suite logistique est un système dynamique discret permettant de modéliser l’évolution d’une population. Plus précisément, on considère la suite vérifiant la relation de récurrence suivante : Le terme ne représente pas à proprement parler la population mais une fraction d’une population maximale donnée. Pour que la suite reste...
         </description>
         <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
         <link>https://lgarcin.github.io//2016-12-14-suite-logistique/</link>
@@ -130,7 +96,7 @@ Milieux : interactions, interfaces, homogénéité, ruptures.
           
           Intervertir sans précaution limite et intégrale, c’est MAL.
 
-Posons $f_n(x)=(n+1)x^n$ pour $x\in[0,1]$ et $n\in\mathbb N$. Alors pour tout $n\in\mathbb N$, $\int_0^1f_n(x)\,dx=1$. Pourtant pour tout $x\in[0,1[$, $\lim_{n\to+\infty}f_n(x)=0$ par croissancces comparées. Ainsi
+Posons  pour  et . Alors pour tout , . Pourtant pour tout ,  par croissancces comparées. Ainsi
 
 
         </description>
@@ -143,7 +109,7 @@ Posons $f_n(x)=(n+1)x^n$ pour $x\in[0,1]$ et $n\in\mathbb N$. Alors pour tout $n
         <title>Histoires de rationnels</title>
         <description>
           
-          Toutes les fractions considérées dans cet article sont des fractions irréductibles d’entiers naturels. On adjoint à ces fractions la fraction $\frac{1}{0}$ dont on convient raisonnablement qu’elle est strictement supérieure à toutes les autres. Médiante de deux fractions On appelle médiante de deux fractions $\frac{a}{b}$ et $\frac{c}{d}$ la fraction $\frac{a}{b}\oplus\frac{c}{d}=\frac{a+c}{b+d}$. Pour...
+          Toutes les fractions considérées dans cet article sont des fractions irréductibles d’entiers naturels. On adjoint à ces fractions la fraction dont on convient raisonnablement qu’elle est strictement supérieure à toutes les autres. Médiante de deux fractions On appelle médiante de deux fractions et la fraction . Pour une fraction irréductible...
         </description>
         <pubDate>Wed, 05 Oct 2016 00:00:00 +0100</pubDate>
         <link>https://lgarcin.github.io//2016-10-05-stern/</link>
@@ -154,7 +120,7 @@ Posons $f_n(x)=(n+1)x^n$ pour $x\in[0,1]$ et $n\in\mathbb N$. Alors pour tout $n
         <title>Méthode d'Euler et gravitation</title>
         <description>
           
-          Description du problème On considère un système de corps de masses $m_i$ et de positions $\mathbf{r}_i$ soumis à la gravitation. D’après le principe fondamental de la dynamique Dans le cas où le système est formé de deux corps, on sait résoudre explicitement ce système d’équations différentielles. Dans le cas contraire,...
+          Description du problème On considère un système de corps de masses et de positions soumis à la gravitation. D’après le principe fondamental de la dynamique Dans le cas où le système est formé de deux corps, on sait résoudre explicitement ce système d’équations différentielles. Dans le cas contraire, on est...
         </description>
         <pubDate>Mon, 26 Sep 2016 00:00:00 +0100</pubDate>
         <link>https://lgarcin.github.io//2016-09-26-gravitation/</link>
@@ -165,7 +131,7 @@ Posons $f_n(x)=(n+1)x^n$ pour $x\in[0,1]$ et $n\in\mathbb N$. Alors pour tout $n
         <title>Pentagone régulier</title>
         <description>
           
-          On sait que les images des racines $n^\text{èmes}$ de l’unité forment un polygone régulier. On expose dans ce post la construction du pentagone régulier. Calcul de $\cos\frac{2\pi}{5}$ Il suffit de faire un tour par les complexes. En posant $\omega=e^\frac{2i\pi}{5}$, on a clairement $1+\omega+\omega^2+\omega^3+\omega^4=\frac{\omega^5-1}{\omega-1}=0$. Or $\omega+\omega^4=\omega+\frac{1}{\omega}=2\cos\frac{2\pi}{5}$ et $\omega^2+\omega^3=\omega^2+\frac{1}{\omega^2}=2\cos\frac{4\pi}{5}=2(2\cos^2\frac{2\pi}{5}-1)$. Il s’ensuit que...
+          On sait que les images des racines de l’unité forment un polygone régulier. On expose dans ce post la construction du pentagone régulier. Calcul de Il suffit de faire un tour par les complexes. En posant , on a clairement . Or et . Il s’ensuit que est racine du...
         </description>
         <pubDate>Fri, 23 Sep 2016 00:00:00 +0100</pubDate>
         <link>https://lgarcin.github.io//2016-09-23-pentagone-regulier/</link>
