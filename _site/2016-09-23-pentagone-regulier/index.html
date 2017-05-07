@@ -31,7 +31,7 @@
     <meta property="og:url" content="https://lgarcin.github.io//2016-09-23-pentagone-regulier//" />  
     <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" /> 
 
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntilConfig">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntilConfig">
     </script>
     <script src="/js/mathjax.js">
     </script>
@@ -145,33 +145,33 @@
 <article>
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-	  <p>On sait que les images des racines <script type="math/tex">n^\text{èmes}</script> de l’unité forment un polygone régulier. On expose dans ce post la construction du pentagone régulier.</p>
+	  <p>On sait que les images des racines $n^\text{èmes}$ de l’unité forment un polygone régulier. On expose dans ce post la construction du pentagone régulier.</p>
 
-<h1 id="calcul-de-cosfrac2pi5">Calcul de <script type="math/tex">\cos\frac{2\pi}{5}</script></h1>
+<h1 id="calcul-de-cosfrac2pi5">Calcul de $\cos\frac{2\pi}{5}$</h1>
 
-<p>Il suffit de faire un tour par les complexes. En posant <script type="math/tex">\omega=e^\frac{2i\pi}{5}</script>, on a clairement <script type="math/tex">1+\omega+\omega^2+\omega^3+\omega^4=\frac{\omega^5-1}{\omega-1}=0</script>. Or <script type="math/tex">\omega+\omega^4=\omega+\frac{1}{\omega}=2\cos\frac{2\pi}{5}</script> et <script type="math/tex">\omega^2+\omega^3=\omega^2+\frac{1}{\omega^2}=2\cos\frac{4\pi}{5}=2(2\cos^2\frac{2\pi}{5}-1)</script>. Il s’ensuit que <script type="math/tex">\cos\frac{2\pi}{5}</script> est racine du polynôme <script type="math/tex">4X^2+2X-1</script>. Puisque <script type="math/tex">\cos\frac{2\pi}{5}</script> est positif, <script type="math/tex">\cos\frac{2\pi}{5}=\frac{\sqrt5-1}{4}</script>.</p>
+<p>Il suffit de faire un tour par les complexes. En posant $\omega=e^\frac{2i\pi}{5}$, on a clairement $1+\omega+\omega^2+\omega^3+\omega^4=\frac{\omega^5-1}{\omega-1}=0$. Or $\omega+\omega^4=\omega+\frac{1}{\omega}=2\cos\frac{2\pi}{5}$ et $\omega^2+\omega^3=\omega^2+\frac{1}{\omega^2}=2\cos\frac{4\pi}{5}=2(2\cos^2\frac{2\pi}{5}-1)$. Il s’ensuit que $\cos\frac{2\pi}{5}$ est racine du polynôme $4X^2+2X-1$. Puisque $\cos\frac{2\pi}{5}$ est positif, $\cos\frac{2\pi}{5}=\frac{\sqrt5-1}{4}$.</p>
 
 <h1 id="construction-dun-repre-orthonorm-et-du-cercle-trigonomtrique">Construction d’un repère orthonormé et du cercle trigonométrique.</h1>
 
-<p>On se donne deux points <script type="math/tex">A</script> et <script type="math/tex">B</script> du plan et l’on convient que <script type="math/tex">AB=1</script>. On peut alors tracer le cercle <script type="math/tex">\mathscr{C}</script> de centre <script type="math/tex">A</script> passant par <script type="math/tex">B</script>. On note <script type="math/tex">C</script> le point d’intersection du cercle <script type="math/tex">\mathscr{C}</script> et de la droite <script type="math/tex">(AB)</script>. On peut tracer la médiatrice du segment <script type="math/tex">[AC]</script> à l’aide d’un compas<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. On note <script type="math/tex">D</script> et <script type="math/tex">E</script> les points d’intersection du cercle <script type="math/tex">\mathscr{C}</script> et de cette médiatrice.</p>
+<p>On se donne deux points $A$ et $B$ du plan et l’on convient que $AB=1$. On peut alors tracer le cercle $\mathscr{C}$ de centre $A$ passant par $B$. On note $C$ le point d’intersection du cercle $\mathscr{C}$ et de la droite $(AB)$. On peut tracer la médiatrice du segment $[AC]$ à l’aide d’un compas<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. On note $D$ et $E$ les points d’intersection du cercle $\mathscr{C}$ et de cette médiatrice.</p>
 
 <p><img src="/images/2016/09/pentagone1.png" alt="repere" /></p>
 
-<h1 id="construction-de-cosfrac2pi5">Construction de <script type="math/tex">\cos\frac{2\pi}{5}</script></h1>
+<h1 id="construction-de-cosfrac2pi5">Construction de $\cos\frac{2\pi}{5}$</h1>
 
-<p>Dans un premier temps, on construit le milieu <script type="math/tex">F</script> du segment <script type="math/tex">[AC]</script>. On trace alors le cercle <script type="math/tex">\Gamma</script> de centre <script type="math/tex">F</script> passant par <script type="math/tex">D</script>. Le théorème de Pythagore permet d’affirmer que <script type="math/tex">FD=\frac{\sqrt5}{2}</script>. Notons <script type="math/tex">G</script> le point d’intersection du cercle <script type="math/tex">\Gamma</script> et du segment <script type="math/tex">[AB]</script>. Il est évident que que <script type="math/tex">AG=\frac{\sqrt5-1}{2}</script>. On trace alors la médiatrice du segment <script type="math/tex">[AG]</script> qui coupe le segment <script type="math/tex">[AB]</script> en un point <script type="math/tex">H</script> ainsi que le cercle <script type="math/tex">\mathscr{C}</script> en des points <script type="math/tex">I</script> et <script type="math/tex">J</script>. On a alors bien <script type="math/tex">AH=\frac{\sqrt5-1}{4}=\cos\frac{2\pi}{5}</script>.</p>
+<p>Dans un premier temps, on construit le milieu $F$ du segment $[AC]$. On trace alors le cercle $\Gamma$ de centre $F$ passant par $D$. Le théorème de Pythagore permet d’affirmer que $FD=\frac{\sqrt5}{2}$. Notons $G$ le point d’intersection du cercle $\Gamma$ et du segment $[AB]$. Il est évident que que $AG=\frac{\sqrt5-1}{2}$. On trace alors la médiatrice du segment $[AG]$ qui coupe le segment $[AB]$ en un point $H$ ainsi que le cercle $\mathscr{C}$ en des points $I$ et $J$. On a alors bien $AH=\frac{\sqrt5-1}{4}=\cos\frac{2\pi}{5}$.</p>
 
 <p><img src="/images/2016/09/pentagone2.png" alt="cosinus" /></p>
 
 <h1 id="construction-du-pentagone-rgulier">Construction du pentagone régulier</h1>
 
-<p>Puisque le cercle <script type="math/tex">\mathscr{C}</script> a pour rayon 1, les angles <script type="math/tex">\widehat{BAI}</script> et <script type="math/tex">\widehat{BAJ}</script> ont pour mesure <script type="math/tex">\frac{2\pi}{5}</script>. Il ne reste alors plus qu’à tracer les cercles de centre <script type="math/tex">I</script> et <script type="math/tex">J</script> passant par <script type="math/tex">B</script> : ceux-ci coupent le cercle <script type="math/tex">\mathscr{C}</script> en des points <script type="math/tex">K</script> et <script type="math/tex">L</script>. Le pentagone <script type="math/tex">BIKLJ</script> est alors régulier.</p>
+<p>Puisque le cercle $\mathscr{C}$ a pour rayon 1, les angles $\widehat{BAI}$ et $\widehat{BAJ}$ ont pour mesure $\frac{2\pi}{5}$. Il ne reste alors plus qu’à tracer les cercles de centre $I$ et $J$ passant par $B$ : ceux-ci coupent le cercle $\mathscr{C}$ en des points $K$ et $L$. Le pentagone $BIKLJ$ est alors régulier.</p>
 
 <p><img src="/images/2016/09/pentagone3.png" alt="pentagone" /></p>
 
 <h1 id="pour-aller-plus-loin">Pour aller plus loin</h1>
 
-<p>On peut se demander s’il existe des procédés de construction à la règle et au compas d’autres polygones réguliers. Par exemple, une telle construction de l’heptadécagone<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> régulier a été proposée par le prince des mathématiciens, Carl-Friedrich Gauß, à l’âge de 19 ans. Dans la foulée, ce dernier a prouvé que tout polygone dont le nombre de côtés est le produit d’une puissance de 2 et de nombres premiers de Fermat<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup> distincts est constructible à la règle et au compas. L’heptadécagone régulier est effectivement constructible à la règle et au compas puisque <script type="math/tex">17=2^{2^2}+1</script> est un nombre premier de Fermat. La réciproque de ce résultat est également vraie et a été prouvée ultérieurement par Wantzel.</p>
+<p>On peut se demander s’il existe des procédés de construction à la règle et au compas d’autres polygones réguliers. Par exemple, une telle construction de l’heptadécagone<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> régulier a été proposée par le prince des mathématiciens, Carl-Friedrich Gauß, à l’âge de 19 ans. Dans la foulée, ce dernier a prouvé que tout polygone dont le nombre de côtés est le produit d’une puissance de 2 et de nombres premiers de Fermat<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup> distincts est constructible à la règle et au compas. L’heptadécagone régulier est effectivement constructible à la règle et au compas puisque $17=2^{2^2}+1$ est un nombre premier de Fermat. La réciproque de ce résultat est également vraie et a été prouvée ultérieurement par Wantzel.</p>
 
 <h1 id="animation-geogebra">Animation Geogebra</h1>
 
@@ -186,7 +186,7 @@
       <p>Un heptadécagone est un polygone à 17 côtés. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:3">
-      <p>Un nombre de Fermat est un nombre de la forme <script type="math/tex">2^{2^n}+1</script> où <script type="math/tex">n</script> est un entier naturel. Tous les nombres de Fermat ne sont pas premiers. <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+      <p>Un nombre de Fermat est un nombre de la forme $2^{2^n}+1$ où $n$ est un entier naturel. Tous les nombres de Fermat ne sont pas premiers. <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

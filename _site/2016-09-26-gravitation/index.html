@@ -31,7 +31,7 @@
     <meta property="og:url" content="https://lgarcin.github.io//2016-09-26-gravitation//" />  
     <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" /> 
 
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntilConfig">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntilConfig">
     </script>
     <script src="/js/mathjax.js">
     </script>
@@ -147,21 +147,21 @@
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 	  <h3 id="description-du-problme">Description du problème</h3>
 
-<p>On considère un système de corps de masses <script type="math/tex">m_i</script> et de positions <script type="math/tex">\mathbf{r}_i</script> soumis à la gravitation. D’après le principe fondamental de la dynamique</p>
+<p>On considère un système de corps de masses $m_i$ et de positions $\mathbf{r}_i$ soumis à la gravitation. D’après le principe fondamental de la dynamique</p>
 
-<script type="math/tex; mode=display">\ddot{\mathbf{r}}_i=\sum_{j\neq i}\frac{Gm_j}{\|\mathbf{r}_j-\mathbf{r}_i\|^3}(\mathbf{r}_j-\mathbf{r}_i)</script>
+<p>$\ddot{\mathbf{r}}<em>i=\sum</em>{j\neq i}\frac{Gm_j}{|\mathbf{r}_j-\mathbf{r}_i|^3}(\mathbf{r}_j-\mathbf{r}_i)$</p>
 
 <p>Dans le cas où le système est formé de deux corps, on sait résoudre explicitement ce système d’équations différentielles. Dans le cas contraire, on est obligé de faire appel à des méthodes de résolution approchée : on emploiera ici la méthode d’Euler qui est une méthode bien connue de résolution numérique d’équations différentielles par discrétisation du temps.</p>
 
 <p>On sait par ailleurs que la force gravitationnelle dérive d’un potentiel : plus précisément, l’énergie potentielle du système est :</p>
 
-<script type="math/tex; mode=display">E_p=\frac{1}{2}\sum_{i\neq j}\frac{Gm_im_j}{\|\mathbf{r}_j-\mathbf{r}_i\|}</script>
+<p>$E_p=\frac{1}{2}\sum_{i\neq j}\frac{Gm_im_j}{|\mathbf{r}_j-\mathbf{r}_i|}$</p>
 
-<p>Le facteur <script type="math/tex">\frac{1}{2}</script> provient du fait que chaque paire de corps intervient deux fois dans la somme. Enfin, il est clair que l’énergie cinétique du système est :</p>
+<p>Le facteur $\frac{1}{2}$ provient du fait que chaque paire de corps intervient deux fois dans la somme. Enfin, il est clair que l’énergie cinétique du système est :</p>
 
-<script type="math/tex; mode=display">E_c=\frac{1}{2}\sum_im_i\|\dot{\mathbf{r}}_i\|^2</script>
+<p>$E_c=\frac{1}{2}\sum_im_i|\dot{\mathbf{r}}_i|^2$</p>
 
-<p>L’énergie totale du système est <script type="math/tex">E=E_p+E_c</script>.</p>
+<p>L’énergie totale du système est $E=E_p+E_c$.</p>
 
 <h3 id="la-mthode-deuler">La méthode d’Euler</h3>
 
@@ -173,18 +173,18 @@
 \left\{\begin{aligned}y'&=f(y)\\y(t_0)&=y_0\end{aligned}\right. %]]></script>
 
 <p>on fixe un intervalle
-de temps <script type="math/tex">\Delta t</script> et on calcule des valeurs approchées <script type="math/tex">y_n</script> de <script type="math/tex">y</script> aux temps <script type="math/tex">t_n=t_0+n\Delta t</script> en utilisant la relation de récurrence</p>
+de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps $t_n=t_0+n\Delta t$ en utilisant la relation de récurrence</p>
 
 <script type="math/tex; mode=display">y_{n+1}=y_n+f(y_n)\Delta t</script>
 
-<p>Evidemment, l’erreur d’approximation augmente avec <script type="math/tex">n</script> puisqu’on utilise à chaque fois une valeur approchée pour calculer l’approximation suivante.</p>
+<p>Evidemment, l’erreur d’approximation augmente avec $n$ puisqu’on utilise à chaque fois une valeur approchée pour calculer l’approximation suivante.</p>
 
-<p>En posant <script type="math/tex">\mathbf{R}=(\mathbf{r}_i)_i</script>, le système différentiel de notre problème peut s’écrire sous la forme <script type="math/tex">\ddot{\mathbf{R}}=f(\mathbf{R})</script> et on se ramène classiquement à une équation différentielle d’ordre 1 en posant <script type="math/tex">y=(\mathbf{R},\dot{\mathbf{R}})</script>. La méthode d’Euler décrite précédemment nous amène alors à calculer des valeurs approchées de <script type="math/tex">\mathbf{R}</script> en utilisant les relations de récurrence</p>
+<p>En posant $\mathbf{R}=(\mathbf{r}_i)_i$, le système différentiel de notre problème peut s’écrire sous la forme $\ddot{\mathbf{R}}=f(\mathbf{R})$ et on se ramène classiquement à une équation différentielle d’ordre 1 en posant $y=(\mathbf{R},\dot{\mathbf{R}})$. La méthode d’Euler décrite précédemment nous amène alors à calculer des valeurs approchées de $\mathbf{R}$ en utilisant les relations de récurrence</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
 \left\{\begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_n)\Delta t\end{aligned}\right. %]]></script>
 
-<p>Malheureusement, cette méthode n’est pas stable numériquement : l’erreur augmente très rapidement avec <script type="math/tex">n</script>. On utilise donc une variante de la méthode d’Euler appelée méthode d’Euler <em>asymétrique</em>. Cette méthode est adaptée aux systèmes conservatifs comme celui que nous étudions (la force gravitationnelle dérive d’un potentiel). Le schéma de récurrence est alors le suivant.</p>
+<p>Malheureusement, cette méthode n’est pas stable numériquement : l’erreur augmente très rapidement avec $n$. On utilise donc une variante de la méthode d’Euler appelée méthode d’Euler <em>asymétrique</em>. Cette méthode est adaptée aux systèmes conservatifs comme celui que nous étudions (la force gravitationnelle dérive d’un potentiel). Le schéma de récurrence est alors le suivant.</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
 \left\{\begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_{n+1})\Delta t\end{aligned}\right. %]]></script>
@@ -192,17 +192,17 @@ de temps <script type="math/tex">\Delta t</script> et on calcule des valeurs app
 <p>Méthode d’Euler classique :</p>
 
 <ul>
-  <li>on calcule les accélérations à partir des positions au temps <script type="math/tex">t_n</script> ;</li>
-  <li>on calcule les positions au temps <script type="math/tex">t_{n+1}</script> à partir des vitesses aux temps <script type="math/tex">t_n</script> ;</li>
-  <li>on calcule les vitesses au temps <script type="math/tex">t_{n+1}</script> à partir des accélérations précédemment calculées.</li>
+  <li>on calcule les accélérations à partir des positions au temps $t_n$ ;</li>
+  <li>on calcule les positions au temps $t_{n+1}$ à partir des vitesses aux temps $t_n$ ;</li>
+  <li>on calcule les vitesses au temps $t_{n+1}$ à partir des accélérations précédemment calculées.</li>
 </ul>
 
 <p>Méthode d’Euler asymétrique :</p>
 
 <ul>
-  <li>on calcule les positions au temps <script type="math/tex">t_{n+1}</script> à partir des vitesses au temps <script type="math/tex">t_n</script> ;</li>
+  <li>on calcule les positions au temps $t_{n+1}$ à partir des vitesses au temps $t_n$ ;</li>
   <li>on calcule les accélérations à partir de ces nouvelles positions ;</li>
-  <li>on calcule les vitesses au temps <script type="math/tex">t_{n+1}</script> à partir de ces accélérations.</li>
+  <li>on calcule les vitesses au temps $t_{n+1}$ à partir de ces accélérations.</li>
 </ul>
 
 <h3 id="implmentation">Implémentation</h3>

@@ -6,21 +6,21 @@ published: true
 
 ### Description du problème
 
-On considère un système de corps de masses $$m_i$$ et de positions $$\mathbf{r}_i$$ soumis à la gravitation. D'après le principe fondamental de la dynamique
+On considère un système de corps de masses $m_i$ et de positions $\mathbf{r}_i$ soumis à la gravitation. D'après le principe fondamental de la dynamique
 
-$$\ddot{\mathbf{r}}_i=\sum_{j\neq i}\frac{Gm_j}{\|\mathbf{r}_j-\mathbf{r}_i\|^3}(\mathbf{r}_j-\mathbf{r}_i)$$
+$\ddot{\mathbf{r}}_i=\sum_{j\neq i}\frac{Gm_j}{\|\mathbf{r}_j-\mathbf{r}_i\|^3}(\mathbf{r}_j-\mathbf{r}_i)$
 
 Dans le cas où le système est formé de deux corps, on sait résoudre explicitement ce système d'équations différentielles. Dans le cas contraire, on est obligé de faire appel à des méthodes de résolution approchée : on emploiera ici la méthode d'Euler qui est une méthode bien connue de résolution numérique d'équations différentielles par discrétisation du temps.
 
 On sait par ailleurs que la force gravitationnelle dérive d'un potentiel : plus précisément, l'énergie potentielle du système est :
 
-$$E_p=\frac{1}{2}\sum_{i\neq j}\frac{Gm_im_j}{\|\mathbf{r}_j-\mathbf{r}_i\|}$$
+$E_p=\frac{1}{2}\sum_{i\neq j}\frac{Gm_im_j}{\|\mathbf{r}_j-\mathbf{r}_i\|}$
 
-Le facteur $$\frac{1}{2}$$ provient du fait que chaque paire de corps intervient deux fois dans la somme. Enfin, il est clair que l'énergie cinétique du système est :
+Le facteur $\frac{1}{2}$ provient du fait que chaque paire de corps intervient deux fois dans la somme. Enfin, il est clair que l'énergie cinétique du système est :
 
-$$E_c=\frac{1}{2}\sum_im_i\|\dot{\mathbf{r}}_i\|^2$$
+$E_c=\frac{1}{2}\sum_im_i\|\dot{\mathbf{r}}_i\|^2$
 
-L'énergie totale du système est $$E=E_p+E_c$$.
+L'énergie totale du système est $E=E_p+E_c$.
 
 
 ### La méthode d'Euler
@@ -29,34 +29,42 @@ On se contente d'exposer cette méthode dans le cadre des équations différenti
 
 Pour résoudre de manière approchée le système de Cauchy
 
-$$\left\{\begin{aligned}y'&=f(y)\\y(t_0)&=y_0\end{aligned}\right.$$
+$$
+\left\{\begin{aligned}y'&=f(y)\\y(t_0)&=y_0\end{aligned}\right.
+$$
 
 on fixe un intervalle
-de temps $$\Delta t$$ et on calcule des valeurs approchées $$y_n$$ de $$y$$ aux temps $$t_n=t_0+n\Delta t$$ en utilisant la relation de récurrence
+de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps $t_n=t_0+n\Delta t$ en utilisant la relation de récurrence
 
-$$y_{n+1}=y_n+f(y_n)\Delta t$$
+$$
+y_{n+1}=y_n+f(y_n)\Delta t
+$$
 
-Evidemment, l'erreur d'approximation augmente avec $$n$$ puisqu'on utilise à chaque fois une valeur approchée pour calculer l'approximation suivante.
+Evidemment, l'erreur d'approximation augmente avec $n$ puisqu'on utilise à chaque fois une valeur approchée pour calculer l'approximation suivante.
 
-En posant $$\mathbf{R}=(\mathbf{r}_i)_i$$, le système différentiel de notre problème peut s'écrire sous la forme $$\ddot{\mathbf{R}}=f(\mathbf{R})$$ et on se ramène classiquement à une équation différentielle d'ordre 1 en posant $$y=(\mathbf{R},\dot{\mathbf{R}})$$. La méthode d'Euler décrite précédemment nous amène alors à calculer des valeurs approchées de $$\mathbf{R}$$ en utilisant les relations de récurrence
+En posant $\mathbf{R}=(\mathbf{r}_i)_i$, le système différentiel de notre problème peut s'écrire sous la forme $\ddot{\mathbf{R}}=f(\mathbf{R})$ et on se ramène classiquement à une équation différentielle d'ordre 1 en posant $y=(\mathbf{R},\dot{\mathbf{R}})$. La méthode d'Euler décrite précédemment nous amène alors à calculer des valeurs approchées de $\mathbf{R}$ en utilisant les relations de récurrence
 
-$$\left\{\begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_n)\Delta t\end{aligned}\right.$$
+$$
+\left\{\begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_n)\Delta t\end{aligned}\right.
+$$
 
-Malheureusement, cette méthode n'est pas stable numériquement : l'erreur augmente très rapidement avec $$n$$. On utilise donc une variante de la méthode d'Euler appelée méthode d'Euler *asymétrique*. Cette méthode est adaptée aux systèmes conservatifs comme celui que nous étudions (la force gravitationnelle dérive d'un potentiel). Le schéma de récurrence est alors le suivant.
+Malheureusement, cette méthode n'est pas stable numériquement : l'erreur augmente très rapidement avec $n$. On utilise donc une variante de la méthode d'Euler appelée méthode d'Euler *asymétrique*. Cette méthode est adaptée aux systèmes conservatifs comme celui que nous étudions (la force gravitationnelle dérive d'un potentiel). Le schéma de récurrence est alors le suivant.
 
-$$\left\{\begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_{n+1})\Delta t\end{aligned}\right.$$
+$$
+\left\{\begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_{n+1})\Delta t\end{aligned}\right.
+$$
 
 Méthode d'Euler classique :
 
-* on calcule les accélérations à partir des positions au temps $$t_n$$ ;
-* on calcule les positions au temps $$t_{n+1}$$ à partir des vitesses aux temps $$t_n$$ ;
-* on calcule les vitesses au temps $$t_{n+1}$$ à partir des accélérations précédemment calculées.
+* on calcule les accélérations à partir des positions au temps $t_n$ ;
+* on calcule les positions au temps $t_{n+1}$ à partir des vitesses aux temps $t_n$ ;
+* on calcule les vitesses au temps $t_{n+1}$ à partir des accélérations précédemment calculées.
 
 Méthode d'Euler asymétrique :
 
-* on calcule les positions au temps $$t_{n+1}$$ à partir des vitesses au temps $$t_n$$ ;
+* on calcule les positions au temps $t_{n+1}$ à partir des vitesses au temps $t_n$ ;
 * on calcule les accélérations à partir de ces nouvelles positions ;
-* on calcule les vitesses au temps $$t_{n+1}$$ à partir de ces accélérations.
+* on calcule les vitesses au temps $t_{n+1}$ à partir de ces accélérations.
 
 ### Implémentation
 

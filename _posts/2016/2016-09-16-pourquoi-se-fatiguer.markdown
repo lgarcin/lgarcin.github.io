@@ -6,13 +6,17 @@ published: true
 
 Rappelez-vous en cours : calcul de
 
-$$\sum_{k=0}^n\binom{n}{k}$$
+$$
+\sum_{k=0}^n\binom{n}{k}
+$$
 
 Facile. La réponse est [là][c4b5ec4e].
 
 Plus dur :
 
-$$\sum_{k=0}^nk\binom{n}{k}$$
+$$
+\sum_{k=0}^nk\binom{n}{k}
+$$
 
 La réponse est [encore là][46590540].
 

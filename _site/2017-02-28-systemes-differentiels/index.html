@@ -31,7 +31,7 @@
     <meta property="og:url" content="https://lgarcin.github.io//2017-02-28-systemes-differentiels//" />  
     <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" /> 
 
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntilConfig">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntilConfig">
     </script>
     <script src="/js/mathjax.js">
     </script>
@@ -147,11 +147,11 @@
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 	  <h1 id="champ-de-vecteurs">Champ de vecteurs</h1>
 
-<p>On appelle <strong>champ de vecteurs</strong> une application de <script type="math/tex">\mathbb{R}^n</script> dans <script type="math/tex">\mathbb{R}^n</script>. Les éléments de l’ensemble de départ sont vus comme des <strong>points</strong> tandis que les éléments de l’ensembles d’arrivée sont vus comme des <strong>vecteurs</strong>.</p>
+<p>On appelle <strong>champ de vecteurs</strong> une application de $\mathbb{R}^n$ dans $\mathbb{R}^n$. Les éléments de l’ensemble de départ sont vus comme des <strong>points</strong> tandis que les éléments de l’ensembles d’arrivée sont vus comme des <strong>vecteurs</strong>.</p>
 
-<p>Par exemple, en physique, les champs électrique et magnétiques sont des champs de vecteur : à tout point de l’espace sont associés deux vecteurs <script type="math/tex">\overrightarrow{E}</script> et <script type="math/tex">\overrightarrow{B}</script>.</p>
+<p>Par exemple, en physique, les champs électrique et magnétiques sont des champs de vecteur : à tout point de l’espace sont associés deux vecteurs $\overrightarrow{E}$ et $\overrightarrow{B}$.</p>
 
-<p>En dimension <script type="math/tex">2</script> ou <script type="math/tex">3</script>, on peut visualiser un champ de vecteurs <script type="math/tex">f</script> en dessinant le vecteur <script type="math/tex">f(X)</script> en tout point <script type="math/tex">X</script>.</p>
+<p>En dimension $2$ ou $3$, on peut visualiser un champ de vecteurs $f$ en dessinant le vecteur $f(X)$ en tout point $X$.</p>
 
 <p>Voici par exemple ce que donne la représentation du champ de vecteurs
 <script type="math/tex">f\colon(x,y)\in\mathbb{R}^2\mapsto(-y,x)</script></p>
@@ -181,25 +181,25 @@
 
 <h2 id="application-aux-systmes-diffrentiels">Application aux systèmes différentiels</h2>
 
-<p>De manière générale, un système différentiel autonome peut s’écrire sous la forme <script type="math/tex">X'=f(X)</script> où</p>
+<p>De manière générale, un système différentiel autonome peut s’écrire sous la forme $X’=f(X)$ où</p>
 
 <ul>
   <li>
-    <p><script type="math/tex">X=(x_1,\dots,x_n)</script> est une application <strong>inconnue</strong> de classe <script type="math/tex">\mathcal{C}^1</script> sur <script type="math/tex">\mathbb{R}</script> à valeurs dans <script type="math/tex">\mathbb{R}^n</script> ;</p>
+    <p>$X=(x_1,\dots,x_n)$ est une application <strong>inconnue</strong> de classe $\mathcal{C}^1$ sur $\mathbb{R}$ à valeurs dans $\mathbb{R}^n$ ;</p>
   </li>
   <li>
-    <p><script type="math/tex">f</script> est une application continue de <script type="math/tex">\mathbb{R}^n</script> dans <script type="math/tex">\mathbb{R}^n</script>, c’est-à-dire un champ de vecteurs.</p>
+    <p>$f$ est une application continue de $\mathbb{R}^n$ dans $\mathbb{R}^n$, c’est-à-dire un champ de vecteurs.</p>
   </li>
 </ul>
 
-<p>Voici par exemple le système différentiel en dimension 2 associé au champ de vecteurs <script type="math/tex">f\colon(x,y)\mapsto(-y,x)</script> :</p>
+<p>Voici par exemple le système différentiel en dimension 2 associé au champ de vecteurs $f\colon(x,y)\mapsto(-y,x)$ :</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
 \left\{\begin{align*}x'&=-y\\y'&=x\end{align*}\right. %]]></script>
 
-<p>Dans le cas où <script type="math/tex">f</script> est un endomorphisme de <script type="math/tex">\mathbb{R}^n</script>, on parle de système différentiel <strong>linéaire</strong>. On sait alors résoudre explicitement un tel système. Dans le cas où <script type="math/tex">f</script> n’est pas linéaire, le <strong>thèorème de Cauchy-Lipschitz</strong> garantit l’existence d’une solution et son unicité si l’on fournit des conditions initiales (à condition que <script type="math/tex">f</script> soit suffisamment régulier) mais ce n’est pas notre propos. On préfère ici expliquer comment prévoir l’évolution d’une solution d’un système linéaire à partir de la représentation graphique du champ de vecteurs.</p>
+<p>Dans le cas où $f$ est un endomorphisme de $\mathbb{R}^n$, on parle de système différentiel <strong>linéaire</strong>. On sait alors résoudre explicitement un tel système. Dans le cas où $f$ n’est pas linéaire, le <strong>thèorème de Cauchy-Lipschitz</strong> garantit l’existence d’une solution et son unicité si l’on fournit des conditions initiales (à condition que $f$ soit suffisamment régulier) mais ce n’est pas notre propos. On préfère ici expliquer comment prévoir l’évolution d’une solution d’un système linéaire à partir de la représentation graphique du champ de vecteurs.</p>
 
-<p>Une application <script type="math/tex">X</script> solution du système peut être vue comme une <strong>courbe paramétrée</strong> à valeurs dans <script type="math/tex">\mathbb{R}^n</script>. A chaque instant <script type="math/tex">t</script>, le vecteur vitesse <script type="math/tex">X'(t)</script> est égal à <script type="math/tex">f(X(t))</script>, c’est-à-dire que la trajectoire de <script type="math/tex">X</script> est “guidée” par le champ de vecteurs.</p>
+<p>Une application $X$ solution du système peut être vue comme une <strong>courbe paramétrée</strong> à valeurs dans $\mathbb{R}^n$. A chaque instant $t$, le vecteur vitesse $X’(t)$ est égal à $f(X(t))$, c’est-à-dire que la trajectoire de $X$ est “guidée” par le champ de vecteurs.</p>
 
 <p>Voilà par exemple l’évolution d’une solution du sytème différentiel</p>
 
@@ -208,10 +208,10 @@
 
 <ul>
   <li>
-    <p>Le premier graphique représente l’évolution de <script type="math/tex">x</script> et <script type="math/tex">y</script> en fonction du temps.</p>
+    <p>Le premier graphique représente l’évolution de $x$ et $y$ en fonction du temps.</p>
   </li>
   <li>
-    <p>Le second graphique représente l’évolution de la courbe paramétrée <script type="math/tex">(x,y)</script> superposée à la représentation graphique du champ de vecteurs.</p>
+    <p>Le second graphique représente l’évolution de la courbe paramétrée $(x,y)$ superposée à la représentation graphique du champ de vecteurs.</p>
   </li>
 </ul>
 
@@ -272,8 +272,8 @@
 <span class="n">grid</span><span class="p">()</span>
 <span class="n">xlim</span><span class="p">([</span><span class="nb">min</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">t</span><span class="p">)])</span>
 <span class="n">ylim</span><span class="p">([</span><span class="nb">min</span><span class="p">(</span><span class="n">x1_min</span><span class="p">,</span> <span class="n">x2_min</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">x1_max</span><span class="p">,</span> <span class="n">x2_max</span><span class="p">)])</span>
-<span class="n">p1</span><span class="p">,</span> <span class="o">=</span> <span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s">'r-'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">"$$x$$"</span><span class="p">)</span>
-<span class="n">p2</span><span class="p">,</span> <span class="o">=</span> <span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s">'b-'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">"$$y$$"</span><span class="p">)</span>
+<span class="n">p1</span><span class="p">,</span> <span class="o">=</span> <span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s">'r-'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">"$x$"</span><span class="p">)</span>
+<span class="n">p2</span><span class="p">,</span> <span class="o">=</span> <span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s">'b-'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">"$y$"</span><span class="p">)</span>
 <span class="n">legend</span><span class="p">()</span>
 
 <span class="n">subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
@@ -281,8 +281,8 @@
 <span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s">'equal'</span><span class="p">,</span> <span class="n">adjustable</span><span class="o">=</span><span class="s">'box'</span><span class="p">)</span>
 <span class="n">xlim</span><span class="p">([</span><span class="n">x1_min</span><span class="p">,</span> <span class="n">x1_max</span><span class="p">])</span>
 <span class="n">ylim</span><span class="p">([</span><span class="n">x2_min</span><span class="p">,</span> <span class="n">x2_max</span><span class="p">])</span>
-<span class="n">xlabel</span><span class="p">(</span><span class="s">"$$x$$"</span><span class="p">)</span>
-<span class="n">ylabel</span><span class="p">(</span><span class="s">"$$y$$"</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s">"$x$"</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s">"$y$"</span><span class="p">)</span>
 <span class="n">p3</span><span class="p">,</span> <span class="o">=</span> <span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s">'g-'</span><span class="p">)</span>
 <span class="n">p4</span><span class="p">,</span> <span class="o">=</span> <span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s">'go'</span><span class="p">)</span>
 <span class="n">quiver</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">dx</span><span class="p">,</span> <span class="n">dy</span><span class="p">)</span>

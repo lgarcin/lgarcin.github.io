@@ -31,7 +31,7 @@
     <meta property="og:url" content="https://lgarcin.github.io//2017-03-08-arithmetique-et-ideaux//" />  
     <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" /> 
 
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntilConfig">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntilConfig">
     </script>
     <script src="/js/mathjax.js">
     </script>
@@ -147,47 +147,46 @@
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 	  <h2 id="arithmtique-dans-un-anneau">Arithmétique dans un anneau</h2>
 
-<p>Si <script type="math/tex">(A,+,\times)</script> est un anneau commutatif, on peut définir une relation de divisibilité de la même manière que dans l’anneau <script type="math/tex">\dZ</script> des entiers relatifs ou l’anneau <script type="math/tex">\dK[X]</script> des polynômes à coefficients dans un corps <script type="math/tex">\dK</script> : on dit que <script type="math/tex">a\in A</script> divise <script type="math/tex">b\in A</script> s’il existe <script type="math/tex">c\in A</script> tel que <script type="math/tex">b=ac</script>.</p>
+<p>Si $(A,+,\times)$ est un anneau commutatif, on peut définir une relation de divisibilité de la même manière que dans l’anneau $\dZ$ des entiers relatifs ou l’anneau $\dK[X]$ des polynômes à coefficients dans un corps $\dK$ : on dit que $a\in A$ divise $b\in A$ s’il existe $c\in A$ tel que $b=ac$.</p>
 
 <h2 id="notion-didal">Notion d’idéal</h2>
 
 <p>La seule sous-structure d’anneau au programme de MPSI est la structure de sous-anneau. Mais ce n’est pas la structure adaptée pour faire de l’arithmétique dans un anneau.</p>
 
-<p><strong>Définition [Idéal]</strong> On appelle <strong>idéal</strong> d’un anneau commutatif <script type="math/tex">(A,+,\times)</script> toute partie <script type="math/tex">I</script> de <script type="math/tex">A</script> telle que :</p>
+<p><strong>Définition [Idéal]</strong> On appelle <strong>idéal</strong> d’un anneau commutatif $(A,+,\times)$ toute partie $I$ de $A$ telle que :</p>
 
 <ul>
-  <li><script type="math/tex">I</script> est un sous-groupe de <script type="math/tex">(A,+)</script> ;</li>
-  <li><script type="math/tex">I</script> est <em>absorbant</em> : <script type="math/tex">\forall(a,x)\in A\times I,\;ax\in I</script>.</li>
+  <li>$I$ est un sous-groupe de $(A,+)$ ;</li>
+  <li>$I$ est <em>absorbant</em> : $\forall(a,x)\in A\times I,\;ax\in I$.</li>
 </ul>
 
-<p>Dans le cas particulier de <script type="math/tex">\dZ</script>, on vérifie aisément que les idéaux sont en fait les sous-groupes de <script type="math/tex">\dZ</script>.</p>
+<p>Dans le cas particulier de $\dZ$, on vérifie aisément que les idéaux sont en fait les sous-groupes de $\dZ$.</p>
 
-<p>La structure d’idéal est plus <em>riche</em> que celle de sous-anneau. Par exemple, le seul sous-anneau de <script type="math/tex">\dZ</script> est <script type="math/tex">\dZ</script> lui-même tandis qu’il possède une infinité d’idéaux. Par ailleurs, le noyau d’un morphisme d’anneaux n’est même pas un sous-anneau mais … un idéal.</p>
+<p>La structure d’idéal est plus <em>riche</em> que celle de sous-anneau. Par exemple, le seul sous-anneau de $\dZ$ est $\dZ$ lui-même tandis qu’il possède une infinité d’idéaux. Par ailleurs, le noyau d’un morphisme d’anneaux n’est même pas un sous-anneau mais … un idéal.</p>
 
 <p>On laisse le lecteur vérifier un résultat qui nous sera utile dans la suite, à savoir que la somme et l’intersection de deux (ou plus) idéaux d’un anneau est encore un idéal de cet anneau.</p>
 
 <h2 id="idaux-principaux">Idéaux principaux</h2>
 
-<p>Notamment, les ensembles <script type="math/tex">xA=\\{ax,\;a\in A\\}</script> sont des idéaux de <script type="math/tex">A</script> appelés <em>idéaux principaux</em>. La relation de divisibilité se traduit alors aisément à l’aide des idéaux principaux : <script type="math/tex">x</script> divise <script type="math/tex">y</script> si et seulement si <script type="math/tex">yA\subset xA</script>.</p>
+<p>Notamment, les ensembles $xA={ax,\;a\in A}$ sont des idéaux de $A$ appelés <em>idéaux principaux</em>. La relation de divisibilité se traduit alors aisément à l’aide des idéaux principaux : $x$ divise $y$ si et seulement si $yA\subset xA$.</p>
 
 <p>Un anneau dont tous les idéaux sont principaux est appelé un <em>anneau principal</em>.</p>
 
 <h2 id="division-euclidienne">Division euclidienne</h2>
 
-<p>L’existence d’une division euclidienne dans <script type="math/tex">\dZ</script> et <script type="math/tex">\dK[X]</script> garantit que tous leurs idéaux sont principaux : ce sont donc des anneaux principaux.</p>
+<p>L’existence d’une division euclidienne dans $\dZ$ et $\dK[X]$ garantit que tous leurs idéaux sont principaux : ce sont donc des anneaux principaux.</p>
 
-<p>Traitons par exemple le cas de <script type="math/tex">\dK[X]</script>. Donnons-nous un idéal <script type="math/tex">I</script> de <script type="math/tex">\dK[X]</script>. Si <script type="math/tex">I=\\{0\\}</script>, <script type="math/tex">I</script> est évidemment principal. Sinon, il contient un polynôme non nul de degré minimal : notons-le <script type="math/tex">P</script>. On a évidemment <script type="math/tex">P\dK[X]\subset I</script> d’après la propriété d’absorption. Soit alors <script type="math/tex">A\in\dK[X]</script>. On écrit alors la division euclidienne de <script type="math/tex">A</script> par <script type="math/tex">P</script> : <script type="math/tex">A=PQ+R</script> avec <script type="math/tex">% <![CDATA[
-\deg R<\deg P %]]></script>. Alors <script type="math/tex">R=A-PQ\in I</script> donc <script type="math/tex">R=0</script> par minimalité du degré de <script type="math/tex">P</script>. Ainsi <script type="math/tex">A=PQ\in P\dK[X]</script>. Finalement, <script type="math/tex">I=P\dK[X]</script> est principal.</p>
+<p>Traitons par exemple le cas de $\dK[X]$. Donnons-nous un idéal $I$ de $\dK[X]$. Si $I={0}$, $I$ est évidemment principal. Sinon, il contient un polynôme non nul de degré minimal : notons-le $P$. On a évidemment $P\dK[X]\subset I$ d’après la propriété d’absorption. Soit alors $A\in\dK[X]$. On écrit alors la division euclidienne de $A$ par $P$ : $A=PQ+R$ avec $\deg R&lt;\deg P$. Alors $R=A-PQ\in I$ donc $R=0$ par minimalité du degré de $P$. Ainsi $A=PQ\in P\dK[X]$. Finalement, $I=P\dK[X]$ est principal.</p>
 
 <h2 id="pgcd-et-ppcm-dans-un-anneau-principal">PGCD et PPCM dans un anneau principal</h2>
 
-<p>L’existence du PGCD de deux (ou plus) éléments d’un anneau est garantie si l’anneau est principal (donc en particulier dans le cas de <script type="math/tex">\dZ</script> ou <script type="math/tex">\dK[X]</script>).</p>
+<p>L’existence du PGCD de deux (ou plus) éléments d’un anneau est garantie si l’anneau est principal (donc en particulier dans le cas de $\dZ$ ou $\dK[X]$).</p>
 
-<p>Soit en effet deux éléments <script type="math/tex">x</script> et <script type="math/tex">y</script> d’un anneau principal <script type="math/tex">A</script>. Alors <script type="math/tex">xA+yA</script> est une somme d’idéaux donc un idéal. Comme tous les idéaux de <script type="math/tex">A</script> sont principaux, il existe <script type="math/tex">d\in A</script> tel que <script type="math/tex">xA+yA=dA</script>. Mais alors <script type="math/tex">xA\subset dA</script> et <script type="math/tex">yA\subset dA</script> donc <script type="math/tex">d</script> divise <script type="math/tex">x</script> et <script type="math/tex">y</script>. De plus, si <script type="math/tex">\delta</script> est un diviseur commun de <script type="math/tex">x</script> et <script type="math/tex">y</script>, alors <script type="math/tex">xA\subset \delta A</script> et <script type="math/tex">yA\subset \delta A</script> donc <script type="math/tex">dA=xA+yA\subset\delta A</script> de sorte que <script type="math/tex">\delta</script> divise <script type="math/tex">d</script>. On a bien montré que <script type="math/tex">d</script> était un PGCD de <script type="math/tex">x</script> et <script type="math/tex">y</script>.</p>
+<p>Soit en effet deux éléments $x$ et $y$ d’un anneau principal $A$. Alors $xA+yA$ est une somme d’idéaux donc un idéal. Comme tous les idéaux de $A$ sont principaux, il existe $d\in A$ tel que $xA+yA=dA$. Mais alors $xA\subset dA$ et $yA\subset dA$ donc $d$ divise $x$ et $y$. De plus, si $\delta$ est un diviseur commun de $x$ et $y$, alors $xA\subset \delta A$ et $yA\subset \delta A$ donc $dA=xA+yA\subset\delta A$ de sorte que $\delta$ divise $d$. On a bien montré que $d$ était un PGCD de $x$ et $y$.</p>
 
 <p>De même, l’existence d’un PPCM est à nouveau garantie si l’anneau est principal.</p>
 
-<p>Si l’on se donne deux éléments <script type="math/tex">x</script> et <script type="math/tex">y</script> d’un anneau principal <script type="math/tex">A</script>, alors <script type="math/tex">xA\cap yA</script> est une intersection d’idéaux donc un idéal. Comme tous les idéaux de <script type="math/tex">A</script> sont principaux, il existe <script type="math/tex">m\in A</script> tel que <script type="math/tex">xA\cap yA=mA</script>. Mais alors <script type="math/tex">mA\subset xA</script> et <script type="math/tex">mA\subset yA</script> donc <script type="math/tex">m</script> est un mutiple <script type="math/tex">x</script> et <script type="math/tex">y</script>. De plus, si <script type="math/tex">\mu</script> est un multiple commun de <script type="math/tex">x</script> et <script type="math/tex">y</script>, alors <script type="math/tex">\mu A\subset xA</script> et <script type="math/tex">\mu A\subset yA</script> donc <script type="math/tex">\mu A\subset xA\cap yA=mA</script> de sorte que <script type="math/tex">m</script> divise <script type="math/tex">\mu</script>. On a bien montré que <script type="math/tex">m</script> était un PPCM de <script type="math/tex">x</script> et <script type="math/tex">y</script>.</p>
+<p>Si l’on se donne deux éléments $x$ et $y$ d’un anneau principal $A$, alors $xA\cap yA$ est une intersection d’idéaux donc un idéal. Comme tous les idéaux de $A$ sont principaux, il existe $m\in A$ tel que $xA\cap yA=mA$. Mais alors $mA\subset xA$ et $mA\subset yA$ donc $m$ est un mutiple $x$ et $y$. De plus, si $\mu$ est un multiple commun de $x$ et $y$, alors $\mu A\subset xA$ et $\mu A\subset yA$ donc $\mu A\subset xA\cap yA=mA$ de sorte que $m$ divise $\mu$. On a bien montré que $m$ était un PPCM de $x$ et $y$.</p>
 
 	</div>
   </div>

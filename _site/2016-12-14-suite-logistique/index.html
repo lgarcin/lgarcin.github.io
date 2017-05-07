@@ -31,7 +31,7 @@
     <meta property="og:url" content="https://lgarcin.github.io//2016-12-14-suite-logistique//" />  
     <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" /> 
 
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntilConfig">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntilConfig">
     </script>
     <script src="/js/mathjax.js">
     </script>
@@ -147,11 +147,11 @@
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 	  <h3 id="introduction">Introduction</h3>
 
-<p>La suite logistique est un système dynamique discret permettant de modéliser l’évolution d’une population. Plus précisément, on considère la suite <script type="math/tex">(u_n)</script> vérifiant la relation de récurrence suivante :</p>
+<p>La suite logistique est un système dynamique discret permettant de modéliser l’évolution d’une population. Plus précisément, on considère la suite $(u_n)$ vérifiant la relation de récurrence suivante :</p>
 
 <script type="math/tex; mode=display">\forall n\in\mathbb{N},\;u_{n+1}=r\cdot u_n\cdot(1-u_n)</script>
 
-<p>Le terme <script type="math/tex">u_n</script> ne représente pas à proprement parler la population mais une fraction d’une population maximale donnée. Pour que la suite <script type="math/tex">(u_n)</script> reste à valeurs dans <script type="math/tex">[0,1]</script>, on s’aperçoit qu’il faut choisir <script type="math/tex">r</script> dans <script type="math/tex">[0,4]</script>.</p>
+<p>Le terme $u_n$ ne représente pas à proprement parler la population mais une fraction d’une population maximale donnée. Pour que la suite $(u_n)$ reste à valeurs dans $[0,1]$, on s’aperçoit qu’il faut choisir $r$ dans $[0,4]$.</p>
 
 <hr />
 
@@ -162,23 +162,23 @@
 <iframe scrolling="no" src="https://www.geogebra.org/material/iframe/id/SzST75DK/width/800/height/700/border/888888/sri/true/sdz/true" width="800px" height="700px" style="border:0px;">
 </iframe>
 
-<p>Il est en particulier intéressant de prendre l’indice <script type="math/tex">k</script> du premier terme représenté de l’ordre de <script type="math/tex">50</script> pour avoir une idée du comportement asymptotique de cette suite. Pour plus de précision, on peut faire varier le paramètre <script type="math/tex">r</script> à l’aide des flèches directionnelles : il se passe des choses intéressantes pour <script type="math/tex">r\in[3,4]</script>.</p>
+<p>Il est en particulier intéressant de prendre l’indice $k$ du premier terme représenté de l’ordre de $50$ pour avoir une idée du comportement asymptotique de cette suite. Pour plus de précision, on peut faire varier le paramètre $r$ à l’aide des flèches directionnelles : il se passe des choses intéressantes pour $r\in[3,4]$.</p>
 
 <hr />
 
 <h3 id="comportement-asymptotique">Comportement asymptotique</h3>
 
-<p>Si <script type="math/tex">u_0\in\{0,1\}</script>, il est clair que la suite <script type="math/tex">(u_n)</script> est nulle à partir du rang <script type="math/tex">1</script> quelle que soit la valeur de <script type="math/tex">r</script>. On suppose donc <script type="math/tex">u_0\in]0,1[</script> dans la suite.</p>
+<p>Si $u_0\in{0,1}$, il est clair que la suite $(u_n)$ est nulle à partir du rang $1$ quelle que soit la valeur de $r$. On suppose donc $u_0\in]0,1[$ dans la suite.</p>
 
 <ul>
   <li>
-    <p>Lorsque <script type="math/tex">r\in[0,1]</script>, on voit clairement que <script type="math/tex">(u_n)</script> converge vers <script type="math/tex">0</script>.</p>
+    <p>Lorsque $r\in[0,1]$, on voit clairement que $(u_n)$ converge vers $0$.</p>
   </li>
   <li>
-    <p>Lorsque <script type="math/tex">r\in]1,3]</script>, la suite <script type="math/tex">(u_n)</script> converge vers un point fixe non nul de <script type="math/tex">f</script> (elle est mononotone à partir d’un certain rang si <script type="math/tex">r\in]1,2]</script> tandis que les suites <script type="math/tex">(u_{2n})</script> et <script type="math/tex">(u_{2n+1})</script> sont adjacentes à partir d’un certain rang lorsque <script type="math/tex">r\in]2,3]</script>).</p>
+    <p>Lorsque $r\in]1,3]$, la suite $(u_n)$ converge vers un point fixe non nul de $f$ (elle est mononotone à partir d’un certain rang si $r\in]1,2]$ tandis que les suites $(u_{2n})$ et $(u_{2n+1})$ sont adjacentes à partir d’un certain rang lorsque $r\in]2,3]$).</p>
   </li>
   <li>
-    <p>Lorsque <script type="math/tex">r\in]3,4]</script>, les choses se compliquent. La suite <script type="math/tex">(u_n)</script> admet d’abord un cycle-limite<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> de longueur <script type="math/tex">2</script>, puis de longueur <script type="math/tex">4</script>, <script type="math/tex">8</script>, <script type="math/tex">16</script> … Tous les cycles de longueur une puissance de <script type="math/tex">2</script> apparaissent jusqu’à une certaine valeur de <script type="math/tex">r</script> à partir de laquelle commence le <strong>chaos</strong> : l’évolution asymptotique de la suite <script type="math/tex">(u_n)</script> est “imprévisible”<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> et dépend grandement de la condition initiale. Néanmoins, il existe certains intervalles isolés de valeurs de <script type="math/tex">r</script> pour lesquelles la suite <script type="math/tex">(u_n)</script> converge à nouveau vers un cycle-limite. On peut montrer que l’apparition des longueurs des cycles-limites suit un certain ordre appelé <strong>ordre de Charkovski</strong>.</p>
+    <p>Lorsque $r\in]3,4]$, les choses se compliquent. La suite $(u_n)$ admet d’abord un cycle-limite<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> de longueur $2$, puis de longueur $4$, $8$, $16$ … Tous les cycles de longueur une puissance de $2$ apparaissent jusqu’à une certaine valeur de $r$ à partir de laquelle commence le <strong>chaos</strong> : l’évolution asymptotique de la suite $(u_n)$ est “imprévisible”<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> et dépend grandement de la condition initiale. Néanmoins, il existe certains intervalles isolés de valeurs de $r$ pour lesquelles la suite $(u_n)$ converge à nouveau vers un cycle-limite. On peut montrer que l’apparition des longueurs des cycles-limites suit un certain ordre appelé <strong>ordre de Charkovski</strong>.</p>
   </li>
 </ul>
 
@@ -186,21 +186,21 @@
 
 <h3 id="diagramme-de-feigenbaum">Diagramme de Feigenbaum</h3>
 
-<p>Pour mieux comprendre ce qui précède, on trace les valeurs d’adhérences<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup> de la suite <script type="math/tex">(u_n)</script> en fonction des valeurs de <script type="math/tex">r</script>.</p>
+<p>Pour mieux comprendre ce qui précède, on trace les valeurs d’adhérences<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup> de la suite $(u_n)$ en fonction des valeurs de $r$.</p>
 
 <p><img src="/images/2017/01/feigenbaum.jpeg" alt="Diagramme de Feigenbaum" /></p>
 
-<p>Les résultats sont cohérents avec ce qui a été décrit précédemment. On observe notamment le doublement de la longeur du cycle limite à partir de <script type="math/tex">r=3</script>.</p>
+<p>Les résultats sont cohérents avec ce qui a été décrit précédemment. On observe notamment le doublement de la longeur du cycle limite à partir de $r=3$.</p>
 
-<p>On peut zoomer pour voir plus précisément ce qui se passe pour <script type="math/tex">r\in[3,4]</script>.</p>
+<p>On peut zoomer pour voir plus précisément ce qui se passe pour $r\in[3,4]$.</p>
 
 <p><img src="/images/2017/01/feigenbaum_1.jpeg" alt="Diagramme de Feigenbaum" /></p>
 
-<p>On peut aussi remarquer en zoomant qu’on obtient également des cycles de longeur qui ne sont pas des puissances de <script type="math/tex">2</script>.</p>
+<p>On peut aussi remarquer en zoomant qu’on obtient également des cycles de longeur qui ne sont pas des puissances de $2$.</p>
 
 <p><img src="/images/2017/01/feigenbaum_2.jpeg" alt="Diagramme de Feigenbaum" /></p>
 
-<p>Le principe de doublement de la longueur du cycle reste encore valable. Dans la figure suivante, on voit apparaître successivement des cycles de longeur<sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup> <script type="math/tex">3</script>, <script type="math/tex">6</script>, <script type="math/tex">12</script> …</p>
+<p>Le principe de doublement de la longueur du cycle reste encore valable. Dans la figure suivante, on voit apparaître successivement des cycles de longeur<sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup> $3$, $6$, $12$ …</p>
 
 <p><img src="/images/2017/01/feigenbaum_3.jpeg" alt="Diagramme de Feigenbaum" /></p>
 
@@ -240,7 +240,7 @@
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>On dira qu’une suite <script type="math/tex">(u_n)</script> admet un <strong>cycle-limite</strong> de longueur <script type="math/tex">p</script> si les suites extraites <script type="math/tex">(u_{n+k})</script> pour <script type="math/tex">0\leq k\leq p-1</script> convergent. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>On dira qu’une suite $(u_n)$ admet un <strong>cycle-limite</strong> de longueur $p$ si les suites extraites $(u_{n+k})$ pour $0\leq k\leq p-1$ convergent. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:2">
       <p>Bien entendu, les valeurs des termes de la suite sont encore calculables par récurrence donc l’évolution de la suite est encore “prévisible”. Mais il n’existe plus de comportement asymptotique aussi régulier qu’un cycle-limite. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
