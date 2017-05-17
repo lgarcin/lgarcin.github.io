@@ -12,9 +12,9 @@
           
           Méthode de Newton Un algorithme bien connu de résolution d’une équation du type $f(x)=0$ où $f$ est une fonction d’une variable réelle à valeurs réelles est la méthode de Newton. Elle consiste à construire une suite $(u_n)$ par récurrence en posant $u_{n+1}=u_n-\frac{f(u_n)}{f’(u_n)}$ pour tout $n\in\dN$. On comprend très bien géométriquement...
         </description>
-        <pubDate>Mon, 15 May 2017 19:40:50 +0100</pubDate>
-        <link>https://lgarcin.github.io//2017-05-15-newton-et-babylone/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2017-05-15-newton-et-babylone/</guid>
+        <pubDate>Wed, 17 May 2017 00:00:00 +0100</pubDate>
+        <link>https://lgarcin.github.io//2017-05-17-newton-et-babylone/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2017-05-17-newton-et-babylone/</guid>
       </item>
     
       <item>

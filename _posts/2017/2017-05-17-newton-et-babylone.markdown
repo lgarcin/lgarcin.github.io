@@ -1,6 +1,6 @@
 ---
-layout: "post"
-title: "Newton et Babylone"
+layout: post
+title: Newton et Babylone
 published: true
 ---
 
