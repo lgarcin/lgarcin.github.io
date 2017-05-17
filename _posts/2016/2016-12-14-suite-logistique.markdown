@@ -29,7 +29,7 @@ Il est en particulier intéressant de prendre l'indice $k$ du premier terme repr
 
 ### Comportement asymptotique
 
-Si $u_0\in\{0,1\}$, il est clair que la suite $(u_n)$ est nulle à partir du rang $1$ quelle que soit la valeur de $r$. On suppose donc $u_0\in]0,1[$ dans la suite.
+Si $u_0\in\lbrace 0,1\rbrace $, il est clair que la suite $(u_n)$ est nulle à partir du rang $1$ quelle que soit la valeur de $r$. On suppose donc $u_0\in]0,1[$ dans la suite.
 
 * Lorsque $r\in[0,1]$, on voit clairement que $(u_n)$ converge vers $0$.
 

@@ -7,6 +7,51 @@
     <atom:link href="https://lgarcin.github.io//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Newton et Babylone</title>
+        <description>
+          
+          Méthode de Newton Un algorithme bien connu de résolution d’une équation du type $f(x)=0$ où $f$ est une fonction d’une variable réelle à valeurs réelles est la méthode de Newton. Elle consiste à construire une suite $(u_n)$ par récurrence en posant $u_{n+1}=u_n-\frac{f(u_n)}{f’(u_n)}$ pour tout $n\in\dN$. On comprend très bien géométriquement...
+        </description>
+        <pubDate>Mon, 15 May 2017 19:40:50 +0100</pubDate>
+        <link>https://lgarcin.github.io//2017-05-15-newton-et-babylone/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2017-05-15-newton-et-babylone/</guid>
+      </item>
+    
+      <item>
+        <title>Dualité</title>
+        <description>
+          
+          La dualité est le lien qui existe entre un $\dK$-espace vectoriel $E$ et son espace dual $E^\star$. On rappelle que $E^\star$ est l’espace vectoriel des formes linéaires sur $E$. Base duale Définition [Base duale] Soient $E$ un espace de dimension finie et une base $(e_1,\dots,e_n)$ de $E$. Pour tout $i\in\lb1,n\rb$,...
+        </description>
+        <pubDate>Thu, 11 May 2017 15:45:21 +0100</pubDate>
+        <link>https://lgarcin.github.io//2017-05-11-dualite/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2017-05-11-dualite/</guid>
+      </item>
+    
+      <item>
+        <title>Décomposition en éléments simples</title>
+        <description>
+          
+          On expose ici la décomposition en éléments simples dans le cas d’un corps $\dK$ quelconque. Lemme. Soient $P\in\dK[X]$, $R$ un polynôme irréductible de $\dK[X]$ de degré $r$ et $n\in\dN^*$. Alors il existe $E\in\dK[X]$ et $(P_1,\dots,P_n)\in\dK_{n-1}[X]^r$ tels que Preuve. On procède par récurrence sur $n$. La propriété à montrer est clairement...
+        </description>
+        <pubDate>Sun, 07 May 2017 07:49:03 +0100</pubDate>
+        <link>https://lgarcin.github.io//2017-05-07-decomposition-en-elements-simples/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2017-05-07-decomposition-en-elements-simples/</guid>
+      </item>
+    
+      <item>
+        <title>Corps de fractions</title>
+        <description>
+          
+          
+
+        </description>
+        <pubDate>Thu, 16 Mar 2017 10:23:40 +0100</pubDate>
+        <link>https://lgarcin.github.io//2017-03-16-corps-de-fractions/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2017-03-16-corps-de-fractions/</guid>
+      </item>
+    
+      <item>
         <title>Arithmétique et idéaux</title>
         <description>
           
@@ -21,7 +66,7 @@
         <title>Systèmes différentiels</title>
         <description>
           
-          Champ de vecteurs On appelle champ de vecteurs une application de $\mathbb{R}^n$ dans $\mathbb{R}^n$. Les éléments de l’ensemble de départ sont vus comme des points tandis que les éléments de l’ensembles d’arrivée sont vus comme des vecteurs. Par exemple, en physique, les champs électrique et magnétiques sont des champs de...
+          Champ de vecteurs On appelle champ de vecteurs une application de $\dR^n$ dans $\dR^n$. Les éléments de l’ensemble de départ sont vus comme des points tandis que les éléments de l’ensembles d’arrivée sont vus comme des vecteurs. Par exemple, en physique, les champs électrique et magnétiques sont des champs de...
         </description>
         <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
         <link>https://lgarcin.github.io//2017-02-28-systemes-differentiels/</link>

@@ -30,7 +30,7 @@ On se contente d'exposer cette méthode dans le cadre des équations différenti
 Pour résoudre de manière approchée le système de Cauchy
 
 $$
-\left\{\begin{aligned}y'&=f(y)\\y(t_0)&=y_0\end{aligned}\right.
+\left\lbrace \begin{aligned}y'&=f(y)\\y(t_0)&=y_0\end{aligned}\right.
 $$
 
 on fixe un intervalle
@@ -45,13 +45,13 @@ Evidemment, l'erreur d'approximation augmente avec $n$ puisqu'on utilise à chaq
 En posant $\mathbf{R}=(\mathbf{r}_i)_i$, le système différentiel de notre problème peut s'écrire sous la forme $\ddot{\mathbf{R}}=f(\mathbf{R})$ et on se ramène classiquement à une équation différentielle d'ordre 1 en posant $y=(\mathbf{R},\dot{\mathbf{R}})$. La méthode d'Euler décrite précédemment nous amène alors à calculer des valeurs approchées de $\mathbf{R}$ en utilisant les relations de récurrence
 
 $$
-\left\{\begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_n)\Delta t\end{aligned}\right.
+\left\lbrace \begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_n)\Delta t\end{aligned}\right.
 $$
 
 Malheureusement, cette méthode n'est pas stable numériquement : l'erreur augmente très rapidement avec $n$. On utilise donc une variante de la méthode d'Euler appelée méthode d'Euler *asymétrique*. Cette méthode est adaptée aux systèmes conservatifs comme celui que nous étudions (la force gravitationnelle dérive d'un potentiel). Le schéma de récurrence est alors le suivant.
 
 $$
-\left\{\begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_{n+1})\Delta t\end{aligned}\right.
+\left\lbrace \begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_{n+1})\Delta t\end{aligned}\right.
 $$
 
 Méthode d'Euler classique :

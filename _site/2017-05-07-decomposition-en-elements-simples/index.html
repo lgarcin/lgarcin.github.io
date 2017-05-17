@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>MPSI Corot</title>
+    <title>Décomposition en éléments simples</title>
 
     <meta name="author" content="Laurent Garcin" /> 
 
@@ -26,9 +26,9 @@
     <link rel="shortcut icon" href="/favicon.ico" />
 
     <!-- Facebook OpenGraph tags -->
-    <meta property="og:title" content="MPSI Corot" />
+    <meta property="og:title" content="Décomposition en éléments simples" />
     <meta property="og:type" content="website" /> 
-    <meta property="og:url" content="https://lgarcin.github.io//" />  
+    <meta property="og:url" content="https://lgarcin.github.io//2017-05-07-decomposition-en-elements-simples//" />  
     <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" /> 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntilConfig">
@@ -130,128 +130,90 @@
 
 
     <div role="main" class="container main-content">
-      
-<header class="header-page">
+      <header class="header-post">
   <div class="row">
-    <div class="col-lg-12 col-md-10">
-      <div class="page-heading">
-        <h1>MPSI Corot</h1> 
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="post-heading">
+        <h1>Décomposition en éléments simples</h1>
+        
+        <span class="post-meta">Posted on May 7, 2017</span>
       </div>
-    </div>
+     </div>
   </div>
 </header>
 
+<article>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	  <p>On expose ici la décomposition en éléments simples dans le cas d’un corps $\dK$ quelconque.</p>
 
-<div class="row">
-  <div class="col-lg-12 col-md-10">
-    <div class="posts-list">
-  
-  <article class="post-preview">
-    <a href="/2017-05-15-newton-et-babylone/">
-	  <h2 class="post-title">Newton et Babylone</h2>
+<p><strong>Lemme</strong>. Soient $P\in\dK[X]$, $R$ un polynôme irréductible de $\dK[X]$ de degré $r$ et $n\in\dN^*$. Alors il existe $E\in\dK[X]$ et $(P_1,\dots,P_n)\in\dK_{n-1}[X]^r$ tels que</p>
 
-	  
-    </a>
+<script type="math/tex; mode=display">\frac{P}{R^n}=E+\sum_{k=1}^n\frac{P_k}{R^k}</script>
 
-    <p class="post-meta">
-      Posted on May 15, 2017
-    </p>
+<p><em>Preuve</em>. On procède par récurrence sur $n$. La propriété à montrer est clairement vraie pour $n=0$ (en convenant qu’une somme indexée sur le vide est nulle). On suppose alors la propriété vraie à un certain rang $n\in\dN$. On note $\tilde P$ et $P_{n+1}$ le quotient et le reste de la division euclidienne de $P$ par $R$. On a alors $P=\tilde PR+P_{n+1}$ et $\deg P_{n+1}\leq r-1$ puis $\displaystyle\frac{P}{R^{n+1}}=\frac{\tilde P}{R^n}+\frac{P_{n+1}}{R^{n+1}}$. Par hypothèse de récurrence, il existe $(P_1,\dots,P_n)\in\dK_{n-1}[X]^r$ tels que $\displaystyle\frac{\tilde P}{R^n}=E+\sum_{k=1}^n\frac{P_k}{R^k}$. On a alors bien $\displaystyle\frac{P}{R^{n+1}}=E+\sum_{k=1}^{n+1}\frac{P_k}{R^k}$ avec $(P_1,\dots,P_{n+1})\in\dK_{r-1}[X]^{n+1}$.</p>
 
-    <div class="post-entry">
-      Méthode de Newton Un algorithme bien connu de résolution d’une équation du type $f(x)=0$ où $f$ est une fonction d’une variable réelle à valeurs réelles est la méthode de Newton. Elle consiste à construire une suite $(u_n)$ par récurrence en posant $u_{n+1}=u_n-\frac{f(u_n)}{f’(u_n)}$ pour tout $n\in\dN$. On comprend très bien...
-	  <a href="/2017-05-15-newton-et-babylone/" class="post-read-more">[Read&nbsp;More]</a>
-    </div>
+<p><em>Preuve</em>.</p>
 
-   </article>
-  
-  <article class="post-preview">
-    <a href="/2017-05-11-dualite/">
-	  <h2 class="post-title">Dualité</h2>
-
-	  
-    </a>
-
-    <p class="post-meta">
-      Posted on May 11, 2017
-    </p>
-
-    <div class="post-entry">
-      La dualité est le lien qui existe entre un $\dK$-espace vectoriel $E$ et son espace dual $E^\star$. On rappelle que $E^\star$ est l’espace vectoriel des formes linéaires sur $E$. Base duale  Définition [Base duale] Soient $E$ un espace de dimension finie et une base $(e_1,\dots,e_n)$ de $E$....
-	  <a href="/2017-05-11-dualite/" class="post-read-more">[Read&nbsp;More]</a>
-    </div>
-
-   </article>
-  
-  <article class="post-preview">
-    <a href="/2017-05-07-decomposition-en-elements-simples/">
-	  <h2 class="post-title">Décomposition en éléments simples</h2>
-
-	  
-    </a>
-
-    <p class="post-meta">
-      Posted on May 7, 2017
-    </p>
-
-    <div class="post-entry">
-      On expose ici la décomposition en éléments simples dans le cas d’un corps $\dK$ quelconque. Lemme. Soient $P\in\dK[X]$, $R$ un polynôme irréductible de $\dK[X]$ de degré $r$ et $n\in\dN^*$. Alors il existe $E\in\dK[X]$ et $(P_1,\dots,P_n)\in\dK_{n-1}[X]^r$ tels que  Preuve. On procède par récurrence sur $n$. La propriété à...
-	  <a href="/2017-05-07-decomposition-en-elements-simples/" class="post-read-more">[Read&nbsp;More]</a>
-    </div>
-
-   </article>
-  
-  <article class="post-preview">
-    <a href="/2017-03-16-corps-de-fractions/">
-	  <h2 class="post-title">Corps de fractions</h2>
-
-	  
-    </a>
-
-    <p class="post-meta">
-      Posted on March 16, 2017
-    </p>
-
-    <div class="post-entry">
-      
-
-	  <a href="/2017-03-16-corps-de-fractions/" class="post-read-more">[Read&nbsp;More]</a>
-    </div>
-
-   </article>
-  
-  <article class="post-preview">
-    <a href="/2017-03-08-arithmetique-et-ideaux/">
-	  <h2 class="post-title">Arithmétique et idéaux</h2>
-
-	  
-    </a>
-
-    <p class="post-meta">
-      Posted on March 8, 2017
-    </p>
-
-    <div class="post-entry">
-      Arithmétique dans un anneau Si $(A,+,\times)$ est un anneau commutatif, on peut définir une relation de divisibilité de la même manière que dans l’anneau $\dZ$ des entiers relatifs ou l’anneau $\dK[X]$ des polynômes à coefficients dans un corps $\dK$ : on dit que $a\in A$ divise $b\in A$ s’il...
-	  <a href="/2017-03-08-arithmetique-et-ideaux/" class="post-read-more">[Read&nbsp;More]</a>
-    </div>
-
-   </article>
-  
-</div>
-
-
-<ul class="pager main-pager">
-  
-  
-  <li class="next">
-    <a href="/page2">Older Posts &rarr;</a>
-  </li>
-  
+<ul>
+  <li><strong>Existence</strong>. Puisque $R_1^{m_1},\dots,R_n^{m_n}$ sont premiers entre eux deux à deux. On prouve alors aisément que les polynômes $\displaystyle Q_j=\prod_{k\neq j}R_k^{(m_k)}$ sont premiers entre eux dans leur ensemble. D’après le théorème de Bézout, il existe donc $(U_1,\dots,U_n)\in\dK[X]^n$ tel que $\displaystyle\sum_{j=1}^nU_jQ_j=1$. On obtient alors $\displaystyle\frac{P}{Q}=\sum_{j=1}^n\frac{PU_j}{R_j^{m_j}}$. D’après le lemme, pour tout $j\in\lb1,n\rb$, il existe $E_j\in\dK[X]$ et $(P_{j,1},\dots,P_{j,m_j})\in\dK_{r_j-1}[X]^{m_j}$ tel que $\displaystyle\frac{PU_j}{R_j^{m_j}}=\sum_{k=1}^{m_j}\frac{P_{j,k}}{R_j^k}$. En posant $E=\sum_{j=1}^nE_j\in\dK[X]$, on a bien</li>
 </ul>
 
- 
+<script type="math/tex; mode=display">\frac{P}{Q}=E+\sum_{j=1}^n\sum_{k=1}^{m_j}\frac{P_{j,k}}{R_j^k}</script>
+
+<ul>
+  <li><strong>Unicité</strong>. Supposons que</li>
+</ul>
+
+<script type="math/tex; mode=display">\frac{P}{Q}=E+\sum_{j=1}^n\sum_{k=1}^{m_j}\frac{P_{j,k}}{R_j^k}=F+\sum_{j=1}^n\sum_{k=1}^{m_j}\frac{Q_{j,k}}{R_j^k}</script>
+
+<p>Alors $E-F$ est une fraction rationnelle de degré strictement négatif mais c’est également un polynôme donc ce ne peut être que le polynôme nul. Ainsi $E=F$.</p>
+
+	</div>
+  </div>
+</article>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <ul class="pager blog-pager">
+      
+      <li class="previous">
+        <a href="/2017-03-16-corps-de-fractions/" data-toggle="tooltip" data-placement="top" title="Corps de fractions">&larr; Previous Post</a>
+      </li>
+      
+      
+      <li class="next">
+        <a href="/2017-05-11-dualite/" data-toggle="tooltip" data-placement="top" title="Dualité">Next Post &rarr;</a>
+      </li>
+      
+    </ul>
   </div>
 </div>
+
+
+<div class="row disqus-comments">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var disqus_shortname = 'mpsi';
+	    // ensure that pages with query string get the same discussion
+            var url_parts = window.location.href.split("?");
+            var disqus_url = url_parts[0];
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  </div>
+</div>
+
 
     </div>
 

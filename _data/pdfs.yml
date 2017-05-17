@@ -49,6 +49,10 @@ Colles:
   title: Semaine du 24/04 au 28/04
 - path: ProgColles25.pdf
   title: Semaine du 01/05 au 05/05
+- path: ProgColles26.pdf
+  title: Semaine 08/05 au 12/05
+- path: ProgColles27.pdf
+  title: Semaine du 15/05 au 19/05
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -194,9 +198,14 @@ DM:
   Enoncé:
     path: DM15.pdf
   title: DM15
-- Enoncé:
+- Corrigé:
+    path: DM16.corrige.pdf
+  Enoncé:
     path: DM16.pdf
   title: DM16
+- Enoncé:
+    path: DM17.pdf
+  title: DM17
 DS:
 - Corrigé:
     path: DS01.corrige.pdf
@@ -243,6 +252,11 @@ DS:
   Enoncé:
     path: DS09.pdf
   title: DS09
+- Corrigé:
+    path: DS10.corrige.pdf
+  Enoncé:
+    path: DS10.pdf
+  title: DS10
 Formulaires:
 - path: FormulaireComparaisonFonctions.pdf
   title: Comparaison de fonctions
@@ -285,6 +299,8 @@ Interros:
   title: Interrogation écrite n°12
 - path: Interro13.pdf
   title: Interrogation écrite n°13
+- path: Interro14.pdf
+  title: Interrogation écrite n°14
 TD:
 - Corrigé:
     path: TDApplications.corrige.pdf
@@ -316,6 +332,9 @@ TD:
   Enoncé:
     path: TDDerivabilite.pdf
   title: Dérivabilité
+- Enoncé:
+    path: TDDeterminants.pdf
+  title: Déterminants
 - Corrigé:
     path: TDDimensionFinie.corrige.pdf
   Enoncé:
@@ -361,7 +380,9 @@ TD:
   Enoncé:
     path: TDLimiteContinuite.pdf
   title: Limite et continuité de fonctions
-- Enoncé:
+- Corrigé:
+    path: TDMatrices.corrige.pdf
+  Enoncé:
     path: TDMatrices.pdf
   title: Matrices
 - Corrigé:

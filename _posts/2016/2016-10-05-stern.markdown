@@ -79,14 +79,14 @@ Il est aussi remarquable que toutes les fractions apparaissant dans chaque suite
 Ce qui est plus surprenant est que tout rationnel positif figure à partir d'un certaing rang dans les suites $u_n$. Donnons-nous une fraction $r$ non nulle et non infinie et définissons deux suites $(\rho_n)$ et $(\sigma_n)$ de la manière suivante. On pose $\rho_0=\frac{0}{1}$ et $\sigma_0=\frac{1}{0}$ et tant que $r$ est différent de $\rho_n\oplus\sigma_n$, on pose
 
 $$
-\left\{
+\left\lbrace 
 \begin{aligned}
 \rho_{n+1}&=\rho_n\\
 \sigma_{n+1}&=\rho_n\oplus\sigma_n
 \end{aligned}
 \right. \text{ si } r<\rho_n\oplus\sigma_n
 \text{ et }
-\left\{
+\left\lbrace 
 \begin{aligned}
 \rho_{n+1}&=\rho_n\oplus\sigma_n\\
 \sigma_{n+1}&=\sigma_n

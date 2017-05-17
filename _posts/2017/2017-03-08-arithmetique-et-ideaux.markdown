@@ -25,7 +25,7 @@ On laisse le lecteur vérifier un résultat qui nous sera utile dans la suite, �
 
 ## Idéaux principaux
 
-Notamment, les ensembles $xA=\{ax,\;a\in A\}$ sont des idéaux de $A$ appelés *idéaux principaux*. La relation de divisibilité se traduit alors aisément à l'aide des idéaux principaux : $x$ divise $y$ si et seulement si $yA\subset xA$.
+Notamment, les ensembles $xA=\lbrace ax,\;a\in A\rbrace $ sont des idéaux de $A$ appelés *idéaux principaux*. La relation de divisibilité se traduit alors aisément à l'aide des idéaux principaux : $x$ divise $y$ si et seulement si $yA\subset xA$.
 
 Un anneau dont tous les idéaux sont principaux est appelé un *anneau principal*.
 
@@ -33,7 +33,7 @@ Un anneau dont tous les idéaux sont principaux est appelé un *anneau principal
 
 L'existence d'une division euclidienne dans $\dZ$ et $\dK[X]$ garantit que tous leurs idéaux sont principaux : ce sont donc des anneaux principaux.
 
-Traitons par exemple le cas de $\dK[X]$. Donnons-nous un idéal $I$ de $\dK[X]$. Si $I=\{0\}$, $I$ est évidemment principal. Sinon, il contient un polynôme non nul de degré minimal : notons-le $P$. On a évidemment $P\dK[X]\subset I$ d'après la propriété d'absorption. Soit alors $A\in\dK[X]$. On écrit alors la division euclidienne de $A$ par $P$ : $A=PQ+R$ avec $\deg R<\deg P$. Alors $R=A-PQ\in I$ donc $R=0$ par minimalité du degré de $P$. Ainsi $A=PQ\in P\dK[X]$. Finalement, $I=P\dK[X]$ est principal.
+Traitons par exemple le cas de $\dK[X]$. Donnons-nous un idéal $I$ de $\dK[X]$. Si $I=\lbrace 0\rbrace $, $I$ est évidemment principal. Sinon, il contient un polynôme non nul de degré minimal : notons-le $P$. On a évidemment $P\dK[X]\subset I$ d'après la propriété d'absorption. Soit alors $A\in\dK[X]$. On écrit alors la division euclidienne de $A$ par $P$ : $A=PQ+R$ avec $\deg R<\deg P$. Alors $R=A-PQ\in I$ donc $R=0$ par minimalité du degré de $P$. Ainsi $A=PQ\in P\dK[X]$. Finalement, $I=P\dK[X]$ est principal.
 
 ## PGCD et PPCM dans un anneau principal
 

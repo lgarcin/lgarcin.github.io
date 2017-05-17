@@ -147,19 +147,19 @@
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 	  <h1 id="champ-de-vecteurs">Champ de vecteurs</h1>
 
-<p>On appelle <strong>champ de vecteurs</strong> une application de $\mathbb{R}^n$ dans $\mathbb{R}^n$. Les éléments de l’ensemble de départ sont vus comme des <strong>points</strong> tandis que les éléments de l’ensembles d’arrivée sont vus comme des <strong>vecteurs</strong>.</p>
+<p>On appelle <strong>champ de vecteurs</strong> une application de $\dR^n$ dans $\dR^n$. Les éléments de l’ensemble de départ sont vus comme des <strong>points</strong> tandis que les éléments de l’ensembles d’arrivée sont vus comme des <strong>vecteurs</strong>.</p>
 
 <p>Par exemple, en physique, les champs électrique et magnétiques sont des champs de vecteur : à tout point de l’espace sont associés deux vecteurs $\overrightarrow{E}$ et $\overrightarrow{B}$.</p>
 
 <p>En dimension $2$ ou $3$, on peut visualiser un champ de vecteurs $f$ en dessinant le vecteur $f(X)$ en tout point $X$.</p>
 
 <p>Voici par exemple ce que donne la représentation du champ de vecteurs
-<script type="math/tex">f\colon(x,y)\in\mathbb{R}^2\mapsto(-y,x)</script></p>
+<script type="math/tex">f\colon(x,y)\in\dR^2\mapsto(-y,x)</script></p>
 
 <p><img src="/images/2017/03/champ1.png" alt="Champ de vecteurs" /></p>
 
 <p>Maintenant une représentation d’un champ de vecteur un peu plus complexe
-<script type="math/tex">f\colon(x,y)\in\mathbb{R}^2\mapsto(\sin(x\cdot y/10),\cos(x\cdot /10))</script></p>
+<script type="math/tex">f\colon(x,y)\in\dR^2\mapsto(\sin(x\cdot y/10),\cos(x\cdot y/10))</script></p>
 
 <p><img src="/images/2017/03/champ2.png" alt="Champ de vecteurs" /></p>
 
@@ -185,26 +185,26 @@
 
 <ul>
   <li>
-    <p>$X=(x_1,\dots,x_n)$ est une application <strong>inconnue</strong> de classe $\mathcal{C}^1$ sur $\mathbb{R}$ à valeurs dans $\mathbb{R}^n$ ;</p>
+    <p>$X=(x_1,\dots,x_n)$ est une application <strong>inconnue</strong> de classe $\mathcal{C}^1$ sur $\dR$ à valeurs dans $\dR^n$ ;</p>
   </li>
   <li>
-    <p>$f$ est une application continue de $\mathbb{R}^n$ dans $\mathbb{R}^n$, c’est-à-dire un champ de vecteurs.</p>
+    <p>$f$ est une application continue de $\dR^n$ dans $\dR^n$, c’est-à-dire un champ de vecteurs.</p>
   </li>
 </ul>
 
 <p>Voici par exemple le système différentiel en dimension 2 associé au champ de vecteurs $f\colon(x,y)\mapsto(-y,x)$ :</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
-\left\{\begin{align*}x'&=-y\\y'&=x\end{align*}\right. %]]></script>
+\left\lbrace \begin{align*}x'&=-y\\y'&=x\end{align*}\right. %]]></script>
 
-<p>Dans le cas où $f$ est un endomorphisme de $\mathbb{R}^n$, on parle de système différentiel <strong>linéaire</strong>. On sait alors résoudre explicitement un tel système. Dans le cas où $f$ n’est pas linéaire, le <strong>thèorème de Cauchy-Lipschitz</strong> garantit l’existence d’une solution et son unicité si l’on fournit des conditions initiales (à condition que $f$ soit suffisamment régulier) mais ce n’est pas notre propos. On préfère ici expliquer comment prévoir l’évolution d’une solution d’un système linéaire à partir de la représentation graphique du champ de vecteurs.</p>
+<p>Dans le cas où $f$ est un endomorphisme de $\dR^n$, on parle de système différentiel <strong>linéaire</strong>. On sait alors résoudre explicitement un tel système. Dans le cas où $f$ n’est pas linéaire, le <strong>thèorème de Cauchy-Lipschitz</strong> garantit l’existence d’une solution et son unicité si l’on fournit des conditions initiales (à condition que $f$ soit suffisamment régulier) mais ce n’est pas notre propos. On préfère ici expliquer comment prévoir l’évolution d’une solution d’un système linéaire à partir de la représentation graphique du champ de vecteurs.</p>
 
-<p>Une application $X$ solution du système peut être vue comme une <strong>courbe paramétrée</strong> à valeurs dans $\mathbb{R}^n$. A chaque instant $t$, le vecteur vitesse $X’(t)$ est égal à $f(X(t))$, c’est-à-dire que la trajectoire de $X$ est “guidée” par le champ de vecteurs.</p>
+<p>Une application $X$ solution du système peut être vue comme une <strong>courbe paramétrée</strong> à valeurs dans $\dR^n$. A chaque instant $t$, le vecteur vitesse $X’(t)$ est égal à $f(X(t))$, c’est-à-dire que la trajectoire de $X$ est “guidée” par le champ de vecteurs.</p>
 
 <p>Voilà par exemple l’évolution d’une solution du sytème différentiel</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
-\left\{\begin{align*}x'&=-y\\y'&=x\end{align*}\right. %]]></script>
+\left\lbrace \begin{align*}x'&=-y\\y'&=x\end{align*}\right. %]]></script>
 
 <ul>
   <li>
@@ -222,7 +222,7 @@
 <p>Même chose pour le système différentiel :</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
-\left\{\begin{align*}x'&=x/5+5y\\y'&=-5x+y/5\end{align*}\right. %]]></script>
+\left\lbrace \begin{align*}x'&=x/5+5y\\y'&=-5x+y/5\end{align*}\right. %]]></script>
 
 <video controls="">
 <source src="/images/2017/03/champ_spirale.mp4" type="video/mp4" />
@@ -231,7 +231,7 @@
 <p>Enfin, un exemple de système différentiel non linéaire sans doute un peu plus probant :</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
-\left\{\begin{align*}x'&=\exp(\cos(x)/2)\cdot\sin(y^2/20)\\y'&=2\cos(x^2/5)\end{align*}\right. %]]></script>
+\left\lbrace \begin{align*}x'&=\exp(\cos(x)/2)\cdot\sin(y^2/20)\\y'&=2\cos(x^2/5)\end{align*}\right. %]]></script>
 
 <video controls="">
 <source src="/images/2017/03/champ_bizarre.mp4" type="video/mp4" />
