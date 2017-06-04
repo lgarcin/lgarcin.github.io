@@ -7,6 +7,17 @@
     <atom:link href="https://lgarcin.github.io//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Les réflexions engendrent le groupe orthogonal</title>
+        <description>
+          
+          De la même façon que les transpositions engendrent le groupe symétrique, les réflexions d’un espace euclidien engendrent le groupe orthogonal. La preuve est d’ailleurs sensiblement la même. Les transpositions engendrent le groupe symétrique On rappelle rapidement la preuve du fait que les transpositions de $S_n$ engendrent le groupe symétrique $S_n$....
+        </description>
+        <pubDate>Sat, 03 Jun 2017 06:44:19 +0100</pubDate>
+        <link>https://lgarcin.github.io//2017-06-03-les-reflexions-engendrent-le-groupe-orthogonal/</link>
+        <guid isPermaLink="true">https://lgarcin.github.io//2017-06-03-les-reflexions-engendrent-le-groupe-orthogonal/</guid>
+      </item>
+    
+      <item>
         <title>Newton et Babylone</title>
         <description>
           

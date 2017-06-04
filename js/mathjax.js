@@ -19,7 +19,8 @@ MathJax.Hub.Config({
             rb: "\\right]\\!\\right]",
             vect: "\\mathop{\\mathrm{vect}}",
             dim: "\\mathop{\\mathrm{dim}}",
-            deg: "\\mathop{\\mathrm{deg}}"
+            deg: "\\mathop{\\mathrm{deg}}",
+            ident: "\\mathop{\\mathrm{Id}}"
         }
     }
 });
