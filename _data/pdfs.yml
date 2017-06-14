@@ -214,7 +214,9 @@ DM:
   Enoncé:
     path: DM17.pdf
   title: DM17
-- Enoncé:
+- Corrigé:
+    path: DM18.corrige.pdf
+  Enoncé:
     path: DM18.pdf
   title: DM18
 DS:
@@ -268,6 +270,9 @@ DS:
   Enoncé:
     path: DS10.pdf
   title: DS10
+- Enoncé:
+    path: DS11.pdf
+  title: DS11
 Formulaires:
 - path: FormulaireComparaisonFonctions.pdf
   title: Comparaison de fonctions
@@ -341,6 +346,11 @@ TD:
     path: TDComplexes.pdf
   title: Nombres complexes
 - Corrigé:
+    path: TDDenombrement.corrige.pdf
+  Enoncé:
+    path: TDDenombrement.pdf
+  title: Dénombrement
+- Corrigé:
     path: TDDerivabilite.corrige.pdf
   Enoncé:
     path: TDDerivabilite.pdf
@@ -360,7 +370,9 @@ TD:
   Enoncé:
     path: TDEquaDiff.pdf
   title: Équations différentielles
-- Enoncé:
+- Corrigé:
+    path: TDEspacesEuclidiens.corrige.pdf
+  Enoncé:
     path: TDEspacesEuclidiens.pdf
   title: Espaces préhilbertiens réels
 - Corrigé:
@@ -408,6 +420,9 @@ TD:
   Enoncé:
     path: TDPolynomes.pdf
   title: Polynômes
+- Enoncé:
+    path: TDProbabilites.pdf
+  title: Probabilités
 - Corrigé:
     path: TDRaisonnements.corrige.pdf
   Enoncé:
