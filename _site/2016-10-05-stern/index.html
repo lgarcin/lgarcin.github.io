@@ -28,8 +28,8 @@
     <!-- Facebook OpenGraph tags -->
     <meta property="og:title" content="Histoires de rationnels" />
     <meta property="og:type" content="website" /> 
-    <meta property="og:url" content="https://lgarcin.github.io//2016-10-05-stern//" />  
-    <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" /> 
+    <meta property="og:url" content="http://localhost:4000/2016-10-05-stern//" />  
+    <meta property="og:image" content="http://localhost:4000/img/pi.png" /> 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntilConfig">
     </script>
@@ -51,7 +51,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="https://lgarcin.github.io/">Maths MPSI Corot</a>
+      <a class="navbar-brand" href="http://localhost:4000">Maths MPSI Corot</a>
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
@@ -118,7 +118,7 @@
 	
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
-	    <a href="https://lgarcin.github.io/ ">
+	    <a href="http://localhost:4000 ">
 	      <img class="avatar-img" src="/img/pi.png" alt="Pi"/>
 		</a>
 	  </div>
@@ -147,7 +147,7 @@
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 	  <p>Toutes les fractions considérées dans cet article sont des fractions irréductibles d’entiers naturels. On adjoint à ces fractions la fraction $\frac{1}{0}$ dont on convient raisonnablement qu’elle est strictement supérieure à toutes les autres.</p>
 
-<h2 id="mdiante-de-deux-fractions">Médiante de deux fractions</h2>
+<h2 id="médiante-de-deux-fractions">Médiante de deux fractions</h2>
 
 <p class="definition">On appelle <em>médiante</em> de deux fractions $\frac{a}{b}$ et $\frac{c}{d}$ la fraction $\frac{a}{b}\oplus\frac{c}{d}=\frac{a+c}{b+d}$.</p>
 
@@ -200,11 +200,11 @@ for u in sternSuite(5):
     print(u)
 </div>
 
-<h4 id="unicit">Unicité</h4>
+<h4 id="unicité">Unicité</h4>
 
 <p>On peut remarquer que chacune des suites $u_n$ est strictement croissante. Il suffit de raisonner par récurrence sur $n$ en utilisant le résultat du lemme stipulant que la médiante de deux fractions distinctes est strictement comprise entre ces deux fractions. On en déduit en particulier que dans chaque suite $u_n$, chacune des fractions n’apparaît qu’une seule fois.</p>
 
-<h4 id="irrductibilit">Irréductibilité</h4>
+<h4 id="irréductibilité">Irréductibilité</h4>
 
 <p>Il est aussi remarquable que toutes les fractions apparaissant dans chaque suite $u_n$ sont irréductibles. Un résultat du lemme permet en effet de montrer par récurrence sur $n$ que si $r=\frac{a}{b}$ et $s=\frac{c}{d}$ sont deux fractions consécutives d’une même suite, alors $\Delta(r,s)=1$ ou encore $bc-ad=1$. En vertu du théorème de Bézout, $(a,b)$ et $(c,d)$ sont des couples d’entiers premiers entre eux, autrement dit les fractions $\frac{a}{b}$ et $\frac{c}{d}$ sont irréductibles.</p>
 
@@ -248,7 +248,7 @@ for u in sternSuite(5):
 
 <p>Il est alors facile de déterminer les fils gauche et droit d’un noeud de l’arbre connaissant ses ancêtres. Pour déterminer le fils gauche, on calcule la médiante du noeud considéré et de son premier ancêtre qui lui est inférieur tandis que pour déterminer le fils droit, on calcule la médiante du noeud considéré et du premier ancêtre qui lui est supérieur. Par exemple, le premier ancêtre de $\frac{5}{8}$ qui lui est inférieur est $\frac{3}{5}$ et son premier ancêtre qui lui est supérieur est $\frac{2}{3}$ donc les fils gauche et droit de $\frac{5}{8}$ sont respectivement $\frac{5}{8}\oplus\frac{3}{5}=\frac{8}{13}$ et $\frac{5}{8}\oplus\frac{2}{3}=\frac{7}{11}$. De même, les fils gauche et droit de $\frac{5}{4}$ sont $\frac{5}{4}\oplus\frac{1}{1}=\frac{6}{5}$ et $\frac{5}{4}\oplus\frac{4}{3}=\frac{9}{7}$.</p>
 
-<h4 id="calcul-des-anctres">Calcul des ancêtres</h4>
+<h4 id="calcul-des-ancêtres">Calcul des ancêtres</h4>
 
 <p>L’algorithme utilisé dans la section <a href="#existence">Existence</a> permet également de retrouver les ancêtres d’une fraction donnée dans l’arbre de Stern-Brocot. Il nous donne en effet la liste des médiantes utilisées pour aboutir à cette fraction.</p>
 
@@ -273,7 +273,7 @@ def sternAncetres(x):
 print(sternAncetres((13, 55)))
 </div>
 
-<h4 id="un-peu-darithmtique">Un peu d’arithmétique</h4>
+<h4 id="un-peu-darithmétique">Un peu d’arithmétique</h4>
 
 <p>Soit $r=\frac{p}{q}$ une fraction non nulle et non infinie. On sait que cette fraction est la médiante de deux fractions $\rho=\frac{a}{b}$ et $\sigma=\frac{c}{d}$ telles que $\Delta(\rho,\sigma)=1$. Cette dernière égalité montrer que $b\geq1$ et $c\geq1$. Par ailleurs, $p=a+c$ et $q=b+d$ donc $0\leq a\leq p-1$ et $0\leq d\leq q-1$. Enfin,</p>
 
@@ -313,13 +313,13 @@ print(sternPere((17,38)))
 <div class="footnotes">
   <ol>
     <li id="fn:exonbtermes">
-      <p>Petit exercice facile : calculer le nombre de termes de $u_n$ en fonction de $n$. <a href="#fnref:exonbtermes" class="reversefootnote">&#8617;</a></p>
+      <p>Petit exercice facile : calculer le nombre de termes de $u_n$ en fonction de $n$.&nbsp;<a href="#fnref:exonbtermes" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:exomax">
-      <p>Petit exercice facile à nouveau : montrer que le plus grand numérateur ou dénominateur des fractions du niveau $n$ est le terme de rang $n+1$ de la suite de Fibonacci. <a href="#fnref:exomax" class="reversefootnote">&#8617;</a></p>
+      <p>Petit exercice facile à nouveau : montrer que le plus grand numérateur ou dénominateur des fractions du niveau $n$ est le terme de rang $n+1$ de la suite de Fibonacci.&nbsp;<a href="#fnref:exomax" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:invmodulo">
-      <p>Si $x$ et $n$ sont deux entiers naturels premiers entre eux, $n$ étant non nul, on appelle inverse de $x$ modulo $n$ l’unique entier $y$ tel que $0\leq y\leq n-1$ et $xy\equiv1[n]$. <a href="#fnref:invmodulo" class="reversefootnote">&#8617;</a></p>
+      <p>Si $x$ et $n$ sont deux entiers naturels premiers entre eux, $n$ étant non nul, on appelle inverse de $x$ modulo $n$ l’unique entier $y$ tel que $0\leq y\leq n-1$ et $xy\equiv1[n]$.&nbsp;<a href="#fnref:invmodulo" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -437,7 +437,7 @@ print(sternPere((17,38)))
 
 		  
 		  &nbsp;&bull;&nbsp;
-		  <a href="https://lgarcin.github.io/">lgarcin.github.io</a>
+		  <a href="http://localhost:4000">lgarcin.github.io</a>
 		  
 	    </p>
 	        <!-- Please don't remove this, keep my open source work credited :) -->

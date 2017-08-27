@@ -28,8 +28,8 @@
     <!-- Facebook OpenGraph tags -->
     <meta property="og:title" content="Méthode d'Euler et gravitation" />
     <meta property="og:type" content="website" /> 
-    <meta property="og:url" content="https://lgarcin.github.io//2016-09-26-gravitation//" />  
-    <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" /> 
+    <meta property="og:url" content="http://localhost:4000/2016-09-26-gravitation//" />  
+    <meta property="og:image" content="http://localhost:4000/img/pi.png" /> 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntilConfig">
     </script>
@@ -51,7 +51,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="https://lgarcin.github.io/">Maths MPSI Corot</a>
+      <a class="navbar-brand" href="http://localhost:4000">Maths MPSI Corot</a>
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
@@ -118,7 +118,7 @@
 	
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
-	    <a href="https://lgarcin.github.io/ ">
+	    <a href="http://localhost:4000 ">
 	      <img class="avatar-img" src="/img/pi.png" alt="Pi"/>
 		</a>
 	  </div>
@@ -145,7 +145,7 @@
 <article>
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-	  <h3 id="description-du-problme">Description du problème</h3>
+	  <h3 id="description-du-problème">Description du problème</h3>
 
 <p>On considère un système de corps de masses $m_i$ et de positions $\mathbf{r}_i$ soumis à la gravitation. D’après le principe fondamental de la dynamique</p>
 
@@ -163,7 +163,7 @@
 
 <p>L’énergie totale du système est $E=E_p+E_c$.</p>
 
-<h3 id="la-mthode-deuler">La méthode d’Euler</h3>
+<h3 id="la-méthode-deuler">La méthode d’Euler</h3>
 
 <p>On se contente d’exposer cette méthode dans le cadre des équations différentielles autonomes puisque celles de notre problème sont bien de ce type : l’accélération dépend uniquement de la position et pas du temps.</p>
 
@@ -205,11 +205,11 @@ de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps
   <li>on calcule les vitesses au temps $t_{n+1}$ à partir de ces accélérations.</li>
 </ul>
 
-<h3 id="implmentation">Implémentation</h3>
+<h3 id="implémentation">Implémentation</h3>
 
 <p>On utilise la bibliothèque <a href="http://vpython.org/">VPython</a> qui permet d’animer des scènes 3D. La dernière version de cette bibliothèque ne peut être utilisée que dans une application <a href="http://jupyter.org/">notebook Jupyter</a>.</p>
 
-<h3 id="modlisation-du-systme-solaire">Modélisation du système solaire</h3>
+<h3 id="modélisation-du-système-solaire">Modélisation du système solaire</h3>
 
 <p>Grâce à Wikipédia, on récupère les <a href="https://fr.wikipedia.org/wiki/M%C3%A9canique_spatiale#Param.C3.A8tres_orbitaux">paramètres orbitaux</a> des différentes planètes permettant de placer ces dernières par rapport au Soleil. On fait démarrer la simulation avec toutes les planètes à leurs périhélies, ce qui est une configuration exceptionelle mais qui a bien dû se produire une fois depuis la création du système solaire.</p>
 
@@ -296,7 +296,7 @@ de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps
 <script src="/js/foirage.js" id="cab4a16f-d6df-4e0f-b217-22423a26042c" data-bokeh-model-id="3d2b2804-4758-4f57-8452-a8a978f6f3a9" data-bokeh-doc-id="26e815f8-2beb-475c-8a44-a7381505e5b5"></script>
 </div>
 
-<h3 id="cration-dun-systme-solaire">Création d’un système solaire</h3>
+<h3 id="création-dun-système-solaire">Création d’un système solaire</h3>
 
 <p>On place un grand nombre de corps avec des positions et des vitesses aléatoires et on les soumet à la force de gravitation. On considère que tous les chocs entre ces corps sont <a href="https://fr.wikipedia.org/wiki/Collision_parfaitement_in%C3%A9lastique">parfaitement inélastiques</a> : les astres entrant en collision fusionnent alors pour donner une nouvelle planète tout en conservant la quantité de mouvement totale.</p>
 
@@ -493,7 +493,7 @@ de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps
 
 		  
 		  &nbsp;&bull;&nbsp;
-		  <a href="https://lgarcin.github.io/">lgarcin.github.io</a>
+		  <a href="http://localhost:4000">lgarcin.github.io</a>
 		  
 	    </p>
 	        <!-- Please don't remove this, keep my open source work credited :) -->

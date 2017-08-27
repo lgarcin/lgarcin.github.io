@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>Dualité</title>
+    <title>Les réflexions engendrent le groupe orthogonal</title>
 
     <meta name="author" content="Laurent Garcin" /> 
 
@@ -26,10 +26,10 @@
     <link rel="shortcut icon" href="/favicon.ico" />
 
     <!-- Facebook OpenGraph tags -->
-    <meta property="og:title" content="Dualité" />
+    <meta property="og:title" content="Les réflexions engendrent le groupe orthogonal" />
     <meta property="og:type" content="website" /> 
-    <meta property="og:url" content="https://lgarcin.github.io//2017-05-11-dualite//" />  
-    <meta property="og:image" content="https://lgarcin.github.io//img/pi.png" /> 
+    <meta property="og:url" content="http://localhost:4000/2017-06-04-les-reflexions-engendrent-le-groupe-orthogonal//" />  
+    <meta property="og:image" content="http://localhost:4000/img/pi.png" /> 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntilConfig">
     </script>
@@ -51,7 +51,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="https://lgarcin.github.io/">Maths MPSI Corot</a>
+      <a class="navbar-brand" href="http://localhost:4000">Maths MPSI Corot</a>
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
@@ -118,7 +118,7 @@
 	
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
-	    <a href="https://lgarcin.github.io/ ">
+	    <a href="http://localhost:4000 ">
 	      <img class="avatar-img" src="/img/pi.png" alt="Pi"/>
 		</a>
 	  </div>
@@ -134,9 +134,9 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <div class="post-heading">
-        <h1>Dualité</h1>
+        <h1>Les réflexions engendrent le groupe orthogonal</h1>
         
-        <span class="post-meta">Posted on May 11, 2017</span>
+        <span class="post-meta">Posted on June 4, 2017</span>
       </div>
      </div>
   </div>
@@ -145,63 +145,16 @@
 <article>
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-	  <p>La dualité est le lien qui existe entre un $\dK$-espace vectoriel $E$ et son espace dual $E^\star$. On rappelle que $E^\star$ est l’espace vectoriel des formes linéaires sur $E$.</p>
+	  <p>De la même façon que les transpositions engendrent le groupe symétrique, les réflexions d’un espace euclidien engendrent le groupe orthogonal. La preuve est d’ailleurs sensiblement la même.</p>
 
-<h2 id="base-duale">Base duale</h2>
-<hr />
+<h4 id="les-transpositions-engendrent-le-groupe-symétrique">Les transpositions engendrent le groupe symétrique</h4>
 
-<p><strong>Définition [Base duale]</strong>
-Soient $E$ un espace de dimension finie et une base $(e_1,\dots,e_n)$ de $E$. Pour tout $i\in\lb1,n\rb$, on note $e_i^\star$ l’unique forme linéaire sur $E$ telle que $e_i^\star(e_j)=\delta_{i,j}$ pour tout $j\in\lb1,n\rb$.<br />
-La famille $(e_1^\star,\dots,e_n^\star)$ est une base de $E^\star$ appelée <strong>base duale</strong> de la base $(e_1,\dots,e_n)$.</p>
+<p>On rappelle rapidement la preuve du fait que les transpositions de $S_n$ engendrent le groupe symétrique $S_n$. On raisonne par récurrence. La propriété est évidemment vraie lorsque $n=1$. On la suppose vraie pour un certain $n\in\dN^*$. On considère alors une permutation $\sigma$ de $S_{n+1}$. Si $\sigma(n+1)=n+1$, alors $\sigma$ induit une permutation de $S_n$ qui est alors un produit de transpositions ; il en est alors de même de $\sigma$. Si $\sigma(n+1)\neq n+1$, on considère la transposition $\sigma’=\tau\circ\sigma$. On a alors à nouveau $\sigma’(n+1)=n+1$ et on se ramène au cas précédent. Ainsi $\sigma’$ est un produit de transpositions et donc $\sigma$ également puisque $\tau^{-1}=\tau$ est une transposition.</p>
 
-<p><em>Preuve.</em>
-Puisque $\dim E^\star=\dim E=n$, il suffit de montrer que cette famille est libre. Si l’on se donne $(\lambda_1,\dots,\lambda_n)\in\dK^n$ tel que $\sum_{i=1}^n\lambda_ie_i^\star=0$, on obtient $\lambda_j=0$ pour chaque $j\in\lb1,n\rb$ en évaluant l’égalité précédente en $e_j$. ⬛</p>
+<h4 id="les-réflexions-engendrent-le-groupe-orthogonal">Les réflexions engendrent le groupe orthogonal</h4>
 
-<p>Base antéduale, polynômes interpolateurs de Lagrange</p>
-
-<h2 id="orthogonalit">Orthogonalité</h2>
-<hr />
-
-<p><strong>Définition [Orthogonalité]</strong> Soit $E$ un espace vectoriel.</p>
-
-<ul>
-  <li>Si $A$ est une partie de $E$, on appelle <strong>orthogonal</strong> de $A$ le sous-espace vectoriel de $E^\star$ suivant</li>
-</ul>
-
-<script type="math/tex; mode=display">A^\circ=\left\lbrace \varphi\in E^\star,\;\forall x\in A,\;\varphi(x)=0\right\rbrace</script>
-
-<ul>
-  <li>Si $B$ est une partie de $E^\star$, on appelle <strong>orthogonal</strong> de $B$ le sous-espace vectoriel de $E$ suivant</li>
-</ul>
-
-<script type="math/tex; mode=display">{}^\circ B=\left\lbrace x\in E,\;\forall\varphi\in B,\;\varphi(x)=0\right\rbrace</script>
-
-<p><em>Remarque.</em> On a de manière évidente ${}^\circ(A^\circ)\subset A$ et $({}^\circ B)^\circ\subset B$.</p>
-
-<p><strong>Proposition [Dimension de l’orthogonal]</strong> Soit $E$ un espace vectoriel de dimension finie.</p>
-
-<ul>
-  <li>
-    <p>Soit $F$ un sous-espace vectoriel de $E$. Alors $\dim F^\circ=\dim E-\dim F$.</p>
-  </li>
-  <li>
-    <p>Soit $G$ un sous-espace vectoriel de $E^\star$. Alors $\dim {}^\circ G=\dim E-\dim G$.</p>
-  </li>
-</ul>
-
-<p><em>Preuve.</em> Posons $n=\dim E=\dim E^\star$ et $p=\dim F$. Donnons-nous une base $(e_1,\dots,e_p)$ de $F$ : on peut alors la compléter en une base $(e_1,\dots,e_n)$ de $E$.<br />
-Montrons maintenant que $(e_{p+1}^\star,\dots,e_n^\star)$ est une base de $F^\circ$. Par définition de la base duale, $e_i^\star(e_j)=0$ pour tout $(i,j)\in\lb p+1,n\rb\times\lb 1,p\rb$ puis, $(e_1,\dots,e_p)$ engendrant $F$, $e_i^\star\in F^\circ$ pour tout $i\in\lb p+1,n\rb$ par linéarité. En tant que sous-famille de la base duale $(e_1^\star,\dots,e_n^\star)$, $(e_{p+1}^\star,\dots,e_n^\star)$ est une famille <strong>libre</strong> de vecteurs de $F^\circ$.<br />
-Soit maintenant $\varphi\in F^\circ$. On peut décomposer $\varphi$ dans la base duale $(e_1^\star,\dots,e_n^\star)$ : il existe donc $(\lambda_1,\dots,\lambda_n)\in\dK^n$ tel que $\varphi=\sum_{i=1}^n\lambda_i e_i^\star$. En évaluant en $e_j$, on obtient $\lambda_j=0$ pour $j\in\lb1,p\rb$, puisqu’alors $e_j\in F$. On en déduit donc que $F^\circ\in\vect(e_{p+1}^\star,\dots,e_n^\star)$. La famille $(e_{p+1}^\star,\dots,e_n^\star)$ <strong>engendre</strong> donc $F^\circ$.<br />
-Finalement, $(e_{p+1}^\star,\dots,e_n^\star)$ est une <strong>base</strong> de $F^\circ$ et $\dim F^\circ=n-p$. ⬛</p>
-
-<h2 id="grassmannienne">Grassmannienne</h2>
-<hr />
-
-<p><strong>Définition [Grassmannienne]</strong> On appelle <strong>grassmannienne</strong> d’un espace vectoriel $E$ l’ensemble de ses sous-espaces vectoriels ayant une dimension donnée $k$ : on la notera $G_k(E)$. On notera $G(E)$ l’ensemble de tous les sous-espaces vectoriels de $E$ i.e. $G(E)=\bigcup_{k\in\dN}G_k(E)$.</p>
-
-<p><strong>Proposition</strong> Soit $E$ un espace vectoriel de dimension finie $n$. L’application qui à un sous-espace vectoriel de $E$ associe son orthogonal est une bijection de $G(E)$ sur $G(E^\star)$. De plus, elle induit une bijection de $G_k(E)$ sur $G_{n-k}(E^\star)$ pour tout $k\in\lb0,n\rb$.</p>
-
-<p><em>Preuve.</em> Notons $\Phi$ l’application en question. Puisque $G(E)=\bigsqcup_{k=0}^nG_k(E)$ et $G(E^\star)=\bigsqcup_{k=0}^nG_{n-k}(E^\star)$, il suffit de montrer que pour chaque</p>
+<p>Le groupe $O(E)$ est clairement engendré par les rélexions lorsque $\dim E=1$, puisqu’alors $O(E)=\lbrace\ident_E,-\ident_E\rbrace$ et $-\ident_E$ est une réflexion (la seule d’ailleurs).
+On suppose que le groupe orthogonal de tout espace euclidien de dimension $n\in\dN^*$ est engendré par les réflexions. On se donne alors un espace euclidien $E$ de dimension $n+1$ et $u\in O(E)$. Si $u=\ident_E$, $u$ est bien un produit de réflexions. Sinon, il existe $a\in E$ (forcément  non nul) tel que $u(a)\neq a$. Puisque $\lVert u(a)\rVert=\lVert a\rVert$, on peut montrer qu’il existe une réflexion $s$ échangeant $a$ et $u(a)$ (c’est géométriquement clair et on peut préciser que $s$ est la réflexion par rapport à l’hyperplan $\vect(u(a)-a))^\perp$). Alors $s\circ u$ coïncide avec l’identité sur $\vect(a)$. En particulier, $s\circ u$ stabilise $\vect(a)$. Puisque $s\circ u$ est un automorphisme orthogonal, il stabilise également $\vect(a)^\perp$. Ainsi $s\circ u$ induit un automorphisme orthogonal de $\vect(a)^\perp$. Par hypothèse de récurrence, cet automorphisme induit est un produit de réflexions de $\vect(a)^\perp$. On peut prolonger ces réflexions de $\vect(a)^\perp$ en des réflexions de $E$ en les faisant coïncider avec l’identité sur $\vect(a)$. On vérifie alors que $s\circ u$ est le produit de ces réflexions et $u$ est alors également une réflexion puisque $s^{-1}=s$ en est une.</p>
 
 	</div>
   </div>
@@ -212,13 +165,9 @@ Finalement, $(e_{p+1}^\star,\dots,e_n^\star)$ est une <strong>base</strong> de $
     <ul class="pager blog-pager">
       
       <li class="previous">
-        <a href="/2017-05-07-decomposition-en-elements-simples/" data-toggle="tooltip" data-placement="top" title="Décomposition en éléments simples">&larr; Previous Post</a>
+        <a href="/2017-05-17-newton-et-babylone/" data-toggle="tooltip" data-placement="top" title="Newton et Babylone">&larr; Previous Post</a>
       </li>
       
-      
-      <li class="next">
-        <a href="/2017-05-17-newton-et-babylone/" data-toggle="tooltip" data-placement="top" title="Newton et Babylone">Next Post &rarr;</a>
-      </li>
       
     </ul>
   </div>
@@ -316,7 +265,7 @@ Finalement, $(e_{p+1}^\star,\dots,e_n^\star)$ est une <strong>base</strong> de $
 
 		  
 		  &nbsp;&bull;&nbsp;
-		  <a href="https://lgarcin.github.io/">lgarcin.github.io</a>
+		  <a href="http://localhost:4000">lgarcin.github.io</a>
 		  
 	    </p>
 	        <!-- Please don't remove this, keep my open source work credited :) -->

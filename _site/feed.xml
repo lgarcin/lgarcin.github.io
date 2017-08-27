@@ -3,8 +3,8 @@
   <channel>
     <title>Maths MPSI Corot</title>
     <description>Mathématiques en MPSI au lycée Corot</description>
-    <link>https://lgarcin.github.io/</link>
-    <atom:link href="https://lgarcin.github.io//feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Les réflexions engendrent le groupe orthogonal</title>
@@ -12,9 +12,9 @@
           
           De la même façon que les transpositions engendrent le groupe symétrique, les réflexions d’un espace euclidien engendrent le groupe orthogonal. La preuve est d’ailleurs sensiblement la même. Les transpositions engendrent le groupe symétrique On rappelle rapidement la preuve du fait que les transpositions de $S_n$ engendrent le groupe symétrique $S_n$....
         </description>
-        <pubDate>Sat, 03 Jun 2017 06:44:19 +0100</pubDate>
-        <link>https://lgarcin.github.io//2017-06-03-les-reflexions-engendrent-le-groupe-orthogonal/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2017-06-03-les-reflexions-engendrent-le-groupe-orthogonal/</guid>
+        <pubDate>Sun, 04 Jun 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2017-06-04-les-reflexions-engendrent-le-groupe-orthogonal/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017-06-04-les-reflexions-engendrent-le-groupe-orthogonal/</guid>
       </item>
     
       <item>
@@ -23,43 +23,9 @@
           
           Méthode de Newton Un algorithme bien connu de résolution d’une équation du type $f(x)=0$ où $f$ est une fonction d’une variable réelle à valeurs réelles est la méthode de Newton. Elle consiste à construire une suite $(u_n)$ par récurrence en posant $u_{n+1}=u_n-\frac{f(u_n)}{f’(u_n)}$ pour tout $n\in\dN$. On comprend très bien géométriquement...
         </description>
-        <pubDate>Wed, 17 May 2017 00:00:00 +0100</pubDate>
-        <link>https://lgarcin.github.io//2017-05-17-newton-et-babylone/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2017-05-17-newton-et-babylone/</guid>
-      </item>
-    
-      <item>
-        <title>Dualité</title>
-        <description>
-          
-          La dualité est le lien qui existe entre un $\dK$-espace vectoriel $E$ et son espace dual $E^\star$. On rappelle que $E^\star$ est l’espace vectoriel des formes linéaires sur $E$. Base duale Définition [Base duale] Soient $E$ un espace de dimension finie et une base $(e_1,\dots,e_n)$ de $E$. Pour tout $i\in\lb1,n\rb$,...
-        </description>
-        <pubDate>Thu, 11 May 2017 15:45:21 +0100</pubDate>
-        <link>https://lgarcin.github.io//2017-05-11-dualite/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2017-05-11-dualite/</guid>
-      </item>
-    
-      <item>
-        <title>Décomposition en éléments simples</title>
-        <description>
-          
-          On expose ici la décomposition en éléments simples dans le cas d’un corps $\dK$ quelconque. Lemme. Soient $P\in\dK[X]$, $R$ un polynôme irréductible de $\dK[X]$ de degré $r$ et $n\in\dN^*$. Alors il existe $E\in\dK[X]$ et $(P_1,\dots,P_n)\in\dK_{n-1}[X]^r$ tels que Preuve. On procède par récurrence sur $n$. La propriété à montrer est clairement...
-        </description>
-        <pubDate>Sun, 07 May 2017 07:49:03 +0100</pubDate>
-        <link>https://lgarcin.github.io//2017-05-07-decomposition-en-elements-simples/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2017-05-07-decomposition-en-elements-simples/</guid>
-      </item>
-    
-      <item>
-        <title>Corps de fractions</title>
-        <description>
-          
-          
-
-        </description>
-        <pubDate>Thu, 16 Mar 2017 10:23:40 +0100</pubDate>
-        <link>https://lgarcin.github.io//2017-03-16-corps-de-fractions/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2017-03-16-corps-de-fractions/</guid>
+        <pubDate>Wed, 17 May 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2017-05-17-newton-et-babylone/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017-05-17-newton-et-babylone/</guid>
       </item>
     
       <item>
@@ -68,9 +34,9 @@
           
           Arithmétique dans un anneau Si $(A,+,\times)$ est un anneau commutatif, on peut définir une relation de divisibilité de la même manière que dans l’anneau $\dZ$ des entiers relatifs ou l’anneau $\dK[X]$ des polynômes à coefficients dans un corps $\dK$ : on dit que $a\in A$ divise $b\in A$ s’il existe...
         </description>
-        <pubDate>Wed, 08 Mar 2017 00:00:00 +0000</pubDate>
-        <link>https://lgarcin.github.io//2017-03-08-arithmetique-et-ideaux/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2017-03-08-arithmetique-et-ideaux/</guid>
+        <pubDate>Wed, 08 Mar 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2017-03-08-arithmetique-et-ideaux/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017-03-08-arithmetique-et-ideaux/</guid>
       </item>
     
       <item>
@@ -79,9 +45,9 @@
           
           Champ de vecteurs On appelle champ de vecteurs une application de $\dR^n$ dans $\dR^n$. Les éléments de l’ensemble de départ sont vus comme des points tandis que les éléments de l’ensembles d’arrivée sont vus comme des vecteurs. Par exemple, en physique, les champs électrique et magnétiques sont des champs de...
         </description>
-        <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
-        <link>https://lgarcin.github.io//2017-02-28-systemes-differentiels/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2017-02-28-systemes-differentiels/</guid>
+        <pubDate>Tue, 28 Feb 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2017-02-28-systemes-differentiels/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017-02-28-systemes-differentiels/</guid>
       </item>
     
       <item>
@@ -92,9 +58,9 @@
 
 
         </description>
-        <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-        <link>https://lgarcin.github.io//2017-01-01-bonne-annee/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2017-01-01-bonne-annee/</guid>
+        <pubDate>Sun, 01 Jan 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2017-01-01-bonne-annee/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017-01-01-bonne-annee/</guid>
       </item>
     
       <item>
@@ -103,9 +69,9 @@
           
           Introduction La suite logistique est un système dynamique discret permettant de modéliser l’évolution d’une population. Plus précisément, on considère la suite $(u_n)$ vérifiant la relation de récurrence suivante : Le terme $u_n$ ne représente pas à proprement parler la population mais une fraction d’une population maximale donnée. Pour que la...
         </description>
-        <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
-        <link>https://lgarcin.github.io//2016-12-14-suite-logistique/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2016-12-14-suite-logistique/</guid>
+        <pubDate>Wed, 14 Dec 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2016-12-14-suite-logistique/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016-12-14-suite-logistique/</guid>
       </item>
     
       <item>
@@ -117,9 +83,9 @@
 Milieux : interactions, interfaces, homogénéité, ruptures.
 
         </description>
-        <pubDate>Sat, 26 Nov 2016 00:00:00 +0000</pubDate>
-        <link>https://lgarcin.github.io//2016-11-26-theme-tipe/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2016-11-26-theme-tipe/</guid>
+        <pubDate>Sat, 26 Nov 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2016-11-26-theme-tipe/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016-11-26-theme-tipe/</guid>
       </item>
     
       <item>
@@ -128,9 +94,9 @@ Milieux : interactions, interfaces, homogénéité, ruptures.
           
           Parce qu’un dessin vaut parfois mieux qu’un long discours… En ce qui concerne les détails techniques, l’animation a été effectuée à l’aide de Python. Les développements limités ont été calculés à l’aide de la bibliothèque de calcul formel sympy. Le tracé a été effectué à l’aide de la bibliothèque matplotlib....
         </description>
-        <pubDate>Tue, 22 Nov 2016 00:00:00 +0000</pubDate>
-        <link>https://lgarcin.github.io//2016-11-22-developpements-limites/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2016-11-22-developpements-limites/</guid>
+        <pubDate>Tue, 22 Nov 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2016-11-22-developpements-limites/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016-11-22-developpements-limites/</guid>
       </item>
     
       <item>
@@ -141,9 +107,9 @@ Milieux : interactions, interfaces, homogénéité, ruptures.
 
 
         </description>
-        <pubDate>Thu, 17 Nov 2016 00:00:00 +0000</pubDate>
-        <link>https://lgarcin.github.io//2016-11-17-exponentielle-complexe/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2016-11-17-exponentielle-complexe/</guid>
+        <pubDate>Thu, 17 Nov 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2016-11-17-exponentielle-complexe/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016-11-17-exponentielle-complexe/</guid>
       </item>
     
       <item>
@@ -156,9 +122,9 @@ Posons $f_n(x)=(n+1)x^n$ pour $x\in[0,1]$ et $n\in\mathbb N$. Alors pour tout $n
 
 
         </description>
-        <pubDate>Wed, 09 Nov 2016 00:00:00 +0000</pubDate>
-        <link>https://lgarcin.github.io//2016-11-09-limite-integrale/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2016-11-09-limite-integrale/</guid>
+        <pubDate>Wed, 09 Nov 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2016-11-09-limite-integrale/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016-11-09-limite-integrale/</guid>
       </item>
     
       <item>
@@ -167,9 +133,9 @@ Posons $f_n(x)=(n+1)x^n$ pour $x\in[0,1]$ et $n\in\mathbb N$. Alors pour tout $n
           
           Toutes les fractions considérées dans cet article sont des fractions irréductibles d’entiers naturels. On adjoint à ces fractions la fraction $\frac{1}{0}$ dont on convient raisonnablement qu’elle est strictement supérieure à toutes les autres. Médiante de deux fractions On appelle médiante de deux fractions $\frac{a}{b}$ et $\frac{c}{d}$ la fraction $\frac{a}{b}\oplus\frac{c}{d}=\frac{a+c}{b+d}$. Pour...
         </description>
-        <pubDate>Wed, 05 Oct 2016 00:00:00 +0100</pubDate>
-        <link>https://lgarcin.github.io//2016-10-05-stern/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2016-10-05-stern/</guid>
+        <pubDate>Wed, 05 Oct 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2016-10-05-stern/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016-10-05-stern/</guid>
       </item>
     
       <item>
@@ -178,9 +144,9 @@ Posons $f_n(x)=(n+1)x^n$ pour $x\in[0,1]$ et $n\in\mathbb N$. Alors pour tout $n
           
           Description du problème On considère un système de corps de masses $m_i$ et de positions $\mathbf{r}_i$ soumis à la gravitation. D’après le principe fondamental de la dynamique $\ddot{\mathbf{r}}i=\sum{j\neq i}\frac{Gm_j}{|\mathbf{r}_j-\mathbf{r}_i|^3}(\mathbf{r}_j-\mathbf{r}_i)$ Dans le cas où le système est formé de deux corps, on sait résoudre explicitement ce système d’équations différentielles. Dans le...
         </description>
-        <pubDate>Mon, 26 Sep 2016 00:00:00 +0100</pubDate>
-        <link>https://lgarcin.github.io//2016-09-26-gravitation/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2016-09-26-gravitation/</guid>
+        <pubDate>Mon, 26 Sep 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2016-09-26-gravitation/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016-09-26-gravitation/</guid>
       </item>
     
       <item>
@@ -189,9 +155,9 @@ Posons $f_n(x)=(n+1)x^n$ pour $x\in[0,1]$ et $n\in\mathbb N$. Alors pour tout $n
           
           On sait que les images des racines $n^\text{èmes}$ de l’unité forment un polygone régulier. On expose dans ce post la construction du pentagone régulier. Calcul de $\cos\frac{2\pi}{5}$ Il suffit de faire un tour par les complexes. En posant $\omega=e^\frac{2i\pi}{5}$, on a clairement $1+\omega+\omega^2+\omega^3+\omega^4=\frac{\omega^5-1}{\omega-1}=0$. Or $\omega+\omega^4=\omega+\frac{1}{\omega}=2\cos\frac{2\pi}{5}$ et $\omega^2+\omega^3=\omega^2+\frac{1}{\omega^2}=2\cos\frac{4\pi}{5}=2(2\cos^2\frac{2\pi}{5}-1)$. Il s’ensuit que...
         </description>
-        <pubDate>Fri, 23 Sep 2016 00:00:00 +0100</pubDate>
-        <link>https://lgarcin.github.io//2016-09-23-pentagone-regulier/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2016-09-23-pentagone-regulier/</guid>
+        <pubDate>Fri, 23 Sep 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2016-09-23-pentagone-regulier/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016-09-23-pentagone-regulier/</guid>
       </item>
     
       <item>
@@ -216,9 +182,9 @@ On ne peut plus l’arrêter.
 
 
         </description>
-        <pubDate>Fri, 16 Sep 2016 00:00:00 +0100</pubDate>
-        <link>https://lgarcin.github.io//2016-09-16-pourquoi-se-fatiguer/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2016-09-16-pourquoi-se-fatiguer/</guid>
+        <pubDate>Fri, 16 Sep 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2016-09-16-pourquoi-se-fatiguer/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016-09-16-pourquoi-se-fatiguer/</guid>
       </item>
     
       <item>
@@ -236,9 +202,9 @@ Je vous laisse méditer sur cette animation. Oui, ça bouge ! A vous de trouver 
 Vous pouvez aussi vous amuser à trafiquer le code. Il suffit de cliquer sur le petit crayon.
 
         </description>
-        <pubDate>Wed, 14 Sep 2016 00:00:00 +0100</pubDate>
-        <link>https://lgarcin.github.io//2016-09-14-etonnant/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2016-09-14-etonnant/</guid>
+        <pubDate>Wed, 14 Sep 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2016-09-14-etonnant/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016-09-14-etonnant/</guid>
       </item>
     
       <item>
@@ -249,9 +215,9 @@ Vous pouvez aussi vous amuser à trafiquer le code. Il suffit de cliquer sur le 
 
 
         </description>
-        <pubDate>Wed, 14 Sep 2016 00:00:00 +0100</pubDate>
-        <link>https://lgarcin.github.io//2016-09-14-colloscope/</link>
-        <guid isPermaLink="true">https://lgarcin.github.io//2016-09-14-colloscope/</guid>
+        <pubDate>Wed, 14 Sep 2016 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2016-09-14-colloscope/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016-09-14-colloscope/</guid>
       </item>
     
   </channel>
