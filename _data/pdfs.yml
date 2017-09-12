@@ -93,11 +93,18 @@ Formulaires:
 - path: FormulaireTrigoInverse.pdf
   title: Trigonométrie inverse
 TD:
-- Enoncé:
+- Corrigé:
+    path: TDRaisonnements.corrige.pdf
+  Enoncé:
     path: TDRaisonnements.pdf
   title: Raisonnements et ensembles
+- Enoncé:
+    path: TDSommesProduits.pdf
+  title: Sommes, produits, systèmes, trigonométrie
 VieClasse:
 - path: EDT_MPSI_20172018.pdf
   title: Emploi du temps
+- path: colloscope_MPSI_2017_2018_V2.pdf
+  title: Colloscope
 - path: PlanningDS_CPGE_2017_2018.pdf
   title: Planning des DS
