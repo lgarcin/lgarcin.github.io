@@ -112,7 +112,9 @@ TD:
   Enoncé:
     path: TDRaisonnements.pdf
   title: Raisonnements et ensembles
-- Enoncé:
+- Corrigé:
+    path: TDSommesProduits.corrige.pdf
+  Enoncé:
     path: TDSommesProduits.pdf
   title: Sommes, produits, systèmes, trigonométrie
 VieClasse:
