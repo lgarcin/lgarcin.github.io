@@ -107,6 +107,9 @@ Interros:
   title: Interrogation écrite n°1
 TD:
 - Enoncé:
+    path: TDApplications.pdf
+  title: Applications, fonctions d'une variable réelle
+- Enoncé:
     path: TDComplexes.pdf
   title: Nombres complexes
 - Corrigé:
@@ -122,7 +125,7 @@ TD:
 VieClasse:
 - path: EDT_MPSI_20172018.pdf
   title: Emploi du temps
-- path: colloscope_MPSI_2017_2018_VF.pdf
+- path: colloscope_MPSI_2017_2018_VF2.pdf
   title: Colloscope
 - path: PlanningDS_CPGE_2017_2018.pdf
   title: Planning des DS
