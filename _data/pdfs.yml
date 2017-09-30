@@ -89,6 +89,11 @@ DS:
   Enoncé:
     path: DS01.pdf
   title: DS01
+- Corrigé:
+    path: DS02.corrige.pdf
+  Enoncé:
+    path: DS02.pdf
+  title: DS02
 Formulaires:
 - path: FormulaireComparaisonFonctions.pdf
   title: Comparaison de fonctions
