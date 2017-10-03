@@ -80,7 +80,9 @@ DM:
   Enoncé:
     path: DM01.pdf
   title: DM01
-- Enoncé:
+- Corrigé:
+    path: DM02.corrige.pdf
+  Enoncé:
     path: DM02.pdf
   title: DM02
 - Enoncé:
@@ -115,11 +117,15 @@ Formulaires:
 Interros:
 - path: Interro01.pdf
   title: Interrogation écrite n°1
+- path: Interro02.pdf
+  title: Interrogation écrite n°2
 TD:
 - Enoncé:
     path: TDApplications.pdf
   title: Applications, fonctions d'une variable réelle
-- Enoncé:
+- Corrigé:
+    path: TDComplexes.corrige.pdf
+  Enoncé:
     path: TDComplexes.pdf
   title: Nombres complexes
 - Corrigé:
