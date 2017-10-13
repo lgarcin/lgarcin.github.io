@@ -7,6 +7,8 @@ Colles:
   title: Semaine du 02/10 au 06/10
 - path: ProgColles04.pdf
   title: Semaine du 09/10 au 13/10
+- path: ProgColles05.pdf
+  title: Semaine du 16/10 au 20/10
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -130,6 +132,9 @@ TD:
   Enoncé:
     path: TDComplexes.pdf
   title: Nombres complexes
+- Enoncé:
+    path: TDFonctionsUsuelles.pdf
+  title: Fonctions usuelles
 - Corrigé:
     path: TDRaisonnements.corrige.pdf
   Enoncé:
