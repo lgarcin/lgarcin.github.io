@@ -92,6 +92,9 @@ DM:
 - Enoncé:
     path: DM03.pdf
   title: DM03
+- Enoncé:
+    path: DM04.pdf
+  title: DM04
 DS:
 - Corrigé:
     path: DS01.corrige.pdf
@@ -103,6 +106,11 @@ DS:
   Enoncé:
     path: DS02.pdf
   title: DS02
+- Corrigé:
+    path: DS03.corrige.pdf
+  Enoncé:
+    path: DS03.pdf
+  title: DS03
 Formulaires:
 - path: FormulaireComparaisonFonctions.pdf
   title: Comparaison de fonctions
