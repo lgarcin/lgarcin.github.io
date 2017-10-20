@@ -9,6 +9,8 @@ Colles:
   title: Semaine du 09/10 au 13/10
 - path: ProgColles05.pdf
   title: Semaine du 16/10 au 20/10
+- path: ProgColles06.pdf
+  title: Semaine du 06/11 au 10/11
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -89,7 +91,9 @@ DM:
   Enoncé:
     path: DM02.pdf
   title: DM02
-- Enoncé:
+- Corrigé:
+    path: DM03.corrige.pdf
+  Enoncé:
     path: DM03.pdf
   title: DM03
 - Enoncé:
@@ -131,6 +135,8 @@ Interros:
   title: Interrogation écrite n°1
 - path: Interro02.pdf
   title: Interrogation écrite n°2
+- path: Interro03.pdf
+  title: Interrogation écrite n°3
 TD:
 - Enoncé:
     path: TDApplications.pdf
