@@ -99,6 +99,11 @@ DM:
 - Enoncé:
     path: DM04.pdf
   title: DM04
+- Corrigé:
+    path: DM05.corrige.pdf
+  Enoncé:
+    path: DM05.pdf
+  title: DM05
 DS:
 - Corrigé:
     path: DS01.corrige.pdf
@@ -138,7 +143,9 @@ Interros:
 - path: Interro03.pdf
   title: Interrogation écrite n°3
 TD:
-- Enoncé:
+- Corrigé:
+    path: TDApplications.corrige.pdf
+  Enoncé:
     path: TDApplications.pdf
   title: Applications, fonctions d'une variable réelle
 - Corrigé:
@@ -146,9 +153,14 @@ TD:
   Enoncé:
     path: TDComplexes.pdf
   title: Nombres complexes
-- Enoncé:
+- Corrigé:
+    path: TDFonctionsUsuelles.corrige.pdf
+  Enoncé:
     path: TDFonctionsUsuelles.pdf
   title: Fonctions usuelles
+- Enoncé:
+    path: TDIntegralesPrimitives.pdf
+  title: Primitives et intégrales
 - Corrigé:
     path: TDRaisonnements.corrige.pdf
   Enoncé:
