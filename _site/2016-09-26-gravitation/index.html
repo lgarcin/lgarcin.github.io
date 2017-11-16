@@ -215,7 +215,7 @@ de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps
 
 <p><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#systeme">Code Python</button></p>
 
-<div class="language-python collapse highlighter-rouge" id="systeme"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">vpython</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="language-python collapse highlighter-rouge" id="systeme"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">vpython</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="k">def</span> <span class="nf">init</span><span class="p">(</span><span class="n">perihelie</span><span class="p">,</span><span class="n">masse</span><span class="p">,</span><span class="n">vitesse</span><span class="p">,</span><span class="n">rayon</span><span class="p">,</span><span class="n">couleur</span><span class="p">,</span><span class="n">inclinaison</span><span class="p">,</span><span class="n">noeud</span><span class="p">,</span><span class="n">argument</span><span class="p">):</span>
     <span class="n">p</span><span class="o">=</span><span class="n">vector</span><span class="p">(</span><span class="n">perihelie</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
@@ -267,8 +267,7 @@ de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps
             <span class="k">if</span> <span class="n">q</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">p</span><span class="p">:</span>
                 <span class="n">acceleration</span><span class="o">+=</span><span class="n">G</span><span class="o">*</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">pos</span><span class="o">-</span><span class="n">p</span><span class="o">.</span><span class="n">pos</span><span class="p">)</span><span class="o">*</span><span class="n">q</span><span class="o">.</span><span class="n">masse</span><span class="o">/</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">pos</span><span class="o">-</span><span class="n">p</span><span class="o">.</span><span class="n">pos</span><span class="p">)</span><span class="o">.</span><span class="n">mag</span><span class="o">**</span><span class="mi">3</span>
         <span class="n">p</span><span class="o">.</span><span class="n">vitesse</span><span class="o">+=</span><span class="n">acceleration</span><span class="o">*</span><span class="n">dt</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Aher_TlxUcw" frameborder="0" allowfullscreen></iframe> -->
 
@@ -302,7 +301,7 @@ de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps
 
 <p><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#formation">Code Python</button></p>
 
-<div class="language-python collapse highlighter-rouge" id="formation"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">normalvariate</span><span class="p">,</span> <span class="n">uniform</span>
+<div class="language-python collapse highlighter-rouge" id="formation"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">normalvariate</span><span class="p">,</span> <span class="n">uniform</span>
 <span class="kn">from</span> <span class="nn">vpython</span> <span class="kn">import</span> <span class="n">sphere</span><span class="p">,</span> <span class="n">vector</span><span class="p">,</span> <span class="n">rate</span>
 
 <span class="k">def</span> <span class="nf">merge</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
@@ -370,8 +369,7 @@ de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps
                 <span class="n">ballList</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
                 <span class="n">b</span><span class="o">.</span><span class="n">visible</span> <span class="o">=</span> <span class="bp">False</span>
                 <span class="n">b</span><span class="o">.</span><span class="n">clear_trail</span><span class="p">()</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <video controls="">
 <source src="/images/2016/10/Gravity.mp4" type="video/mp4" />

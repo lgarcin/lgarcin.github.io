@@ -155,12 +155,17 @@ TD:
   Enoncé:
     path: TDComplexes.pdf
   title: Nombres complexes
+- Enoncé:
+    path: TDEquaDiff.pdf
+  title: Équations différentielles
 - Corrigé:
     path: TDFonctionsUsuelles.corrige.pdf
   Enoncé:
     path: TDFonctionsUsuelles.pdf
   title: Fonctions usuelles
-- Enoncé:
+- Corrigé:
+    path: TDIntegralesPrimitives.corrige.pdf
+  Enoncé:
     path: TDIntegralesPrimitives.pdf
   title: Primitives et intégrales
 - Corrigé:
