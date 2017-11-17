@@ -13,6 +13,8 @@ Colles:
   title: Semaine du 06/11 au 10/11
 - path: ProgColles07.pdf
   title: Semaine du 13/11 au 17/11
+- path: ProgColles08.pdf
+  title: Semaine du 20/11 au 24/11
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -144,6 +146,8 @@ Interros:
   title: Interrogation écrite n°2
 - path: Interro03.pdf
   title: Interrogation écrite n°3
+- path: Interro04.pdf
+  title: Interrogation écrite n°4
 TD:
 - Corrigé:
     path: TDApplications.corrige.pdf

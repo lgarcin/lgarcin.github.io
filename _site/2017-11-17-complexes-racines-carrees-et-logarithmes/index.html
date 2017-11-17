@@ -28,7 +28,7 @@
     <!-- Facebook OpenGraph tags -->
     <meta property="og:title" content="Complexes, racines carrées et logarithmes" />
     <meta property="og:type" content="website" /> 
-    <meta property="og:url" content="http://localhost:4000/2017-11-16-complexes-racines-carrees-et-logarithmes//" />  
+    <meta property="og:url" content="http://localhost:4000/2017-11-17-complexes-racines-carrees-et-logarithmes//" />  
     <meta property="og:image" content="http://localhost:4000/img/pi.png" /> 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntilConfig">
@@ -136,7 +136,7 @@
       <div class="post-heading">
         <h1>Complexes, racines carrées et logarithmes</h1>
         
-        <span class="post-meta">Posted on November 16, 2017</span>
+        <span class="post-meta">Posted on November 17, 2017</span>
       </div>
      </div>
   </div>
@@ -147,7 +147,9 @@
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 	  <p>Il est difficile de faire comprendre aux étudiants que l’emploi des symboles $\sqrt{\phantom{z}}$ et $\ln$ pose problème lorsque l’on manipule des complexes. Je vais tenter de m’expliquer dans ce court article.</p>
 
-<p>Essentiellement, le problème provient du fait que toute notation en mathématiques doit être définie de manière <strong>unique</strong>. Ainsi $\sqrt x$ et $\ln(x)$ doit définir un <strong>unique</strong> objet. Une autre façon de voir les choses est de penser à la racine carrée ou au logarithme en tant qu’<strong>applications</strong> : on sait qu’une application associe à un élément une <strong>unique</strong> image. Voyons pourquoi cela se révèle problématique pour les complexes.</p>
+<p>Le problème provient en partie du fait que toute notation en mathématiques doit être définie de manière <strong>unique</strong>. Ainsi $\sqrt x$ et $\ln(x)$ doit définir un <strong>unique</strong> objet. Une autre façon de voir les choses est de penser à la racine carrée ou au logarithme en tant qu’<strong>applications</strong> : on sait qu’une application associe à un élément une <strong>unique</strong> image.</p>
+
+<p>On va cependant voir qu’il est possible de définir la racine carrée et le logarithme d’un complexe de manière unique mais on rencontre alors de nouveaux écueils.</p>
 
 <h2 id="racine-carrée">Racine carrée</h2>
 
@@ -161,9 +163,29 @@
 
 <p>On pourrait alors définir <strong>la</strong> racine carrée d’un complexe $z$ comme l’unique complexe <em>positif</em> dont le carré vaut $z$. Ainsi on pourrait par exemple écrire que $\sqrt{3-4i}=2-i$ car $(2-i)^2=3-4i$ et $2-i\geq0$. La racine carrée d’un complexe ainsi définie est donc toujours <em>positive</em>.</p>
 
-<p>Malheureusement, l’ordre lexicographique sur $\mathbb C$ n’est pas <em>compatible</em> avec la multiplication<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Par exemple, si l’on pose $z_1=1+i$ et $z_2=2+5i$, alors $z_1$ et $z_2$ sont positifs mais le produit $z_1z_2=-3+7i$ ne l’est plus. On en déduit notamment que la racine carré d’un produit n’est pas toujours le produit des racines carrées<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>. C’est pour cette raison que l’on évite d’employer le symbole $\sqrt{\phantom{z}}$ pour des complexes.</p>
+<p>Malheureusement, l’ordre lexicographique sur $\mathbb C$ n’est pas <em>compatible</em> avec la multiplication<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Par exemple, si l’on pose $z_1=1+i$ et $z_2=2+5i$, alors $z_1$ et $z_2$ sont positifs mais le produit $z_1z_2=-3+7i$ ne l’est plus. On en déduit notamment que la racine carré d’un produit n’est pas toujours le produit des racines carrées<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>.</p>
+
+<p>Cette définition de la racine carrée pose également des problèmes de continuité. Par exemple, on vérifie aisément que pour $\theta\in]-\pi,\pi]$, $\sqrt{e^{i\theta}}=e^\frac{i\theta}{2}$ tandis que pour $\theta\in]\pi,3\pi]$, $\sqrt{e^{i\theta}}=-e^\frac{i\theta}{2}$. Ainsi $\sqrt{e^{i\pi}}=i$ tandis que $\lim_{\theta\to\pi^+}\sqrt{e^{i\theta}}=-i$.</p>
 
 <h2 id="logarithme">Logarithme</h2>
+
+<p>On sait que tout complexe non nul admet une infinité d’antécédents par la fonction exponentielle. Plus précisément, tout complexe non nul $z$ peut se mettre sous forme exponentielle $z=re^{i\theta}$ avec $r\in\mathbb R^*_+$ le module de $z$ et $\theta\in\mathbb R$ un argument de $z$. On pourrait donc affirmer que le logarithme complexe de $z$ est $\ln(r)+i\theta$. Le problème est bien entendu que $z$ admet une infinité d’arguments et le logarithme de $z$ est ainsi mal défini.</p>
+
+<p>Par contre, tout nombre complexe non nul admet un unique argument dans l’intervalle $]-\pi,\pi]$, appelé <strong>argument principal</strong> de $z$. On pourrait donc définir de manière unique le logarithme de $z\in\mathbb C^*$, en posant $\ln(z)=\ln(r)+i\theta$ où $r$ est le module de $z$ et $\theta$ l’argument principal de $z$. Par exemple, $\ln(\sqrt2+i\sqrt2)=\ln(2)+\frac{i\pi}{4}$.</p>
+
+<p>Cependant cette définition du logarithme ne permet pas d’assurer sa propriété caractéristique pour les réels, c’est-à-dire sa capacité à transformer les produits en sommes. Par exemple,</p>
+
+<script type="math/tex; mode=display">\ln(-1+i\sqrt3) = \ln(2e^\frac{2i\pi}{3})=\ln(2)+\frac{2i\pi}{3}</script>
+
+<p>Mais comme on utilise l’<strong>argument principal</strong> pour la définition du logarithme :</p>
+
+<script type="math/tex; mode=display">\ln((-1+i\sqrt3)^2) = \ln(4e^\frac{4i\pi}{3})=\ln(4e^\frac{-2i\pi}{3})=\ln(4)-\frac{2i\pi}{3}</script>
+
+<p>Ainsi</p>
+
+<script type="math/tex; mode=display">\ln((-1+i\sqrt3)^2)\neq2\ln(-1+i\sqrt3)</script>
+
+<p>De toute façon, il se pose à nouveau des problèmes de continuité. En effet, pour $\theta\in]-\pi,\pi]$, $\ln(e^{i\theta})=i\theta$ tandis que pour $\theta\in]\pi,3\pi]$, $\ln(e^{i\theta})=i\theta-2i\pi$. Ainsi $\ln(e^{i\pi})=i\pi$ mais $\lim_{\theta\to\pi^+}\ln(e^{i\theta})=-i\pi$.</p>
 
 <div class="footnotes">
   <ol>

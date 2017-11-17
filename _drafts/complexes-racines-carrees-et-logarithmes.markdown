@@ -6,7 +6,9 @@ published: true
 
 Il est difficile de faire comprendre aux étudiants que l'emploi des symboles $\sqrt{\phantom{z}}$ et $\ln$ pose problème lorsque l'on manipule des complexes. Je vais tenter de m'expliquer dans ce court article.
 
-Essentiellement, le problème provient du fait que toute notation en mathématiques doit être définie de manière **unique**. Ainsi $\sqrt x$ et $\ln(x)$ doit définir un **unique** objet. Une autre façon de voir les choses est de penser à la racine carrée ou au logarithme en tant qu'**applications** : on sait qu'une application associe à un élément une **unique** image. Voyons pourquoi cela se révèle problématique pour les complexes.
+Le problème provient en partie du fait que toute notation en mathématiques doit être définie de manière **unique**. Ainsi $\sqrt x$ et $\ln(x)$ doit définir un **unique** objet. Une autre façon de voir les choses est de penser à la racine carrée ou au logarithme en tant qu'**applications** : on sait qu'une application associe à un élément une **unique** image.
+
+On va cependant voir qu'il est possible de définir la racine carrée et le logarithme d'un complexe de manière unique mais on rencontre alors de nouveaux écueils.
 
 ## Racine carrée
 
@@ -20,10 +22,36 @@ L'ordre lexicographique permet alors de parler de complexe *positif*, c'est-à-d
 
 On pourrait alors définir **la** racine carrée d'un complexe $z$ comme l'unique complexe *positif* dont le carré vaut $z$. Ainsi on pourrait par exemple écrire que $\sqrt{3-4i}=2-i$ car $(2-i)^2=3-4i$ et $2-i\geq0$. La racine carrée d'un complexe ainsi définie est donc toujours *positive*.
 
-Malheureusement, l'ordre lexicographique sur $\mathbb C$ n'est pas *compatible* avec la multiplication[^1]. Par exemple, si l'on pose $z_1=1+i$ et $z_2=2+5i$, alors $z_1$ et $z_2$ sont positifs mais le produit $z_1z_2=-3+7i$ ne l'est plus. On en déduit notamment que la racine carré d'un produit n'est pas toujours le produit des racines carrées[^2]. C'est pour cette raison que l'on évite d'employer le symbole $\sqrt{\phantom{z}}$ pour des complexes.
+Malheureusement, l'ordre lexicographique sur $\mathbb C$ n'est pas *compatible* avec la multiplication[^1]. Par exemple, si l'on pose $z_1=1+i$ et $z_2=2+5i$, alors $z_1$ et $z_2$ sont positifs mais le produit $z_1z_2=-3+7i$ ne l'est plus. On en déduit notamment que la racine carré d'un produit n'est pas toujours le produit des racines carrées[^2].
+
+Cette définition de la racine carrée pose également des problèmes de continuité. Par exemple, on vérifie aisément que pour $\theta\in]-\pi,\pi]$, $\sqrt{e^{i\theta}}=e^\frac{i\theta}{2}$ tandis que pour $\theta\in]\pi,3\pi]$, $\sqrt{e^{i\theta}}=-e^\frac{i\theta}{2}$. Ainsi $\sqrt{e^{i\pi}}=i$ tandis que $\lim_{\theta\to\pi^+}\sqrt{e^{i\theta}}=-i$.
 
 
 ## Logarithme
+
+On sait que tout complexe non nul admet une infinité d'antécédents par la fonction exponentielle. Plus précisément, tout complexe non nul $z$ peut se mettre sous forme exponentielle $z=re^{i\theta}$ avec $r\in\mathbb R^*_+$ le module de $z$ et $\theta\in\mathbb R$ un argument de $z$. On pourrait donc affirmer que le logarithme complexe de $z$ est $\ln(r)+i\theta$. Le problème est bien entendu que $z$ admet une infinité d'arguments et le logarithme de $z$ est ainsi mal défini.
+
+Par contre, tout nombre complexe non nul admet un unique argument dans l'intervalle $]-\pi,\pi]$, appelé **argument principal** de $z$. On pourrait donc définir de manière unique le logarithme de $z\in\mathbb C^*$, en posant $\ln(z)=\ln(r)+i\theta$ où $r$ est le module de $z$ et $\theta$ l'argument principal de $z$. Par exemple, $\ln(\sqrt2+i\sqrt2)=\ln(2)+\frac{i\pi}{4}$.
+
+Cependant cette définition du logarithme ne permet pas d'assurer sa propriété caractéristique pour les réels, c'est-à-dire sa capacité à transformer les produits en sommes. Par exemple,
+
+$$
+\ln(-1+i\sqrt3) = \ln(2e^\frac{2i\pi}{3})=\ln(2)+\frac{2i\pi}{3}
+$$
+
+Mais comme on utilise l'**argument principal** pour la définition du logarithme :
+
+$$
+\ln((-1+i\sqrt3)^2) = \ln(4e^\frac{4i\pi}{3})=\ln(4e^\frac{-2i\pi}{3})=\ln(4)-\frac{2i\pi}{3}
+$$
+
+Ainsi
+
+$$
+\ln((-1+i\sqrt3)^2)\neq2\ln(-1+i\sqrt3)
+$$
+
+De toute façon, il se pose à nouveau des problèmes de continuité. En effet, pour $\theta\in]-\pi,\pi]$, $\ln(e^{i\theta})=i\theta$ tandis que pour $\theta\in]\pi,3\pi]$, $\ln(e^{i\theta})=i\theta-2i\pi$. Ainsi $\ln(e^{i\pi})=i\pi$ mais $\lim_{\theta\to\pi^+}\ln(e^{i\theta})=-i\pi$.
 
 
 [^1]: Le lecteur vérifiera que l'ordre lexicographique est compatible avec l'addition, autrement dit que pour tout triplet $(x,y,z)\in\mathbb C^3$, si $x\leq y$, alors $x+z\leq y+z$.
