@@ -1,6 +1,6 @@
 ---
-layout: "post"
-title: "Complexes, racines carrées et logarithmes"
+layout: post
+title: 'Complexes, racines carrées et logarithmes'
 published: true
 ---
 
@@ -26,6 +26,9 @@ Malheureusement, l'ordre lexicographique sur $\mathbb C$ n'est pas *compatible* 
 
 Cette définition de la racine carrée pose également des problèmes de continuité. Par exemple, on vérifie aisément que pour $\theta\in]-\pi,\pi]$, $\sqrt{e^{i\theta}}=e^\frac{i\theta}{2}$ tandis que pour $\theta\in]\pi,3\pi]$, $\sqrt{e^{i\theta}}=-e^\frac{i\theta}{2}$. Ainsi $\sqrt{e^{i\pi}}=i$ tandis que $\lim_{\theta\to\pi^+}\sqrt{e^{i\theta}}=-i$.
 
+On pourra se convaincre du problème de continuité avec l'applet suivante. Déplacez le point d'affixe $z$ et regardez l'évolution du point d'affixe $\sqrt z$ lorsque le point d'affixe $z$ traverse le demi-axe des abscisses négatives.
+
+<iframe scrolling="no" title="Racine carrée complexe" src="https://www.geogebra.org/material/iframe/id/x2XW87Eb/width/700/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
 
 ## Logarithme
 
@@ -53,6 +56,9 @@ $$
 
 De toute façon, il se pose à nouveau des problèmes de continuité. En effet, pour $\theta\in]-\pi,\pi]$, $\ln(e^{i\theta})=i\theta$ tandis que pour $\theta\in]\pi,3\pi]$, $\ln(e^{i\theta})=i\theta-2i\pi$. Ainsi $\ln(e^{i\pi})=i\pi$ mais $\lim_{\theta\to\pi^+}\ln(e^{i\theta})=-i\pi$.
 
+L'applet suivante montre encore le problème de continuité lorsque le point d'affixe $z$ traverse le demi-axe des abscisses négatives.
+
+<iframe scrolling="no" title="Logarithme complexe" src="https://www.geogebra.org/material/iframe/id/mEFGhkR8/width/700/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
 
 [^1]: Le lecteur vérifiera que l'ordre lexicographique est compatible avec l'addition, autrement dit que pour tout triplet $(x,y,z)\in\mathbb C^3$, si $x\leq y$, alors $x+z\leq y+z$.
 
