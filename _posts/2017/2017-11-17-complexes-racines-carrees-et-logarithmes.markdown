@@ -20,9 +20,9 @@ On peut néanmoins définir une relation d'ordre total sur $\mathbb C$, à savoi
 
 L'ordre lexicographique permet alors de parler de complexe *positif*, c'est-à-dire plus grand que $0$ : il s'agit de complexes dont la partie réelle est strictement positive ou dont la partie réelle est nulle et la partie imaginaire positive. On vérifie alors aisément que lorsque deux complexes sont opposés, l'un est toujours *positif* tandis que l'autre est *négatif*.
 
-On pourrait alors définir **la** racine carrée d'un complexe $z$ comme l'unique complexe *positif* dont le carré vaut $z$. Ainsi on pourrait par exemple écrire que $\sqrt{3-4i}=2-i$ car $(2-i)^2=3-4i$ et $2-i\geq0$. La racine carrée d'un complexe ainsi définie est donc toujours *positive*.
+On pourrait alors définir **la** racine carrée d'un complexe $z$ comme l'unique complexe *positif* dont le carré vaut $z$[^1]. Ainsi on pourrait par exemple écrire que $\sqrt{3-4i}=2-i$ car $(2-i)^2=3-4i$ et $2-i\geq0$. La racine carrée d'un complexe ainsi définie est donc toujours *positive*.
 
-Malheureusement, l'ordre lexicographique sur $\mathbb C$ n'est pas *compatible* avec la multiplication[^1]. Par exemple, si l'on pose $z_1=1+i$ et $z_2=2+5i$, alors $z_1$ et $z_2$ sont positifs mais le produit $z_1z_2=-3+7i$ ne l'est plus. On en déduit notamment que la racine carré d'un produit n'est pas toujours le produit des racines carrées[^2].
+Malheureusement, l'ordre lexicographique sur $\mathbb C$ n'est pas *compatible* avec la multiplication[^2]. Par exemple, si l'on pose $z_1=1+i$ et $z_2=2+5i$, alors $z_1$ et $z_2$ sont positifs mais le produit $z_1z_2=-3+7i$ ne l'est plus. On en déduit notamment que la racine carré d'un produit n'est pas toujours le produit des racines carrées[^3].
 
 Cette définition de la racine carrée pose également des problèmes de continuité. Par exemple, on vérifie aisément que pour $\theta\in]-\pi,\pi]$, $\sqrt{e^{i\theta}}=e^\frac{i\theta}{2}$ tandis que pour $\theta\in]\pi,3\pi]$, $\sqrt{e^{i\theta}}=-e^\frac{i\theta}{2}$. Ainsi $\sqrt{e^{i\pi}}=i$ tandis que $\lim_{\theta\to\pi^+}\sqrt{e^{i\theta}}=-i$.
 
@@ -36,7 +36,7 @@ On sait que tout complexe non nul admet une infinité d'antécédents par la fon
 
 Par contre, tout nombre complexe non nul admet un unique argument dans l'intervalle $]-\pi,\pi]$, appelé **argument principal** de $z$. On pourrait donc définir de manière unique le logarithme de $z\in\mathbb C^*$, en posant $\ln(z)=\ln(r)+i\theta$ où $r$ est le module de $z$ et $\theta$ l'argument principal de $z$. Par exemple, $\ln(\sqrt2+i\sqrt2)=\ln(2)+\frac{i\pi}{4}$.
 
-Cependant cette définition du logarithme ne permet pas d'assurer sa propriété caractéristique pour les réels, c'est-à-dire sa capacité à transformer les produits en sommes. Par exemple,
+Cependant cette définition du logarithme ne permet pas d'assurer sa propriété caractéristique pour les réels, c'est-à-dire sa capacité à transformer les produits en sommes. En effet, l'argument **principal** d'un produit n'est pas toujours la somme des arguments principaux. Par exemple,
 
 $$
 \ln(-1+i\sqrt3) = \ln(2e^\frac{2i\pi}{3})=\ln(2)+\frac{2i\pi}{3}
@@ -60,6 +60,17 @@ L'applet suivante montre encore le problème de continuité lorsque le point d'a
 
 <iframe scrolling="no" title="Logarithme complexe" src="https://www.geogebra.org/material/iframe/id/mEFGhkR8/width/700/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
 
-[^1]: Le lecteur vérifiera que l'ordre lexicographique est compatible avec l'addition, autrement dit que pour tout triplet $(x,y,z)\in\mathbb C^3$, si $x\leq y$, alors $x+z\leq y+z$.
+## Conclusion
 
-[^2]: Néanmoins si $z_1$ et $z_2$ sont deux complexes, on peut affirmer que les complexes $\sqrt{z_1z_2}$ et $\sqrt{z_1}\sqrt{z_2}$ sont **égaux ou opposés**.
+On a vu comment définir des racines carrées et des logarithmes de complexes de manière unique mais on a vu également que cela posait ensuite des problèmes par la suite car des propriétés algébriques et de continuité des fonctions racine carrée et logarithme n'étaient plus assurées. Il était évidemment possible de définir autrement la racine carrée et le logarithme d'un complexe[^4] mais on aurait constaté qu'on retombait sur les mêmes problèmes.
+
+D'un point de vue très pragmatique, l'emploi des symboles $\sqrt{\phantom{z}}$ pour des complexes non réels positifs et $\ln$ pour des complexes non réels strictement positifs est à proscrire lors de vos épreuves de concours.
+
+
+[^1]: Cela revient à choisir pour **la** racine carrée d'un complexe $z$ non nul l'unique complexe dont le carré vaut $z$ et dont un argument appartient à l'intervalle $\left]-\frac{\pi}{2},\frac{\pi}{2}\right]$. En effet, les deux racines carrées d'un complexe non nul étant opposées, l'une et l'une seule d'entre elles possède un argument dans l'intervalle $\left]-\frac{\pi}{2},\frac{\pi}{2}\right]$, ce qui se conçoit très bien d'un point de vue géométrique.
+
+[^2]: Le lecteur vérifiera cependant que l'ordre lexicographique est compatible avec l'addition, autrement dit que pour tout triplet $(x,y,z)\in\mathbb C^3$, si $x\leq y$, alors $x+z\leq y+z$.
+
+[^3]: Néanmoins si $z_1$ et $z_2$ sont deux complexes, on peut affirmer que les complexes $\sqrt{z_1z_2}$ et $\sqrt{z_1}\sqrt{z_2}$ sont **égaux ou opposés**.
+
+[^4]: On aurait par exemple plus racine carrée d'un nombre complexe $z$ l'unique complexe dont le carré vaut $z$ et dont un argumment appartient à l'intervalle $]0,\pi]$. Cela revient à modifier l'ordre lexicographique : on compare d'abord les parties imaginaires puis les parties réelles. Quant au logarithme d'un complexe $z$ non nul, on aurait pu choisir l'unique complexe dont l'exponentielle vaut $z$ et dont l'argument appartient à l'intervalle $]0,2\pi]$.
