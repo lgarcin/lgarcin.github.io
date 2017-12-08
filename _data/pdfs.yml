@@ -19,6 +19,8 @@ Colles:
   title: Semaine du 27/11 au 01/12
 - path: ProgColles10.pdf
   title: Semaine du 04/12 au 08/12
+- path: ProgColles11.pdf
+  title: Semaine du 11/12 au 15/12
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -114,7 +116,9 @@ DM:
   Enoncé:
     path: DM05.pdf
   title: DM05
-- Enoncé:
+- Corrigé:
+    path: DM06.corrige.pdf
+  Enoncé:
     path: DM06.pdf
   title: DM06
 - Enoncé:
@@ -211,6 +215,9 @@ TD:
   Enoncé:
     path: TDSommesProduits.pdf
   title: Sommes, produits, systèmes, trigonométrie
+- Enoncé:
+    path: TDSuites.pdf
+  title: Suites numériques
 VieClasse:
 - path: EDT_MPSI_20172018.pdf
   title: Emploi du temps
