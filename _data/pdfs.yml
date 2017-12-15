@@ -21,6 +21,8 @@ Colles:
   title: Semaine du 04/12 au 08/12
 - path: ProgColles11.pdf
   title: Semaine du 11/12 au 15/12
+- path: ProgColles12.pdf
+  title: Semaine du 18/12 au 22/12
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -171,6 +173,8 @@ Interros:
   title: Interrogation écrite n°4
 - path: Interro05.pdf
   title: Interrogation écrite n°5
+- path: Interro06.pdf
+  title: Interrogation écrite n°6
 TD:
 - Corrigé:
     path: TDApplications.corrige.pdf
@@ -207,7 +211,9 @@ TD:
   Enoncé:
     path: TDRaisonnements.pdf
   title: Raisonnements et ensembles
-- Enoncé:
+- Corrigé:
+    path: TDReels.corrige.pdf
+  Enoncé:
     path: TDReels.pdf
   title: Nombres réels, relations binaires
 - Corrigé:
