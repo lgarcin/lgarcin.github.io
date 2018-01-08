@@ -133,6 +133,9 @@ DM:
 - Enoncé:
     path: DM08.pdf
   title: DM08
+- Enoncé:
+    path: DM09.pdf
+  title: DM09
 DS:
 - Corrigé:
     path: DS01.corrige.pdf
@@ -187,6 +190,8 @@ Interros:
   title: Interrogation écrite n°5
 - path: Interro06.pdf
   title: Interrogation écrite n°6
+- path: Interro07.pdf
+  title: Interrogation écrite n°7
 TD:
 - Corrigé:
     path: TDApplications.corrige.pdf
