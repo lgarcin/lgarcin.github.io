@@ -1,4 +1,7 @@
 language: ruby
+cache: bundler
+install:
+ - bundle install
 rvm:
  - 2.4.3
 
