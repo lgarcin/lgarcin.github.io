@@ -1,3 +1,5 @@
+version: 2
+
 test:
   pre:
     - chmod +x ./script/cibuild
