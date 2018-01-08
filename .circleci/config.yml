@@ -5,10 +5,12 @@ jobs:
                - image: circleci/ruby:2.4.3
           steps:
                - checkout
+               - run: bundle install
                - run: bundle exec jekyll build
      test:
           docker:
-               - image: circleci/ruby:2.4.3
+               - image: circleci/ruby:2.4-node
           steps:
                - checkout
+               - run: bundle install
                - run: bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html --assume-extension
