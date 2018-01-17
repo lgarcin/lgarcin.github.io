@@ -202,6 +202,9 @@ TD:
   Enoncé:
     path: TDApplications.pdf
   title: Applications, fonctions d'une variable réelle
+- Enoncé:
+    path: TDArithmetique.pdf
+  title: Arithmétique
 - Corrigé:
     path: TDComparaisonFonctions.corrige.pdf
   Enoncé:
@@ -222,7 +225,9 @@ TD:
   Enoncé:
     path: TDFonctionsUsuelles.pdf
   title: Fonctions usuelles
-- Enoncé:
+- Corrigé:
+    path: TDGroupesAnneauxCorps.corrige.pdf
+  Enoncé:
     path: TDGroupesAnneauxCorps.pdf
   title: Groupes, anneaux, corps
 - Corrigé:
@@ -245,7 +250,9 @@ TD:
   Enoncé:
     path: TDSommesProduits.pdf
   title: Sommes, produits, systèmes, trigonométrie
-- Enoncé:
+- Corrigé:
+    path: TDSuites.corrige.pdf
+  Enoncé:
     path: TDSuites.pdf
   title: Suites numériques
 VieClasse:
