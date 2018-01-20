@@ -27,6 +27,8 @@ Colles:
   title: Semaine du 08/01 au 12/01
 - path: ProgColles14.pdf
   title: Semaine du 15/01 au 19/01
+- path: ProgColles15.pdf
+  title: Semaine du 22/01 au 26/01
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -166,6 +168,11 @@ DS:
   Enoncé:
     path: DS05.pdf
   title: DS05
+- Corrigé:
+    path: DS06.corrige.pdf
+  Enoncé:
+    path: DS06.pdf
+  title: DS06
 Formulaires:
 - path: FormulaireComparaisonFonctions.pdf
   title: Comparaison de fonctions
