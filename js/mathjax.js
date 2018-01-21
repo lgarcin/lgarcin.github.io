@@ -12,7 +12,7 @@ MathJax.Hub.Config({
         Macros: {
             dK: "\\mathbb{K}",
             dN: "\\mathbb{N}",
-            dQ: "\\mathbb{K}",
+            dQ: "\\mathbb{Q}",
             dR: "\\mathbb{R}",
             dZ: "\\mathbb{Z}",
             lb: "\\left[\\!\\left[",
