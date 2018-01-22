@@ -142,6 +142,9 @@ DM:
 - Enoncé:
     path: DM09.pdf
   title: DM09
+- Enoncé:
+    path: DM10.pdf
+  title: DM10
 DS:
 - Corrigé:
     path: DS01.corrige.pdf
@@ -203,6 +206,8 @@ Interros:
   title: Interrogation écrite n°6
 - path: Interro07.pdf
   title: Interrogation écrite n°7
+- path: Interro08.pdf
+  title: Interrogation écrite n°8
 TD:
 - Corrigé:
     path: TDApplications.corrige.pdf
@@ -227,6 +232,9 @@ TD:
   Enoncé:
     path: TDEquaDiff.pdf
   title: Équations différentielles
+- Enoncé:
+    path: TDEspacesVectoriels.pdf
+  title: Espaces vectoriels
 - Corrigé:
     path: TDFonctionsUsuelles.corrige.pdf
   Enoncé:
