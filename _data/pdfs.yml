@@ -31,6 +31,8 @@ Colles:
   title: Semaine du 22/01 au 26/01
 - path: ProgColles16.pdf
   title: Semaine du 29/01 au 02/02
+- path: ProgColles17.pdf
+  title: Semaine du 05/02 au 09/02
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -233,12 +235,17 @@ TD:
   Enoncé:
     path: TDComplexes.pdf
   title: Nombres complexes
+- Enoncé:
+    path: TDDimensionFinie.pdf
+  title: Espaces vectoriels de dimension finie
 - Corrigé:
     path: TDEquaDiff.corrige.pdf
   Enoncé:
     path: TDEquaDiff.pdf
   title: Équations différentielles
-- Enoncé:
+- Corrigé:
+    path: TDEspacesVectoriels.corrige.pdf
+  Enoncé:
     path: TDEspacesVectoriels.pdf
   title: Espaces vectoriels
 - Corrigé:
