@@ -182,6 +182,11 @@ DS:
   Enoncé:
     path: DS06.pdf
   title: DS06
+- Corrigé:
+    path: DS07.corrige.pdf
+  Enoncé:
+    path: DS07.pdf
+  title: DS07
 Formulaires:
 - path: FormulaireComparaisonFonctions.pdf
   title: Comparaison de fonctions
