@@ -165,6 +165,9 @@ DM:
 - Enoncé:
     path: DM12.pdf
   title: DM12
+- Enoncé:
+    path: DM13.pdf
+  title: DM13
 DS:
 - Corrigé:
     path: DS01.corrige.pdf
@@ -235,6 +238,8 @@ Interros:
   title: Interrogation écrite n°8
 - path: Interro09.pdf
   title: Interrogation écrite n°9
+- path: Interro10.pdf
+  title: Interrogation écrite n°10
 TD:
 - Corrigé:
     path: TDApplications.corrige.pdf
@@ -289,6 +294,9 @@ TD:
   Enoncé:
     path: TDIntegralesPrimitives.pdf
   title: Primitives et intégrales
+- Enoncé:
+    path: TDPolynomes.pdf
+  title: Polynômes
 - Corrigé:
     path: TDRaisonnements.corrige.pdf
   Enoncé:
