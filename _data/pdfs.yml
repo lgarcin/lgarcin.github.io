@@ -37,6 +37,8 @@ Colles:
   title: Semaine du 12/02 au 16/02
 - path: ProgColles19.pdf
   title: Semaine du 05/03 au 09/03
+- path: ProgColles20.pdf
+  title: Semaine du 12/03 au 16/03
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -162,7 +164,9 @@ DM:
   Enoncé:
     path: DM11.pdf
   title: DM11
-- Enoncé:
+- Corrigé:
+    path: DM12.corrige.pdf
+  Enoncé:
     path: DM12.pdf
   title: DM12
 - Enoncé:
@@ -246,7 +250,9 @@ TD:
   Enoncé:
     path: TDApplications.pdf
   title: Applications, fonctions d'une variable réelle
-- Enoncé:
+- Corrigé:
+    path: TDApplicationsLineaires.corrige.pdf
+  Enoncé:
     path: TDApplicationsLineaires.pdf
   title: Applications linéaires
 - Corrigé:
