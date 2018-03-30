@@ -43,6 +43,8 @@ Colles:
   title: Semaine du 19/03 au 23/03
 - path: ProgColles22.pdf
   title: Semaine du 26/03 au 30/03
+- path: ProgColles23.pdf
+  title: Semaine du 02/04 au 06/04
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -286,6 +288,9 @@ TD:
   Enoncé:
     path: TDComplexes.pdf
   title: Nombres complexes
+- Enoncé:
+    path: TDDerivabilite.pdf
+  title: Dérivabilité
 - Corrigé:
     path: TDDimensionFinie.corrige.pdf
   Enoncé:
@@ -321,7 +326,9 @@ TD:
   Enoncé:
     path: TDIntegralesPrimitives.pdf
   title: Primitives et intégrales
-- Enoncé:
+- Corrigé:
+    path: TDLimiteContinuite.corrige.pdf
+  Enoncé:
     path: TDLimiteContinuite.pdf
   title: Limite et continuité de fonctions
 - Corrigé:
