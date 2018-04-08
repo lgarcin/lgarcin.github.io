@@ -226,6 +226,11 @@ DS:
   Enoncé:
     path: DS08.pdf
   title: DS08
+- Corrigé:
+    path: DS09.corrige.pdf
+  Enoncé:
+    path: DS09.pdf
+  title: DS09
 Formulaires:
 - path: FormulaireComparaisonFonctions.pdf
   title: Comparaison de fonctions
@@ -328,6 +333,9 @@ TD:
   Enoncé:
     path: TDIntegralesPrimitives.pdf
   title: Primitives et intégrales
+- Enoncé:
+    path: TDIntegration.pdf
+  title: Intégration
 - Corrigé:
     path: TDLimiteContinuite.corrige.pdf
   Enoncé:
