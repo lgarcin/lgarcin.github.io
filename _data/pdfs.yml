@@ -363,6 +363,9 @@ TD:
   Enoncé:
     path: TDReels.pdf
   title: Nombres réels, relations binaires
+- Enoncé:
+    path: TDSeries.pdf
+  title: Séries
 - Corrigé:
     path: TDSommesProduits.corrige.pdf
   Enoncé:
@@ -376,7 +379,7 @@ TD:
 VieClasse:
 - path: EDT_MPSI_20172018.pdf
   title: Emploi du temps
-- path: colloscope_MPSI_2017_2018_Fin.pdf
+- path: colloscope_MPSI_2017_2018_Ultime.pdf
   title: Colloscope
 - path: PlanningDS_CPGE - Planning.pdf
   title: Planning des DS
