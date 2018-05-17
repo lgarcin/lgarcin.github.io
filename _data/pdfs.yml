@@ -245,6 +245,11 @@ DS:
   Enoncé:
     path: DS09.pdf
   title: DS09
+- Corrigé:
+    path: DS10.corrige.pdf
+  Enoncé:
+    path: DS10.pdf
+  title: DS10
 Formulaires:
 - path: FormulaireComparaisonFonctions.pdf
   title: Comparaison de fonctions
@@ -318,6 +323,9 @@ TD:
   Enoncé:
     path: TDDerivabilite.pdf
   title: Dérivabilité
+- Enoncé:
+    path: TDDeterminants.pdf
+  title: Déterminants
 - Corrigé:
     path: TDDimensionFinie.corrige.pdf
   Enoncé:
@@ -363,7 +371,9 @@ TD:
   Enoncé:
     path: TDLimiteContinuite.pdf
   title: Limite et continuité de fonctions
-- Enoncé:
+- Corrigé:
+    path: TDMatrices.corrige.pdf
+  Enoncé:
     path: TDMatrices.pdf
   title: Matrices
 - Corrigé:
