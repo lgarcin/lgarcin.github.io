@@ -51,6 +51,8 @@ Colles:
   title: Semaine du 30/04 au 04/05
 - path: ProgColles26.pdf
   title: Semaine du 14/05 au 18/05
+- path: ProgColles27.pdf
+  title: Semaine du 21/05 au 25/05
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -199,6 +201,9 @@ DM:
 - Enoncé:
     path: DM16.pdf
   title: DM16
+- Enoncé:
+    path: DM17.pdf
+  title: DM17
 DS:
 - Corrigé:
     path: DS01.corrige.pdf
