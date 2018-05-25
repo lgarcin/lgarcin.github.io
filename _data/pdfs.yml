@@ -198,7 +198,9 @@ DM:
   Enoncé:
     path: DM15.pdf
   title: DM15
-- Enoncé:
+- Corrigé:
+    path: DM16.corrige.pdf
+  Enoncé:
     path: DM16.pdf
   title: DM16
 - Enoncé:
@@ -328,7 +330,9 @@ TD:
   Enoncé:
     path: TDDerivabilite.pdf
   title: Dérivabilité
-- Enoncé:
+- Corrigé:
+    path: TDDeterminants.corrige.pdf
+  Enoncé:
     path: TDDeterminants.pdf
   title: Déterminants
 - Corrigé:
@@ -341,6 +345,9 @@ TD:
   Enoncé:
     path: TDEquaDiff.pdf
   title: Équations différentielles
+- Enoncé:
+    path: TDEspacesEuclidiens.pdf
+  title: Espaces préhilbertiens réels
 - Corrigé:
     path: TDEspacesVectoriels.corrige.pdf
   Enoncé:
