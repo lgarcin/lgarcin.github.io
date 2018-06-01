@@ -55,6 +55,8 @@ Colles:
   title: Semaine du 21/05 au 25/05
 - path: ProgColles28.pdf
   title: Semaine du 28/05 au 01/06
+- path: ProgColles29.pdf
+  title: Semaine du 04/06 au 08/06
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -208,6 +210,9 @@ DM:
 - Enoncé:
     path: DM17.pdf
   title: DM17
+- Enoncé:
+    path: DM18.pdf
+  title: DM18
 DS:
 - Corrigé:
     path: DS01.corrige.pdf
@@ -301,6 +306,8 @@ Interros:
   title: Interrogation écrite n°12
 - path: Interro13.pdf
   title: Interrogation écrite n°13
+- path: Interro14.pdf
+  title: Interrogation écrite n°14
 TD:
 - Corrigé:
     path: TDApplications.corrige.pdf
