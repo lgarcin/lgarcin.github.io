@@ -83,6 +83,9 @@ est bien une hypersphère. En effet, en posant $O=\Omega-\frac{1}{2}\vec n$ et $
 
 # Image des hyperplans et des hypersphères par une inversion
 
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/lgarcin/lgarcin.github.io/master?filepath=%2Fnotebooks%2FInversion.ipynb)
+
+
 Il est à peu près évident qu'un hyperplan est invariant par une inversion dont le centre appartient à cet hyperplan.
 
 De même, on montre facilement que l'image d'une hypersphère de centre $\Omega$ et de rayon $R$ non nul par l'inversion de centre $\Omega$ est l'hypersphère de centre $\Omega$ et de rayon $1/R$.
