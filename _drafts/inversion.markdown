@@ -52,6 +52,8 @@ Réciproquement, si $k\in\mathbb{R}$ et $\vec n$ est un vecteur non nul, l'ensem
 
 > Les ensembles d'équations $\overrightarrow{\Omega M}\cdot\vec n=k$, avec $\vec n$ un vecteur non nul et $k\in\mathbb{R}$, sont exactement les hyperplans affines de $E$.
 
+On peut remarquer que si $k=0$, l'hyperplan affine contient le point $\Omega$.
+
 ### Equation d'une hypersphère
 
 L'hypersphère $\mathcal{S}$ de centre $O$ et de rayon $R$ est l'ensemble des points $M$ vérifiant $OM^2=R^2$. En remarquant que $\overrightarrow{OM}=\overrightarrow{O\Omega}+\overrightarrow{\Omega M}$, ceci se réécrit via une identité remarquable
@@ -80,8 +82,44 @@ est bien une hypersphère. En effet, en posant $O=\Omega-\frac{1}{2}\vec n$ et $
 
 > Les ensembles d'équations $\Omega M^2+\overrightarrow{\Omega M}\cdot\vec n=k$, avec $\vec n$ un vecteur et $k\in\mathbb{R}$, sont exactement les hypersphères de $E$.
 
+On peut remarquer que si $k=0$, l'hypersphère contient le point $\Omega$.
 
-# Image des hyperplans et des hypersphères par une inversion
+# Image des hyperplans affines et des hypersphères par une inversion
+
+Dans tout ce paragraphe, on note $M'$ l'image d'un point $M$ distinct de $\Omega$ par l'inversion de centre $\Omega$.
+
+## Image d'un hyperplan affine
+
+On se donne un hyperplan affine $\mathcal{H}$ de $E$. Il existe donc un réel $k$ et un vecteur non nul $\vec n$ tel que $\mathcal{H}$ soit l'ensemble des points $M$ tels que $\overrightarrow{\Omega M}\cdot\vec n=k$.
+
+Ainsi, pour tout point $M$ distinct de $\Omega$,
+
+$$
+M\in\mathcal{H}\iff\frac{\overrightarrow{\Omega M}}{\Omega M^2}\cdot\vec n=\frac{k}{\Omega M^2}
+\iff\overrightarrow{\Omega M'}\cdot\vec n=k\Omega M'^2
+$$
+
+Si $k=0$, $\mathcal{H}$ est l'hyperplan affine passant par $\Omega$ et de vecteur normal $\vec n$ et l'image de $\mathcal{H}$ par l'inversion de centre $\Omega$ est ce même hyperplan affine $\mathcal{H}$.
+
+Si $k\neq0$, $\mathcal{H}$ est un hyperplan ne passant pas par $\Omega$ et l'image de $\mathcal{H}$ par l'inversion de centre $\Omega$ est l'ensemble des points $M'$ tels que
+
+$$
+\Omega M'^2+\overrightarrow{\Omega M'}\cdot\left(-\frac{1}{k}\vec n\right)=0
+$$
+
+c'est-à-dire une hypersphère passant par le point $\Omega$.
+
+## Image d'une hypersphère
+
+On se donne une hypersphère $\mathcal{S}$ de $E$. Il existe donc un réel $k$ et un vecteur $\vec n$ tel que $\mathcal{S}$ soit l'ensemble des points $M$ tels que $\Omega M^2+\overrightarrow{\Omega M}\cdot\vec n=k$.
+
+Ainsi, pour tout point $M$ distinct de $\Omega$,
+
+$$
+M\in\mathcal{S}\iff1+\frac{\overrightarrow{\Omega M}}{\Omega M^2}\cdot\vec n=\frac{k}{\Omega M^2}
+\iff1+\overrightarrow{\Omega M'}\cdot\vec n=k\Omega M'^2
+$$
+
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/lgarcin/lgarcin.github.io/master?filepath=%2Fnotebooks%2FInversion.ipynb)
 
