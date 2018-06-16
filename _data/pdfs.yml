@@ -273,6 +273,9 @@ DS:
   Enoncé:
     path: DS11.pdf
   title: DS11
+- Enoncé:
+    path: DS12.pdf
+  title: DS12
 Formulaires:
 - path: FormulaireComparaisonFonctions.pdf
   title: Comparaison de fonctions
