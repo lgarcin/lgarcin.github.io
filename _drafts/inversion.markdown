@@ -1,14 +1,14 @@
 ---
 layout: "post"
-title: "Inversion et inégalité de Ptolémée"
+title: "Inversion et théorème de Ptolémée"
 published: true
 ---
 
 # Définition d'une inversion
 
-On considère un espace affine euclidien $E$.
+On considère un espace affine euclidien $\mathcal{E}$.
 
-> Si $\Omega$ est un point de $E$, on appelle **inversion de centre $\Omega$** l'application qui à un point $M$ de $E$ distinct de $\Omega$ associe le point $M'$ tel que le vecteur $\overrightarrow{\Omega M'}$ soit colinéaire et de même sens que le vecteur $\overrightarrow{\Omega M}$ et de norme inverse de celle de $\overrightarrow{\Omega M}$.
+> Si $\Omega$ est un point de $\mathcal{E}$, on appelle **inversion de centre $\Omega$** l'application qui à un point $M$ de $\mathcal{E}$ distinct de $\Omega$ associe le point $M'$ tel que le vecteur $\overrightarrow{\Omega M'}$ soit colinéaire et de même sens que le vecteur $\overrightarrow{\Omega M}$ et de norme inverse de celle de $\overrightarrow{\Omega M}$.
 
 Autrement dit,
 
@@ -19,14 +19,33 @@ $$
 L'inversion de centre $\Omega$ est donc l'application
 
 $$
-M\in E\setminus\{\Omega\}\mapsto\Omega+\frac{\overrightarrow{\Omega M}}{\Omega M^2}
+M\in \mathcal{E}\setminus\{\Omega\}\mapsto\Omega+\frac{\overrightarrow{\Omega M}}{\Omega M^2}
 $$
 
-On constate immédiatement que l'inversion de centre $\Omega$ est une permutation de $E\setminus{\Omega}$ puisque c'est clairement une _involution_.
+On constate immédiatement que l'inversion de centre $\Omega$ est une permutation de $\mathcal{E}\setminus{\Omega}$ puisque c'est clairement une _involution_.
+
+On remarque également que si $M$ et $N$ sont de points de $\mathcal{E}$ distincts de $\Omega$ et $M'$ et $N'$ leurs images respectives par l'inversion de centre $\Omega$, alors
+
+$$
+\begin{align*}
+M'N'^2&=\left(\overrightarrow{\Omega N'}-\overrightarrow{\Omega M'}\right)^2\\
+&=\Omega M'^2+\Omega N'^2-2\overrightarrow{\Omega M'}\cdot\overrightarrow{\Omega N'}\\
+&=\frac{1}{\Omega M^2}+\frac{1}{\Omega N^2}-2\frac{\overrightarrow{\Omega M}\cdot\overrightarrow{\Omega N}}{\Omega M^2\cdot\Omega N^2}\\
+&=\frac{\Omega M^2+\Omega N^2-2\overrightarrow{\Omega M}\cdot\overrightarrow{\Omega N}}{\Omega M^2\cdot\Omega N^2}\\
+&=\frac{\left(\overrightarrow{\Omega N}-\overrightarrow{\Omega M}\right)^2}{\Omega M^2\cdot\Omega N^2}\\
+&=\frac{MN^2}{\Omega M^2\cdot\Omega N^2}
+\end{align*}
+$$
+
+et donc
+
+$$
+M'N'=\frac{MN}{\Omega M\cdot\Omega N}
+$$
 
 ### Formulation complexe
 
-Dans le cas où $E$ est le **plan complexe** $\mathbb{C}$ muni de sa structure euclidienne ususelle, l'inversion de centre $\omega$ est tout simplement l'application
+Dans le cas où $\mathcal{E}$ est le **plan complexe** $\mathbb{C}$ muni de sa structure euclidienne ususelle, l'inversion de centre $\omega$ est tout simplement l'application
 
 $$
 z\in\mathbb{C}\setminus\{\omega\}\mapsto\omega+\frac{z-\omega}{|z-\omega|^2}=\frac{1}{\overline{z-\omega}}
@@ -34,23 +53,23 @@ $$
 
 # Hypersphères et hyperplans
 
-On rappelle qu'un **hyperplan** affine est un sous-espace affine dont la direction est un hyperplan vectoriel, c'est-à-dire le noyau d'une forme linéaire. Si $E$ est de dimension $2$, un hyperplan affine est une droite affine et si $E$ est de dimension $3$, un hyperplan affine est un plan affine.
+On rappelle qu'un **hyperplan** affine est un sous-espace affine dont la direction est un hyperplan vectoriel, c'est-à-dire le noyau d'une forme linéaire. Si $\mathcal{E}$ est de dimension $2$, un hyperplan affine est une droite affine et si $\mathcal{E}$ est de dimension $3$, un hyperplan affine est un plan affine.
 
-On appelle **hypersphère** de centre $O\in E$ et de rayon $R\in\mathbb{R}_+$ l'ensemble des points équidistants situés à une distance $R$ de $0$, c'est-à-dire
+On appelle **hypersphère** de centre $O\in \mathcal{E}$ et de rayon $R\in\mathbb{R}_+$ l'ensemble des points équidistants situés à une distance $R$ de $0$, c'est-à-dire
 
 $$
-\left\{M\in E,\;OM=R\right\}
+\left\{M\in \mathcal{E},\;OM=R\right\}
 $$
 
-A noter que, si $E$ est de dimension $2$, alors une hypersphère est un cercle et, si $E$ est de dimension $3$, alors une hypersphère est une sphère.
+A noter que, si $\mathcal{E}$ est de dimension $2$, alors une hypersphère est un cercle et, si $\mathcal{E}$ est de dimension $3$, alors une hypersphère est une sphère.
 
 ### Equation d'un hyperplan
 
-Un hyperplan affine $\mathcal{H}$ passant par un point $O$ et de vecteur normal $\vec n$ est l'ensemble des points $M$ de $E$ vérifiant $\overrightarrow{OM}\cdot\vec n=0$. Ceci équivaut à $\overrightarrow{\Omega M}\cdot\vec n=k$ avec $k=\overrightarrow{\Omega O}\cdot\vec n$.
+Un hyperplan affine $\mathcal{H}$ contenant un point $O$ et de vecteur normal $\vec n$ est l'ensemble des points $M$ de $\mathcal{E}$ vérifiant $\overrightarrow{OM}\cdot\vec n=0$. Ceci équivaut à $\overrightarrow{\Omega M}\cdot\vec n=k$ avec $k=\overrightarrow{\Omega O}\cdot\vec n$.
 
-Réciproquement, si $k\in\mathbb{R}$ et $\vec n$ est un vecteur non nul, l'ensemble $\mathcal{H}$ des points $M$ de $E$ vérifiant $\overrightarrow{\Omega M}\cdot\vec n=k$ est bien un hyperplan de $E$. En effet, la forme linéaire $\varphi\colon\vec u\mapsto\vec u\cdot\vec n$ est non nulle puisque $\vec n$ ne l'est pas : elle est donc surjective. Il existe donc un vecteur $\vec u$ tel que $\vec u\cdot\vec n=k$. On vérifie alors aisément qu'en posant $O=\Omega+\vec u$, $\mathcal{H}=O+\operatorname{Ker}\varphi$.
+Réciproquement, si $k\in\mathbb{R}$ et $\vec n$ est un vecteur non nul, l'ensemble $\mathcal{H}$ des points $M$ de $\mathcal{E}$ vérifiant $\overrightarrow{\Omega M}\cdot\vec n=k$ est bien un hyperplan de $\mathcal{E}$. En effet, la forme linéaire $\varphi\colon\vec u\mapsto\vec u\cdot\vec n$ est non nulle puisque $\vec n$ ne l'est pas : elle est donc surjective. Il existe donc un vecteur $\vec u$ tel que $\vec u\cdot\vec n=k$. On vérifie alors aisément qu'en posant $O=\Omega+\vec u$, $\mathcal{H}=O+\operatorname{Ker}\varphi$.
 
-> Les ensembles d'équations $\overrightarrow{\Omega M}\cdot\vec n=k$, avec $\vec n$ un vecteur non nul et $k\in\mathbb{R}$, sont exactement les hyperplans affines de $E$.
+> Les ensembles d'équations $\overrightarrow{\Omega M}\cdot\vec n=k$, avec $\vec n$ un vecteur non nul et $k\in\mathbb{R}$, sont exactement les hyperplans affines de $\mathcal{E}$.
 
 On peut remarquer que si $k=0$, l'hyperplan affine contient le point $\Omega$.
 
@@ -70,7 +89,7 @@ $$
 
 en posant $\vec n=2\overrightarrow{O\Omega}$ et $k=R^2-O\Omega^2$.
 
-Réciproquement, si $k\in\mathbb{R}$ et $\vec n$ est un vecteur, l'ensemble $\mathcal{S}$ des points $M$ de $E$ vérifiant
+Réciproquement, si $k\in\mathbb{R}$ et $\vec n$ est un vecteur, l'ensemble $\mathcal{S}$ des points $M$ de $\mathcal{E}$ vérifiant
 
 $$
 \Omega M^2+\overrightarrow{\Omega M}\cdot\vec n=k
@@ -80,7 +99,7 @@ est bien une hypersphère. En effet, en posant $O=\Omega-\frac{1}{2}\vec n$ et $
 
 <!-- Problème : $R^2<0$ -->
 
-> Les ensembles d'équations $\Omega M^2+\overrightarrow{\Omega M}\cdot\vec n=k$, avec $\vec n$ un vecteur et $k\in\mathbb{R}$, sont exactement les hypersphères de $E$.
+> Les ensembles d'équations $\Omega M^2+\overrightarrow{\Omega M}\cdot\vec n=k$, avec $\vec n$ un vecteur et $k\in\mathbb{R}$, sont exactement les hypersphères de $\mathcal{E}$.
 
 On peut remarquer que si $k=0$, l'hypersphère contient le point $\Omega$.
 
@@ -90,101 +109,109 @@ Dans tout ce paragraphe, on note $M'$ l'image d'un point $M$ distinct de $\Omega
 
 ## Image d'un hyperplan affine
 
-On se donne un hyperplan affine $\mathcal{H}$ de $E$. Il existe donc un réel $k$ et un vecteur non nul $\vec n$ tel que $\mathcal{H}$ soit l'ensemble des points $M$ tels que $\overrightarrow{\Omega M}\cdot\vec n=k$.
+On se donne un hyperplan affine $\mathcal{H}$ de $\mathcal{E}$. Il existe donc un réel $k$ et un vecteur non nul $\vec n$ tel que $\mathcal{H}$ soit l'ensemble des points $M$ tels que $\overrightarrow{\Omega M}\cdot\vec n=k$.
 
 Ainsi, pour tout point $M$ distinct de $\Omega$,
 
 $$
-M\in\mathcal{H}\iff\frac{\overrightarrow{\Omega M}}{\Omega M^2}\cdot\vec n=\frac{k}{\Omega M^2}
-\iff\overrightarrow{\Omega M'}\cdot\vec n=k\Omega M'^2
+\begin{align*}
+M\in\mathcal{H}&\iff\overrightarrow{\Omega M}\cdot\vec n=k\\
+&\iff\frac{\overrightarrow{\Omega M}}{\Omega M^2}\cdot\vec n=\frac{k}{\Omega M^2}\\
+&\iff\overrightarrow{\Omega M'}\cdot\vec n=k\Omega M'^2
+\end{align*}
 $$
 
-Si $k=0$, $\mathcal{H}$ est l'hyperplan affine passant par $\Omega$ et de vecteur normal $\vec n$ et l'image de $\mathcal{H}$ par l'inversion de centre $\Omega$ est ce même hyperplan affine $\mathcal{H}$.
+Si $k=0$, $\mathcal{H}$ est l'hyperplan affine contenant $\Omega$ et de vecteur normal $\vec n$ et son image par l'inversion de centre $\Omega$ est ce même hyperplan affine $\mathcal{H}$.
 
-Si $k\neq0$, $\mathcal{H}$ est un hyperplan ne passant pas par $\Omega$ et l'image de $\mathcal{H}$ par l'inversion de centre $\Omega$ est l'ensemble des points $M'$ tels que
+Si $k\neq0$, $\mathcal{H}$ est un hyperplan affine ne contenant pas $\Omega$ et son image par l'inversion de centre $\Omega$ est l'ensemble des points $M'$ tels que
 
 $$
 \Omega M'^2+\overrightarrow{\Omega M'}\cdot\left(-\frac{1}{k}\vec n\right)=0
 $$
 
-c'est-à-dire une hypersphère passant par le point $\Omega$.
+c'est-à-dire une hypersphère contenant $\Omega$.
+
+<!-- Hyperplans et hypersphères privés de $\Omega$ -->
+
 
 ## Image d'une hypersphère
 
-On se donne une hypersphère $\mathcal{S}$ de $E$. Il existe donc un réel $k$ et un vecteur $\vec n$ tel que $\mathcal{S}$ soit l'ensemble des points $M$ tels que $\Omega M^2+\overrightarrow{\Omega M}\cdot\vec n=k$.
+On se donne une hypersphère $\mathcal{S}$ de $\mathcal{E}$. Il existe donc un réel $k$ et un vecteur $\vec n$ tel que $\mathcal{S}$ soit l'ensemble des points $M$ tels que $\Omega M^2+\overrightarrow{\Omega M}\cdot\vec n=k$.
 
 Ainsi, pour tout point $M$ distinct de $\Omega$,
 
 $$
-M\in\mathcal{S}\iff1+\frac{\overrightarrow{\Omega M}}{\Omega M^2}\cdot\vec n=\frac{k}{\Omega M^2}
-\iff1+\overrightarrow{\Omega M'}\cdot\vec n=k\Omega M'^2
+\begin{align*}
+M\in\mathcal{S}&\iff\Omega M^2+\overrightarrow{\Omega M}\cdot\vec n=k\\
+&\iff1+\frac{\overrightarrow{\Omega M}}{\Omega M^2}\cdot\vec n=\frac{k}{\Omega M^2}\\
+&\iff1+\overrightarrow{\Omega M'}\cdot\vec n=k\Omega M'^2
+\end{align*}
 $$
 
+Si $k=0$, $\mathcal{S}$ est une hypersphère contenant $\Omega$ et son image par l'inversion de centre $\Omega$ est un hyperplan affine ne contenant pas $\Omega$.
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/lgarcin/lgarcin.github.io/master?filepath=%2Fnotebooks%2FInversion.ipynb)
+Si $k\neq0$, $\mathcal{S}$ est une hypersphère ne contenant pas $\Omega$ et son image par l'inversion de centre $\Omega$ est l'ensemble des points $M'$ tels que
+
+$$
+\Omega M'^2+\overrightarrow{\Omega M'}\cdot\left(-\frac{1}{k}\vec n\right)=\frac{1}{k}
+$$
+
+c'est-à-dire une hypersphère ne contenant pas $\Omega$.
+
+<!-- Hyperplans et hypersphères privés de $\Omega$ -->
 
 
-Il est à peu près évident qu'un hyperplan est invariant par une inversion dont le centre appartient à cet hyperplan.
+## Simulation
 
-De même, on montre facilement que l'image d'une hypersphère de centre $\Omega$ et de rayon $R$ non nul par l'inversion de centre $\Omega$ est l'hypersphère de centre $\Omega$ et de rayon $1/R$.
+On peut se convaincre de ces résultats à l'aide de [scripts Python][bc821efa].
+<!-- Mettre en relief -->
 
+# Inégalité de Ptolémée
 
-Le phénomène est en fait plus général. L'image d'un hyperplan par une inversion de centre n'appartenant pas à cet hyperplan est une hypersphère.
+On se place maintenant dans le cas où $\mathcal{E}$ est un *plan* affine euclidien.
 
-On peut du moins s'en convaincre en dimension $2$, à l'aide d'un script Python. On utilise la formulation en termes de complexes d'une inversion.
+* L'image d'une droite $\mathcal{D}$ par l'inversion de centre $\Omega$ est donc un cercle passant par $\Omega$ si $\mathcal{D}$ ne passe pas par $\Omega$ et $\mathcal{D}$ elle-même sinon.
+* De même, l'image d'un cercle $\mathcal{C}$ par l'inversion de centre $\Omega$ est un cercle ne passant pas par $\Omega$ si $\mathcal{C}$ ne passe pas par $\Omega$ et une droite ne passant pas par $\Omega$ sinon.
 
-```python
-from numpy import linspace, logspace, concatenate
-from matplotlib.pyplot import plot, show, axis, xlim, ylim, grid, legend
-vec = 3 + 1j
-pt = 1 + 1j
-l = logspace(-10, 1, 1000)
-l = concatenate((-l[::-1], l))
-droite = vec * l + pt
-image = 1. / droite.conjugate()
-axis('equal')
-xlim([-1, 2])
-ylim([-1, 2])
-grid()
-plot(droite.real, droite.imag, label='droite')
-plot(image.real, image.imag, label='image')
-legend()
-show()
-```
+On considère quatre points $A$, $B$, $C$ et $D$ deux à deux distincts de l'espace affine $\mathcal{E}$. On note $A'$, $B'$ et $C'$ les images des points $A$, $B$ et $C$ par l'inversion de centre $D$.
 
-```python
-from numpy import linspace, exp, pi
-from matplotlib.pyplot import plot, show, axis, xlim, ylim, grid, legend
-centre = 1 + 1j
-rayon = 2
-cercle = centre + rayon * exp(1j * linspace(-pi, pi, 1000))
-image = 1. / cercle.conjugate()
-axis('equal')
-xlim([-1, 2])
-ylim([-2, 4])
-grid()
-plot(cercle.real, cercle.imag, label='cercle')
-plot(image.real, image.imag, label='image')
-legend()
-show()
-```
+Remarquons que
 
-```python
-from numpy import linspace, exp, pi, sqrt
-from matplotlib.pyplot import plot, show, axis, xlim, ylim, grid, legend
-centre = 1 + 1j
-rayon = sqrt(2)
-cercle = centre + rayon * exp(1j * linspace(-pi + pi/4, pi + pi/4, 1000))
-image = 1. / cercle.conjugate()
-axis('equal')
-xlim([-1, 2])
-ylim([-2, 4])
-grid()
-plot(cercle.real, cercle.imag, label='cercle')
-plot(image.real, image.imag, label='image')
-legend()
-show()
-```
+$$
+\begin{align*}
+A'B'&=\frac{AB}{AD\cdot BD}
+&
+B'C'&=\frac{BC}{BD\cdot CD}
+&
+A'C'&=\frac{AC}{AD\cdot CD}
+\end{align*}
+$$
 
+Par inégalité triangulaire
+
+$$
+\frac{AC}{AD\cdot CD}=A'C'\leq A'B'+B'C'=\frac{AB}{AD\cdot BD}+\frac{BC}{BD\cdot CD}
+$$
+
+ou encore
+
+$$
+AC\cdot BD\leq AB\cdot CD+AD\cdot BC
+$$
+
+## Cas d'égalité
+
+Le cas d'égalité dans l'inégalité précente se produit si et seulement si $A'C'=A'B'+B'C'$ autrement dit si et seulement si $A'$, $B'$ et $C'$ sont alignés dans cet ordre.
+
+Si $A'$, $B'$ et $C'$ sont alignés dans cet ordre mais non alignés avec $D$, leurs images par l'inversion de centre $D$, à savoir les points $A$, $B$ et $C$ (car l'inversion est une involution), sont placés sur un cercle $\mathcal{C}$ passant par $D$. De plus, l'inversion de centre $D$ est continue sur $\mathcal{E}\setminus\{D\}$ donc l'image d'une partie connexe par arcs est connexe par arcs. Notamment l'image de $[A'C']$ par l'inversion de centre $D$ est l'arc du cercle $\mathcal{C}$ d'extrémités $A$ et $C$ ne contenant pas $D$ ($D$ n'est pas dans l'image de l'inversion). Puisque $B'$ appartient à $[A'C']$, $B$ appartient à cet arc de cercle. Finalement, $A$, $B$, $C$ et $D$ sont cocycliques dans cet ordre.
+
+Si les points $A'$, $B'$ et $C'$ sont alignés dans cet ordre avec $D$ une droite $\mathcal{D}$, leurs images, à savoir les poins $A$, $B$ et $C$, sont également alignés dans cet ordre avec $D$ sur cette même droite $\mathcal{D}$.
+
+Réciproquement, supposons que $A$, $B$, $C$, $D$ soient cocycliques dans cet ordre. Alors $A'$, $B'$ et $C'$ sont alignés et le même argument de connexité montre qu'il sont alignés dans cet ordre.
 
 <!-- Dispositif de Peaucellier-Lipkin : faire une animation GeoGebra -->
+
+<!-- Hyperplan = hypersphère de rayon infini -->
+
+
+  [bc821efa]: https://www.kaggle.com/lgarcin/inversion/edit "Inversion"
