@@ -201,17 +201,30 @@ $$
 
 ## Cas d'égalité
 
-Le cas d'égalité dans l'inégalité précente se produit si et seulement si $A'C'=A'B'+B'C'$ autrement dit si et seulement si $A'$, $B'$ et $C'$ sont alignés dans cet ordre.
+Le cas d'égalité dans l'inégalité précédente se produit si et seulement si $A'C'=A'B'+B'C'$ autrement dit si et seulement si $A'$, $B'$ et $C'$ sont alignés dans cet ordre.
 
-Si $A'$, $B'$ et $C'$ sont alignés dans cet ordre mais non alignés avec $D$, leurs images par l'inversion de centre $D$, à savoir les points $A$, $B$ et $C$ (car l'inversion est une involution), sont placés sur un cercle $\mathcal{C}$ passant par $D$. De plus, l'inversion de centre $D$ est continue sur $\mathcal{E}\setminus\{D\}$ donc l'image d'une partie connexe par arcs est connexe par arcs. Notamment l'image de $[A'C']$ par l'inversion de centre $D$ est l'arc du cercle $\mathcal{C}$ d'extrémités $A$ et $C$ ne contenant pas $D$ ($D$ n'est pas dans l'image de l'inversion). Puisque $B'$ appartient à $[A'C']$, $B$ appartient à cet arc de cercle. Finalement, $A$, $B$, $C$ et $D$ sont cocycliques dans cet ordre.
+#### Cas de cocyclicité
 
-Si les points $A'$, $B'$ et $C'$ sont alignés dans cet ordre avec $D$ une droite $\mathcal{D}$, leurs images, à savoir les poins $A$, $B$ et $C$, sont également alignés dans cet ordre avec $D$ sur cette même droite $\mathcal{D}$.
+Si $A'$, $B'$ et $C'$ sont alignés dans cet ordre mais non alignés avec $D$, alors leurs images par l'inversion de centre $D$, à savoir les points $A$, $B$ et $C$ (car l'inversion est une involution), sont placés sur un cercle $\mathcal{C}$ passant par $D$. De plus, l'inversion de centre $D$ est continue sur $\mathcal{E}\setminus\{D\}$ donc l'image d'une partie connexe par arcs est connexe par arcs. Notamment l'image de $[A'C']$ par l'inversion de centre $D$ est l'arc du cercle $\mathcal{C}$ d'extrémités $A$ et $C$ ne contenant pas $D$ ($D$ n'est pas dans l'image de l'inversion). Puisque $B'$ appartient à $[A'C']$, $B$ appartient à cet arc de cercle. Finalement, $A$, $B$, $C$ et $D$ sont cocycliques dans cet ordre.
 
-Réciproquement, supposons que $A$, $B$, $C$, $D$ soient cocycliques dans cet ordre. Alors $A'$, $B'$ et $C'$ sont alignés et le même argument de connexité montre qu'il sont alignés dans cet ordre.
+Réciproquement, supposons que $A$, $B$, $C$, $D$ soient cocycliques dans cet ordre. Alors $A'$, $B'$ et $C'$ sont alignés et le même argument de connexité montre qu'ils sont alignés dans cet ordre.
+
+#### Cas d'alignement
+
+Si les points $A'$, $B'$ et $C'$ sont alignés dans cet ordre avec $D$ sur une droite $\mathcal{D}$, alors leurs images, à savoir les points $A$, $B$ et $C$, sont également alignés dans cet ordre avec $D$ sur cette même droite $\mathcal{D}$.
+
+
+#### Conclusion
+
+Finalement, le cas d'égalité dans l'inégalité de Ptolémée ne se produit que dans les deux cas suivants :
+
+* $A$, $B$, $C$ et $D$ sont cocycliques dans cet ordre ;
+
+* $A$, $B$, $C$, $D$ sont alignés dans l'ordre $A-B-C-D$ ou $D-A-B-C$.
 
 <!-- Dispositif de Peaucellier-Lipkin : faire une animation GeoGebra -->
 
-<!-- Hyperplan = hypersphère de rayon infini -->
+<!-- Hyperplan = hypersphère de rayon infini : ça explique les deux ordres dans le cas d'alignement -->
 
 
   [bc821efa]: https://www.kaggle.com/lgarcin/inversion/edit "Inversion"
