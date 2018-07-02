@@ -231,21 +231,24 @@ Finalement, le cas d'égalité dans l'inégalité de Ptolémée ne se produit qu
 
 # Points à l'infini
 
-Intuitivement, un hyperplan affine peut être vu comme une sphère de rayon infini. Les hyperplans affines peuvent alors être vus comme des cas particuliers d'hypersphères.
-
-Notamment, on peut donner une équation générique d'hyperplan/hypersphère :
+On peut regrouper les équations d'hyperplan et d'hypersphère en une seule équation générique.
 
 $$
 \alpha\Omega M^2+\overrightarrow{\Omega M}\cdot\vec n=k
 $$
 
-avec $\alpha$, $\vec n$ et $k$ non tous trois nuls. En notant $M'$ l'image du point $M$ par l'inversion de centre $\Omega$, cette équation équivaut à
+avec $\alpha$, $\vec n$ et $k$ non tous trois nuls. Lorsque $\alpha=0$, on retrouve une équation d'hyperplan et lorsque $\alpha\neq0$, une équation d'hypersphère.
+
+
+En notant $M'$ l'image du point $M$ par l'inversion de centre $\Omega$, cette équation équivaut à
 
 $$
 k\Omega M'^2-\overrightarrow{\Omega M'}\cdot\vec n=\alpha
 $$
 
 On retrouve bien le fait que l'image d'un hyperplan/hypersphère est bien un hyperplan/hypersphère.
+
+Intuitivement, un hyperplan affine peut être vu comme une sphère de rayon infini. Les hyperplans affines peuvent alors être vus comme des cas particuliers d'hypersphères.
 
 
 
