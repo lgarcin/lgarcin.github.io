@@ -164,7 +164,9 @@ c'est-à-dire une hypersphère ne contenant pas $\Omega$.
 ## Simulation
 
 On peut se convaincre de ces résultats à l'aide de [scripts Python][bc821efa].
-<!-- Mettre en relief -->
+
+Il s'agit en fait de *notebooks* [Jupyter][aab9dd5e] éditables.
+
 
 # Inégalité de Ptolémée
 
@@ -205,13 +207,15 @@ Le cas d'égalité dans l'inégalité précédente se produit si et seulement si
 
 #### Cas de cocyclicité
 
-Si $A'$, $B'$ et $C'$ sont alignés dans cet ordre mais non alignés avec $D$, alors leurs images par l'inversion de centre $D$, à savoir les points $A$, $B$ et $C$ (car l'inversion est une involution), sont placés sur un cercle $\mathcal{C}$ passant par $D$. De plus, l'inversion de centre $D$ est continue sur $\mathcal{E}\setminus\{D\}$ donc l'image d'une partie connexe par arcs est connexe par arcs. Notamment l'image de $[A'C']$ par l'inversion de centre $D$ est l'arc du cercle $\mathcal{C}$ d'extrémités $A$ et $C$ ne contenant pas $D$ ($D$ n'est pas dans l'image de l'inversion). Puisque $B'$ appartient à $[A'C']$, $B$ appartient à cet arc de cercle. Finalement, $A$, $B$, $C$ et $D$ sont cocycliques dans cet ordre.
+Si $A'$, $B'$ et $C'$ sont alignés dans cet ordre mais non alignés avec $D$, alors leurs images par l'inversion de centre $D$, à savoir les points $A$, $B$ et $C$ (car l'inversion est une involution), sont placées sur un cercle $\mathcal{C}$ passant par $D$. De plus, l'inversion de centre $D$ est continue sur $\mathcal{E}\setminus\{D\}$ donc l'image d'une partie connexe par arcs est connexe par arcs. Notamment l'image de $[A'C']$ par l'inversion de centre $D$ est une partie connexe par arcs du cercle $\mathcal{C}$. Comme l'inversion de centre $D$ est également injective[^arc_cercle], il s'agit de l'arc du cercle $\mathcal{C}$ d'extrémités $A$ et $C$ ne contenant pas $D$ ($D$ n'est pas dans l'image de l'inversion). Puisque $B'$ appartient à $[A'C']$, $B$ appartient à cet arc de cercle. Finalement, $A$, $B$, $C$ et $D$ sont cocycliques dans cet ordre.
 
-Réciproquement, supposons que $A$, $B$, $C$, $D$ soient cocycliques dans cet ordre. Alors $A'$, $B'$ et $C'$ sont alignés et le même argument de connexité montre qu'ils sont alignés dans cet ordre.
+Réciproquement, supposons que $A$, $B$, $C$, $D$ soient cocycliques dans cet ordre. Alors $A'$, $B'$ et $C'$ sont alignés et le même argument de connexité et d'injectivité que précédemment montre qu'ils sont alignés dans cet ordre.
 
 #### Cas d'alignement
 
-Si les points $A'$, $B'$ et $C'$ sont alignés dans cet ordre avec $D$ sur une droite $\mathcal{D}$, alors leurs images, à savoir les points $A$, $B$ et $C$, sont également alignés dans cet ordre avec $D$ sur cette même droite $\mathcal{D}$.
+Si les points $A'$, $B'$ et $C'$ sont alignés dans cet ordre avec $D$ sur une droite $\mathcal{D}$, alors leurs images, à savoir les points $A$, $B$ et $C$, sont également alignées sur cette même droite $\mathcal{D}$. Remarquons alors que les points $A$, $B$ et $C$ sont tous sur la même demi-droite issue de $D$ et alignés dans cet ordre.
+
+Evidemment, puisque l'inversion de centre $D$ est une involution, la réciproque est égalemement vraie : si $A$,$B$ et $C$ sont alignés dans cet ordre sur une même demi-droite issue de $D$, alors il en est de même des points $A'$, $B'$ et $C'$.
 
 
 #### Conclusion
@@ -224,7 +228,39 @@ Finalement, le cas d'égalité dans l'inégalité de Ptolémée ne se produit qu
 
 <!-- Dispositif de Peaucellier-Lipkin : faire une animation GeoGebra -->
 
-<!-- Hyperplan = hypersphère de rayon infini : ça explique les deux ordres dans le cas d'alignement -->
 
+# Points à l'infini
+
+Intuitivement, un hyperplan affine peut être vu comme une sphère de rayon infini. Les hyperplans affines peuvent alors être vus comme des cas particuliers d'hypersphères.
+
+Notamment, on peut donner une équation générique d'hyperplan/hypersphère :
+
+$$
+\alpha\Omega M^2+\overrightarrow{\Omega M}\cdot\vec n=k
+$$
+
+avec $\alpha$, $\vec n$ et $k$ non tous trois nuls. En notant $M'$ l'image du point $M$ par l'inversion de centre $\Omega$, cette équation équivaut à
+
+$$
+k\Omega M'^2-\overrightarrow{\Omega M'}\cdot\vec n=\alpha
+$$
+
+On retrouve bien le fait que l'image d'un hyperplan/hypersphère est bien un hyperplan/hypersphère.
+
+
+
+
+
+<!-- Hyperplan = hypersphère de rayon infini : ça explique les deux ordres dans le cas d'alignement -->
+<!-- Blabla sur compactifié d'Alexandrov -->
+
+
+---
+
+##### Notes
 
   [bc821efa]: https://www.kaggle.com/lgarcin/inversion/edit "Inversion"
+
+  [aab9dd5e]: http://jupyter.org/ "Jupyter"
+
+  [^arc_cercle]: Plus précisément, la composée de l'application $t\in[0,1]\mapsto(1-t)A+tB$ (chemin décrivant le segment $[AB]$) par l'inversion de centre $D$ est injective : elle ne prend donc qu'une fois les valeurs $A'$ et $B'$, respectivement en $0$ et $1$.
