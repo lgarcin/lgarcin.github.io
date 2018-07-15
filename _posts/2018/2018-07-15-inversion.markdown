@@ -1,6 +1,6 @@
 ---
-layout: "post"
-title: "Inversion et théorème de Ptolémée"
+layout: post
+title: Inversion et théorème de Ptolémée
 published: true
 ---
 
@@ -201,7 +201,7 @@ $$
 AC\cdot BD\leq AB\cdot CD+AD\cdot BC
 $$
 
-## Cas d'égalité
+## <a name="egalite"></a> Cas d'égalité
 
 Le cas d'égalité dans l'inégalité précédente se produit si et seulement si $A'C'=A'B'+B'C'$ autrement dit si et seulement si $A'$, $B'$ et $C'$ sont alignés dans cet ordre.
 
@@ -213,7 +213,7 @@ Réciproquement, supposons que $A$, $B$, $C$, $D$ soient cocycliques dans cet or
 
 #### Cas d'alignement
 
-Si les points $A'$, $B'$ et $C'$ sont alignés dans cet ordre avec $D$ sur une droite $\mathcal{D}$, alors leurs images, à savoir les points $A$, $B$ et $C$, sont également alignées sur cette même droite $\mathcal{D}$. Remarquons alors que les points $A$, $B$ et $C$ sont tous sur la même demi-droite issue de $D$ et alignés dans cet ordre.
+Si les points $A'$, $B'$ et $C'$ sont alignés dans cet ordre avec $D$ sur une droite $\mathcal{D}$, alors leurs images, à savoir les points $A$, $B$ et $C$, sont également alignées sur cette même droite $\mathcal{D}$. Remarquons alors que les points $A$, $B$ et $C$ sont tous sur la même demi-droite issue de $D$ et alignés dans cet ordre. En effet, si $A$ et $B$ étaient par exemple sur une même demi-droite issue de $D$ et $C$ sur l'autre demi-droite issue de $D$, $A'$ et $B'$ resteraient sur la même demi-droite issue de $D$, mais dans un ordre inverse, et $C'$ resterait également sur la même demi-droite issue de $D$ : les points $A'$, $B'$ et $C'$ seraient alors alignés sur la même droite mais pas dans cet ordre.
 
 Evidemment, puisque l'inversion de centre $D$ est une involution, la réciproque est égalemement vraie : si $A$,$B$ et $C$ sont alignés dans cet ordre sur une même demi-droite issue de $D$, alors il en est de même des points $A'$, $B'$ et $C'$.
 
@@ -229,7 +229,7 @@ Finalement, le cas d'égalité dans l'inégalité de Ptolémée ne se produit qu
 <!-- Dispositif de Peaucellier-Lipkin : faire une animation GeoGebra -->
 
 
-# Points à l'infini
+# Point à l'infini
 
 On peut regrouper les équations d'hyperplan et d'hypersphère en une seule équation générique.
 
@@ -248,15 +248,11 @@ $$
 
 On retrouve bien le fait que l'image d'un hyperplan/hypersphère est bien un hyperplan/hypersphère.
 
-Intuitivement, un hyperplan affine peut être vu comme une sphère de rayon infini. Les hyperplans affines peuvent alors être vus comme des cas particuliers d'hypersphères.
+On peut même aller plus loin dans ce rapprochement entre hypersphères et hyperplans. En effet, un hyperplan peut-être vu comme un cas particulier d'hypersphère quitte à rajouter à l'espace affine $\mathcal{E}$ un **point à l'infini** : un hyperplan est alors une hypersphère de rayon infini passant par ce point à l'infini.
 
+En notant $\infty$ ce point à l'infini, on peut étendre l'inversion $I_\Omega$ de centre $\Omega\in\mathcal{E}$ -- a priori définie sur $\mathcal{E}\setminus\{\Omega\}$ -- en une involution de $\hat{\mathcal{E}}=\mathcal{E}\sqcup\{\infty\}$ en posant $I_\Omega(\Omega)=\infty$ et $I_\Omega(\infty)=\Omega$. Encore mieux, en munissant $\hat{\mathcal{E}}$ d'une topologie adéquate [^alexandrov], toute inversion est alors **continue**. Les arguments de connexité utilisés précédemment fonctionnent alors encore : les images de points alignés ou cocycliques dans un certain ordre restent alignés ou cocycliques dans ce même odre -- y compris lorsque l'un des points ou son image est le point à l'infini.
 
-
-
-
-<!-- Hyperplan = hypersphère de rayon infini : ça explique les deux ordres dans le cas d'alignement -->
-<!-- Blabla sur compactifié d'Alexandrov -->
-
+La preuve du [cas d'égalité](#egalite) dans l'inégalité de Ptolémée se trouve alors simplifiée. Si $A'$, $B'$ et $C'$ sont alignés dans cet ordre, on peut également affirmer que $A'$, $B'$, $C'$ et $\infty$ sont également "alignés dans cet ordre". Leurs images par l'inversion de centre $D$, à savoir les points $A$, $B$, $C$ et $D$ sont alors cocycliques ou alignés dans cet ordre[^ordre]. L'inversion de centre $D$ étant une involution, la réciproque est quasi-automatique.
 
 ---
 
@@ -267,3 +263,10 @@ Intuitivement, un hyperplan affine peut être vu comme une sphère de rayon infi
   [aab9dd5e]: http://jupyter.org/ "Jupyter"
 
   [^arc_cercle]: Plus précisément, la composée de l'application $t\in[0,1]\mapsto(1-t)A+tB$ (chemin décrivant le segment $[AB]$) par l'inversion de centre $D$ est injective : elle ne prend donc qu'une fois les valeurs $A'$ et $B'$, respectivement en $0$ et $1$.
+
+  [^alexandrov]: On ajoute à la topologie de $\mathcal{E}$ les parties obtenues comme complémentaires de compacts de $\mathcal{E}$, auxquelles on adjoint le point $\infty$ : muni de cette topologie, l'espace $\hat{\mathcal{E}}$ porte le nom de *compactifié d'Alexandrov* de $\mathcal{E}$. Comme son nom l'indique, il est bien compact.
+
+  [^ordre]: Il faut néanmoins remarquer que toute droite se "referme à l'infini" en un cercle : dire que $A$, $B$, $C$, $D$ sont alignés sur une droite *dans cet ordre* signifie que les ponts $A$, $B$, $C$ et $D$ sont alignés au sens usuel dans l'ordre $A-B-C-D$ ou $D-A-B-C$.
+
+
+<!-- TODO Rajouter des dessins -->
