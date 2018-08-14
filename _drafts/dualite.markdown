@@ -10,12 +10,22 @@ La dualité est le lien qui existe entre un $\dK$-espace vectoriel $E$ et son es
 ## Base duale
 ---
 
+Etant donné une base d'un espace vectoriel de dimension finie, il existe une manière élémentaire de contruire une base de l'espace dual à partir de celle-ci.
+
 **Définition [Base duale]**
 Soient $E$ un espace de dimension finie et une base $(e_1,\dots,e_n)$ de $E$. Pour tout $i\in\lb1,n\rb$, on note $e_i^\star$ l'unique forme linéaire sur $E$ telle que $e_i^\star(e_j)=\delta_{i,j}$ pour tout $j\in\lb1,n\rb$.<br/>
 La famille $(e_1^\star,\dots,e_n^\star)$ est une base de $E^\star$ appelée **base duale** de la base $(e_1,\dots,e_n)$.
 
 *Preuve.*
 Puisque $\dim E^\star=\dim E=n$, il suffit de montrer que cette famille est libre. Si l'on se donne $(\lambda_1,\dots,\lambda_n)\in\dK^n$ tel que $\sum_{i=1}^n\lambda_ie_i^\star=0$, on obtient $\lambda_j=0$ pour chaque $j\in\lb1,n\rb$ en évaluant l'égalité précédente en $e_j$. &#x2b1b;
+
+<!-- Donner un exemple -->
+
+Les éléments de la base duale portent aussi le nom de _formes linéaires coordonnées_. Si l'espace $E$ est de dimension infinie et possède une base $(e_i)_{i\in I}$, on peut encore construire la famille des formes coordonnées $(e_i^\star)_{i\in I}$ mais cette famille n'est plus forcément une base de $E^\star$. On prouve aisément comme précédemment que cette famille est libre mais on ne peut plus utiliser l'argument de dimension pour en conclure que c'est une base.
+
+Par exemple, les formes linéaires coordonnées associées à la base canonique de $\dK[X]$ sont les formes linéaires $\va_k\colon P\in\dK[X]\mapsto\frac{P^{(k)}(0)}{k!}$. Ces formes linéaires ne forment pas une base du dual de $\dK[X]$. En effet, la forme linéaire $P\in\dK[X]\mapsto$
+
+**Définition [Base antéduale]**
 
 Base antéduale, polynômes interpolateurs de Lagrange
 

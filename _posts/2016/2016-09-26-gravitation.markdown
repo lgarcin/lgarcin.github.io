@@ -6,22 +6,27 @@ published: true
 
 ### Description du problème
 
-On considère un système de corps de masses $m_i$ et de positions $\mathbf{r}_i$ soumis à la gravitation. D'après le principe fondamental de la dynamique
+On considère un système de corps de masses $m_i$ et de positions $\\mathbf{r}\_i$ soumis à la gravitation. D'après le principe fondamental de la dynamique
 
-$\ddot{\mathbf{r}}_i=\sum_{j\neq i}\frac{Gm_j}{\|\mathbf{r}_j-\mathbf{r}_i\|^3}(\mathbf{r}_j-\mathbf{r}_i)$
+$$
+\ddot{\mathbf{r}}_i=\sum_{j\neq i}\frac{Gm_j}{\|\mathbf{r}_j-\mathbf{r}_i\|^3}(\mathbf{r}_j-\mathbf{r}_i)
+$$
 
 Dans le cas où le système est formé de deux corps, on sait résoudre explicitement ce système d'équations différentielles. Dans le cas contraire, on est obligé de faire appel à des méthodes de résolution approchée : on emploiera ici la méthode d'Euler qui est une méthode bien connue de résolution numérique d'équations différentielles par discrétisation du temps.
 
 On sait par ailleurs que la force gravitationnelle dérive d'un potentiel : plus précisément, l'énergie potentielle du système est :
 
-$E_p=\frac{1}{2}\sum_{i\neq j}\frac{Gm_im_j}{\|\mathbf{r}_j-\mathbf{r}_i\|}$
+$$
+E_p=\frac{1}{2}\sum_{i\neq j}\frac{Gm_im_j}{\|\mathbf{r}_j-\mathbf{r}_i\|}
+$$
 
-Le facteur $\frac{1}{2}$ provient du fait que chaque paire de corps intervient deux fois dans la somme. Enfin, il est clair que l'énergie cinétique du système est :
+Le facteur $\\frac{1}{2}$ provient du fait que chaque paire de corps intervient deux fois dans la somme. Enfin, il est clair que l'énergie cinétique du système est :
 
-$E_c=\frac{1}{2}\sum_im_i\|\dot{\mathbf{r}}_i\|^2$
+$$
+E_c=\frac{1}{2}\sum_im_i\|\dot{\mathbf{r}}_i\|^2
+$$
 
 L'énergie totale du système est $E=E_p+E_c$.
-
 
 ### La méthode d'Euler
 
@@ -30,11 +35,10 @@ On se contente d'exposer cette méthode dans le cadre des équations différenti
 Pour résoudre de manière approchée le système de Cauchy
 
 $$
-\left\lbrace \begin{aligned}y'&=f(y)\\y(t_0)&=y_0\end{aligned}\right.
+\left\lbrace\begin{aligned}y'&=f(y)\\y(t_0)&=y_0\end{aligned}\right.
 $$
 
-on fixe un intervalle
-de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps $t_n=t_0+n\Delta t$ en utilisant la relation de récurrence
+on fixe un intervalle de temps $\Delta t$ et on calcule des valeurs approchées $y_n$ de $y$ aux temps $t_n=t_0+n\Delta t$ en utilisant la relation de récurrence
 
 $$
 y_{n+1}=y_n+f(y_n)\Delta t
@@ -45,31 +49,30 @@ Evidemment, l'erreur d'approximation augmente avec $n$ puisqu'on utilise à chaq
 En posant $\mathbf{R}=(\mathbf{r}_i)_i$, le système différentiel de notre problème peut s'écrire sous la forme $\ddot{\mathbf{R}}=f(\mathbf{R})$ et on se ramène classiquement à une équation différentielle d'ordre 1 en posant $y=(\mathbf{R},\dot{\mathbf{R}})$. La méthode d'Euler décrite précédemment nous amène alors à calculer des valeurs approchées de $\mathbf{R}$ en utilisant les relations de récurrence
 
 $$
-\left\lbrace \begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_n)\Delta t\end{aligned}\right.
+\left\lbrace\begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_n)\Delta t\end{aligned}\right.
 $$
 
-Malheureusement, cette méthode n'est pas stable numériquement : l'erreur augmente très rapidement avec $n$. On utilise donc une variante de la méthode d'Euler appelée méthode d'Euler *asymétrique*. Cette méthode est adaptée aux systèmes conservatifs comme celui que nous étudions (la force gravitationnelle dérive d'un potentiel). Le schéma de récurrence est alors le suivant.
+Malheureusement, cette méthode n'est pas stable numériquement : l'erreur augmente très rapidement avec $n$. On utilise donc une variante de la méthode d'Euler appelée méthode d'Euler _asymétrique_. Cette méthode est adaptée aux systèmes conservatifs comme celui que nous étudions (la force gravitationnelle dérive d'un potentiel). Le schéma de récurrence est alors le suivant.
 
 $$
-\left\lbrace \begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_{n+1})\Delta t\end{aligned}\right.
+\left\lbrace\begin{aligned}\mathbf{R}_{n+1}&=\dot{\mathbf{R}}_n\Delta t\\\dot{\mathbf{R}}_{n+1}&=f(\mathbf{R}_{n+1})\Delta t\end{aligned}\right.
 $$
 
 Méthode d'Euler classique :
 
-* on calcule les accélérations à partir des positions au temps $t_n$ ;
-* on calcule les positions au temps $t_{n+1}$ à partir des vitesses aux temps $t_n$ ;
-* on calcule les vitesses au temps $t_{n+1}$ à partir des accélérations précédemment calculées.
+-   on calcule les accélérations à partir des positions au temps $t_n$ ;
+-   on calcule les positions au temps $t\_{n+1}$ à partir des vitesses aux temps $t_n$ ;
+-   on calcule les vitesses au temps $t\_{n+1}$ à partir des accélérations précédemment calculées.
 
 Méthode d'Euler asymétrique :
 
-* on calcule les positions au temps $t_{n+1}$ à partir des vitesses au temps $t_n$ ;
-* on calcule les accélérations à partir de ces nouvelles positions ;
-* on calcule les vitesses au temps $t_{n+1}$ à partir de ces accélérations.
+-   on calcule les positions au temps $t\_{n+1}$ à partir des vitesses au temps $t_n$ ;
+-   on calcule les accélérations à partir de ces nouvelles positions ;
+-   on calcule les vitesses au temps $t\_{n+1}$ à partir de ces accélérations.
 
 ### Implémentation
 
 On utilise la bibliothèque [VPython](http://vpython.org/) qui permet d'animer des scènes 3D. La dernière version de cette bibliothèque ne peut être utilisée que dans une application [notebook Jupyter](http://jupyter.org/).
-
 
 ### Modélisation du système solaire
 
@@ -142,13 +145,8 @@ while True:
 
 Le calcul de l'énergie montre que tout se passe bien : l'énergie totale du système reste constante.
 
-<div class="bk-root">
-<script
-    src="/js/energie.js"
-    id="13ff0e77-99bc-4afb-9393-c4dd3e198d69"
-    data-bokeh-model-id="a7031ca8-63ee-4259-9afd-602570df198b"
-    data-bokeh-doc-id="2e2dc0dd-a406-4ef2-b82d-3ce7a4dcfd7d"
-></script>
+<div>
+<script src="/js/energie1.js" id="dfe57dee-8347-4371-b9ff-a1c1c39b71a1"></script>
 </div>
 
 A titre de comparaison, la vidéo suivante montre les trajectoires obtenues en employant la méthode d'Euler classique et non la méthode d'Euler asymétrique.
@@ -160,13 +158,8 @@ A titre de comparaison, la vidéo suivante montre les trajectoires obtenues en e
 
 On remarque d'ailleurs que l'énergie totale du système ne se conserve pas.
 
-<div class="bk-root">
-<script
-    src="/js/foirage.js"
-    id="cab4a16f-d6df-4e0f-b217-22423a26042c"
-    data-bokeh-model-id="3d2b2804-4758-4f57-8452-a8a978f6f3a9"
-    data-bokeh-doc-id="26e815f8-2beb-475c-8a44-a7381505e5b5"
-></script>
+<div>
+<script src="/js/energie2.js" id="2d75a072-ccf6-4ad7-b422-5bf8058a3fb6"></script>
 </div>
 
 ### Création d'un système solaire
@@ -251,6 +244,5 @@ while True:
 <source src="/images/2016/10/Gravity.mp4" type="video/mp4">
 <source src="/images/2016/10/Gravity.webm" type="video/webm">
 </video>
-
 
  On assiste à la formation d'un "soleil" autour duquel gravitent des "planètes".
