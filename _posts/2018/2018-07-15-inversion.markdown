@@ -134,6 +134,12 @@ c'est-à-dire une hypersphère contenant $\Omega$.
 <!-- Hyperplans et hypersphères privés de $\Omega$ -->
 
 
+On peut le vérifier à l'aide de l'applet suivante. L'image d'une droite $(AB)$ du plan par l'inversion de centre $\Omega$ est bien un cercle dans le cas général et une droite si $(AB)$ passe par $\Omega$.
+
+<iframe scrolling="no" title="Inversion d'une droite" src="https://www.geogebra.org/material/iframe/id/c85ujr64/width/700/height/400/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="400px" style="border:0px;"> </iframe>
+
+Les points $A$, $B$ et $\Omega$ peuvent être déplacés.
+
 ## Image d'une hypersphère
 
 On se donne une hypersphère $\mathcal{S}$ de $\mathcal{E}$. Il existe donc un réel $k$ et un vecteur $\vec n$ tel que $\mathcal{S}$ soit l'ensemble des points $M$ tels que $\Omega M^2+\overrightarrow{\Omega M}\cdot\vec n=k$.
@@ -160,6 +166,11 @@ c'est-à-dire une hypersphère ne contenant pas $\Omega$.
 
 <!-- Hyperplans et hypersphères privés de $\Omega$ -->
 
+A nouveau, on peut vérifier que l'image du cercle de rayon $[AB]$ par l'inversion de centre $\Omega$ est bien un cercle dans le cas général et une droite si le cercle de rayon $[AB]$ passe par $\Omega$
+
+<iframe scrolling="no" title="Inversion d'un cercle" src="https://www.geogebra.org/material/iframe/id/jwjcnx5d/width/700/height/400/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="400px" style="border:0px;"> </iframe>
+
+Les points $A$, $B$ et $\Omega$ peuvent encore être déplacés.
 
 ## Simulation
 

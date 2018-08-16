@@ -58,7 +58,7 @@ De toute façon, il se pose à nouveau des problèmes de continuité. En effet, 
 
 L'applet suivante montre encore le problème de continuité lorsque le point d'affixe $z$ traverse le demi-axe des abscisses négatives.
 
-<iframe scrolling="no" title="Logarithme complexe" src="https://www.geogebra.org/material/iframe/id/mEFGhkR8/width/700/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
+<iframe scrolling="no" title="Logarithme complexe" src="https://www.geogebra.org/material/iframe/id/pttdmhjp/width/700/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
 
 ## Conclusion
 
