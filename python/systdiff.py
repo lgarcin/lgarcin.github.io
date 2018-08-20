@@ -23,9 +23,11 @@ X0 = array([1, 0])
 X = odeint(diff, X0, t)
 x1_sol, x2_sol = X.T
 
-x1_min, x1_max, x2_min, x2_max = min(x1_sol), max(x1_sol), min(x2_sol), max(x2_sol)
+x1_min, x1_max, x2_min, x2_max = min(
+    x1_sol), max(x1_sol), min(x2_sol), max(x2_sol)
 x1_range, x2_range = x1_max - x1_min, x2_max - x2_min
-x1_min, x1_max, x2_min, x2_max = x1_min - .1 * x1_range, x1_max + .1 * x1_range, x2_min - .1 * x2_range, x2_max + .1 * x2_range
+x1_min, x1_max, x2_min, x2_max = x1_min - .1 * x1_range, x1_max + .1 * \
+    x1_range, x2_min - .1 * x2_range, x2_max + .1 * x2_range
 x, y = meshgrid(linspace(x1_min, x1_max, 20), linspace(x2_min, x2_max, 20))
 dx, dy = vectorize(f)(x, y)
 

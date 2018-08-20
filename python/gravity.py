@@ -50,7 +50,7 @@ input()
 
 while True:
     rate(100)
-    l = len(ballList)
+    li = len(ballList)
     for b in ballList:
         b.pos += vector(b.velocity) * dt
     collisions = [set([b]) for b in ballList]
@@ -76,5 +76,5 @@ while True:
                 ballList.remove(b)
                 b.visible = False
                 b.clear_trail()
-    if l != len(ballList):
+    if li != len(ballList):
         print(len(ballList))

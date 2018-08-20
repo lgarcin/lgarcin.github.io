@@ -134,11 +134,80 @@ c'est-à-dire une hypersphère contenant $\Omega$.
 <!-- Hyperplans et hypersphères privés de $\Omega$ -->
 
 
-On peut le vérifier à l'aide de l'applet suivante. L'image d'une droite $(AB)$ du plan par l'inversion de centre $\Omega$ est bien un cercle dans le cas général et une droite si $(AB)$ passe par $\Omega$.
+On peut le vérifier à l'aide de l'applet suivante. L'image d'une droite $(AB)$ du plan par l'inversion de centre $\Omega$ est bien un cercle passant par $\Omega$ dans le cas général et une droite si $(AB)$ passe par $\Omega$.
 
 <iframe scrolling="no" title="Inversion d'une droite" src="https://www.geogebra.org/material/iframe/id/c85ujr64/width/700/height/400/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="400px" style="border:0px;"> </iframe>
 
 Les points $A$, $B$ et $\Omega$ peuvent être déplacés.
+
+
+La vidéo suivante montre l'image (en vert) d'un plan mobile (en bleu) par une inversion dont le centre est représenté par un point rouge.
+
+<video controls>
+<source src="/images/2018/08/inversion_plan.mp4" type="video/mp4">
+</video>
+
+L'image du plan est bien une sphère passant par le centre de l'inversion sauf lorsque le plan passe lui-même par le centre de l'inversion.
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#inversion-plan">Code Python</button>
+
+```python
+from numpy import meshgrid, linspace, cos, sin, pi, ones, logspace
+from mpl_toolkits.mplot3d import Axes3D
+from matplotlib.pyplot import figure
+from matplotlib.animation import FuncAnimation, writers
+
+
+def generate_plane(z):
+    Zp = z * ones((n, n))
+    return Zp
+
+
+def generate_sphere(z):
+    n = x ** 2 + y ** 2 + z ** 2
+    Xi = x / n
+    Yi = y / n
+    Zi = z / n
+    return Xi, Yi, Zi
+
+
+def update(i):
+    ax.cla()
+    ax.set_aspect('equal')
+    ax.set_axis_off()
+    ax.set_xlim(-3, 3)
+    ax.set_ylim(-3, 3)
+    ax.set_zlim(-3, 3)
+    ax.view_init(-10 + i / frames * 20, i / frames * 180)
+    ax.scatter([0], [0], [0], color='red')
+    z = -2 + i * 4 / frames
+    Zp = generate_plane(z)
+    ax.plot_surface(Xp, Yp, Zp, alpha=.5, color='blue')
+    Xi, Yi, Zi = generate_sphere(z)
+    ax.plot_surface(Xi, Yi, Zi, alpha=.5, color='green')
+
+
+fig = figure()
+ax = fig.gca(projection='3d')
+
+n = 50
+x = linspace(-2, 2, n)
+y = linspace(-2, 2, n)
+Xp, Yp = meshgrid(x, y)
+
+r = logspace(-2, 2, n)
+p = linspace(0, 2 * pi, n)
+R, P = meshgrid(r, p)
+x, y = R * cos(P), R * sin(P)
+
+frames = 100
+ani = FuncAnimation(fig, update, frames=frames, interval=100, repeat=True)
+Writer = writers['ffmpeg']
+writer = Writer(fps=20, metadata=dict(artist='Laurent Garcin'), bitrate=18000)
+ani.save('inversion_plan.mp4', writer=writer)
+```
+{: .collapse #inversion-plan }
+
 
 ## Image d'une hypersphère
 
@@ -166,25 +235,77 @@ c'est-à-dire une hypersphère ne contenant pas $\Omega$.
 
 <!-- Hyperplans et hypersphères privés de $\Omega$ -->
 
-A nouveau, on peut vérifier que l'image du cercle de rayon $[AB]$ par l'inversion de centre $\Omega$ est bien un cercle dans le cas général et une droite si le cercle de rayon $[AB]$ passe par $\Omega$
+A nouveau, on peut vérifier que l'image du cercle de rayon $[AB]$ par l'inversion de centre $\Omega$ est bien un cercle dans le cas général et une droite si le cercle de rayon $[AB]$ passe par $\Omega$.
 
 <iframe scrolling="no" title="Inversion d'un cercle" src="https://www.geogebra.org/material/iframe/id/jwjcnx5d/width/700/height/400/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="400px" style="border:0px;"> </iframe>
 
 Les points $A$, $B$ et $\Omega$ peuvent encore être déplacés.
 
-## Simulation
 
-On peut se convaincre de ces résultats à l'aide de [scripts Python][bc821efa].
+La vidéo qui suit montre l'image (en vert) d'une sphère mobile (en bleu) par une inversion dont le centre est représenté par un point rouge.
 
-Il s'agit en fait de *notebooks* [Jupyter][aab9dd5e] éditables.
+<video controls>
+<source src="/images/2018/08/inversion_sphere.mp4" type="video/mp4">
+</video>
 
+On constate bien que l'image de la sphère mobile est bien une sphère sauf lorsqu'elle passe par le centre de l'inversion, auquel cas c'est un plan.
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#inversion-sphere">Code Python</button>
+
+```python
+from numpy import meshgrid, linspace, cos, sin, pi
+from mpl_toolkits.mplot3d import Axes3D
+from matplotlib.pyplot import figure
+from matplotlib.animation import FuncAnimation, writers
+
+
+def generate_sphere(X):
+    n = X ** 2 + Y ** 2 + Z ** 2
+    Xi = X / n
+    Yi = Y / n
+    Zi = Z / n
+    return Xi, Yi, Zi
+
+
+def update(i):
+    ax.cla()
+    ax.set_aspect('equal')
+    ax.set_axis_off()
+    ax.set_xlim(-3, 3)
+    ax.set_ylim(-3, 3)
+    ax.set_zlim(-3, 3)
+    ax.scatter([0], [0], [0], color='red')
+    X = X0 - 3 + 6 * i / frames
+    ax.plot_surface(X, Y, Z, alpha=.5, color='blue')
+    Xi, Yi, Zi = generate_sphere(X)
+    ax.plot_surface(Xi, Yi, Zi, alpha=.5, color='green')
+
+
+fig = figure()
+ax = fig.gca(projection='3d')
+
+n = 50
+frames = 100
+
+r = 1
+p = linspace(0, 2 * pi, n)
+t = linspace(-pi / 2, pi / 2)
+P, T = meshgrid(p, t)
+X0, Y, Z = r * cos(P) * cos(T), r * sin(P) * cos(T), r * sin(T)
+
+ani = FuncAnimation(fig, update, frames=frames, interval=100, repeat=True)
+Writer = writers['ffmpeg']
+writer = Writer(fps=20, metadata=dict(artist='Laurent Garcin'), bitrate=18000)
+ani.save('inversion_sphere.mp4', writer=writer)
+```
+{: .collapse #inversion-sphere }
 
 # Inégalité de Ptolémée
 
-On se place maintenant dans le cas où $\mathcal{E}$ est un *plan* affine euclidien.
+On se place maintenant dans le cas où $\mathcal{E}$ est un _plan_ affine euclidien.
 
-* L'image d'une droite $\mathcal{D}$ par l'inversion de centre $\Omega$ est donc un cercle passant par $\Omega$ si $\mathcal{D}$ ne passe pas par $\Omega$ et $\mathcal{D}$ elle-même sinon.
-* De même, l'image d'un cercle $\mathcal{C}$ par l'inversion de centre $\Omega$ est un cercle ne passant pas par $\Omega$ si $\mathcal{C}$ ne passe pas par $\Omega$ et une droite ne passant pas par $\Omega$ sinon.
+- L'image d'une droite $\mathcal{D}$ par l'inversion de centre $\Omega$ est donc un cercle passant par $\Omega$ si $\mathcal{D}$ ne passe pas par $\Omega$ et $\mathcal{D}$ elle-même sinon.
+- De même, l'image d'un cercle $\mathcal{C}$ par l'inversion de centre $\Omega$ est un cercle ne passant pas par $\Omega$ si $\mathcal{C}$ ne passe pas par $\Omega$ et une droite ne passant pas par $\Omega$ sinon.
 
 On considère quatre points $A$, $B$, $C$ et $D$ deux à deux distincts de l'espace affine $\mathcal{E}$. On note $A'$, $B'$ et $C'$ les images des points $A$, $B$ et $C$ par l'inversion de centre $D$.
 
@@ -222,12 +343,15 @@ Si $A'$, $B'$ et $C'$ sont alignés dans cet ordre mais non alignés avec $D$, a
 
 Réciproquement, supposons que $A$, $B$, $C$, $D$ soient cocycliques dans cet ordre. Alors $A'$, $B'$ et $C'$ sont alignés et le même argument de connexité et d'injectivité que précédemment montre qu'ils sont alignés dans cet ordre.
 
+<iframe scrolling="no" title="Théorème de Ptolémée" src="https://www.geogebra.org/material/iframe/id/nspxn7sh/width/700/height/500/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
+
 #### Cas d'alignement
 
 Si les points $A'$, $B'$ et $C'$ sont alignés dans cet ordre avec $D$ sur une droite $\mathcal{D}$, alors leurs images, à savoir les points $A$, $B$ et $C$, sont également alignées sur cette même droite $\mathcal{D}$. Remarquons alors que les points $A$, $B$ et $C$ sont tous sur la même demi-droite issue de $D$ et alignés dans cet ordre. En effet, si $A$ et $B$ étaient par exemple sur une même demi-droite issue de $D$ et $C$ sur l'autre demi-droite issue de $D$, $A'$ et $B'$ resteraient sur la même demi-droite issue de $D$, mais dans un ordre inverse, et $C'$ resterait également sur la même demi-droite issue de $D$ : les points $A'$, $B'$ et $C'$ seraient alors alignés sur la même droite mais pas dans cet ordre.
 
 Evidemment, puisque l'inversion de centre $D$ est une involution, la réciproque est égalemement vraie : si $A$,$B$ et $C$ sont alignés dans cet ordre sur une même demi-droite issue de $D$, alors il en est de même des points $A'$, $B'$ et $C'$.
 
+<iframe scrolling="no" title="Théorème de Ptolémée" src="https://www.geogebra.org/material/iframe/id/pwm4grxe/width/700/height/300/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="700px" height="300px" style="border:0px;"> </iframe>
 
 #### Conclusion
 
@@ -269,15 +393,11 @@ La preuve du [cas d'égalité](#egalite) dans l'inégalité de Ptolémée se tro
 
 ##### Notes
 
-  [bc821efa]: https://www.kaggle.com/lgarcin/inversion/edit "Inversion"
-
-  [aab9dd5e]: http://jupyter.org/ "Jupyter"
-
   [^arc_cercle]: Plus précisément, la composée de l'application $t\in[0,1]\mapsto(1-t)A+tB$ (chemin décrivant le segment $[AB]$) par l'inversion de centre $D$ est injective : elle ne prend donc qu'une fois les valeurs $A'$ et $B'$, respectivement en $0$ et $1$.
 
-  [^alexandrov]: On ajoute à la topologie de $\mathcal{E}$ les parties obtenues comme complémentaires de compacts de $\mathcal{E}$, auxquelles on adjoint le point $\infty$ : muni de cette topologie, l'espace $\hat{\mathcal{E}}$ porte le nom de *compactifié d'Alexandrov* de $\mathcal{E}$. Comme son nom l'indique, il est bien compact.
+  [^alexandrov]: On ajoute à la topologie de $\mathcal{E}$ les parties obtenues comme complémentaires de compacts de $\mathcal{E}$, auxquelles on adjoint le point $\infty$ : muni de cette topologie, l'espace $\hat{\mathcal{E}}$ porte le nom de _compactifié d'Alexandrov_ de $\mathcal{E}$. Comme son nom l'indique, il est bien compact.
 
-  [^ordre]: Il faut néanmoins remarquer que toute droite se "referme à l'infini" en un cercle : dire que $A$, $B$, $C$, $D$ sont alignés sur une droite *dans cet ordre* signifie que les ponts $A$, $B$, $C$ et $D$ sont alignés au sens usuel dans l'ordre $A-B-C-D$ ou $D-A-B-C$.
+  [^ordre]: Il faut néanmoins remarquer que toute droite se "referme à l'infini" en un cercle : dire que $A$, $B$, $C$, $D$ sont alignés sur une droite _dans cet ordre_ signifie que les ponts $A$, $B$, $C$ et $D$ sont alignés au sens usuel dans l'ordre $A-B-C-D$ ou $D-A-B-C$.
 
 
 <!-- TODO Rajouter des dessins -->
