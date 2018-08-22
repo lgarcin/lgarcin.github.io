@@ -5,7 +5,7 @@ published: true
 ---
 
 
-La dualité est le lien qui existe entre un $\dK$-espace vectoriel $E$ et son espace dual $E^\star$. On rappelle que $E^\star$ est l'espace vectoriel des formes linéaires sur $E$.
+La dualité est le lien qui existe entre un $\dK$-espace vectoriel $E$ et son espace dual $E^\star$. On rappelle que $E^\star$ est l'espace vectoriel des formes linéaires sur $E$, c'est-à-dire des applications linéaires de $E$ dans $\dK$.
 
 ## Base duale
 ---
@@ -13,10 +13,10 @@ La dualité est le lien qui existe entre un $\dK$-espace vectoriel $E$ et son es
 Etant donné une base d'un espace vectoriel de dimension finie, il existe une manière élémentaire de contruire une base de l'espace dual à partir de celle-ci.
 
 **Définition [Base duale]**
-Soient $E$ un espace de dimension finie et une base $(e_1,\dots,e_n)$ de $E$. Pour tout $i\in\lb1,n\rb$, on note $e_i^\star$ l'unique forme linéaire sur $E$ telle que $e_i^\star(e_j)=\delta_{i,j}$ pour tout $j\in\lb1,n\rb$.<br/>
+Soient $E$ un espace vectoriel de dimension finie et une base $(e_1,\dots,e_n)$ de $E$. Pour tout $i\in\lb1,n\rb$, on note $e_i^\star$ l'unique forme linéaire sur $E$ telle que $e_i^\star(e_j)=\delta_{i,j}$ pour tout $j\in\lb1,n\rb$.<br/>
 La famille $(e_1^\star,\dots,e_n^\star)$ est une base de $E^\star$ appelée **base duale** de la base $(e_1,\dots,e_n)$.
 
-*Preuve.*
+_Preuve._
 Puisque $\dim E^\star=\dim E=n$, il suffit de montrer que cette famille est libre. Si l'on se donne $(\lambda_1,\dots,\lambda_n)\in\dK^n$ tel que $\sum_{i=1}^n\lambda_ie_i^\star=0$, on obtient $\lambda_j=0$ pour chaque $j\in\lb1,n\rb$ en évaluant l'égalité précédente en $e_j$. &#x2b1b;
 
 <!-- Donner un exemple -->
@@ -27,7 +27,14 @@ Par exemple, les formes linéaires coordonnées associées à la base canonique 
 
 **Définition [Base antéduale]**
 
+Soient $E$ un espace vectoriel de dimension finie et $(\va_1,\dots,\va_n)$ une base de de $E^\star$. On appelle **base antéduale** de $(\va_1,\dots,\va_n)$ l'unique base $(e_1,\dots,e_n)$ de $E$ dont $(\va_1,\dots,\va_n)$ est la base duale.
+
+_Preuve._
+
+
 Base antéduale, polynômes interpolateurs de Lagrange
+
+Isomorphisme entre $E$ et $E^{\star\star}$.
 
 ## Orthogonalité
 ---
