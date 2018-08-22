@@ -421,7 +421,9 @@ TD:
   Enoncé:
     path: TDPolynomes.pdf
   title: Polynômes
-- Enoncé:
+- Corrigé:
+    path: TDProbabilites.corrige.pdf
+  Enoncé:
     path: TDProbabilites.pdf
   title: Probabilités
 - Corrigé:
