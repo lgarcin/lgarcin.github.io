@@ -67,6 +67,10 @@ Cours:
   title: Systèmes linéaires
 - path: Trigonometrie.pdf
   title: Trigonométrie
+DM:
+- Enoncé:
+    path: DM01.pdf
+  title: DM01
 Formulaires:
 - path: FormulaireComparaisonFonctions.pdf
   title: Comparaison de fonctions
@@ -82,3 +86,10 @@ Formulaires:
   title: Trigonométrie hyperbolique
 - path: FormulaireTrigoInverse.pdf
   title: Trigonométrie inverse
+TD:
+- Enoncé:
+    path: TDRaisonnements.pdf
+  title: Raisonnements et ensembles
+VieClasse:
+- path: EDT_MPSI_20182019.pdf
+  title: Emploi du temps
