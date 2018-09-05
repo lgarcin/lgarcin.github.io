@@ -10,6 +10,7 @@ MathJax.Hub.Config({
     },
     TeX: {
         Macros: {
+            la: "\\lambda",
             va: "\\varphi",
             dF: "\\mathbb{F}",
             dK: "\\mathbb{K}",
@@ -25,7 +26,9 @@ MathJax.Hub.Config({
             dim: "\\operatorname{dim}",
             deg: "\\operatorname{deg}",
             ident: "\\operatorname{Id}",
-            stab: "\\operatorname{Stab}"
+            stab: "\\operatorname{Stab}",
+            Im: "\\operatorname{Im}",
+            Ker: "\\operatorname{Ker}"
         }
     }
 });
