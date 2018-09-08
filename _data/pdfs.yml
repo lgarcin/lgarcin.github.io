@@ -71,6 +71,12 @@ DM:
 - Enoncé:
     path: DM01.pdf
   title: DM01
+DS:
+- Corrigé:
+    path: DS01.corrige.pdf
+  Enoncé:
+    path: DS01.pdf
+  title: DS01
 Formulaires:
 - path: FormulaireComparaisonFonctions.pdf
   title: Comparaison de fonctions
