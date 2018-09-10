@@ -96,6 +96,9 @@ TD:
 - Enoncé:
     path: TDRaisonnements.pdf
   title: Raisonnements et ensembles
+- Enoncé:
+    path: TDSommesProduits.pdf
+  title: Sommes, produits, systèmes, trigonométrie
 VieClasse:
 - path: EDT_MPSI_20182019.pdf
   title: Emploi du temps
