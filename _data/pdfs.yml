@@ -93,7 +93,9 @@ Formulaires:
 - path: FormulaireTrigoInverse.pdf
   title: Trigonométrie inverse
 TD:
-- Enoncé:
+- Corrigé:
+    path: TDRaisonnements.corrige.pdf
+  Enoncé:
     path: TDRaisonnements.pdf
   title: Raisonnements et ensembles
 - Enoncé:
