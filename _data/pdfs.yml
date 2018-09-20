@@ -71,9 +71,14 @@ Cours:
 - path: Trigonometrie.pdf
   title: Trigonométrie
 DM:
-- Enoncé:
+- Corrigé:
+    path: DM01.corrige.pdf
+  Enoncé:
     path: DM01.pdf
   title: DM01
+- Enoncé:
+    path: DM02.pdf
+  title: DM02
 DS:
 - Corrigé:
     path: DS01.corrige.pdf
@@ -95,7 +100,13 @@ Formulaires:
   title: Trigonométrie hyperbolique
 - path: FormulaireTrigoInverse.pdf
   title: Trigonométrie inverse
+Interros:
+- path: Interro01.pdf
+  title: Interrogation écrite n°1
 TD:
+- Enoncé:
+    path: TDComplexes.pdf
+  title: Nombres complexes
 - Corrigé:
     path: TDRaisonnements.corrige.pdf
   Enoncé:
