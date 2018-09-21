@@ -1,6 +1,8 @@
 Colles:
 - path: ProgColles01.pdf
   title: Semaine du 17/09 au 21/09
+- path: ProgColles02.pdf
+  title: Semaine du 24/09 au 28/09
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -112,7 +114,9 @@ TD:
   Enoncé:
     path: TDRaisonnements.pdf
   title: Raisonnements et ensembles
-- Enoncé:
+- Corrigé:
+    path: TDSommesProduits.corrige.pdf
+  Enoncé:
     path: TDSommesProduits.pdf
   title: Sommes, produits, systèmes, trigonométrie
 VieClasse:
