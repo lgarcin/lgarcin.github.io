@@ -80,15 +80,25 @@ DM:
   Enoncé:
     path: DM01.pdf
   title: DM01
-- Enoncé:
+- Corrigé:
+    path: DM02.corrige.pdf
+  Enoncé:
     path: DM02.pdf
   title: DM02
+- Enoncé:
+    path: DM03.pdf
+  title: DM03
 DS:
 - Corrigé:
     path: DS01.corrige.pdf
   Enoncé:
     path: DS01.pdf
   title: DS01
+- Corrigé:
+    path: DS02.corrige.pdf
+  Enoncé:
+    path: DS02.pdf
+  title: DS02
 Formulaires:
 - path: FormulaireComparaisonFonctions.pdf
   title: Comparaison de fonctions
@@ -107,8 +117,15 @@ Formulaires:
 Interros:
 - path: Interro01.pdf
   title: Interrogation écrite n°1
+- path: Interro02.pdf
+  title: Interrogation écrite n°2
 TD:
 - Enoncé:
+    path: TDApplications.pdf
+  title: Applications, fonctions d'une variable réelle
+- Corrigé:
+    path: TDComplexes.corrige.pdf
+  Enoncé:
     path: TDComplexes.pdf
   title: Nombres complexes
 - Corrigé:
