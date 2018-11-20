@@ -31,7 +31,8 @@ MathJax.Hub.Config({
       stab: "\\operatorname{Stab}",
       Im: "\\operatorname{Im}",
       Ker: "\\operatorname{Ker}",
-      conj: "\\overline"
+      conj: "\\overline",
+      te: "\\theta"
     }
   }
 });
