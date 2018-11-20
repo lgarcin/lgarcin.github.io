@@ -76,6 +76,7 @@ def animate(frame):
 
 anim = ani.FuncAnimation(fig, animate, frames=np.linspace(
     0, 10, 1000), interval=10, blit=True)
+plt.show()
 ```
 
 Essentiellement, la fonction ```animate``` met à jour la liste des segments à tracer. Le paramètre ```frame``` n'est autre que le facteur de multiplication $r$.
