@@ -56,26 +56,26 @@ def get_lines(t, r):
 Enfin, on crée l'animation à proprement parler. On utilise pour cela la sous-bibliothèque de ```matplotlib``` dédiée à l'animation.
 
 ```python
-fig = plt.figure(figsize=(6, 6))
+fig=plt.figure(figsize=(6, 6))
 t = np.linspace(0, 2 * np.pi, 300)
-ax = fig.add_subplot(111)
-ax.cla()
-ax.set_aspect('equal')
+plt.axis('equal')
+plt.axis('off')
 lc = mc.LineCollection([])
+ax=plt.gca()
 ax.add_collection(lc)
 ax.autoscale()
 
 
 def animate(frame):
     lc.set_paths(get_lines(t, frame))
-    ax.set_xlim(-1, 1)
-    ax.set_ylim(-1, 1)
+    lc.set_linewidth(.2)
+    ax.set_xlim(-1.1, 1.1)
+    ax.set_ylim(-1.1, 1.1)
     return lc,
 
 
 anim = ani.FuncAnimation(fig, animate, frames=np.linspace(
     0, 10, 1000), interval=10, blit=True)
-plt.show()
 ```
 
 Essentiellement, la fonction ```animate``` met à jour la liste des segments à tracer. Le paramètre ```frame``` n'est autre que le facteur de multiplication $r$.
@@ -167,6 +167,7 @@ En prenant un faible nombre de segments, on peut visualiser la tangence de ces s
 
 ![Mise en évidence de la tangence](/images/2018/11/tangence_evidence.png)
 
+On peut enfin superposer l'enveloppe ainsi déterminée à l'animation précédente.
 
 <video controls>
 <source src="/images/2018/11/droites_enveloppe.mp4" type="video/mp4">
