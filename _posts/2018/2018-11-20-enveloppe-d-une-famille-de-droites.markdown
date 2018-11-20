@@ -20,6 +20,7 @@ Lorsque l'on prend un grand nombre $n$ de points et que l'on fait varier contin√
 
 <video controls>
 <source src="/images/2018/11/droites.mp4" type="video/mp4">
+<source src="/images/2018/11/droites.webm" type="video/webm">
 </video>
 
 Bien √©videmment, je me pose deux questions :
@@ -169,6 +170,7 @@ En prenant un faible nombre de segments, on peut visualiser la tangence de ces s
 
 <video controls>
 <source src="/images/2018/11/droites_enveloppe.mp4" type="video/mp4">
+<source src="/images/2018/11/droites_enveloppe.webm" type="video/webm">
 </video>
 
 
