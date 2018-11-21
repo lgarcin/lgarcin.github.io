@@ -19,8 +19,8 @@ En ce qui concerne les détails techniques, l'animation a été effectuée à l'
 
 * Le film a été généré à l'aide de l'utilitaire [ffmpeg][5e3f970c].
 
-  [e389fe0d]: http://docs.sympy.org/latest/index.html "sympy"
-  [5f2fb8f4]: http://matplotlib.org/ "matplotlib"
+  [e389fe0d]: https://docs.sympy.org/latest/index.html "sympy"
+  [5f2fb8f4]: https://matplotlib.org/ "matplotlib"
   [5e3f970c]: https://www.ffmpeg.org/ "ffmpeg"
 
 Voilà le code pour ceux qui veulent s'amuser avec.

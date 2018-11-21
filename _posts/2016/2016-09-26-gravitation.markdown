@@ -72,7 +72,7 @@ Méthode d'Euler asymétrique :
 
 ### Implémentation
 
-On utilise la bibliothèque [VPython](http://vpython.org/) qui permet d'animer des scènes 3D. La dernière version de cette bibliothèque ne peut être utilisée que dans une application [notebook Jupyter](http://jupyter.org/).
+On utilise la bibliothèque [VPython](https://vpython.org/) qui permet d'animer des scènes 3D. La dernière version de cette bibliothèque ne peut être utilisée que dans une application [notebook Jupyter](https://jupyter.org/).
 
 ### Modélisation du système solaire
 

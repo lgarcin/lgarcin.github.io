@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Enveloppe d'une famille de droites
-description: Géométrie différentielle : enveloppe d'une famille de droites
+description: Géométrie différentielle, enveloppe d'une famille de droites
 published: true
 ---
 
