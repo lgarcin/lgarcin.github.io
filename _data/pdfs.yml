@@ -17,6 +17,8 @@ Colles:
   title: Semaine du 19/11 au 23/11
 - path: ProgColles09.pdf
   title: Semaine du 26/11 au 30/11
+- path: ProgColles10.pdf
+  title: Semaine du 03/12 au 07/12
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -107,9 +109,14 @@ DM:
   Enoncé:
     path: DM04.pdf
   title: DM04
-- Enoncé:
+- Corrigé:
+    path: DM05.corrige.pdf
+  Enoncé:
     path: DM05.pdf
   title: DM05
+- Enoncé:
+    path: DM06.pdf
+  title: DM06
 DS:
 - Corrigé:
     path: DS01.corrige.pdf
@@ -157,13 +164,17 @@ Interros:
   title: Interrogation écrite n°04
 - path: Interro05.pdf
   title: Interrogation écrite n°05
+- path: Interro06.pdf
+  title: Interrogation écrite n°06
 TD:
 - Corrigé:
     path: TDApplications.corrige.pdf
   Enoncé:
     path: TDApplications.pdf
   title: Applications, fonctions d'une variable réelle
-- Enoncé:
+- Corrigé:
+    path: TDComparaisonFonctions.corrige.pdf
+  Enoncé:
     path: TDComparaisonFonctions.pdf
   title: Comparaison de fonctions
 - Corrigé:
@@ -191,6 +202,9 @@ TD:
   Enoncé:
     path: TDRaisonnements.pdf
   title: Raisonnements et ensembles
+- Enoncé:
+    path: TDReels.pdf
+  title: Nombres réels, relations binaires
 - Corrigé:
     path: TDSommesProduits.corrige.pdf
   Enoncé:
