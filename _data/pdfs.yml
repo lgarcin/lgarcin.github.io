@@ -19,6 +19,8 @@ Colles:
   title: Semaine du 26/11 au 30/11
 - path: ProgColles10.pdf
   title: Semaine du 03/12 au 07/12
+- path: ProgColles11.pdf
+  title: Semaine du 10/12 au 14/12
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -202,7 +204,9 @@ TD:
   Enoncé:
     path: TDRaisonnements.pdf
   title: Raisonnements et ensembles
-- Enoncé:
+- Corrigé:
+    path: TDReels.corrige.pdf
+  Enoncé:
     path: TDReels.pdf
   title: Nombres réels, relations binaires
 - Corrigé:
@@ -210,6 +214,9 @@ TD:
   Enoncé:
     path: TDSommesProduits.pdf
   title: Sommes, produits, systèmes, trigonométrie
+- Enoncé:
+    path: TDSuites.pdf
+  title: Suites numériques
 VieClasse:
 - path: EDT_MPSI_20182019.pdf
   title: Emploi du temps
