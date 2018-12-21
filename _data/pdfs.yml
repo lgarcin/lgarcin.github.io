@@ -21,6 +21,10 @@ Colles:
   title: Semaine du 03/12 au 07/12
 - path: ProgColles11.pdf
   title: Semaine du 10/12 au 14/12
+- path: ProgColles12.pdf
+  title: Semaine du 17/12 au 21/12
+- path: ProgColles13.pdf
+  title: Semaine du 07/01 au 11/01
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -116,7 +120,9 @@ DM:
   Enoncé:
     path: DM05.pdf
   title: DM05
-- Enoncé:
+- Corrigé:
+    path: DM06.corrige.pdf
+  Enoncé:
     path: DM06.pdf
   title: DM06
 - Enoncé:
@@ -176,6 +182,8 @@ Interros:
   title: Interrogation écrite n°05
 - path: Interro06.pdf
   title: Interrogation écrite n°06
+- path: Interro07.pdf
+  title: Interrogation écrite n°07
 TD:
 - Corrigé:
     path: TDApplications.corrige.pdf
@@ -202,6 +210,9 @@ TD:
   Enoncé:
     path: TDFonctionsUsuelles.pdf
   title: Fonctions usuelles
+- Enoncé:
+    path: TDGroupesAnneauxCorps.pdf
+  title: Groupes, anneaux, corps
 - Corrigé:
     path: TDIntegralesPrimitives.corrige.pdf
   Enoncé:
@@ -222,7 +233,9 @@ TD:
   Enoncé:
     path: TDSommesProduits.pdf
   title: Sommes, produits, systèmes, trigonométrie
-- Enoncé:
+- Corrigé:
+    path: TDSuites.corrige.pdf
+  Enoncé:
     path: TDSuites.pdf
   title: Suites numériques
 VieClasse:

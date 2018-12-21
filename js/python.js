@@ -4,8 +4,8 @@ function builtinRead(x) {
     return Sk.builtinFiles["files"][x];
 }
 
-$(document).ready(function() {
-    $('.python').each(function(index) {
+$(document).ready(function () {
+    $('.python').each(function (index) {
         code = $(this).text();
         $(this).empty();
         buttonRun = $('<button class="btn btn-primary large">Lancer le programme</button>');
@@ -21,8 +21,8 @@ $(document).ready(function() {
             maxLines: Infinity
         });
         editor.renderer.setScrollMargin(10, 10);
-        editor.setValue(code,1);
-        buttonRun.click(function() {
+        editor.setValue(code, 1);
+        buttonRun.click(function () {
             $(this).siblings('.output').remove();
             output = $('<pre>', {
                 'class': 'output'
@@ -30,14 +30,14 @@ $(document).ready(function() {
             output.appendTo($(this).closest('.python'));
             Sk.pre = output.get()[0].id;
             Sk.configure({
-                output: function(text) {
+                output: function (text) {
                     $(output).html($(output).html() + text);
                 },
                 read: builtinRead
             });
             eval(Sk.importMainWithBody("<stdin>", false, editor.getValue()));
         });
-        buttonHide.click(function() {
+        buttonHide.click(function () {
             $(this).siblings('.output').remove();
         });
     });
