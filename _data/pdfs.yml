@@ -29,6 +29,8 @@ Colles:
   title: Semaine du 14/01 au 18/01
 - path: ProgColles15.pdf
   title: Semaine du 21/01 au 25/01
+- path: ProgColles16.pdf
+  title: Semaine du 28/01 au 01/02
 Cours:
 - path: Applications.pdf
   title: Ensembles et applications
@@ -134,9 +136,14 @@ DM:
   Enoncé:
     path: DM07.pdf
   title: DM07
-- Enoncé:
+- Corrigé:
+    path: DM08.corrige.pdf
+  Enoncé:
     path: DM08.pdf
   title: DM08
+- Enoncé:
+    path: DM09.pdf
+  title: DM09
 DS:
 - Corrigé:
     path: DS01.corrige.pdf
@@ -206,7 +213,9 @@ TD:
   Enoncé:
     path: TDApplications.pdf
   title: Applications, fonctions d'une variable réelle
-- Enoncé:
+- Corrigé:
+    path: TDArithmetique.corrige.pdf
+  Enoncé:
     path: TDArithmetique.pdf
   title: Arithmétique
 - Corrigé:
@@ -219,6 +228,9 @@ TD:
   Enoncé:
     path: TDComplexes.pdf
   title: Nombres complexes
+- Enoncé:
+    path: TDDimensionFinie.pdf
+  title: Espaces vectoriels de dimension finie
 - Corrigé:
     path: TDEquaDiff.corrige.pdf
   Enoncé:
