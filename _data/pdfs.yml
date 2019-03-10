@@ -149,12 +149,17 @@ DM:
   Enoncé:
     path: DM08.pdf
   title: DM08
-- Enoncé:
+- Corrigé:
+    path: DM09.corrige.pdf
+  Enoncé:
     path: DM09.pdf
   title: DM09
 - Enoncé:
     path: DM10.pdf
   title: DM10
+- Enoncé:
+    path: DM11.pdf
+  title: DM11
 DS:
 - Corrigé:
     path: DS01.corrige.pdf
