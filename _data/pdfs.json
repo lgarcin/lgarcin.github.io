@@ -436,10 +436,7 @@
                    "title":  "Polynômes",
                    "Enoncé":  {
                                   "path":  "TDPolynomes.pdf"
-                              },
-                   "Corrigé":  {
-                                   "path":  "TDPolynomes.corrige.pdf"
-                               }
+                              }
                },
                {
                    "title":  "Raisonnements et ensembles",
