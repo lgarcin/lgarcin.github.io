@@ -439,6 +439,12 @@
                                }
                },
                {
+                   "title":  "Limite et continuité de fonctions",
+                   "Enoncé":  {
+                                  "path":  "TDLimiteContinuite.pdf"
+                              }
+               },
+               {
                    "title":  "Polynômes",
                    "Enoncé":  {
                                   "path":  "TDPolynomes.pdf"
@@ -528,6 +534,10 @@
                      {
                          "title":  "Interrogation écrite n°11",
                          "path":  "Interro11.pdf"
+                     },
+                     {
+                         "title":  "Interrogation écrite n°12",
+                         "path":  "Interro12.pdf"
                      }
                  ],
     "Formulaires":  [
