@@ -418,7 +418,10 @@
                    "title":  "Fractions rationnelles, sous-espaces affines",
                    "Enoncé":  {
                                   "path":  "TDFractionsRationnellesSousEspacesAffines.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDFractionsRationnellesSousEspacesAffines.corrige.pdf"
+                               }
                },
                {
                    "title":  "Groupes, anneaux, corps",
