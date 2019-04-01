@@ -385,6 +385,12 @@
                                }
                },
                {
+                   "title":  "Dérivabilité",
+                   "Enoncé":  {
+                                  "path":  "TDDerivabilite.pdf"
+                              }
+               },
+               {
                    "title":  "Espaces vectoriels de dimension finie",
                    "Enoncé":  {
                                   "path":  "TDDimensionFinie.pdf"
