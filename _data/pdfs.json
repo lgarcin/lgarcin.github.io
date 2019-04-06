@@ -177,7 +177,10 @@
                    "title":  "Devoir à la maison n°11",
                    "Enoncé":  {
                                   "path":  "DM11.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "DM11.corrige.pdf"
+                               }
                },
                {
                    "title":  "Devoir à la maison n°12",
@@ -454,10 +457,19 @@
                                }
                },
                {
+                   "title":  "Intégration",
+                   "Enoncé":  {
+                                  "path":  "TDIntegration.pdf"
+                              }
+               },
+               {
                    "title":  "Limite et continuité de fonctions",
                    "Enoncé":  {
                                   "path":  "TDLimiteContinuite.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDLimiteContinuite.corrige.pdf"
+                               }
                },
                {
                    "title":  "Polynômes",
@@ -677,6 +689,10 @@
                    {
                        "title":  "Semaine du 01/04 au 05/04",
                        "path":  "ProgColles23.pdf"
+                   },
+                   {
+                       "title":  "Semaine du 08/04 au 12/04",
+                       "path":  "ProgColles24.pdf"
                    }
                ]
 }
