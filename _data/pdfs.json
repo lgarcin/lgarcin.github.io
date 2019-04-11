@@ -391,7 +391,10 @@
                    "title":  "Dérivabilité",
                    "Enoncé":  {
                                   "path":  "TDDerivabilite.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDDerivabilite.corrige.pdf"
+                               }
                },
                {
                    "title":  "Espaces vectoriels de dimension finie",
@@ -565,6 +568,10 @@
                      {
                          "title":  "Interrogation écrite n°12",
                          "path":  "Interro12.pdf"
+                     },
+                     {
+                         "title":  "Interrogation écrite n°13",
+                         "path":  "Interro13.pdf"
                      }
                  ],
     "Formulaires":  [
