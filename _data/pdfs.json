@@ -80,6 +80,15 @@
                    "Corrigé":  {
                                    "path":  "DS09.corrige.pdf"
                                }
+               },
+               {
+                   "title":  "Devoir surveillé n°10",
+                   "Enoncé":  {
+                                  "path":  "DS10.pdf"
+                              },
+                   "Corrigé":  {
+                                   "path":  "DS10.corrige.pdf"
+                               }
                }
            ],
     "DM":  [
@@ -186,6 +195,12 @@
                    "title":  "Devoir à la maison n°12",
                    "Enoncé":  {
                                   "path":  "DM12.pdf"
+                              }
+               },
+               {
+                   "title":  "Devoir à la maison n°13",
+                   "Enoncé":  {
+                                  "path":  "DM13.pdf"
                               }
                }
            ],
@@ -463,7 +478,10 @@
                    "title":  "Intégration",
                    "Enoncé":  {
                                   "path":  "TDIntegration.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDIntegration.corrige.pdf"
+                               }
                },
                {
                    "title":  "Limite et continuité de fonctions",
@@ -500,6 +518,12 @@
                    "Corrigé":  {
                                    "path":  "TDReels.corrige.pdf"
                                }
+               },
+               {
+                   "title":  "Séries",
+                   "Enoncé":  {
+                                  "path":  "TDSeries.pdf"
+                              }
                },
                {
                    "title":  "Sommes, produits, systèmes, trigonométrie",
