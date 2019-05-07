@@ -205,6 +205,12 @@
                    "Enoncé":  {
                                   "path":  "DM13.pdf"
                               }
+               },
+               {
+                   "title":  "Devoir à la maison n°14",
+                   "Enoncé":  {
+                                  "path":  "DM14.pdf"
+                              }
                }
            ],
     "Cours":  [
@@ -496,6 +502,12 @@
                                }
                },
                {
+                   "title":  "Matrices",
+                   "Enoncé":  {
+                                  "path":  "TDMatrices.pdf"
+                              }
+               },
+               {
                    "title":  "Polynômes",
                    "Enoncé":  {
                                   "path":  "TDPolynomes.pdf"
@@ -526,7 +538,10 @@
                    "title":  "Séries",
                    "Enoncé":  {
                                   "path":  "TDSeries.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDSeries.corrige.pdf"
+                               }
                },
                {
                    "title":  "Sommes, produits, systèmes, trigonométrie",
@@ -599,6 +614,10 @@
                      {
                          "title":  "Interrogation écrite n°13",
                          "path":  "Interro13.pdf"
+                     },
+                     {
+                         "title":  "Interrogation écrite n°14",
+                         "path":  "Interro14.pdf"
                      }
                  ],
     "Formulaires":  [
