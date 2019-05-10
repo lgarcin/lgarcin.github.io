@@ -204,7 +204,10 @@
                    "title":  "Devoir à la maison n°13",
                    "Enoncé":  {
                                   "path":  "DM13.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "DM13.corrige.pdf"
+                               }
                },
                {
                    "title":  "Devoir à la maison n°14",
@@ -754,6 +757,10 @@
                    {
                        "title":  "Semaine du 06/05 au 10/05",
                        "path":  "ProgColles26.pdf"
+                   },
+                   {
+                       "title":  "Semaine du 13/05 au 17/05",
+                       "path":  "ProgColles27.pdf"
                    }
                ]
 }
