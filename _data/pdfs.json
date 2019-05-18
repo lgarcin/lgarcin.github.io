@@ -89,6 +89,15 @@
                    "Corrigé":  {
                                    "path":  "DS10.corrige.pdf"
                                }
+               },
+               {
+                   "title":  "Devoir surveillé n°11",
+                   "Enoncé":  {
+                                  "path":  "DS11.pdf"
+                              },
+                   "Corrigé":  {
+                                   "path":  "DS11.corrige.pdf"
+                               }
                }
            ],
     "DM":  [
@@ -761,6 +770,10 @@
                    {
                        "title":  "Semaine du 13/05 au 17/05",
                        "path":  "ProgColles27.pdf"
+                   },
+                   {
+                       "title":  "Semaine du 20/05 au 24/05",
+                       "path":  "ProgColles28.pdf"
                    }
                ]
 }
