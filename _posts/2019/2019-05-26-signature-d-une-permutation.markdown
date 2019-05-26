@@ -75,7 +75,7 @@ On peut maintenant démontrer le résultat final.
 
 **Proposition.** Si deux produits de transpositions sont égaux, les nombres de facteurs dans chacun des deux produits ont la même parité.
 
-**Démo.** Supposons que des transpositions $\tau_1,\dots\tau_p,\tau'_1,\dots\tau'_q$ vérifient $\tau_1\dots\tau_p=\tau'_1\dots\tau'_q$. On en déduit que $\tau_1\dots\tau_p\tau'_q\dots\tau'_1=\ident$. Le lemme précédent montre que $p+q$ est pair, autrement dit que $p$ et $q$ ont même parité.
+**Démo.** Supposons que des transpositions $\tau_1,\dots\tau_p,\tau'_1,\dots\tau'_q$ vérifient $\tau_1\dots\tau_p=\tau'_1\dots\tau'_q$. On en déduit que $\tau_1\dots\tau_p\tau'_q\dots\tau'_1=\ident$. Le lemme précédent montre que $p+q$ est pair, autrement dit que $p$ et $q$ ont même parité. &#9632;
 
 ---
 
