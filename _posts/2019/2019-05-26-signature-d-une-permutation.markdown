@@ -81,4 +81,4 @@ On peut maintenant démontrer le résultat final.
 
 ### Notes
 
-[^1]: On dit qu'une paire $\{i,j\}$ est en inversion pour une permutation $\si$ si $i-j$ et $\si(i)-\si(j)$ sont de signes opposés. Si on note $I(\si)$ le nombre de paires en inversion pour $\si$, la signature de $\si$ peut-être définie comme $(-1)^{I(\si)}$.
+[^1]: On dit qu'une paire $\\{i,j\\}$ est en inversion pour une permutation $\si$ si $i-j$ et $\si(i)-\si(j)$ sont de signes opposés. Si on note $I(\si)$ le nombre de paires en inversion pour $\si$, la signature de $\si$ peut-être définie comme $(-1)^{I(\si)}$.
