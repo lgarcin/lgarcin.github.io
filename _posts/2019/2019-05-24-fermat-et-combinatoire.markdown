@@ -1,6 +1,6 @@
 ---
-layout: "post"
-title: "Petit théorème de Fermat, combinatoire et action de groupe"
+layout: post
+title: 'Petit théorème de Fermat, combinatoire et action de groupe'
 published: true
 ---
 
@@ -14,12 +14,12 @@ Clairement, si tous les sommets du polygone initial sont de même couleur, on n'
 
 Dans le cas général, pour revenir au coloriage initial par rotation (non égale à l'identité), il faut que le coloriage initial possède un motif "périodique", la période étant nécessairement un diviseur de $p$. Notamment, lorsque $p$ est premier, les "périodes" possibles ne peuvent qu'être égales à $1$ (coloriage uniforme) ou $p$ (coloriage non uniforme).
 
-Lorsque $p$ est premier (ici $p=7$), on ne retrouvera jamais le coloriage initial par rotation (à moins que le coloriage soit uniforme).
+Lorsque $p$ est premier (ici $p=7$), on ne retrouvera jamais le coloriage initial avant la $p^\text{ème}$ (à moins que le coloriage soit uniforme).
 <div>
 <script src="/js/polygones1.js" id="d36553d5-ff01-4bac-aa06-cd28044879d3"></script>
 </div>
 
-Lorsque $p$ n'est pas premier (ici $p=6$), on peut retrouver le coloriage initial par rotation si le motif est "périodique" (la "période" ici est $3$).
+Lorsque $p$ n'est pas premier (ici $p=6$), on peut retrouver le coloriage initial avant la $p^\text{ème}$ rotation si le motif est "périodique" (la "période" ici est $3$).
 <div>
 <script src="/js/polygones2.js" id="9b757310-2181-4bf7-b827-0a5a151b9c21"></script>
 </div>

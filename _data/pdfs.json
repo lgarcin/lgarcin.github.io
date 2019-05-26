@@ -433,6 +433,12 @@
                                }
                },
                {
+                   "title":  "Déterminants",
+                   "Enoncé":  {
+                                  "path":  "TDDeterminants.pdf"
+                              }
+               },
+               {
                    "title":  "Espaces vectoriels de dimension finie",
                    "Enoncé":  {
                                   "path":  "TDDimensionFinie.pdf"
@@ -449,6 +455,12 @@
                    "Corrigé":  {
                                    "path":  "TDEquaDiff.corrige.pdf"
                                }
+               },
+               {
+                   "title":  "Espaces préhilbertiens réels",
+                   "Enoncé":  {
+                                  "path":  "TDEspacesEuclidiens.pdf"
+                              }
                },
                {
                    "title":  "Espaces vectoriels",
@@ -517,7 +529,10 @@
                    "title":  "Matrices",
                    "Enoncé":  {
                                   "path":  "TDMatrices.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDMatrices.corrige.pdf"
+                               }
                },
                {
                    "title":  "Polynômes",
@@ -630,6 +645,10 @@
                      {
                          "title":  "Interrogation écrite n°14",
                          "path":  "Interro14.pdf"
+                     },
+                     {
+                         "title":  "Interrogation écrite n°15",
+                         "path":  "Interro15.pdf"
                      }
                  ],
     "Formulaires":  [
@@ -774,6 +793,10 @@
                    {
                        "title":  "Semaine du 20/05 au 24/05",
                        "path":  "ProgColles28.pdf"
+                   },
+                   {
+                       "title":  "Semaine du 27/01 au 31/01",
+                       "path":  "ProgColles29.pdf"
                    }
                ]
 }

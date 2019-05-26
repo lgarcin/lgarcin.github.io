@@ -12,6 +12,7 @@ MathJax.Hub.Config({
     Macros: {
       cC: "\\mathcal{C}",
       cD: "\\mathcal{D}",
+      cP: "\\mathcal{P}",
       la: "\\lambda",
       va: "\\varphi",
       dF: "\\mathbb{F}",
@@ -32,7 +33,9 @@ MathJax.Hub.Config({
       Im: "\\operatorname{Im}",
       Ker: "\\operatorname{Ker}",
       conj: "\\overline",
-      te: "\\theta"
+      te: "\\theta",
+      eps: "\\epsilon",
+      si: "\\sigma"
     }
   }
 });
