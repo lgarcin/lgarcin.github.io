@@ -436,7 +436,10 @@
                    "title":  "Déterminants",
                    "Enoncé":  {
                                   "path":  "TDDeterminants.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDDeterminants.corrige.pdf"
+                               }
                },
                {
                    "title":  "Espaces vectoriels de dimension finie",

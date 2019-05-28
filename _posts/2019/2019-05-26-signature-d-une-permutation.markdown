@@ -18,7 +18,7 @@ Mais cette façon de procéder ne semble pas très naturelle et j'ai donc cherch
 
 Je ne prétends pas que cette démonstration ait quoi que ce soit d'original ; je suis sûr que beaucoup y ont pensé avant moi. Mais, comme je ne l'ai pas trouvée dans la littérature, je me permets d'en faire profiter les personnes intéressées.
 
-**Lemme.** Soient $\tau_1,\dots,\tau_p$ des transpositions dans $S_n$ et $i\in\lb1,n\rb$. Alors il existe des transpositions $\tau_1',\dots,\tau_q'$ telles que
+**Lemme.** Soient $\tau_1,\dots,\tau_p$ des transpositions dans $S_n$ et $i\in\lb1,n\rb$. Alors il existe des transpositions $\tau_1',\dots,\tau_q'$ dans $S_n$ telles que
 * $\tau_1\tau_2\dots\tau_p=\tau_1'\tau_2'\dots\tau_q'$ ;
 * $p$ et $q$ ont même parité ;
 * les supports de $\tau_1',\dots,\tau_{q-1}'$ ne contiennent pas $i$.
@@ -50,7 +50,7 @@ $$\tau_1\tau_2=(i,j)(j,k)=(i,j,k)=(j,k,i)=(j,k)(k,i)$$
 
 ---
 
-On traite alors le cas général par récurrence. On note $\cP_p$ l'assertion à démontrer. Les assertions $\cP_0$ et $\cP_1$ sont évidemment vraies. Supposons que $\cP_{p-1}$ et $\cP_{p-2}$ soient vraies. On se donne alors $\tau_1,\tau_2,\dots,\tau_p$ des transpositions dans $S_n$. On observe alors les transpositions $\tau_1$ et $\tau_2$. Si $\tau_1=\tau_2$, alors $\tau_1\tau_2\dots\tau_p=\tau_3\tau_4\dots\tau_p$ et on peut alors utiliser $\cP_{p-2}$. Sinon, il existe une transposition $\tau_1'$ dont le support ne contient pas $i$ et une transposition $\tau_2'$ telles que $\tau_1\tau_2\dots\tau_p=\tau_1'\tau_2'\dots\tau_p$. Il suffit alors d'appliquer $\cP_{p-1}$ à $\tau_2'\tau_3\dots\tau_p$. Il est important de remarquer que dans chaque cas, la condition portant sur la parité est bien remplie. &#9632;
+On traite alors le cas général par récurrence. On note $\cP_p$ l'assertion à démontrer. Les assertions $\cP_0$ et $\cP_1$ sont évidemment vraies. Supposons que $\cP_{p-1}$ et $\cP_{p-2}$ soient vraies pour un certain entier $p\geq2$. On se donne alors $\tau_1,\tau_2,\dots,\tau_p$ des transpositions dans $S_n$. On observe alors les transpositions $\tau_1$ et $\tau_2$. Si $\tau_1=\tau_2$, alors $\tau_1\tau_2\dots\tau_p=\tau_3\tau_4\dots\tau_p$ et on peut alors utiliser $\cP_{p-2}$. Sinon, il existe une transposition $\tau_1'$ dont le support ne contient pas $i$ et une transposition $\tau_2'$ telles que $\tau_1\tau_2\dots\tau_p=\tau_1'\tau_2'\dots\tau_p$. Il suffit alors d'appliquer $\cP_{p-1}$ à $\tau_2'\tau_3\dots\tau_p$. Il est important de remarquer que dans chaque cas, la condition portant sur la parité est bien remplie. &#9632;
 
 **Exemple.** Un véritable exemple sera probablement plus parlant. On essaie d'obtenir un produit de transpositions dans lequel seul le support de la transposition la plus "à droite" contient 5.
 
@@ -69,7 +69,7 @@ On peut maintenant énoncer le lemme suivant.
 
 **Lemme.** L'identité ne peut s'écrire que comme le produit d'un nombre **pair** de transpositions.
 
-**Démo.** Supposons que l'identité de $\lb1,n\rb$ s'écrive comme un produit de $p$ transpositions. D'après le lemme précédent, l'identité peut alors s'écrire comme un produit de $q$ transpositions où $q$ a la même parité que $p$ et où seul le support de la dernière transposition contient éventuellement $n$. Le support de cette dernière transposition ne peut en fait pas contenir $n$ car on voit rapidement que $n$ ne serait pas fixe dans le cas contraire. En réitérant le processus, on peut écrire l'identité comme un produit de transpositions dont les supports ne contiennent aucun des éléments de $\lb1,n\rb$, autrement dit un produit de "zéro" transposition. La parité du nombre de transpositions ayant été conservé au cours du processus, le nombre intial $p$ de transpositions a la parité de $0$ : $p$ est donc pair. &#9632;
+**Démo.** On raisonne par récurrence. On note $\cP_n$ l'assertion : l'identité de $\lb1,n\rb$ ne peut s'écrire que comme un produit d'un nombre pair de tranpositions. $\cP_0$ est clairement vraie. Supposons que $\cP_{n-1}$ soit vraie pour un certain $n\in\dN^*$. On écrit alors l'identité de $\lb1,n\rb$ comme un produit de $p$ transpositions dans $S_n$. D'après le lemme précédent, l'identité peut alors s'écrire comme un produit de $q$ transpositions dans $S_n$ où $q$ a la même parité que $p$ et où seul le support de la dernière transposition contient éventuellement $n$. Le support de cette dernière transposition ne peut en fait pas contenir $n$ car on voit rapidement que $n$ ne serait pas fixe dans le cas contraire. Ainsi l'identité de $\lb1,n\rb$ s'écrit comme un produit d'un nombre $q$ de transpositions dans $S_{n-1}$ ; c'est donc également le cas de l'identité de $\lb1,n-1\rb$. D'après $\cP_{n-1}$, $q$ est pair et donc $p$ également. &#9632;
 
 On peut maintenant démontrer le résultat final.
 
