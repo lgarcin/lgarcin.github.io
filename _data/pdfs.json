@@ -98,6 +98,12 @@
                    "Corrigé":  {
                                    "path":  "DS11.corrige.pdf"
                                }
+               },
+               {
+                   "title":  "Devoir surveillé n°12",
+                   "Enoncé":  {
+                                  "path":  "DS12.pdf"
+                              }
                }
            ],
     "DM":  [
@@ -222,7 +228,19 @@
                    "title":  "Devoir à la maison n°14",
                    "Enoncé":  {
                                   "path":  "DM14.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "DM14.corrige.pdf"
+                               }
+               },
+               {
+                   "title":  "Devoir à la maison n°15",
+                   "Enoncé":  {
+                                  "path":  "DM15.pdf"
+                              },
+                   "Corrigé":  {
+                                   "path":  "DM15.corrige.pdf"
+                               }
                }
            ],
     "Cours":  [
@@ -424,6 +442,12 @@
                                }
                },
                {
+                   "title":  "TD : Dénombrement, probabilités",
+                   "Enoncé":  {
+                                  "path":  "TDDenombrementProbabilites.pdf"
+                              }
+               },
+               {
                    "title":  "Dérivabilité",
                    "Enoncé":  {
                                   "path":  "TDDerivabilite.pdf"
@@ -463,7 +487,10 @@
                    "title":  "Espaces préhilbertiens réels",
                    "Enoncé":  {
                                   "path":  "TDEspacesEuclidiens.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDEspacesEuclidiens.corrige.pdf"
+                               }
                },
                {
                    "title":  "Espaces vectoriels",
