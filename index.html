@@ -27,47 +27,61 @@ description: Mathématiques en MPSI (cours, devoirs et blog)
 
 <div class="jumbotron">
 
-    Vous trouverez sur ce site les différents documents distribués en cours de mathématiques aux étudiants de la MPSI
-    du
-    lycée Jean-Baptiste Corot.
+  <h2>Consignes aux futurs étudiants</h2>
 
-    Vous trouverez également quelques posts sur les mathématiques et Python.
+  Il faut évidemment être au point sur tout le programme du lycée. Pour que nous puissions commencer les cours dans les meilleures conditions, je vous demanderai de réviser en particulier :
+
+  <ul>
+    <li>les nombres complexes ;</li>
+    <li>les suites (notamment suites arithmétiques et géométriques ainsi que la somme de termes consécutifs de telles suites) ;</li>
+    <li>la trigonométrie : notamment <a href="https://lgarcin.github.io/pdfs/FormulaireTrigo.pdf">formulaire de trigonomérie</a> ;</li>
+    <li>les fonctions : notamment <a href="https://www.maths-france.fr/Terminale/TerminaleS/FichesCours/FormulesDerivees.pdf">formulaire de dérivation</a>.</li>
+  </ul>
+  Une courte évaluation aura lieu dès la rentrée. Vous pouvez trouver <a href="https://lgarcin.github.io/pdfs/DS01.pdf">l'évaluation donnée l'année précédente</a>.
+</div>
+
+<div class="jumbotron">
+
+  Vous trouverez sur ce site les différents documents distribués en cours de mathématiques aux étudiants de la MPSI
+  du lycée Jean-Baptiste Corot.
+
+  Vous trouverez également quelques posts sur les mathématiques et Python.
 
 </div>
 
 <div class="posts-list">
-    {% for post in paginator.posts %}
-    <article class="post-preview">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-            <h2 class="post-title">{{ post.title }}</h2> {% if post.subtitle %}
-            <h3 class="post-subtitle">
-                {{ post.subtitle }}
-            </h3> {% endif %}
-        </a>
+  {% for post in paginator.posts %}
+  <article class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+      <h2 class="post-title">{{ post.title }}</h2> {% if post.subtitle %}
+      <h3 class="post-subtitle">
+        {{ post.subtitle }}
+      </h3> {% endif %}
+    </a>
 
-        <p class="post-meta">
-            Posted on {{ post.date | date: "%B %-d, %Y" }}
-        </p>
+    <p class="post-meta">
+      Posted on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
 
-        <div class="post-entry">
-            {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
-            <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-        </div>
+    <div class="post-entry">
+      {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+    </div>
 
-    </article>
-    {% endfor %}
+  </article>
+  {% endfor %}
 </div>
 
 {% if paginator.total_pages > 1 %}
 <ul class="pager main-pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %} {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
+  {% if paginator.previous_page %}
+  <li class="previous">
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+  </li>
+  {% endif %} {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+  </li>
+  {% endif %}
 </ul>
 {% endif %}
