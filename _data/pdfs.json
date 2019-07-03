@@ -103,7 +103,10 @@
                    "title":  "Devoir surveillé n°12",
                    "Enoncé":  {
                                   "path":  "DS12.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "DS12.corrige.pdf"
+                               }
                }
            ],
     "DM":  [
@@ -445,7 +448,10 @@
                    "title":  "TD : Dénombrement, probabilités",
                    "Enoncé":  {
                                   "path":  "TDDenombrementProbabilites.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDDenombrementProbabilites.corrige.pdf"
+                               }
                },
                {
                    "title":  "Dérivabilité",
