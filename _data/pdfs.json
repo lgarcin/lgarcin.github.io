@@ -164,10 +164,7 @@
                    "title":  "Raisonnements et ensembles",
                    "Enoncé":  {
                                   "path":  "TDRaisonnements.pdf"
-                              },
-                   "Corrigé":  {
-                                   "path":  "TDRaisonnements.corrige.pdf"
-                               }
+                              }
                }
            ],
     "Interros":  [
