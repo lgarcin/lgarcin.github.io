@@ -4,10 +4,7 @@
                    "title":  "Devoir surveillé n°01",
                    "Enoncé":  {
                                   "path":  "DS01.pdf"
-                              },
-                   "Corrigé":  {
-                                   "path":  "DS01.corrige.pdf"
-                               }
+                              }
                }
            ],
     "DM":  [
@@ -15,10 +12,7 @@
                    "title":  "Devoir à la maison n°01",
                    "Enoncé":  {
                                   "path":  "DM01.pdf"
-                              },
-                   "Corrigé":  {
-                                   "path":  "DM01.corrige.pdf"
-                               }
+                              }
                }
            ],
     "Cours":  [
