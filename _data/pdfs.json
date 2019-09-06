@@ -157,6 +157,10 @@
                       {
                           "path":  "EDT_MPSI_20192020.pdf",
                           "title":  "Emploi du temps"
+                      },
+                      {
+                          "path":  "PLANNING_S1_S2.pdf",
+                          "title":  "Planning des DS"
                       }
                   ],
     "TD":  [
@@ -164,6 +168,15 @@
                    "title":  "Raisonnements et ensembles",
                    "Enoncé":  {
                                   "path":  "TDRaisonnements.pdf"
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDRaisonnements.corrige.pdf"
+                               }
+               },
+               {
+                   "title":  "Sommes, produits, systèmes, trigonométrie",
+                   "Enoncé":  {
+                                  "path":  "TDSommesProduits.pdf"
                               }
                }
            ],
