@@ -4,7 +4,10 @@
                    "title":  "Devoir surveillé n°01",
                    "Enoncé":  {
                                   "path":  "DS01.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "DS01.corrige.pdf"
+                               }
                }
            ],
     "DM":  [
@@ -180,7 +183,12 @@
                               }
                }
            ],
-    "Interros":  null,
+    "Interros":  [
+                     {
+                         "title":  "Interrogation écrite n°01",
+                         "path":  "Interro01.pdf"
+                     }
+                 ],
     "Formulaires":  [
                         {
                             "title":  "Comparaison de fonctions",
