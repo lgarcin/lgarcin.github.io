@@ -158,6 +158,10 @@
               ],
     "VieClasse":  [
                       {
+                          "path":  "colloscope_MPSI_2019_2020.pdf",
+                          "title":  "Colloscope"
+                      },
+                      {
                           "path":  "EDT_MPSI_20192020.pdf",
                           "title":  "Emploi du temps"
                       },
@@ -220,6 +224,9 @@
                         }
                     ],
     "Colles":  [
-
+                   {
+                       "title":  "Semaine du 16/09 au 20/09",
+                       "path":  "ProgColles01.pdf"
+                   }
                ]
 }
