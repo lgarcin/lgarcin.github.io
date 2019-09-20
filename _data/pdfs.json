@@ -15,6 +15,15 @@
                    "title":  "Devoir à la maison n°01",
                    "Enoncé":  {
                                   "path":  "DM01.pdf"
+                              },
+                   "Corrigé":  {
+                                   "path":  "DM01.corrige.pdf"
+                               }
+               },
+               {
+                   "title":  "Devoir à la maison n°02",
+                   "Enoncé":  {
+                                  "path":  "DM02.pdf"
                               }
                }
            ],
@@ -172,6 +181,12 @@
                   ],
     "TD":  [
                {
+                   "title":  "Nombres complexes",
+                   "Enoncé":  {
+                                  "path":  "TDComplexes.pdf"
+                              }
+               },
+               {
                    "title":  "Raisonnements et ensembles",
                    "Enoncé":  {
                                   "path":  "TDRaisonnements.pdf"
@@ -184,7 +199,10 @@
                    "title":  "Sommes, produits, systèmes, trigonométrie",
                    "Enoncé":  {
                                   "path":  "TDSommesProduits.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDSommesProduits.corrige.pdf"
+                               }
                }
            ],
     "Interros":  [
@@ -227,6 +245,10 @@
                    {
                        "title":  "Semaine du 16/09 au 20/09",
                        "path":  "ProgColles01.pdf"
+                   },
+                   {
+                       "title":  "Semaine du 23/09 au 27/09",
+                       "path":  "ProgColles02.pdf"
                    }
                ]
 }
