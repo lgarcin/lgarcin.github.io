@@ -209,6 +209,10 @@
                      {
                          "title":  "Interrogation écrite n°01",
                          "path":  "Interro01.pdf"
+                     },
+                     {
+                         "title":  "Interrogation écrite n°02",
+                         "path":  "Interro02.pdf"
                      }
                  ],
     "Formulaires":  [
@@ -249,6 +253,10 @@
                    {
                        "title":  "Semaine du 23/09 au 27/09",
                        "path":  "ProgColles02.pdf"
+                   },
+                   {
+                       "title":  "Semaine du 01/10 au 05/10",
+                       "path":  "ProgColles03.pdf"
                    }
                ]
 }
