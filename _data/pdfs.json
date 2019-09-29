@@ -190,6 +190,12 @@
                   ],
     "TD":  [
                {
+                   "title":  "Applications, fonctions d\u0027une variable réelle",
+                   "Enoncé":  {
+                                  "path":  "TDApplications.pdf"
+                              }
+               },
+               {
                    "title":  "Nombres complexes",
                    "Enoncé":  {
                                   "path":  "TDComplexes.pdf"
