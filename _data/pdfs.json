@@ -33,6 +33,15 @@
                    "title":  "Devoir à la maison n°02",
                    "Enoncé":  {
                                   "path":  "DM02.pdf"
+                              },
+                   "Corrigé":  {
+                                   "path":  "DM02.corrige.pdf"
+                               }
+               },
+               {
+                   "title":  "Devoir à la maison n°03",
+                   "Enoncé":  {
+                                  "path":  "DM03.pdf"
                               }
                }
            ],
@@ -199,7 +208,10 @@
                    "title":  "Nombres complexes",
                    "Enoncé":  {
                                   "path":  "TDComplexes.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDComplexes.corrige.pdf"
+                               }
                },
                {
                    "title":  "Raisonnements et ensembles",
