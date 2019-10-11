@@ -73,7 +73,7 @@ On peut déplacer un pion vers un trou pour supprimer un autre pion en utilisant
 <div>
 <svg height="200" width="210">
 <defs>
-  <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5"
+  <marker id="arrow1" viewBox="0 0 10 10" refX="10" refY="5"
       markerWidth="10" markerHeight="10"
       orient="auto-start-reverse">
     <path d="M 0 0 L 10 5 L 0 10 z" />
@@ -83,7 +83,7 @@ On peut déplacer un pion vers un trou pour supprimer un autre pion en utilisant
     <circle cx="30" cy="60" r="20" stroke="black" stroke-width="3" fill="blue" />
     <circle cx="100" cy="60" r="20" stroke="black" stroke-width="3" fill="green" />
     <circle cx="170" cy="60" r="20" stroke="black" stroke-width="3" fill="transparent" />
-    <path d="M30 40 C 50 00, 150 00, 170 40" stroke="black" fill="transparent" marker-end="url(#arrow)" />
+    <path d="M30 40 C 50 00, 150 00, 170 40" stroke="black" fill="transparent" marker-end="url(#arrow1)" />
     <circle cx="30" cy="170" r="20" stroke="black" stroke-width="3" fill="transparent" />
     <circle cx="100" cy="170" r="20" stroke="black" stroke-width="3" fill="transparent" />
     <circle cx="170" cy="170" r="20" stroke="black" stroke-width="3" fill="green" />
@@ -92,7 +92,7 @@ On peut déplacer un pion vers un trou pour supprimer un autre pion en utilisant
 
 <svg height="200" width="210">
 <defs>
-  <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5"
+  <marker id="arrow2" viewBox="0 0 10 10" refX="10" refY="5"
       markerWidth="10" markerHeight="10"
       orient="auto-start-reverse">
     <path d="M 0 0 L 10 5 L 0 10 z" />
@@ -102,7 +102,7 @@ On peut déplacer un pion vers un trou pour supprimer un autre pion en utilisant
     <circle cx="30" cy="60" r="20" stroke="black" stroke-width="3" fill="transparent" />
     <circle cx="100" cy="60" r="20" stroke="black" stroke-width="3" fill="green" />
     <circle cx="170" cy="60" r="20" stroke="black" stroke-width="3" fill="blue" />
-    <path d="M30 40 C 50 00, 150 00, 170 40" stroke="black" fill="transparent" marker-start="url(#arrow)" />
+    <path d="M30 40 C 50 00, 150 00, 170 40" stroke="black" fill="transparent" marker-start="url(#arrow2)" />
     <circle cx="30" cy="170" r="20" stroke="black" stroke-width="3" fill="green" />
     <circle cx="100" cy="170" r="20" stroke="black" stroke-width="3" fill="transparent" />
     <circle cx="170" cy="170" r="20" stroke="black" stroke-width="3" fill="transparent" />
@@ -113,7 +113,7 @@ On peut déplacer un pion vers un trou pour supprimer un autre pion en utilisant
 <div>
 <svg height="200" width="210">
 <defs>
-  <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5"
+  <marker id="arrow3" viewBox="0 0 10 10" refX="10" refY="5"
       markerWidth="10" markerHeight="10"
       orient="auto-start-reverse">
     <path d="M 0 0 L 10 5 L 0 10 z" />
@@ -123,7 +123,7 @@ On peut déplacer un pion vers un trou pour supprimer un autre pion en utilisant
     <circle cx="60" cy="30" r="20" stroke="black" stroke-width="3" fill="blue" />
     <circle cx="60" cy="100" r="20" stroke="black" stroke-width="3" fill="green" />
     <circle cx="60" cy="170" r="20" stroke="black" stroke-width="3" fill="transparent" />
-    <path d="M40 30 C 00 50, 00 150, 40 170" stroke="black" fill="transparent" marker-end="url(#arrow)" />
+    <path d="M40 30 C 00 50, 00 150, 40 170" stroke="black" fill="transparent" marker-end="url(#arrow3)" />
     <circle cx="170" cy="30" r="20" stroke="black" stroke-width="3" fill="transparent" />
     <circle cx="170" cy="100" r="20" stroke="black" stroke-width="3" fill="transparent" />
     <circle cx="170" cy="170" r="20" stroke="black" stroke-width="3" fill="green" />
@@ -132,7 +132,7 @@ On peut déplacer un pion vers un trou pour supprimer un autre pion en utilisant
 
 <svg height="200" width="210">
 <defs>
-  <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5"
+  <marker id="arrow4" viewBox="0 0 10 10" refX="10" refY="5"
       markerWidth="10" markerHeight="10"
       orient="auto-start-reverse">
     <path d="M 0 0 L 10 5 L 0 10 z" />
@@ -142,7 +142,7 @@ On peut déplacer un pion vers un trou pour supprimer un autre pion en utilisant
     <circle cx="60" cy="30" r="20" stroke="black" stroke-width="3" fill="transparent" />
     <circle cx="60" cy="100" r="20" stroke="black" stroke-width="3" fill="green" />
     <circle cx="60" cy="170" r="20" stroke="black" stroke-width="3" fill="blue" />
-    <path d="M40 30 C 00 50, 00 150, 40 170" stroke="black" fill="transparent" marker-start="url(#arrow)" />
+    <path d="M40 30 C 00 50, 00 150, 40 170" stroke="black" fill="transparent" marker-start="url(#arrow4)" />
     <circle cx="170" cy="30" r="20" stroke="black" stroke-width="3" fill="green" />
     <circle cx="170" cy="100" r="20" stroke="black" stroke-width="3" fill="transparent" />
     <circle cx="170" cy="170" r="20" stroke="black" stroke-width="3" fill="transparent" />
@@ -217,7 +217,7 @@ Nous allons d'abord regarder l'effet sur $A(S)$ et $B(S)$ d'un mouvement d'un pi
 
 <svg height="230" width="310">
 <defs>
-  <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5"
+  <marker id="arrow5" viewBox="0 0 10 10" refX="10" refY="5"
       markerWidth="10" markerHeight="10"
       orient="auto-start-reverse">
     <path d="M 0 0 L 10 5 L 0 10 z" />
@@ -229,7 +229,7 @@ Nous allons d'abord regarder l'effet sur $A(S)$ et $B(S)$ d'un mouvement d'un pi
     <circle cx="30" cy="200" r="20" stroke="black" stroke-width="3" fill="transparent" />
     <circle cx="140" cy="200" r="20" stroke="black" stroke-width="3" fill="transparent" />
     <circle cx="250" cy="200" r="20" stroke="black" stroke-width="3" fill="green" />
-    <path d="M30 40 C 50 00, 230 00, 250 40" stroke="black" fill="transparent" marker-end="url(#arrow)" />
+    <path d="M30 40 C 50 00, 230 00, 250 40" stroke="black" fill="transparent" marker-end="url(#arrow5)" />
     <path d="M 130 120 l 0 20 l -10 00 l 20 20 l 20 -20 l -10 00 l 00 -20 z"/>
     <foreignObject x="0" y="80" width="160" height="160">
     <div>
