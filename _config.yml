@@ -4,61 +4,61 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
-url: "https://lgarcin.github.io/"
-baseurl: ""
+url:                    "https://lgarcin.github.io/"
+baseurl:                ""
 
 # If you are building a GitHub project page then use these settings:
-#url: "https://username.github.io/projectname"
-#baseurl: "/projectname"
+#url:                   "https://username.github.io/projectname"
+#baseurl:               "/projectname"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Maths MPSI Corot
+title:                  Maths MPSI Corot
 
 # Short description of your site
-description: Mathématiques en MPSI au lycée Corot
+description:            Mathématiques en MPSI au lycée Corot
 
 # --- Navigation bar options --- #
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/pi.png"
+avatar:                 "/img/pi.png"
 
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else you can remove
+# Important:            you must keep the "name" parameter, everything else you can remove
 author:
-  name: Laurent Garcin
-  email: laurent.garcin@gmail.com
-  facebook: yourname
-  github: lgarcin
-  twitter: yourname
-  linkedin: in/laurent-garcin-b2b02ab7
-  stackoverflow: 4439374/laurent-garcin
+  name:                 Laurent Garcin
+  email:                laurent.garcin@gmail.com
+  facebook:             yourname
+  github:               lgarcin
+  twitter:              yourname
+  linkedin:             in/laurent-garcin-b2b02ab7
+  stackoverflow:        4439374/laurent-garcin
 
 # Select which links to show in the footer
 footer-links-active:
-  rss: true
-  facebook: false
-  email: true
-  twitter: false
-  github: true
-  linkedin: true
-  stackoverflow: true
+  rss:                  true
+  facebook:             false
+  email:                true
+  twitter:              false
+  github:               true
+  linkedin:             true
+  stackoverflow:        true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "lgarcin.github.io"
+url-pretty:             "lgarcin.github.io"
 
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "mpsi"
+disqus:                 "mpsi"
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: "UA-30206958-3"
+google_analytics:       "UA-30206958-3"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
@@ -66,26 +66,29 @@ plugins:
   - jekyll-paginate
 
 # Output options (more information on Jekyll's site)
-timezone: "Europe/Paris"
-markdown: kramdown
-highlighter: rouge
-permalink: /:year-:month-:day-:title/
-paginate: 5
+timezone:               "Europe/Paris"
+markdown:               kramdown
+kramdown:
+  input:                GFM
+  syntax_highlighter:   rouge
+highlighter:            rouge
+permalink:              /:year-:month-:day-:title/
+paginate:               5
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
   -
     scope:
-      path: ""
-      type: "posts"
+      path:             ""
+      type:             "posts"
     values:
-      comments: true  # add comments to all blog posts
+      comments:         true  # add comments to all blog posts
   -
     scope:
-      path: "" # all files
+      path:             "" # all files
     values:
-      layout: "default"
-      show-avatar: true
+      layout:           "default"
+      show-avatar:      true
 
 # Exclude these files from production site
 exclude:
@@ -98,8 +101,8 @@ exclude:
 
 # prose.io config
 prose:
-  rooturl: '_posts'
-  media: 'img'
+  rooturl:              '_posts'
+  media:                'img'
   ignore:
     - 404.html
     - LICENSE
@@ -112,31 +115,31 @@ prose:
     - /js
   metadata:
     _posts:
-      - name: "layout"
+      - name:           "layout"
         field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
+          element:      "hidden"
+          value:        "post"
+      - name:           "title"
         field:
-          element: "text"
-          label: "Post title"
-          placeholder: "Title"
-          alterable: true
-      - name: "subtitle"
+          element:      "text"
+          label:        "Post title"
+          placeholder:  "Title"
+          alterable:    true
+      - name:           "subtitle"
         field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
-          alterable: true
-      - name: "date"
+          element:      "textarea"
+          label:        "Subtitle"
+          placeholder:  "A description of your post."
+          alterable:    true
+      - name:           "date"
         field:
-          element: "text"
-          label: "Date"
-          help: "Enter date of post."
-          placeholder: "yyyy-mm-dd"
-          alterable: true
-      - name: "published"
+          element:      "text"
+          label:        "Date"
+          help:         "Enter date of post."
+          placeholder:  "yyyy-mm-dd"
+          alterable:    true
+      - name:           "published"
         field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
+          element:      "checkbox"
+          label:        "Publish"
+          help:         "Check to publish post, uncheck to hide."

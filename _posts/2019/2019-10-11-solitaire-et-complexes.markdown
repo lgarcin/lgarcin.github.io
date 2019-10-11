@@ -1,12 +1,16 @@
 ---
-layout: "post"
-title: "Solitaire et complexes"
+layout: post
+title: Solitaire et complexes
 published: true
 ---
 
+## Présentation du solitaire
+
 L'article qui suit est très inspiré de l'article [A Solitaire Game and its Relation to a Finite Field](http://alexandria.tue.nl/repository/freearticles/598441.pdf) de N. G. de Bruijn. J'ai choisi de remplacer l'utilisation du corps $\dF_4$ par l'anneau $\dZ[j]$ qui est sans doute plus familier des étudiants de première année.
 
-Le jeu du solitaire est un jeu sur plateau bien connu :
+Le jeu du solitaire est un jeu sur plateau bien connu. Des pions sont disposés dans des trous disposés sur un plateau. L'objectif est de déplacer les pions (cf. ci-dessous) de manière à ce qu'il ne reste plus qu'un pion à la fin.
+
+Il existe plusieurs variantes de ce jeu tenant à la disposition des trous sur le plateau et aux positions initiales des jetons dans ces trous. On distinguera dans cet article les deux variantes **jouables** suivantes.
 
 ### Solitaire anglais
 
@@ -20,7 +24,51 @@ Le jeu du solitaire est un jeu sur plateau bien connu :
     <iframe width="380" height="380" frameBorder="0" src="/js/solitaire_french.html"></iframe>
 </div>
 
-### Mouvements
+
+### Repérage
+
+Pour ce qui suit, on va repérer les emplacements des trous à l'aide de coordonnées. On utilise des axes centrés sur le trou central mais ceci importe peu en fait. Voici par exemple le repérage des trous pour la version française du solitaire.
+
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) {
+
+  var svgCoord = document.getElementById("coord");
+  var NS = "http://www.w3.org/2000/svg";
+  for (var i = -3; i < 4; i++) {
+      for (var j=-3; j < 4; j++){
+          if (Math.abs(i)+Math.abs(j) <= 4){
+              var x = 280 + 80 * i;
+              var y = 280 + 80 * j;
+              var circle = document.createElementNS(NS, "circle");
+              circle.setAttribute("cx", x);
+              circle.setAttribute("cy", y);
+              circle.setAttribute("r", 20);
+              circle.setAttribute("stroke", "rgb(0,0,0)");
+              circle.setAttribute("fill", "transparent");
+              svgCoord.appendChild(circle);
+              var fo = document.createElementNS(NS, "foreignObject");
+              fo.setAttribute("x", x - 40);
+              fo.setAttribute("y", y + 20);
+              fo.setAttribute("width", 80);
+              fo.setAttribute("height", 60);
+              var div = document.createElement("div");
+              div.setAttribute("style", "text-align: center; font-size: 14px")
+              var content = document.createTextNode("$("+i+","+(-j)+"$)");
+              div.appendChild(content);
+              fo.appendChild(div);
+              svgCoord.appendChild(fo);
+          }
+      }
+  };
+});
+</script>
+
+<svg id="coord" width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+</svg>
+
+## Mouvements
+
+On peut déplacer un pion vers un trou pour supprimer un autre pion en utilisant un des 4 déplacements suivants (vers la droite, la gauche, le bas ou le haut).
 
 <div>
 <svg height="200" width="210">
@@ -104,7 +152,7 @@ Le jeu du solitaire est un jeu sur plateau bien connu :
 
 ## L'anneau $\dZ[j]$
 
-On rappelle que $j$ est une **racine cubique** de l'unité et que, par conséquent,
+On introduit maintenant quelques objets mathématiques. On rappelle que $j$ est une **racine cubique** de l'unité et que, par conséquent,
 
 $$
 j^3=0 \qquad\text{et}\qquad 1+j+j^2=0
@@ -134,10 +182,11 @@ def coord(n):
         return (-1, -1)
 ```
 
-
 On dira que $u\in\dZ[j]$ et $v\in\dZ[j]$ sont congrus modulo 2 et on notera $u\equiv v[2]$ s'il existe $w\in\dZ[j]$ tel que $u=v+2w$. De manière équivalente, $u=a+bj$ et $v=c+d$ sont congrus modulo 2 si $a\equiv c[2]$ et $b\equiv d[2]$ (au sens de la congruence usuelle sur les entiers).
 
 ## Deux invariants
+
+On s'intéresse maintenant à deux quantités qui possèdent des propriétés de conservation au cours du jeu. On note $S$ l'ensemble des coordonnées des pions à un moment du jeu et on pose :
 
 $$
 \begin{align}
@@ -146,6 +195,8 @@ A(S)&=\sum_{(k,\ell)\in S}j^{k+l}
 B(S)&=\sum_{(k,\ell)\in S}j^{k-l}
 \end{align}
 $$
+
+Ce qui précède montre que, quelque soit $S$, $A(S)$ et $B(S)$ sont des éléments de l'anneau $\dZ[j]$. On peut donc également définir deux fonctions Python qui calculent les coordonnées de $A(S)$ et $B(S)$ dans la base $(1,j)$.
 
 ```python
 def A(S):
@@ -158,7 +209,7 @@ def B(S):
     return sum(a for a, b in c), sum(b for a, b in c)
 ```
 
-Nous allons d'abord regarder l'effet sur $A(S)$ et $B(S)$ d'un mouvement d'un pion vers la droite. Supposons que $(k_0,\ell_0)$ et $(k_0+1,\ell_0)$ appartiennent à $S$ mais que $(k_0+2,\ell_0)$ n'appartienne pas à $S$. Si cette dernière position figure sur le tableau de jeu, on peut déplacer le pion en position $(k_0,\ell_0)$ vers la position $(k_0+2,\ell_0)$. Notons $S'$ la configuration ainsi obtenue. Si on récapitule :
+Nous allons d'abord regarder l'effet sur $A(S)$ et $B(S)$ d'un mouvement d'un pion vers la droite. Supposons que $(k_0,\ell_0)$ et $(k_0+1,\ell_0)$ appartiennent à $S$ mais que $(k_0+2,\ell_0)$ n'appartienne pas à $S$. Si cette dernière position est l'emplacement d'un trou, on peut déplacer le pion en position $(k_0,\ell_0)$ vers la position $(k_0+2,\ell_0)$. Notons $S'$ la configuration ainsi obtenue. Si on récapitule :
 
 * un pion a disparu en $(k_0,\ell_0)$ ;
 * un pion a disparu en $(k_0+1,\ell_0)$ ;
@@ -216,9 +267,11 @@ On laisse le lecteur vérifier qu'il en est de même lors du mouvement d'un pion
 
 ## Positions finales gagnantes possibles
 
-Notons $P$ l'ensemble des positions possibles et $S$ la configuration initiale, c'est-à-dire l'ensemble des positions initiales des pions. Si le joueur a gagné, il ne reste plus qu'un pion sur le plateau en une certaine position $(k,\ell)\in P$. D'après ce qui précéde, cette position finale doit vérifier $$A(\{(k,\ell)\})\equiv A(S)[2]$$ et $$B(\{(k,\ell)\})\equiv B(S)[2]$$. On constate alors qu'il existe assez peu de positions finales possibles.
+Notons $P$ l'ensemble des emplacements des trous et $S$ la configuration initiale, c'est-à-dire l'ensemble des positions initiales des pions. Si le joueur a gagné, il ne reste plus qu'un pion sur le plateau en une certaine position $(k,\ell)\in P$. D'après ce qui précéde, cette position finale doit vérifier $$A(\{(k,\ell)\})\equiv A(S)[2]$$ et $$B(\{(k,\ell)\})\equiv B(S)[2]$$. On constate alors qu'il existe assez peu de positions finales possibles.
 
 ### A l'aide de Python
+
+On peut tout d'abord employer Python pour tester tous les emplacements des trous.
 
 ```python
 def possible(S, P):
@@ -261,7 +314,7 @@ Pour calculer les valeurs de $A$ et $B$ pour la configuration initiale, on peut 
 
 #### Solitaire anglais
 
-$A(S)=B(S)=-1\equiv1[2]$
+En utilisant cette dernière remarque, on calcule aisément $A(S)=B(S)=-1\equiv1[2]$.
 
 Une éventuelle position finale gagnante $(k,\ell)\in P$ doit donc vérifier $j^{k+\ell}\equiv1[2]$ et $j^{k-\ell}\equiv1[2]$. Or on rappelle que
 
@@ -273,10 +326,12 @@ On en déduit que $k+\ell\equiv0[3]$ et $k-\ell\equiv0[3]$, puis que $2k\equiv0[
 
 #### Solitaire français
 
-$A(S)=1-j\equiv1+j[2]$ et $B(S)=2+j\equiv j[2]$
+Comme précédemment, on calcule facilement $A(S)=1-j\equiv1+j[2]$ et $B(S)=2+j\equiv j[2]$ et on rappelle à nouveau que
 
 -   si $n\equiv0[3]$, $j^n=1\equiv1[2]$ ;
 -   si $n\equiv1[3]$, $j^n=j\equiv j[2]$ ;
 -   si $n\equiv2[3]$, $j^n=j^2=-1-j\equiv1+j[2]$.
 
-On doit donc avoir $k+\ell\equiv2[3]$ et $k-\ell\equiv1[3]$. Ainsi $2k\equiv0[3]$ et $2\ell\equiv1[3]$. Puisque $2\equiv-1[3]$, $k\equiv0[3]$ et $\ell\equiv-1[3]$. A nouveau, puisque $(k,\ell)\in P$, les seules possibilités sont $(-3, -1), (0, -1), (0, 2), (3, -1)$.
+Une éventuelle position finale gagnante $(k,\ell)\in P$ doit donc vérifier $k+\ell\equiv2[3]$ et $k-\ell\equiv1[3]$. Ainsi $2k\equiv0[3]$ et $2\ell\equiv1[3]$. Puisque $2\equiv-1[3]$, $k\equiv0[3]$ et $\ell\equiv-1[3]$. A nouveau, puisque $(k,\ell)\in P$, les seules possibilités sont $(-3, -1), (0, -1), (0, 2), (3, -1)$.
+
+On peut également remarquer que si la position laissée libre initialement, n'est pas la position $(0,1)$ mais la position centrale $(0,0)$, on constate que $A(S)=B(S)=0$. Mais $j^n$ ne peut jamais être congru à $0$ modulo $2$ donc il n'y a aucune possibilité de gagner !
