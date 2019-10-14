@@ -10,7 +10,9 @@ L'article qui suit est très inspiré de l'article [A Solitaire Game and its Rel
 
 Le jeu du solitaire est un jeu sur plateau bien connu. Des pions sont disposés dans des trous disposés sur un plateau. L'objectif est de déplacer les pions (cf. ci-dessous) de manière à ce qu'il ne reste plus qu'un pion à la fin.
 
-Il existe plusieurs variantes de ce jeu tenant à la disposition des trous sur le plateau et aux positions initiales des jetons dans ces trous. On distinguera dans cet article les deux variantes **jouables** suivantes.
+Il existe plusieurs variantes de ce jeu tenant à la disposition des trous sur le plateau et aux positions initiales des jetons dans ces trous. On distinguera dans cet article les deux variantes **jouables** suivantes.[^github]
+
+[^github]:
 
 ### Solitaire anglais
 
@@ -335,3 +337,5 @@ Comme précédemment, on calcule facilement $A(S)=1-j\equiv1+j[2]$ et $B(S)=2+j\
 Une éventuelle position finale gagnante $(k,\ell)\in P$ doit donc vérifier $k+\ell\equiv2[3]$ et $k-\ell\equiv1[3]$. Ainsi $2k\equiv0[3]$ et $2\ell\equiv1[3]$. Puisque $2\equiv-1[3]$, $k\equiv0[3]$ et $\ell\equiv-1[3]$. A nouveau, puisque $(k,\ell)\in P$, les seules possibilités sont $(-3, -1), (0, -1), (0, 2), (3, -1)$.
 
 On peut également remarquer que si la position laissée libre initialement, n'est pas la position $(0,1)$ mais la position centrale $(0,0)$, on constate que $A(S)=B(S)=0$. Mais $j^n$ ne peut jamais être congru à $0$ modulo $2$ donc il n'y a aucune possibilité de gagner !
+
+[^github]: Pour ceux que ça intéresse, il s'agit d'une application écrite dans le langage fonctionnel [Elm](https://elm-lang.org/) et disponible sur le dépôt <https://github.com/lgarcin/SolitaireElm>.
