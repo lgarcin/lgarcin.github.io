@@ -51,6 +51,15 @@
                    "title":  "Devoir à la maison n°03",
                    "Enoncé":  {
                                   "path":  "DM03.pdf"
+                              },
+                   "Corrigé":  {
+                                   "path":  "DM03.corrige.pdf"
+                               }
+               },
+               {
+                   "title":  "Devoir à la maison n°04",
+                   "Enoncé":  {
+                                  "path":  "DM04.pdf"
                               }
                }
            ],
@@ -211,7 +220,10 @@
                    "title":  "Applications, fonctions d\u0027une variable réelle",
                    "Enoncé":  {
                                   "path":  "TDApplications.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDApplications.corrige.pdf"
+                               }
                },
                {
                    "title":  "Nombres complexes",
@@ -221,6 +233,12 @@
                    "Corrigé":  {
                                    "path":  "TDComplexes.corrige.pdf"
                                }
+               },
+               {
+                   "title":  "Fonctions usuelles",
+                   "Enoncé":  {
+                                  "path":  "TDFonctionsUsuelles.pdf"
+                              }
                },
                {
                    "title":  "Raisonnements et ensembles",
