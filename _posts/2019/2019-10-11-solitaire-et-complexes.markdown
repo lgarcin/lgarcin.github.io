@@ -10,9 +10,7 @@ L'article qui suit est très inspiré de l'article [A Solitaire Game and its Rel
 
 Le jeu du solitaire est un jeu sur plateau bien connu. Des pions sont disposés dans des trous disposés sur un plateau. L'objectif est de déplacer les pions (cf. ci-dessous) de manière à ce qu'il ne reste plus qu'un pion à la fin.
 
-Il existe plusieurs variantes de ce jeu tenant à la disposition des trous sur le plateau et aux positions initiales des jetons dans ces trous. On distinguera dans cet article les deux variantes **jouables** suivantes.[^github]
-
-[^github]:
+Il existe plusieurs variantes de ce jeu tenant à la disposition des trous sur le plateau et aux positions initiales des jetons dans ces trous. On distinguera dans cet article les deux variantes suivantes. Vous pouvez même y jouer (cliquer ou appuyer sur les pions)! [^github]
 
 ### Solitaire anglais
 
