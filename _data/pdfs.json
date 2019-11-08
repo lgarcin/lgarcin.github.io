@@ -60,7 +60,10 @@
                    "title":  "Devoir à la maison n°04",
                    "Enoncé":  {
                                   "path":  "DM04.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "DM04.corrige.pdf"
+                               }
                },
                {
                    "title":  "Devoir à la maison n°05",
@@ -244,7 +247,10 @@
                    "title":  "Fonctions usuelles",
                    "Enoncé":  {
                                   "path":  "TDFonctionsUsuelles.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDFonctionsUsuelles.corrige.pdf"
+                               }
                },
                {
                    "title":  "Primitives et intégrales",
@@ -343,6 +349,10 @@
                    {
                        "title":  "Semaine du 05/11 au 09/11",
                        "path":  "ProgColles06.pdf"
+                   },
+                   {
+                       "title":  "Semaine du 12/11 au 16/11",
+                       "path":  "ProgColles07.pdf"
                    }
                ]
 }
