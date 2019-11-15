@@ -244,6 +244,12 @@
                                }
                },
                {
+                   "title":  "Équations différentielles",
+                   "Enoncé":  {
+                                  "path":  "TDEquaDiff.pdf"
+                              }
+               },
+               {
                    "title":  "Fonctions usuelles",
                    "Enoncé":  {
                                   "path":  "TDFonctionsUsuelles.pdf"
@@ -256,7 +262,10 @@
                    "title":  "Primitives et intégrales",
                    "Enoncé":  {
                                   "path":  "TDIntegralesPrimitives.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDIntegralesPrimitives.corrige.pdf"
+                               }
                },
                {
                    "title":  "Raisonnements et ensembles",
@@ -353,6 +362,10 @@
                    {
                        "title":  "Semaine du 12/11 au 16/11",
                        "path":  "ProgColles07.pdf"
+                   },
+                   {
+                       "title":  "Semaine du 18/11 au 22/11",
+                       "path":  "ProgColles08.pdf"
                    }
                ]
 }
