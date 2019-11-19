@@ -26,6 +26,15 @@
                    "Corrigé":  {
                                    "path":  "DS03.corrige.pdf"
                                }
+               },
+               {
+                   "title":  "Devoir surveillé n°04",
+                   "Enoncé":  {
+                                  "path":  "DS04.pdf"
+                              },
+                   "Corrigé":  {
+                                   "path":  "DS04.corrige.pdf"
+                               }
                }
            ],
     "DM":  [
@@ -69,6 +78,12 @@
                    "title":  "Devoir à la maison n°05",
                    "Enoncé":  {
                                   "path":  "DM05.pdf"
+                              }
+               },
+               {
+                   "title":  "Devoir à la maison n°06",
+                   "Enoncé":  {
+                                  "path":  "DM06.pdf"
                               }
                }
            ],
@@ -302,6 +317,10 @@
                      {
                          "title":  "Interrogation écrite n°04",
                          "path":  "Interro04.pdf"
+                     },
+                     {
+                         "title":  "Interrogation écrite n°05",
+                         "path":  "Interro05.pdf"
                      }
                  ],
     "Formulaires":  [
