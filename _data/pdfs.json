@@ -78,7 +78,10 @@
                    "title":  "Devoir à la maison n°05",
                    "Enoncé":  {
                                   "path":  "DM05.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "DM05.corrige.pdf"
+                               }
                },
                {
                    "title":  "Devoir à la maison n°06",
@@ -250,6 +253,12 @@
                                }
                },
                {
+                   "title":  "Comparaison de fonctions",
+                   "Enoncé":  {
+                                  "path":  "TDComparaisonFonctions.pdf"
+                              }
+               },
+               {
                    "title":  "Nombres complexes",
                    "Enoncé":  {
                                   "path":  "TDComplexes.pdf"
@@ -262,7 +271,10 @@
                    "title":  "Équations différentielles",
                    "Enoncé":  {
                                   "path":  "TDEquaDiff.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDEquaDiff.corrige.pdf"
+                               }
                },
                {
                    "title":  "Fonctions usuelles",
@@ -385,6 +397,10 @@
                    {
                        "title":  "Semaine du 18/11 au 22/11",
                        "path":  "ProgColles08.pdf"
+                   },
+                   {
+                       "title":  "Semaine du 25/11 au 29/11",
+                       "path":  "ProgColles09.pdf"
                    }
                ]
 }
