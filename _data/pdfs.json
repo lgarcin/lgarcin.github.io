@@ -256,7 +256,10 @@
                    "title":  "Comparaison de fonctions",
                    "Enoncé":  {
                                   "path":  "TDComparaisonFonctions.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDComparaisonFonctions.corrige.pdf"
+                               }
                },
                {
                    "title":  "Nombres complexes",
@@ -304,6 +307,12 @@
                                }
                },
                {
+                   "title":  "Nombres réels, relations binaires",
+                   "Enoncé":  {
+                                  "path":  "TDReels.pdf"
+                              }
+               },
+               {
                    "title":  "Sommes, produits, systèmes, trigonométrie",
                    "Enoncé":  {
                                   "path":  "TDSommesProduits.pdf"
@@ -333,6 +342,10 @@
                      {
                          "title":  "Interrogation écrite n°05",
                          "path":  "Interro05.pdf"
+                     },
+                     {
+                         "title":  "Interrogation écrite n°06",
+                         "path":  "Interro06.pdf"
                      }
                  ],
     "Formulaires":  [
