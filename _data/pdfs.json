@@ -35,6 +35,15 @@
                    "Corrigé":  {
                                    "path":  "DS04.corrige.pdf"
                                }
+               },
+               {
+                   "title":  "Devoir surveillé n°05",
+                   "Enoncé":  {
+                                  "path":  "DS05.pdf"
+                              },
+                   "Corrigé":  {
+                                   "path":  "DS05.corrige.pdf"
+                               }
                }
            ],
     "DM":  [
