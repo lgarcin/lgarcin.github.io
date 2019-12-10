@@ -97,6 +97,12 @@
                    "Enoncé":  {
                                   "path":  "DM06.pdf"
                               }
+               },
+               {
+                   "title":  "Devoir à la maison n°07",
+                   "Enoncé":  {
+                                  "path":  "DM07.pdf"
+                              }
                }
            ],
     "Cours":  [
@@ -329,6 +335,12 @@
                    "Corrigé":  {
                                    "path":  "TDSommesProduits.corrige.pdf"
                                }
+               },
+               {
+                   "title":  "Suites numériques",
+                   "Enoncé":  {
+                                  "path":  "TDSuites.pdf"
+                              }
                }
            ],
     "Interros":  [
