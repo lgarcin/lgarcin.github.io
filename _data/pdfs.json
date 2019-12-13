@@ -96,13 +96,19 @@
                    "title":  "Devoir à la maison n°06",
                    "Enoncé":  {
                                   "path":  "DM06.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "DM06.corrige.pdf"
+                               }
                },
                {
                    "title":  "Devoir à la maison n°07",
                    "Enoncé":  {
                                   "path":  "DM07.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "DM07.corrige.pdf"
+                               }
                }
            ],
     "Cours":  [
@@ -325,7 +331,10 @@
                    "title":  "Nombres réels, relations binaires",
                    "Enoncé":  {
                                   "path":  "TDReels.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDReels.corrige.pdf"
+                               }
                },
                {
                    "title":  "Sommes, produits, systèmes, trigonométrie",
@@ -443,6 +452,10 @@
                    {
                        "title":  "Semaine du 09/12 au 13/12",
                        "path":  "ProgColles11.pdf"
+                   },
+                   {
+                       "title":  "Semaine du 16/12 au 20/12",
+                       "path":  "ProgColles12.pdf"
                    }
                ]
 }
