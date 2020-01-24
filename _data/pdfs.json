@@ -44,6 +44,15 @@
                    "Corrigé":  {
                                    "path":  "DS05.corrige.pdf"
                                }
+               },
+               {
+                   "title":  "Devoir surveillé n°06",
+                   "Enoncé":  {
+                                  "path":  "DS06.pdf"
+                              },
+                   "Corrigé":  {
+                                   "path":  "DS06.corrige.pdf"
+                               }
                }
            ],
     "DM":  [
@@ -114,6 +123,15 @@
                    "title":  "Devoir à la maison n°08",
                    "Enoncé":  {
                                   "path":  "DM08.pdf"
+                              },
+                   "Corrigé":  {
+                                   "path":  "DM08.corrige.pdf"
+                               }
+               },
+               {
+                   "title":  "Devoir à la maison n°09",
+                   "Enoncé":  {
+                                  "path":  "DM09.pdf"
                               }
                }
            ],
@@ -261,6 +279,10 @@
                           "title":  "Colloscope"
                       },
                       {
+                          "path":  "colloscope_MPSI_2019_2020_optionSI.pdf",
+                          "title":  "Colloscope"
+                      },
+                      {
                           "path":  "EDT_MPSI_20192020.pdf",
                           "title":  "Emploi du temps"
                       },
@@ -283,7 +305,10 @@
                    "title":  "Arithmétique",
                    "Enoncé":  {
                                   "path":  "TDArithmetique.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDArithmetique.corrige.pdf"
+                               }
                },
                {
                    "title":  "Comparaison de fonctions",
@@ -311,6 +336,12 @@
                    "Corrigé":  {
                                    "path":  "TDEquaDiff.corrige.pdf"
                                }
+               },
+               {
+                   "title":  "Espaces vectoriels",
+                   "Enoncé":  {
+                                  "path":  "TDEspacesVectoriels.pdf"
+                              }
                },
                {
                    "title":  "Fonctions usuelles",
@@ -500,6 +531,10 @@
                    {
                        "title":  "Semaine du 20/01 au 24/01",
                        "path":  "ProgColles15.pdf"
+                   },
+                   {
+                       "title":  "Semaine du 27/01 au 31/01",
+                       "path":  "ProgColles16.pdf"
                    }
                ]
 }
