@@ -329,6 +329,12 @@
                                }
                },
                {
+                   "title":  "Espaces vectoriels de dimension finie",
+                   "Enoncé":  {
+                                  "path":  "TDDimensionFinie.pdf"
+                              }
+               },
+               {
                    "title":  "Équations différentielles",
                    "Enoncé":  {
                                   "path":  "TDEquaDiff.pdf"
@@ -341,7 +347,10 @@
                    "title":  "Espaces vectoriels",
                    "Enoncé":  {
                                   "path":  "TDEspacesVectoriels.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDEspacesVectoriels.corrige.pdf"
+                               }
                },
                {
                    "title":  "Fonctions usuelles",
@@ -439,6 +448,10 @@
                      {
                          "title":  "Interrogation écrite n°08",
                          "path":  "Interro08.pdf"
+                     },
+                     {
+                         "title":  "Interrogation écrite n°09",
+                         "path":  "Interro09.pdf"
                      }
                  ],
     "Formulaires":  [
