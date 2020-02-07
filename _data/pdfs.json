@@ -141,6 +141,15 @@
                    "title":  "Devoir à la maison n°09",
                    "Enoncé":  {
                                   "path":  "DM09.pdf"
+                              },
+                   "Corrigé":  {
+                                   "path":  "DM09.corrige.pdf"
+                               }
+               },
+               {
+                   "title":  "Devoir à la maison n°10",
+                   "Enoncé":  {
+                                  "path":  "DM10.pdf"
                               }
                }
            ],
@@ -311,6 +320,12 @@
                                }
                },
                {
+                   "title":  "Applications linéaires",
+                   "Enoncé":  {
+                                  "path":  "TDApplicationsLineaires.pdf"
+                              }
+               },
+               {
                    "title":  "Arithmétique",
                    "Enoncé":  {
                                   "path":  "TDArithmetique.pdf"
@@ -341,7 +356,10 @@
                    "title":  "Espaces vectoriels de dimension finie",
                    "Enoncé":  {
                                   "path":  "TDDimensionFinie.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDDimensionFinie.corrige.pdf"
+                               }
                },
                {
                    "title":  "Équations différentielles",
@@ -561,6 +579,10 @@
                    {
                        "title":  "Semaine du 03/02 au 07/02",
                        "path":  "ProgColles17.pdf"
+                   },
+                   {
+                       "title":  "Semaine du 24/02 au 28/02",
+                       "path":  "ProgColles18.pdf"
                    }
                ]
 }
