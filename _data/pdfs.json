@@ -407,6 +407,12 @@
                                }
                },
                {
+                   "title":  "Polynômes",
+                   "Enoncé":  {
+                                  "path":  "TDPolynomes.pdf"
+                              }
+               },
+               {
                    "title":  "Raisonnements et ensembles",
                    "Enoncé":  {
                                   "path":  "TDRaisonnements.pdf"
@@ -479,6 +485,10 @@
                      {
                          "title":  "Interrogation écrite n°09",
                          "path":  "Interro09.pdf"
+                     },
+                     {
+                         "title":  "Interrogation écrite n°10",
+                         "path":  "Interro10.pdf"
                      }
                  ],
     "Formulaires":  [
@@ -583,6 +593,10 @@
                    {
                        "title":  "Semaine du 24/02 au 28/02",
                        "path":  "ProgColles18.pdf"
+                   },
+                   {
+                       "title":  "Semaine du 02/03 au 06/03",
+                       "path":  "ProgColles19.pdf"
                    }
                ]
 }
