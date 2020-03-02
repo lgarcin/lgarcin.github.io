@@ -151,6 +151,12 @@
                    "Enoncé":  {
                                   "path":  "DM10.pdf"
                               }
+               },
+               {
+                   "title":  "Devoir à la maison n°11",
+                   "Enoncé":  {
+                                  "path":  "DM11.pdf"
+                              }
                }
            ],
     "Cours":  [
@@ -323,7 +329,10 @@
                    "title":  "Applications linéaires",
                    "Enoncé":  {
                                   "path":  "TDApplicationsLineaires.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDApplicationsLineaires.corrige.pdf"
+                               }
                },
                {
                    "title":  "Arithmétique",
