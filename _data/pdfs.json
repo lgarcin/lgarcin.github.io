@@ -150,7 +150,10 @@
                    "title":  "Devoir à la maison n°10",
                    "Enoncé":  {
                                   "path":  "DM10.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "DM10.corrige.pdf"
+                               }
                },
                {
                    "title":  "Devoir à la maison n°11",
@@ -419,7 +422,10 @@
                    "title":  "Polynômes",
                    "Enoncé":  {
                                   "path":  "TDPolynomes.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDPolynomes.corrige.pdf"
+                               }
                },
                {
                    "title":  "Raisonnements et ensembles",
@@ -606,6 +612,10 @@
                    {
                        "title":  "Semaine du 02/03 au 06/03",
                        "path":  "ProgColles19.pdf"
+                   },
+                   {
+                       "title":  "Semaine du 09/03 au 13/03",
+                       "path":  "ProgColles20.pdf"
                    }
                ]
 }
