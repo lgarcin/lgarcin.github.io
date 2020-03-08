@@ -62,6 +62,15 @@
                    "Corrigé":  {
                                    "path":  "DS07.corrige.pdf"
                                }
+               },
+               {
+                   "title":  "Devoir surveillé n°08",
+                   "Enoncé":  {
+                                  "path":  "DS08.pdf"
+                              },
+                   "Corrigé":  {
+                                   "path":  "DS08.corrige.pdf"
+                               }
                }
            ],
     "DM":  [
@@ -399,6 +408,12 @@
                    "Corrigé":  {
                                    "path":  "TDFonctionsUsuelles.corrige.pdf"
                                }
+               },
+               {
+                   "title":  "Fractions rationnelles, sous-espaces affines",
+                   "Enoncé":  {
+                                  "path":  "TDFractionsRationnellesSousEspacesAffines.pdf"
+                              }
                },
                {
                    "title":  "Groupes, anneaux, corps",
