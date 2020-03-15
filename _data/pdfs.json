@@ -437,6 +437,15 @@
                                }
                },
                {
+                   "title":  "Limite et continuité de fonctions",
+                   "Enoncé":  {
+                                  "path":  "TDLimiteContinuite.pdf"
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDLimiteContinuite.corrige.pdf"
+                               }
+               },
+               {
                    "title":  "Polynômes",
                    "Enoncé":  {
                                   "path":  "TDPolynomes.pdf"
