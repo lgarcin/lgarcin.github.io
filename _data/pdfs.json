@@ -76,7 +76,10 @@
                    "title":  "Devoir surveillé n°09",
                    "Enoncé":  {
                                   "path":  "DS09.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "DS09.corrige.pdf"
+                               }
                }
            ],
     "DM":  [
