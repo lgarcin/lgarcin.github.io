@@ -464,6 +464,15 @@
                                }
                },
                {
+                   "title":  "Intégration",
+                   "Enoncé":  {
+                                  "path":  "TDIntegration.pdf"
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDIntegration.corrige.pdf"
+                               }
+               },
+               {
                    "title":  "Limite et continuité de fonctions",
                    "Enoncé":  {
                                   "path":  "TDLimiteContinuite.pdf"
