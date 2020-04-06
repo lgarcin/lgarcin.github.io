@@ -518,6 +518,15 @@
                                }
                },
                {
+                   "title":  "Séries",
+                   "Enoncé":  {
+                                  "path":  "TDSeries.pdf"
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDSeries.corrige.pdf"
+                               }
+               },
+               {
                    "title":  "Sommes, produits, systèmes, trigonométrie",
                    "Enoncé":  {
                                   "path":  "TDSommesProduits.pdf"
