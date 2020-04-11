@@ -196,6 +196,12 @@
                    "Enoncé":  {
                                   "path":  "DM13.pdf"
                               }
+               },
+               {
+                   "title":  "Devoir à la maison n°14",
+                   "Enoncé":  {
+                                  "path":  "DM14.pdf"
+                              }
                }
            ],
     "Cours":  [
@@ -713,6 +719,10 @@
                    {
                        "title":  "Semaine du 30/03 au 03/04",
                        "path":  "ProgColles23.pdf"
+                   },
+                   {
+                       "title":  "Semaine du 20/04 au 24/04",
+                       "path":  "ProgColles24.pdf"
                    }
                ]
 }
