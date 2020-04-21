@@ -195,7 +195,10 @@
                    "title":  "Devoir à la maison n°13",
                    "Enoncé":  {
                                   "path":  "DM13.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "DM13.corrige.pdf"
+                               }
                },
                {
                    "title":  "Devoir à la maison n°14",
