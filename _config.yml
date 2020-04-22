@@ -88,7 +88,7 @@ defaults:
       path:             "" # all files
     values:
       layout:           "default"
-      show-avatar:      true
+      show-avatar:      false
 
 # Exclude these files from production site
 exclude:
