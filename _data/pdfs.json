@@ -271,7 +271,7 @@
                   },
                   {
                       "title":  "Espaces préhilbertiens réels",
-                      "path":  "EspacesEuclidiens.pdf"
+                      "path":  "EspacesPrehilbertiensReels.pdf"
                   },
                   {
                       "title":  "Espaces vectoriels",
@@ -452,6 +452,15 @@
                               },
                    "Corrigé":  {
                                    "path":  "TDEquaDiff.corrige.pdf"
+                               }
+               },
+               {
+                   "title":  "Espaces préhilbertiens réels",
+                   "Enoncé":  {
+                                  "path":  "TDEspacesPrehilbertiensReels.pdf"
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDEspacesPrehilbertiensReels.corrige.pdf"
                                }
                },
                {
