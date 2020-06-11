@@ -94,7 +94,10 @@
                    "title":  "Devoir surveillé n°11",
                    "Enoncé":  {
                                   "path":  "DS11.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "DS11.corrige.pdf"
+                               }
                }
            ],
     "DM":  [
@@ -828,6 +831,10 @@
                    {
                        "title":  "Semaine du 08/06 au 12/06",
                        "path":  "ProgColles30.pdf"
+                   },
+                   {
+                       "title":  "Semaine du 15/06 au 19/06",
+                       "path":  "ProgColles31.pdf"
                    }
                ]
 }
