@@ -1,0 +1,28 @@
+\usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[x=1cm,y=1cm]
+    \begin{scope}[shift={(5,0)}]
+        \draw (-5,0) circle (1);
+        \draw (5,0) circle (1);
+        \draw (-5,-1)--(5,-1);
+        \draw (-5,1)--(5,1);
+        \begin{scope}[shift={(5,0)}]
+            \draw[dashed] (0,0)--(45:1);
+            \draw[-{Latex[length=3mm]}] (.5,0) arc (0:45:.5) node[midway,right]{$\phi$};
+        \end{scope}
+        \draw[{Latex[length=3mm]}-{Latex[length=3mm]}, dashed] (-5,0)--(0,0) node[midway,above]{$R$};
+        \draw[{Latex[length=3mm]}-{Latex[length=3mm]}, dashed] (-5,0)--(-6,0) node[midway,above]{$r$};
+        \draw[dashed,->] (0,0)--(7,0) node[right]{$x$};
+        \draw[dashed,->] (0,0)--(0,1.5) node[above]{$z$};
+    \end{scope}
+    \begin{scope}[shift={(5,8)}]
+        \draw[dashed] (0,0) circle (5);
+        \draw[circle] (0,0) circle (6);
+        \draw[circle] (0,0) circle (4);
+        \draw[dashed,{Latex[length=3mm]}-{Latex[length=3mm]}] (0,0)--(-5,0) node[midway,above]{$R$};
+        \draw[dashed,{Latex[length=3mm]}-{Latex[length=3mm]}] (-5,0)--(-6,0) node[midway,above]{$r$};
+        \draw[dashed,->] (0,0)--(7,0) node[right]{$x$};
+        \draw[dashed,->] (0,0)--(0,7) node[above]{$y$};
+        \draw[dashed] (0,0)--(45:5);
+        \draw[-{Latex[length=3mm]},dashed] (1,0) arc (0:45:1) node[midway,right]{$\theta$};
+    \end{scope}
+\end{tikzpicture}
