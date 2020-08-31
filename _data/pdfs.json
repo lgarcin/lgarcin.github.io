@@ -1,5 +1,6 @@
 {
-  "DS": [],
+  "Interros": [],
+  "DM": [],
   "Cours": [
     {
       "title": "Ensembles et applications",
@@ -138,6 +139,13 @@
       "path": "Trigonometrie.pdf"
     }
   ],
+  "VieClasse": [
+    {
+      "title": "Emploi du temps",
+      "path": "EDT_MPSI_20202021.pdf"
+    }
+  ],
+  "DS": [],
   "Formulaires": [
     {
       "title": "Comparaison de fonctions",
@@ -168,19 +176,13 @@
       "path": "FormulaireTrigoInverse.pdf"
     }
   ],
-  "DM": [],
   "Colles": [],
   "TD": [
     {
       "title": "Raisonnements et ensembles",
       "Enoncé": {
         "path": "TDRaisonnements.pdf"
-      },
-      "Corrigé": {
-        "path": "TDRaisonnements.corrige.pdf"
       }
     }
-  ],
-  "VieClasse": [],
-  "Interros": []
+  ]
 }
