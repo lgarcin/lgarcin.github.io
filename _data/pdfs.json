@@ -1,13 +1,4 @@
 {
-  "DM": [
-    {
-      "title": "Devoir à la maison n°01",
-      "Enoncé": {
-        "path": "DM01.pdf"
-      }
-    }
-  ],
-  "DS": [],
   "Formulaires": [
     {
       "title": "Comparaison de fonctions",
@@ -36,25 +27,6 @@
     {
       "title": "Trigonométrie inverse",
       "path": "FormulaireTrigoInverse.pdf"
-    }
-  ],
-  "Interros": [],
-  "Colles": [],
-  "TD": [
-    {
-      "title": "Raisonnements et ensembles",
-      "Enoncé": {
-        "path": "TDRaisonnements.pdf"
-      },
-      "Corrigé": {
-        "path": "TDRaisonnements.corrige.pdf"
-      }
-    },
-    {
-      "title": "Sommes, produits, systèmes, trigonométrie",
-      "Enoncé": {
-        "path": "TDSommesProduits.pdf"
-      }
     }
   ],
   "VieClasse": [
@@ -208,5 +180,38 @@
       "title": "Trigonométrie",
       "path": "Trigonometrie.pdf"
     }
-  ]
+  ],
+  "TD": [
+    {
+      "title": "Raisonnements et ensembles",
+      "Enoncé": {
+        "path": "TDRaisonnements.pdf"
+      },
+      "Corrigé": {
+        "path": "TDRaisonnements.corrige.pdf"
+      }
+    },
+    {
+      "title": "Sommes, produits, systèmes, trigonométrie",
+      "Enoncé": {
+        "path": "TDSommesProduits.pdf"
+      }
+    }
+  ],
+  "DS": [],
+  "Colles": [
+    {
+      "title": "Semaine du 14/09 au 18/09",
+      "path": "ProgColles01.pdf"
+    }
+  ],
+  "DM": [
+    {
+      "title": "Devoir à la maison n°01",
+      "Enoncé": {
+        "path": "DM01.pdf"
+      }
+    }
+  ],
+  "Interros": []
 }
