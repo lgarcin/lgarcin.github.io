@@ -1,34 +1,4 @@
 {
-  "Formulaires": [
-    {
-      "title": "Comparaison de fonctions",
-      "path": "FormulaireComparaisonFonctions.pdf"
-    },
-    {
-      "title": "Dérivation et intégration",
-      "path": "FormulaireDerivationIntegration.pdf"
-    },
-    {
-      "title": "Développements limités",
-      "path": "FormulaireDL.pdf"
-    },
-    {
-      "title": "Inégalités",
-      "path": "FormulaireInegalites.pdf"
-    },
-    {
-      "title": "Trigonométrie",
-      "path": "FormulaireTrigo.pdf"
-    },
-    {
-      "title": "Trigonométrie hyperbolique",
-      "path": "FormulaireTrigoHyperbolique.pdf"
-    },
-    {
-      "title": "Trigonométrie inverse",
-      "path": "FormulaireTrigoInverse.pdf"
-    }
-  ],
   "VieClasse": [
     {
       "title": "Colloscope",
@@ -181,6 +151,55 @@
       "path": "Trigonometrie.pdf"
     }
   ],
+  "DS": [
+    {
+      "title": "Devoir surveillé n°01",
+      "Enoncé": {
+        "path": "DS01.pdf"
+      },
+      "Corrigé": {
+        "path": "DS01.corrige.pdf"
+      }
+    }
+  ],
+  "Formulaires": [
+    {
+      "title": "Comparaison de fonctions",
+      "path": "FormulaireComparaisonFonctions.pdf"
+    },
+    {
+      "title": "Dérivation et intégration",
+      "path": "FormulaireDerivationIntegration.pdf"
+    },
+    {
+      "title": "Développements limités",
+      "path": "FormulaireDL.pdf"
+    },
+    {
+      "title": "Inégalités",
+      "path": "FormulaireInegalites.pdf"
+    },
+    {
+      "title": "Trigonométrie",
+      "path": "FormulaireTrigo.pdf"
+    },
+    {
+      "title": "Trigonométrie hyperbolique",
+      "path": "FormulaireTrigoHyperbolique.pdf"
+    },
+    {
+      "title": "Trigonométrie inverse",
+      "path": "FormulaireTrigoInverse.pdf"
+    }
+  ],
+  "DM": [
+    {
+      "title": "Devoir à la maison n°01",
+      "Enoncé": {
+        "path": "DM01.pdf"
+      }
+    }
+  ],
   "TD": [
     {
       "title": "Raisonnements et ensembles",
@@ -198,19 +217,10 @@
       }
     }
   ],
-  "DS": [],
   "Colles": [
     {
       "title": "Semaine du 14/09 au 18/09",
       "path": "ProgColles01.pdf"
-    }
-  ],
-  "DM": [
-    {
-      "title": "Devoir à la maison n°01",
-      "Enoncé": {
-        "path": "DM01.pdf"
-      }
     }
   ],
   "Interros": []
