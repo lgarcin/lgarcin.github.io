@@ -1,24 +1,4 @@
 {
-  "Colles": [
-    {
-      "title": "Semaine du 14/09 au 18/09",
-      "path": "ProgColles01.pdf"
-    }
-  ],
-  "VieClasse": [
-    {
-      "path": "Colloscope MPSI 2020_2021.pdf",
-      "title": "Colloscope"
-    },
-    {
-      "path": "EDT_MPSI_20202021.pdf",
-      "title": "Emploi du temps"
-    },
-    {
-      "path": "PlanningDS_CPGE.pdf",
-      "title": "Planning des DS"
-    }
-  ],
   "Formulaires": [
     {
       "title": "Comparaison de fonctions",
@@ -49,7 +29,52 @@
       "path": "FormulaireTrigoInverse.pdf"
     }
   ],
+  "TD": [
+    {
+      "title": "Raisonnements et ensembles",
+      "Enoncé": {
+        "path": "TDRaisonnements.pdf"
+      },
+      "Corrigé": {
+        "path": "TDRaisonnements.corrige.pdf"
+      }
+    },
+    {
+      "title": "Sommes, produits, systèmes, trigonométrie",
+      "Enoncé": {
+        "path": "TDSommesProduits.pdf"
+      }
+    }
+  ],
+  "Colles": [
+    {
+      "title": "Semaine du 14/09 au 18/09",
+      "path": "ProgColles01.pdf"
+    }
+  ],
+  "DM": [
+    {
+      "title": "Devoir à la maison n°01",
+      "Enoncé": {
+        "path": "DM01.pdf"
+      }
+    }
+  ],
   "Interros": [],
+  "VieClasse": [
+    {
+      "path": "Colloscope MPSI 2020_2021.pdf",
+      "title": "Colloscope"
+    },
+    {
+      "path": "EDT_MPSI_20202021.pdf",
+      "title": "Emploi du temps"
+    },
+    {
+      "path": "PlanningDS_CPGE.pdf",
+      "title": "Planning des DS"
+    }
+  ],
   "Cours": [
     {
       "title": "Ensembles et applications",
@@ -186,31 +211,6 @@
     {
       "title": "Trigonométrie",
       "path": "Trigonometrie.pdf"
-    }
-  ],
-  "TD": [
-    {
-      "title": "Raisonnements et ensembles",
-      "Enoncé": {
-        "path": "TDRaisonnements.pdf"
-      },
-      "Corrigé": {
-        "path": "TDRaisonnements.corrige.pdf"
-      }
-    },
-    {
-      "title": "Sommes, produits, systèmes, trigonométrie",
-      "Enoncé": {
-        "path": "TDSommesProduits.pdf"
-      }
-    }
-  ],
-  "DM": [
-    {
-      "title": "Devoir à la maison n°01",
-      "Enoncé": {
-        "path": "DM01.pdf"
-      }
     }
   ],
   "DS": [
