@@ -1,18 +1,55 @@
 {
-  "VieClasse": [
+  "Colles": [
     {
-      "title": "Colloscope",
-      "path": "Colloscope MPSI 2020_2021.pdf"
-    },
-    {
-      "title": "Emploi du temps",
-      "path": "EDT_MPSI_20202021.pdf"
-    },
-    {
-      "title": "Planning des DS",
-      "path": "PlanningDS_CPGE.pdf"
+      "title": "Semaine du 14/09 au 18/09",
+      "path": "ProgColles01.pdf"
     }
   ],
+  "VieClasse": [
+    {
+      "path": "Colloscope MPSI 2020_2021.pdf",
+      "title": "Colloscope"
+    },
+    {
+      "path": "EDT_MPSI_20202021.pdf",
+      "title": "Emploi du temps"
+    },
+    {
+      "path": "PlanningDS_CPGE.pdf",
+      "title": "Planning des DS"
+    }
+  ],
+  "Formulaires": [
+    {
+      "title": "Comparaison de fonctions",
+      "path": "FormulaireComparaisonFonctions.pdf"
+    },
+    {
+      "title": "Dérivation et intégration",
+      "path": "FormulaireDerivationIntegration.pdf"
+    },
+    {
+      "title": "Développements limités",
+      "path": "FormulaireDL.pdf"
+    },
+    {
+      "title": "Inégalités",
+      "path": "FormulaireInegalites.pdf"
+    },
+    {
+      "title": "Trigonométrie",
+      "path": "FormulaireTrigo.pdf"
+    },
+    {
+      "title": "Trigonométrie hyperbolique",
+      "path": "FormulaireTrigoHyperbolique.pdf"
+    },
+    {
+      "title": "Trigonométrie inverse",
+      "path": "FormulaireTrigoInverse.pdf"
+    }
+  ],
+  "Interros": [],
   "Cours": [
     {
       "title": "Ensembles et applications",
@@ -151,55 +188,6 @@
       "path": "Trigonometrie.pdf"
     }
   ],
-  "DS": [
-    {
-      "title": "Devoir surveillé n°01",
-      "Enoncé": {
-        "path": "DS01.pdf"
-      },
-      "Corrigé": {
-        "path": "DS01.corrige.pdf"
-      }
-    }
-  ],
-  "Formulaires": [
-    {
-      "title": "Comparaison de fonctions",
-      "path": "FormulaireComparaisonFonctions.pdf"
-    },
-    {
-      "title": "Dérivation et intégration",
-      "path": "FormulaireDerivationIntegration.pdf"
-    },
-    {
-      "title": "Développements limités",
-      "path": "FormulaireDL.pdf"
-    },
-    {
-      "title": "Inégalités",
-      "path": "FormulaireInegalites.pdf"
-    },
-    {
-      "title": "Trigonométrie",
-      "path": "FormulaireTrigo.pdf"
-    },
-    {
-      "title": "Trigonométrie hyperbolique",
-      "path": "FormulaireTrigoHyperbolique.pdf"
-    },
-    {
-      "title": "Trigonométrie inverse",
-      "path": "FormulaireTrigoInverse.pdf"
-    }
-  ],
-  "DM": [
-    {
-      "title": "Devoir à la maison n°01",
-      "Enoncé": {
-        "path": "DM01.pdf"
-      }
-    }
-  ],
   "TD": [
     {
       "title": "Raisonnements et ensembles",
@@ -217,11 +205,23 @@
       }
     }
   ],
-  "Colles": [
+  "DM": [
     {
-      "title": "Semaine du 14/09 au 18/09",
-      "path": "ProgColles01.pdf"
+      "title": "Devoir à la maison n°01",
+      "Enoncé": {
+        "path": "DM01.pdf"
+      }
     }
   ],
-  "Interros": []
+  "DS": [
+    {
+      "title": "Devoir surveillé n°01",
+      "Enoncé": {
+        "path": "DS01.pdf"
+      },
+      "Corrigé": {
+        "path": "DS01.corrige.pdf"
+      }
+    }
+  ]
 }
