@@ -1,5 +1,39 @@
 {
+  "VieClasse": [
+    {
+      "path": "Colloscope MPSI 2020_2021.pdf",
+      "title": "Colloscope"
+    },
+    {
+      "path": "EDT_MPSI_20202021.pdf",
+      "title": "Emploi du temps"
+    },
+    {
+      "path": "PlanningDS_CPGE.pdf",
+      "title": "Planning des DS"
+    }
+  ],
+  "DM": [
+    {
+      "title": "Devoir à la maison n°01",
+      "Enoncé": {
+        "path": "DM01.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°02",
+      "Enoncé": {
+        "path": "DM02.pdf"
+      }
+    }
+  ],
   "TD": [
+    {
+      "title": "Nombres complexes",
+      "Enoncé": {
+        "path": "TDComplexes.pdf"
+      }
+    },
     {
       "title": "Raisonnements et ensembles",
       "Enoncé": {
@@ -13,37 +47,10 @@
       "title": "Sommes, produits, systèmes, trigonométrie",
       "Enoncé": {
         "path": "TDSommesProduits.pdf"
+      },
+      "Corrigé": {
+        "path": "TDSommesProduits.corrige.pdf"
       }
-    }
-  ],
-  "Formulaires": [
-    {
-      "title": "Comparaison de fonctions",
-      "path": "FormulaireComparaisonFonctions.pdf"
-    },
-    {
-      "title": "Dérivation et intégration",
-      "path": "FormulaireDerivationIntegration.pdf"
-    },
-    {
-      "title": "Développements limités",
-      "path": "FormulaireDL.pdf"
-    },
-    {
-      "title": "Inégalités",
-      "path": "FormulaireInegalites.pdf"
-    },
-    {
-      "title": "Trigonométrie",
-      "path": "FormulaireTrigo.pdf"
-    },
-    {
-      "title": "Trigonométrie hyperbolique",
-      "path": "FormulaireTrigoHyperbolique.pdf"
-    },
-    {
-      "title": "Trigonométrie inverse",
-      "path": "FormulaireTrigoInverse.pdf"
     }
   ],
   "Colles": [
@@ -205,32 +212,40 @@
       "path": "Trigonometrie.pdf"
     }
   ],
-  "DM": [
-    {
-      "title": "Devoir à la maison n°01",
-      "Enoncé": {
-        "path": "DM01.pdf"
-      }
-    }
-  ],
-  "VieClasse": [
-    {
-      "path": "Colloscope MPSI 2020_2021.pdf",
-      "title": "Colloscope"
-    },
-    {
-      "path": "EDT_MPSI_20202021.pdf",
-      "title": "Emploi du temps"
-    },
-    {
-      "path": "PlanningDS_CPGE.pdf",
-      "title": "Planning des DS"
-    }
-  ],
   "Interros": [
     {
       "title": "Interrogation écrite n°01",
       "path": "Interro01.pdf"
+    }
+  ],
+  "Formulaires": [
+    {
+      "title": "Comparaison de fonctions",
+      "path": "FormulaireComparaisonFonctions.pdf"
+    },
+    {
+      "title": "Dérivation et intégration",
+      "path": "FormulaireDerivationIntegration.pdf"
+    },
+    {
+      "title": "Développements limités",
+      "path": "FormulaireDL.pdf"
+    },
+    {
+      "title": "Inégalités",
+      "path": "FormulaireInegalites.pdf"
+    },
+    {
+      "title": "Trigonométrie",
+      "path": "FormulaireTrigo.pdf"
+    },
+    {
+      "title": "Trigonométrie hyperbolique",
+      "path": "FormulaireTrigoHyperbolique.pdf"
+    },
+    {
+      "title": "Trigonométrie inverse",
+      "path": "FormulaireTrigoInverse.pdf"
     }
   ]
 }
