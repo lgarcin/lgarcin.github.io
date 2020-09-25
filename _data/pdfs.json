@@ -1,23 +1,12 @@
 {
-  "VieClasse": [
-    {
-      "path": "Colloscope MPSI 2020_2021.pdf",
-      "title": "Colloscope"
-    },
-    {
-      "path": "EDT_MPSI_20202021.pdf",
-      "title": "Emploi du temps"
-    },
-    {
-      "path": "PlanningDS_CPGE.pdf",
-      "title": "Planning des DS"
-    }
-  ],
   "DM": [
     {
       "title": "Devoir à la maison n°01",
       "Enoncé": {
         "path": "DM01.pdf"
+      },
+      "Corrigé": {
+        "path": "DM01.corrige.pdf"
       }
     },
     {
@@ -53,25 +42,24 @@
       }
     }
   ],
-  "Colles": [
+  "Interros": [
     {
-      "title": "Semaine du 14/09 au 18/09",
-      "path": "ProgColles01.pdf"
-    },
-    {
-      "title": "Semaine du 21/09 au 25/09",
-      "path": "ProgColles02.pdf"
+      "title": "Interrogation écrite n°01",
+      "path": "Interro01.pdf"
     }
   ],
-  "DS": [
+  "VieClasse": [
     {
-      "title": "Devoir surveillé n°01",
-      "Enoncé": {
-        "path": "DS01.pdf"
-      },
-      "Corrigé": {
-        "path": "DS01.corrige.pdf"
-      }
+      "title": "Colloscope",
+      "path": "Colloscope MPSI 2020_2021.pdf"
+    },
+    {
+      "title": "Emploi du temps",
+      "path": "EDT_MPSI_20202021.pdf"
+    },
+    {
+      "title": "Planning des DS",
+      "path": "PlanningDS_CPGE.pdf"
     }
   ],
   "Cours": [
@@ -212,10 +200,29 @@
       "path": "Trigonometrie.pdf"
     }
   ],
-  "Interros": [
+  "DS": [
     {
-      "title": "Interrogation écrite n°01",
-      "path": "Interro01.pdf"
+      "title": "Devoir surveillé n°01",
+      "Enoncé": {
+        "path": "DS01.pdf"
+      },
+      "Corrigé": {
+        "path": "DS01.corrige.pdf"
+      }
+    }
+  ],
+  "Colles": [
+    {
+      "title": "Semaine du 14/09 au 18/09",
+      "path": "ProgColles01.pdf"
+    },
+    {
+      "title": "Semaine du 21/09 au 25/09",
+      "path": "ProgColles02.pdf"
+    },
+    {
+      "title": "Semaine du 28/09 au 02/10",
+      "path": "ProgColles03.pdf"
     }
   ],
   "Formulaires": [
