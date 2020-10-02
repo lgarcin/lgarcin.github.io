@@ -18,6 +18,12 @@
   ],
   "TD": [
     {
+      "title": "Applications, fonctions d'une variable réelle",
+      "Enoncé": {
+        "path": "TDApplications.pdf"
+      }
+    },
+    {
       "title": "Nombres complexes",
       "Enoncé": {
         "path": "TDComplexes.pdf"
@@ -236,6 +242,10 @@
     {
       "title": "Semaine du 28/09 au 02/10",
       "path": "ProgColles03.pdf"
+    },
+    {
+      "title": "Semaine du 05/10 au 10/10",
+      "path": "ProgColles04.pdf"
     }
   ],
   "Formulaires": [
