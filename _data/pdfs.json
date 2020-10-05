@@ -1,19 +1,16 @@
 {
-  "DM": [
+  "VieClasse": [
     {
-      "title": "Devoir à la maison n°01",
-      "Enoncé": {
-        "path": "DM01.pdf"
-      },
-      "Corrigé": {
-        "path": "DM01.corrige.pdf"
-      }
+      "path": "Colloscope MPSI 2020_2021.pdf",
+      "title": "Colloscope"
     },
     {
-      "title": "Devoir à la maison n°02",
-      "Enoncé": {
-        "path": "DM02.pdf"
-      }
+      "path": "EDT_MPSI_20202021.pdf",
+      "title": "Emploi du temps"
+    },
+    {
+      "path": "PlanningDS_CPGE.pdf",
+      "title": "Planning des DS"
     }
   ],
   "TD": [
@@ -27,6 +24,9 @@
       "title": "Nombres complexes",
       "Enoncé": {
         "path": "TDComplexes.pdf"
+      },
+      "Corrigé": {
+        "path": "TDComplexes.corrige.pdf"
       }
     },
     {
@@ -48,6 +48,97 @@
       }
     }
   ],
+  "Colles": [
+    {
+      "title": "Semaine du 14/09 au 18/09",
+      "path": "ProgColles01.pdf"
+    },
+    {
+      "title": "Semaine du 21/09 au 25/09",
+      "path": "ProgColles02.pdf"
+    },
+    {
+      "title": "Semaine du 28/09 au 02/10",
+      "path": "ProgColles03.pdf"
+    },
+    {
+      "title": "Semaine du 05/10 au 10/10",
+      "path": "ProgColles04.pdf"
+    }
+  ],
+  "Formulaires": [
+    {
+      "title": "Comparaison de fonctions",
+      "path": "FormulaireComparaisonFonctions.pdf"
+    },
+    {
+      "title": "Dérivation et intégration",
+      "path": "FormulaireDerivationIntegration.pdf"
+    },
+    {
+      "title": "Développements limités",
+      "path": "FormulaireDL.pdf"
+    },
+    {
+      "title": "Inégalités",
+      "path": "FormulaireInegalites.pdf"
+    },
+    {
+      "title": "Trigonométrie",
+      "path": "FormulaireTrigo.pdf"
+    },
+    {
+      "title": "Trigonométrie hyperbolique",
+      "path": "FormulaireTrigoHyperbolique.pdf"
+    },
+    {
+      "title": "Trigonométrie inverse",
+      "path": "FormulaireTrigoInverse.pdf"
+    }
+  ],
+  "DS": [
+    {
+      "title": "Devoir surveillé n°01",
+      "Enoncé": {
+        "path": "DS01.pdf"
+      },
+      "Corrigé": {
+        "path": "DS01.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°02",
+      "Enoncé": {
+        "path": "DS02.pdf"
+      },
+      "Corrigé": {
+        "path": "DS02.corrige.pdf"
+      }
+    }
+  ],
+  "DM": [
+    {
+      "title": "Devoir à la maison n°01",
+      "Enoncé": {
+        "path": "DM01.pdf"
+      },
+      "Corrigé": {
+        "path": "DM01.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°02",
+      "Enoncé": {
+        "path": "DM02.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°03",
+      "Enoncé": {
+        "path": "DM03.pdf"
+      }
+    }
+  ],
   "Interros": [
     {
       "title": "Interrogation écrite n°01",
@@ -56,20 +147,6 @@
     {
       "title": "Interrogation écrite n°02",
       "path": "Interro02.pdf"
-    }
-  ],
-  "VieClasse": [
-    {
-      "title": "Colloscope",
-      "path": "Colloscope MPSI 2020_2021.pdf"
-    },
-    {
-      "title": "Emploi du temps",
-      "path": "EDT_MPSI_20202021.pdf"
-    },
-    {
-      "title": "Planning des DS",
-      "path": "PlanningDS_CPGE.pdf"
     }
   ],
   "Cours": [
@@ -208,74 +285,6 @@
     {
       "title": "Trigonométrie",
       "path": "Trigonometrie.pdf"
-    }
-  ],
-  "DS": [
-    {
-      "title": "Devoir surveillé n°01",
-      "Enoncé": {
-        "path": "DS01.pdf"
-      },
-      "Corrigé": {
-        "path": "DS01.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°02",
-      "Enoncé": {
-        "path": "DS02.pdf"
-      },
-      "Corrigé": {
-        "path": "DS02.corrige.pdf"
-      }
-    }
-  ],
-  "Colles": [
-    {
-      "title": "Semaine du 14/09 au 18/09",
-      "path": "ProgColles01.pdf"
-    },
-    {
-      "title": "Semaine du 21/09 au 25/09",
-      "path": "ProgColles02.pdf"
-    },
-    {
-      "title": "Semaine du 28/09 au 02/10",
-      "path": "ProgColles03.pdf"
-    },
-    {
-      "title": "Semaine du 05/10 au 10/10",
-      "path": "ProgColles04.pdf"
-    }
-  ],
-  "Formulaires": [
-    {
-      "title": "Comparaison de fonctions",
-      "path": "FormulaireComparaisonFonctions.pdf"
-    },
-    {
-      "title": "Dérivation et intégration",
-      "path": "FormulaireDerivationIntegration.pdf"
-    },
-    {
-      "title": "Développements limités",
-      "path": "FormulaireDL.pdf"
-    },
-    {
-      "title": "Inégalités",
-      "path": "FormulaireInegalites.pdf"
-    },
-    {
-      "title": "Trigonométrie",
-      "path": "FormulaireTrigo.pdf"
-    },
-    {
-      "title": "Trigonométrie hyperbolique",
-      "path": "FormulaireTrigoHyperbolique.pdf"
-    },
-    {
-      "title": "Trigonométrie inverse",
-      "path": "FormulaireTrigoInverse.pdf"
     }
   ]
 }
