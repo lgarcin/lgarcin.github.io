@@ -40,6 +40,9 @@
       "title": "Devoir à la maison n°05",
       "Enoncé": {
         "path": "DM05.pdf"
+      },
+      "Corrigé": {
+        "path": "DM05.corrige.pdf"
       }
     },
     {
@@ -47,6 +50,236 @@
       "Enoncé": {
         "path": "DM06.pdf"
       }
+    }
+  ],
+  "Colles": [
+    {
+      "title": "Semaine du 14/09 au 18/09",
+      "path": "ProgColles01.pdf"
+    },
+    {
+      "title": "Semaine du 21/09 au 25/09",
+      "path": "ProgColles02.pdf"
+    },
+    {
+      "title": "Semaine du 28/09 au 02/10",
+      "path": "ProgColles03.pdf"
+    },
+    {
+      "title": "Semaine du 05/10 au 10/10",
+      "path": "ProgColles04.pdf"
+    },
+    {
+      "title": "Semaine du 12/10 au 16/10",
+      "path": "ProgColles05.pdf"
+    },
+    {
+      "title": "Semaine du 02/11 au 06/11",
+      "path": "ProgColles06.pdf"
+    },
+    {
+      "title": "Semaine du 09/11 au 13/11",
+      "path": "ProgColles07.pdf"
+    },
+    {
+      "title": "Semaine du 16/11 au 20/11",
+      "path": "ProgColles08.pdf"
+    },
+    {
+      "title": "Semaine du 23/11 au 27/11",
+      "path": "ProgColles09.pdf"
+    },
+    {
+      "title": "Semaine du 30/11 au 04/12",
+      "path": "ProgColles10.pdf"
+    },
+    {
+      "title": "Semaine du 07/12 au 11/12",
+      "path": "ProgColles11.pdf"
+    }
+  ],
+  "TD": [
+    {
+      "title": "Applications, fonctions d'une variable réelle",
+      "Enoncé": {
+        "path": "TDApplications.pdf"
+      },
+      "Corrigé": {
+        "path": "TDApplications.corrige.pdf"
+      }
+    },
+    {
+      "title": "Comparaison de fonctions",
+      "Enoncé": {
+        "path": "TDComparaisonFonctions.pdf"
+      }
+    },
+    {
+      "title": "Nombres complexes",
+      "Enoncé": {
+        "path": "TDComplexes.pdf"
+      },
+      "Corrigé": {
+        "path": "TDComplexes.corrige.pdf"
+      }
+    },
+    {
+      "title": "Équations différentielles",
+      "Enoncé": {
+        "path": "TDEquaDiff.pdf"
+      },
+      "Corrigé": {
+        "path": "TDEquaDiff.corrige.pdf"
+      }
+    },
+    {
+      "title": "Fonctions usuelles",
+      "Enoncé": {
+        "path": "TDFonctionsUsuelles.pdf"
+      },
+      "Corrigé": {
+        "path": "TDFonctionsUsuelles.corrige.pdf"
+      }
+    },
+    {
+      "title": "Primitives et intégrales",
+      "Enoncé": {
+        "path": "TDIntegralesPrimitives.pdf"
+      },
+      "Corrigé": {
+        "path": "TDIntegralesPrimitives.corrige.pdf"
+      }
+    },
+    {
+      "title": "Raisonnements et ensembles",
+      "Enoncé": {
+        "path": "TDRaisonnements.pdf"
+      },
+      "Corrigé": {
+        "path": "TDRaisonnements.corrige.pdf"
+      }
+    },
+    {
+      "title": "Sommes, produits, systèmes, trigonométrie",
+      "Enoncé": {
+        "path": "TDSommesProduits.pdf"
+      },
+      "Corrigé": {
+        "path": "TDSommesProduits.corrige.pdf"
+      }
+    }
+  ],
+  "DS": [
+    {
+      "title": "Devoir surveillé n°01",
+      "Enoncé": {
+        "path": "DS01.pdf"
+      },
+      "Corrigé": {
+        "path": "DS01.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°02",
+      "Enoncé": {
+        "path": "DS02.pdf"
+      },
+      "Corrigé": {
+        "path": "DS02.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°03",
+      "Enoncé": {
+        "path": "DS03.pdf"
+      },
+      "Corrigé": {
+        "path": "DS03.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°04",
+      "Enoncé": {
+        "path": "DS04.pdf"
+      },
+      "Corrigé": {
+        "path": "DS04.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°05",
+      "Enoncé": {
+        "path": "DS05.pdf"
+      },
+      "Corrigé": {
+        "path": "DS05.corrige.pdf"
+      }
+    }
+  ],
+  "Formulaires": [
+    {
+      "title": "Comparaison de fonctions",
+      "path": "FormulaireComparaisonFonctions.pdf"
+    },
+    {
+      "title": "Dérivation et intégration",
+      "path": "FormulaireDerivationIntegration.pdf"
+    },
+    {
+      "title": "Développements limités",
+      "path": "FormulaireDL.pdf"
+    },
+    {
+      "title": "Inégalités",
+      "path": "FormulaireInegalites.pdf"
+    },
+    {
+      "title": "Trigonométrie",
+      "path": "FormulaireTrigo.pdf"
+    },
+    {
+      "title": "Trigonométrie hyperbolique",
+      "path": "FormulaireTrigoHyperbolique.pdf"
+    },
+    {
+      "title": "Trigonométrie inverse",
+      "path": "FormulaireTrigoInverse.pdf"
+    }
+  ],
+  "Interros": [
+    {
+      "title": "Interrogation écrite n°01",
+      "path": "Interro01.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°02",
+      "path": "Interro02.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°03",
+      "path": "Interro03.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°04",
+      "path": "Interro04.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°05",
+      "path": "Interro05.pdf"
+    }
+  ],
+  "VieClasse": [
+    {
+      "path": "Colloscope MPSI 2020_2021.pdf",
+      "title": "Colloscope"
+    },
+    {
+      "path": "EDT_MPSI_20202021.pdf",
+      "title": "Emploi du temps"
+    },
+    {
+      "path": "PlanningDS_CPGE.pdf",
+      "title": "Planning des DS"
     }
   ],
   "Cours": [
@@ -185,232 +418,6 @@
     {
       "title": "Trigonométrie",
       "path": "Trigonometrie.pdf"
-    }
-  ],
-  "Colles": [
-    {
-      "title": "Semaine du 14/09 au 18/09",
-      "path": "ProgColles01.pdf"
-    },
-    {
-      "title": "Semaine du 21/09 au 25/09",
-      "path": "ProgColles02.pdf"
-    },
-    {
-      "title": "Semaine du 28/09 au 02/10",
-      "path": "ProgColles03.pdf"
-    },
-    {
-      "title": "Semaine du 05/10 au 10/10",
-      "path": "ProgColles04.pdf"
-    },
-    {
-      "title": "Semaine du 12/10 au 16/10",
-      "path": "ProgColles05.pdf"
-    },
-    {
-      "title": "Semaine du 02/11 au 06/11",
-      "path": "ProgColles06.pdf"
-    },
-    {
-      "title": "Semaine du 09/11 au 13/11",
-      "path": "ProgColles07.pdf"
-    },
-    {
-      "title": "Semaine du 16/11 au 20/11",
-      "path": "ProgColles08.pdf"
-    },
-    {
-      "title": "Semaine du 23/11 au 27/11",
-      "path": "ProgColles09.pdf"
-    },
-    {
-      "title": "Semaine du 30/11 au 04/12",
-      "path": "ProgColles10.pdf"
-    }
-  ],
-  "DS": [
-    {
-      "title": "Devoir surveillé n°01",
-      "Enoncé": {
-        "path": "DS01.pdf"
-      },
-      "Corrigé": {
-        "path": "DS01.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°02",
-      "Enoncé": {
-        "path": "DS02.pdf"
-      },
-      "Corrigé": {
-        "path": "DS02.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°03",
-      "Enoncé": {
-        "path": "DS03.pdf"
-      },
-      "Corrigé": {
-        "path": "DS03.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°04",
-      "Enoncé": {
-        "path": "DS04.pdf"
-      },
-      "Corrigé": {
-        "path": "DS04.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°05",
-      "Enoncé": {
-        "path": "DS05.pdf"
-      },
-      "Corrigé": {
-        "path": "DS05.corrige.pdf"
-      }
-    }
-  ],
-  "TD": [
-    {
-      "title": "Applications, fonctions d'une variable réelle",
-      "Enoncé": {
-        "path": "TDApplications.pdf"
-      },
-      "Corrigé": {
-        "path": "TDApplications.corrige.pdf"
-      }
-    },
-    {
-      "title": "Comparaison de fonctions",
-      "Enoncé": {
-        "path": "TDComparaisonFonctions.pdf"
-      }
-    },
-    {
-      "title": "Nombres complexes",
-      "Enoncé": {
-        "path": "TDComplexes.pdf"
-      },
-      "Corrigé": {
-        "path": "TDComplexes.corrige.pdf"
-      }
-    },
-    {
-      "title": "Équations différentielles",
-      "Enoncé": {
-        "path": "TDEquaDiff.pdf"
-      },
-      "Corrigé": {
-        "path": "TDEquaDiff.corrige.pdf"
-      }
-    },
-    {
-      "title": "Fonctions usuelles",
-      "Enoncé": {
-        "path": "TDFonctionsUsuelles.pdf"
-      },
-      "Corrigé": {
-        "path": "TDFonctionsUsuelles.corrige.pdf"
-      }
-    },
-    {
-      "title": "Primitives et intégrales",
-      "Enoncé": {
-        "path": "TDIntegralesPrimitives.pdf"
-      },
-      "Corrigé": {
-        "path": "TDIntegralesPrimitives.corrige.pdf"
-      }
-    },
-    {
-      "title": "Raisonnements et ensembles",
-      "Enoncé": {
-        "path": "TDRaisonnements.pdf"
-      },
-      "Corrigé": {
-        "path": "TDRaisonnements.corrige.pdf"
-      }
-    },
-    {
-      "title": "Sommes, produits, systèmes, trigonométrie",
-      "Enoncé": {
-        "path": "TDSommesProduits.pdf"
-      },
-      "Corrigé": {
-        "path": "TDSommesProduits.corrige.pdf"
-      }
-    }
-  ],
-  "Formulaires": [
-    {
-      "title": "Comparaison de fonctions",
-      "path": "FormulaireComparaisonFonctions.pdf"
-    },
-    {
-      "title": "Dérivation et intégration",
-      "path": "FormulaireDerivationIntegration.pdf"
-    },
-    {
-      "title": "Développements limités",
-      "path": "FormulaireDL.pdf"
-    },
-    {
-      "title": "Inégalités",
-      "path": "FormulaireInegalites.pdf"
-    },
-    {
-      "title": "Trigonométrie",
-      "path": "FormulaireTrigo.pdf"
-    },
-    {
-      "title": "Trigonométrie hyperbolique",
-      "path": "FormulaireTrigoHyperbolique.pdf"
-    },
-    {
-      "title": "Trigonométrie inverse",
-      "path": "FormulaireTrigoInverse.pdf"
-    }
-  ],
-  "Interros": [
-    {
-      "title": "Interrogation écrite n°01",
-      "path": "Interro01.pdf"
-    },
-    {
-      "title": "Interrogation écrite n°02",
-      "path": "Interro02.pdf"
-    },
-    {
-      "title": "Interrogation écrite n°03",
-      "path": "Interro03.pdf"
-    },
-    {
-      "title": "Interrogation écrite n°04",
-      "path": "Interro04.pdf"
-    },
-    {
-      "title": "Interrogation écrite n°05",
-      "path": "Interro05.pdf"
-    }
-  ],
-  "VieClasse": [
-    {
-      "path": "Colloscope MPSI 2020_2021.pdf",
-      "title": "Colloscope"
-    },
-    {
-      "path": "EDT_MPSI_20202021.pdf",
-      "title": "Emploi du temps"
-    },
-    {
-      "path": "PlanningDS_CPGE.pdf",
-      "title": "Planning des DS"
     }
   ]
 }
