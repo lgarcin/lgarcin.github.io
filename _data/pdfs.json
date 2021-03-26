@@ -87,6 +87,10 @@
                    {
                        "title":  "Semaine du 22/03 au 26/03",
                        "path":  "ProgColles22.pdf"
+                   },
+                   {
+                       "title":  "Semaine du 29/03 au 02/04",
+                       "path":  "ProgColles23.pdf"
                    }
                ],
     "TD":  [
@@ -175,7 +179,10 @@
                    "title":  "Fractions rationnelles, sous-espaces affines",
                    "Enoncé":  {
                                   "path":  "TDFractionsRationnellesSousEspacesAffines.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "TDFractionsRationnellesSousEspacesAffines.corrige.pdf"
+                               }
                },
                {
                    "title":  "Groupes, anneaux, corps",
@@ -652,7 +659,10 @@
                    "title":  "Devoir à la maison n°11",
                    "Enoncé":  {
                                   "path":  "DM11.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "DM11.corrige.pdf"
+                               }
                },
                {
                    "title":  "Devoir à la maison n°12",
