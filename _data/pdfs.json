@@ -734,7 +734,10 @@
                    "title":  "Devoir à la maison n°13",
                    "Enoncé":  {
                                   "path":  "DM13.pdf"
-                              }
+                              },
+                   "Corrigé":  {
+                                   "path":  "DM13.corrige.pdf"
+                               }
                },
                {
                    "title":  "Devoir à la maison n°14",
@@ -800,6 +803,10 @@
                      {
                          "title":  "Interrogation écrite n°12",
                          "path":  "Interro12.pdf"
+                     },
+                     {
+                         "title":  "Interrogation écrite n°13",
+                         "path":  "Interro13.pdf"
                      }
                  ]
 }
