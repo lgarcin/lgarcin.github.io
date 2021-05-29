@@ -130,6 +130,9 @@
       "title": "Devoir à la maison n°15",
       "Enoncé": {
         "path": "DM15.pdf"
+      },
+      "Corrigé": {
+        "path": "DM15.corrige.pdf"
       }
     },
     {
@@ -602,6 +605,15 @@
       },
       "Corrigé": {
         "path": "DS09.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°10",
+      "Enoncé": {
+        "path": "DS10.pdf"
+      },
+      "Corrigé": {
+        "path": "DS10.corrige.pdf"
       }
     }
   ],
