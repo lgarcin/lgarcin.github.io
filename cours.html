@@ -16,7 +16,7 @@ css: "/css/pdfs.css"
             {% if cours.path %}
             <div class="col-lg-4 pdf">
               <div class="zoom">
-                <a href="{{'/pdfs/' | append: cours.path}}">
+                <a href="{{'/pdfs/Cours/' | append: cours.path}}">
                     <i class="fa fa-file-pdf-o fa-1x"></i>
                     <span style="display:inline-block; width:.1ex"></span> {{cours.title|replace:'\\',' '}}
                 </a>
@@ -37,7 +37,7 @@ css: "/css/pdfs.css"
           {% if cours.path %}
           <div class="col-lg-4 pdf">
             <div class="zoom">
-              <a href="{{'/pdfs/' | append: cours.path}}">
+              <a href="{{'/pdfs/DeuxiemeAnnee/' | append: cours.path}}">
                   <i class="fa fa-file-pdf-o fa-1x"></i>
                   <span style="display:inline-block; width:.1ex"></span> {{cours.title|replace:'\\',' '}}
               </a>
@@ -58,7 +58,7 @@ css: "/css/pdfs.css"
             {% if formulaire.path %}
             <div class="col-lg-4 pdf">
               <div class="zoom">
-                <a href="{{'/pdfs/' | append: formulaire.path}}">
+                <a href="{{'/pdfs/Formulaires/' | append: formulaire.path}}">
                     <i class="fa fa-file-pdf-o fa-1x"></i>
                     <span style="display:inline-block; width:.1ex"></span> {{formulaire.title|replace:'\\',' '}}
                 </a>
@@ -78,7 +78,7 @@ css: "/css/pdfs.css"
             {% for colle in sorted_colles %} {% if colle.path %}
             <div class="col-lg-4 pdf">
               <div class="zoom">
-                <a href="{{'/pdfs/' | append: colle.path}}">
+                <a href="{{'/pdfs/Colles/' | append: colle.path}}">
                     <i class="fa fa-file-pdf-o fa-1x"></i>
                     <span style="display:inline-block; width:.1ex"></span> {{colle.title}}
                 </a>

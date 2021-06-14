@@ -15,7 +15,7 @@ css: "/css/pdfs.css"
         {% if interro.path %}
         <div class="col-lg-3 pdf">
           <div class="zoom">
-            <a href="{{'/pdfs/' | append: interro.path}}">
+            <a href="{{'/pdfs/Interros/' | append: interro.path}}">
                 <i class="fa fa-file-pdf-o fa-1x"></i>
                 <span style="display:inline-block; width:.1ex"></span> {{interro.title}}
             </a>
@@ -40,7 +40,7 @@ css: "/css/pdfs.css"
                         {% assign s = ds | sort %}
                         {% for sub in s reversed %}
                             {% if sub[1].path %}
-                                <a href="{{'/pdfs/' | append: sub[1].path}}">
+                                <a href="{{'/pdfs/DS/' | append: sub[1].path}}">
                                     <i class="fa fa-file-pdf-o fa-2x"></i>
                                     <p>{{sub[0]}}</p>
                                 </a>
@@ -67,7 +67,7 @@ css: "/css/pdfs.css"
                         {% assign s = dm | sort %}
                         {% for sub in s reversed %}
                             {% if sub[1].path %}
-                                <a href="{{'/pdfs/' | append: sub[1].path}}">
+                                <a href="{{'/pdfs/DM/' | append: sub[1].path}}">
                                     <i class="fa fa-file-pdf-o fa-2x"></i>
                                     <p>{{sub[0]}}</p>
                                 </a>

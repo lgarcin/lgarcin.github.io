@@ -16,7 +16,7 @@ css: "/css/pdfs.css"
                         {% assign s = td | sort %}
                         {% for sub in s reversed %}
                             {% if sub[1].path %}
-                                <a href="{{'/pdfs/' | append: sub[1].path}}">
+                                <a href="{{'/pdfs/TD/' | append: sub[1].path}}">
                                     <i class="fa fa-file-pdf-o fa-2x"></i>
                                     <p>{{sub[0]}}</p>
                                 </a>
