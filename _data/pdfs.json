@@ -217,6 +217,10 @@
       "path": "Reduction.pdf"
     },
     {
+      "title": "Séries entières",
+      "path": "SeriesEntieres.pdf"
+    },
+    {
       "title": "Séries et familles sommables",
       "path": "SeriesFamillesSommables.pdf"
     },
@@ -374,6 +378,9 @@
       "title": "Devoir à la maison n°17",
       "Enoncé": {
         "path": "DM17.pdf"
+      },
+      "Corrigé": {
+        "path": "DM17.corrige.pdf"
       }
     }
   ],
@@ -641,6 +648,9 @@
       "title": "TD : Dénombrement, probabilités",
       "Enoncé": {
         "path": "TDDenombrementProbabilites.pdf"
+      },
+      "Corrigé": {
+        "path": "TDDenombrementProbabilites.corrige.pdf"
       }
     },
     {
@@ -881,6 +891,10 @@
     {
       "title": "Interrogation écrite n°13",
       "path": "Interro13.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°14",
+      "path": "Interro14.pdf"
     }
   ]
 }
