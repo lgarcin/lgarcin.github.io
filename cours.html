@@ -10,7 +10,7 @@ css: "/css/pdfs.css"
     <div class="col-lg-12">
         <section id="cours">
           {% if site.data.pdfs.Cours %}
-            <h3>Notes de cours de première année</h3>
+            <h3>Notes de cours de deuxième année</h3>
             {% assign sorted_cours=site.data.pdfs.Cours|sort:'title' %}
             {% for cours in sorted_cours %}
             {% if cours.path %}
@@ -29,15 +29,15 @@ css: "/css/pdfs.css"
     </div>
 
     <div class="col-lg-12">
-      <section id="deuxieme annee">
-        {% if site.data.pdfs.DeuxiemeAnnee %}
-          <h3>Notes de cours de deuxieme année</h3>
-          {% assign sorted_cours=site.data.pdfs.DeuxiemeAnnee|sort:'title' %}
+      <section id="premiere annee">
+        {% if site.data.pdfs.PremiereAnnee %}
+          <h3>Notes de cours de première année</h3>
+          {% assign sorted_cours=site.data.pdfs.PremiereAnnee|sort:'title' %}
           {% for cours in sorted_cours %}
           {% if cours.path %}
           <div class="col-lg-4 pdf">
             <div class="zoom">
-              <a href="{{'/pdfs/DeuxiemeAnnee/' | append: cours.path}}">
+              <a href="{{'/pdfs/PremiereAnnee/' | append: cours.path}}">
                   <i class="fa fa-file-pdf-o fa-1x"></i>
                   <span style="display:inline-block; width:.1ex"></span> {{cours.title|replace:'\\',' '}}
               </a>
