@@ -1,7 +1,7 @@
 ---
 layout: page
 title: A propos
-description: Mathématiques MPSI au lycée Corot
+description: Mathématiques MP au lycée Dumont
 ---
 
-Vous trouverez sur ce site les différents documents distribués en cours de mathématiques aux étudiants de la MPSI du lycée Jean-Baptiste Corot.
+Vous trouverez sur ce site les différents documents distribués en cours de mathématiques aux étudiants de la MP du lycée Dumont d'Urville.
