@@ -273,18 +273,10 @@
       "path": "ProgColles01.pdf"
     }
   ],
-  "TD": [
-    {
-      "title": "Intégrales Impropres",
-      "Enoncé": {
-        "path": "TDIntegralesImpropres.pdf"
-      }
-    },
-    {
-      "title": "Séries et familles sommables",
-      "Enoncé": {
-        "path": "TDSeriesFamillesSommables.pdf"
-      }
+  "TD": {
+    "title": "Intégrales Impropres",
+    "Enoncé": {
+      "path": "TDIntegralesImpropres.pdf"
     }
-  ]
+  }
 }
