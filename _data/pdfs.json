@@ -1,16 +1,10 @@
 {
-  "Colles": [],
-  "VieClasse": [],
-  "TD": [
+  "VieClasse": [
     {
-      "title": "Intégrales Impropres",
-      "Enoncé": {
-        "path": "TDIntegralesImpropres.pdf"
-      }
+      "title": "Colloscope",
+      "path": "Colloscope.pdf"
     }
   ],
-  "DS": [],
-  "Interros": [],
   "Formulaires": [
     {
       "title": "Comparaison de fonctions",
@@ -47,84 +41,6 @@
     {
       "title": "Trigonométrie inverse",
       "path": "FormulaireTrigoInverse.pdf"
-    }
-  ],
-  "DM": [
-    {
-      "title": "Devoir à la maison n°01",
-      "Enoncé": {
-        "path": "DM01.pdf"
-      }
-    }
-  ],
-  "Cours": [
-    {
-      "title": "Anneaux et arithmétique",
-      "path": "Anneaux.pdf"
-    },
-    {
-      "title": "Calcul différentiel",
-      "path": "CalculDifferentiel.pdf"
-    },
-    {
-      "title": "Convexité",
-      "path": "Convexite.pdf"
-    },
-    {
-      "title": "Equations différentielles linéaires",
-      "path": "EquationsDifferentiellesLineaires.pdf"
-    },
-    {
-      "title": "Espaces préhilbertiens réels",
-      "path": "EspacesPrehilbertiens.pdf"
-    },
-    {
-      "title": "Espaces vectoriels normés",
-      "path": "EspacesVectorielsNormes.pdf"
-    },
-    {
-      "title": "Fonctions à valeurs vectorielles",
-      "path": "FonctionsVectorielles.pdf"
-    },
-    {
-      "title": "Groupes",
-      "path": "Groupes.pdf"
-    },
-    {
-      "title": "Intégrales impropres",
-      "path": "IntegralesImpropres.pdf"
-    },
-    {
-      "title": "Intégrales à paramètres",
-      "path": "IntegralesParametres.pdf"
-    },
-    {
-      "title": "Probabilités",
-      "path": "Probabilites.pdf"
-    },
-    {
-      "title": "Réduction algébrique",
-      "path": "ReductionAlgebrique.pdf"
-    },
-    {
-      "title": "Réduction géométrique",
-      "path": "ReductionGeometrique.pdf"
-    },
-    {
-      "title": "Séries entières",
-      "path": "SeriesEntieres.pdf"
-    },
-    {
-      "title": "Séries et familles sommables",
-      "path": "SeriesFamillesSommables.pdf"
-    },
-    {
-      "title": "Suites et séries de fonctions",
-      "path": "SuitesSeriesFonctions.pdf"
-    },
-    {
-      "title": "Topologie",
-      "path": "Topologie.pdf"
     }
   ],
   "PremiereAnnee": [
@@ -263,6 +179,112 @@
     {
       "title": "Trigonométrie",
       "path": "Trigonometrie.pdf"
+    }
+  ],
+  "Interros": [],
+  "Cours": [
+    {
+      "title": "Anneaux et arithmétique",
+      "path": "Anneaux.pdf"
+    },
+    {
+      "title": "Calcul différentiel",
+      "path": "CalculDifferentiel.pdf"
+    },
+    {
+      "title": "Convexité",
+      "path": "Convexite.pdf"
+    },
+    {
+      "title": "Equations différentielles linéaires",
+      "path": "EquationsDifferentiellesLineaires.pdf"
+    },
+    {
+      "title": "Espaces préhilbertiens réels",
+      "path": "EspacesPrehilbertiens.pdf"
+    },
+    {
+      "title": "Espaces vectoriels normés",
+      "path": "EspacesVectorielsNormes.pdf"
+    },
+    {
+      "title": "Fonctions à valeurs vectorielles",
+      "path": "FonctionsVectorielles.pdf"
+    },
+    {
+      "title": "Groupes",
+      "path": "Groupes.pdf"
+    },
+    {
+      "title": "Intégrales impropres",
+      "path": "IntegralesImpropres.pdf"
+    },
+    {
+      "title": "Intégrales à paramètres",
+      "path": "IntegralesParametres.pdf"
+    },
+    {
+      "title": "Probabilités",
+      "path": "Probabilites.pdf"
+    },
+    {
+      "title": "Réduction algébrique",
+      "path": "ReductionAlgebrique.pdf"
+    },
+    {
+      "title": "Réduction géométrique",
+      "path": "ReductionGeometrique.pdf"
+    },
+    {
+      "title": "Séries entières",
+      "path": "SeriesEntieres.pdf"
+    },
+    {
+      "title": "Séries et familles sommables",
+      "path": "SeriesFamillesSommables.pdf"
+    },
+    {
+      "title": "Suites et séries de fonctions",
+      "path": "SuitesSeriesFonctions.pdf"
+    },
+    {
+      "title": "Topologie",
+      "path": "Topologie.pdf"
+    }
+  ],
+  "DM": [
+    {
+      "title": "Devoir à la maison n°01",
+      "Enoncé": {
+        "path": "DM01.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°02",
+      "Enoncé": {
+        "path": "DM02.pdf"
+      }
+    }
+  ],
+  "DS": [],
+  "Colles": [
+    {
+      "title": "Semaine du 13/09 au 17/09",
+      "path": "ProgColles01.pdf"
+    }
+  ],
+  "TD": [
+    {
+      "title": "Intégrales Impropres",
+      "Enoncé": {
+        "path": "TDIntegralesImpropres.pdf"
+      }
+    },
+    {
+      "title": "Séries et familles sommables",
+      "Enoncé": {
+        "path": "TDSeriesFamillesSommables.pdf"
+      }
     }
   ]
 }
