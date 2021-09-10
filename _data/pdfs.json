@@ -1,46 +1,95 @@
 {
-  "VieClasse": [
+  "Colles": [
     {
-      "title": "Colloscope",
-      "path": "Colloscope.pdf"
+      "title": "Semaine du 13/09 au 17/09",
+      "path": "ProgColles01.pdf"
     }
   ],
-  "Formulaires": [
+  "Cours": [
     {
-      "title": "Comparaison de fonctions",
-      "path": "FormulaireComparaisonFonctions.pdf"
+      "title": "Anneaux et arithmétique",
+      "path": "Anneaux.pdf"
     },
     {
-      "title": "Dérivation et intégration",
-      "path": "FormulaireDerivationIntegration.pdf"
+      "title": "Calcul différentiel",
+      "path": "CalculDifferentiel.pdf"
     },
     {
-      "title": "Développements limités",
-      "path": "FormulaireDL.pdf"
+      "title": "Convexité",
+      "path": "Convexite.pdf"
     },
     {
-      "title": "Inégalités",
-      "path": "FormulaireInegalites.pdf"
+      "title": "Equations différentielles linéaires",
+      "path": "EquationsDifferentiellesLineaires.pdf"
+    },
+    {
+      "title": "Espaces préhilbertiens réels",
+      "path": "EspacesPrehilbertiens.pdf"
+    },
+    {
+      "title": "Espaces vectoriels normés",
+      "path": "EspacesVectorielsNormes.pdf"
+    },
+    {
+      "title": "Fonctions à valeurs vectorielles",
+      "path": "FonctionsVectorielles.pdf"
+    },
+    {
+      "title": "Groupes",
+      "path": "Groupes.pdf"
+    },
+    {
+      "title": "Intégrales impropres",
+      "path": "IntegralesImpropres.pdf"
+    },
+    {
+      "title": "Intégrales à paramètres",
+      "path": "IntegralesParametres.pdf"
     },
     {
       "title": "Probabilités",
-      "path": "FormulaireProbabilites.pdf"
+      "path": "Probabilites.pdf"
     },
     {
-      "title": "Séries",
-      "path": "FormulaireSeries.pdf"
+      "title": "Réduction algébrique",
+      "path": "ReductionAlgebrique.pdf"
     },
     {
-      "title": "Trigonométrie",
-      "path": "FormulaireTrigo.pdf"
+      "title": "Réduction géométrique",
+      "path": "ReductionGeometrique.pdf"
     },
     {
-      "title": "Trigonométrie hyperbolique",
-      "path": "FormulaireTrigoHyperbolique.pdf"
+      "title": "Séries entières",
+      "path": "SeriesEntieres.pdf"
     },
     {
-      "title": "Trigonométrie inverse",
-      "path": "FormulaireTrigoInverse.pdf"
+      "title": "Séries et familles sommables",
+      "path": "SeriesFamillesSommables.pdf"
+    },
+    {
+      "title": "Suites et séries de fonctions",
+      "path": "SuitesSeriesFonctions.pdf"
+    },
+    {
+      "title": "Topologie",
+      "path": "Topologie.pdf"
+    }
+  ],
+  "DM": [
+    {
+      "title": "Devoir à la maison n°01",
+      "Enoncé": {
+        "path": "DM01.pdf"
+      },
+      "Corrigé": {
+        "path": "DM01.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°02",
+      "Enoncé": {
+        "path": "DM02.pdf"
+      }
     }
   ],
   "PremiereAnnee": [
@@ -181,102 +230,61 @@
       "path": "Trigonometrie.pdf"
     }
   ],
-  "Interros": [],
-  "Cours": [
+  "TD": [
     {
-      "title": "Anneaux et arithmétique",
-      "path": "Anneaux.pdf"
-    },
-    {
-      "title": "Calcul différentiel",
-      "path": "CalculDifferentiel.pdf"
-    },
-    {
-      "title": "Convexité",
-      "path": "Convexite.pdf"
-    },
-    {
-      "title": "Equations différentielles linéaires",
-      "path": "EquationsDifferentiellesLineaires.pdf"
-    },
-    {
-      "title": "Espaces préhilbertiens réels",
-      "path": "EspacesPrehilbertiens.pdf"
-    },
-    {
-      "title": "Espaces vectoriels normés",
-      "path": "EspacesVectorielsNormes.pdf"
-    },
-    {
-      "title": "Fonctions à valeurs vectorielles",
-      "path": "FonctionsVectorielles.pdf"
-    },
-    {
-      "title": "Groupes",
-      "path": "Groupes.pdf"
-    },
-    {
-      "title": "Intégrales impropres",
-      "path": "IntegralesImpropres.pdf"
-    },
-    {
-      "title": "Intégrales à paramètres",
-      "path": "IntegralesParametres.pdf"
-    },
-    {
-      "title": "Probabilités",
-      "path": "Probabilites.pdf"
-    },
-    {
-      "title": "Réduction algébrique",
-      "path": "ReductionAlgebrique.pdf"
-    },
-    {
-      "title": "Réduction géométrique",
-      "path": "ReductionGeometrique.pdf"
-    },
-    {
-      "title": "Séries entières",
-      "path": "SeriesEntieres.pdf"
-    },
-    {
-      "title": "Séries et familles sommables",
-      "path": "SeriesFamillesSommables.pdf"
-    },
-    {
-      "title": "Suites et séries de fonctions",
-      "path": "SuitesSeriesFonctions.pdf"
-    },
-    {
-      "title": "Topologie",
-      "path": "Topologie.pdf"
-    }
-  ],
-  "DM": [
-    {
-      "title": "Devoir à la maison n°01",
+      "title": "Intégrales Impropres",
       "Enoncé": {
-        "path": "DM01.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°02",
-      "Enoncé": {
-        "path": "DM02.pdf"
+        "path": "TDIntegralesImpropres.pdf"
+      },
+      "Corrigé": {
+        "path": "TDIntegralesImpropres.corrige.pdf"
       }
     }
   ],
   "DS": [],
-  "Colles": [
+  "VieClasse": [
     {
-      "title": "Semaine du 13/09 au 17/09",
-      "path": "ProgColles01.pdf"
+      "title": "Colloscope",
+      "path": "Colloscope.pdf"
     }
   ],
-  "TD": {
-    "title": "Intégrales Impropres",
-    "Enoncé": {
-      "path": "TDIntegralesImpropres.pdf"
+  "Interros": [],
+  "Formulaires": [
+    {
+      "title": "Comparaison de fonctions",
+      "path": "FormulaireComparaisonFonctions.pdf"
+    },
+    {
+      "title": "Dérivation et intégration",
+      "path": "FormulaireDerivationIntegration.pdf"
+    },
+    {
+      "title": "Développements limités",
+      "path": "FormulaireDL.pdf"
+    },
+    {
+      "title": "Inégalités",
+      "path": "FormulaireInegalites.pdf"
+    },
+    {
+      "title": "Probabilités",
+      "path": "FormulaireProbabilites.pdf"
+    },
+    {
+      "title": "Séries",
+      "path": "FormulaireSeries.pdf"
+    },
+    {
+      "title": "Trigonométrie",
+      "path": "FormulaireTrigo.pdf"
+    },
+    {
+      "title": "Trigonométrie hyperbolique",
+      "path": "FormulaireTrigoHyperbolique.pdf"
+    },
+    {
+      "title": "Trigonométrie inverse",
+      "path": "FormulaireTrigoInverse.pdf"
     }
-  }
+  ]
 }
