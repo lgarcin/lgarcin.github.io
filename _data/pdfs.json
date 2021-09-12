@@ -303,6 +303,12 @@
       "Corrigé": {
         "path": "TDIntegralesImpropres.corrige.pdf"
       }
+    },
+    {
+      "title": "Séries et familles sommables",
+      "Enoncé": {
+        "path": "TDSeriesFamillesSommables.pdf"
+      }
     }
   ]
 }
