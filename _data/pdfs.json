@@ -1,54 +1,13 @@
 {
-  "VieClasse": [
+  "DS": [
     {
-      "title": "Colloscope",
-      "path": "Colloscope.pdf"
-    },
-    {
-      "title": "Emploi du temps",
-      "path": "Emploi du temps annuel de MP.pdf"
-    },
-    {
-      "title": "Planning des DS",
-      "path": "Planning DS MP.pdf"
-    }
-  ],
-  "Formulaires": [
-    {
-      "title": "Comparaison de fonctions",
-      "path": "FormulaireComparaisonFonctions.pdf"
-    },
-    {
-      "title": "Dérivation et intégration",
-      "path": "FormulaireDerivationIntegration.pdf"
-    },
-    {
-      "title": "Développements limités",
-      "path": "FormulaireDL.pdf"
-    },
-    {
-      "title": "Inégalités",
-      "path": "FormulaireInegalites.pdf"
-    },
-    {
-      "title": "Probabilités",
-      "path": "FormulaireProbabilites.pdf"
-    },
-    {
-      "title": "Séries",
-      "path": "FormulaireSeries.pdf"
-    },
-    {
-      "title": "Trigonométrie",
-      "path": "FormulaireTrigo.pdf"
-    },
-    {
-      "title": "Trigonométrie hyperbolique",
-      "path": "FormulaireTrigoHyperbolique.pdf"
-    },
-    {
-      "title": "Trigonométrie inverse",
-      "path": "FormulaireTrigoInverse.pdf"
+      "title": "Devoir surveillé n°01",
+      "Enoncé": {
+        "path": "DS01.pdf"
+      },
+      "Corrigé": {
+        "path": "DS01.corrige.pdf"
+      }
     }
   ],
   "PremiereAnnee": [
@@ -189,7 +148,23 @@
       "path": "Trigonometrie.pdf"
     }
   ],
-  "Interros": [],
+  "TD": [
+    {
+      "title": "Intégrales Impropres",
+      "Enoncé": {
+        "path": "TDIntegralesImpropres.pdf"
+      },
+      "Corrigé": {
+        "path": "TDIntegralesImpropres.corrige.pdf"
+      }
+    },
+    {
+      "title": "Séries et familles sommables",
+      "Enoncé": {
+        "path": "TDSeriesFamillesSommables.pdf"
+      }
+    }
+  ],
   "Cours": [
     {
       "title": "Anneaux et arithmétique",
@@ -260,6 +235,21 @@
       "path": "Topologie.pdf"
     }
   ],
+  "VieClasse": [
+    {
+      "path": "Colloscope.pdf",
+      "title": "Colloscope"
+    },
+    {
+      "path": "Emploi du temps annuel de MP.pdf",
+      "title": "Emploi du temps"
+    },
+    {
+      "path": "Planning DS MP.pdf",
+      "title": "Planning des DS"
+    }
+  ],
+  "Interros": [],
   "DM": [
     {
       "title": "Devoir à la maison n°01",
@@ -277,38 +267,48 @@
       }
     }
   ],
-  "DS": [
+  "Formulaires": [
     {
-      "title": "Devoir surveillé n°01",
-      "Enoncé": {
-        "path": "DS01.pdf"
-      },
-      "Corrigé": {
-        "path": "DS01.corrige.pdf"
-      }
+      "title": "Comparaison de fonctions",
+      "path": "FormulaireComparaisonFonctions.pdf"
+    },
+    {
+      "title": "Dérivation et intégration",
+      "path": "FormulaireDerivationIntegration.pdf"
+    },
+    {
+      "title": "Développements limités",
+      "path": "FormulaireDL.pdf"
+    },
+    {
+      "title": "Inégalités",
+      "path": "FormulaireInegalites.pdf"
+    },
+    {
+      "title": "Probabilités",
+      "path": "FormulaireProbabilites.pdf"
+    },
+    {
+      "title": "Séries",
+      "path": "FormulaireSeries.pdf"
+    },
+    {
+      "title": "Trigonométrie",
+      "path": "FormulaireTrigo.pdf"
+    },
+    {
+      "title": "Trigonométrie hyperbolique",
+      "path": "FormulaireTrigoHyperbolique.pdf"
+    },
+    {
+      "title": "Trigonométrie inverse",
+      "path": "FormulaireTrigoInverse.pdf"
     }
   ],
   "Colles": [
     {
       "title": "Semaine du 13/09 au 17/09",
       "path": "ProgColles01.pdf"
-    }
-  ],
-  "TD": [
-    {
-      "title": "Intégrales Impropres",
-      "Enoncé": {
-        "path": "TDIntegralesImpropres.pdf"
-      },
-      "Corrigé": {
-        "path": "TDIntegralesImpropres.corrige.pdf"
-      }
-    },
-    {
-      "title": "Séries et familles sommables",
-      "Enoncé": {
-        "path": "TDSeriesFamillesSommables.pdf"
-      }
     }
   ]
 }
