@@ -1,8 +1,37 @@
 {
-  "Interros": [
+  "DM": [
     {
-      "title": "Interrogation écrite n°01",
-      "path": "Interro01.pdf"
+      "title": "Devoir à la maison n°01",
+      "Enoncé": {
+        "path": "DM01.pdf"
+      },
+      "Corrigé": {
+        "path": "DM01.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°02",
+      "Enoncé": {
+        "path": "DM02.pdf"
+      },
+      "Corrigé": {
+        "path": "DM02.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°03",
+      "Enoncé": {
+        "path": "DM03.pdf"
+      },
+      "Corrigé": {
+        "path": "DM03.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°04",
+      "Enoncé": {
+        "path": "DM04.pdf"
+      }
     }
   ],
   "VieClasse": [
@@ -17,6 +46,84 @@
     {
       "title": "Planning des DS",
       "path": "Planning DS MP.pdf"
+    }
+  ],
+  "Colles": [
+    {
+      "title": "Semaine du 13/09 au 17/09",
+      "path": "ProgColles01.pdf"
+    },
+    {
+      "title": "Semaine du 20/09 au 24/09",
+      "path": "ProgColles02.pdf"
+    },
+    {
+      "title": "Semaine du 27/09 au 01/10",
+      "path": "ProgColles03.pdf"
+    }
+  ],
+  "Formulaires": [
+    {
+      "title": "Comparaison de fonctions",
+      "path": "FormulaireComparaisonFonctions.pdf"
+    },
+    {
+      "title": "Dérivation et intégration",
+      "path": "FormulaireDerivationIntegration.pdf"
+    },
+    {
+      "title": "Développements limités",
+      "path": "FormulaireDL.pdf"
+    },
+    {
+      "title": "Inégalités",
+      "path": "FormulaireInegalites.pdf"
+    },
+    {
+      "title": "Probabilités",
+      "path": "FormulaireProbabilites.pdf"
+    },
+    {
+      "title": "Séries",
+      "path": "FormulaireSeries.pdf"
+    },
+    {
+      "title": "Trigonométrie",
+      "path": "FormulaireTrigo.pdf"
+    },
+    {
+      "title": "Trigonométrie hyperbolique",
+      "path": "FormulaireTrigoHyperbolique.pdf"
+    },
+    {
+      "title": "Trigonométrie inverse",
+      "path": "FormulaireTrigoInverse.pdf"
+    }
+  ],
+  "TD": [
+    {
+      "title": "Convexité",
+      "Enoncé": {
+        "path": "TDConvexite.pdf"
+      }
+    },
+    {
+      "title": "Intégrales Impropres",
+      "Enoncé": {
+        "path": "TDIntegralesImpropres.pdf"
+      },
+      "Corrigé": {
+        "path": "TDIntegralesImpropres.corrige.pdf"
+      }
+    },
+    {
+      "title": "Séries et familles sommables",
+      "Enoncé": {
+        "path": "TDSeriesFamillesSommables.pdf"
+      },
+      "Corrigé": {
+        "path": "TDSeriesFamillesSommables.corrige.pdf"
+      }
     }
   ],
   "PremiereAnnee": [
@@ -157,71 +264,10 @@
       "path": "Trigonometrie.pdf"
     }
   ],
-  "Formulaires": [
+  "Interros": [
     {
-      "title": "Comparaison de fonctions",
-      "path": "FormulaireComparaisonFonctions.pdf"
-    },
-    {
-      "title": "Dérivation et intégration",
-      "path": "FormulaireDerivationIntegration.pdf"
-    },
-    {
-      "title": "Développements limités",
-      "path": "FormulaireDL.pdf"
-    },
-    {
-      "title": "Inégalités",
-      "path": "FormulaireInegalites.pdf"
-    },
-    {
-      "title": "Probabilités",
-      "path": "FormulaireProbabilites.pdf"
-    },
-    {
-      "title": "Séries",
-      "path": "FormulaireSeries.pdf"
-    },
-    {
-      "title": "Trigonométrie",
-      "path": "FormulaireTrigo.pdf"
-    },
-    {
-      "title": "Trigonométrie hyperbolique",
-      "path": "FormulaireTrigoHyperbolique.pdf"
-    },
-    {
-      "title": "Trigonométrie inverse",
-      "path": "FormulaireTrigoInverse.pdf"
-    }
-  ],
-  "DS": [
-    {
-      "title": "Devoir surveillé n°01",
-      "Enoncé": {
-        "path": "DS01.pdf"
-      },
-      "Corrigé": {
-        "path": "DS01.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°02",
-      "Enoncé": {
-        "path": "DS02.pdf"
-      },
-      "Corrigé": {
-        "path": "DS02.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°03",
-      "Enoncé": {
-        "path": "DS03.pdf"
-      },
-      "Corrigé": {
-        "path": "DS03.corrige.pdf"
-      }
+      "title": "Interrogation écrite n°01",
+      "path": "Interro01.pdf"
     }
   ],
   "Cours": [
@@ -294,78 +340,32 @@
       "path": "Topologie.pdf"
     }
   ],
-  "Colles": [
+  "DS": [
     {
-      "title": "Semaine du 13/09 au 17/09",
-      "path": "ProgColles01.pdf"
-    },
-    {
-      "title": "Semaine du 20/09 au 24/09",
-      "path": "ProgColles02.pdf"
-    },
-    {
-      "title": "Semaine du 27/09 au 01/10",
-      "path": "ProgColles03.pdf"
-    }
-  ],
-  "TD": [
-    {
-      "title": "Convexité",
+      "title": "Devoir surveillé n°01",
       "Enoncé": {
-        "path": "TDConvexite.pdf"
-      }
-    },
-    {
-      "title": "Intégrales Impropres",
-      "Enoncé": {
-        "path": "TDIntegralesImpropres.pdf"
+        "path": "DS01.pdf"
       },
       "Corrigé": {
-        "path": "TDIntegralesImpropres.corrige.pdf"
+        "path": "DS01.corrige.pdf"
       }
     },
     {
-      "title": "Séries et familles sommables",
+      "title": "Devoir surveillé n°02",
       "Enoncé": {
-        "path": "TDSeriesFamillesSommables.pdf"
+        "path": "DS02.pdf"
       },
       "Corrigé": {
-        "path": "TDSeriesFamillesSommables.corrige.pdf"
-      }
-    }
-  ],
-  "DM": [
-    {
-      "title": "Devoir à la maison n°01",
-      "Enoncé": {
-        "path": "DM01.pdf"
-      },
-      "Corrigé": {
-        "path": "DM01.corrige.pdf"
+        "path": "DS02.corrige.pdf"
       }
     },
     {
-      "title": "Devoir à la maison n°02",
+      "title": "Devoir surveillé n°03",
       "Enoncé": {
-        "path": "DM02.pdf"
+        "path": "DS03.pdf"
       },
       "Corrigé": {
-        "path": "DM02.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°03",
-      "Enoncé": {
-        "path": "DM03.pdf"
-      },
-      "Corrigé": {
-        "path": "DM03.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°04",
-      "Enoncé": {
-        "path": "DM04.pdf"
+        "path": "DS03.corrige.pdf"
       }
     }
   ]
