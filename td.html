@@ -5,27 +5,62 @@ description : Exercices MP
 css: "/css/pdfs.css"
 ---
 
-<section id="td">
-  {% if site.data.pdfs.TD %}
-    <div class="row">
-        {% for td in site.data.pdfs.TD %}
-            <div class="col-lg-3 enoncecorrige">
-                <div class="zoom">
-                    <h5>{{td.title}}</h5>
-                    <div>
-                        {% assign s = td | sort %}
-                        {% for sub in s reversed %}
+<div class="row">
+
+    <div class="col-lg-12">
+
+        <section id="td">
+            {% if site.data.pdfs.TD %}
+            <h3>TD deuxième année</h3>
+            <div class="row">
+                {% for td in site.data.pdfs.TD %}
+                <div class="col-lg-3 enoncecorrige">
+                    <div class="zoom">
+                        <h5>{{td.title}}</h5>
+                        <div>
+                            {% assign s = td | sort %}
+                            {% for sub in s reversed %}
                             {% if sub[1].path %}
-                                <a href="{{'/pdfs/TD/' | append: sub[1].path}}">
-                                    <i class="fa fa-file-pdf-o fa-2x"></i>
-                                    <p>{{sub[0]}}</p>
-                                </a>
+                            <a href="{{'/pdfs/TD/' | append: sub[1].path}}">
+                                <i class="fa fa-file-pdf-o fa-2x"></i>
+                                <p>{{sub[0]}}</p>
+                            </a>
                             {% endif %}
-                        {% endfor %}
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
+                {% endfor %}
             </div>
-        {% endfor %}
+            {% endif %}
+        </section>
     </div>
-  {% endif %}
-</section>
+
+    <div class="col-lg-12">
+        <section id="td premiere annee">
+            {% if site.data.pdfs.PremiereAnnee.TD %}
+            <h3>TD première année (programme de 2013)</h3>
+            <div class="row">
+                {% for td in site.data.pdfs.PremiereAnnee.TD %}
+                <div class="col-lg-3 enoncecorrige">
+                    <div class="zoom">
+                        <h5>{{td.title}}</h5>
+                        <div>
+                            {% assign s = td | sort %}
+                            {% for sub in s reversed %}
+                            {% if sub[1].path %}
+                            <a href="{{'/pdfs/PremiereAnnee/TD/' | append: sub[1].path}}">
+                                <i class="fa fa-file-pdf-o fa-2x"></i>
+                                <p>{{sub[0]}}</p>
+                            </a>
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </section>
+    </div>
+</div>
