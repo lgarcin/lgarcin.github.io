@@ -556,6 +556,10 @@
     {
       "title": "Interrogation écrite n°03",
       "path": "Interro03.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°04",
+      "path": "Interro04.pdf"
     }
   ],
   "Colles": [
@@ -663,6 +667,9 @@
       "title": "Anneaux, arithmétique",
       "Enoncé": {
         "path": "TDAnneauxArithmetique.pdf"
+      },
+      "Corrigé": {
+        "path": "TDAnneauxArithmetique.corrige.pdf"
       }
     },
     {
