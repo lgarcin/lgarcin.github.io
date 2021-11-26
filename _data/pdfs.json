@@ -114,6 +114,9 @@
       "title": "Devoir à la maison n°07",
       "Enoncé": {
         "path": "DM07.pdf"
+      },
+      "Corrigé": {
+        "path": "DM07.corrige.pdf"
       }
     },
     {
@@ -648,6 +651,9 @@
       "title": "Réduction algébrique",
       "Enoncé": {
         "path": "TDReductionAlgebrique.pdf"
+      },
+      "Corrigé": {
+        "path": "TDReductionAlgebrique.corrige.pdf"
       }
     },
     {
@@ -714,6 +720,10 @@
     {
       "title": "Semaine du 22/11 au 26/11",
       "path": "ProgColles09.pdf"
+    },
+    {
+      "title": "Semaine du 29/11 au 03/12",
+      "path": "ProgColles10.pdf"
     }
   ],
   "Formulaires": [
