@@ -682,6 +682,12 @@
       "Corrigé": {
         "path": "TDSeriesFamillesSommables.corrige.pdf"
       }
+    },
+    {
+      "title": "Suites et séries de fonctions",
+      "Enoncé": {
+        "path": "TDSuitesSeriesFonctions.pdf"
+      }
     }
   ],
   "Colles": [
