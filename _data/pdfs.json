@@ -283,6 +283,9 @@
       "title": "Topologie",
       "Enoncé": {
         "path": "TDTopologie.pdf"
+      },
+      "Corrigé": {
+        "path": "TDTopologie.corrige.pdf"
       }
     }
   ],
@@ -839,6 +842,10 @@
     {
       "title": "Semaine du 03/01 au 07/01",
       "path": "ProgColles13.pdf"
+    },
+    {
+      "title": "Semaine du 10/01 au 14/01",
+      "path": "ProgColles14.pdf"
     }
   ]
 }
