@@ -120,6 +120,10 @@
     {
       "title": "Interrogation écrite n°06",
       "path": "Interro06.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°07",
+      "path": "Interro07.pdf"
     }
   ],
   "PremiereAnnee": {
@@ -754,6 +758,12 @@
       "title": "Devoir à la maison n°11",
       "Enoncé": {
         "path": "DM11.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°12",
+      "Enoncé": {
+        "path": "DM12.pdf"
       }
     }
   ],
