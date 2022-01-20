@@ -769,6 +769,12 @@
   ],
   "TD": [
     {
+      "title": "Révisions de probabilités",
+      "Enoncé": {
+        "path": "RevisionsProbabilites.pdf"
+      }
+    },
+    {
       "title": "Anneaux, arithmétique",
       "Enoncé": {
         "path": "TDAnneauxArithmetique.pdf"
