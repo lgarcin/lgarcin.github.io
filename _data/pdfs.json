@@ -1,4 +1,42 @@
 {
+  "Formulaires": [
+    {
+      "title": "Comparaison de fonctions",
+      "path": "FormulaireComparaisonFonctions.pdf"
+    },
+    {
+      "title": "Dérivation et intégration",
+      "path": "FormulaireDerivationIntegration.pdf"
+    },
+    {
+      "title": "Développements limités",
+      "path": "FormulaireDL.pdf"
+    },
+    {
+      "title": "Inégalités",
+      "path": "FormulaireInegalites.pdf"
+    },
+    {
+      "title": "Probabilités",
+      "path": "FormulaireProbabilites.pdf"
+    },
+    {
+      "title": "Séries",
+      "path": "FormulaireSeries.pdf"
+    },
+    {
+      "title": "Trigonométrie",
+      "path": "FormulaireTrigo.pdf"
+    },
+    {
+      "title": "Trigonométrie hyperbolique",
+      "path": "FormulaireTrigoHyperbolique.pdf"
+    },
+    {
+      "title": "Trigonométrie inverse",
+      "path": "FormulaireTrigoInverse.pdf"
+    }
+  ],
   "VieClasse": [
     {
       "title": "Colloscope",
@@ -11,6 +49,137 @@
     {
       "title": "Planning des DS",
       "path": "Planning DS MP.pdf"
+    }
+  ],
+  "DS": [
+    {
+      "title": "Devoir surveillé n°01",
+      "Enoncé": {
+        "path": "DS01.pdf"
+      },
+      "Corrigé": {
+        "path": "DS01.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°02",
+      "Enoncé": {
+        "path": "DS02.pdf"
+      },
+      "Corrigé": {
+        "path": "DS02.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°03",
+      "Enoncé": {
+        "path": "DS03.pdf"
+      },
+      "Corrigé": {
+        "path": "DS03.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°04",
+      "Enoncé": {
+        "path": "DS04.pdf"
+      },
+      "Corrigé": {
+        "path": "DS04.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°05",
+      "Enoncé": {
+        "path": "DS05.pdf"
+      },
+      "Corrigé": {
+        "path": "DS05.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°06",
+      "Enoncé": {
+        "path": "DS06.pdf"
+      },
+      "Corrigé": {
+        "path": "DS06.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°07",
+      "Enoncé": {
+        "path": "DS07.pdf"
+      },
+      "Corrigé": {
+        "path": "DS07.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°08",
+      "Enoncé": {
+        "path": "DS08.pdf"
+      },
+      "Corrigé": {
+        "path": "DS08.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°09",
+      "Enoncé": {
+        "path": "DS09.pdf"
+      },
+      "Corrigé": {
+        "path": "DS09.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°10",
+      "Enoncé": {
+        "path": "DS10.pdf"
+      },
+      "Corrigé": {
+        "path": "DS10.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°11",
+      "Enoncé": {
+        "path": "DS11.pdf"
+      },
+      "Corrigé": {
+        "path": "DS11.corrige.pdf"
+      }
+    }
+  ],
+  "Interros": [
+    {
+      "title": "Interrogation écrite n°01",
+      "path": "Interro01.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°02",
+      "path": "Interro02.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°03",
+      "path": "Interro03.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°04",
+      "path": "Interro04.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°05",
+      "path": "Interro05.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°06",
+      "path": "Interro06.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°07",
+      "path": "Interro07.pdf"
     }
   ],
   "TD": [
@@ -630,143 +799,74 @@
       }
     ]
   },
-  "Formulaires": [
+  "Colles": [
     {
-      "title": "Comparaison de fonctions",
-      "path": "FormulaireComparaisonFonctions.pdf"
+      "title": "Semaine du 13/09 au 17/09",
+      "path": "ProgColles01.pdf"
     },
     {
-      "title": "Dérivation et intégration",
-      "path": "FormulaireDerivationIntegration.pdf"
+      "title": "Semaine du 20/09 au 24/09",
+      "path": "ProgColles02.pdf"
     },
     {
-      "title": "Développements limités",
-      "path": "FormulaireDL.pdf"
+      "title": "Semaine du 27/09 au 01/10",
+      "path": "ProgColles03.pdf"
     },
     {
-      "title": "Inégalités",
-      "path": "FormulaireInegalites.pdf"
+      "title": "Semaine du 04/10 au 08/10",
+      "path": "ProgColles04.pdf"
     },
     {
-      "title": "Probabilités",
-      "path": "FormulaireProbabilites.pdf"
+      "title": "Semaine du 11/10 au 15/10",
+      "path": "ProgColles05.pdf"
     },
     {
-      "title": "Séries",
-      "path": "FormulaireSeries.pdf"
+      "title": "Semaine du 18/10 au 22/10",
+      "path": "ProgColles06.pdf"
     },
     {
-      "title": "Trigonométrie",
-      "path": "FormulaireTrigo.pdf"
+      "title": "Semaine du 08/11 au 12/11",
+      "path": "ProgColles07.pdf"
     },
     {
-      "title": "Trigonométrie hyperbolique",
-      "path": "FormulaireTrigoHyperbolique.pdf"
+      "title": "Semaine du 15/11 au 19/11",
+      "path": "ProgColles08.pdf"
     },
     {
-      "title": "Trigonométrie inverse",
-      "path": "FormulaireTrigoInverse.pdf"
-    }
-  ],
-  "DS": [
-    {
-      "title": "Devoir surveillé n°01",
-      "Enoncé": {
-        "path": "DS01.pdf"
-      },
-      "Corrigé": {
-        "path": "DS01.corrige.pdf"
-      }
+      "title": "Semaine du 22/11 au 26/11",
+      "path": "ProgColles09.pdf"
     },
     {
-      "title": "Devoir surveillé n°02",
-      "Enoncé": {
-        "path": "DS02.pdf"
-      },
-      "Corrigé": {
-        "path": "DS02.corrige.pdf"
-      }
+      "title": "Semaine du 29/11 au 03/12",
+      "path": "ProgColles10.pdf"
     },
     {
-      "title": "Devoir surveillé n°03",
-      "Enoncé": {
-        "path": "DS03.pdf"
-      },
-      "Corrigé": {
-        "path": "DS03.corrige.pdf"
-      }
+      "title": "Semaine du 06/12 au 10/12",
+      "path": "ProgColles11.pdf"
     },
     {
-      "title": "Devoir surveillé n°04",
-      "Enoncé": {
-        "path": "DS04.pdf"
-      },
-      "Corrigé": {
-        "path": "DS04.corrige.pdf"
-      }
+      "title": "Semaine du 13/12 au 17/12",
+      "path": "ProgColles12.pdf"
     },
     {
-      "title": "Devoir surveillé n°05",
-      "Enoncé": {
-        "path": "DS05.pdf"
-      },
-      "Corrigé": {
-        "path": "DS05.corrige.pdf"
-      }
+      "title": "Semaine du 03/01 au 07/01",
+      "path": "ProgColles13.pdf"
     },
     {
-      "title": "Devoir surveillé n°06",
-      "Enoncé": {
-        "path": "DS06.pdf"
-      },
-      "Corrigé": {
-        "path": "DS06.corrige.pdf"
-      }
+      "title": "Semaine du 10/01 au 14/01",
+      "path": "ProgColles14.pdf"
     },
     {
-      "title": "Devoir surveillé n°07",
-      "Enoncé": {
-        "path": "DS07.pdf"
-      },
-      "Corrigé": {
-        "path": "DS07.corrige.pdf"
-      }
+      "title": "Semaine du 17/01 au 21/01",
+      "path": "ProgColles15.pdf"
     },
     {
-      "title": "Devoir surveillé n°08",
-      "Enoncé": {
-        "path": "DS08.pdf"
-      },
-      "Corrigé": {
-        "path": "DS08.corrige.pdf"
-      }
+      "title": "Semaine du 24/01 au 28/01",
+      "path": "ProgColles16.pdf"
     },
     {
-      "title": "Devoir surveillé n°09",
-      "Enoncé": {
-        "path": "DS09.pdf"
-      },
-      "Corrigé": {
-        "path": "DS09.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°10",
-      "Enoncé": {
-        "path": "DS10.pdf"
-      },
-      "Corrigé": {
-        "path": "DS10.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°11",
-      "Enoncé": {
-        "path": "DS11.pdf"
-      },
-      "Corrigé": {
-        "path": "DS11.corrige.pdf"
-      }
+      "title": "Semaine du 31/01 au 04/02",
+      "path": "ProgColles17.pdf"
     }
   ],
   "Cours": [
@@ -837,106 +937,6 @@
     {
       "title": "Topologie",
       "path": "Topologie.pdf"
-    }
-  ],
-  "Interros": [
-    {
-      "title": "Interrogation écrite n°01",
-      "path": "Interro01.pdf"
-    },
-    {
-      "title": "Interrogation écrite n°02",
-      "path": "Interro02.pdf"
-    },
-    {
-      "title": "Interrogation écrite n°03",
-      "path": "Interro03.pdf"
-    },
-    {
-      "title": "Interrogation écrite n°04",
-      "path": "Interro04.pdf"
-    },
-    {
-      "title": "Interrogation écrite n°05",
-      "path": "Interro05.pdf"
-    },
-    {
-      "title": "Interrogation écrite n°06",
-      "path": "Interro06.pdf"
-    },
-    {
-      "title": "Interrogation écrite n°07",
-      "path": "Interro07.pdf"
-    }
-  ],
-  "Colles": [
-    {
-      "title": "Semaine du 13/09 au 17/09",
-      "path": "ProgColles01.pdf"
-    },
-    {
-      "title": "Semaine du 20/09 au 24/09",
-      "path": "ProgColles02.pdf"
-    },
-    {
-      "title": "Semaine du 27/09 au 01/10",
-      "path": "ProgColles03.pdf"
-    },
-    {
-      "title": "Semaine du 04/10 au 08/10",
-      "path": "ProgColles04.pdf"
-    },
-    {
-      "title": "Semaine du 11/10 au 15/10",
-      "path": "ProgColles05.pdf"
-    },
-    {
-      "title": "Semaine du 18/10 au 22/10",
-      "path": "ProgColles06.pdf"
-    },
-    {
-      "title": "Semaine du 08/11 au 12/11",
-      "path": "ProgColles07.pdf"
-    },
-    {
-      "title": "Semaine du 15/11 au 19/11",
-      "path": "ProgColles08.pdf"
-    },
-    {
-      "title": "Semaine du 22/11 au 26/11",
-      "path": "ProgColles09.pdf"
-    },
-    {
-      "title": "Semaine du 29/11 au 03/12",
-      "path": "ProgColles10.pdf"
-    },
-    {
-      "title": "Semaine du 06/12 au 10/12",
-      "path": "ProgColles11.pdf"
-    },
-    {
-      "title": "Semaine du 13/12 au 17/12",
-      "path": "ProgColles12.pdf"
-    },
-    {
-      "title": "Semaine du 03/01 au 07/01",
-      "path": "ProgColles13.pdf"
-    },
-    {
-      "title": "Semaine du 10/01 au 14/01",
-      "path": "ProgColles14.pdf"
-    },
-    {
-      "title": "Semaine du 17/01 au 21/01",
-      "path": "ProgColles15.pdf"
-    },
-    {
-      "title": "Semaine du 24/01 au 28/01",
-      "path": "ProgColles16.pdf"
-    },
-    {
-      "title": "Semaine du 31/01 au 04/02",
-      "path": "ProgColles17.pdf"
     }
   ]
 }
