@@ -7,3 +7,6 @@ gem 'wdm' if Gem.win_platform?
 gem 'html-proofer'
 gem 'tzinfo-data'
 gem "webrick"
+gem 'jekyll-seo-tag'
+
+gem 'jekyll-compose', group: [:jekyll_plugins]

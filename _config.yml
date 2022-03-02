@@ -32,9 +32,9 @@ avatar:                 "/img/pi.png"
 author:
   name:                 Laurent Garcin
   email:                laurent.garcin@gmail.com
-  facebook:             yourname
+#  facebook:             yourname
   github:               lgarcin
-  twitter:              yourname
+#  twitter:              yourname
   linkedin:             in/laurent-garcin-b2b02ab7
   stackoverflow:        4439374/laurent-garcin
 
@@ -55,7 +55,7 @@ url-pretty:             "lgarcin.github.io"
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus:                 "mpsi"
+# disqus:                 "mpsi"
 
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics:       "UA-30206958-3"
@@ -64,6 +64,7 @@ google_analytics:       "UA-30206958-3"
 
 plugins:
   - jekyll-paginate
+  - jekyll-seo-tag
 
 # Output options (more information on Jekyll's site)
 timezone:               "Europe/Paris"

@@ -1,15 +1,13 @@
-MathJax.Hub.Config({
-  tex2jax: {
+window.MathJax = {
+  tex: {
     inlineMath: [
       [
         '$', '$'
       ],
       ["\\(", "\\)"]
     ],
-    processEscapes: true
-  },
-  TeX: {
-    Macros: {
+    processEscapes: true,
+    macros: {
       cC: "\\mathcal{C}",
       cD: "\\mathcal{D}",
       cP: "\\mathcal{P}",
@@ -18,6 +16,7 @@ MathJax.Hub.Config({
       dF: "\\mathbb{F}",
       dK: "\\mathbb{K}",
       dN: "\\mathbb{N}",
+      dP: "\\mathbb{P}",
       dQ: "\\mathbb{Q}",
       dR: "\\mathbb{R}",
       dU: "\\mathbb{U}",
@@ -35,8 +34,20 @@ MathJax.Hub.Config({
       conj: "\\overline",
       te: "\\theta",
       eps: "\\epsilon",
-      si: "\\sigma"
-    }
+      si: "\\sigma",
+      un: "\\boldsymbol{1}"
+    },
+    autoload: {
+      color: [],
+      colorv2: ['color']
+    },
+    packages: { '[+]': ['noerrors'] }
+  },
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  loader: {
+    load: ['[tex]/noerrors']
   }
-});
-MathJax.Hub.Configured();
+};
