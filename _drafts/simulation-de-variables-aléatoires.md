@@ -25,7 +25,7 @@ $$
 \end{aligned}
 $$
 
-On peut alors définir une fonction ```bernoulli``` simulant une variable aléatoire de Bernoulli de paramètre $p$.
+On peut alors définir une fonction `bernoulli` simulant une variable aléatoire de Bernoulli de paramètre $p$.
 
 ```python
 def bernoulli(p):
@@ -82,4 +82,21 @@ def geometric(p):
 ```python
 def geometric(p):
   return floor(log(1-random())/log(1-p))+1
+```
+
+### Loi à support fini
+
+```python
+def fini(proba):
+  r=random()
+  s=sum(proba)
+  sp=0
+  n=0
+  for p in proba:
+    if r>=sp:
+      n+=1
+    else:
+      break
+    sp+=p/s
+  return n-1
 ```
