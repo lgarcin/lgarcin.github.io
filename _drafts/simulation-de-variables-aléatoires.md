@@ -116,26 +116,29 @@ def geometric(p):
 ### Loi à support fini
 
 On souhaite simuler une variable aléatoire $X$ de loi suivante :
+
 $$
 \forall k\in\lbrace0,\dots,n-1\rbrace,\;\dP(X=k)=p_k
 $$
 
-On pose $s_k=\sum_{j=0}^{k-1}p_j$ de telle sorte que
+On pose $s_k=\sum_{j=0}^kp_j$ de telle sorte que
+
 $$
-\dP
+\forall k\in\lbrace0,\dots,n-1\rbrace,\;\dP\left(U\in[s_{k-1},s_k[\right)=s_k-s_{k-1}=p_k=\dP(X=k)
 $$
+
+en convenant que $s_{-1}=0$.
 
 ```python
 def fini(proba):
   r=random()
   s=sum(proba)
-  sp=0
+  sp=proba[0]/s
   n=0
-  for p in proba:
-    if r>=sp:
-      n+=1
-    else:
-      break
-    sp+=p/s
-  return n-1
+  while r>=sp:
+    n+=1
+    sp+=proba[n]/s
+  return n
 ```
+
+![Loi finie](../images/2022/03/finie.png "Loi finie")
