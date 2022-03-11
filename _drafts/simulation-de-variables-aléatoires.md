@@ -5,7 +5,7 @@ title: Simulation de variables aléatoires
 
 ```python
 from random import random
-from math import floor, log
+from math import floor, log, exp, factorial
 ```
 
 Python dipose d'un module `random` dans la bibliothèque standard. La fonction du même nom de ce module renvoie un nombre aléatoire suivant une loi uniforme sur $[0,1[$. La variable aléatoire $U$ associée n'est pas une variable aléatoire discrète puisque son support $[0,1[$ n'est pas dénombrable. On sort donc du cadre du programme de classes préparatoires en probabilités. Néanmoins, il suffit de comprendre pour la suite que cette variable aléatoire vérifie la propriété suivante
@@ -41,6 +41,8 @@ def binomial(n,p):
   return sum(bernoulli(p) for _ in range(n))
 ```
 
+Pour vérifier que cette fonction a bien le comportement escompté, on peut comparer l'histogramme des fréquences obtenues avec notre fonction lors d'un grand nombre de simulations avec celui obtenu via la fonction `binomial` du module `numpy.random`.
+
 ![Loi binomiale](../images/2022/03/binomiale.png "Loi binomiale")
 
 ### Loi uniforme
@@ -60,6 +62,10 @@ $$
 def uniform(n):
     return floor(n*random())
 ```
+
+A nouveau, on vérifie bien expérimentalement à l'aide d'un grand nombre de simulations que cette fonction simule bien une loi uniforme.
+
+![Loi binomiale](../images/2022/03/uniforme.png "Loi uniforme")
 
 Si l'on souhaite simuler une loi uniforme sur un ensemble fini $E=\lbrace e_0,\dots,e_{n-1}\rbrace$, il suffit de modéliser cet ensemble par une liste $\mathtt{[e_0,\dots,e_{n-1}]}$.
 
@@ -111,6 +117,8 @@ def geometric(p):
   return floor(log(1-random())/log(1-p))+1
 ```
 
+A nouveau, on peut comparer l'histogramme des fréquences obtenues avec notre fonction avec celui obtenu avec la fonction `geometric` du module `numpy.random`.
+
 ![Loi géométrique](../images/2022/03/geometrique.png "Loi géométrique")
 
 ### Loi à support fini
@@ -142,3 +150,38 @@ def fini(proba):
 ```
 
 ![Loi finie](../images/2022/03/finie.png "Loi finie")
+
+### Loi à support dénombrable
+
+On souhaite simuler une variable aléatoire $X$ de loi suivante :
+
+$$
+\forall k\in\dN,\;\dP(X=n)=p_n
+$$
+
+On pose $s_k=\sum_{j=0}^kp_j$ de telle sorte que
+
+$$
+\forall k\in\dN,\;\dP\left(U\in[s_{k-1},s_k[\right)=s_k-s_{k-1}=p_k=\dP(X=k)
+$$
+
+en convenant que $s_{-1}=0$.
+
+```python
+def infini(proba):
+    r=random()
+    n=0
+    s=proba(0)
+    while r>=s:
+        n+=1
+        s+=proba(n)
+    return n
+```
+
+Par exemple, si la fonction `poisson` suivante simule une variable aléatoire de paramètre `l` donné.
+
+```python
+poisson=lambda l: infini(lambda n: exp(-l)*l**n/factorial(n))
+```
+
+![Loi infinie](../images/2022/03/infinie.png "Loi infinie")
