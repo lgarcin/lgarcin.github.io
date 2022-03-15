@@ -3,7 +3,7 @@ layout: post
 title: Simulation de variables aléatoires
 date: 2022-03-15 23:14 +0100
 ---
-Tout le code intervenant dans cet article est disponible dans ce [notebook Jupyter](https://datalore.jetbrains.com/notebook/FWZF4R4HQdFDYFunBIkkrn/phiYdAu3agziiv0Pr274Ur/).
+Tout le code intervenant dans cet article est disponible dans ce [notebook Jupyter](https://www.kaggle.com/lgarcin/simulation-variables-al-atoires).
 
 ```python
 from random import random
