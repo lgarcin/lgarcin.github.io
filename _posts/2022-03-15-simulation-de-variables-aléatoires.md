@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Simulation de variables aléatoires
+date: 2022-03-15 22:59 +0100
 ---
+Tout le code intervenant dans cet article est disponible dans ce [notebook Jupyter](../notebooks/simulation.ipynb).
 
 ```python
 from random import random
@@ -29,7 +31,7 @@ On peut alors définir une fonction `bernoulli` simulant une variable aléatoire
 
 ```python
 def bernoulli(p):
-  return 1 if random()<p else 0
+    return 1 if random() < p else 0
 ```
 
 ### Loi binomiale
@@ -37,8 +39,8 @@ def bernoulli(p):
 Comme on sait que la somme de $n$ variables aléatoires indépendantes suivant la même loi de Bernoulli de paramètre $p$ suit la loi binomiale de paramètres $n$ et $p$, il n'est alors pas difficile d'écrire une fonction simulant une variable aléatoire suivant cette loi.
 
 ```python
-def binomial(n,p):
-  return sum(bernoulli(p) for _ in range(n))
+def binomial(n, p):
+    return sum(bernoulli(p) for _ in range(n))
 ```
 
 Pour vérifier que cette fonction a bien le comportement escompté, on peut comparer l'histogramme des fréquences obtenues avec notre fonction lors d'un grand nombre de simulations avec celui obtenu via la fonction `binomial` du module `numpy.random`.
@@ -71,10 +73,10 @@ Si l'on souhaite simuler une loi uniforme sur un ensemble fini $E=\lbrace e_0,\d
 
 ```python
 def uniform(n):
-  if type(n)==int:
-    return floor(n*random())
-  if type(n)==list:
-    return n[uniform(len(n))]
+    if type(n) == int:
+        return floor(n*random())
+    if type(n) == list:
+        return n[uniform(len(n))]
 ```
 
 ### Loi géométrique
@@ -83,10 +85,10 @@ On sait la loi géométrique est la loi du temps d'attente du premier succès lo
 
 ```python
 def geometric(p):
-  n=1
-  while bernoulli(p)==0:
-    n+=1
-  return n
+    n = 1
+    while bernoulli(p) == 0:
+        n += 1
+    return n
 ```
 
 Néanmoins ceci peut se révéler inefficace surtout pour de faibles valeurs de $p$ puisque le nombre d'itérations de la boucle `while` n'est pas majoré.
@@ -114,7 +116,7 @@ $$
 
 ```python
 def geometric(p):
-  return floor(log(1-random())/log(1-p))+1
+    return floor(log(1-random())/log(1-p))+1
 ```
 
 A nouveau, on peut comparer l'histogramme des fréquences obtenues avec notre fonction avec celui obtenu avec la fonction `geometric` du module `numpy.random`.
@@ -129,25 +131,63 @@ $$
 \forall k\in\lbrace0,\dots,n-1\rbrace,\;\dP(X=k)=p_k
 $$
 
-On pose $s_k=\sum_{j=0}^kp_j$ de telle sorte que
+---
+
+**Proposition.** Soit $(p_0,\dots,p_{n-1})$ une famille de termes positifs et de somme $1$. On note
 
 $$
-\forall k\in\lbrace0,\dots,n-1\rbrace,\;\dP\left(U\in[s_{k-1},s_k[\right)=s_k-s_{k-1}=p_k=\dP(X=k)
+\forall k\in\lbrace0,\dots,n-1\rbrace,\;S_k=\sum_{j=0}^kp_k
 $$
 
-en convenant que $s_{-1}=0$.
+et on convient que $S_{-1}=0$. Alors si $U$ suit une loi uniforme sur $[0,1[$ et si
+
+$$
+X=\inf\left\lbrace k\in\lbrace0,\dots,n-1\rbrace,\;U<S_n\right\rbrace
+$$
+
+alors $\dP(X=k)=p_n$ pour tout $k\in\lbrace0,\dots,n-1\rbrace$.
+
+_Preuve._ Il suffit de remarquer que
+
+$$
+\begin{aligned}
+\forall k\in\lbrace0,\dots,n-1\rbrace,\;\dP(X=k)&=\dP(S_{k-1}\leq U<S_k)\\
+&=\dP(U\in[S_{k-1},S_k[)\\
+&=S_k-S_{k-1}=p_k
+\end{aligned}
+$$
+
+---
+
+On en déduit l'algorithme suivant où `proba` désigne une liste de réels positifs de somme 1.
 
 ```python
 def fini(proba):
-  r=random()
-  s=sum(proba)
-  sp=proba[0]/s
-  n=0
-  while r>=sp:
-    n+=1
-    sp+=proba[n]/s
-  return n
+    r = random()
+    s = sum(proba)
+    sp = proba[0]
+    n = 0
+    while r >= sp:
+        n += 1
+        sp += proba[n]
+    return n
 ```
+
+Mais si jamais l'utilisateur ne fournit pas une liste de réels de somme 1, on peut normaliser les éléments de cette liste.
+
+```python
+def fini(proba):
+    r = random()
+    s = sum(proba)
+    sp = proba[0]/s
+    n = 0
+    while r >= sp:
+        n += 1
+        sp += proba[n]/s
+    return n
+```
+
+On vérifie encore une fois expérimentalement la correction de cette fonction.
 
 ![Loi finie](../images/2022/03/finie.png "Loi finie")
 
@@ -159,22 +199,40 @@ $$
 \forall k\in\dN,\;\dP(X=n)=p_n
 $$
 
-On pose $s_k=\sum_{j=0}^kp_j$ de telle sorte que
+---
+
+**Proposition.** Soit $\sum_{n\in\dN}p_n$ une série à termes positifs et de somme $1$. On note
 
 $$
-\forall k\in\dN,\;\dP\left(U\in[s_{k-1},s_k[\right)=s_k-s_{k-1}=p_k=\dP(X=k)
+\forall n\in\dN,\;S_n=\sum_{k=0}^np_k
 $$
 
-en convenant que $s_{-1}=0$.
+sa somme partielle de rang $n$ et on convient que $S_{-1}=0$. Alors si $U$ suit une loi uniforme sur $[0,1[$ et si
+
+$$
+X=\inf\lbrace n\in\dN,\;U<S_n\rbrace
+$$
+
+alors $\dP(X=n)=p_n$ pour tout $n\in\dN$.
+
+_Preuve._ Il suffit de remarquer que
+
+$$
+\forall n\in\dN,\;\dP(X=n)=\dP(S_{n-1}\leq U<S_n)=\dP(U\in[S_{n-1},S_n[)=S_n-S_{n-1}=p_n
+$$
+
+---
+
+On en déduit l'algorithme suivant où `proba` désigne une fonction prenant en argument un entier naturel $n$ et renvoyant un réel $p_n$ tel que $\sum_{n\in\dN}p_n$ soit une série de terme positifs et de somme 1.
 
 ```python
 def infini(proba):
-    r=random()
-    n=0
-    s=proba(0)
-    while r>=s:
-        n+=1
-        s+=proba(n)
+    r = random()
+    n = 0
+    s = proba(0)
+    while r >= s:
+        n += 1
+        s += proba(n)
     return n
 ```
 
