@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Simulation de variables aléatoires
-date: 2022-03-15 22:59 +0100
+date: 2022-03-15 23:14 +0100
 ---
-Tout le code intervenant dans cet article est disponible dans ce [notebook Jupyter](../notebooks/simulation.ipynb).
+Tout le code intervenant dans cet article est disponible dans ce [notebook Jupyter](https://datalore.jetbrains.com/notebook/FWZF4R4HQdFDYFunBIkkrn/phiYdAu3agziiv0Pr274Ur/).
 
 ```python
 from random import random
