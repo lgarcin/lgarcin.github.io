@@ -84,7 +84,7 @@ On sait la loi géométrique est la loi du temps d'attente du premier succès lo
 ```python
 def geometric(p):
   n=1
-  while(bernoulli(p)==0):
+  while bernoulli(p)==0:
     n+=1
   return n
 ```
