@@ -1,171 +1,4 @@
 {
-  "TD": [
-    {
-      "title": "Anneaux, arithmétique",
-      "Enoncé": {
-        "path": "TDAnneauxArithmetique.pdf"
-      },
-      "Corrigé": {
-        "path": "TDAnneauxArithmetique.corrige.pdf"
-      }
-    },
-    {
-      "title": "Calcul différentiel",
-      "Enoncé": {
-        "path": "TDCalculDifferentiel.pdf"
-      }
-    },
-    {
-      "title": "Convexité",
-      "Enoncé": {
-        "path": "TDConvexite.pdf"
-      },
-      "Corrigé": {
-        "path": "TDConvexite.corrige.pdf"
-      }
-    },
-    {
-      "title": "Equations différentielles",
-      "Enoncé": {
-        "path": "TDEquationsDifferentielles.pdf"
-      }
-    },
-    {
-      "title": "Espaces préhilbertiens réels",
-      "Enoncé": {
-        "path": "TDEspacesPrehilbertiens.pdf"
-      },
-      "Corrigé": {
-        "path": "TDEspacesPrehilbertiens.corrige.pdf"
-      }
-    },
-    {
-      "title": "Espaces vectoriels normés",
-      "Enoncé": {
-        "path": "TDEspacesVectorielsNormes.pdf"
-      },
-      "Corrigé": {
-        "path": "TDEspacesVectorielsNormes.corrige.pdf"
-      }
-    },
-    {
-      "title": "Fonctions vectorielles",
-      "Enoncé": {
-        "path": "TDFonctionsVectorielles.pdf"
-      },
-      "Corrigé": {
-        "path": "TDFonctionsVectorielles.corrige.pdf"
-      }
-    },
-    {
-      "title": "Groupes",
-      "Enoncé": {
-        "path": "TDGroupes.pdf"
-      },
-      "Corrigé": {
-        "path": "TDGroupes.corrige.pdf"
-      }
-    },
-    {
-      "title": "Intégrales impropres",
-      "Enoncé": {
-        "path": "TDIntegralesImpropres.pdf"
-      },
-      "Corrigé": {
-        "path": "TDIntegralesImpropres.corrige.pdf"
-      }
-    },
-    {
-      "title": "Intégrales à paramètres",
-      "Enoncé": {
-        "path": "TDIntegralesParametres.pdf"
-      },
-      "Corrigé": {
-        "path": "TDIntegralesParametres.corrige.pdf"
-      }
-    },
-    {
-      "title": "Probabilités",
-      "Enoncé": {
-        "path": "TDProbabilites.pdf"
-      },
-      "Corrigé": {
-        "path": "TDProbabilites.corrige.pdf"
-      }
-    },
-    {
-      "title": "Réduction algébrique",
-      "Enoncé": {
-        "path": "TDReductionAlgebrique.pdf"
-      },
-      "Corrigé": {
-        "path": "TDReductionAlgebrique.corrige.pdf"
-      }
-    },
-    {
-      "title": "Réduction géométrique",
-      "Enoncé": {
-        "path": "TDReductionGeometrique.pdf"
-      },
-      "Corrigé": {
-        "path": "TDReductionGeometrique.corrige.pdf"
-      }
-    },
-    {
-      "title": "Révisions d'algèbre linéaire",
-      "Enoncé": {
-        "path": "TDRevisionsAlgebreLineaire.pdf"
-      },
-      "Corrigé": {
-        "path": "TDRevisionsAlgebreLineaire.corrige.pdf"
-      }
-    },
-    {
-      "title": "Révisions de probabilités",
-      "Enoncé": {
-        "path": "TDRevisionsProbabilites.pdf"
-      },
-      "Corrigé": {
-        "path": "TDRevisionsProbabilites.corrige.pdf"
-      }
-    },
-    {
-      "title": "Séries entières",
-      "Enoncé": {
-        "path": "TDSeriesEntieres.pdf"
-      },
-      "Corrigé": {
-        "path": "TDSeriesEntieres.corrige.pdf"
-      }
-    },
-    {
-      "title": "Séries et familles sommables",
-      "Enoncé": {
-        "path": "TDSeriesFamillesSommables.pdf"
-      },
-      "Corrigé": {
-        "path": "TDSeriesFamillesSommables.corrige.pdf"
-      }
-    },
-    {
-      "title": "Suites et séries de fonctions",
-      "Enoncé": {
-        "path": "TDSuitesSeriesFonctions.pdf"
-      },
-      "Corrigé": {
-        "path": "TDSuitesSeriesFonctions.corrige.pdf"
-      }
-    },
-    {
-      "title": "Topologie",
-      "Enoncé": {
-        "path": "TDTopologie.pdf"
-      },
-      "Corrigé": {
-        "path": "TDTopologie.corrige.pdf"
-      }
-    }
-  ],
   "VieClasse": [
     {
       "title": "Colloscope",
@@ -250,42 +83,141 @@
       "path": "Topologie.pdf"
     }
   ],
-  "Interros": [
+  "DS": [
     {
-      "title": "Interrogation écrite n°01",
-      "path": "Interro01.pdf"
+      "title": "Devoir surveillé n°01",
+      "Enoncé": {
+        "path": "DS01.pdf"
+      },
+      "Corrigé": {
+        "path": "DS01.corrige.pdf"
+      }
     },
     {
-      "title": "Interrogation écrite n°02",
-      "path": "Interro02.pdf"
+      "title": "Devoir surveillé n°02",
+      "Enoncé": {
+        "path": "DS02.pdf"
+      },
+      "Corrigé": {
+        "path": "DS02.corrige.pdf"
+      }
     },
     {
-      "title": "Interrogation écrite n°03",
-      "path": "Interro03.pdf"
+      "title": "Devoir surveillé n°03",
+      "Enoncé": {
+        "path": "DS03.pdf"
+      },
+      "Corrigé": {
+        "path": "DS03.corrige.pdf"
+      }
     },
     {
-      "title": "Interrogation écrite n°04",
-      "path": "Interro04.pdf"
+      "title": "Devoir surveillé n°04",
+      "Enoncé": {
+        "path": "DS04.pdf"
+      },
+      "Corrigé": {
+        "path": "DS04.corrige.pdf"
+      }
     },
     {
-      "title": "Interrogation écrite n°05",
-      "path": "Interro05.pdf"
+      "title": "Devoir surveillé n°05",
+      "Enoncé": {
+        "path": "DS05.pdf"
+      },
+      "Corrigé": {
+        "path": "DS05.corrige.pdf"
+      }
     },
     {
-      "title": "Interrogation écrite n°06",
-      "path": "Interro06.pdf"
+      "title": "Devoir surveillé n°06",
+      "Enoncé": {
+        "path": "DS06.pdf"
+      },
+      "Corrigé": {
+        "path": "DS06.corrige.pdf"
+      }
     },
     {
-      "title": "Interrogation écrite n°07",
-      "path": "Interro07.pdf"
+      "title": "Devoir surveillé n°07",
+      "Enoncé": {
+        "path": "DS07.pdf"
+      },
+      "Corrigé": {
+        "path": "DS07.corrige.pdf"
+      }
     },
     {
-      "title": "Interrogation écrite n°08",
-      "path": "Interro08.pdf"
+      "title": "Devoir surveillé n°08",
+      "Enoncé": {
+        "path": "DS08.pdf"
+      },
+      "Corrigé": {
+        "path": "DS08.corrige.pdf"
+      }
     },
     {
-      "title": "Interrogation écrite n°09",
-      "path": "Interro09.pdf"
+      "title": "Devoir surveillé n°09",
+      "Enoncé": {
+        "path": "DS09.pdf"
+      },
+      "Corrigé": {
+        "path": "DS09.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°10",
+      "Enoncé": {
+        "path": "DS10.pdf"
+      },
+      "Corrigé": {
+        "path": "DS10.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°11",
+      "Enoncé": {
+        "path": "DS11.pdf"
+      },
+      "Corrigé": {
+        "path": "DS11.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°12",
+      "Enoncé": {
+        "path": "DS12.pdf"
+      },
+      "Corrigé": {
+        "path": "DS12.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°13",
+      "Enoncé": {
+        "path": "DS13.pdf"
+      },
+      "Corrigé": {
+        "path": "DS13.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°14",
+      "Enoncé": {
+        "path": "DS14.pdf"
+      },
+      "Corrigé": {
+        "path": "DS14.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°15",
+      "Enoncé": {
+        "path": "DS15.pdf"
+      },
+      "Corrigé": {
+        "path": "DS15.corrige.pdf"
+      }
     }
   ],
   "PremiereAnnee": {
@@ -827,6 +759,173 @@
       "path": "FormulaireTrigoInverse.pdf"
     }
   ],
+  "TD": [
+    {
+      "title": "Anneaux, arithmétique",
+      "Enoncé": {
+        "path": "TDAnneauxArithmetique.pdf"
+      },
+      "Corrigé": {
+        "path": "TDAnneauxArithmetique.corrige.pdf"
+      }
+    },
+    {
+      "title": "Calcul différentiel",
+      "Enoncé": {
+        "path": "TDCalculDifferentiel.pdf"
+      }
+    },
+    {
+      "title": "Convexité",
+      "Enoncé": {
+        "path": "TDConvexite.pdf"
+      },
+      "Corrigé": {
+        "path": "TDConvexite.corrige.pdf"
+      }
+    },
+    {
+      "title": "Equations différentielles",
+      "Enoncé": {
+        "path": "TDEquationsDifferentielles.pdf"
+      }
+    },
+    {
+      "title": "Espaces préhilbertiens réels",
+      "Enoncé": {
+        "path": "TDEspacesPrehilbertiens.pdf"
+      },
+      "Corrigé": {
+        "path": "TDEspacesPrehilbertiens.corrige.pdf"
+      }
+    },
+    {
+      "title": "Espaces vectoriels normés",
+      "Enoncé": {
+        "path": "TDEspacesVectorielsNormes.pdf"
+      },
+      "Corrigé": {
+        "path": "TDEspacesVectorielsNormes.corrige.pdf"
+      }
+    },
+    {
+      "title": "Fonctions vectorielles",
+      "Enoncé": {
+        "path": "TDFonctionsVectorielles.pdf"
+      },
+      "Corrigé": {
+        "path": "TDFonctionsVectorielles.corrige.pdf"
+      }
+    },
+    {
+      "title": "Groupes",
+      "Enoncé": {
+        "path": "TDGroupes.pdf"
+      },
+      "Corrigé": {
+        "path": "TDGroupes.corrige.pdf"
+      }
+    },
+    {
+      "title": "Intégrales impropres",
+      "Enoncé": {
+        "path": "TDIntegralesImpropres.pdf"
+      },
+      "Corrigé": {
+        "path": "TDIntegralesImpropres.corrige.pdf"
+      }
+    },
+    {
+      "title": "Intégrales à paramètres",
+      "Enoncé": {
+        "path": "TDIntegralesParametres.pdf"
+      },
+      "Corrigé": {
+        "path": "TDIntegralesParametres.corrige.pdf"
+      }
+    },
+    {
+      "title": "Probabilités",
+      "Enoncé": {
+        "path": "TDProbabilites.pdf"
+      },
+      "Corrigé": {
+        "path": "TDProbabilites.corrige.pdf"
+      }
+    },
+    {
+      "title": "Réduction algébrique",
+      "Enoncé": {
+        "path": "TDReductionAlgebrique.pdf"
+      },
+      "Corrigé": {
+        "path": "TDReductionAlgebrique.corrige.pdf"
+      }
+    },
+    {
+      "title": "Réduction géométrique",
+      "Enoncé": {
+        "path": "TDReductionGeometrique.pdf"
+      },
+      "Corrigé": {
+        "path": "TDReductionGeometrique.corrige.pdf"
+      }
+    },
+    {
+      "title": "Révisions d'algèbre linéaire",
+      "Enoncé": {
+        "path": "TDRevisionsAlgebreLineaire.pdf"
+      },
+      "Corrigé": {
+        "path": "TDRevisionsAlgebreLineaire.corrige.pdf"
+      }
+    },
+    {
+      "title": "Révisions de probabilités",
+      "Enoncé": {
+        "path": "TDRevisionsProbabilites.pdf"
+      },
+      "Corrigé": {
+        "path": "TDRevisionsProbabilites.corrige.pdf"
+      }
+    },
+    {
+      "title": "Séries entières",
+      "Enoncé": {
+        "path": "TDSeriesEntieres.pdf"
+      },
+      "Corrigé": {
+        "path": "TDSeriesEntieres.corrige.pdf"
+      }
+    },
+    {
+      "title": "Séries et familles sommables",
+      "Enoncé": {
+        "path": "TDSeriesFamillesSommables.pdf"
+      },
+      "Corrigé": {
+        "path": "TDSeriesFamillesSommables.corrige.pdf"
+      }
+    },
+    {
+      "title": "Suites et séries de fonctions",
+      "Enoncé": {
+        "path": "TDSuitesSeriesFonctions.pdf"
+      },
+      "Corrigé": {
+        "path": "TDSuitesSeriesFonctions.corrige.pdf"
+      }
+    },
+    {
+      "title": "Topologie",
+      "Enoncé": {
+        "path": "TDTopologie.pdf"
+      },
+      "Corrigé": {
+        "path": "TDTopologie.corrige.pdf"
+      }
+    }
+  ],
   "Colles": [
     {
       "title": "Semaine du 13/09 au 17/09",
@@ -913,141 +1012,42 @@
       "path": "ProgColles21.pdf"
     }
   ],
-  "DS": [
+  "Interros": [
     {
-      "title": "Devoir surveillé n°01",
-      "Enoncé": {
-        "path": "DS01.pdf"
-      },
-      "Corrigé": {
-        "path": "DS01.corrige.pdf"
-      }
+      "title": "Interrogation écrite n°01",
+      "path": "Interro01.pdf"
     },
     {
-      "title": "Devoir surveillé n°02",
-      "Enoncé": {
-        "path": "DS02.pdf"
-      },
-      "Corrigé": {
-        "path": "DS02.corrige.pdf"
-      }
+      "title": "Interrogation écrite n°02",
+      "path": "Interro02.pdf"
     },
     {
-      "title": "Devoir surveillé n°03",
-      "Enoncé": {
-        "path": "DS03.pdf"
-      },
-      "Corrigé": {
-        "path": "DS03.corrige.pdf"
-      }
+      "title": "Interrogation écrite n°03",
+      "path": "Interro03.pdf"
     },
     {
-      "title": "Devoir surveillé n°04",
-      "Enoncé": {
-        "path": "DS04.pdf"
-      },
-      "Corrigé": {
-        "path": "DS04.corrige.pdf"
-      }
+      "title": "Interrogation écrite n°04",
+      "path": "Interro04.pdf"
     },
     {
-      "title": "Devoir surveillé n°05",
-      "Enoncé": {
-        "path": "DS05.pdf"
-      },
-      "Corrigé": {
-        "path": "DS05.corrige.pdf"
-      }
+      "title": "Interrogation écrite n°05",
+      "path": "Interro05.pdf"
     },
     {
-      "title": "Devoir surveillé n°06",
-      "Enoncé": {
-        "path": "DS06.pdf"
-      },
-      "Corrigé": {
-        "path": "DS06.corrige.pdf"
-      }
+      "title": "Interrogation écrite n°06",
+      "path": "Interro06.pdf"
     },
     {
-      "title": "Devoir surveillé n°07",
-      "Enoncé": {
-        "path": "DS07.pdf"
-      },
-      "Corrigé": {
-        "path": "DS07.corrige.pdf"
-      }
+      "title": "Interrogation écrite n°07",
+      "path": "Interro07.pdf"
     },
     {
-      "title": "Devoir surveillé n°08",
-      "Enoncé": {
-        "path": "DS08.pdf"
-      },
-      "Corrigé": {
-        "path": "DS08.corrige.pdf"
-      }
+      "title": "Interrogation écrite n°08",
+      "path": "Interro08.pdf"
     },
     {
-      "title": "Devoir surveillé n°09",
-      "Enoncé": {
-        "path": "DS09.pdf"
-      },
-      "Corrigé": {
-        "path": "DS09.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°10",
-      "Enoncé": {
-        "path": "DS10.pdf"
-      },
-      "Corrigé": {
-        "path": "DS10.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°11",
-      "Enoncé": {
-        "path": "DS11.pdf"
-      },
-      "Corrigé": {
-        "path": "DS11.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°12",
-      "Enoncé": {
-        "path": "DS12.pdf"
-      },
-      "Corrigé": {
-        "path": "DS12.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°13",
-      "Enoncé": {
-        "path": "DS13.pdf"
-      },
-      "Corrigé": {
-        "path": "DS13.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°14",
-      "Enoncé": {
-        "path": "DS14.pdf"
-      },
-      "Corrigé": {
-        "path": "DS14.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°15",
-      "Enoncé": {
-        "path": "DS15.pdf"
-      },
-      "Corrigé": {
-        "path": "DS15.corrige.pdf"
-      }
+      "title": "Interrogation écrite n°09",
+      "path": "Interro09.pdf"
     }
   ]
 }
