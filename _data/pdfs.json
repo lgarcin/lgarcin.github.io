@@ -788,6 +788,9 @@
       "title": "Equations différentielles",
       "Enoncé": {
         "path": "TDEquationsDifferentielles.pdf"
+      },
+      "Corrigé": {
+        "path": "TDEquationsDifferentielles.corrige.pdf"
       }
     },
     {
@@ -1010,6 +1013,10 @@
     {
       "title": "Semaine du 21/03 au 25/03",
       "path": "ProgColles21.pdf"
+    },
+    {
+      "title": "Semaine du 28/03 au 01/04",
+      "path": "ProgColles22.pdf"
     }
   ],
   "Interros": [
