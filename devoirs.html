@@ -6,78 +6,76 @@ css: "/css/pdfs.css"
 ---
 
 <div class="row">
-<div class="col-lg-12">
-    <section id="interros">
-      {% if site.data.pdfs.Interros %}
-        <h3>Interrogations écrites</h3>
-        {% assign sorted_interros=site.data.pdfs.Interros|sort:'path' %}
-        {% for interro in sorted_interros %}
-        {% if interro.path %}
-        <div class="col-lg-3 pdf">
-          <div class="zoom">
-            <a href="{{'/pdfs/Interros/' | append: interro.path}}">
-                <i class="fa fa-file-pdf-o fa-1x"></i>
-                <span style="display:inline-block; width:.1ex"></span> {{interro.title}}
-            </a>
-          </div>
-        </div>
-        {% endif %}
-        {% endfor %}
-      {% endif %}
-    </section>
-</div>
+    <div class="col-lg-12">
+        <section id="interros">
+            {% if site.data.pdfs.Interros %}
+            <h3>Interrogations écrites</h3>
+            {% assign sorted_interros=site.data.pdfs.Interros|sort:'path' %}
+            {% for interro in sorted_interros %}
+            {% if interro.path %}
+            <div class="col-lg-4 pdf">
+                <a href="{{'/pdfs/Interros/' | append: interro.path}}">
+                    <i class="fa fa-file-pdf-o fa-1x"></i>
+                    {{interro.title}}
+                </a>
+            </div>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+        </section>
+    </div>
 
-<div class="col-lg-12">
-<section id="ds">
-  {% if site.data.pdfs.DS %}
-    <h3>Devoirs surveillés</h3>
-        {% assign sorted_ds = site.data.pdfs.DS | sort : 'title' %}
-        {% for ds in sorted_ds %}
-            <div class="col-lg-3 enoncecorrige">
-                <div class="zoom">
-                    <h4>{{ds.title}}</h4>
-                    <div>
-                        {% assign s = ds | sort %}
-                        {% for sub in s reversed %}
-                            {% if sub[1].path %}
-                                <a href="{{'/pdfs/DS/' | append: sub[1].path}}">
-                                    <i class="fa fa-file-pdf-o fa-2x"></i>
-                                    <p>{{sub[0]}}</p>
-                                </a>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
+    <hr class="col-lg-12">
+    
+    <div class="col-lg-12">
+        <section id="ds">
+            {% if site.data.pdfs.DS %}
+            <h3>Devoirs surveillés</h3>
+            {% assign sorted_ds = site.data.pdfs.DS | sort : 'title' %}
+            {% for ds in sorted_ds %}
+            <div class="col-lg-4 enoncecorrige">
+                <h4>{{ds.title}}</h4>
+                <div>
+                    {% assign s = ds | sort %}
+                    {% for sub in s reversed %}
+                    {% if sub[1].path %}
+                    <a href="{{'/pdfs/DS/' | append: sub[1].path}}">
+                        <i class="fa fa-file-pdf-o fa-1x"></i>
+                        <span>{{sub[0]}}</spanp>
+                    </a>
+                    {% endif %}
+                    {% endfor %}
                 </div>
             </div>
-        {% endfor %}
-  {% endif %}
-</section>
-</div>
+            {% endfor %}
+            {% endif %}
+        </section>
+    </div>
 
-<div class="col-lg-12">
-<section id="dm">
-  {% if site.data.pdfs.DM %}
-    <h3>Devoirs à la maison</h3>
-        {% assign sorted_dm = site.data.pdfs.DM | sort : 'title' %}
-        {% for dm in sorted_dm %}
-            <div class="col-lg-3 enoncecorrige">
-                <div class="zoom">
-                    <h4>{{dm.title}}</h4>
-                    <div>
-                        {% assign s = dm | sort %}
-                        {% for sub in s reversed %}
-                            {% if sub[1].path %}
-                                <a href="{{'/pdfs/DM/' | append: sub[1].path}}">
-                                    <i class="fa fa-file-pdf-o fa-2x"></i>
-                                    <p>{{sub[0]}}</p>
-                                </a>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
+    <hr class="col-lg-12">
+
+    <div class="col-lg-12">
+        <section id="dm">
+            {% if site.data.pdfs.DM %}
+            <h3>Devoirs à la maison</h3>
+            {% assign sorted_dm = site.data.pdfs.DM | sort : 'title' %}
+            {% for dm in sorted_dm %}
+            <div class="col-lg-4 enoncecorrige">
+                <h4>{{dm.title}}</h4>
+                <div>
+                    {% assign s = dm | sort %}
+                    {% for sub in s reversed %}
+                    {% if sub[1].path %}
+                    <a href="{{'/pdfs/DM/' | append: sub[1].path}}">
+                        <i class="fa fa-file-pdf-o fa-1x"></i>
+                        <span>{{sub[0]}}</span>
+                    </a>
+                    {% endif %}
+                    {% endfor %}
                 </div>
             </div>
-        {% endfor %}
-  {% endif %}
-</section>
-</div>
+            {% endfor %}
+            {% endif %}
+        </section>
+    </div>
 </div>
