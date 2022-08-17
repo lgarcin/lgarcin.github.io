@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Newton et Babylone
-published: true
 ---
 
 #### Méthode de Newton

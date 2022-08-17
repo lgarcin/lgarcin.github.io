@@ -1,8 +1,5 @@
 ---
-layout: post
 title: Enveloppe d'une famille de droites
-description: Géométrie différentielle, enveloppe d'une famille de droites
-published: true
 ---
 
 Récemment, j'ai vu une belle [vidéo][50d7ec5e] sur Youtube où il était question de figures obtenues à l'aide de tables de multiplication. Plus précisément,

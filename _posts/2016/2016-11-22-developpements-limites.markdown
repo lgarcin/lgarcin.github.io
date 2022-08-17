@@ -1,7 +1,5 @@
 ---
-layout: "post"
 title: "Développements limités"
-published: true
 ---
 
 Parce qu'un dessin vaut parfois mieux qu'un long discours...

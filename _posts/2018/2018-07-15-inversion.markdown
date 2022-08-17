@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Inversion et théorème de Ptolémée
-published: true
 ---
 
 # Définition d'une inversion

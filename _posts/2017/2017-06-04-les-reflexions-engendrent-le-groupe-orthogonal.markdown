@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Les réflexions engendrent le groupe orthogonal
-published: true
 ---
 
 De la même façon que les transpositions engendrent le groupe symétrique, les réflexions d'un espace euclidien engendrent le groupe orthogonal. La preuve est d'ailleurs sensiblement la même.

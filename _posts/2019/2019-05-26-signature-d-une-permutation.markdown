@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Signature d'une permutation
-published: true
 ---
 
 Voici la définition officielle de la signature au programme de MPSI.

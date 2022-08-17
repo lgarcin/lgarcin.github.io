@@ -1,7 +1,5 @@
 ---
-layout: "post"
 title: "Exponentielle complexe"
-published: true
 ---
 
 Si vous ne me faites pas confiance, peut-être ferez vous plus confiance à une [machine][59789a24].

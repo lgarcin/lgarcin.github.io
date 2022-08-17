@@ -1,15 +1,20 @@
 ---
-layout: "post"
 title: "Histoires de rationnels"
-published: true
+ext-js:
+  - "//cdnjs.cloudflare.com/ajax/libs/ace/1.9.6/ace.js"
+  - "//cdn.rawgit.com/skulpt/skulpt-dist/master/skulpt.min.js"
+  - "//cdn.rawgit.com/skulpt/skulpt-dist/master/skulpt-stdlib.js"
+js:
+  - "/js/python.js"
+css:
+  - "/css/theorems.css"
 ---
 
 Toutes les fractions considérées dans cet article sont des fractions irréductibles d'entiers naturels. On adjoint à ces fractions la fraction $\frac{1}{0}$ dont on convient raisonnablement qu'elle est strictement supérieure à toutes les autres.
 
-Médiante de deux fractions
--
+## Médiante de deux fractions
 
-On appelle *médiante* de deux fractions $\frac{a}{b}$ et $\frac{c}{d}$ la fraction $\frac{a}{b}\oplus\frac{c}{d}=\frac{a+c}{b+d}$.
+On appelle _médiante_ de deux fractions $\frac{a}{b}$ et $\frac{c}{d}$ la fraction $\frac{a}{b}\oplus\frac{c}{d}=\frac{a+c}{b+d}$.
 {: .definition}
 
 Pour une fraction irréductible $r=\frac{p}{q}$, on pose $S(r)=p+q$.
@@ -28,9 +33,7 @@ Soient $r_1$ et $r_2$ deux fractions.
 </ul>
 </div>
 
-
-Calcul de suites finies
--
+## Calcul de suites finies
 
 On construit une suite de suites finies de rationnels par récurrence. On pose $u_0=\left(\frac{0}{1},\frac{1}{0}\right)$ et une fois une suite finie $u_n$ construite, on construit la suite $u_{n+1}$ en intercalant entre deux fractions consécutives de la suite $u_n$ la médiante de ces deux fractions[^exonbtermes]. On trouve donc successivement
 
@@ -79,14 +82,14 @@ Il est aussi remarquable que toutes les fractions apparaissant dans chaque suite
 Ce qui est plus surprenant est que tout rationnel positif figure à partir d'un certaing rang dans les suites $u_n$. Donnons-nous une fraction $r$ non nulle et non infinie et définissons deux suites $(\rho_n)$ et $(\sigma_n)$ de la manière suivante. On pose $\rho_0=\frac{0}{1}$ et $\sigma_0=\frac{1}{0}$ et tant que $r$ est différent de $\rho_n\oplus\sigma_n$, on pose
 
 $$
-\left\lbrace 
+\left\lbrace
 \begin{aligned}
 \rho_{n+1}&=\rho_n\\
 \sigma_{n+1}&=\rho_n\oplus\sigma_n
 \end{aligned}
 \right. \text{ si } r<\rho_n\oplus\sigma_n
 \text{ et }
-\left\lbrace 
+\left\lbrace
 \begin{aligned}
 \rho_{n+1}&=\rho_n\oplus\sigma_n\\
 \sigma_{n+1}&=\sigma_n
@@ -101,10 +104,9 @@ $$
 
 La suite de terme général $S(\rho_n)+S(\sigma_n)$ est donc une suite d'entiers strictement croissante (le dénominateur et le numérateur des fractions $\sigma_n$ et $\rho_n$ ne peuvent être simultanément nuls) et majorée par $S(r)$ : cette suite est donc finie. Il en est de même des suites $(\rho_n)$ et $(\sigma_n)$, ce qui prouve que $r$ appartient à l'une des suites $u_n$.
 
-Construction de l'arbre de Stern-Brocot
--
+## Construction de l'arbre de Stern-Brocot
 
-On peut également représenter les fractions apparaissant dans la suite $(u_n)$ sous forme d'un arbre binaire. On place au niveau 0 les fractions $\frac{0}{1}$ et $\frac{1}{0}$ et au niveau 1 la fraction $\frac{1}{1}$ en tant que fils commun de ces deux fractions. On place au niveau $n+1$ de l'arbre par ordre croissant les fractions apparues dans la suite $u_{n+1}$ alors qu'elles ne figuraient pas dans la suite $u_n$ et on donne pour ancêtre de chacune de ces fractions la fraction du niveau $n$ dont on s'est servi pour la calculer en tant que médiante. L'arbre ainsi construit est appelé *arbre de Stern-Brocot*.
+On peut également représenter les fractions apparaissant dans la suite $(u_n)$ sous forme d'un arbre binaire. On place au niveau 0 les fractions $\frac{0}{1}$ et $\frac{1}{0}$ et au niveau 1 la fraction $\frac{1}{1}$ en tant que fils commun de ces deux fractions. On place au niveau $n+1$ de l'arbre par ordre croissant les fractions apparues dans la suite $u_{n+1}$ alors qu'elles ne figuraient pas dans la suite $u_n$ et on donne pour ancêtre de chacune de ces fractions la fraction du niveau $n$ dont on s'est servi pour la calculer en tant que médiante. L'arbre ainsi construit est appelé _arbre de Stern-Brocot_.
 
 Voici par exemple l'arbre de Stern-Brocot construit jusqu'au niveau 6.[^exomax]
 
@@ -177,7 +179,6 @@ def sternPere(x):
 print(sternPere((17,38)))
 </div>
 
-
 On peut également voir l'algorithme décrit dans la section [Existence](#existence) comme un algorithme d'Euclide étendu. En utilisant les mêmes notations que dans cet algorithme, on montre que $\Delta(\rho_n,\sigma_n)=1$ est un invariant de boucle. A la dernière étape, $r=\rho_N\oplus\sigma_N$ pour un certain entier $N$ donc
 
 $$
@@ -185,7 +186,5 @@ $$
 $$
 
 [^exonbtermes]: Petit exercice facile : calculer le nombre de termes de $u_n$ en fonction de $n$.
-
 [^invmodulo]: Si $x$ et $n$ sont deux entiers naturels premiers entre eux, $n$ étant non nul, on appelle inverse de $x$ modulo $n$ l'unique entier $y$ tel que $0\leq y\leq n-1$ et $xy\equiv1[n]$.
-
 [^exomax]: Petit exercice facile à nouveau : montrer que le plus grand numérateur ou dénominateur des fractions du niveau $n$ est le terme de rang $n+1$ de la suite de Fibonacci.

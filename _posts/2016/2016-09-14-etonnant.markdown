@@ -1,8 +1,5 @@
 ---
-layout: post
 title: 'Etonnant, non ?'
-published: true
-custom_js:
 ---
 
 Vu en cours

@@ -1,7 +1,5 @@
 ---
-layout: "post"
 title: "Coquillages et crustacés"
-published: true
 ---
 
 

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Corps des fractions d'un anneau
-published: true
 ---
 
 La construction du corps $\dQ$ des rationnels n'est pas au programme de MPSI mais on comprend intuitivement comment il est construit à partir de l'anneau $\dZ$ des entiers relatifs. De la même manière, on peut construir le corps $\dK(X)$ des fractions rationnelles à coefficients dans $\mathbb{K}$ à partir de l'anneau $\dK[X]$ des polynômes à coefficients dans $\dK$.

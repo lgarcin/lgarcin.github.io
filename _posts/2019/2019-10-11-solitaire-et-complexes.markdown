@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Solitaire et complexes
-published: true
 ---
 
 ## Présentation du solitaire

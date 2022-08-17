@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Suite logistique
-published: true
 ---
 
 ### Introduction

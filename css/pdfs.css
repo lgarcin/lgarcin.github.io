@@ -1,9 +1,11 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
 .pdf {
   padding: 5px;
   height: 3em;
-}
-.pdf:hover {
-  z-index: 2;
 }
 .pdf a {
   color: #3c3c3c;
@@ -14,13 +16,15 @@
 }
 .enoncecorrige {
   padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(240, 240, 240);
 }
 .enoncecorrige a:hover {
   text-decoration: none;
   font-weight: bold;
 }
 .enoncecorrige > div {
-  height: 5em;
+  height: 2em;
   padding: 5px;
 }
 .enoncecorrige a {
@@ -28,4 +32,7 @@
   text-decoration: none;
   display: inline-block;
   margin-right: 10px;
+}
+.enoncecorrige > h6 {
+  height: 2em;
 }

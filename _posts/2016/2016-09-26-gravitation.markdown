@@ -1,7 +1,5 @@
 ---
-layout: "post"
 title: "Méthode d'Euler et gravitation"
-published: true
 ---
 
 ### Description du problème
@@ -60,15 +58,15 @@ $$
 
 Méthode d'Euler classique :
 
--   on calcule les accélérations à partir des positions au temps $t_n$ ;
--   on calcule les positions au temps $t\_{n+1}$ à partir des vitesses aux temps $t_n$ ;
--   on calcule les vitesses au temps $t\_{n+1}$ à partir des accélérations précédemment calculées.
+- on calcule les accélérations à partir des positions au temps $t_n$ ;
+- on calcule les positions au temps $t\_{n+1}$ à partir des vitesses aux temps $t_n$ ;
+- on calcule les vitesses au temps $t\_{n+1}$ à partir des accélérations précédemment calculées.
 
 Méthode d'Euler asymétrique :
 
--   on calcule les positions au temps $t\_{n+1}$ à partir des vitesses au temps $t_n$ ;
--   on calcule les accélérations à partir de ces nouvelles positions ;
--   on calcule les vitesses au temps $t\_{n+1}$ à partir de ces accélérations.
+- on calcule les positions au temps $t\_{n+1}$ à partir des vitesses au temps $t_n$ ;
+- on calcule les accélérations à partir de ces nouvelles positions ;
+- on calcule les vitesses au temps $t\_{n+1}$ à partir de ces accélérations.
 
 ### Implémentation
 
@@ -135,8 +133,6 @@ while True:
         p.vitesse+=acceleration*dt
 ```
 {: .collapse #systeme }
-
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Aher_TlxUcw" frameborder="0" allowfullscreen></iframe> -->
 
 <video controls>
 <source src="/images/2016/10/SystemeSolaire.mp4" type="video/mp4">

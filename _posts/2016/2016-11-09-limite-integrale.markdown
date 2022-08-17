@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Interversion limite/intégrale
-published: true
 ---
 
 Intervertir sans précaution limite et intégrale, c'est MAL.

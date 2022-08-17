@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Complexes, racines carrées et logarithmes'
-published: true
 ---
 
 Il est difficile de faire comprendre aux étudiants que l'emploi des symboles $\sqrt{\phantom{z}}$ et $\ln$ pose problème lorsque l'on manipule des complexes. Je vais tenter de m'expliquer dans ce court article.

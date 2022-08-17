@@ -1,7 +1,5 @@
 ---
-layout: "post"
 title: "Systèmes différentiels"
-published: true
 ---
 
 # Champ de vecteurs

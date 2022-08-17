@@ -1,25 +1,21 @@
 ---
-layout: page
 title: Vie de classe
 css: "/css/pdfs.css"
 ---
 
-<div class="row">
-
-  <div class="col-lg-12">
-    <section id="vieclasse">
-      {% if site.data.pdfs.VieClasse %}
-      {% for v in site.data.pdfs.VieClasse %}
-      {% if v.path %}
-      <div class="col-lg-4 pdf">
-        <a href="{{'/pdfs/VieClasse/' | append: v.path}}">
-          <i class="fa fa-file-pdf-o fa-1x"></i>
-          {{v.title}}
-        </a>
-      </div>
-      {% endif %}
-      {% endfor %}
-      {% endif %}
-    </section>
+<section id="vieclasse">
+  {% if site.data.pdfs.VieClasse %}
+  <div class="grid">
+    {% for v in site.data.pdfs.VieClasse %}
+    {% if v.path %}
+    <div class="pdf">
+      <a href="{{'/pdfs/VieClasse/' | append: v.path}}">
+        <i class="fa fa-file-pdf-o fa-1x"></i>
+        {{v.title}}
+      </a>
+    </div>
+    {% endif %}
+    {% endfor %}
   </div>
-</div>
+  {% endif %}
+</section>

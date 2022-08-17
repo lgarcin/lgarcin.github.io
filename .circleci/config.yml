@@ -2,14 +2,14 @@ version:           2
 jobs:
      build:
           docker:
-               - image: circleci/ruby:2.6.4
+               - image: circleci/ruby:3.1.2
           steps:
                - checkout
                - run: bundle install
                - run: bundle exec jekyll build
      test:
           docker:
-               - image: circleci/ruby:2.6-node
+               - image: circleci/ruby:3.1-node
           steps:
                - checkout
                - run: bundle install

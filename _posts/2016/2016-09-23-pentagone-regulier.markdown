@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Pentagone régulier
-published: true
 ---
 
 On sait que les images des racines $n^\text{èmes}$ de l'unité forment un polygone régulier. On expose dans ce post la construction du pentagone régulier.

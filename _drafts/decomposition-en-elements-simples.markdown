@@ -1,5 +1,4 @@
 ---
-layout: "post"
 title: "Décomposition en éléments simples"
 published: true
 ---

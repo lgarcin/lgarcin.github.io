@@ -1,7 +1,5 @@
 ---
-layout: "post"
 title: "Pourquoi se fatiguer ?"
-published: true
 ---
 
 Rappelez-vous en cours : calcul de

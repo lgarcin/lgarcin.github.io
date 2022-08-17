@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Arithmétique et idéaux
-published: true
 ---
 
 ## Arithmétique dans un anneau
