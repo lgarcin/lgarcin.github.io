@@ -1,16 +1,16 @@
-version:           2
+version: 2
 jobs:
-     build:
-          docker:
-               - image: circleci/ruby:3.1.2
-          steps:
-               - checkout
-               - run: bundle install
-               - run: bundle exec jekyll build
-     test:
-          docker:
-               - image: circleci/ruby:3.1-node
-          steps:
-               - checkout
-               - run: bundle install
-               - run: bundle exec htmlproofer ./_site --only-4xx --check-html --assume-extension
+  build:
+    docker:
+      - image: cimg/ruby:3.1.2
+    steps:
+      - checkout
+      - run: bundle install
+      - run: bundle exec jekyll build
+  test:
+    docker:
+      - image: circleci/ruby:3.1-node
+    steps:
+      - checkout
+      - run: bundle install
+      - run: bundle exec htmlproofer ./_site --only-4xx --check-html --assume-extension
