@@ -7,20 +7,24 @@ full-width: true
 <section id="td">
     {% if site.data.pdfs.TD %}
     <h3>TD deuxième année</h3>
-    {% for td in site.data.pdfs.TD %}
-    <div class="enoncecorrige">
-        <h6>{{td.title}}</h6>
-        {% assign s = td | sort %}
-        {% for sub in s reversed %}
-        {% if sub[1].path %}
-        <a href="{{'/pdfs/TD/' | append: sub[1].path}}">
-            <i class="fa-regular fa-file-pdf"></i>
-            <span>{{sub[0]}}</span>
-        </a>
-        {% endif %}
+    <div class="grid">
+        {% for td in site.data.pdfs.TD %}
+        <div class="enoncecorrige">
+            <h6>{{td.title}}</h6>
+            <div>
+                {% assign s = td | sort %}
+                {% for sub in s reversed %}
+                {% if sub[1].path %}
+                <a href="{{'/pdfs/TD/' | append: sub[1].path}}">
+                    <i class="fa-regular fa-file-pdf"></i>
+                    <span>{{sub[0]}}</span>
+                </a>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
         {% endfor %}
     </div>
-    {% endfor %}
     {% endif %}
 </section>
 
