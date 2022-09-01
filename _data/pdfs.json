@@ -454,12 +454,29 @@
       }
     }
   ],
-  "VieClasse": [],
+  "VieClasse": [
+    {
+      "path": "Emploi du temps annuel de MP - 2022-2023.pdf",
+      "title": "Emploi du temps"
+    }
+  ],
   "DM": [
     {
       "title": "Devoir à la maison n°01",
       "Enoncé": {
         "path": "DM01.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°02",
+      "Enoncé": {
+        "path": "DM02.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°03",
+      "Enoncé": {
+        "path": "DM03.pdf"
       }
     }
   ],
