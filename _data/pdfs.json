@@ -1,42 +1,40 @@
 {
-  "TD": [
+  "DM": [
     {
-      "title": "Espaces vectoriels normés",
+      "title": "Devoir à la maison n°01",
       "Enoncé": {
-        "path": "TDEspacesVectorielsNormes.pdf"
-      }
-    },
-    {
-      "title": "Intégrales impropres",
-      "Enoncé": {
-        "path": "TDIntegralesImpropres.pdf"
+        "path": "DM01.pdf"
       },
       "Corrigé": {
-        "path": "TDIntegralesImpropres.corrige.pdf"
+        "path": "DM01.corrige.pdf"
       }
     },
     {
-      "title": "Séries et familles sommables",
+      "title": "Devoir à la maison n°02",
       "Enoncé": {
-        "path": "TDSeriesFamillesSommables.pdf"
+        "path": "DM02.pdf"
       }
-    }
-  ],
-  "VieClasse": [
-    {
-      "path": "Colloscope_2022_2023.pdf",
-      "title": "Colloscope"
     },
     {
-      "path": "Emploi du temps annuel de MP - 2022-2023.pdf",
-      "title": "Emploi du temps"
+      "title": "Devoir à la maison n°03",
+      "Enoncé": {
+        "path": "DM03.pdf"
+      }
     },
     {
-      "path": "Planning DS MP 2022_2023.pdf",
-      "title": "Planning des DS"
+      "title": "Devoir à la maison n°04",
+      "Enoncé": {
+        "path": "DM04.pdf"
+      }
     }
   ],
   "DS": [],
+  "Colles": [
+    {
+      "title": "Semaine du 13/09 au 17/09",
+      "path": "ProgColles01.pdf"
+    }
+  ],
   "Cours": [
     {
       "title": "Anneaux et arithmétique",
@@ -103,41 +101,6 @@
       "path": "Topologie.pdf"
     }
   ],
-  "DM": [
-    {
-      "title": "Devoir à la maison n°01",
-      "Enoncé": {
-        "path": "DM01.pdf"
-      },
-      "Corrigé": {
-        "path": "DM01.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°02",
-      "Enoncé": {
-        "path": "DM02.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°03",
-      "Enoncé": {
-        "path": "DM03.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°04",
-      "Enoncé": {
-        "path": "DM04.pdf"
-      }
-    }
-  ],
-  "Colles": [
-    {
-      "title": "Semaine du 13/09 au 17/09",
-      "path": "ProgColles01.pdf"
-    }
-  ],
   "Interros": [],
   "Formulaires": [
     {
@@ -175,6 +138,20 @@
     {
       "title": "Trigonométrie inverse",
       "path": "FormulaireTrigoInverse.pdf"
+    }
+  ],
+  "VieClasse": [
+    {
+      "path": "Colloscope_2022_2023.pdf",
+      "title": "Colloscope"
+    },
+    {
+      "path": "Emploi du temps annuel de MP - 2022-2023.pdf",
+      "title": "Emploi du temps"
+    },
+    {
+      "path": "Planning DS MP 2022_2023.pdf",
+      "title": "Planning des DS"
     }
   ],
   "PremiereAnnee": {
@@ -555,5 +532,28 @@
         }
       }
     ]
-  }
+  },
+  "TD": [
+    {
+      "title": "Espaces vectoriels normés",
+      "Enoncé": {
+        "path": "TDEspacesVectorielsNormes.pdf"
+      }
+    },
+    {
+      "title": "Intégrales impropres",
+      "Enoncé": {
+        "path": "TDIntegralesImpropres.pdf"
+      },
+      "Corrigé": {
+        "path": "TDIntegralesImpropres.corrige.pdf"
+      }
+    },
+    {
+      "title": "Séries et familles sommables",
+      "Enoncé": {
+        "path": "TDSeriesFamillesSommables.pdf"
+      }
+    }
+  ]
 }
