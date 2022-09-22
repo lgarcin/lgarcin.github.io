@@ -416,20 +416,6 @@
       "path": "FormulaireTrigoInverse.pdf"
     }
   ],
-  "VieClasse": [
-    {
-      "title": "Colloscope",
-      "path": "Colloscope_2022_2023.pdf"
-    },
-    {
-      "title": "Emploi du temps",
-      "path": "Emploi du temps annuel de MP - 2022-2023.pdf"
-    },
-    {
-      "title": "Planning des DS",
-      "path": "Planning DS MP 2022_2023.pdf"
-    }
-  ],
   "DS": [
     {
       "title": "Devoir surveillé n°01",
@@ -454,16 +440,6 @@
     {
       "title": "Interrogation écrite n°01",
       "path": "Interro01.pdf"
-    }
-  ],
-  "Colles": [
-    {
-      "title": "Semaine du 12/09 au 16/09",
-      "path": "ProgColles01.pdf"
-    },
-    {
-      "title": "Semaine du 19/09 au 23/09",
-      "path": "ProgColles02.pdf"
     }
   ],
   "DM": [
@@ -501,27 +477,18 @@
       }
     }
   ],
-  "TD": [
+  "VieClasse": [
     {
-      "title": "Espaces vectoriels normés",
-      "Enoncé": {
-        "path": "TDEspacesVectorielsNormes.pdf"
-      }
+      "path": "Colloscope_2022_2023.pdf",
+      "title": "Colloscope"
     },
     {
-      "title": "Intégrales impropres",
-      "Enoncé": {
-        "path": "TDIntegralesImpropres.pdf"
-      },
-      "Corrigé": {
-        "path": "TDIntegralesImpropres.corrige.pdf"
-      }
+      "path": "Emploi du temps annuel de MP - 2022-2023.pdf",
+      "title": "Emploi du temps"
     },
     {
-      "title": "Séries et familles sommables",
-      "Enoncé": {
-        "path": "TDSeriesFamillesSommables.pdf"
-      }
+      "path": "Planning DS MP 2022_2023.pdf",
+      "title": "Planning des DS"
     }
   ],
   "Cours": [
@@ -588,6 +555,42 @@
     {
       "title": "Topologie",
       "path": "Topologie.pdf"
+    }
+  ],
+  "TD": [
+    {
+      "title": "Espaces vectoriels normés",
+      "Enoncé": {
+        "path": "TDEspacesVectorielsNormes.pdf"
+      },
+      "Corrigé": {
+        "path": "TDEspacesVectorielsNormes.corrige.pdf"
+      }
+    },
+    {
+      "title": "Intégrales impropres",
+      "Enoncé": {
+        "path": "TDIntegralesImpropres.pdf"
+      },
+      "Corrigé": {
+        "path": "TDIntegralesImpropres.corrige.pdf"
+      }
+    },
+    {
+      "title": "Séries et familles sommables",
+      "Enoncé": {
+        "path": "TDSeriesFamillesSommables.pdf"
+      }
+    }
+  ],
+  "Colles": [
+    {
+      "title": "Semaine du 12/09 au 16/09",
+      "path": "ProgColles01.pdf"
+    },
+    {
+      "title": "Semaine du 19/09 au 23/09",
+      "path": "ProgColles02.pdf"
     }
   ]
 }
