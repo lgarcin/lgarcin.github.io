@@ -1,8 +1,28 @@
 {
-  "Interros": [
+  "TD": [
     {
-      "title": "Interrogation écrite n°01",
-      "path": "Interro01.pdf"
+      "title": "Espaces vectoriels normés",
+      "Enoncé": {
+        "path": "TDEspacesVectorielsNormes.pdf"
+      },
+      "Corrigé": {
+        "path": "TDEspacesVectorielsNormes.corrige.pdf"
+      }
+    },
+    {
+      "title": "Intégrales impropres",
+      "Enoncé": {
+        "path": "TDIntegralesImpropres.pdf"
+      },
+      "Corrigé": {
+        "path": "TDIntegralesImpropres.corrige.pdf"
+      }
+    },
+    {
+      "title": "Séries et familles sommables",
+      "Enoncé": {
+        "path": "TDSeriesFamillesSommables.pdf"
+      }
     }
   ],
   "DS": [
@@ -61,20 +81,6 @@
     {
       "title": "Trigonométrie inverse",
       "path": "FormulaireTrigoInverse.pdf"
-    }
-  ],
-  "Colles": [
-    {
-      "title": "Semaine du 12/09 au 16/09",
-      "path": "ProgColles01.pdf"
-    },
-    {
-      "title": "Semaine du 19/09 au 23/09",
-      "path": "ProgColles02.pdf"
-    },
-    {
-      "title": "Semaine du 26/09 au 30/09",
-      "path": "ProgColles03.pdf"
     }
   ],
   "PremiereAnnee": {
@@ -456,32 +462,6 @@
       }
     ]
   },
-  "TD": [
-    {
-      "title": "Espaces vectoriels normés",
-      "Enoncé": {
-        "path": "TDEspacesVectorielsNormes.pdf"
-      },
-      "Corrigé": {
-        "path": "TDEspacesVectorielsNormes.corrige.pdf"
-      }
-    },
-    {
-      "title": "Intégrales impropres",
-      "Enoncé": {
-        "path": "TDIntegralesImpropres.pdf"
-      },
-      "Corrigé": {
-        "path": "TDIntegralesImpropres.corrige.pdf"
-      }
-    },
-    {
-      "title": "Séries et familles sommables",
-      "Enoncé": {
-        "path": "TDSeriesFamillesSommables.pdf"
-      }
-    }
-  ],
   "DM": [
     {
       "title": "Devoir à la maison n°01",
@@ -517,18 +497,18 @@
       }
     }
   ],
-  "VieClasse": [
+  "Colles": [
     {
-      "title": "Colloscope",
-      "path": "Colloscope_2022_2023.pdf"
+      "title": "Semaine du 12/09 au 16/09",
+      "path": "ProgColles01.pdf"
     },
     {
-      "title": "Emploi du temps",
-      "path": "Emploi du temps annuel de MP - 2022-2023.pdf"
+      "title": "Semaine du 19/09 au 23/09",
+      "path": "ProgColles02.pdf"
     },
     {
-      "title": "Planning des DS",
-      "path": "Planning DS MP 2022_2023.pdf"
+      "title": "Semaine du 26/09 au 30/09",
+      "path": "ProgColles03.pdf"
     }
   ],
   "Cours": [
@@ -595,6 +575,26 @@
     {
       "title": "Topologie",
       "path": "Topologie.pdf"
+    }
+  ],
+  "Interros": [
+    {
+      "title": "Interrogation écrite n°01",
+      "path": "Interro01.pdf"
+    }
+  ],
+  "VieClasse": [
+    {
+      "path": "Colloscope_2022_2023.pdf",
+      "title": "Colloscope"
+    },
+    {
+      "path": "Emploi du temps annuel de MP - 2022-2023.pdf",
+      "title": "Emploi du temps"
+    },
+    {
+      "path": "Planning DS MP 2022_2023.pdf",
+      "title": "Planning des DS"
     }
   ]
 }
