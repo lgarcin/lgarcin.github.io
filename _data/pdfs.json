@@ -440,6 +440,10 @@
     {
       "title": "Interrogation écrite n°01",
       "path": "Interro01.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°02",
+      "path": "Interro02.pdf"
     }
   ],
   "DM": [
@@ -474,6 +478,9 @@
       "title": "Devoir à la maison n°04",
       "Enoncé": {
         "path": "DM04.pdf"
+      },
+      "Corrigé": {
+        "path": "DM04.corrige.pdf"
       }
     },
     {
