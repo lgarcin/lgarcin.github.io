@@ -7,6 +7,10 @@
     {
       "title": "Interrogation écrite n°02",
       "path": "Interro02.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°03",
+      "path": "Interro03.pdf"
     }
   ],
   "Cours": [
@@ -116,12 +120,18 @@
       "title": "Devoir à la maison n°05",
       "Enoncé": {
         "path": "DM05.pdf"
+      },
+      "Corrigé": {
+        "path": "DM05.corrige.pdf"
       }
     },
     {
       "title": "Devoir à la maison n°06",
       "Enoncé": {
         "path": "DM06.pdf"
+      },
+      "Corrigé": {
+        "path": "DM06.corrige.pdf"
       }
     },
     {
