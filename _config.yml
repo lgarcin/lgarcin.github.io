@@ -104,13 +104,13 @@ site-js:
 #################################
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
+gtag: "G-175KB6X0YQ"
 
 # Fill in your Google Analytics ID to track your website using Google Analytics
 google_analytics: "UA-30206958-3"
 
 # Google Tag Manager ID
-#gtm: ""
+gtm: "G-175KB6X0YQ"
 
 ################
 # --- Misc --- #
