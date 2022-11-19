@@ -621,6 +621,12 @@
       "Corrigé": {
         "path": "TDSeriesFamillesSommables.corrige.pdf"
       }
+    },
+    {
+      "title": "Suites et séries de fonctions",
+      "Enoncé": {
+        "path": "TDSuitesSeriesFonctions.pdf"
+      }
     }
   ],
   "Cours": [
@@ -738,6 +744,15 @@
       },
       "Corrigé": {
         "path": "DS04.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°05",
+      "Enoncé": {
+        "path": "DS05.pdf"
+      },
+      "Corrigé": {
+        "path": "DS05.corrige.pdf"
       }
     }
   ]
