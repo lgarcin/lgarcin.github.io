@@ -37,6 +37,247 @@
       "path": "FormulaireTrigoInverse.pdf"
     }
   ],
+  "VieClasse": [
+    {
+      "path": "Colloscope_2022_2023.pdf",
+      "title": "Colloscope"
+    },
+    {
+      "path": "Emploi du temps annuel de MP - 2022-2023.pdf",
+      "title": "Emploi du temps"
+    },
+    {
+      "path": "Planning DS MP 2022_2023.pdf",
+      "title": "Planning des DS"
+    }
+  ],
+  "Colles": [
+    {
+      "title": "Semaine du 12/09 au 16/09",
+      "path": "ProgColles01.pdf"
+    },
+    {
+      "title": "Semaine du 19/09 au 23/09",
+      "path": "ProgColles02.pdf"
+    },
+    {
+      "title": "Semaine du 26/09 au 30/09",
+      "path": "ProgColles03.pdf"
+    },
+    {
+      "title": "Semaine du 03/10 au 07/10",
+      "path": "ProgColles04.pdf"
+    },
+    {
+      "title": "Semaine du 10/10 au 14/10",
+      "path": "ProgColles05.pdf"
+    },
+    {
+      "title": "Semaine du 17/10 au 21/10",
+      "path": "ProgColles06.pdf"
+    },
+    {
+      "title": "Semaine du 07/11 au 11/11",
+      "path": "ProgColles07.pdf"
+    },
+    {
+      "title": "Semaine du 14/11 au 18/11",
+      "path": "ProgColles08.pdf"
+    },
+    {
+      "title": "Semaine du 21/11 au 25/11",
+      "path": "ProgColles09.pdf"
+    },
+    {
+      "title": "Semaine du 28/11 au 02/12",
+      "path": "ProgColles10.pdf"
+    },
+    {
+      "title": "Semaine du 05/12 au 09/12",
+      "path": "ProgColles11.pdf"
+    }
+  ],
+  "TD": [
+    {
+      "title": "Anneaux, arithmétique",
+      "Enoncé": {
+        "path": "TDAnneauxArithmetique.pdf"
+      },
+      "Corrigé": {
+        "path": "TDAnneauxArithmetique.corrige.pdf"
+      }
+    },
+    {
+      "title": "Espaces vectoriels normés",
+      "Enoncé": {
+        "path": "TDEspacesVectorielsNormes.pdf"
+      },
+      "Corrigé": {
+        "path": "TDEspacesVectorielsNormes.corrige.pdf"
+      }
+    },
+    {
+      "title": "Groupes",
+      "Enoncé": {
+        "path": "TDGroupes.pdf"
+      },
+      "Corrigé": {
+        "path": "TDGroupes.corrige.pdf"
+      }
+    },
+    {
+      "title": "Intégrales impropres",
+      "Enoncé": {
+        "path": "TDIntegralesImpropres.pdf"
+      },
+      "Corrigé": {
+        "path": "TDIntegralesImpropres.corrige.pdf"
+      }
+    },
+    {
+      "title": "Réduction algébrique",
+      "Enoncé": {
+        "path": "TDReductionAlgebrique.pdf"
+      },
+      "Corrigé": {
+        "path": "TDReductionAlgebrique.corrige.pdf"
+      }
+    },
+    {
+      "title": "Réduction géométrique",
+      "Enoncé": {
+        "path": "TDReductionGeometrique.pdf"
+      },
+      "Corrigé": {
+        "path": "TDReductionGeometrique.corrige.pdf"
+      }
+    },
+    {
+      "title": "Séries et familles sommables",
+      "Enoncé": {
+        "path": "TDSeriesFamillesSommables.pdf"
+      },
+      "Corrigé": {
+        "path": "TDSeriesFamillesSommables.corrige.pdf"
+      }
+    },
+    {
+      "title": "Suites et séries de fonctions",
+      "Enoncé": {
+        "path": "TDSuitesSeriesFonctions.pdf"
+      }
+    }
+  ],
+  "DM": [
+    {
+      "title": "Devoir à la maison n°01",
+      "Enoncé": {
+        "path": "DM01.pdf"
+      },
+      "Corrigé": {
+        "path": "DM01.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°02",
+      "Enoncé": {
+        "path": "DM02.pdf"
+      },
+      "Corrigé": {
+        "path": "DM02.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°03",
+      "Enoncé": {
+        "path": "DM03.pdf"
+      },
+      "Corrigé": {
+        "path": "DM03.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°04",
+      "Enoncé": {
+        "path": "DM04.pdf"
+      },
+      "Corrigé": {
+        "path": "DM04.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°05",
+      "Enoncé": {
+        "path": "DM05.pdf"
+      },
+      "Corrigé": {
+        "path": "DM05.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°06",
+      "Enoncé": {
+        "path": "DM06.pdf"
+      },
+      "Corrigé": {
+        "path": "DM06.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°07",
+      "Enoncé": {
+        "path": "DM07.pdf"
+      },
+      "Corrigé": {
+        "path": "DM07.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°08",
+      "Enoncé": {
+        "path": "DM08.pdf"
+      },
+      "Corrigé": {
+        "path": "DM08.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°09",
+      "Enoncé": {
+        "path": "DM09.pdf"
+      },
+      "Corrigé": {
+        "path": "DM09.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°10",
+      "Enoncé": {
+        "path": "DM10.pdf"
+      },
+      "Corrigé": {
+        "path": "DM10.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°11",
+      "Enoncé": {
+        "path": "DM11.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°12",
+      "Enoncé": {
+        "path": "DM12.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°13",
+      "Enoncé": {
+        "path": "DM13.pdf"
+      }
+    }
+  ],
   "PremiereAnnee": {
     "TD": [
       {
@@ -416,48 +657,6 @@
       }
     ]
   },
-  "Colles": [
-    {
-      "title": "Semaine du 12/09 au 16/09",
-      "path": "ProgColles01.pdf"
-    },
-    {
-      "title": "Semaine du 19/09 au 23/09",
-      "path": "ProgColles02.pdf"
-    },
-    {
-      "title": "Semaine du 26/09 au 30/09",
-      "path": "ProgColles03.pdf"
-    },
-    {
-      "title": "Semaine du 03/10 au 07/10",
-      "path": "ProgColles04.pdf"
-    },
-    {
-      "title": "Semaine du 10/10 au 14/10",
-      "path": "ProgColles05.pdf"
-    },
-    {
-      "title": "Semaine du 17/10 au 21/10",
-      "path": "ProgColles06.pdf"
-    },
-    {
-      "title": "Semaine du 07/11 au 11/11",
-      "path": "ProgColles07.pdf"
-    },
-    {
-      "title": "Semaine du 14/11 au 18/11",
-      "path": "ProgColles08.pdf"
-    },
-    {
-      "title": "Semaine du 21/11 au 25/11",
-      "path": "ProgColles09.pdf"
-    },
-    {
-      "title": "Semaine du 28/11 au 02/12",
-      "path": "ProgColles10.pdf"
-    }
-  ],
   "Interros": [
     {
       "title": "Interrogation écrite n°01",
@@ -478,138 +677,6 @@
     {
       "title": "Interrogation écrite n°05",
       "path": "Interro05.pdf"
-    }
-  ],
-  "VieClasse": [
-    {
-      "path": "Colloscope_2022_2023.pdf",
-      "title": "Colloscope"
-    },
-    {
-      "path": "Emploi du temps annuel de MP - 2022-2023.pdf",
-      "title": "Emploi du temps"
-    },
-    {
-      "path": "Planning DS MP 2022_2023.pdf",
-      "title": "Planning des DS"
-    }
-  ],
-  "TD": [
-    {
-      "title": "Anneaux, arithmétique",
-      "Enoncé": {
-        "path": "TDAnneauxArithmetique.pdf"
-      },
-      "Corrigé": {
-        "path": "TDAnneauxArithmetique.corrige.pdf"
-      }
-    },
-    {
-      "title": "Espaces vectoriels normés",
-      "Enoncé": {
-        "path": "TDEspacesVectorielsNormes.pdf"
-      },
-      "Corrigé": {
-        "path": "TDEspacesVectorielsNormes.corrige.pdf"
-      }
-    },
-    {
-      "title": "Groupes",
-      "Enoncé": {
-        "path": "TDGroupes.pdf"
-      },
-      "Corrigé": {
-        "path": "TDGroupes.corrige.pdf"
-      }
-    },
-    {
-      "title": "Intégrales impropres",
-      "Enoncé": {
-        "path": "TDIntegralesImpropres.pdf"
-      },
-      "Corrigé": {
-        "path": "TDIntegralesImpropres.corrige.pdf"
-      }
-    },
-    {
-      "title": "Réduction algébrique",
-      "Enoncé": {
-        "path": "TDReductionAlgebrique.pdf"
-      },
-      "Corrigé": {
-        "path": "TDReductionAlgebrique.corrige.pdf"
-      }
-    },
-    {
-      "title": "Réduction géométrique",
-      "Enoncé": {
-        "path": "TDReductionGeometrique.pdf"
-      },
-      "Corrigé": {
-        "path": "TDReductionGeometrique.corrige.pdf"
-      }
-    },
-    {
-      "title": "Séries et familles sommables",
-      "Enoncé": {
-        "path": "TDSeriesFamillesSommables.pdf"
-      },
-      "Corrigé": {
-        "path": "TDSeriesFamillesSommables.corrige.pdf"
-      }
-    },
-    {
-      "title": "Suites et séries de fonctions",
-      "Enoncé": {
-        "path": "TDSuitesSeriesFonctions.pdf"
-      }
-    }
-  ],
-  "DS": [
-    {
-      "title": "Devoir surveillé n°01",
-      "Enoncé": {
-        "path": "DS01.pdf"
-      },
-      "Corrigé": {
-        "path": "DS01.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°02",
-      "Enoncé": {
-        "path": "DS02.pdf"
-      },
-      "Corrigé": {
-        "path": "DS02.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°03",
-      "Enoncé": {
-        "path": "DS03.pdf"
-      },
-      "Corrigé": {
-        "path": "DS03.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°04",
-      "Enoncé": {
-        "path": "DS04.pdf"
-      },
-      "Corrigé": {
-        "path": "DS04.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°05",
-      "Enoncé": {
-        "path": "DS05.pdf"
-      },
-      "Corrigé": {
-        "path": "DS05.corrige.pdf"
-      }
     }
   ],
   "Cours": [
@@ -678,107 +745,50 @@
       "path": "Topologie.pdf"
     }
   ],
-  "DM": [
+  "DS": [
     {
-      "title": "Devoir à la maison n°01",
+      "title": "Devoir surveillé n°01",
       "Enoncé": {
-        "path": "DM01.pdf"
+        "path": "DS01.pdf"
       },
       "Corrigé": {
-        "path": "DM01.corrige.pdf"
+        "path": "DS01.corrige.pdf"
       }
     },
     {
-      "title": "Devoir à la maison n°02",
+      "title": "Devoir surveillé n°02",
       "Enoncé": {
-        "path": "DM02.pdf"
+        "path": "DS02.pdf"
       },
       "Corrigé": {
-        "path": "DM02.corrige.pdf"
+        "path": "DS02.corrige.pdf"
       }
     },
     {
-      "title": "Devoir à la maison n°03",
+      "title": "Devoir surveillé n°03",
       "Enoncé": {
-        "path": "DM03.pdf"
+        "path": "DS03.pdf"
       },
       "Corrigé": {
-        "path": "DM03.corrige.pdf"
+        "path": "DS03.corrige.pdf"
       }
     },
     {
-      "title": "Devoir à la maison n°04",
+      "title": "Devoir surveillé n°04",
       "Enoncé": {
-        "path": "DM04.pdf"
+        "path": "DS04.pdf"
       },
       "Corrigé": {
-        "path": "DM04.corrige.pdf"
+        "path": "DS04.corrige.pdf"
       }
     },
     {
-      "title": "Devoir à la maison n°05",
+      "title": "Devoir surveillé n°05",
       "Enoncé": {
-        "path": "DM05.pdf"
+        "path": "DS05.pdf"
       },
       "Corrigé": {
-        "path": "DM05.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°06",
-      "Enoncé": {
-        "path": "DM06.pdf"
-      },
-      "Corrigé": {
-        "path": "DM06.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°07",
-      "Enoncé": {
-        "path": "DM07.pdf"
-      },
-      "Corrigé": {
-        "path": "DM07.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°08",
-      "Enoncé": {
-        "path": "DM08.pdf"
-      },
-      "Corrigé": {
-        "path": "DM08.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°09",
-      "Enoncé": {
-        "path": "DM09.pdf"
-      },
-      "Corrigé": {
-        "path": "DM09.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°10",
-      "Enoncé": {
-        "path": "DM10.pdf"
-      },
-      "Corrigé": {
-        "path": "DM10.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°11",
-      "Enoncé": {
-        "path": "DM11.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°12",
-      "Enoncé": {
-        "path": "DM12.pdf"
+        "path": "DS05.corrige.pdf"
       }
     }
   ]
