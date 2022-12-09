@@ -71,7 +71,7 @@ full-width: true
   {% if site.data.pdfs.Colles %}
   <h3>Programmes de colles</h3>
   {% assign sorted_colles=site.data.pdfs.Colles|sort:'path' %}
-  <div class="" grid">
+  <div class="grid">
     {% for colle in sorted_colles %} {% if colle.path %}
     <div class="pdf">
       <a href="{{'/pdfs/Colles/' | append: colle.path}}">
