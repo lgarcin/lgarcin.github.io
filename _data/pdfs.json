@@ -268,18 +268,27 @@
       "title": "Devoir à la maison n°12",
       "Enoncé": {
         "path": "DM12.pdf"
+      },
+      "Corrigé": {
+        "path": "DM12.corrige.pdf"
       }
     },
     {
       "title": "Devoir à la maison n°13",
       "Enoncé": {
         "path": "DM13.pdf"
+      },
+      "Corrigé": {
+        "path": "DM13.corrige.pdf"
       }
     },
     {
       "title": "Devoir à la maison n°14",
       "Enoncé": {
         "path": "DM14.pdf"
+      },
+      "Corrigé": {
+        "path": "DM14.corrige.pdf"
       }
     },
     {
@@ -313,6 +322,10 @@
     {
       "title": "Interrogation écrite n°06",
       "path": "Interro06.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°07",
+      "path": "Interro07.pdf"
     }
   ],
   "TD": [
