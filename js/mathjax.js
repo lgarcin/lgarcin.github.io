@@ -8,9 +8,12 @@ window.MathJax = {
     ],
     processEscapes: true,
     macros: {
+      cB: "\\mathcal{B}",
       cC: "\\mathcal{C}",
       cD: "\\mathcal{D}",
+      cM: "\\mathcal{M}",
       cP: "\\mathcal{P}",
+      cT: "\\mathcal{T}",
       la: "\\lambda",
       va: "\\varphi",
       dF: "\\mathbb{F}",
