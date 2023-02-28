@@ -230,6 +230,24 @@
       "Corrigé": {
         "path": "DS08.corrige.pdf"
       }
+    },
+    {
+      "title": "Devoir surveillé n°09",
+      "Enoncé": {
+        "path": "DS09.pdf"
+      },
+      "Corrigé": {
+        "path": "DS09.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°11",
+      "Enoncé": {
+        "path": "DS11.pdf"
+      },
+      "Corrigé": {
+        "path": "DS11.corrige.pdf"
+      }
     }
   ],
   "Formulaires": [
