@@ -70,6 +70,37 @@ def QR_decomposition(A):
     return Q, R
 ```
 
-[toto](https://replit.com/join/pkatmrjsws-laurentgarcin)
+[Lien vers un notebook Jupyter](https://replit.com/join/pkatmrjsws-laurentgarcin)
 
-## Matrices de Householder
+## Méthode de Householder
+
+Dans ce qui suit, $E$ désigne un espace euclidien de dimension $n$ et $\cB$ une base **orthonormée** de $E$.
+
+### Matrices de Householder
+
+Soient $n$ un vecteur non nul de $E$ et $s$ la réflexion par rapport à l'hyperplan $\vect(n)^\perp$. Le projeté orthogonal d'un vecteur $x\in E$ sur $\vect(n)$ est $\frac{\langle n,x\rangle}{\|n\|^2}n$. On en déduit que
+
+$$
+s(x)=x-2\frac{\langle n,x\rangle}{\|n\|^2}n
+$$
+
+Si on note $N$ sa matrice de $n$ dans la base $\cB$, alors la matrice de $s$ dans la base $\cB$ est donc
+
+$$
+I_n-2\frac{NN^\top}{N^\top N}
+$$
+
+Une telle matrice est appelée une **matrice de Householder**.
+
+### Réflexion échangeant deux vecteurs de même norme
+
+Soient $E$ un espace euclidien de dimension $n$  ainsi que $u$ et $v$ deux vecteurs distincts et de même norme. Il existe alors une (unique) réflexion $s$ échangeant $u$ et $v$. Il s'agit de la réflexion par rapport à l'hyperplan $\vect(v-u)^\perp$.
+
+Notamment si $S$, $U$ et $V$ sont respectivement les matrices de $s$, $u$ et $v$ dans cette base $\cB$, alors
+
+$$
+S=I_n-2\frac{(U-V)(U-V)^\top}{(U-V)^\top(U-V)}
+$$
+
+### Application à la décomposition QR
+
