@@ -73,6 +73,10 @@
     {
       "title": "Interrogation écrite n°09",
       "path": "Interro09.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°10",
+      "path": "Interro10.pdf"
     }
   ],
   "DS": [
@@ -713,12 +717,24 @@
       "title": "Devoir à la maison n°17",
       "Enoncé": {
         "path": "DM17.pdf"
+      },
+      "Corrigé": {
+        "path": "DM17.corrige.pdf"
       }
     },
     {
       "title": "Devoir à la maison n°18",
       "Enoncé": {
         "path": "DM18.pdf"
+      },
+      "Corrigé": {
+        "path": "DM18.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°19",
+      "Enoncé": {
+        "path": "DM19.pdf"
       }
     }
   ],
@@ -852,6 +868,9 @@
       "title": "Probabilites",
       "Enoncé": {
         "path": "TDProbabilites.pdf"
+      },
+      "Corrigé": {
+        "path": "TDProbabilites.corrige.pdf"
       }
     },
     {
