@@ -187,6 +187,15 @@
       "Corrigé": {
         "path": "DS12.corrige.pdf"
       }
+    },
+    {
+      "title": "Devoir surveillé n°13",
+      "Enoncé": {
+        "path": "DS13.pdf"
+      },
+      "Corrigé": {
+        "path": "DS13.corrige.pdf"
+      }
     }
   ],
   "PremiereAnnee": {
@@ -810,6 +819,10 @@
     {
       "title": "Semaine du 06/03 au 10/03",
       "path": "ProgColles18.pdf"
+    },
+    {
+      "title": "Semaine du 13/03 au 17/03",
+      "path": "ProgColles19.pdf"
     }
   ],
   "TD": [
