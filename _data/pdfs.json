@@ -854,6 +854,12 @@
       }
     },
     {
+      "title": "Fonctions vectorielles",
+      "Enoncé": {
+        "path": "TDFonctionsVectorielles.pdf"
+      }
+    },
+    {
       "title": "Groupes",
       "Enoncé": {
         "path": "TDGroupes.pdf"
