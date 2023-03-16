@@ -9,7 +9,7 @@ css:
 
 On adopte les notations suivantes :
 
-- $\cT_n^+(\dR)$ (resp. $\cT_n^{++}(\dR)$) désigne l'ensemble des matrices triangulaires supérieures de $\cM_n(\dR)$ à coefficients diagonaux positifs (resp. strictement positifs).
+- $\cT_n^{++}(\dR)$ désigne l'ensemble des matrices triangulaires supérieures de $\cM_n(\dR)$ à coefficients diagonaux strictement positifs.
 - $\langle\cdot,\cdot\rangle$ désigne le produit scalaire usuel sur $\cM_{n,1}(\dR)$ i.e. $\forall(X,Y)\in\cM_{n,1}(\dR)^2$, $\langle X,Y\rangle=X^\top Y$.
 
 ## Théorème
@@ -31,7 +31,7 @@ e_{k+1}=\frac{\tilde e_{k+1}}{\|\tilde e_{k+1}\|}
 \text{ où }\tilde e_{k+1}=f_{k+1}-\sum_{j=1}^k\langle f_{k+1},e_j\rangle e_j
 $$
 
-*Remarque*. On convient que la somme est nulle lorsque $k=0$.
+_Remarque_. On convient que la somme est nulle lorsque $k=0$.
 
 En plus du fait que $(e_1,\dots,e_n)$ est une base orthonormée de $E$, on vérifie aisément que
 
@@ -58,7 +58,7 @@ donc la matrice $R$ est triangulaire supérieure et ses coefficients diagonaux s
 ```python
 import numpy as np
 
-def QR_decomposition(A):
+def QR_gram_schmidt(A):
     Q = np.zeros_like(A)
     R = np.zeros_like(A)
     for i in range(A.shape[1]):
@@ -94,7 +94,7 @@ Une telle matrice est appelée une **matrice de Householder**.
 
 ### Réflexion échangeant deux vecteurs de même norme
 
-Soient $E$ un espace euclidien de dimension $n$  ainsi que $u$ et $v$ deux vecteurs distincts et de même norme. Il existe alors une (unique) réflexion $s$ échangeant $u$ et $v$. Il s'agit de la réflexion par rapport à l'hyperplan $\vect(v-u)^\perp$.
+Soient $E$ un espace euclidien de dimension $n$ ainsi que $u$ et $v$ deux vecteurs distincts et de même norme. Il existe alors une (unique) réflexion $s$ échangeant $u$ et $v$. Il s'agit de la réflexion par rapport à l'hyperplan $\vect(v-u)^\perp$.
 
 Notamment si $S$, $U$ et $V$ sont respectivement les matrices de $s$, $u$ et $v$ dans cette base $\cB$, alors
 
@@ -104,3 +104,69 @@ $$
 
 ### Application à la décomposition QR
 
+On procède à un raisonnement par récurrence. Il est clair que toute matrice de $GL_1(\dR)$ admet une décomposition $QR$. Supposons que ce soit vrai pour toute matrice de $GL_{n-1}(\dR)$, où $n$ est un entier supérieur ou égal à $2$.
+
+Soit $A\in GL_n(\dR)$. Notons $U$ sa première colonne (nécessairement non nulle). Comme les vecteurs $U$ et $V=(\|U\|,0,\dots,0)^\top$ ont même norme, il existe une matrice de réflexion $S$ telle que $SU=V$. La première colonne de $SA$ est alors $V$. Notons $\tilde A$ la matrice $SA$ dont on a supprimé les premières lignes et premières colonnes. Autrement dit
+
+$$
+SA=\begin{pmatrix}
+\|U\|&\begin{matrix}\star&\dots&\star\end{matrix}\\
+\begin{matrix}0\\\vdots\\0\end{matrix}&\tilde A
+\end{pmatrix}
+$$
+
+Comme $S$ et $A$ sont inversibles, $\det(SA)=\|U\|\det(\tilde A)\neq0$ donc $\tilde A\in GL_{n-1}(\dR)$. Il existe donc une matrice $\tilde Q\in O_{n-1}(\dR)$ et $\tilde R\in\cT_{n-1}^{++}(\dR)$ telle que $\tilde A=\tilde Q\tilde R$. Puisque $S=S^{-1}$ ($S$ est une matrice de réflexion), on a alors $A=QR$ avec
+
+$$
+Q=S\begin{pmatrix}
+1&\begin{matrix}0&\dots&0\end{matrix}\\
+\begin{matrix}0\\\vdots\\0\end{matrix}&\tilde Q
+\end{pmatrix}\in O_n(\dR)
+\qquad\text{et}\qquad
+R=\begin{pmatrix}
+\|U\|&\begin{matrix}\star&\dots&\star\end{matrix}\\
+\begin{matrix}0\\\vdots\\0\end{matrix}&\tilde R
+\end{pmatrix}\in\cT_n^{++}(\dR)
+$$
+
+On en déduit également un algorithme :
+
+**Entrée** Une matrice $A\in GL_n(\dR)$
+
+- Initialisation
+
+  - $R\gets A$
+  - $Q\gets I_n$
+
+- Pour $k$ variant de $1$ à $n$ :
+
+  - On extrait la première colonne $U\in\cM_{n-k+1,1}(\dR)$ de la matrice extraite $(R_{i,j})_{k\leq i,j\leq n}$
+  - Si $U_1\neq\|U\|$
+    - On pose $V=(\|U\|,0,\dots,0)\cM_{n-k+1,1}(\dR)$.
+    - On calcule $S=I_{n-k+1}-2\frac{(U-V)(U-V)^\top}{(U-V)^\top(U-V)}$
+    - $Q_1\gets\begin{pmatrix}I_{k-1}&0\\0&S\end{pmatrix}\in\cM_n(\dR)$
+    - $Q\gets QQ_1$
+    - $R\gets Q_1R$
+
+**Renvoyer** $Q$ et $R$
+
+```python
+import numpy as np
+
+def matrice_householder(U):
+  return np.eye(U.shape[0]) - 2 * (U@U.T) / (U.T@U)
+
+def QR_householder(A):
+  n=A.shape[0]
+  R=A.copy()
+  Q=np.eye(n)
+  for k in range(n):
+    U=R[k:,k].copy()
+    norme_U=np.linalg.norm(U)
+    if U[0]!=norme_U:
+      U[0]-=norme_U
+      S=matrice_householder(U)
+      Q[:,k:]=Q[:,k:]@S
+      R[k:,:]=S@R[k:,:]
+  return Q, R
+```
