@@ -70,7 +70,7 @@ def QR_gram_schmidt(A):
     return Q, R
 ```
 
-[Lien vers un notebook Jupyter](https://replit.com/join/pkatmrjsws-laurentgarcin)
+[Lien vers un notebook Jupyter](https://www.kaggle.com/lgarcin/d-composition-qr)
 
 ## Méthode de Householder
 
