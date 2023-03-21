@@ -677,6 +677,12 @@
       }
     },
     {
+      "title": "Equations différentielles",
+      "Enoncé": {
+        "path": "TDEquationsDifferentielles.pdf"
+      }
+    },
+    {
       "title": "Espaces vectoriels normés",
       "Enoncé": {
         "path": "TDEspacesVectorielsNormes.pdf"
@@ -689,6 +695,9 @@
       "title": "Fonctions vectorielles",
       "Enoncé": {
         "path": "TDFonctionsVectorielles.pdf"
+      },
+      "Corrigé": {
+        "path": "TDFonctionsVectorielles.corrige.pdf"
       }
     },
     {
@@ -949,6 +958,15 @@
       "title": "Devoir à la maison n°19",
       "Enoncé": {
         "path": "DM19.pdf"
+      },
+      "Corrigé": {
+        "path": "DM19.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°20",
+      "Enoncé": {
+        "path": "DM20.pdf"
       }
     }
   ],
