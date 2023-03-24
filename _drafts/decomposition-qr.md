@@ -5,6 +5,8 @@ css:
   - "/css/theorems.css"
 ---
 
+Tous le code Python proposé est accessible dans un [notebook Jupyter interactif](https://www.kaggle.com/lgarcin/d-composition-qr).
+
 ## Notations
 
 On adopte les notations suivantes :
@@ -15,6 +17,10 @@ On adopte les notations suivantes :
 ## Théorème
 
 Soit $A\in GL_n(\dR)$. Alors il existe $Q\in O_n(\dR)$ et $R\in\cT_n^{++}(\dR)$ telles que $A=QR$.
+
+## Intérêt
+
+Dès lors que l'on a une décomposition QR d'une matrice $A$, il devient trivial de résoudre un sytème $AX=Y$. En effet ce système équivaut à $RX=Q^{-1}Y=Q^\top Y$. Le calcul de $Q^\top$ est immédiat et ce dernier système est triangulaire : il se résout donc très simplement.
 
 ## Rappels sur le procédé d'orthonormalisation de Gram-Schmidt
 
@@ -62,15 +68,13 @@ def QR_gram_schmidt(A):
     Q = np.zeros_like(A)
     R = np.zeros_like(A)
     for i in range(A.shape[1]):
-        dp = [np.dot(A[:, i], Q[:, j]) for j in range(i)]
+        dp = Q[:, :i].T@A[:, i]
         R[:i, i] = dp
-        Q[:, i] = A[:, i]-sum(dp[j]*Q[:, j] for j in range(i))
+        Q[:, i] = A[:, i]-Q[:, :i]@dp
         Q[:, i] = Q[:, i]/np.linalg.norm(Q[:, i])
-        R[i, i] = np.dot(A[:, i], Q[:, i])
+        R[i, i] = Q[:, i].T@A[:, i]
     return Q, R
 ```
-
-[Lien vers un notebook Jupyter](https://www.kaggle.com/lgarcin/d-composition-qr)
 
 ## Méthode de Householder
 
@@ -131,42 +135,71 @@ $$
 
 On en déduit également un algorithme :
 
+---
+
 **Entrée** Une matrice $A\in GL_n(\dR)$
 
 - Initialisation
-
   - $R\gets A$
   - $Q\gets I_n$
 
 - Pour $k$ variant de $1$ à $n$ :
-
   - On extrait la première colonne $U\in\cM_{n-k+1,1}(\dR)$ de la matrice extraite $(R_{i,j})_{k\leq i,j\leq n}$
   - Si $U_1\neq\|U\|$
-    - On pose $V=(\|U\|,0,\dots,0)\cM_{n-k+1,1}(\dR)$.
-    - On calcule $S=I_{n-k+1}-2\frac{(U-V)(U-V)^\top}{(U-V)^\top(U-V)}$
-    - $Q_1\gets\begin{pmatrix}I_{k-1}&0\\0&S\end{pmatrix}\in\cM_n(\dR)$
+    - $V\gets(\|U\|,0,\dots,0)$.
+    - $S\gets I_{n-k+1}-2\frac{(U-V)(U-V)^\top}{(U-V)^\top(U-V)}$
+    - $Q_1\gets\begin{pmatrix}I_{k-1}&0\newline0&S\end{pmatrix}$
     - $Q\gets QQ_1$
     - $R\gets Q_1R$
 
 **Renvoyer** $Q$ et $R$
 
+---
+
+On définit d'abord une fonction calculant la matrice de Householder associée à un vecteur $U$.
+
 ```python
 import numpy as np
 
 def matrice_householder(U):
-  return np.eye(U.shape[0]) - 2 * (U@U.T) / (U.T@U)
+    return np.eye(U.shape[0]) - 2 * (U@U.T) / (U.T@U)
+```
 
+On implémente alors un algorithme itératif calculant la décomposition QR d'une matrice inversible $A$.
+
+```python
 def QR_householder(A):
-  n=A.shape[0]
-  R=A.copy()
-  Q=np.eye(n)
-  for k in range(n):
-    U=R[k:,k].copy()
-    norme_U=np.linalg.norm(U)
-    if U[0]!=norme_U:
-      U[0]-=norme_U
-      S=matrice_householder(U)
-      Q[:,k:]=Q[:,k:]@S
-      R[k:,:]=S@R[k:,:]
-  return Q, R
+    n = A.shape[0]
+    R = A.copy()
+    Q = np.eye(n)
+    for k in range(n):
+        U = R[k:, k].copy()
+        norme_U = np.linalg.norm(U)
+        if U[0] != norme_U:
+            U[0] -= norme_U
+            S = matrice_householder(U)
+            Q[:, k:] = Q[:, k:]@S
+            R[k:, :] = S@R[k:, :]
+    return Q, R
+```
+
+On peut également proposer une fonction récursive.
+
+```python
+def QR_householder_recu(A):
+    if A.shape[0] == 1:
+        return (np.matrix([[1]]), A) if A[0, 0] > 0 else (np.matrix([[-1]]), -A)
+    U = A[:, 0].copy()
+    norme_U = np.linalg.norm(U)
+    if U[0] != norme_U:
+        U[0] -= norme_U
+        Q = matrice_householder(U)
+        R = Q@A
+    else:
+        Q = np.eye(A.shape[0])
+        R = A
+    Q1, R1 = QR_householder_recu(R[1:, 1:])
+    Q[:, 1:] = Q[:, 1:]@Q1
+    R[1:, 1:] = R1
+    return Q, R
 ```
