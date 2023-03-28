@@ -474,6 +474,12 @@
       }
     },
     {
+      "title": "Calcul différentiel",
+      "Enoncé": {
+        "path": "TDCalculDifferentiel.pdf"
+      }
+    },
+    {
       "title": "Endomorphismes d'un espace euclidien",
       "Enoncé": {
         "path": "TDEndomorphismesEspacesEuclidiens.pdf"
