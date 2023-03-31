@@ -461,6 +461,10 @@
     {
       "title": "Semaine du 27/03 au 31/03",
       "path": "ProgColles21.pdf"
+    },
+    {
+      "title": "Semaine du 03/04 au 07/04",
+      "path": "ProgColles22.pdf"
     }
   ],
   "TD": [
@@ -492,6 +496,9 @@
       "title": "Equations différentielles",
       "Enoncé": {
         "path": "TDEquationsDifferentielles.pdf"
+      },
+      "Corrigé": {
+        "path": "TDEquationsDifferentielles.corrige.pdf"
       }
     },
     {
