@@ -3,6 +3,10 @@
     {
       "title": "Semaine du 18/09",
       "path": "ProgColles01.pdf"
+    },
+    {
+      "title": "Semaine du 25/09",
+      "path": "ProgColles02.pdf"
     }
   ],
   "DM": [
@@ -218,6 +222,9 @@
       "title": "Intégrales impropres",
       "Enoncé": {
         "path": "TDIntegralesImpropres.pdf"
+      },
+      "Corrigé": {
+        "path": "TDIntegralesImpropres.corrige.pdf"
       }
     },
     {
