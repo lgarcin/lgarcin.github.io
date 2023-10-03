@@ -28,6 +28,9 @@
       "title": "Espaces vectoriels normés",
       "Enoncé": {
         "path": "TDEspacesVectorielsNormes.pdf"
+      },
+      "Corrigé": {
+        "path": "TDEspacesVectorielsNormes.corrige.pdf"
       }
     },
     {
@@ -595,6 +598,10 @@
     {
       "title": "Interrogation écrite n°02",
       "path": "Interro02.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°03",
+      "path": "Interro03.pdf"
     }
   ],
   "Formulaires": [
@@ -664,6 +671,12 @@
       "title": "Devoir à la maison n°04",
       "Enoncé": {
         "path": "DM04.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°05",
+      "Enoncé": {
+        "path": "DM05.pdf"
       }
     }
   ],
