@@ -1,26 +1,4 @@
 {
-  "Colles": [
-    {
-      "title": "Semaine du 18/09",
-      "path": "ProgColles01.pdf"
-    },
-    {
-      "title": "Semaine du 25/09",
-      "path": "ProgColles02.pdf"
-    },
-    {
-      "title": "Semaine du 02/10",
-      "path": "ProgColles03.pdf"
-    },
-    {
-      "title": "Semaine du 09/10",
-      "path": "ProgColles04.pdf"
-    },
-    {
-      "title": "Semaine du 16/10",
-      "path": "ProgColles05.pdf"
-    }
-  ],
   "TD": [
     {
       "title": "Anneaux, arithmétique",
@@ -101,6 +79,9 @@
       "title": "Réduction géométrique",
       "Enoncé": {
         "path": "TDReductionGeometrique.pdf"
+      },
+      "Corrigé": {
+        "path": "TDReductionGeometrique.corrige.pdf"
       }
     },
     {
@@ -137,32 +118,144 @@
       }
     }
   ],
-  "VieClasse": [
+  "DS": [
     {
-      "path": "Colloscope_2023_2024.pdf",
-      "title": "Colloscope"
+      "title": "Devoir surveillé n°01",
+      "Enoncé": {
+        "path": "DS01.pdf"
+      },
+      "Corrigé": {
+        "path": "DS01.corrige.pdf"
+      }
     },
     {
-      "path": "Planning DS MP 2023_2024.pdf",
-      "title": "Planning des DS"
+      "title": "Devoir surveillé n°02",
+      "Enoncé": {
+        "path": "DS02.pdf"
+      },
+      "Corrigé": {
+        "path": "DS02.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°03",
+      "Enoncé": {
+        "path": "DS03.pdf"
+      },
+      "Corrigé": {
+        "path": "DS03.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°04",
+      "Enoncé": {
+        "path": "DS04.pdf"
+      },
+      "Corrigé": {
+        "path": "DS04.corrige.pdf"
+      }
     }
   ],
-  "Interros": [
+  "Colles": [
     {
-      "title": "Interrogation écrite n°01",
-      "path": "Interro01.pdf"
+      "title": "Semaine du 18/09",
+      "path": "ProgColles01.pdf"
     },
     {
-      "title": "Interrogation écrite n°02",
-      "path": "Interro02.pdf"
+      "title": "Semaine du 25/09",
+      "path": "ProgColles02.pdf"
     },
     {
-      "title": "Interrogation écrite n°03",
-      "path": "Interro03.pdf"
+      "title": "Semaine du 02/10",
+      "path": "ProgColles03.pdf"
     },
     {
-      "title": "Interrogation écrite n°04",
-      "path": "Interro04.pdf"
+      "title": "Semaine du 09/10",
+      "path": "ProgColles04.pdf"
+    },
+    {
+      "title": "Semaine du 16/10",
+      "path": "ProgColles05.pdf"
+    },
+    {
+      "title": "Semaine du 06/11",
+      "path": "ProgColles06.pdf"
+    }
+  ],
+  "Cours": [
+    {
+      "title": "Anneaux et arithmétique",
+      "path": "Anneaux.pdf"
+    },
+    {
+      "title": "Calcul différentiel",
+      "path": "CalculDifferentiel.pdf"
+    },
+    {
+      "title": "Endomorphismes d'un espace euclidien",
+      "path": "EndomorphismesEspacesEuclidiens.pdf"
+    },
+    {
+      "title": "Equations différentielles linéaires",
+      "path": "EquationsDifferentiellesLineaires.pdf"
+    },
+    {
+      "title": "Espaces vectoriels normés",
+      "path": "EspacesVectorielsNormes.pdf"
+    },
+    {
+      "title": "Fonctions à valeurs vectorielles",
+      "path": "FonctionsVectorielles.pdf"
+    },
+    {
+      "title": "Groupes",
+      "path": "Groupes.pdf"
+    },
+    {
+      "title": "Intégrales impropres",
+      "path": "IntegralesImpropres.pdf"
+    },
+    {
+      "title": "Intégrales à paramètres",
+      "path": "IntegralesParametres.pdf"
+    },
+    {
+      "title": "Probabilités",
+      "path": "Probabilites.pdf"
+    },
+    {
+      "title": "Réduction algébrique",
+      "path": "ReductionAlgebrique.pdf"
+    },
+    {
+      "title": "Réduction géométrique",
+      "path": "ReductionGeometrique.pdf"
+    },
+    {
+      "title": "Séries entières",
+      "path": "SeriesEntieres.pdf"
+    },
+    {
+      "title": "Séries numériques",
+      "path": "SeriesNumeriques.pdf"
+    },
+    {
+      "title": "Suites et séries de fonctions",
+      "path": "SuitesSeriesFonctions.pdf"
+    },
+    {
+      "title": "Topologie",
+      "path": "Topologie.pdf"
+    }
+  ],
+  "VieClasse": [
+    {
+      "title": "Colloscope",
+      "path": "Colloscope_2023_2024.pdf"
+    },
+    {
+      "title": "Planning des DS",
+      "path": "Planning DS MP 2023_2024.pdf"
     }
   ],
   "PremiereAnnee": {
@@ -553,44 +646,6 @@
       }
     ]
   },
-  "DS": [
-    {
-      "title": "Devoir surveillé n°01",
-      "Enoncé": {
-        "path": "DS01.pdf"
-      },
-      "Corrigé": {
-        "path": "DS01.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°02",
-      "Enoncé": {
-        "path": "DS02.pdf"
-      },
-      "Corrigé": {
-        "path": "DS02.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°03",
-      "Enoncé": {
-        "path": "DS03.pdf"
-      },
-      "Corrigé": {
-        "path": "DS03.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°04",
-      "Enoncé": {
-        "path": "DS04.pdf"
-      },
-      "Corrigé": {
-        "path": "DS04.corrige.pdf"
-      }
-    }
-  ],
   "DM": [
     {
       "title": "Devoir à la maison n°01",
@@ -688,70 +743,22 @@
       "path": "FormulaireTrigoInverse.pdf"
     }
   ],
-  "Cours": [
+  "Interros": [
     {
-      "title": "Anneaux et arithmétique",
-      "path": "Anneaux.pdf"
+      "title": "Interrogation écrite n°01",
+      "path": "Interro01.pdf"
     },
     {
-      "title": "Calcul différentiel",
-      "path": "CalculDifferentiel.pdf"
+      "title": "Interrogation écrite n°02",
+      "path": "Interro02.pdf"
     },
     {
-      "title": "Endomorphismes d'un espace euclidien",
-      "path": "EndomorphismesEspacesEuclidiens.pdf"
+      "title": "Interrogation écrite n°03",
+      "path": "Interro03.pdf"
     },
     {
-      "title": "Equations différentielles linéaires",
-      "path": "EquationsDifferentiellesLineaires.pdf"
-    },
-    {
-      "title": "Espaces vectoriels normés",
-      "path": "EspacesVectorielsNormes.pdf"
-    },
-    {
-      "title": "Fonctions à valeurs vectorielles",
-      "path": "FonctionsVectorielles.pdf"
-    },
-    {
-      "title": "Groupes",
-      "path": "Groupes.pdf"
-    },
-    {
-      "title": "Intégrales impropres",
-      "path": "IntegralesImpropres.pdf"
-    },
-    {
-      "title": "Intégrales à paramètres",
-      "path": "IntegralesParametres.pdf"
-    },
-    {
-      "title": "Probabilités",
-      "path": "Probabilites.pdf"
-    },
-    {
-      "title": "Réduction algébrique",
-      "path": "ReductionAlgebrique.pdf"
-    },
-    {
-      "title": "Réduction géométrique",
-      "path": "ReductionGeometrique.pdf"
-    },
-    {
-      "title": "Séries entières",
-      "path": "SeriesEntieres.pdf"
-    },
-    {
-      "title": "Séries numériques",
-      "path": "SeriesNumeriques.pdf"
-    },
-    {
-      "title": "Suites et séries de fonctions",
-      "path": "SuitesSeriesFonctions.pdf"
-    },
-    {
-      "title": "Topologie",
-      "path": "Topologie.pdf"
+      "title": "Interrogation écrite n°04",
+      "path": "Interro04.pdf"
     }
   ]
 }
