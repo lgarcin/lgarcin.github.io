@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
               fo.setAttribute("height", 60);
               var div = document.createElement("div");
               div.setAttribute("style", "text-align: center; font-size: 14px")
-              var content = document.createTextNode("$("+i+","+(-j)+"$)");
+              var content = document.createTextNode("("+i+","+(-j)+")");
               div.appendChild(content);
               fo.appendChild(div);
               svgCoord.appendChild(fo);
@@ -153,7 +153,7 @@ On peut déplacer un pion vers un trou pour supprimer un autre pion en utilisant
 On introduit maintenant quelques objets mathématiques. On rappelle que $j$ est une **racine cubique** de l'unité et que, par conséquent,
 
 $$
-j^3=0 \qquad\text{et}\qquad 1+j+j^2=0
+j^3=1 \qquad\text{et}\qquad 1+j+j^2=0
 $$
 
 On considère alors l'ensemble suivant.
@@ -164,9 +164,9 @@ $$
 
 On prouve aisément que $\dZ[j]$ est un **anneau** pour les lois usuelles. Comme $j$ et $j^{-1}=-1-j$ appartiennent à $\dZ[j]$, $j^n$ appartient également à $\dZ[j]$ pour tout $n\in\dZ$. Plus précisément :
 
--   si $n\equiv0[3]$, $j^n=1$ ;
--   si $n\equiv1[3]$, $j^n=j$ ;
--   si $n\equiv2[3]$, $j^n=j^2=-1-j$.
+- si $n\equiv0[3]$, $j^n=1$ ;
+- si $n\equiv1[3]$, $j^n=j$ ;
+- si $n\equiv2[3]$, $j^n=j^2=-1-j$.
 
 On peut notamment définir une fonction Python calculant les coordonnées de $j^n$ dans la base $(1,j)$.
 
@@ -209,9 +209,9 @@ def B(S):
 
 Nous allons d'abord regarder l'effet sur $A(S)$ et $B(S)$ d'un mouvement d'un pion vers la droite. Supposons que $(k_0,\ell_0)$ et $(k_0+1,\ell_0)$ appartiennent à $S$ mais que $(k_0+2,\ell_0)$ n'appartienne pas à $S$. Si cette dernière position est l'emplacement d'un trou, on peut déplacer le pion en position $(k_0,\ell_0)$ vers la position $(k_0+2,\ell_0)$. Notons $S'$ la configuration ainsi obtenue. Si on récapitule :
 
-* un pion a disparu en $(k_0,\ell_0)$ ;
-* un pion a disparu en $(k_0+1,\ell_0)$ ;
-* un pion est apparu en $(k_0+2,\ell_0)$.
+- un pion a disparu en $(k_0,\ell_0)$ ;
+- un pion a disparu en $(k_0+1,\ell_0)$ ;
+- un pion est apparu en $(k_0+2,\ell_0)$.
 
 <svg height="230" width="310">
 <defs>
@@ -316,9 +316,9 @@ En utilisant cette dernière remarque, on calcule aisément $A(S)=B(S)=-1\equiv1
 
 Une éventuelle position finale gagnante $(k,\ell)\in P$ doit donc vérifier $j^{k+\ell}\equiv1[2]$ et $j^{k-\ell}\equiv1[2]$. Or on rappelle que
 
--   si $n\equiv0[3]$, $j^n=1\equiv1[2]$ ;
--   si $n\equiv1[3]$, $j^n=j\not\equiv1[2]$ ;
--   si $n\equiv2[3]$, $j^n=j^2=-1-j\not\equiv1[2]$.
+- si $n\equiv0[3]$, $j^n=1\equiv1[2]$ ;
+- si $n\equiv1[3]$, $j^n=j\not\equiv1[2]$ ;
+- si $n\equiv2[3]$, $j^n=j^2=-1-j\not\equiv1[2]$.
 
 On en déduit que $k+\ell\equiv0[3]$ et $k-\ell\equiv0[3]$, puis que $2k\equiv0[3]$ et $2\ell\equiv0[3]$ et enfin que $k\equiv0[3]$ et $\ell\equiv0[3]$. Mais, puisque $(k,\ell)\in P$, les seules possibilités sont $(-3, 0), (0, -3), (0, 3), (3, 0), (0, 0)$.
 
@@ -326,9 +326,9 @@ On en déduit que $k+\ell\equiv0[3]$ et $k-\ell\equiv0[3]$, puis que $2k\equiv0[
 
 Comme précédemment, on calcule facilement $A(S)=1-j\equiv1+j[2]$ et $B(S)=2+j\equiv j[2]$ et on rappelle à nouveau que
 
--   si $n\equiv0[3]$, $j^n=1\equiv1[2]$ ;
--   si $n\equiv1[3]$, $j^n=j\equiv j[2]$ ;
--   si $n\equiv2[3]$, $j^n=j^2=-1-j\equiv1+j[2]$.
+- si $n\equiv0[3]$, $j^n=1\equiv1[2]$ ;
+- si $n\equiv1[3]$, $j^n=j\equiv j[2]$ ;
+- si $n\equiv2[3]$, $j^n=j^2=-1-j\equiv1+j[2]$.
 
 Une éventuelle position finale gagnante $(k,\ell)\in P$ doit donc vérifier $k+\ell\equiv2[3]$ et $k-\ell\equiv1[3]$. Ainsi $2k\equiv0[3]$ et $2\ell\equiv1[3]$. Puisque $2\equiv-1[3]$, $k\equiv0[3]$ et $\ell\equiv-1[3]$. A nouveau, puisque $(k,\ell)\in P$, les seules possibilités sont $(-3, -1), (0, -1), (0, 2), (3, -1)$.
 
