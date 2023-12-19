@@ -602,6 +602,12 @@
       "Enoncé": {
         "path": "DM13.pdf"
       }
+    },
+    {
+      "title": "Devoir à la maison n°14",
+      "Enoncé": {
+        "path": "DM14.pdf"
+      }
     }
   ],
   "VieClasse": [
@@ -872,6 +878,10 @@
     {
       "title": "Semaine du 11/12",
       "path": "ProgColles11.pdf"
+    },
+    {
+      "title": "Semaine du 18/12",
+      "path": "ProgColles12.pdf"
     }
   ]
 }
