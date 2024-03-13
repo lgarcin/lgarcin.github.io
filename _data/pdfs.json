@@ -1,4 +1,252 @@
 {
+  "Colles": [
+    {
+      "title": "Semaine du 18/09",
+      "path": "ProgColles01.pdf"
+    },
+    {
+      "title": "Semaine du 25/09",
+      "path": "ProgColles02.pdf"
+    },
+    {
+      "title": "Semaine du 02/10",
+      "path": "ProgColles03.pdf"
+    },
+    {
+      "title": "Semaine du 09/10",
+      "path": "ProgColles04.pdf"
+    },
+    {
+      "title": "Semaine du 16/10",
+      "path": "ProgColles05.pdf"
+    },
+    {
+      "title": "Semaine du 06/11",
+      "path": "ProgColles06.pdf"
+    },
+    {
+      "title": "Semaine du 13/11",
+      "path": "ProgColles07.pdf"
+    },
+    {
+      "title": "Semaine du 20/11",
+      "path": "ProgColles08.pdf"
+    },
+    {
+      "title": "Semaine du 27/11",
+      "path": "ProgColles09.pdf"
+    },
+    {
+      "title": "Semaine du 04/12",
+      "path": "ProgColles10.pdf"
+    },
+    {
+      "title": "Semaine du 11/12",
+      "path": "ProgColles11.pdf"
+    },
+    {
+      "title": "Semaine du 18/12",
+      "path": "ProgColles12.pdf"
+    },
+    {
+      "title": "Semaine du 08/01",
+      "path": "ProgColles13.pdf"
+    },
+    {
+      "title": "Semaine du 15/01",
+      "path": "ProgColles14.pdf"
+    },
+    {
+      "title": "Semaine du 22/01",
+      "path": "ProgColles15.pdf"
+    },
+    {
+      "title": "Semaine du 29/01",
+      "path": "ProgColles16.pdf"
+    },
+    {
+      "title": "Semaine du 05/02",
+      "path": "ProgColles17.pdf"
+    },
+    {
+      "title": "Semaine du 12/02",
+      "path": "ProgColles18.pdf"
+    },
+    {
+      "title": "Semaine du 19/02",
+      "path": "ProgColles19.pdf"
+    },
+    {
+      "title": "Semaine du 18/03",
+      "path": "ProgColles20.pdf"
+    }
+  ],
+  "DS": [
+    {
+      "title": "Devoir surveillé n°01",
+      "Enoncé": {
+        "path": "DS01.pdf"
+      },
+      "Corrigé": {
+        "path": "DS01.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°02",
+      "Enoncé": {
+        "path": "DS02.pdf"
+      },
+      "Corrigé": {
+        "path": "DS02.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°03",
+      "Enoncé": {
+        "path": "DS03.pdf"
+      },
+      "Corrigé": {
+        "path": "DS03.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°04",
+      "Enoncé": {
+        "path": "DS04.pdf"
+      },
+      "Corrigé": {
+        "path": "DS04.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°05",
+      "Enoncé": {
+        "path": "DS05.pdf"
+      },
+      "Corrigé": {
+        "path": "DS05.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°06",
+      "Enoncé": {
+        "path": "DS06.pdf"
+      },
+      "Corrigé": {
+        "path": "DS06.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°07",
+      "Enoncé": {
+        "path": "DS07.pdf"
+      },
+      "Corrigé": {
+        "path": "DS07.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°08",
+      "Enoncé": {
+        "path": "DS08.pdf"
+      },
+      "Corrigé": {
+        "path": "DS08.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°09",
+      "Enoncé": {
+        "path": "DS09.pdf"
+      },
+      "Corrigé": {
+        "path": "DS09.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°10",
+      "Enoncé": {
+        "path": "DS10.pdf"
+      },
+      "Corrigé": {
+        "path": "DS10.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°11",
+      "Enoncé": {
+        "path": "DS11.pdf"
+      },
+      "Corrigé": {
+        "path": "DS11.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°12",
+      "Enoncé": {
+        "path": "DS12.pdf"
+      },
+      "Corrigé": {
+        "path": "DS12.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°13",
+      "Enoncé": {
+        "path": "DS13.pdf"
+      },
+      "Corrigé": {
+        "path": "DS13.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°14",
+      "Enoncé": {
+        "path": "DS14.pdf"
+      },
+      "Corrigé": {
+        "path": "DS14.corrige.pdf"
+      }
+    }
+  ],
+  "Formulaires": [
+    {
+      "title": "Comparaison de fonctions",
+      "path": "FormulaireComparaisonFonctions.pdf"
+    },
+    {
+      "title": "Dérivation et intégration",
+      "path": "FormulaireDerivationIntegration.pdf"
+    },
+    {
+      "title": "Développements limités",
+      "path": "FormulaireDL.pdf"
+    },
+    {
+      "title": "Inégalités",
+      "path": "FormulaireInegalites.pdf"
+    },
+    {
+      "title": "Probabilités",
+      "path": "FormulaireProbabilites.pdf"
+    },
+    {
+      "title": "Séries",
+      "path": "FormulaireSeries.pdf"
+    },
+    {
+      "title": "Trigonométrie",
+      "path": "FormulaireTrigo.pdf"
+    },
+    {
+      "title": "Trigonométrie hyperbolique",
+      "path": "FormulaireTrigoHyperbolique.pdf"
+    },
+    {
+      "title": "Trigonométrie inverse",
+      "path": "FormulaireTrigoInverse.pdf"
+    }
+  ],
   "DM": [
     {
       "title": "Devoir à la maison n°01",
@@ -193,52 +441,70 @@
       }
     }
   ],
-  "VieClasse": [
+  "Cours": [
     {
-      "path": "Colloscope_2023_2024.pdf",
-      "title": "Colloscope"
+      "title": "Anneaux et arithmétique",
+      "path": "Anneaux.pdf"
     },
     {
-      "path": "Planning DS MP 2023_2024.pdf",
-      "title": "Planning des DS"
-    }
-  ],
-  "Formulaires": [
-    {
-      "title": "Comparaison de fonctions",
-      "path": "FormulaireComparaisonFonctions.pdf"
+      "title": "Calcul différentiel",
+      "path": "CalculDifferentiel.pdf"
     },
     {
-      "title": "Dérivation et intégration",
-      "path": "FormulaireDerivationIntegration.pdf"
+      "title": "Endomorphismes d'un espace euclidien",
+      "path": "EndomorphismesEspacesEuclidiens.pdf"
     },
     {
-      "title": "Développements limités",
-      "path": "FormulaireDL.pdf"
+      "title": "Equations différentielles linéaires",
+      "path": "EquationsDifferentiellesLineaires.pdf"
     },
     {
-      "title": "Inégalités",
-      "path": "FormulaireInegalites.pdf"
+      "title": "Espaces vectoriels normés",
+      "path": "EspacesVectorielsNormes.pdf"
+    },
+    {
+      "title": "Fonctions à valeurs vectorielles",
+      "path": "FonctionsVectorielles.pdf"
+    },
+    {
+      "title": "Groupes",
+      "path": "Groupes.pdf"
+    },
+    {
+      "title": "Intégrales impropres",
+      "path": "IntegralesImpropres.pdf"
+    },
+    {
+      "title": "Intégrales à paramètres",
+      "path": "IntegralesParametres.pdf"
     },
     {
       "title": "Probabilités",
-      "path": "FormulaireProbabilites.pdf"
+      "path": "Probabilites.pdf"
     },
     {
-      "title": "Séries",
-      "path": "FormulaireSeries.pdf"
+      "title": "Réduction algébrique",
+      "path": "ReductionAlgebrique.pdf"
     },
     {
-      "title": "Trigonométrie",
-      "path": "FormulaireTrigo.pdf"
+      "title": "Réduction géométrique",
+      "path": "ReductionGeometrique.pdf"
     },
     {
-      "title": "Trigonométrie hyperbolique",
-      "path": "FormulaireTrigoHyperbolique.pdf"
+      "title": "Séries entières",
+      "path": "SeriesEntieres.pdf"
     },
     {
-      "title": "Trigonométrie inverse",
-      "path": "FormulaireTrigoInverse.pdf"
+      "title": "Séries numériques",
+      "path": "SeriesNumeriques.pdf"
+    },
+    {
+      "title": "Suites et séries de fonctions",
+      "path": "SuitesSeriesFonctions.pdf"
+    },
+    {
+      "title": "Topologie",
+      "path": "Topologie.pdf"
     }
   ],
   "Interros": [
@@ -287,114 +553,14 @@
       "path": "Interro11.pdf"
     }
   ],
-  "DS": [
+  "VieClasse": [
     {
-      "title": "Devoir surveillé n°01",
-      "Enoncé": {
-        "path": "DS01.pdf"
-      },
-      "Corrigé": {
-        "path": "DS01.corrige.pdf"
-      }
+      "path": "Colloscope_2023_2024.pdf",
+      "title": "Colloscope"
     },
     {
-      "title": "Devoir surveillé n°02",
-      "Enoncé": {
-        "path": "DS02.pdf"
-      },
-      "Corrigé": {
-        "path": "DS02.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°03",
-      "Enoncé": {
-        "path": "DS03.pdf"
-      },
-      "Corrigé": {
-        "path": "DS03.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°04",
-      "Enoncé": {
-        "path": "DS04.pdf"
-      },
-      "Corrigé": {
-        "path": "DS04.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°05",
-      "Enoncé": {
-        "path": "DS05.pdf"
-      },
-      "Corrigé": {
-        "path": "DS05.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°06",
-      "Enoncé": {
-        "path": "DS06.pdf"
-      },
-      "Corrigé": {
-        "path": "DS06.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°07",
-      "Enoncé": {
-        "path": "DS07.pdf"
-      },
-      "Corrigé": {
-        "path": "DS07.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°08",
-      "Enoncé": {
-        "path": "DS08.pdf"
-      },
-      "Corrigé": {
-        "path": "DS08.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°09",
-      "Enoncé": {
-        "path": "DS09.pdf"
-      },
-      "Corrigé": {
-        "path": "DS09.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°10",
-      "Enoncé": {
-        "path": "DS10.pdf"
-      },
-      "Corrigé": {
-        "path": "DS10.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°11",
-      "Enoncé": {
-        "path": "DS11.pdf"
-      },
-      "Corrigé": {
-        "path": "DS11.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°12",
-      "Enoncé": {
-        "path": "DS12.pdf"
-      },
-      "Corrigé": {
-        "path": "DS12.corrige.pdf"
-      }
+      "path": "Planning DS MP 2023_2024.pdf",
+      "title": "Planning des DS"
     }
   ],
   "TD": [
@@ -541,72 +707,6 @@
       "Corrigé": {
         "path": "TDTopologie.corrige.pdf"
       }
-    }
-  ],
-  "Cours": [
-    {
-      "title": "Anneaux et arithmétique",
-      "path": "Anneaux.pdf"
-    },
-    {
-      "title": "Calcul différentiel",
-      "path": "CalculDifferentiel.pdf"
-    },
-    {
-      "title": "Endomorphismes d'un espace euclidien",
-      "path": "EndomorphismesEspacesEuclidiens.pdf"
-    },
-    {
-      "title": "Equations différentielles linéaires",
-      "path": "EquationsDifferentiellesLineaires.pdf"
-    },
-    {
-      "title": "Espaces vectoriels normés",
-      "path": "EspacesVectorielsNormes.pdf"
-    },
-    {
-      "title": "Fonctions à valeurs vectorielles",
-      "path": "FonctionsVectorielles.pdf"
-    },
-    {
-      "title": "Groupes",
-      "path": "Groupes.pdf"
-    },
-    {
-      "title": "Intégrales impropres",
-      "path": "IntegralesImpropres.pdf"
-    },
-    {
-      "title": "Intégrales à paramètres",
-      "path": "IntegralesParametres.pdf"
-    },
-    {
-      "title": "Probabilités",
-      "path": "Probabilites.pdf"
-    },
-    {
-      "title": "Réduction algébrique",
-      "path": "ReductionAlgebrique.pdf"
-    },
-    {
-      "title": "Réduction géométrique",
-      "path": "ReductionGeometrique.pdf"
-    },
-    {
-      "title": "Séries entières",
-      "path": "SeriesEntieres.pdf"
-    },
-    {
-      "title": "Séries numériques",
-      "path": "SeriesNumeriques.pdf"
-    },
-    {
-      "title": "Suites et séries de fonctions",
-      "path": "SuitesSeriesFonctions.pdf"
-    },
-    {
-      "title": "Topologie",
-      "path": "Topologie.pdf"
     }
   ],
   "PremiereAnnee": {
@@ -996,87 +1096,5 @@
         }
       }
     ]
-  },
-  "Colles": [
-    {
-      "title": "Semaine du 18/09",
-      "path": "ProgColles01.pdf"
-    },
-    {
-      "title": "Semaine du 25/09",
-      "path": "ProgColles02.pdf"
-    },
-    {
-      "title": "Semaine du 02/10",
-      "path": "ProgColles03.pdf"
-    },
-    {
-      "title": "Semaine du 09/10",
-      "path": "ProgColles04.pdf"
-    },
-    {
-      "title": "Semaine du 16/10",
-      "path": "ProgColles05.pdf"
-    },
-    {
-      "title": "Semaine du 06/11",
-      "path": "ProgColles06.pdf"
-    },
-    {
-      "title": "Semaine du 13/11",
-      "path": "ProgColles07.pdf"
-    },
-    {
-      "title": "Semaine du 20/11",
-      "path": "ProgColles08.pdf"
-    },
-    {
-      "title": "Semaine du 27/11",
-      "path": "ProgColles09.pdf"
-    },
-    {
-      "title": "Semaine du 04/12",
-      "path": "ProgColles10.pdf"
-    },
-    {
-      "title": "Semaine du 11/12",
-      "path": "ProgColles11.pdf"
-    },
-    {
-      "title": "Semaine du 18/12",
-      "path": "ProgColles12.pdf"
-    },
-    {
-      "title": "Semaine du 08/01",
-      "path": "ProgColles13.pdf"
-    },
-    {
-      "title": "Semaine du 15/01",
-      "path": "ProgColles14.pdf"
-    },
-    {
-      "title": "Semaine du 22/01",
-      "path": "ProgColles15.pdf"
-    },
-    {
-      "title": "Semaine du 29/01",
-      "path": "ProgColles16.pdf"
-    },
-    {
-      "title": "Semaine du 05/02",
-      "path": "ProgColles17.pdf"
-    },
-    {
-      "title": "Semaine du 12/02",
-      "path": "ProgColles18.pdf"
-    },
-    {
-      "title": "Semaine du 19/02",
-      "path": "ProgColles19.pdf"
-    },
-    {
-      "title": "Semaine du 18/03",
-      "path": "ProgColles20.pdf"
-    }
-  ]
+  }
 }
