@@ -1,5 +1,24 @@
 {
-  "DS": [],
+  "DS": [
+    {
+      "title": "Devoir surveillé n°01",
+      "Enoncé": {
+        "path": "DS01.pdf"
+      },
+      "Corrigé": {
+        "path": "DS01.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°02",
+      "Enoncé": {
+        "path": "DS02.pdf"
+      },
+      "Corrigé": {
+        "path": "DS02.corrige.pdf"
+      }
+    }
+  ],
   "Cours": [
     {
       "title": "Anneaux et arithmétique",
@@ -474,7 +493,12 @@
       }
     ]
   },
-  "Colles": [],
+  "Colles": [
+    {
+      "title": "Semaine du 16/09",
+      "path": "ProgColles01.pdf"
+    }
+  ],
   "TD": [
     {
       "title": "Anneaux, arithmétique",
