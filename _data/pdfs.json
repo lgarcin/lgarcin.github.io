@@ -1,42 +1,4 @@
 {
-  "DS": [
-    {
-      "title": "Devoir surveillé n°01",
-      "Enoncé": {
-        "path": "DS01.pdf"
-      },
-      "Corrigé": {
-        "path": "DS01.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°02",
-      "Enoncé": {
-        "path": "DS02.pdf"
-      },
-      "Corrigé": {
-        "path": "DS02.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°03",
-      "Enoncé": {
-        "path": "DS03.pdf"
-      },
-      "Corrigé": {
-        "path": "DS03.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°04",
-      "Enoncé": {
-        "path": "DS04.pdf"
-      },
-      "Corrigé": {
-        "path": "DS04.corrige.pdf"
-      }
-    }
-  ],
   "Formulaires": [
     {
       "title": "Comparaison de fonctions",
@@ -73,6 +35,56 @@
     {
       "title": "Trigonométrie inverse",
       "path": "FormulaireTrigoInverse.pdf"
+    }
+  ],
+  "DM": [
+    {
+      "title": "Devoir à la maison n°01",
+      "Enoncé": {
+        "path": "DM01.pdf"
+      },
+      "Corrigé": {
+        "path": "DM01.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°02",
+      "Enoncé": {
+        "path": "DM02.pdf"
+      },
+      "Corrigé": {
+        "path": "DM02.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°03",
+      "Enoncé": {
+        "path": "DM03.pdf"
+      },
+      "Corrigé": {
+        "path": "DM03.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°04",
+      "Enoncé": {
+        "path": "DM04.pdf"
+      },
+      "Corrigé": {
+        "path": "DM04.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°05",
+      "Enoncé": {
+        "path": "DM05.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°06",
+      "Enoncé": {
+        "path": "DM06.pdf"
+      }
     }
   ],
   "TD": [
@@ -119,6 +131,9 @@
       "title": "Groupes",
       "Enoncé": {
         "path": "TDGroupes.pdf"
+      },
+      "Corrigé": {
+        "path": "TDGroupes.corrige.pdf"
       }
     },
     {
@@ -188,6 +203,42 @@
       }
     }
   ],
+  "Colles": [
+    {
+      "title": "Semaine du 16/09",
+      "path": "ProgColles01.pdf"
+    },
+    {
+      "title": "Semaine du 23/09",
+      "path": "ProgColles02.pdf"
+    },
+    {
+      "title": "Semaine du 30/09",
+      "path": "ProgColles03.pdf"
+    },
+    {
+      "title": "Semaine du 07/09",
+      "path": "ProgColles04.pdf"
+    },
+    {
+      "title": "Semaine du 14/10",
+      "path": "ProgColles05.pdf"
+    }
+  ],
+  "Interros": [
+    {
+      "title": "Interrogation écrite n°01",
+      "path": "Interro01.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°02",
+      "path": "Interro02.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°03",
+      "path": "Interro03.pdf"
+    }
+  ],
   "Cours": [
     {
       "title": "Anneaux et arithmétique",
@@ -252,38 +303,6 @@
     {
       "title": "Topologie",
       "path": "Topologie.pdf"
-    }
-  ],
-  "Colles": [
-    {
-      "title": "Semaine du 16/09",
-      "path": "ProgColles01.pdf"
-    },
-    {
-      "title": "Semaine du 23/09",
-      "path": "ProgColles02.pdf"
-    },
-    {
-      "title": "Semaine du 30/09",
-      "path": "ProgColles03.pdf"
-    },
-    {
-      "title": "Semaine du 07/09",
-      "path": "ProgColles04.pdf"
-    }
-  ],
-  "VieClasse": [
-    {
-      "title": "Colloscope",
-      "path": "Colloscope_2024_2025.pdf"
-    },
-    {
-      "title": "Emploi du temps",
-      "path": "Emploi du temps annuel de MP - 2024-2025.pdf"
-    },
-    {
-      "title": "Planning des DS",
-      "path": "Planning DS MP 2024_2025.pdf"
     }
   ],
   "PremiereAnnee": {
@@ -674,68 +693,56 @@
       }
     ]
   },
-  "Interros": [
+  "DS": [
     {
-      "title": "Interrogation écrite n°01",
-      "path": "Interro01.pdf"
+      "title": "Devoir surveillé n°01",
+      "Enoncé": {
+        "path": "DS01.pdf"
+      },
+      "Corrigé": {
+        "path": "DS01.corrige.pdf"
+      }
     },
     {
-      "title": "Interrogation écrite n°02",
-      "path": "Interro02.pdf"
+      "title": "Devoir surveillé n°02",
+      "Enoncé": {
+        "path": "DS02.pdf"
+      },
+      "Corrigé": {
+        "path": "DS02.corrige.pdf"
+      }
     },
     {
-      "title": "Interrogation écrite n°03",
-      "path": "Interro03.pdf"
+      "title": "Devoir surveillé n°03",
+      "Enoncé": {
+        "path": "DS03.pdf"
+      },
+      "Corrigé": {
+        "path": "DS03.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°04",
+      "Enoncé": {
+        "path": "DS04.pdf"
+      },
+      "Corrigé": {
+        "path": "DS04.corrige.pdf"
+      }
     }
   ],
-  "DM": [
+  "VieClasse": [
     {
-      "title": "Devoir à la maison n°01",
-      "Enoncé": {
-        "path": "DM01.pdf"
-      },
-      "Corrigé": {
-        "path": "DM01.corrige.pdf"
-      }
+      "path": "Colloscope_2024_2025.pdf",
+      "title": "Colloscope"
     },
     {
-      "title": "Devoir à la maison n°02",
-      "Enoncé": {
-        "path": "DM02.pdf"
-      },
-      "Corrigé": {
-        "path": "DM02.corrige.pdf"
-      }
+      "path": "Emploi du temps annuel de MP - 2024-2025.pdf",
+      "title": "Emploi du temps"
     },
     {
-      "title": "Devoir à la maison n°03",
-      "Enoncé": {
-        "path": "DM03.pdf"
-      },
-      "Corrigé": {
-        "path": "DM03.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°04",
-      "Enoncé": {
-        "path": "DM04.pdf"
-      },
-      "Corrigé": {
-        "path": "DM04.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°05",
-      "Enoncé": {
-        "path": "DM05.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°06",
-      "Enoncé": {
-        "path": "DM06.pdf"
-      }
+      "path": "Planning DS MP 2024_2025.pdf",
+      "title": "Planning des DS"
     }
   ]
 }
