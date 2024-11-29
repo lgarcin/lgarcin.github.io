@@ -1,16 +1,44 @@
 {
-  "VieClasse": [
+  "Colles": [
     {
-      "path": "Colloscope_2024_2025.pdf",
-      "title": "Colloscope"
+      "title": "Semaine du 16/09",
+      "path": "ProgColles01.pdf"
     },
     {
-      "path": "Emploi du temps annuel de MP - 2024-2025.pdf",
-      "title": "Emploi du temps"
+      "title": "Semaine du 23/09",
+      "path": "ProgColles02.pdf"
     },
     {
-      "path": "Planning DS MP 2024_2025.pdf",
-      "title": "Planning des DS"
+      "title": "Semaine du 30/09",
+      "path": "ProgColles03.pdf"
+    },
+    {
+      "title": "Semaine du 07/09",
+      "path": "ProgColles04.pdf"
+    },
+    {
+      "title": "Semaine du 14/10",
+      "path": "ProgColles05.pdf"
+    },
+    {
+      "title": "Semaine du 04/11",
+      "path": "ProgColles06.pdf"
+    },
+    {
+      "title": "Semaine du 11/11",
+      "path": "ProgColles07.pdf"
+    },
+    {
+      "title": "Semaine du 18/11",
+      "path": "ProgColles08.pdf"
+    },
+    {
+      "title": "Semaine du 25/11",
+      "path": "ProgColles09.pdf"
+    },
+    {
+      "title": "Semaine du 02/12",
+      "path": "ProgColles10.pdf"
     }
   ],
   "DS": [
@@ -67,6 +95,20 @@
       "Corrigé": {
         "path": "DS06.corrige.pdf"
       }
+    }
+  ],
+  "VieClasse": [
+    {
+      "title": "Colloscope",
+      "path": "Colloscope_2024_2025.pdf"
+    },
+    {
+      "title": "Emploi du temps",
+      "path": "Emploi du temps annuel de MP - 2024-2025.pdf"
+    },
+    {
+      "title": "Planning des DS",
+      "path": "Planning DS MP 2024_2025.pdf"
     }
   ],
   "DM": [
@@ -146,12 +188,18 @@
       "title": "Devoir à la maison n°09",
       "Enoncé": {
         "path": "DM09.pdf"
+      },
+      "Corrigé": {
+        "path": "DM09.corrige.pdf"
       }
     },
     {
       "title": "Devoir à la maison n°10",
       "Enoncé": {
         "path": "DM10.pdf"
+      },
+      "Corrigé": {
+        "path": "DM10.corrige.pdf"
       }
     },
     {
@@ -165,94 +213,6 @@
       "Enoncé": {
         "path": "DM12.pdf"
       }
-    }
-  ],
-  "Cours": [
-    {
-      "title": "Anneaux et arithmétique",
-      "path": "Anneaux.pdf"
-    },
-    {
-      "title": "Calcul différentiel",
-      "path": "CalculDifferentiel.pdf"
-    },
-    {
-      "title": "Endomorphismes d'un espace euclidien",
-      "path": "EndomorphismesEspacesEuclidiens.pdf"
-    },
-    {
-      "title": "Equations différentielles linéaires",
-      "path": "EquationsDifferentiellesLineaires.pdf"
-    },
-    {
-      "title": "Espaces vectoriels normés",
-      "path": "EspacesVectorielsNormes.pdf"
-    },
-    {
-      "title": "Fonctions à valeurs vectorielles",
-      "path": "FonctionsVectorielles.pdf"
-    },
-    {
-      "title": "Groupes",
-      "path": "Groupes.pdf"
-    },
-    {
-      "title": "Intégrales impropres",
-      "path": "IntegralesImpropres.pdf"
-    },
-    {
-      "title": "Intégrales à paramètres",
-      "path": "IntegralesParametres.pdf"
-    },
-    {
-      "title": "Probabilités",
-      "path": "Probabilites.pdf"
-    },
-    {
-      "title": "Réduction algébrique",
-      "path": "ReductionAlgebrique.pdf"
-    },
-    {
-      "title": "Réduction géométrique",
-      "path": "ReductionGeometrique.pdf"
-    },
-    {
-      "title": "Séries entières",
-      "path": "SeriesEntieres.pdf"
-    },
-    {
-      "title": "Séries numériques",
-      "path": "SeriesNumeriques.pdf"
-    },
-    {
-      "title": "Suites et séries de fonctions",
-      "path": "SuitesSeriesFonctions.pdf"
-    },
-    {
-      "title": "Topologie",
-      "path": "Topologie.pdf"
-    }
-  ],
-  "Interros": [
-    {
-      "title": "Interrogation écrite n°01",
-      "path": "Interro01.pdf"
-    },
-    {
-      "title": "Interrogation écrite n°02",
-      "path": "Interro02.pdf"
-    },
-    {
-      "title": "Interrogation écrite n°03",
-      "path": "Interro03.pdf"
-    },
-    {
-      "title": "Interrogation écrite n°04",
-      "path": "Interro04.pdf"
-    },
-    {
-      "title": "Interrogation écrite n°05",
-      "path": "Interro05.pdf"
     }
   ],
   "TD": [
@@ -332,6 +292,9 @@
       "title": "Réduction algébrique",
       "Enoncé": {
         "path": "TDReductionAlgebrique.pdf"
+      },
+      "Corrigé": {
+        "path": "TDReductionAlgebrique.corrige.pdf"
       }
     },
     {
@@ -803,38 +766,92 @@
       }
     ]
   },
-  "Colles": [
+  "Interros": [
     {
-      "title": "Semaine du 16/09",
-      "path": "ProgColles01.pdf"
+      "title": "Interrogation écrite n°01",
+      "path": "Interro01.pdf"
     },
     {
-      "title": "Semaine du 23/09",
-      "path": "ProgColles02.pdf"
+      "title": "Interrogation écrite n°02",
+      "path": "Interro02.pdf"
     },
     {
-      "title": "Semaine du 30/09",
-      "path": "ProgColles03.pdf"
+      "title": "Interrogation écrite n°03",
+      "path": "Interro03.pdf"
     },
     {
-      "title": "Semaine du 07/09",
-      "path": "ProgColles04.pdf"
+      "title": "Interrogation écrite n°04",
+      "path": "Interro04.pdf"
     },
     {
-      "title": "Semaine du 14/10",
-      "path": "ProgColles05.pdf"
+      "title": "Interrogation écrite n°05",
+      "path": "Interro05.pdf"
+    }
+  ],
+  "Cours": [
+    {
+      "title": "Anneaux et arithmétique",
+      "path": "Anneaux.pdf"
     },
     {
-      "title": "Semaine du 04/11",
-      "path": "ProgColles06.pdf"
+      "title": "Calcul différentiel",
+      "path": "CalculDifferentiel.pdf"
     },
     {
-      "title": "Semaine du 11/11",
-      "path": "ProgColles07.pdf"
+      "title": "Endomorphismes d'un espace euclidien",
+      "path": "EndomorphismesEspacesEuclidiens.pdf"
     },
     {
-      "title": "Semaine du 18/11",
-      "path": "ProgColles08.pdf"
+      "title": "Equations différentielles linéaires",
+      "path": "EquationsDifferentiellesLineaires.pdf"
+    },
+    {
+      "title": "Espaces vectoriels normés",
+      "path": "EspacesVectorielsNormes.pdf"
+    },
+    {
+      "title": "Fonctions à valeurs vectorielles",
+      "path": "FonctionsVectorielles.pdf"
+    },
+    {
+      "title": "Groupes",
+      "path": "Groupes.pdf"
+    },
+    {
+      "title": "Intégrales impropres",
+      "path": "IntegralesImpropres.pdf"
+    },
+    {
+      "title": "Intégrales à paramètres",
+      "path": "IntegralesParametres.pdf"
+    },
+    {
+      "title": "Probabilités",
+      "path": "Probabilites.pdf"
+    },
+    {
+      "title": "Réduction algébrique",
+      "path": "ReductionAlgebrique.pdf"
+    },
+    {
+      "title": "Réduction géométrique",
+      "path": "ReductionGeometrique.pdf"
+    },
+    {
+      "title": "Séries entières",
+      "path": "SeriesEntieres.pdf"
+    },
+    {
+      "title": "Séries numériques",
+      "path": "SeriesNumeriques.pdf"
+    },
+    {
+      "title": "Suites et séries de fonctions",
+      "path": "SuitesSeriesFonctions.pdf"
+    },
+    {
+      "title": "Topologie",
+      "path": "Topologie.pdf"
     }
   ]
 }
