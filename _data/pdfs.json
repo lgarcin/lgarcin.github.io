@@ -890,12 +890,18 @@
       "title": "Devoir surveillé n°07",
       "Enoncé": {
         "path": "DS07.pdf"
+      },
+      "Corrigé": {
+        "path": "DS07.corrige.pdf"
       }
     },
     {
       "title": "Devoir surveillé n°08",
       "Enoncé": {
         "path": "DS08.pdf"
+      },
+      "Corrigé": {
+        "path": "DS08.corrige.pdf"
       }
     }
   ]
