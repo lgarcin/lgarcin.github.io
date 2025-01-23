@@ -155,6 +155,18 @@
       "Enoncé": {
         "path": "DM18.pdf"
       }
+    },
+    {
+      "title": "Devoir à la maison n°19",
+      "Enoncé": {
+        "path": "DM19.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°20",
+      "Enoncé": {
+        "path": "DM20.pdf"
+      }
     }
   ],
   "Cours": [
@@ -283,6 +295,10 @@
     {
       "title": "Semaine du 20/01",
       "path": "ProgColles15.pdf"
+    },
+    {
+      "title": "Semaine du 27/01",
+      "path": "ProgColles16.pdf"
     }
   ],
   "Interros": [
