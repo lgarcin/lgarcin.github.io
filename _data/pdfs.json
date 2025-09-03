@@ -170,7 +170,16 @@
       "path": "Topologie.pdf"
     }
   ],
-  "VieClasse": [],
+  "VieClasse": [
+    {
+      "title": "Emploi du temps",
+      "path": "Emploi du temps annuel de MP - 2025-2026.pdf"
+    },
+    {
+      "title": "Planning des DS",
+      "path": "Planning DS MP 2025_2026.pdf"
+    }
+  ],
   "PremiereAnnee": {
     "Cours": [
       {
@@ -560,7 +569,12 @@
     ]
   },
   "DS": [],
-  "Interros": [],
+  "Interros": [
+    {
+      "title": "Interrogation écrite n°01",
+      "path": "Interro01.pdf"
+    }
+  ],
   "Formulaires": [
     {
       "title": "Comparaison de fonctions",
