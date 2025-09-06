@@ -568,7 +568,17 @@
       }
     ]
   },
-  "DS": [],
+  "DS": [
+    {
+      "title": "Devoir surveillé n°01",
+      "Enoncé": {
+        "path": "DS01.pdf"
+      },
+      "Corrigé": {
+        "path": "DS01.corrige.pdf"
+      }
+    }
+  ],
   "Interros": [
     {
       "title": "Interrogation écrite n°01",
