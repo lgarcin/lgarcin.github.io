@@ -1,183 +1,71 @@
 {
-  "Colles": [],
-  "TD": [
+  "Interros": [
     {
-      "title": "Anneaux, arithmétique",
-      "Enoncé": {
-        "path": "TDAnneauxArithmetique.pdf"
-      }
-    },
+      "title": "Interrogation écrite n°01",
+      "path": "Interro01.pdf"
+    }
+  ],
+  "DS": [
     {
-      "title": "Calcul différentiel",
+      "title": "Devoir surveillé n°01",
       "Enoncé": {
-        "path": "TDCalculDifferentiel.pdf"
-      }
-    },
-    {
-      "title": "Endomorphismes d'un espace euclidien",
-      "Enoncé": {
-        "path": "TDEndomorphismesEspacesEuclidiens.pdf"
-      }
-    },
-    {
-      "title": "Equations différentielles",
-      "Enoncé": {
-        "path": "TDEquationsDifferentielles.pdf"
-      }
-    },
-    {
-      "title": "Espaces vectoriels normés",
-      "Enoncé": {
-        "path": "TDEspacesVectorielsNormes.pdf"
-      }
-    },
-    {
-      "title": "Fonctions vectorielles",
-      "Enoncé": {
-        "path": "TDFonctionsVectorielles.pdf"
-      }
-    },
-    {
-      "title": "Groupes",
-      "Enoncé": {
-        "path": "TDGroupes.pdf"
-      }
-    },
-    {
-      "title": "Intégrales impropres",
-      "Enoncé": {
-        "path": "TDIntegralesImpropres.pdf"
-      }
-    },
-    {
-      "title": "Intégrales à paramètres",
-      "Enoncé": {
-        "path": "TDIntegralesParametres.pdf"
-      }
-    },
-    {
-      "title": "Probabilites",
-      "Enoncé": {
-        "path": "TDProbabilites.pdf"
-      }
-    },
-    {
-      "title": "Réduction algébrique",
-      "Enoncé": {
-        "path": "TDReductionAlgebrique.pdf"
-      }
-    },
-    {
-      "title": "Réduction géométrique",
-      "Enoncé": {
-        "path": "TDReductionGeometrique.pdf"
-      }
-    },
-    {
-      "title": "Révisions Oraux",
-      "Enoncé": {
-        "path": "TDRevisionsOraux.pdf"
-      }
-    },
-    {
-      "title": "Séries entières",
-      "Enoncé": {
-        "path": "TDSeriesEntieres.pdf"
-      }
-    },
-    {
-      "title": "Séries et familles sommables",
-      "Enoncé": {
-        "path": "TDSeriesFamillesSommables.pdf"
-      }
-    },
-    {
-      "title": "Suites et séries de fonctions",
-      "Enoncé": {
-        "path": "TDSuitesSeriesFonctions.pdf"
-      }
-    },
-    {
-      "title": "Topologie",
-      "Enoncé": {
-        "path": "TDTopologie.pdf"
+        "path": "DS01.pdf"
+      },
+      "Corrigé": {
+        "path": "DS01.corrige.pdf"
       }
     }
   ],
-  "Cours": [
+  "DM": [
     {
-      "title": "Anneaux et arithmétique",
-      "path": "Anneaux.pdf"
+      "title": "Devoir à la maison n°01",
+      "Enoncé": {
+        "path": "DM01.pdf"
+      }
     },
     {
-      "title": "Calcul différentiel",
-      "path": "CalculDifferentiel.pdf"
+      "title": "Devoir à la maison n°02",
+      "Enoncé": {
+        "path": "DM02.pdf"
+      }
+    }
+  ],
+  "Formulaires": [
+    {
+      "title": "Comparaison de fonctions",
+      "path": "FormulaireComparaisonFonctions.pdf"
     },
     {
-      "title": "Endomorphismes d'un espace euclidien",
-      "path": "EndomorphismesEspacesEuclidiens.pdf"
+      "title": "Dérivation et intégration",
+      "path": "FormulaireDerivationIntegration.pdf"
     },
     {
-      "title": "Equations différentielles linéaires",
-      "path": "EquationsDifferentiellesLineaires.pdf"
+      "title": "Développements limités",
+      "path": "FormulaireDL.pdf"
     },
     {
-      "title": "Espaces vectoriels normés",
-      "path": "EspacesVectorielsNormes.pdf"
-    },
-    {
-      "title": "Fonctions à valeurs vectorielles",
-      "path": "FonctionsVectorielles.pdf"
-    },
-    {
-      "title": "Groupes",
-      "path": "Groupes.pdf"
-    },
-    {
-      "title": "Intégrales impropres",
-      "path": "IntegralesImpropres.pdf"
-    },
-    {
-      "title": "Intégrales à paramètres",
-      "path": "IntegralesParametres.pdf"
+      "title": "Inégalités",
+      "path": "FormulaireInegalites.pdf"
     },
     {
       "title": "Probabilités",
-      "path": "Probabilites.pdf"
+      "path": "FormulaireProbabilites.pdf"
     },
     {
-      "title": "Réduction algébrique",
-      "path": "ReductionAlgebrique.pdf"
+      "title": "Séries",
+      "path": "FormulaireSeries.pdf"
     },
     {
-      "title": "Réduction géométrique",
-      "path": "ReductionGeometrique.pdf"
+      "title": "Trigonométrie",
+      "path": "FormulaireTrigo.pdf"
     },
     {
-      "title": "Séries entières",
-      "path": "SeriesEntieres.pdf"
+      "title": "Trigonométrie hyperbolique",
+      "path": "FormulaireTrigoHyperbolique.pdf"
     },
     {
-      "title": "Séries numériques",
-      "path": "SeriesNumeriques.pdf"
-    },
-    {
-      "title": "Suites et séries de fonctions",
-      "path": "SuitesSeriesFonctions.pdf"
-    },
-    {
-      "title": "Topologie",
-      "path": "Topologie.pdf"
-    }
-  ],
-  "VieClasse": [
-    {
-      "title": "Emploi du temps",
-      "path": "Emploi du temps annuel de MP - 2025-2026.pdf"
-    },
-    {
-      "title": "Planning des DS",
-      "path": "Planning DS MP 2025_2026.pdf"
+      "title": "Trigonométrie inverse",
+      "path": "FormulaireTrigoInverse.pdf"
     }
   ],
   "PremiereAnnee": {
@@ -568,73 +456,185 @@
       }
     ]
   },
-  "DS": [
+  "TD": [
     {
-      "title": "Devoir surveillé n°01",
+      "title": "Anneaux, arithmétique",
       "Enoncé": {
-        "path": "DS01.pdf"
-      },
-      "Corrigé": {
-        "path": "DS01.corrige.pdf"
+        "path": "TDAnneauxArithmetique.pdf"
+      }
+    },
+    {
+      "title": "Calcul différentiel",
+      "Enoncé": {
+        "path": "TDCalculDifferentiel.pdf"
+      }
+    },
+    {
+      "title": "Endomorphismes d'un espace euclidien",
+      "Enoncé": {
+        "path": "TDEndomorphismesEspacesEuclidiens.pdf"
+      }
+    },
+    {
+      "title": "Equations différentielles",
+      "Enoncé": {
+        "path": "TDEquationsDifferentielles.pdf"
+      }
+    },
+    {
+      "title": "Espaces vectoriels normés",
+      "Enoncé": {
+        "path": "TDEspacesVectorielsNormes.pdf"
+      }
+    },
+    {
+      "title": "Fonctions vectorielles",
+      "Enoncé": {
+        "path": "TDFonctionsVectorielles.pdf"
+      }
+    },
+    {
+      "title": "Groupes",
+      "Enoncé": {
+        "path": "TDGroupes.pdf"
+      }
+    },
+    {
+      "title": "Intégrales impropres",
+      "Enoncé": {
+        "path": "TDIntegralesImpropres.pdf"
+      }
+    },
+    {
+      "title": "Intégrales à paramètres",
+      "Enoncé": {
+        "path": "TDIntegralesParametres.pdf"
+      }
+    },
+    {
+      "title": "Probabilites",
+      "Enoncé": {
+        "path": "TDProbabilites.pdf"
+      }
+    },
+    {
+      "title": "Réduction algébrique",
+      "Enoncé": {
+        "path": "TDReductionAlgebrique.pdf"
+      }
+    },
+    {
+      "title": "Réduction géométrique",
+      "Enoncé": {
+        "path": "TDReductionGeometrique.pdf"
+      }
+    },
+    {
+      "title": "Révisions Oraux",
+      "Enoncé": {
+        "path": "TDRevisionsOraux.pdf"
+      }
+    },
+    {
+      "title": "Séries entières",
+      "Enoncé": {
+        "path": "TDSeriesEntieres.pdf"
+      }
+    },
+    {
+      "title": "Séries et familles sommables",
+      "Enoncé": {
+        "path": "TDSeriesFamillesSommables.pdf"
+      }
+    },
+    {
+      "title": "Suites et séries de fonctions",
+      "Enoncé": {
+        "path": "TDSuitesSeriesFonctions.pdf"
+      }
+    },
+    {
+      "title": "Topologie",
+      "Enoncé": {
+        "path": "TDTopologie.pdf"
       }
     }
   ],
-  "Interros": [
+  "Colles": [],
+  "VieClasse": [
     {
-      "title": "Interrogation écrite n°01",
-      "path": "Interro01.pdf"
+      "title": "Emploi du temps",
+      "path": "Emploi du temps annuel de MP - 2025-2026.pdf"
+    },
+    {
+      "title": "Planning des DS",
+      "path": "Planning DS MP 2025_2026.pdf"
     }
   ],
-  "Formulaires": [
+  "Cours": [
     {
-      "title": "Comparaison de fonctions",
-      "path": "FormulaireComparaisonFonctions.pdf"
+      "title": "Anneaux et arithmétique",
+      "path": "Anneaux.pdf"
     },
     {
-      "title": "Dérivation et intégration",
-      "path": "FormulaireDerivationIntegration.pdf"
+      "title": "Calcul différentiel",
+      "path": "CalculDifferentiel.pdf"
     },
     {
-      "title": "Développements limités",
-      "path": "FormulaireDL.pdf"
+      "title": "Endomorphismes d'un espace euclidien",
+      "path": "EndomorphismesEspacesEuclidiens.pdf"
     },
     {
-      "title": "Inégalités",
-      "path": "FormulaireInegalites.pdf"
+      "title": "Equations différentielles linéaires",
+      "path": "EquationsDifferentiellesLineaires.pdf"
+    },
+    {
+      "title": "Espaces vectoriels normés",
+      "path": "EspacesVectorielsNormes.pdf"
+    },
+    {
+      "title": "Fonctions à valeurs vectorielles",
+      "path": "FonctionsVectorielles.pdf"
+    },
+    {
+      "title": "Groupes",
+      "path": "Groupes.pdf"
+    },
+    {
+      "title": "Intégrales impropres",
+      "path": "IntegralesImpropres.pdf"
+    },
+    {
+      "title": "Intégrales à paramètres",
+      "path": "IntegralesParametres.pdf"
     },
     {
       "title": "Probabilités",
-      "path": "FormulaireProbabilites.pdf"
+      "path": "Probabilites.pdf"
     },
     {
-      "title": "Séries",
-      "path": "FormulaireSeries.pdf"
+      "title": "Réduction algébrique",
+      "path": "ReductionAlgebrique.pdf"
     },
     {
-      "title": "Trigonométrie",
-      "path": "FormulaireTrigo.pdf"
+      "title": "Réduction géométrique",
+      "path": "ReductionGeometrique.pdf"
     },
     {
-      "title": "Trigonométrie hyperbolique",
-      "path": "FormulaireTrigoHyperbolique.pdf"
+      "title": "Séries entières",
+      "path": "SeriesEntieres.pdf"
     },
     {
-      "title": "Trigonométrie inverse",
-      "path": "FormulaireTrigoInverse.pdf"
-    }
-  ],
-  "DM": [
-    {
-      "title": "Devoir à la maison n°01",
-      "Enoncé": {
-        "path": "DM01.pdf"
-      }
+      "title": "Séries numériques",
+      "path": "SeriesNumeriques.pdf"
     },
     {
-      "title": "Devoir à la maison n°02",
-      "Enoncé": {
-        "path": "DM02.pdf"
-      }
+      "title": "Suites et séries de fonctions",
+      "path": "SuitesSeriesFonctions.pdf"
+    },
+    {
+      "title": "Topologie",
+      "path": "Topologie.pdf"
     }
   ]
 }
