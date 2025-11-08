@@ -113,6 +113,24 @@
       "Corrigé": {
         "path": "DS02.corrige.pdf"
       }
+    },
+    {
+      "title": "Devoir surveillé n°03",
+      "Enoncé": {
+        "path": "DS03.pdf"
+      },
+      "Corrigé": {
+        "path": "DS03.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°04",
+      "Enoncé": {
+        "path": "DS04.pdf"
+      },
+      "Corrigé": {
+        "path": "DS04.corrige.pdf"
+      }
     }
   ],
   "DM": [
@@ -284,6 +302,9 @@
       "title": "Réduction algébrique",
       "Enoncé": {
         "path": "TDReductionAlgebrique.pdf"
+      },
+      "Corrigé": {
+        "path": "TDReductionAlgebrique.corrige.pdf"
       }
     },
     {
