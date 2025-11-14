@@ -1,231 +1,54 @@
 {
-  "Colles": [
+  "VieClasse": [
     {
-      "title": "Semaine du 15/09",
-      "path": "ProgColles01.pdf"
+      "path": "Colloscope_2025_2026.pdf",
+      "title": "Colloscope"
     },
     {
-      "title": "Semaine du 22/09",
-      "path": "ProgColles02.pdf"
+      "path": "Emploi du temps annuel de MP - 2025-2026.pdf",
+      "title": "Emploi du temps"
     },
     {
-      "title": "Semaine du 29/09",
-      "path": "ProgColles03.pdf"
-    },
-    {
-      "title": "Semaine du 06/09",
-      "path": "ProgColles04.pdf"
-    },
-    {
-      "title": "Semaine du 13/10",
-      "path": "ProgColles05.pdf"
-    },
-    {
-      "title": "Semaine du 03/11",
-      "path": "ProgColles06.pdf"
-    },
-    {
-      "title": "Semaine du 10/11",
-      "path": "ProgColles07.pdf"
+      "path": "Planning DS MP 2025_2026.pdf",
+      "title": "Planning des DS"
     }
   ],
-  "Cours": [
+  "Formulaires": [
     {
-      "title": "Anneaux et arithmétique",
-      "path": "Anneaux.pdf"
+      "title": "Comparaison de fonctions",
+      "path": "FormulaireComparaisonFonctions.pdf"
     },
     {
-      "title": "Calcul différentiel",
-      "path": "CalculDifferentiel.pdf"
+      "title": "Dérivation et intégration",
+      "path": "FormulaireDerivationIntegration.pdf"
     },
     {
-      "title": "Endomorphismes d'un espace euclidien",
-      "path": "EndomorphismesEspacesEuclidiens.pdf"
+      "title": "Développements limités",
+      "path": "FormulaireDL.pdf"
     },
     {
-      "title": "Equations différentielles linéaires",
-      "path": "EquationsDifferentiellesLineaires.pdf"
-    },
-    {
-      "title": "Espaces vectoriels normés",
-      "path": "EspacesVectorielsNormes.pdf"
-    },
-    {
-      "title": "Fonctions à valeurs vectorielles",
-      "path": "FonctionsVectorielles.pdf"
-    },
-    {
-      "title": "Groupes",
-      "path": "Groupes.pdf"
-    },
-    {
-      "title": "Intégrales impropres",
-      "path": "IntegralesImpropres.pdf"
-    },
-    {
-      "title": "Intégrales à paramètres",
-      "path": "IntegralesParametres.pdf"
+      "title": "Inégalités",
+      "path": "FormulaireInegalites.pdf"
     },
     {
       "title": "Probabilités",
-      "path": "Probabilites.pdf"
+      "path": "FormulaireProbabilites.pdf"
     },
     {
-      "title": "Réduction algébrique",
-      "path": "ReductionAlgebrique.pdf"
+      "title": "Séries",
+      "path": "FormulaireSeries.pdf"
     },
     {
-      "title": "Réduction géométrique",
-      "path": "ReductionGeometrique.pdf"
+      "title": "Trigonométrie",
+      "path": "FormulaireTrigo.pdf"
     },
     {
-      "title": "Séries entières",
-      "path": "SeriesEntieres.pdf"
+      "title": "Trigonométrie hyperbolique",
+      "path": "FormulaireTrigoHyperbolique.pdf"
     },
     {
-      "title": "Séries numériques",
-      "path": "SeriesNumeriques.pdf"
-    },
-    {
-      "title": "Suites et séries de fonctions",
-      "path": "SuitesSeriesFonctions.pdf"
-    },
-    {
-      "title": "Topologie",
-      "path": "Topologie.pdf"
-    }
-  ],
-  "DS": [
-    {
-      "title": "Devoir surveillé n°01",
-      "Enoncé": {
-        "path": "DS01.pdf"
-      },
-      "Corrigé": {
-        "path": "DS01.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°02",
-      "Enoncé": {
-        "path": "DS02.pdf"
-      },
-      "Corrigé": {
-        "path": "DS02.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°03",
-      "Enoncé": {
-        "path": "DS03.pdf"
-      },
-      "Corrigé": {
-        "path": "DS03.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir surveillé n°04",
-      "Enoncé": {
-        "path": "DS04.pdf"
-      },
-      "Corrigé": {
-        "path": "DS04.corrige.pdf"
-      }
-    }
-  ],
-  "DM": [
-    {
-      "title": "Devoir à la maison n°01",
-      "Enoncé": {
-        "path": "DM01.pdf"
-      },
-      "Corrigé": {
-        "path": "DM01.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°02",
-      "Enoncé": {
-        "path": "DM02.pdf"
-      },
-      "Corrigé": {
-        "path": "DM02.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°03",
-      "Enoncé": {
-        "path": "DM03.pdf"
-      },
-      "Corrigé": {
-        "path": "DM03.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°04",
-      "Enoncé": {
-        "path": "DM04.pdf"
-      },
-      "Corrigé": {
-        "path": "DM04.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°05",
-      "Enoncé": {
-        "path": "DM05.pdf"
-      },
-      "Corrigé": {
-        "path": "DM05.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°06",
-      "Enoncé": {
-        "path": "DM06.pdf"
-      },
-      "Corrigé": {
-        "path": "DM06.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°07",
-      "Enoncé": {
-        "path": "DM07.pdf"
-      },
-      "Corrigé": {
-        "path": "DM07.corrige.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°08",
-      "Enoncé": {
-        "path": "DM08.pdf"
-      }
-    },
-    {
-      "title": "Devoir à la maison n°09",
-      "Enoncé": {
-        "path": "DM09.pdf"
-      }
-    }
-  ],
-  "Interros": [
-    {
-      "title": "Interrogation écrite n°01",
-      "path": "Interro01.pdf"
-    },
-    {
-      "title": "Interrogation écrite n°02",
-      "path": "Interro02.pdf"
-    },
-    {
-      "title": "Interrogation écrite n°03",
-      "path": "Interro03.pdf"
-    },
-    {
-      "title": "Interrogation écrite n°04",
-      "path": "Interro04.pdf"
+      "title": "Trigonométrie inverse",
+      "path": "FormulaireTrigoInverse.pdf"
     }
   ],
   "TD": [
@@ -347,6 +170,121 @@
       "title": "Topologie",
       "Enoncé": {
         "path": "TDTopologie.pdf"
+      }
+    }
+  ],
+  "DS": [
+    {
+      "title": "Devoir surveillé n°01",
+      "Enoncé": {
+        "path": "DS01.pdf"
+      },
+      "Corrigé": {
+        "path": "DS01.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°02",
+      "Enoncé": {
+        "path": "DS02.pdf"
+      },
+      "Corrigé": {
+        "path": "DS02.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°03",
+      "Enoncé": {
+        "path": "DS03.pdf"
+      },
+      "Corrigé": {
+        "path": "DS03.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°04",
+      "Enoncé": {
+        "path": "DS04.pdf"
+      },
+      "Corrigé": {
+        "path": "DS04.corrige.pdf"
+      }
+    }
+  ],
+  "DM": [
+    {
+      "title": "Devoir à la maison n°01",
+      "Enoncé": {
+        "path": "DM01.pdf"
+      },
+      "Corrigé": {
+        "path": "DM01.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°02",
+      "Enoncé": {
+        "path": "DM02.pdf"
+      },
+      "Corrigé": {
+        "path": "DM02.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°03",
+      "Enoncé": {
+        "path": "DM03.pdf"
+      },
+      "Corrigé": {
+        "path": "DM03.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°04",
+      "Enoncé": {
+        "path": "DM04.pdf"
+      },
+      "Corrigé": {
+        "path": "DM04.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°05",
+      "Enoncé": {
+        "path": "DM05.pdf"
+      },
+      "Corrigé": {
+        "path": "DM05.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°06",
+      "Enoncé": {
+        "path": "DM06.pdf"
+      },
+      "Corrigé": {
+        "path": "DM06.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°07",
+      "Enoncé": {
+        "path": "DM07.pdf"
+      },
+      "Corrigé": {
+        "path": "DM07.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°08",
+      "Enoncé": {
+        "path": "DM08.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°09",
+      "Enoncé": {
+        "path": "DM09.pdf"
       }
     }
   ],
@@ -738,56 +676,126 @@
       }
     ]
   },
-  "VieClasse": [
+  "Colles": [
     {
-      "path": "Colloscope_2025_2026.pdf",
-      "title": "Colloscope"
+      "title": "Semaine du 15/09",
+      "path": "ProgColles01.pdf"
     },
     {
-      "path": "Emploi du temps annuel de MP - 2025-2026.pdf",
-      "title": "Emploi du temps"
+      "title": "Semaine du 22/09",
+      "path": "ProgColles02.pdf"
     },
     {
-      "path": "Planning DS MP 2025_2026.pdf",
-      "title": "Planning des DS"
+      "title": "Semaine du 29/09",
+      "path": "ProgColles03.pdf"
+    },
+    {
+      "title": "Semaine du 06/09",
+      "path": "ProgColles04.pdf"
+    },
+    {
+      "title": "Semaine du 13/10",
+      "path": "ProgColles05.pdf"
+    },
+    {
+      "title": "Semaine du 03/11",
+      "path": "ProgColles06.pdf"
+    },
+    {
+      "title": "Semaine du 10/11",
+      "path": "ProgColles07.pdf"
+    },
+    {
+      "title": "Semaine du 17/11",
+      "path": "ProgColles08.pdf"
     }
   ],
-  "Formulaires": [
+  "Cours": [
     {
-      "title": "Comparaison de fonctions",
-      "path": "FormulaireComparaisonFonctions.pdf"
+      "title": "Anneaux et arithmétique",
+      "path": "Anneaux.pdf"
     },
     {
-      "title": "Dérivation et intégration",
-      "path": "FormulaireDerivationIntegration.pdf"
+      "title": "Calcul différentiel",
+      "path": "CalculDifferentiel.pdf"
     },
     {
-      "title": "Développements limités",
-      "path": "FormulaireDL.pdf"
+      "title": "Endomorphismes d'un espace euclidien",
+      "path": "EndomorphismesEspacesEuclidiens.pdf"
     },
     {
-      "title": "Inégalités",
-      "path": "FormulaireInegalites.pdf"
+      "title": "Equations différentielles linéaires",
+      "path": "EquationsDifferentiellesLineaires.pdf"
+    },
+    {
+      "title": "Espaces vectoriels normés",
+      "path": "EspacesVectorielsNormes.pdf"
+    },
+    {
+      "title": "Fonctions à valeurs vectorielles",
+      "path": "FonctionsVectorielles.pdf"
+    },
+    {
+      "title": "Groupes",
+      "path": "Groupes.pdf"
+    },
+    {
+      "title": "Intégrales impropres",
+      "path": "IntegralesImpropres.pdf"
+    },
+    {
+      "title": "Intégrales à paramètres",
+      "path": "IntegralesParametres.pdf"
     },
     {
       "title": "Probabilités",
-      "path": "FormulaireProbabilites.pdf"
+      "path": "Probabilites.pdf"
     },
     {
-      "title": "Séries",
-      "path": "FormulaireSeries.pdf"
+      "title": "Réduction algébrique",
+      "path": "ReductionAlgebrique.pdf"
     },
     {
-      "title": "Trigonométrie",
-      "path": "FormulaireTrigo.pdf"
+      "title": "Réduction géométrique",
+      "path": "ReductionGeometrique.pdf"
     },
     {
-      "title": "Trigonométrie hyperbolique",
-      "path": "FormulaireTrigoHyperbolique.pdf"
+      "title": "Séries entières",
+      "path": "SeriesEntieres.pdf"
     },
     {
-      "title": "Trigonométrie inverse",
-      "path": "FormulaireTrigoInverse.pdf"
+      "title": "Séries numériques",
+      "path": "SeriesNumeriques.pdf"
+    },
+    {
+      "title": "Suites et séries de fonctions",
+      "path": "SuitesSeriesFonctions.pdf"
+    },
+    {
+      "title": "Topologie",
+      "path": "Topologie.pdf"
+    }
+  ],
+  "Interros": [
+    {
+      "title": "Interrogation écrite n°01",
+      "path": "Interro01.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°02",
+      "path": "Interro02.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°03",
+      "path": "Interro03.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°04",
+      "path": "Interro04.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°05",
+      "path": "Interro05.pdf"
     }
   ]
 }
