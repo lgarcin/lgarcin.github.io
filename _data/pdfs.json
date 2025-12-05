@@ -519,6 +519,10 @@
     {
       "title": "Semaine du 01/12",
       "path": "ProgColles10.pdf"
+    },
+    {
+      "title": "Semaine du 08/12",
+      "path": "ProgColles11.pdf"
     }
   ],
   "Formulaires": [
@@ -645,12 +649,30 @@
       "title": "Devoir à la maison n°10",
       "Enoncé": {
         "path": "DM10.pdf"
+      },
+      "Corrigé": {
+        "path": "DM10.corrige.pdf"
       }
     },
     {
       "title": "Devoir à la maison n°11",
       "Enoncé": {
         "path": "DM11.pdf"
+      },
+      "Corrigé": {
+        "path": "DM11.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°12",
+      "Enoncé": {
+        "path": "DM12.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°13",
+      "Enoncé": {
+        "path": "DM13.pdf"
       }
     }
   ],
