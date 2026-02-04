@@ -31,17 +31,17 @@ full-width: true
 <hr>
 
 <section id="td premiere annee">
-    {% if site.data.pdfs.PremiereAnnee.TD %}
+    {% if site.data.pdfs.TD1A %}
     <h3>TD première année</h3>
     <div class="grid">
-        {% for td in site.data.pdfs.PremiereAnnee.TD %}
+        {% for td in site.data.pdfs.TD1A %}
         <div class="enoncecorrige">
             <h6>{{td.title}}</h6>
             <div>
                 {% assign s = td | sort %}
                 {% for sub in s reversed %}
                 {% if sub[1].path %}
-                <a href="{{'/pdfs/PremiereAnnee/TD/' | append: sub[1].path}}">
+                <a href="{{'/pdfs/TD1A/' | append: sub[1].path}}">
                     <i class="fa-regular fa-file-pdf"></i>
                     <span>{{sub[0]}}</span>
                 </a>

@@ -1,114 +1,136 @@
 {
-  "DS": [
+  "TD": [
     {
-      "title": "Devoir surveillé n°01",
+      "title": "Anneaux, arithmétique",
       "Enoncé": {
-        "path": "DS01.pdf"
+        "path": "TDAnneauxArithmetique.pdf"
       },
       "Corrigé": {
-        "path": "DS01.corrige.pdf"
+        "path": "TDAnneauxArithmetique.corrige.pdf"
       }
     },
     {
-      "title": "Devoir surveillé n°02",
+      "title": "Calcul différentiel",
       "Enoncé": {
-        "path": "DS02.pdf"
-      },
-      "Corrigé": {
-        "path": "DS02.corrige.pdf"
+        "path": "TDCalculDifferentiel.pdf"
       }
     },
     {
-      "title": "Devoir surveillé n°03",
+      "title": "Endomorphismes d'un espace euclidien",
       "Enoncé": {
-        "path": "DS03.pdf"
+        "path": "TDEndomorphismesEspacesEuclidiens.pdf"
       },
       "Corrigé": {
-        "path": "DS03.corrige.pdf"
+        "path": "TDEndomorphismesEspacesEuclidiens.corrige.pdf"
       }
     },
     {
-      "title": "Devoir surveillé n°04",
+      "title": "Equations différentielles",
       "Enoncé": {
-        "path": "DS04.pdf"
-      },
-      "Corrigé": {
-        "path": "DS04.corrige.pdf"
+        "path": "TDEquationsDifferentielles.pdf"
       }
     },
     {
-      "title": "Devoir surveillé n°05",
+      "title": "Espaces vectoriels normés",
       "Enoncé": {
-        "path": "DS05.pdf"
+        "path": "TDEspacesVectorielsNormes.pdf"
       },
       "Corrigé": {
-        "path": "DS05.corrige.pdf"
+        "path": "TDEspacesVectorielsNormes.corrige.pdf"
       }
     },
     {
-      "title": "Devoir surveillé n°06",
+      "title": "Fonctions vectorielles",
       "Enoncé": {
-        "path": "DS06.pdf"
-      },
-      "Corrigé": {
-        "path": "DS06.corrige.pdf"
+        "path": "TDFonctionsVectorielles.pdf"
       }
     },
     {
-      "title": "Devoir surveillé n°07",
+      "title": "Groupes",
       "Enoncé": {
-        "path": "DS07.pdf"
+        "path": "TDGroupes.pdf"
       },
       "Corrigé": {
-        "path": "DS07.corrige.pdf"
+        "path": "TDGroupes.corrige.pdf"
       }
     },
     {
-      "title": "Devoir surveillé n°08",
+      "title": "Intégrales impropres",
       "Enoncé": {
-        "path": "DS08.pdf"
+        "path": "TDIntegralesImpropres.pdf"
       },
       "Corrigé": {
-        "path": "DS08.corrige.pdf"
+        "path": "TDIntegralesImpropres.corrige.pdf"
       }
-    }
-  ],
-  "Formulaires": [
-    {
-      "title": "Comparaison de fonctions",
-      "path": "FormulaireComparaisonFonctions.pdf"
     },
     {
-      "title": "Dérivation et intégration",
-      "path": "FormulaireDerivationIntegration.pdf"
+      "title": "Intégrales à paramètres",
+      "Enoncé": {
+        "path": "TDIntegralesParametres.pdf"
+      }
     },
     {
-      "title": "Développements limités",
-      "path": "FormulaireDL.pdf"
+      "title": "Probabilites",
+      "Enoncé": {
+        "path": "TDProbabilites.pdf"
+      }
     },
     {
-      "title": "Inégalités",
-      "path": "FormulaireInegalites.pdf"
+      "title": "Réduction algébrique",
+      "Enoncé": {
+        "path": "TDReductionAlgebrique.pdf"
+      },
+      "Corrigé": {
+        "path": "TDReductionAlgebrique.corrige.pdf"
+      }
     },
     {
-      "title": "Probabilités",
-      "path": "FormulaireProbabilites.pdf"
+      "title": "Réduction géométrique",
+      "Enoncé": {
+        "path": "TDReductionGeometrique.pdf"
+      },
+      "Corrigé": {
+        "path": "TDReductionGeometrique.corrige.pdf"
+      }
     },
     {
-      "title": "Séries",
-      "path": "FormulaireSeries.pdf"
+      "title": "Révisions Oraux",
+      "Enoncé": {
+        "path": "TDRevisionsOraux.pdf"
+      }
     },
     {
-      "title": "Trigonométrie",
-      "path": "FormulaireTrigo.pdf"
+      "title": "Séries entières",
+      "Enoncé": {
+        "path": "TDSeriesEntieres.pdf"
+      }
     },
     {
-      "title": "Trigonométrie hyperbolique",
-      "path": "FormulaireTrigoHyperbolique.pdf"
+      "title": "Séries et familles sommables",
+      "Enoncé": {
+        "path": "TDSeriesFamillesSommables.pdf"
+      },
+      "Corrigé": {
+        "path": "TDSeriesFamillesSommables.corrige.pdf"
+      }
     },
     {
-      "title": "Trigonométrie inverse",
-      "path": "FormulaireTrigoInverse.pdf"
+      "title": "Suites et séries de fonctions",
+      "Enoncé": {
+        "path": "TDSuitesSeriesFonctions.pdf"
+      },
+      "Corrigé": {
+        "path": "TDSuitesSeriesFonctions.corrige.pdf"
+      }
+    },
+    {
+      "title": "Topologie",
+      "Enoncé": {
+        "path": "TDTopologie.pdf"
+      },
+      "Corrigé": {
+        "path": "TDTopologie.corrige.pdf"
+      }
     }
   ],
   "DM": [
@@ -267,6 +289,18 @@
       "Enoncé": {
         "path": "DM18.pdf"
       }
+    },
+    {
+      "title": "Devoir à la maison n°19",
+      "Enoncé": {
+        "path": "DM19.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°20",
+      "Enoncé": {
+        "path": "DM20.pdf"
+      }
     }
   ],
   "Cours": [
@@ -335,138 +369,312 @@
       "path": "Topologie.pdf"
     }
   ],
-  "TD": [
+  "TD1A": [
     {
-      "title": "Anneaux, arithmétique",
+      "title": "Fonctions de deux variables",
       "Enoncé": {
-        "path": "TDAnneauxArithmetique.pdf"
-      },
-      "Corrigé": {
-        "path": "TDAnneauxArithmetique.corrige.pdf"
+        "path": "FonctionsDeuxVariables.pdf"
       }
     },
     {
-      "title": "Calcul différentiel",
+      "title": "Applications, fonctions d'une variable réelle",
       "Enoncé": {
-        "path": "TDCalculDifferentiel.pdf"
+        "path": "TDApplications.pdf"
       }
     },
     {
-      "title": "Endomorphismes d'un espace euclidien",
+      "title": "Applications linéaires",
       "Enoncé": {
-        "path": "TDEndomorphismesEspacesEuclidiens.pdf"
-      },
-      "Corrigé": {
-        "path": "TDEndomorphismesEspacesEuclidiens.corrige.pdf"
+        "path": "TDApplicationsLineaires.pdf"
       }
     },
     {
-      "title": "Equations différentielles",
+      "title": "Arithmétique",
       "Enoncé": {
-        "path": "TDEquationsDifferentielles.pdf"
+        "path": "TDArithmetique.pdf"
       }
     },
     {
-      "title": "Espaces vectoriels normés",
+      "title": "Comparaison de fonctions",
       "Enoncé": {
-        "path": "TDEspacesVectorielsNormes.pdf"
-      },
-      "Corrigé": {
-        "path": "TDEspacesVectorielsNormes.corrige.pdf"
+        "path": "TDComparaisonFonctions.pdf"
       }
     },
     {
-      "title": "Fonctions vectorielles",
+      "title": "Nombres complexes",
       "Enoncé": {
-        "path": "TDFonctionsVectorielles.pdf"
+        "path": "TDComplexes.pdf"
       }
     },
     {
-      "title": "Groupes",
+      "title": "Dénombrement, probabilités",
       "Enoncé": {
-        "path": "TDGroupes.pdf"
-      },
-      "Corrigé": {
-        "path": "TDGroupes.corrige.pdf"
+        "path": "TDDenombrementProbabilites.pdf"
       }
     },
     {
-      "title": "Intégrales impropres",
+      "title": "Dérivabilité",
       "Enoncé": {
-        "path": "TDIntegralesImpropres.pdf"
-      },
-      "Corrigé": {
-        "path": "TDIntegralesImpropres.corrige.pdf"
+        "path": "TDDerivabilite.pdf"
       }
     },
     {
-      "title": "Intégrales à paramètres",
+      "title": "Déterminants",
       "Enoncé": {
-        "path": "TDIntegralesParametres.pdf"
+        "path": "TDDeterminants.pdf"
       }
     },
     {
-      "title": "Probabilites",
+      "title": "Espaces vectoriels de dimension finie",
       "Enoncé": {
-        "path": "TDProbabilites.pdf"
+        "path": "TDDimensionFinie.pdf"
       }
     },
     {
-      "title": "Réduction algébrique",
+      "title": "Équations différentielles",
       "Enoncé": {
-        "path": "TDReductionAlgebrique.pdf"
-      },
-      "Corrigé": {
-        "path": "TDReductionAlgebrique.corrige.pdf"
+        "path": "TDEquaDiff.pdf"
       }
     },
     {
-      "title": "Réduction géométrique",
+      "title": "Espaces préhilbertiens réels",
       "Enoncé": {
-        "path": "TDReductionGeometrique.pdf"
-      },
-      "Corrigé": {
-        "path": "TDReductionGeometrique.corrige.pdf"
+        "path": "TDEspacesPrehilbertiensReels.pdf"
       }
     },
     {
-      "title": "Révisions Oraux",
+      "title": "Espaces vectoriels",
       "Enoncé": {
-        "path": "TDRevisionsOraux.pdf"
+        "path": "TDEspacesVectoriels.pdf"
       }
     },
     {
-      "title": "Séries entières",
+      "title": "Fonctions usuelles",
       "Enoncé": {
-        "path": "TDSeriesEntieres.pdf"
+        "path": "TDFonctionsUsuelles.pdf"
       }
     },
     {
-      "title": "Séries et familles sommables",
+      "title": "Fractions rationnelles, sous-espaces affines",
+      "Enoncé": {
+        "path": "TDFractionsRationnellesSousEspacesAffines.pdf"
+      }
+    },
+    {
+      "title": "Groupes, anneaux, corps",
+      "Enoncé": {
+        "path": "TDGroupesAnneauxCorps.pdf"
+      }
+    },
+    {
+      "title": "Primitives et intégrales",
+      "Enoncé": {
+        "path": "TDIntegralesPrimitives.pdf"
+      }
+    },
+    {
+      "title": "Intégration",
+      "Enoncé": {
+        "path": "TDIntegration.pdf"
+      }
+    },
+    {
+      "title": "Limite et continuité de fonctions",
+      "Enoncé": {
+        "path": "TDLimiteContinuite.pdf"
+      }
+    },
+    {
+      "title": "Matrices",
+      "Enoncé": {
+        "path": "TDMatrices.pdf"
+      }
+    },
+    {
+      "title": "Polynômes",
+      "Enoncé": {
+        "path": "TDPolynomes.pdf"
+      }
+    },
+    {
+      "title": "Raisonnements et ensembles",
+      "Enoncé": {
+        "path": "TDRaisonnements.pdf"
+      }
+    },
+    {
+      "title": "Nombres réels, relations binaires",
+      "Enoncé": {
+        "path": "TDReels.pdf"
+      }
+    },
+    {
+      "title": "Séries",
       "Enoncé": {
         "path": "TDSeriesFamillesSommables.pdf"
-      },
-      "Corrigé": {
-        "path": "TDSeriesFamillesSommables.corrige.pdf"
       }
     },
     {
-      "title": "Suites et séries de fonctions",
+      "title": "Sommes, produits, systèmes, trigonométrie",
       "Enoncé": {
-        "path": "TDSuitesSeriesFonctions.pdf"
-      },
-      "Corrigé": {
-        "path": "TDSuitesSeriesFonctions.corrige.pdf"
+        "path": "TDSommesProduits.pdf"
       }
     },
     {
-      "title": "Topologie",
+      "title": "Suites numériques",
       "Enoncé": {
-        "path": "TDTopologie.pdf"
-      },
-      "Corrigé": {
-        "path": "TDTopologie.corrige.pdf"
+        "path": "TDSuites.pdf"
       }
+    }
+  ],
+  "Cours1A": [
+    {
+      "title": "Ensembles et applications",
+      "path": "Applications.pdf"
+    },
+    {
+      "title": "Applications linéaires",
+      "path": "ApplicationsLineaires.pdf"
+    },
+    {
+      "title": "Arithmétique des entiers relatifs",
+      "path": "Arithmetique.pdf"
+    },
+    {
+      "title": "Comparaison de fonctions",
+      "path": "ComparaisonFonctions.pdf"
+    },
+    {
+      "title": "Nombres complexes",
+      "path": "Complexes.pdf"
+    },
+    {
+      "title": "Convexité",
+      "path": "Convexite.pdf"
+    },
+    {
+      "title": "Dénombrement",
+      "path": "Denombrement.pdf"
+    },
+    {
+      "title": "Dérivabilité",
+      "path": "Derivabilite.pdf"
+    },
+    {
+      "title": "Déterminants",
+      "path": "Determinants.pdf"
+    },
+    {
+      "title": "Développements limités",
+      "path": "DeveloppementsLimites.pdf"
+    },
+    {
+      "title": "Espaces vectoriels\\\\de dimension finie",
+      "path": "DimensionFinie.pdf"
+    },
+    {
+      "title": "Égalités et inégalités",
+      "path": "EgalitesInegalites.pdf"
+    },
+    {
+      "title": "Ensembles",
+      "path": "Ensembles.pdf"
+    },
+    {
+      "title": "Équations différentielles",
+      "path": "EquationsDifferentielles.pdf"
+    },
+    {
+      "title": "Espaces préhilbertiens réels",
+      "path": "EspacesPrehilbertiensReels.pdf"
+    },
+    {
+      "title": "Espaces vectoriels",
+      "path": "EspacesVectoriels.pdf"
+    },
+    {
+      "title": "Familles sommables",
+      "path": "FamillesSommables.pdf"
+    },
+    {
+      "title": "Fonctions d'une variable réelle",
+      "path": "Fonctions.pdf"
+    },
+    {
+      "title": "Fonctions de deux variables",
+      "path": "FonctionsDeuxVariables.pdf"
+    },
+    {
+      "title": "Fonctions usuelles",
+      "path": "FonctionsUsuelles.pdf"
+    },
+    {
+      "title": "Fractions rationnelles",
+      "path": "FractionsRationnelles.pdf"
+    },
+    {
+      "title": "Géométrie affine",
+      "path": "GeometrieAffine.pdf"
+    },
+    {
+      "title": "Groupes, anneaux, corps",
+      "path": "GroupesAnneauxCorps.pdf"
+    },
+    {
+      "title": "Primitives et intégrales",
+      "path": "IntegralesPrimitives.pdf"
+    },
+    {
+      "title": "Intégration",
+      "path": "Integration.pdf"
+    },
+    {
+      "title": "Limite et continuité de fonctions",
+      "path": "LimiteContinuite.pdf"
+    },
+    {
+      "title": "Matrices",
+      "path": "Matrices.pdf"
+    },
+    {
+      "title": "Polynômes",
+      "path": "Polynomes.pdf"
+    },
+    {
+      "title": "Probabilités sur un univers fini",
+      "path": "Probabilites.pdf"
+    },
+    {
+      "title": "Raisonnements",
+      "path": "Raisonnements.pdf"
+    },
+    {
+      "title": "Nombres réels",
+      "path": "Reels.pdf"
+    },
+    {
+      "title": "Relations binaires",
+      "path": "RelationsBinaires.pdf"
+    },
+    {
+      "title": "Séries numériques",
+      "path": "Series.pdf"
+    },
+    {
+      "title": "Sommes et produits",
+      "path": "SommesProduits.pdf"
+    },
+    {
+      "title": "Suites numériques",
+      "path": "Suites.pdf"
+    },
+    {
+      "title": "Systèmes linéaires",
+      "path": "SystemesLineaires.pdf"
+    },
+    {
+      "title": "Trigonométrie",
+      "path": "Trigonometrie.pdf"
     }
   ],
   "Interros": [
@@ -505,6 +713,10 @@
     {
       "title": "Interrogation écrite n°09",
       "path": "Interro09.pdf"
+    },
+    {
+      "title": "Interrogation écrite n°10",
+      "path": "Interro10.pdf"
     }
   ],
   "VieClasse": [
@@ -521,394 +733,6 @@
       "path": "Planning DS MP 2025_2026.pdf"
     }
   ],
-  "PremiereAnnee": {
-    "TD": [
-      {
-        "title": "Fonctions de deux variables",
-        "Enoncé": {
-          "path": "FonctionsDeuxVariables.pdf"
-        },
-        "Corrigé": {
-          "path": "FonctionsDeuxVariables.corrige.pdf"
-        }
-      },
-      {
-        "title": "Applications, fonctions d'une variable réelle",
-        "Enoncé": {
-          "path": "TDApplications.pdf"
-        },
-        "Corrigé": {
-          "path": "TDApplications.corrige.pdf"
-        }
-      },
-      {
-        "title": "Applications linéaires",
-        "Enoncé": {
-          "path": "TDApplicationsLineaires.pdf"
-        },
-        "Corrigé": {
-          "path": "TDApplicationsLineaires.corrige.pdf"
-        }
-      },
-      {
-        "title": "Arithmétique",
-        "Enoncé": {
-          "path": "TDArithmetique.pdf"
-        },
-        "Corrigé": {
-          "path": "TDArithmetique.corrige.pdf"
-        }
-      },
-      {
-        "title": "Comparaison de fonctions",
-        "Enoncé": {
-          "path": "TDComparaisonFonctions.pdf"
-        },
-        "Corrigé": {
-          "path": "TDComparaisonFonctions.corrige.pdf"
-        }
-      },
-      {
-        "title": "Nombres complexes",
-        "Enoncé": {
-          "path": "TDComplexes.pdf"
-        },
-        "Corrigé": {
-          "path": "TDComplexes.corrige.pdf"
-        }
-      },
-      {
-        "title": "Dénombrement, probabilités",
-        "Enoncé": {
-          "path": "TDDenombrementProbabilites.pdf"
-        },
-        "Corrigé": {
-          "path": "TDDenombrementProbabilites.corrige.pdf"
-        }
-      },
-      {
-        "title": "Dérivabilité",
-        "Enoncé": {
-          "path": "TDDerivabilite.pdf"
-        },
-        "Corrigé": {
-          "path": "TDDerivabilite.corrige.pdf"
-        }
-      },
-      {
-        "title": "Déterminants",
-        "Enoncé": {
-          "path": "TDDeterminants.pdf"
-        },
-        "Corrigé": {
-          "path": "TDDeterminants.corrige.pdf"
-        }
-      },
-      {
-        "title": "Espaces vectoriels de dimension finie",
-        "Enoncé": {
-          "path": "TDDimensionFinie.pdf"
-        },
-        "Corrigé": {
-          "path": "TDDimensionFinie.corrige.pdf"
-        }
-      },
-      {
-        "title": "Équations différentielles",
-        "Enoncé": {
-          "path": "TDEquaDiff.pdf"
-        },
-        "Corrigé": {
-          "path": "TDEquaDiff.corrige.pdf"
-        }
-      },
-      {
-        "title": "Espaces préhilbertiens réels",
-        "Enoncé": {
-          "path": "TDEspacesPrehilbertiensReels.pdf"
-        },
-        "Corrigé": {
-          "path": "TDEspacesPrehilbertiensReels.corrige.pdf"
-        }
-      },
-      {
-        "title": "Espaces vectoriels",
-        "Enoncé": {
-          "path": "TDEspacesVectoriels.pdf"
-        },
-        "Corrigé": {
-          "path": "TDEspacesVectoriels.corrige.pdf"
-        }
-      },
-      {
-        "title": "Fonctions usuelles",
-        "Enoncé": {
-          "path": "TDFonctionsUsuelles.pdf"
-        },
-        "Corrigé": {
-          "path": "TDFonctionsUsuelles.corrige.pdf"
-        }
-      },
-      {
-        "title": "Fractions rationnelles, sous-espaces affines",
-        "Enoncé": {
-          "path": "TDFractionsRationnellesSousEspacesAffines.pdf"
-        },
-        "Corrigé": {
-          "path": "TDFractionsRationnellesSousEspacesAffines.corrige.pdf"
-        }
-      },
-      {
-        "title": "Groupes, anneaux, corps",
-        "Enoncé": {
-          "path": "TDGroupesAnneauxCorps.pdf"
-        },
-        "Corrigé": {
-          "path": "TDGroupesAnneauxCorps.corrige.pdf"
-        }
-      },
-      {
-        "title": "Primitives et intégrales",
-        "Enoncé": {
-          "path": "TDIntegralesPrimitives.pdf"
-        },
-        "Corrigé": {
-          "path": "TDIntegralesPrimitives.corrige.pdf"
-        }
-      },
-      {
-        "title": "Intégration",
-        "Enoncé": {
-          "path": "TDIntegration.pdf"
-        },
-        "Corrigé": {
-          "path": "TDIntegration.corrige.pdf"
-        }
-      },
-      {
-        "title": "Limite et continuité de fonctions",
-        "Enoncé": {
-          "path": "TDLimiteContinuite.pdf"
-        },
-        "Corrigé": {
-          "path": "TDLimiteContinuite.corrige.pdf"
-        }
-      },
-      {
-        "title": "Matrices",
-        "Enoncé": {
-          "path": "TDMatrices.pdf"
-        },
-        "Corrigé": {
-          "path": "TDMatrices.corrige.pdf"
-        }
-      },
-      {
-        "title": "Polynômes",
-        "Enoncé": {
-          "path": "TDPolynomes.pdf"
-        },
-        "Corrigé": {
-          "path": "TDPolynomes.corrige.pdf"
-        }
-      },
-      {
-        "title": "Raisonnements et ensembles",
-        "Enoncé": {
-          "path": "TDRaisonnements.pdf"
-        },
-        "Corrigé": {
-          "path": "TDRaisonnements.corrige.pdf"
-        }
-      },
-      {
-        "title": "Nombres réels, relations binaires",
-        "Enoncé": {
-          "path": "TDReels.pdf"
-        },
-        "Corrigé": {
-          "path": "TDReels.corrige.pdf"
-        }
-      },
-      {
-        "title": "Séries",
-        "Enoncé": {
-          "path": "TDSeriesFamillesSommables.pdf"
-        },
-        "Corrigé": {
-          "path": "TDSeriesFamillesSommables.corrige.pdf"
-        }
-      },
-      {
-        "title": "Sommes, produits, systèmes, trigonométrie",
-        "Enoncé": {
-          "path": "TDSommesProduits.pdf"
-        },
-        "Corrigé": {
-          "path": "TDSommesProduits.corrige.pdf"
-        }
-      },
-      {
-        "title": "Suites numériques",
-        "Enoncé": {
-          "path": "TDSuites.pdf"
-        },
-        "Corrigé": {
-          "path": "TDSuites.corrige.pdf"
-        }
-      }
-    ],
-    "Cours": [
-      {
-        "title": "Ensembles et applications",
-        "path": "Applications.pdf"
-      },
-      {
-        "title": "Applications linéaires",
-        "path": "ApplicationsLineaires.pdf"
-      },
-      {
-        "title": "Arithmétique des entiers relatifs",
-        "path": "Arithmetique.pdf"
-      },
-      {
-        "title": "Comparaison de fonctions",
-        "path": "ComparaisonFonctions.pdf"
-      },
-      {
-        "title": "Nombres complexes",
-        "path": "Complexes.pdf"
-      },
-      {
-        "title": "Convexité",
-        "path": "Convexite.pdf"
-      },
-      {
-        "title": "Dénombrement",
-        "path": "Denombrement.pdf"
-      },
-      {
-        "title": "Dérivabilité",
-        "path": "Derivabilite.pdf"
-      },
-      {
-        "title": "Déterminants",
-        "path": "Determinants.pdf"
-      },
-      {
-        "title": "Développements limités",
-        "path": "DeveloppementsLimites.pdf"
-      },
-      {
-        "title": "Espaces vectoriels\\\\de dimension finie",
-        "path": "DimensionFinie.pdf"
-      },
-      {
-        "title": "Égalités et inégalités",
-        "path": "EgalitesInegalites.pdf"
-      },
-      {
-        "title": "Ensembles",
-        "path": "Ensembles.pdf"
-      },
-      {
-        "title": "Équations différentielles",
-        "path": "EquationsDifferentielles.pdf"
-      },
-      {
-        "title": "Espaces préhilbertiens réels",
-        "path": "EspacesPrehilbertiensReels.pdf"
-      },
-      {
-        "title": "Espaces vectoriels",
-        "path": "EspacesVectoriels.pdf"
-      },
-      {
-        "title": "Familles sommables",
-        "path": "FamillesSommables.pdf"
-      },
-      {
-        "title": "Fonctions d'une variable réelle",
-        "path": "Fonctions.pdf"
-      },
-      {
-        "title": "Fonctions de deux variables",
-        "path": "FonctionsDeuxVariables.pdf"
-      },
-      {
-        "title": "Fonctions usuelles",
-        "path": "FonctionsUsuelles.pdf"
-      },
-      {
-        "title": "Fractions rationnelles",
-        "path": "FractionsRationnelles.pdf"
-      },
-      {
-        "title": "Géométrie affine",
-        "path": "GeometrieAffine.pdf"
-      },
-      {
-        "title": "Groupes, anneaux, corps",
-        "path": "GroupesAnneauxCorps.pdf"
-      },
-      {
-        "title": "Primitives et intégrales",
-        "path": "IntegralesPrimitives.pdf"
-      },
-      {
-        "title": "Intégration",
-        "path": "Integration.pdf"
-      },
-      {
-        "title": "Limite et continuité de fonctions",
-        "path": "LimiteContinuite.pdf"
-      },
-      {
-        "title": "Matrices",
-        "path": "Matrices.pdf"
-      },
-      {
-        "title": "Polynômes",
-        "path": "Polynomes.pdf"
-      },
-      {
-        "title": "Probabilités sur un univers fini",
-        "path": "Probabilites.pdf"
-      },
-      {
-        "title": "Raisonnements",
-        "path": "Raisonnements.pdf"
-      },
-      {
-        "title": "Nombres réels",
-        "path": "Reels.pdf"
-      },
-      {
-        "title": "Relations binaires",
-        "path": "RelationsBinaires.pdf"
-      },
-      {
-        "title": "Séries numériques",
-        "path": "Series.pdf"
-      },
-      {
-        "title": "Sommes et produits",
-        "path": "SommesProduits.pdf"
-      },
-      {
-        "title": "Suites numériques",
-        "path": "Suites.pdf"
-      },
-      {
-        "title": "Systèmes linéaires",
-        "path": "SystemesLineaires.pdf"
-      },
-      {
-        "title": "Trigonométrie",
-        "path": "Trigonometrie.pdf"
-      }
-    ]
-  },
   "Colles": [
     {
       "title": "Semaine du 15/09",
@@ -977,6 +801,118 @@
     {
       "title": "Semaine du 02/02",
       "path": "ProgColles17.pdf"
+    }
+  ],
+  "Formulaires": [
+    {
+      "title": "Comparaison de fonctions",
+      "path": "FormulaireComparaisonFonctions.pdf"
+    },
+    {
+      "title": "Dérivation et intégration",
+      "path": "FormulaireDerivationIntegration.pdf"
+    },
+    {
+      "title": "Développements limités",
+      "path": "FormulaireDL.pdf"
+    },
+    {
+      "title": "Inégalités",
+      "path": "FormulaireInegalites.pdf"
+    },
+    {
+      "title": "Probabilités",
+      "path": "FormulaireProbabilites.pdf"
+    },
+    {
+      "title": "Séries",
+      "path": "FormulaireSeries.pdf"
+    },
+    {
+      "title": "Trigonométrie",
+      "path": "FormulaireTrigo.pdf"
+    },
+    {
+      "title": "Trigonométrie hyperbolique",
+      "path": "FormulaireTrigoHyperbolique.pdf"
+    },
+    {
+      "title": "Trigonométrie inverse",
+      "path": "FormulaireTrigoInverse.pdf"
+    }
+  ],
+  "DS": [
+    {
+      "title": "Devoir surveillé n°01",
+      "Enoncé": {
+        "path": "DS01.pdf"
+      },
+      "Corrigé": {
+        "path": "DS01.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°02",
+      "Enoncé": {
+        "path": "DS02.pdf"
+      },
+      "Corrigé": {
+        "path": "DS02.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°03",
+      "Enoncé": {
+        "path": "DS03.pdf"
+      },
+      "Corrigé": {
+        "path": "DS03.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°04",
+      "Enoncé": {
+        "path": "DS04.pdf"
+      },
+      "Corrigé": {
+        "path": "DS04.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°05",
+      "Enoncé": {
+        "path": "DS05.pdf"
+      },
+      "Corrigé": {
+        "path": "DS05.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°06",
+      "Enoncé": {
+        "path": "DS06.pdf"
+      },
+      "Corrigé": {
+        "path": "DS06.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°07",
+      "Enoncé": {
+        "path": "DS07.pdf"
+      },
+      "Corrigé": {
+        "path": "DS07.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°08",
+      "Enoncé": {
+        "path": "DS08.pdf"
+      },
+      "Corrigé": {
+        "path": "DS08.corrige.pdf"
+      }
     }
   ]
 }

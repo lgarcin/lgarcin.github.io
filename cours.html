@@ -26,14 +26,14 @@ full-width: true
 <hr>
 
 <section id="cours premiere annee">
-  {% if site.data.pdfs.PremiereAnnee.Cours %}
+  {% if site.data.pdfs.Cours1A %}
   <h3>Notes de cours de première année</h3>
-  {% assign sorted_cours=site.data.pdfs.PremiereAnnee.Cours|sort:'title' %}
+  {% assign sorted_cours=site.data.pdfs.Cours1A|sort:'title' %}
   <div class="grid">
     {% for cours in sorted_cours %}
     {% if cours.path %}
     <div class="pdf">
-      <a href="{{'/pdfs/PremiereAnnee/Cours/' | append: cours.path}}">
+      <a href="{{'/pdfs/Cours1A/' | append: cours.path}}">
         <i class="fa-regular fa-file-pdf"></i>
         <span style="display:inline-block; width:.1ex"></span> {{cours.title|replace:'\\',' '}}
       </a>
