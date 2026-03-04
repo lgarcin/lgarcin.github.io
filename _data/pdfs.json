@@ -653,6 +653,24 @@
       "Corrigé": {
         "path": "DS10.corrige.pdf"
       }
+    },
+    {
+      "title": "Devoir surveillé n°11",
+      "Enoncé": {
+        "path": "DS11.pdf"
+      },
+      "Corrigé": {
+        "path": "DS11.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°12",
+      "Enoncé": {
+        "path": "DS12.pdf"
+      },
+      "Corrigé": {
+        "path": "DS12.corrige.pdf"
+      }
     }
   ],
   "TD": [
