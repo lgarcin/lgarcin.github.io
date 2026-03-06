@@ -1052,5 +1052,19 @@
         "path": "TDSuites.corrige.pdf"
       }
     }
+  ],
+  "VieClasse": [
+    {
+      "path": "Emploi du temps annuel de MP - 2025-2026.pdf",
+      "title": "Emploi du temps"
+    },
+    {
+      "path": "Planning DS MP 2025_2026.pdf",
+      "title": "Planning des DS"
+    },
+    {
+      "path": "Colloscope_2025_2026.pdf",
+      "title": "Colloscope"
+    }
   ]
 }
