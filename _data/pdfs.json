@@ -558,12 +558,30 @@
       "title": "Devoir à la maison n°21",
       "Enoncé": {
         "path": "DM21.pdf"
+      },
+      "Corrigé": {
+        "path": "DM21.corrige.pdf"
       }
     },
     {
       "title": "Devoir à la maison n°22",
       "Enoncé": {
         "path": "DM22.pdf"
+      },
+      "Corrigé": {
+        "path": "DM22.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°23",
+      "Enoncé": {
+        "path": "DM23.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°24",
+      "Enoncé": {
+        "path": "DM24.pdf"
       }
     }
   ],
@@ -745,6 +763,9 @@
       "title": "Intégrales à paramètres",
       "Enoncé": {
         "path": "TDIntegralesParametres.pdf"
+      },
+      "Corrigé": {
+        "path": "TDIntegralesParametres.corrige.pdf"
       }
     },
     {
