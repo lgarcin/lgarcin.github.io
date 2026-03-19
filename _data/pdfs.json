@@ -39,6 +39,10 @@
     {
       "path": "Interro10.pdf",
       "title": "Interrogation écrite n°10"
+    },
+    {
+      "path": "Interro11.pdf",
+      "title": "Interrogation écrite n°11"
     }
   ],
   "Colles": [
@@ -117,6 +121,10 @@
     {
       "path": "ProgColles19.pdf",
       "title": "Semaine du 09/03"
+    },
+    {
+      "path": "ProgColles20.pdf",
+      "title": "Semaine du 16/03"
     }
   ],
   "Formulaires": [
@@ -739,6 +747,9 @@
       "title": "Fonctions vectorielles",
       "Enoncé": {
         "path": "TDFonctionsVectorielles.pdf"
+      },
+      "Corrigé": {
+        "path": "TDFonctionsVectorielles.corrige.pdf"
       }
     },
     {
