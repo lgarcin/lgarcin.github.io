@@ -736,6 +736,9 @@
       "title": "Equations différentielles",
       "Enoncé": {
         "path": "TDEquationsDifferentielles.pdf"
+      },
+      "Corrigé": {
+        "path": "TDEquationsDifferentielles.corrige.pdf"
       }
     },
     {
