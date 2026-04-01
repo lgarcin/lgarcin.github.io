@@ -599,6 +599,15 @@
       "Enoncé": {
         "path": "DM24.pdf"
       }
+    },
+    {
+      "title": "Devoir à la maison n°25",
+      "Enoncé": {
+        "path": "DM25.pdf"
+      },
+      "Corrigé": {
+        "path": "DM25.corrige.pdf"
+      }
     }
   ],
   "DS": [
@@ -743,6 +752,9 @@
       "title": "Calcul différentiel",
       "Enoncé": {
         "path": "TDCalculDifferentiel.pdf"
+      },
+      "Corrigé": {
+        "path": "TDCalculDifferentiel.corrige.pdf"
       }
     },
     {
