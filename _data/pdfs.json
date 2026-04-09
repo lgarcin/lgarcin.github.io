@@ -592,12 +592,18 @@
       "title": "Devoir à la maison n°23",
       "Enoncé": {
         "path": "DM23.pdf"
+      },
+      "Corrigé": {
+        "path": "DM23.corrige.pdf"
       }
     },
     {
       "title": "Devoir à la maison n°24",
       "Enoncé": {
         "path": "DM24.pdf"
+      },
+      "Corrigé": {
+        "path": "DM24.corrige.pdf"
       }
     },
     {
