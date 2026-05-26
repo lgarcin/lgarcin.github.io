@@ -857,6 +857,9 @@
       "title": "Révisions Oraux",
       "Enoncé": {
         "path": "TDRevisionsOraux.pdf"
+      },
+      "Corrigé": {
+        "path": "TDRevisionsOraux.corrige.pdf"
       }
     },
     {
