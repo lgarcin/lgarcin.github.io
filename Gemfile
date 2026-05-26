@@ -8,6 +8,7 @@ gem "jekyll-paginate"
 gem "jekyll-seo-tag"
 gem "jekyll-remote-theme"
 gem "jekyll-compose"
+gem "jekyll-sitemap"
 
 # Outils de vérification (optionnel mais utile)
 gem "html-proofer"
