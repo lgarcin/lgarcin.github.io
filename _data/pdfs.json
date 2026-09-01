@@ -255,7 +255,20 @@
       "title": "Trigonométrie"
     }
   ],
-  "DM": [],
+  "DM": [
+    {
+      "title": "Devoir à la maison n°01",
+      "Enoncé": {
+        "path": "DM01.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°02",
+      "Enoncé": {
+        "path": "DM02.pdf"
+      }
+    }
+  ],
   "DS": [],
   "TD": [
     {
