@@ -1,5 +1,10 @@
 {
-  "Interros": [],
+  "Interros": [
+    {
+      "path": "Interro01.pdf",
+      "title": "Interrogation écrite n°01"
+    }
+  ],
   "Colles": [],
   "Formulaires": [
     {
@@ -614,6 +619,10 @@
     {
       "path": "Emploi du temps annuel de MP - 2026-2027.pdf",
       "title": "Emploi du temps"
+    },
+    {
+      "path": "Planning DS MP 2026_2027.pdf",
+      "title": "Planning des DS"
     }
   ]
 }
