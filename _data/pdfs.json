@@ -364,6 +364,9 @@
       "title": "Séries et familles sommables",
       "Enoncé": {
         "path": "TDSeriesFamillesSommables.pdf"
+      },
+      "Corrigé": {
+        "path": "TDSeriesFamillesSommables.corrige.pdf"
       }
     },
     {
@@ -623,6 +626,10 @@
     {
       "path": "Planning DS MP 2026_2027.pdf",
       "title": "Planning des DS"
+    },
+    {
+      "path": "Colloscope_MP_2026_2027.pdf",
+      "title": "Colloscope"
     }
   ]
 }
