@@ -5,7 +5,12 @@
       "title": "Interrogation écrite n°01"
     }
   ],
-  "Colles": [],
+  "Colles": [
+    {
+      "path": "ProgColles01.pdf",
+      "title": "Semaine du 14/09"
+    }
+  ],
   "Formulaires": [
     {
       "path": "FormulaireComparaisonFonctions.pdf",
