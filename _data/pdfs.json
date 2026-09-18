@@ -9,6 +9,10 @@
     {
       "path": "ProgColles01.pdf",
       "title": "Semaine du 14/09"
+    },
+    {
+      "path": "ProgColles02.pdf",
+      "title": "Semaine du 21/09"
     }
   ],
   "Formulaires": [
@@ -358,6 +362,9 @@
       "title": "Intégrales impropres",
       "Enoncé": {
         "path": "TDIntegralesImpropres.pdf"
+      },
+      "Corrigé": {
+        "path": "TDIntegralesImpropres.corrige.pdf"
       }
     },
     {
