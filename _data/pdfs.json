@@ -3,6 +3,10 @@
     {
       "path": "Interro01.pdf",
       "title": "Interrogation écrite n°01"
+    },
+    {
+      "path": "Interro02.pdf",
+      "title": "Interrogation écrite n°02"
     }
   ],
   "Colles": [
@@ -13,6 +17,10 @@
     {
       "path": "ProgColles02.pdf",
       "title": "Semaine du 21/09"
+    },
+    {
+      "path": "ProgColles03.pdf",
+      "title": "Semaine du 28/09"
     }
   ],
   "Formulaires": [
