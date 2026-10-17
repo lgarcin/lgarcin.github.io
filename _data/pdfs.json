@@ -330,12 +330,30 @@
       "title": "Devoir à la maison n°05",
       "Enoncé": {
         "path": "DM05.pdf"
+      },
+      "Corrigé": {
+        "path": "DM05.corrige.pdf"
       }
     },
     {
       "title": "Devoir à la maison n°06",
       "Enoncé": {
         "path": "DM06.pdf"
+      },
+      "Corrigé": {
+        "path": "DM06.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°07",
+      "Enoncé": {
+        "path": "DM07.pdf"
+      }
+    },
+    {
+      "title": "Devoir à la maison n°08",
+      "Enoncé": {
+        "path": "DM08.pdf"
       }
     }
   ],
@@ -374,6 +392,24 @@
       },
       "Corrigé": {
         "path": "DS04.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°05",
+      "Enoncé": {
+        "path": "DS05.pdf"
+      },
+      "Corrigé": {
+        "path": "DS05.corrige.pdf"
+      }
+    },
+    {
+      "title": "Devoir surveillé n°06",
+      "Enoncé": {
+        "path": "DS06.pdf"
+      },
+      "Corrigé": {
+        "path": "DS06.corrige.pdf"
       }
     }
   ],
@@ -421,6 +457,9 @@
       "title": "Groupes",
       "Enoncé": {
         "path": "TDGroupes.pdf"
+      },
+      "Corrigé": {
+        "path": "TDGroupes.corrige.pdf"
       }
     },
     {
