@@ -11,6 +11,10 @@
     {
       "path": "Interro03.pdf",
       "title": "Interrogation écrite n°03"
+    },
+    {
+      "path": "Interro04.pdf",
+      "title": "Interrogation écrite n°04"
     }
   ],
   "Colles": [
@@ -37,6 +41,10 @@
     {
       "path": "ProgColles06.pdf",
       "title": "Semaine du 02/11"
+    },
+    {
+      "path": "ProgColles07.pdf",
+      "title": "Semaine du 09/11"
     }
   ],
   "Formulaires": [
@@ -509,6 +517,9 @@
       "title": "Réduction géométrique",
       "Enoncé": {
         "path": "TDReductionGeometrique.pdf"
+      },
+      "Corrigé": {
+        "path": "TDReductionGeometrique.corrige.pdf"
       }
     },
     {
