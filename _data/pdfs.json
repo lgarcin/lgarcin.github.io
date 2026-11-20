@@ -49,6 +49,14 @@
     {
       "path": "ProgColles07.pdf",
       "title": "Semaine du 09/11"
+    },
+    {
+      "path": "ProgColles08.pdf",
+      "title": "Semaine du 16/11"
+    },
+    {
+      "path": "ProgColles09.pdf",
+      "title": "Semaine du 23/11"
     }
   ],
   "Formulaires": [
@@ -364,12 +372,18 @@
       "title": "Devoir à la maison n°07",
       "Enoncé": {
         "path": "DM07.pdf"
+      },
+      "Corrigé": {
+        "path": "DM07.corrige.pdf"
       }
     },
     {
       "title": "Devoir à la maison n°08",
       "Enoncé": {
         "path": "DM08.pdf"
+      },
+      "Corrigé": {
+        "path": "DM08.corrige.pdf"
       }
     },
     {
@@ -536,6 +550,9 @@
       "title": "Réduction algébrique",
       "Enoncé": {
         "path": "TDReductionAlgebrique.pdf"
+      },
+      "Corrigé": {
+        "path": "TDReductionAlgebrique.corrige.pdf"
       }
     },
     {
