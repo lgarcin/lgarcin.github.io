@@ -98,7 +98,6 @@ site-css:
 site-js:
   - "/js/mathjax.js"
   - "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-
 #################################
 # --- Web Analytics Section --- #
 #################################
@@ -161,6 +160,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-remote-theme
 
-remote_theme: daattali/beautiful-jekyll@5.0.0
+remote_theme: daattali/beautiful-jekyll@6.0.1
 
 language: fr
