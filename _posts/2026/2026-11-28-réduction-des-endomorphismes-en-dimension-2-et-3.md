@@ -31,7 +31,7 @@ Si $\dim\Ker(u-\lambda\ident_E)=2$, alors il est clair que $u=\lambda\ident_E$ e
 
 Sinon, $\dim\Ker(u-\lambda\ident_E)=1$. En vertu du théorème de Cayley-Hamilton, $(u-\lambda\ident_E)^2=0$ de sorte que $\Im(u-\lambda\ident_E)\subset\Ker(u-\lambda\ident_E)$. Mais en vertu du théorème du rang, $\dim\Ker(u-\lambda\ident_E)=\dim\Im(u-\lambda\ident_E)=1$ puis $\Ker(u-\lambda\ident_E)=\Im(u-\lambda\ident_E)$.
 
-On peut alors choisir un vecteur $e_2$ dans $E\setminus\Ker(u-\lambda\ident_E)$. En pratique, on peut choisir ce vecteur aléatoirement car il y a peu de chances de tomber sur un vecteur de la droite $\Ker(u-\lambda\ident_E)$. On pose alors $e_1=(u-\lambda\ident_E)(e_2)$ de sorte que $u(e_2)=\lambda e_2+e_1$. De plus, $e_1\in\Im(u-\lambda\ident_E)=\Ker(u-\lambda\ident_E)$ i.e. $u(e_1)=\lambda e_1$. Enfin, $e_2$ n'appartenant pas à la droite $\Ker(u-\lambda\ident_E)$, il n'est pas colinéaire à $e_1$. La famille $(e_1,e_2)$ est donc libre et c'est une base de $E$. La matrice de $u$ dans cette base est $\begin{pmatrix}\lambda&1\newline0&\lambda\end{pmatrix}$.
+On peut alors choisir un vecteur $e_2$ dans $E\setminus\Ker(u-\lambda\ident_E)$. En pratique, on peut choisir ce vecteur aléatoirement car il y a peu de chances de tomber sur un vecteur de la droite $\Ker(u-\lambda\ident_E)$. On pose alors $e_1=(u-\lambda\ident_E)(e_2)$ de sorte que $u(e_2)=\lambda e_2+e_1$. De plus, $e_1\in\Im(u-\lambda\ident_E)=\Ker(u-\lambda\ident_E)$ i.e. $u(e_1)=\lambda e_1$. Enfin, $e_2$ n'appartenant pas à la droite $\Ker(u-\lambda\ident_E)$, il n'est pas colinéaFire à $e_1$. La famille $(e_1,e_2)$ est donc libre et c'est une base de $E$. La matrice de $u$ dans cette base est $\begin{pmatrix}\lambda&1\newline0&\lambda\end{pmatrix}$.
 
 **Exemple.** Considérons la matrice $A=\begin{pmatrix}-2&2\newline-8&6\end{pmatrix}$. On a $\chi_A=(X-2)^2$. Comme $A\neq2I_2$, $A$ est semblable à $T=\begin{pmatrix}2&1\newline0&2\end{pmatrix}$. Calculons explicitement une matrice de passage. Choisissons $C_2=\begin{pmatrix}1\newline0\end{pmatrix}$ qui n'est clairement pas un vecteur propre de $A$ puis $C_1=(A-2I_2)C_2=\begin{pmatrix}-4\newline-8\end{pmatrix}$. En posant $P=\begin{pmatrix}C_1 \mid C_2\end{pmatrix}=\begin{pmatrix}-4&1\newline-8&0\end{pmatrix}$, on a donc $A=PTP^{-1}$.
 
@@ -105,18 +105,18 @@ $$
 
 car $\Ker(u-\lambda\ident_E)\subset\Ker(u-\lambda\ident_E)^2=F$. Notamment, $\dim\Ker(v-\lambda\ident_F)=1$ et on peut utiliser le cas étudié [plus haut](#dim2-sp1) : il existe une base $(e_1,e_2)$ de $F$ dans laquelle la matrice de $v$ est $\begin{pmatrix}\lambda&1\newline0&\lambda\end{pmatrix}$. En notant $e_3$ un vecteur directeur de la droite $\Ker(u-\mu\ident_E)$, la matrice de $u$ dans la base $(e_1,e_2,e_3)$ est $\begin{pmatrix}\lambda&1&0\newline0&\lambda&0\newline0&0&\mu\end{pmatrix}$.
 
-Par contre, si l'on veut déterminer $e_1$ et $e_2$ comme il a été fait dans le cas étudié [plus haut](#dim2-sp1), il faut déterminer $F=\Ker(u-\lambda\ident_E)^2$. Il est alors plus efficace de déterminer un vecteur directeur $e_1$ de la droite $\Ker(u-\lambda\ident_E)$ et de remarquer que l'on a montré [plus haut](#dim2-sp1) que $\Ker(v-\lambda\ident_F)=\Im(v-\lambda\ident_F)$. Puisque
+Par contre, si l'on veut déterminer $e_1$ et $e_2$ comme il a été fait dans le cas étudié [plus haut](#dim2-sp1), il faut déterminer $F=\Ker(u-\lambda\ident_E)^2$. Pour cela, on peut remarquer que $(u-\lambda\ident_E)^2\circ(u-\mu\ident_E)=0$ de sorte que $\Im(u-\mu\ident_E)\subset F$. D'après le théorème du rang
 
 $$
-e_1\in\Ker(u-\lambda\ident_E)=\Ker(v-\lambda\ident_F)=\Im(v-\lambda\ident_F)\subset\Im(u-\lambda\ident_E)
+\dim\Im(u-\mu\ident_E)=\dim(E)-\dim\Ker(u-\lambda\ident_E)=\dim F
 $$
 
-on peut trouver $e_2\in E$ tel que $e_1=(u-\lambda\ident_E)(e_2)$. Puisque $e_1\in\Ker(u-\lambda\ident_E)$, $e_2\in\Ker(u-\lambda\ident_E)^2=F$. Enfin, $(u-\lambda\ident_E)(e_2)=e_1\neq0$ donc $e_2\notin\Ker(u-\lambda\ident_E)=\vect(e_1)$. La famille $(e_1,e_2)$ est donc bien une base de $F$ dans laquelle la matrice de $v$ est $\begin{pmatrix}\lambda&1\newline0&\lambda\end{pmatrix}$.
+Ainsi $F=\Im(u-\mu\ident_E)$. Comme indiqué [plus haut](#dim2-sp1), on choisit ensuite $e_2\in F\setminus\Ker(v-\la\ident_F)=F\setminus\Ker(u-\la\ident_E)$. En pratique, on peut choisir aléatoirement $e_2$ dans $F=\Im(u-\mu\ident_E)$. On pose ensuite $e_1=(v-\lambda\ident_F)(e_2)=(u-\lambda\ident_E)(e_2)$. La famille $(e_1,e_2)$ est donc bien une base de $F$ dans laquelle la matrice de $v$ est $\begin{pmatrix}\lambda&1\newline0&\lambda\end{pmatrix}$.
 
-**Exemple.** Soit $A=\begin{pmatrix}0&-3&-1\newline-1&2&1\newline-2&-3&1\end{pmatrix}$. On trouve $\chi_A=(X-2)^2(X+1)$. On trouve $\Ker(A-2I_3)=\vect(C_1)$ avec $C_1=\begin{pmatrix}1\newline-1\newline1\end{pmatrix}$ et $\Ker(A+I_3)=\vect(C_3)$ avec $C_3=\begin{pmatrix}1\newline0\newline1\end{pmatrix}$. Comme $\dim\Ker(A-2I_3)=1$, on sait que $A$ est semblable à $T=\begin{pmatrix}2&1&0\newline0&2&0\newline0&0&-1\end{pmatrix}$. On cherche alors $C_2$ tel que $(A-2I_3)C_2=C_1$. En résolvant un système, on trouve par exemple $C_2=\begin{pmatrix}0\newline0\newline-1\end{pmatrix}$. On a alors bien $A=PTP^{-1}$ en posant
+**Exemple.** Soit $A=\begin{pmatrix}0&-3&-1\newline-1&2&1\newline-2&-3&1\end{pmatrix}$. On trouve $\chi_A=(X-2)^2(X+1)$ et on voit clairement que $\rg(A-2I_3)=2$ de sorte que $\dim\Ker(A-2I_3)=1$. Ainsi $A$ est semblable à $T=\begin{pmatrix}2&1&0\newline0&2&0\newline0&0&-1\end{pmatrix}$. On trouve ensuite $\Ker(A+I_3)=\vect(C_3)$ avec $C_3=\begin{pmatrix}1\newline0\newline1\end{pmatrix}$. Remarquons que la première colonne de $A+I_3$ est bien dans $\Im(A+I_3)$. On prend donc $C_2=\begin{pmatrix}1\newline-1\newline-2\end{pmatrix}$ puis $C_1=(A-2I_3)C_2=\begin{pmatrix}3\newline-3\newline3\end{pmatrix}$. On a alors bien $A=PTP^{-1}$ en posant
 
 $$
-P=\begin{pmatrix}C_1\mid C_2\mid C_3\end{pmatrix}=\begin{pmatrix}1&0&1\newline-1&0&0\newline1&-1&1\end{pmatrix}
+P=\begin{pmatrix}C_1\mid C_2\mid C_3\end{pmatrix}=\begin{pmatrix}3&1&1\newline-3&-1&0\newline3&-2&1\end{pmatrix}
 $$
 
 ### Cas $\chi_u=(X-\lambda)^3$
@@ -159,9 +159,9 @@ P=\begin{pmatrix}C_1\mid C_2\mid C_3\end{pmatrix}=\begin{pmatrix}
 \end{pmatrix}
 $$
 
-### Cas $\chi_u=(X-\lambda)P$ et $P$ irrédudctible
+### Cas $\chi_u=(X-\lambda)P$ et $P$ irréductible
 
-Lorsque $\dK=\dR$, $\chi_u$ peut être de la forme $(X-\lambda)P$ avec $P$ un polynôme unitiare irréductible de degré $2$. Comme $X-\lambda$ et $P$ sont premiers entre eux, on obtient avec le théorème de Cayley-Hamilton et le lemme des noyaux
+Lorsque $\dK=\dR$, $\chi_u$ peut être de la forme $(X-\lambda)P$ avec $P$ un polynôme unitaire irréductible de degré $2$. Comme $X-\lambda$ et $P$ sont premiers entre eux, on obtient avec le théorème de Cayley-Hamilton et le lemme des noyaux
 
 $$
 E=\Ker P(u)\oplus\Ker(u-\lambda\ident_E)
